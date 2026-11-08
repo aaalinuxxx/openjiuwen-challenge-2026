@@ -1,0 +1,7 @@
+{
+  "benchmark_set": "sample_task_dir_8_tasks",
+  "tasks_total": 8,
+  "tasks_solved": 8,
+  "tasks_skipped_unsolvable": 0,
+  "notes": "Базовый прогон на 8 примерах из архива организаторов (coding, data_analysis, math, search)."
+}

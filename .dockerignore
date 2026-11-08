@@ -1,0 +1,12 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+.venv
+venv
+.env
+logs
+data
+scripts/generate_dataset.py
+scripts/collect_trajectories.py
+scripts/mock_llm_proxy.py
