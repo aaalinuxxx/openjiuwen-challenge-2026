@@ -1,0 +1,22 @@
+{
+  "label": "E31_improved_coding_control",
+  "api_calls": 0,
+  "scope": "scripted bridge; real unittest subprocesses; no LLM quality/cost inference",
+  "rows": [
+    {
+      "case": "feedback",
+      "status": "SOLVED",
+      "scripted_calls": 2,
+      "corrected_source_copied": true,
+      "second_prompt_matches_failed_patch": false
+    },
+    {
+      "case": "all_tests",
+      "status": "SOLVED",
+      "scripted_calls": 1,
+      "corrected_source_copied": true,
+      "all_tests_seen": true
+    }
+  ],
+  "solver_sha256": "f390955cc7e6800271fb9410ba2d4d1ff7a142458ff882410b7fe8e0e66d2432"
+}

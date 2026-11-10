@@ -1,0 +1,22 @@
+{
+  "label": "E31b_aligned_coding_control",
+  "api_calls": 0,
+  "scope": "scripted bridge; real unittest subprocesses; no LLM quality/cost inference",
+  "rows": [
+    {
+      "case": "feedback",
+      "status": "SOLVED",
+      "scripted_calls": 2,
+      "corrected_source_copied": true,
+      "second_prompt_matches_failed_patch": true
+    },
+    {
+      "case": "all_tests",
+      "status": "SOLVED",
+      "scripted_calls": 1,
+      "corrected_source_copied": true,
+      "all_tests_seen": true
+    }
+  ],
+  "solver_sha256": "a12b7e5f23c8e8526a2cd8e9b888f18ba006e51a8dd9fa918210ee7d43476cb6"
+}
