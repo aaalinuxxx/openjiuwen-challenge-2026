@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-10T18:08:29.930841+00:00",
+  "mode": "single_generation",
+  "requested_output_cap": 16,
+  "retries": 0,
+  "status": "OK",
+  "http_status": 200,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 16,
+    "total_tokens": 18,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "created_cache_tokens": 0
+    }
+  },
+  "answer_is_OK": true
+}

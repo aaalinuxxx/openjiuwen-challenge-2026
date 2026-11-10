@@ -1,0 +1,22 @@
+{
+  "label": "E09_coding_controls_before",
+  "api_calls": 0,
+  "scope": "scripted bridge; real unittest subprocesses; no LLM quality/cost inference",
+  "rows": [
+    {
+      "case": "feedback",
+      "status": "SOLVED",
+      "scripted_calls": 2,
+      "corrected_source_copied": true,
+      "second_prompt_matches_failed_patch": false
+    },
+    {
+      "case": "all_tests",
+      "status": "SOLVED",
+      "scripted_calls": 0,
+      "corrected_source_copied": false,
+      "all_tests_seen": false
+    }
+  ],
+  "solver_sha256": "fc8dad211004a49b4a7b7d3e5838e43150947d8abbfd556ffdcfc2dcd1ec7fa7"
+}

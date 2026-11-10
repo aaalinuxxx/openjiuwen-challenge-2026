@@ -1,0 +1,359 @@
+{
+  "mode": "OFFLINE_POLICY_REPLAY",
+  "new_api_calls": 0,
+  "limitation": "gate designed after E19; exploratory replay, not a new live cascade measurement",
+  "source_report": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E22_plan_pairs_live_20261110T185542127852\\report.json",
+  "source_sha256": "a6332d9883a4b592036a16d8dc58671bde2b719879dacc2a6d2a396fbf6e7c4f",
+  "source_dataset_sha256": "ce5787e5168d3b19aa4ce66eaa0c81b22e131846d967ee1007c5aa97eab6901a",
+  "summary": {
+    "python_only": {
+      "tasks": 6,
+      "correct": 6,
+      "replay_effective_tokens": 566.7,
+      "replay_calls": 6
+    },
+    "json_only": {
+      "tasks": 6,
+      "correct": 2,
+      "replay_effective_tokens": 284.3,
+      "replay_calls": 6
+    },
+    "json_then_python_on_failure": {
+      "tasks": 6,
+      "correct": 4,
+      "replay_effective_tokens": 482.8,
+      "replay_calls": 8
+    },
+    "risk_gate_then_cascade": {
+      "tasks": 6,
+      "correct": 6,
+      "replay_effective_tokens": 506.9,
+      "replay_calls": 6
+    }
+  },
+  "rows": [
+    {
+      "policy": "python_only",
+      "task_id": "total_control",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [],
+      "answer": "28",
+      "correct": true,
+      "replay_effective_tokens": 88.7,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "count_control",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [],
+      "answer": "3",
+      "correct": true,
+      "replay_effective_tokens": 89.0,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "refund_alias",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "unrepresented_column:refunded"
+      ],
+      "answer": "12",
+      "correct": true,
+      "replay_effective_tokens": 99.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "price_threshold",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "numeric_predicate"
+      ],
+      "answer": "12",
+      "correct": true,
+      "replay_effective_tokens": 103.5,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "median_units",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "unsupported_aggregate"
+      ],
+      "answer": "8",
+      "correct": true,
+      "replay_effective_tokens": 95.0,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "separated_months",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "noncontiguous_months"
+      ],
+      "answer": "34",
+      "correct": true,
+      "replay_effective_tokens": 90.6,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "total_control",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "28",
+      "correct": true,
+      "replay_effective_tokens": 64.8,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "count_control",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "3",
+      "correct": true,
+      "replay_effective_tokens": 53.1,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "refund_alias",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [
+        "unrepresented_column:refunded"
+      ],
+      "answer": "28",
+      "correct": false,
+      "replay_effective_tokens": 53.0,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "price_threshold",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [
+        "numeric_predicate"
+      ],
+      "answer": null,
+      "correct": false,
+      "replay_effective_tokens": 24.6,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "median_units",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [
+        "unsupported_aggregate"
+      ],
+      "answer": null,
+      "correct": false,
+      "replay_effective_tokens": 24.1,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "separated_months",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [
+        "noncontiguous_months"
+      ],
+      "answer": "58",
+      "correct": false,
+      "replay_effective_tokens": 64.7,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "total_control",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "28",
+      "correct": true,
+      "replay_effective_tokens": 64.8,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "count_control",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "3",
+      "correct": true,
+      "replay_effective_tokens": 53.1,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "refund_alias",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [
+        "unrepresented_column:refunded"
+      ],
+      "answer": "28",
+      "correct": false,
+      "replay_effective_tokens": 53.0,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "price_threshold",
+      "selected_arms": [
+        "json",
+        "python"
+      ],
+      "risk_signals": [
+        "numeric_predicate"
+      ],
+      "answer": "12",
+      "correct": true,
+      "replay_effective_tokens": 128.1,
+      "replay_calls": 2
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "median_units",
+      "selected_arms": [
+        "json",
+        "python"
+      ],
+      "risk_signals": [
+        "unsupported_aggregate"
+      ],
+      "answer": "8",
+      "correct": true,
+      "replay_effective_tokens": 119.1,
+      "replay_calls": 2
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "separated_months",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [
+        "noncontiguous_months"
+      ],
+      "answer": "58",
+      "correct": false,
+      "replay_effective_tokens": 64.7,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "total_control",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "28",
+      "correct": true,
+      "replay_effective_tokens": 64.8,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "count_control",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "3",
+      "correct": true,
+      "replay_effective_tokens": 53.1,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "refund_alias",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "unrepresented_column:refunded"
+      ],
+      "answer": "12",
+      "correct": true,
+      "replay_effective_tokens": 99.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "price_threshold",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "numeric_predicate"
+      ],
+      "answer": "12",
+      "correct": true,
+      "replay_effective_tokens": 103.5,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "median_units",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "unsupported_aggregate"
+      ],
+      "answer": "8",
+      "correct": true,
+      "replay_effective_tokens": 95.0,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "separated_months",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "noncontiguous_months"
+      ],
+      "answer": "34",
+      "correct": true,
+      "replay_effective_tokens": 90.6,
+      "replay_calls": 1
+    }
+  ],
+  "gate_sha256": "8f1253a0870fe27a744944b1decaca591f4d1e43ff74953e6e0e1d5fdcf073e5"
+}

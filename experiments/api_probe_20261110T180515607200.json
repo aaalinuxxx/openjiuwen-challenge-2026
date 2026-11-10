@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-10T18:05:14.791085+00:00",
+  "mode": "single_generation",
+  "requested_output_cap": 16,
+  "retries": 0,
+  "status": "HTTP_ERROR",
+  "http_status": 401
+}

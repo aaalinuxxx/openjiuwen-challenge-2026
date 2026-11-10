@@ -1,0 +1,1339 @@
+{
+  "label": "E04_search_before",
+  "seed": 914,
+  "scope": "synthetic development suite; no API comparison",
+  "solver_sha256": "3945aad39a141773db89149a556679f9e8821910e552f56afa671672bc4371b2",
+  "dataset_sha256": "d0721e38168cf98b4f214694b735e248b2e2f107aab8248392c9ff289a6b57d2",
+  "summary": {
+    "total": 132,
+    "correct": 36,
+    "solvable": 72,
+    "solved_correct": 0,
+    "wrong_answers": 0,
+    "needs_api": 120,
+    "correctly_rejected": 12,
+    "api_calls": 0
+  },
+  "rows": [
+    {
+      "task_id": "born_0",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1969",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_0",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Riga0",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_0",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Riga0",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_0",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Riga0",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_0",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1990",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_0",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1984",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_0",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_0",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_0",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_0",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_0",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_1",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1971",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_1",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Turku1",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_1",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Turku1",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_1",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Turku1",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_1",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1949",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_1",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1984",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_1",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_1",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_1",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_1",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_1",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_2",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1973",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_2",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Bern2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_2",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Bern2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_2",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Bern2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_2",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1974",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_2",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2003",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_2",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_2",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_2",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_2",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_2",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_3",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1972",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_3",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Turku3",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_3",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Turku3",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_3",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Turku3",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_3",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1979",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_3",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2007",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_3",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_3",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_3",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_3",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_3",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_4",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1971",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_4",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Riga4",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_4",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Riga4",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_4",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Riga4",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_4",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1945",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_4",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1982",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_4",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_4",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_4",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_4",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_4",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_5",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1986",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_5",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima5",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_5",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima5",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_5",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima5",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_5",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1946",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_5",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2012",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_5",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_5",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_5",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_5",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_5",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_6",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1987",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_6",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima6",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_6",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima6",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_6",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima6",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_6",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1982",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_6",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1997",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_6",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_6",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_6",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_6",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_6",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_7",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1966",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_7",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Bern7",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_7",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Bern7",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_7",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Bern7",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_7",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1971",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_7",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2001",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_7",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_7",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_7",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_7",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_7",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_8",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1980",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_8",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima8",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_8",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima8",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_8",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima8",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_8",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1987",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_8",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2016",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_8",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_8",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_8",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_8",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_8",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_9",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1978",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_9",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Turku9",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_9",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Turku9",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_9",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Turku9",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_9",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1959",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_9",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2008",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_9",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_9",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_9",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_9",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_9",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_10",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1954",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_10",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Riga10",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_10",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Riga10",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_10",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Riga10",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_10",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1960",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_10",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2018",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_10",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_10",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_10",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_10",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_10",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "born_11",
+      "family": "born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1995",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq2_11",
+      "family": "hq2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima11",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq3_11",
+      "family": "hq3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima11",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "hq4_11",
+      "family": "hq4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "Lima11",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "mentor_born_11",
+      "family": "mentor_born",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1944",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "founded_11",
+      "family": "founded",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1983",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_entity_11",
+      "family": "missing_entity",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "broken_link_11",
+      "family": "broken_link",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "missing_field_11",
+      "family": "missing_field",
+      "expected_status": "UNSOLVABLE",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "historical_qualifier_11",
+      "family": "historical_qualifier",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "duplicate_title_11",
+      "family": "duplicate_title",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    }
+  ]
+}

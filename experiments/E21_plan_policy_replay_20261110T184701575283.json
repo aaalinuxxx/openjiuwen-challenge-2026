@@ -1,0 +1,337 @@
+{
+  "mode": "OFFLINE_POLICY_REPLAY",
+  "new_api_calls": 0,
+  "limitation": "gate designed after E19; exploratory replay, not a new live cascade measurement",
+  "source_report": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E19_plan_pairs_live_20261110T184402610394\\report.json",
+  "source_sha256": "c9547ecf6a881ec2c84422de9827890c4c4a024fb4f163a2d4b6045f321767a4",
+  "source_dataset_sha256": "e4a52feeb09a8ea3432b94462ff9c3a7fb09aacb1cb9ea99050e2f7629bac7e8",
+  "summary": {
+    "python_only": {
+      "tasks": 6,
+      "correct": 6,
+      "replay_effective_tokens": 653.9,
+      "replay_calls": 6
+    },
+    "json_only": {
+      "tasks": 6,
+      "correct": 5,
+      "replay_effective_tokens": 382.5,
+      "replay_calls": 6
+    },
+    "json_then_python_on_failure": {
+      "tasks": 6,
+      "correct": 5,
+      "replay_effective_tokens": 382.5,
+      "replay_calls": 6
+    },
+    "risk_gate_then_cascade": {
+      "tasks": 6,
+      "correct": 6,
+      "replay_effective_tokens": 417.4,
+      "replay_calls": 6
+    }
+  },
+  "rows": [
+    {
+      "policy": "python_only",
+      "task_id": "regional_units",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [],
+      "answer": "20",
+      "correct": true,
+      "replay_effective_tokens": 101.6,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "proceeds",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [],
+      "answer": "6.80",
+      "correct": true,
+      "replay_effective_tokens": 118.8,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "record_count",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [],
+      "answer": "3",
+      "correct": true,
+      "replay_effective_tokens": 88.8,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "average",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [],
+      "answer": "10.0",
+      "correct": true,
+      "replay_effective_tokens": 133.8,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "largest",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [],
+      "answer": "14",
+      "correct": true,
+      "replay_effective_tokens": 110.6,
+      "replay_calls": 1
+    },
+    {
+      "policy": "python_only",
+      "task_id": "refund_constraint",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "unrepresented_column:refunded",
+        "exclusion"
+      ],
+      "answer": "16",
+      "correct": true,
+      "replay_effective_tokens": 100.3,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "regional_units",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "20",
+      "correct": true,
+      "replay_effective_tokens": 66.7,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "proceeds",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "6.8",
+      "correct": true,
+      "replay_effective_tokens": 65.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "record_count",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "3",
+      "correct": true,
+      "replay_effective_tokens": 52.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "average",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "10",
+      "correct": true,
+      "replay_effective_tokens": 66.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "largest",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "14",
+      "correct": true,
+      "replay_effective_tokens": 64.7,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_only",
+      "task_id": "refund_constraint",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [
+        "unrepresented_column:refunded",
+        "exclusion"
+      ],
+      "answer": "30",
+      "correct": false,
+      "replay_effective_tokens": 65.4,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "regional_units",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "20",
+      "correct": true,
+      "replay_effective_tokens": 66.7,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "proceeds",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "6.8",
+      "correct": true,
+      "replay_effective_tokens": 65.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "record_count",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "3",
+      "correct": true,
+      "replay_effective_tokens": 52.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "average",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "10",
+      "correct": true,
+      "replay_effective_tokens": 66.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "largest",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "14",
+      "correct": true,
+      "replay_effective_tokens": 64.7,
+      "replay_calls": 1
+    },
+    {
+      "policy": "json_then_python_on_failure",
+      "task_id": "refund_constraint",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [
+        "unrepresented_column:refunded",
+        "exclusion"
+      ],
+      "answer": "30",
+      "correct": false,
+      "replay_effective_tokens": 65.4,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "regional_units",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "20",
+      "correct": true,
+      "replay_effective_tokens": 66.7,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "proceeds",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "6.8",
+      "correct": true,
+      "replay_effective_tokens": 65.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "record_count",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "3",
+      "correct": true,
+      "replay_effective_tokens": 52.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "average",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "10",
+      "correct": true,
+      "replay_effective_tokens": 66.9,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "largest",
+      "selected_arms": [
+        "json"
+      ],
+      "risk_signals": [],
+      "answer": "14",
+      "correct": true,
+      "replay_effective_tokens": 64.7,
+      "replay_calls": 1
+    },
+    {
+      "policy": "risk_gate_then_cascade",
+      "task_id": "refund_constraint",
+      "selected_arms": [
+        "python"
+      ],
+      "risk_signals": [
+        "unrepresented_column:refunded",
+        "exclusion"
+      ],
+      "answer": "16",
+      "correct": true,
+      "replay_effective_tokens": 100.3,
+      "replay_calls": 1
+    }
+  ],
+  "gate_sha256": "8f1253a0870fe27a744944b1decaca591f4d1e43ff74953e6e0e1d5fdcf073e5"
+}

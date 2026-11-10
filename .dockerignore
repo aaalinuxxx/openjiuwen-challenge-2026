@@ -3,8 +3,14 @@
 __pycache__
 *.pyc
 .venv
+.venv-sdk
+experiments
+tests
+trajectories
 venv
 .env
+.env.*
+neuraldeep.txt
 logs
 data
 scripts/generate_dataset.py

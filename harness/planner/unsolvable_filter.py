@@ -17,7 +17,9 @@ def check_unsolvable_zero_token(instruction: str, features: TaskFeatures) -> Tup
         return True, f"Отсутствуют необходимые данные/сущности в {features.task_type}"
 
     if features.conflicting_tests_detected:
-        return True, "Обнаружены взаимоисключающие assertEqual в тестах"
+        # Textually identical expressions can observe different state/fixtures.
+        # Preserve this feature as a warning, not proof of impossibility.
+        return False, "UNKNOWN: возможный конфликт тестов требует проверки состояния"
 
     if features.task_type == "math":
         if re.search(r"split equally into 0\b|divide by 0\b", instruction, re.IGNORECASE):

@@ -1,0 +1,247 @@
+{
+  "mode": "FIXTURE_CHECK_ONLY",
+  "model": "qwen3.8-27b-noreason",
+  "output_cap": 200,
+  "scope": "six synthetic dev tasks; direct fallback comparison; not a holdout or full harness",
+  "suite": "constraints",
+  "metric": "exact numeric value; UNKNOWN is not a solution",
+  "local_budget": 3000,
+  "requests": [],
+  "rows": [
+    {
+      "task_id": "total_control",
+      "arm": "json",
+      "order_in_pair": 0,
+      "json_supported": true,
+      "correct": true,
+      "response": "{\"operation\": \"sum\", \"product\": \"widget\", \"first_month\": 2, \"last_month\": 3, \"region\": null}",
+      "status": "SOLVED",
+      "answer": "28",
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "total_control",
+      "arm": "python",
+      "order_in_pair": 1,
+      "json_supported": true,
+      "correct": true,
+      "response": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3')]\nprint(sum(values))",
+      "status": "SOLVED",
+      "answer": "28",
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "count_control",
+      "arm": "python",
+      "order_in_pair": 0,
+      "json_supported": true,
+      "correct": true,
+      "response": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3')]\nprint(len(values))",
+      "status": "SOLVED",
+      "answer": "3",
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "count_control",
+      "arm": "json",
+      "order_in_pair": 1,
+      "json_supported": true,
+      "correct": true,
+      "response": "{\"operation\": \"count\", \"product\": \"widget\", \"first_month\": 2, \"last_month\": 3, \"region\": null}",
+      "status": "SOLVED",
+      "answer": "3",
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "refund_alias",
+      "arm": "json",
+      "order_in_pair": 0,
+      "json_supported": false,
+      "correct": false,
+      "response": "UNSUPPORTED",
+      "status": "UNKNOWN",
+      "answer": null,
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "refund_alias",
+      "arm": "python",
+      "order_in_pair": 1,
+      "json_supported": false,
+      "correct": true,
+      "response": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3') and r['refunded']=='no']\nprint(sum(values))",
+      "status": "SOLVED",
+      "answer": "12",
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "price_threshold",
+      "arm": "python",
+      "order_in_pair": 0,
+      "json_supported": false,
+      "correct": true,
+      "response": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3') and Decimal(r['price'])>=Decimal('0.20')]\nprint(sum(values))",
+      "status": "SOLVED",
+      "answer": "12",
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "price_threshold",
+      "arm": "json",
+      "order_in_pair": 1,
+      "json_supported": false,
+      "correct": false,
+      "response": "UNSUPPORTED",
+      "status": "UNKNOWN",
+      "answer": null,
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "median_units",
+      "arm": "json",
+      "order_in_pair": 0,
+      "json_supported": false,
+      "correct": false,
+      "response": "UNSUPPORTED",
+      "status": "UNKNOWN",
+      "answer": null,
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "median_units",
+      "arm": "python",
+      "order_in_pair": 1,
+      "json_supported": false,
+      "correct": true,
+      "response": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3')]\nprint(median(values))",
+      "status": "SOLVED",
+      "answer": "8",
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "separated_months",
+      "arm": "python",
+      "order_in_pair": 0,
+      "json_supported": false,
+      "correct": true,
+      "response": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','4')]\nprint(sum(values))",
+      "status": "SOLVED",
+      "answer": "34",
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "separated_months",
+      "arm": "json",
+      "order_in_pair": 1,
+      "json_supported": false,
+      "correct": false,
+      "response": "UNSUPPORTED",
+      "status": "UNKNOWN",
+      "answer": null,
+      "fixture_pass": true,
+      "effective_cost": 0.0
+    }
+  ],
+  "effective_tokens": 0,
+  "has_unaccounted_request": false,
+  "dataset_sha256": "ce5787e5168d3b19aa4ce66eaa0c81b22e131846d967ee1007c5aa97eab6901a",
+  "source_hashes": {
+    "harness\\config.py": "8a16b472e0f86af6e7d7ed74bfe27a87e95cb8a072b409af2d7726b298aa7edf",
+    "harness\\__init__.py": "fe5768bfeef5b47f9598df506c72b7c7e5173100e0bee18eda875c3164cdd6d8",
+    "harness\\agents\\base_harness.py": "36f3bc930f6daf7304927b443c158f461fca458e3589c9fbaf0467254693036f",
+    "harness\\agents\\calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+    "harness\\agents\\coding_solver.py": "1d836485d738d1aebe99db65b3d12e9c0c0c3b329a07e791f9ab913eb4df4d92",
+    "harness\\agents\\data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness\\agents\\fallback_react.py": "2a6b14bfac2e7fc662363db07465ec593d3919a8371f670720482e54a6231115",
+    "harness\\agents\\instruction_scope.py": "d940d2a77bd6bf0aef96e850b0c784899cacb9964c76cedef8042825482f9986",
+    "harness\\agents\\math_solver.py": "a3a9cf2ecedd6a8206be386b0b6ccc7d202772f151594a9a7ddbbe6cfada30a7",
+    "harness\\agents\\model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness\\agents\\plan_scope.py": "8f1253a0870fe27a744944b1decaca591f4d1e43ff74953e6e0e1d5fdcf073e5",
+    "harness\\agents\\search_solver.py": "0c2ee91537b62a1d9b535022a4102d4433c59466292721bfe02c5cdcff0b3db3",
+    "harness\\agents\\__init__.py": "42324fbbf33a052cc6267cfd9b3eb05b611bdd44c1c7cbddd6237085d6fb1fb1",
+    "harness\\planner\\budget_tracker.py": "5a736af11d876b40af670236d8efc79f4ad4be3b0f10399e53dd9bb274bf32bd",
+    "harness\\planner\\feature_extractor.py": "7d732941aa146a5bcc58f436dbef8c3411c569f8c3e0cd178e76e0b989f418a1",
+    "harness\\planner\\scheduler.py": "e8ebfe1e572730b46f35ca57ea738135c5fd90ae15a6e8f7c06e9b9f802f4820",
+    "harness\\planner\\token_estimator.py": "7195ad8b8d1003d1e86a912e228ce30f2819b2bc99e4ba59e4d55b499b23b4ab",
+    "harness\\planner\\unsolvable_filter.py": "d1a924ed268bd301f4a16f00baf7b6a9d0d9cb0c0bbc0ec0d1bcefccb585315a",
+    "harness\\planner\\__init__.py": "4d01f39c19f74266c5ea845cfddf01fc1f0158ebb8efe8dcc967784c92a42ce2",
+    "harness\\sandbox\\executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "harness\\sandbox\\file_guard.py": "ad6f2ecc823db803222bc335b146abbec7f40a90b76b901a49cd30d994d065de",
+    "harness\\sandbox\\__init__.py": "8c7432a63595673c1c625724162ffa77a637387775ecfb86f7708bfdf08840db",
+    "scripts\\plan_api_benchmark.py": "633768cf1289aac9178165ecdfa9aaef3c5031b0299fed53233b6e2b322d8c55",
+    "scripts\\sample_api_benchmark.py": "124a030e0f174e9dcf576a0568b6309baac7fb4fe84a5f373b95d3e3c6cd4e2c",
+    "scripts\\plan_constraint_cases.py": "ee6962328a95ac4a3af61a7f52c81ef214178946d9e865325243786c633a02f1"
+  },
+  "cases": [
+    {
+      "id": "total_control",
+      "question": "Give total units for widget over months 2 and 3, combining all regions.",
+      "expected": "28",
+      "json_supported": true,
+      "fixture_json": "{\"operation\": \"sum\", \"product\": \"widget\", \"first_month\": 2, \"last_month\": 3, \"region\": null}",
+      "fixture_python": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3')]\nprint(sum(values))"
+    },
+    {
+      "id": "count_control",
+      "question": "How many widget records are dated February or March, across all regions? Count rows, not units.",
+      "expected": "3",
+      "json_supported": true,
+      "fixture_json": "{\"operation\": \"count\", \"product\": \"widget\", \"first_month\": 2, \"last_month\": 3, \"region\": null}",
+      "fixture_python": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3')]\nprint(len(values))"
+    },
+    {
+      "id": "refund_alias",
+      "question": "Total the units for widget rows in months 2 and 3 whose refunded value is no.",
+      "expected": "12",
+      "json_supported": false,
+      "fixture_json": "UNSUPPORTED",
+      "fixture_python": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3') and r['refunded']=='no']\nprint(sum(values))"
+    },
+    {
+      "id": "price_threshold",
+      "question": "Sum units for widget in months 2 and 3, keeping only rows with price at least 0.20.",
+      "expected": "12",
+      "json_supported": false,
+      "fixture_json": "UNSUPPORTED",
+      "fixture_python": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3') and Decimal(r['price'])>=Decimal('0.20')]\nprint(sum(values))"
+    },
+    {
+      "id": "median_units",
+      "question": "What is the median units value for widget rows in months 2 and 3 across all regions?",
+      "expected": "8",
+      "json_supported": false,
+      "fixture_json": "UNSUPPORTED",
+      "fixture_python": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','3')]\nprint(median(values))"
+    },
+    {
+      "id": "separated_months",
+      "question": "Add widget units in months 2 and 4 only, across all regions.",
+      "expected": "34",
+      "json_supported": false,
+      "fixture_json": "UNSUPPORTED",
+      "fixture_python": "import csv\nfrom decimal import Decimal\nfrom statistics import median\nwith open('data.csv', newline='') as f:\n    values=[int(r['units']) for r in csv.DictReader(f) if r['product']=='widget' and r['month'] in ('2','4')]\nprint(sum(values))"
+    }
+  ],
+  "systems": {
+    "json": "Translate the task into ONLY a JSON object with operation (sum/revenue/count/mean/max), product (string), first_month and last_month (integers 1..12 inclusive), region (string or null). sum/mean/max aggregate units; revenue sums units*price; count counts rows. No other fields or operations exist. If ANY requested condition cannot be represented, output ONLY UNSUPPORTED. Do not omit constraints. No markdown or computed answers.",
+    "python": "Write ONLY raw executable Python 3 code (no markdown fences, no explanations) that reads data.csv in the current directory and prints ONLY the final numeric answer to stdout. Use Python standard library only, exact decimal arithmetic where needed. Do not modify files."
+  },
+  "table": "product,region,month,units,price,refunded\nwidget,north,2,4,0.25,no\nwidget,south,3,16,0.10,yes\ngadget,north,1,100,0.15,no\nwidget,north,3,8,0.50,no\nwidget,north,4,30,0.40,no\n",
+  "summary": {
+    "fixture_checks": 12,
+    "fixture_passes": 12,
+    "api_calls": 0,
+    "model_quality_measured": false
+  }
+}

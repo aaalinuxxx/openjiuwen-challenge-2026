@@ -1,0 +1,1550 @@
+{
+  "label": "E07_calculation_before",
+  "scope": "synthetic dev; no LLM comparison",
+  "summary": {
+    "total": 170,
+    "solvable": 110,
+    "solved_correct": 40,
+    "wrong_answers": 10,
+    "correct_behavior": 80,
+    "errors": 10,
+    "api_calls": 0
+  },
+  "rows": [
+    {
+      "task_id": "math_known_0",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "1208",
+      "expected_answer": "1208",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_0",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1231",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_0",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1197",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_0",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "1214",
+      "expected_answer": "1214",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_0",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "1208",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_0",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_0",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "32",
+      "expected_answer": "32",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_0",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "10",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_0",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "5.4",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_0",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_0",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "16",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_0",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "22",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_0",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_0",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_0",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_0",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_0",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_known_1",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "530",
+      "expected_answer": "530",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_1",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "581",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_1",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "497",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_1",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "358",
+      "expected_answer": "358",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_1",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "530",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_1",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_1",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "18",
+      "expected_answer": "18",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_1",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "16",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_1",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_1",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_1",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "9",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_1",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "16",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_1",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_1",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_1",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_1",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_1",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_known_2",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "1189",
+      "expected_answer": "1189",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1215",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1181",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_2",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "798",
+      "expected_answer": "798",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_2",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "1189",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_2",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_2",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "34",
+      "expected_answer": "34",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "30",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "3.8",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "17",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_2",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "30",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_2",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_2",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_2",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_2",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_2",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_known_3",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "1389",
+      "expected_answer": "1389",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1443",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1365",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_3",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "560",
+      "expected_answer": "560",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_3",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "1389",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_3",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_3",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "58",
+      "expected_answer": "58",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "20",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "9.6",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "29",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_3",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "38",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_3",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_3",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_3",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_3",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_3",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_known_4",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "1128",
+      "expected_answer": "1128",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1149",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1119",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_4",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "1134",
+      "expected_answer": "1134",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_4",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "1128",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_4",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_4",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "44",
+      "expected_answer": "44",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "28",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "6",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "22",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_4",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "28",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_4",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_4",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_4",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_4",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_4",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_known_5",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "588",
+      "expected_answer": "588",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_5",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "616",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_5",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "590",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_5",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "240",
+      "expected_answer": "240",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_5",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "588",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_5",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_5",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "40",
+      "expected_answer": "40",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_5",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "4",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_5",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "7.6",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_5",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_5",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "20",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_5",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "36",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_5",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_5",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_5",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_5",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_5",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_known_6",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "1121",
+      "expected_answer": "1121",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_6",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1162",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_6",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1104",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_6",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "566",
+      "expected_answer": "566",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_6",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "1121",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_6",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_6",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "22",
+      "expected_answer": "22",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_6",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "6",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_6",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "3.8",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_6",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_6",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "11",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_6",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "16",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_6",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_6",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_6",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_6",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_6",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_known_7",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "1194",
+      "expected_answer": "1194",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_7",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1219",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_7",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "1181",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_7",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "1200",
+      "expected_answer": "1200",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_7",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "1194",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_7",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_7",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "24",
+      "expected_answer": "24",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_7",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "22",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_7",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2.6",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_7",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_7",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "12",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_7",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "22",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_7",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_7",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_7",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_7",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_7",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_known_8",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "730",
+      "expected_answer": "730",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_8",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "766",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_8",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "712",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_8",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "492",
+      "expected_answer": "492",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_8",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "730",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_8",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_8",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "76",
+      "expected_answer": "76",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_8",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "36",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_8",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "11.6",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_8",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_8",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "38",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_8",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "40",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_8",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_8",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_8",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_8",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_8",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_known_9",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "653",
+      "expected_answer": "653",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_add_9",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "701",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_sub_9",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "629",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_round_9",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "332",
+      "expected_answer": "332",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "math_partial_9",
+      "expected_status": "UNKNOWN",
+      "status": "SOLVED",
+      "answer": "653",
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": true
+    },
+    {
+      "task_id": "math_zero_9",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_sum_9",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "80",
+      "expected_answer": "80",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_region_9",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "40",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_revenue_9",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "12",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_count_9",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "2",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_mean_9",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "40",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_max_9",
+      "expected_status": "SOLVED",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": "40",
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_sum_9",
+      "expected_status": "SOLVED",
+      "status": "SOLVED",
+      "answer": "0",
+      "expected_answer": "0",
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_empty_mean_9",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_missing_column_9",
+      "expected_status": "UNSOLVABLE",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_invalid_number_9",
+      "expected_status": "UNKNOWN",
+      "status": "ERROR_ValueError",
+      "answer": null,
+      "expected_answer": null,
+      "correct": false,
+      "wrong_answer": false
+    },
+    {
+      "task_id": "csv_qualifier_9",
+      "expected_status": "UNKNOWN",
+      "status": "NEEDS_API",
+      "answer": null,
+      "expected_answer": null,
+      "correct": true,
+      "wrong_answer": false
+    }
+  ],
+  "dataset_sha256": "6dfd314c955151dd332a4ba969ee51c3acbfa5c42c5795986eaa795b07868fbb",
+  "source_hashes": {
+    "data_solver.py": "fa455c2e68359745d4f6a041d559a56731c5449fece9699cc5a9cb5d6efd72df",
+    "math_solver.py": "6b0d6f53d9a25af22301542b9f9119cb5fb61e1f2eb64c3c6e67520d840e4f30"
+  }
+}

@@ -6,6 +6,8 @@ from pathlib import Path
 from harness.config import TaskContext, SolveResult
 from harness.agents.model_router import select_primary_model
 from harness.sandbox.executor import run_python_snippet
+from harness.agents.calculation_plans import parse_sales_plan, execute_sales_plan
+from harness.agents.instruction_scope import sales_source_name
 
 
 def _try_fast_sales_pattern(csv_path: Path, instruction: str) -> str | None:
@@ -14,26 +16,10 @@ def _try_fast_sales_pattern(csv_path: Path, instruction: str) -> str | None:
     "How many units of product 'widget' were sold in months 5 through 6 inclusive?"
     за 0 токенов напрямую на Python.
     """
-    m = re.search(
-        r"How many units of product '([^']+)' were sold in months (\d+) through (\d+) inclusive\?",
-        instruction,
-    )
-    if not m:
-        return None
-    target_product = m.group(1)
-    m_start, m_end = int(m.group(2)), int(m.group(3))
-
-    total = 0
-    with csv_path.open("r", encoding="utf-8", errors="replace") as f:
-        reader = csv.DictReader(f)
-        if not reader.fieldnames or not {"product", "month", "units"}.issubset(set(reader.fieldnames)):
-            return "UNSOLVABLE"
-        for row in reader:
-            if row.get("product") == target_product:
-                month_val = int(row["month"])
-                if m_start <= month_val <= m_end:
-                    total += int(row["units"])
-    return str(total)
+    plan = parse_sales_plan(instruction)
+    if plan is None: return None
+    status, answer = execute_sales_plan(csv_path, plan)
+    return answer if status == 'SOLVED' else status
 
 
 async def solve_data_task(ctx: TaskContext, bridge) -> SolveResult:
@@ -41,10 +27,23 @@ async def solve_data_task(ctx: TaskContext, bridge) -> SolveResult:
     if not csv_files:
         return SolveResult(task_id=ctx.task_id, status="UNSOLVABLE", notes="Нет CSV файла")
 
-    csv_file = csv_files[0]
+    source_name = sales_source_name(ctx.instruction)
+    if source_name is not None:
+        matches = [p for p in csv_files if p.name.casefold() == source_name.casefold()]
+        if not matches:
+            return SolveResult(task_id=ctx.task_id, status="UNSOLVABLE", notes="Named CSV is missing")
+        if len(matches) != 1:
+            return SolveResult(task_id=ctx.task_id, status="UNKNOWN", notes="Ambiguous named CSV")
+        csv_file = matches[0]
+    elif len(csv_files) == 1:
+        csv_file = csv_files[0]
+    else:
+        return SolveResult(task_id=ctx.task_id, status="UNKNOWN", notes="Multiple CSV files without a recognized input selection")
     fast = _try_fast_sales_pattern(csv_file, ctx.instruction)
     if fast == "UNSOLVABLE":
         return SolveResult(task_id=ctx.task_id, status="UNSOLVABLE", notes="Нет нужных колонок в CSV")
+    if fast == "UNKNOWN":
+        return SolveResult(task_id=ctx.task_id, status="UNKNOWN", notes="Неоднозначные данные или правило округления")
     if fast is not None:
         return SolveResult(
             task_id=ctx.task_id,

@@ -3,22 +3,20 @@
 import os
 import sys
 
-# Важно: перенаправляем HOME и рабочие логи в /tmp ДО импорта openJiuwen,
-# так как контейнер запускается с флагом --read-only.
-os.environ.setdefault("HOME", "/tmp")
-os.makedirs("/tmp/openjiuwen_logs", exist_ok=True)
-
 import argparse
 import asyncio
 import logging
+import math
+import tempfile
+from datetime import datetime, timezone
 from pathlib import Path
 
 from harness.config import HarnessConfig
-from harness.planner.scheduler import TaskScheduler
 
 
 def setup_logging() -> None:
-    log_file = Path("/tmp/openjiuwen_logs/harness.log")
+    log_file = Path(tempfile.gettempdir()) / "openjiuwen_logs" / "harness.log"
+    log_file.parent.mkdir(parents=True, exist_ok=True)
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
@@ -29,7 +27,7 @@ def setup_logging() -> None:
     )
 
 
-def parse_args() -> argparse.Namespace:
+def parse_args(argv=None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="openJiuwen Budget-Aware Agent Harness")
     parser.add_argument(
         "--tasks-dir",
@@ -52,16 +50,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--budget",
         type=float,
-        default=float(os.environ.get("TOKEN_BUDGET", "1e9")),
+        default=os.environ.get("BUDGET", os.environ.get("TOKEN_BUDGET", "100000")),
         help="Опциональный известный потолок бюджета в выходных токенах",
     )
-    args, _ = parser.parse_known_args()
+    args, _ = parser.parse_known_args(argv)
+    if not math.isfinite(args.budget) or args.budget < 0:
+        parser.error("budget must be finite and non-negative")
     return args
 
 
 async def async_main() -> int:
     setup_logging()
     args = parse_args()
+    from harness.planner.scheduler import TaskScheduler
     logger = logging.getLogger("run_agent")
 
     tasks_dir = Path(args.tasks_dir).resolve()
@@ -76,10 +77,19 @@ async def async_main() -> int:
         llm_api_key=os.environ.get("LLM_API_KEY", "dummy-key"),
         max_concurrency=min(max(args.max_concurrency, 1), 5),
         initial_budget_tokens=args.budget,
+        budget_audit_path=Path(tempfile.gettempdir()) / "openjiuwen_logs" /
+            ("budget_"+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%f')+".json"),
     )
 
-    scheduler = TaskScheduler(config=config)
+    from harness.workflow_runner import SDKUnavailable
+    try:
+        scheduler = TaskScheduler(config=config)
+    except SDKUnavailable as exc:
+        logger.error("SDK initialization: %s", exc)
+        return 2
     summary = await scheduler.run_all()
+    logger.info("Budget audit: %s; unaccounted request: %s", summary["budget_audit_path"],
+                summary["budget_state"]["has_unaccounted_request"])
     logger.info(
         "Завершено. Решено задач: %d/%d | Набрано баллов (оценка): %d | Потрачено приведённых токенов: %.1f",
         summary["solved_count"],

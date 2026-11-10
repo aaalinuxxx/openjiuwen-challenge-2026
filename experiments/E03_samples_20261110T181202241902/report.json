@@ -1,0 +1,120 @@
+{
+  "scope": "public samples; direct solvers; no scheduler or openJiuwen integration",
+  "local_budget": 3000.0,
+  "requests": [
+    {
+      "task_id": "coding_0003",
+      "model": "qwen3.8-27b-noreason",
+      "output_cap": 600,
+      "reserved_effective_tokens": 948.0,
+      "status": "ACCOUNTED",
+      "prompt_tokens": 684,
+      "completion_tokens": 135,
+      "reasoning_tokens": 0,
+      "effective_cost": 203.4,
+      "elapsed_sec": 4.051
+    },
+    {
+      "task_id": "coding_0007",
+      "model": "qwen3.8-27b-noreason",
+      "output_cap": 600,
+      "reserved_effective_tokens": 918.9,
+      "status": "ACCOUNTED",
+      "prompt_tokens": 578,
+      "completion_tokens": 105,
+      "reasoning_tokens": 0,
+      "effective_cost": 162.8,
+      "elapsed_sec": 2.482
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "data_analysis_0002",
+      "reward": 3,
+      "correct": true,
+      "status": "SOLVED",
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "data_analysis_0006",
+      "reward": 3,
+      "correct": true,
+      "status": "SOLVED",
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "math_0000",
+      "reward": 5,
+      "correct": true,
+      "status": "SOLVED",
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "math_0004",
+      "reward": 2,
+      "correct": true,
+      "status": "SOLVED",
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "search_0001",
+      "reward": 1,
+      "correct": true,
+      "status": "SOLVED",
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "search_0005",
+      "reward": 2,
+      "correct": true,
+      "status": "SOLVED",
+      "effective_cost": 0.0
+    },
+    {
+      "task_id": "coding_0003",
+      "reward": 2,
+      "correct": true,
+      "status": "SOLVED",
+      "effective_cost": 203.4
+    },
+    {
+      "task_id": "coding_0007",
+      "reward": 2,
+      "correct": true,
+      "status": "SOLVED",
+      "effective_cost": 162.8
+    }
+  ],
+  "effective_tokens": 366.20000000000005,
+  "has_unaccounted_request": false,
+  "source_hashes": {
+    "harness\\config.py": "8a16b472e0f86af6e7d7ed74bfe27a87e95cb8a072b409af2d7726b298aa7edf",
+    "harness\\__init__.py": "fe5768bfeef5b47f9598df506c72b7c7e5173100e0bee18eda875c3164cdd6d8",
+    "harness\\agents\\base_harness.py": "36f3bc930f6daf7304927b443c158f461fca458e3589c9fbaf0467254693036f",
+    "harness\\agents\\coding_solver.py": "fc8dad211004a49b4a7b7d3e5838e43150947d8abbfd556ffdcfc2dcd1ec7fa7",
+    "harness\\agents\\data_solver.py": "fa455c2e68359745d4f6a041d559a56731c5449fece9699cc5a9cb5d6efd72df",
+    "harness\\agents\\fallback_react.py": "2a6b14bfac2e7fc662363db07465ec593d3919a8371f670720482e54a6231115",
+    "harness\\agents\\math_solver.py": "6b0d6f53d9a25af22301542b9f9119cb5fb61e1f2eb64c3c6e67520d840e4f30",
+    "harness\\agents\\model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness\\agents\\search_solver.py": "3945aad39a141773db89149a556679f9e8821910e552f56afa671672bc4371b2",
+    "harness\\agents\\__init__.py": "42324fbbf33a052cc6267cfd9b3eb05b611bdd44c1c7cbddd6237085d6fb1fb1",
+    "harness\\planner\\budget_tracker.py": "5a736af11d876b40af670236d8efc79f4ad4be3b0f10399e53dd9bb274bf32bd",
+    "harness\\planner\\feature_extractor.py": "7d732941aa146a5bcc58f436dbef8c3411c569f8c3e0cd178e76e0b989f418a1",
+    "harness\\planner\\scheduler.py": "e8ebfe1e572730b46f35ca57ea738135c5fd90ae15a6e8f7c06e9b9f802f4820",
+    "harness\\planner\\token_estimator.py": "7195ad8b8d1003d1e86a912e228ce30f2819b2bc99e4ba59e4d55b499b23b4ab",
+    "harness\\planner\\unsolvable_filter.py": "d1a924ed268bd301f4a16f00baf7b6a9d0d9cb0c0bbc0ec0d1bcefccb585315a",
+    "harness\\planner\\__init__.py": "4d01f39c19f74266c5ea845cfddf01fc1f0158ebb8efe8dcc967784c92a42ce2",
+    "harness\\sandbox\\executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "harness\\sandbox\\file_guard.py": "ad6f2ecc823db803222bc335b146abbec7f40a90b76b901a49cd30d994d065de",
+    "harness\\sandbox\\__init__.py": "8c7432a63595673c1c625724162ffa77a637387775ecfb86f7708bfdf08840db"
+  },
+  "summary": {
+    "correct": 8,
+    "total": 8,
+    "score": 20,
+    "max_score": 20,
+    "effective_tokens": 366.2,
+    "calls": 2,
+    "has_unaccounted_request": false
+  }
+}

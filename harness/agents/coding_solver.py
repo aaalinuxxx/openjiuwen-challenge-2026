@@ -2,6 +2,8 @@
 import re
 import shutil
 import subprocess
+import sys
+import tempfile
 from pathlib import Path
 from typing import Tuple
 
@@ -12,7 +14,7 @@ from harness.agents.model_router import select_primary_model, select_fallback_mo
 def _run_tests(workdir: Path, test_filename: str) -> Tuple[bool, str]:
     try:
         proc = subprocess.run(
-            ["python3", test_filename],
+            [sys.executable, "-B", test_filename],
             cwd=str(workdir),
             capture_output=True,
             text=True,
@@ -24,6 +26,22 @@ def _run_tests(workdir: Path, test_filename: str) -> Tuple[bool, str]:
         return False, "TimeoutExpired"
 
 
+def _run_all_tests(workdir: Path, test_sources):
+    outputs = []
+    all_passed = True
+    for filename, source in test_sources.items():
+        path = workdir / filename
+        if not path.exists() or path.read_bytes() != source:
+            return False, f"Test modification detected: {filename}"
+        passed, output = _run_tests(workdir, filename)
+        all_passed = all_passed and passed
+        outputs.append(f"### {filename}\n{output}")
+    if any(not (workdir / name).exists() or (workdir / name).read_bytes() != source
+           for name, source in test_sources.items()):
+        return False, "Test modification detected during execution"
+    return all_passed, "\n".join(outputs)
+
+
 async def solve_coding_task(ctx: TaskContext, bridge) -> SolveResult:
     test_files = sorted(ctx.workspace_dir.glob("test_*.py"))
     code_files = [
@@ -33,21 +51,26 @@ async def solve_coding_task(ctx: TaskContext, bridge) -> SolveResult:
     if not test_files or not code_files:
         return SolveResult(task_id=ctx.task_id, status="UNSOLVABLE", notes="Missing code or test file")
 
-    test_file = test_files[0]
     target_file = code_files[0]
 
-    # Работаем во временной песочнице /tmp/harness_work/<task_id>, чтобы не испортить файлы до прохождения тестов
-    sandbox_dir = Path("/tmp/harness_work") / ctx.task_id
-    if sandbox_dir.exists():
-        shutil.rmtree(sandbox_dir)
-    shutil.copytree(ctx.workspace_dir, sandbox_dir)
+    # Unique working copy; cleanup on return, including errors.
+    with tempfile.TemporaryDirectory(prefix="oj-coding-") as temp_dir:
+        sandbox_dir = Path(temp_dir) / "workspace"
+        shutil.copytree(ctx.workspace_dir, sandbox_dir,
+                        ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
+        return await _repair(ctx, bridge, sandbox_dir, test_files, target_file)
 
-    passed, test_out = _run_tests(sandbox_dir, test_file.name)
+
+async def _repair(ctx, bridge, sandbox_dir, test_files, target_file):
+
+    test_sources = {p.name: p.read_bytes() for p in test_files}
+    passed, test_out = _run_all_tests(sandbox_dir, test_sources)
     if passed:
         return SolveResult(task_id=ctx.task_id, status="SOLVED", answer="DONE", notes="Tests already pass")
 
     src_code = target_file.read_text(encoding="utf-8", errors="replace")
-    test_code = test_file.read_text(encoding="utf-8", errors="replace")
+    test_code = '\n\n'.join(f"### {p.name}\n{p.read_text(encoding='utf-8', errors='replace')}"
+                              for p in test_files)
 
     total_in, total_out, total_r = 0, 0, 0
     models_to_try = [select_primary_model(ctx)]
@@ -64,7 +87,7 @@ async def solve_coding_task(ctx: TaskContext, bridge) -> SolveResult:
     for model in models_to_try:
         user_prompt = (
             f"### {target_file.name}\n{src_code}\n\n"
-            f"### {test_file.name}\n{test_code}\n\n"
+            f"{test_code}\n\n"
             f"### Failing Test Output\n{test_out}"
         )
         resp, in_tok, out_tok, r_tok = await bridge.complete(
@@ -87,7 +110,7 @@ async def solve_coding_task(ctx: TaskContext, bridge) -> SolveResult:
         patched_code = re.sub(r"^```(?:python)?|```$", "", resp.strip(), flags=re.MULTILINE).strip()
         (sandbox_dir / target_file.name).write_text(patched_code + "\n", encoding="utf-8")
 
-        passed_now, test_out = _run_tests(sandbox_dir, test_file.name)
+        passed_now, test_out = _run_all_tests(sandbox_dir, test_sources)
         if passed_now:
             # Копируем проверенный патч обратно в рабочий каталог задачи
             target_file.write_text(patched_code + "\n", encoding="utf-8")
@@ -100,6 +123,9 @@ async def solve_coding_task(ctx: TaskContext, bridge) -> SolveResult:
                 reasoning_tokens=total_r,
                 model_used=model,
             )
+
+        # Next traceback was produced by this patch, not the original module.
+        src_code = patched_code
 
     return SolveResult(
         task_id=ctx.task_id,

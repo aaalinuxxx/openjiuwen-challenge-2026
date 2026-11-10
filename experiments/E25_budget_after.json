@@ -1,0 +1,163 @@
+{
+  "label": "E25_budget_after",
+  "scope": "synthetic HTTP; full scheduler/bridge; no real tokens or model quality",
+  "api_calls": 0,
+  "scenario_sha256": "fa3b4b4e2cd27954995cf2a5b4db154877f6495feb75c750f1f318dff46f9861",
+  "rows": [
+    {
+      "case": "parallel",
+      "summary": {
+        "total_tasks": 5,
+        "solved_count": 1,
+        "estimated_score": 1,
+        "effective_tokens_spent": 120.0,
+        "budget_state": {
+          "budget": 300,
+          "known_effective_tokens": 120.0,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "remote_0",
+              "status": "ACCOUNTED",
+              "reserved_units": 2459,
+              "task_limit_units": 3000,
+              "input_token_estimate": 1179,
+              "output_cap": 128,
+              "input_tokens": 0,
+              "output_tokens": 120,
+              "reasoning_tokens": 0,
+              "effective_cost": 120.0
+            }
+          ]
+        },
+        "budget_audit_path": null
+      },
+      "transport_calls": 1,
+      "output_caps": [
+        128
+      ],
+      "local_answer": null
+    },
+    {
+      "case": "free_at_zero",
+      "summary": {
+        "total_tasks": 2,
+        "solved_count": 1,
+        "estimated_score": 1,
+        "effective_tokens_spent": 0.0,
+        "budget_state": {
+          "budget": 0,
+          "known_effective_tokens": 0.0,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": []
+        },
+        "budget_audit_path": null
+      },
+      "transport_calls": 0,
+      "output_caps": [],
+      "local_answer": "12"
+    },
+    {
+      "case": "bad_content",
+      "summary": {
+        "total_tasks": 1,
+        "solved_count": 0,
+        "estimated_score": 0,
+        "effective_tokens_spent": 12.0,
+        "budget_state": {
+          "budget": 1000,
+          "known_effective_tokens": 12.0,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "remote_0",
+              "status": "ACCOUNTED",
+              "reserved_units": 2459,
+              "task_limit_units": 6300,
+              "input_token_estimate": 1179,
+              "output_cap": 128,
+              "input_tokens": 20,
+              "output_tokens": 10,
+              "reasoning_tokens": 0,
+              "effective_cost": 12.0
+            }
+          ]
+        },
+        "budget_audit_path": null
+      },
+      "transport_calls": 1,
+      "output_caps": [
+        128
+      ],
+      "local_answer": null
+    },
+    {
+      "case": "unknown_cost",
+      "summary": {
+        "total_tasks": 3,
+        "solved_count": 1,
+        "estimated_score": 1,
+        "effective_tokens_spent": 0.0,
+        "budget_state": {
+          "budget": 1000,
+          "known_effective_tokens": 0.0,
+          "reserved_effective_tokens": 245.9,
+          "has_unaccounted_request": true,
+          "remote_stopped": true,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "remote_0",
+              "status": "COST_UNKNOWN_STOPPED",
+              "reserved_units": 2459,
+              "task_limit_units": 6300,
+              "input_token_estimate": 1179,
+              "output_cap": 128,
+              "error_type": "OSError"
+            }
+          ]
+        },
+        "budget_audit_path": null
+      },
+      "transport_calls": 1,
+      "output_caps": [
+        128
+      ],
+      "local_answer": "12"
+    }
+  ],
+  "source_hashes": {
+    "harness\\config.py": "ccba0de2ee4b701da0259b68845d561b8e96f72ba6cc37a609ff806a84eaef63",
+    "harness\\__init__.py": "fe5768bfeef5b47f9598df506c72b7c7e5173100e0bee18eda875c3164cdd6d8",
+    "harness\\agents\\base_harness.py": "758355e4fe22f220b3570a6c1db619c8c188cc1c96782ad7bc50c17598c661fc",
+    "harness\\agents\\calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+    "harness\\agents\\coding_solver.py": "1d836485d738d1aebe99db65b3d12e9c0c0c3b329a07e791f9ab913eb4df4d92",
+    "harness\\agents\\data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness\\agents\\extended_plans.py": "ce7b2a159a038d080ad134665f6e3bb4e3600d5ff7e7e7c1344d7c13682161c2",
+    "harness\\agents\\fallback_react.py": "2a6b14bfac2e7fc662363db07465ec593d3919a8371f670720482e54a6231115",
+    "harness\\agents\\instruction_scope.py": "d940d2a77bd6bf0aef96e850b0c784899cacb9964c76cedef8042825482f9986",
+    "harness\\agents\\math_solver.py": "a3a9cf2ecedd6a8206be386b0b6ccc7d202772f151594a9a7ddbbe6cfada30a7",
+    "harness\\agents\\model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness\\agents\\plan_scope.py": "8f1253a0870fe27a744944b1decaca591f4d1e43ff74953e6e0e1d5fdcf073e5",
+    "harness\\agents\\search_solver.py": "0c2ee91537b62a1d9b535022a4102d4433c59466292721bfe02c5cdcff0b3db3",
+    "harness\\agents\\__init__.py": "42324fbbf33a052cc6267cfd9b3eb05b611bdd44c1c7cbddd6237085d6fb1fb1",
+    "harness\\planner\\budget_tracker.py": "4a75d052b6e816950cf3789b9da339a1f9d124ddc08a4828d9b709072be2203f",
+    "harness\\planner\\feature_extractor.py": "7d732941aa146a5bcc58f436dbef8c3411c569f8c3e0cd178e76e0b989f418a1",
+    "harness\\planner\\scheduler.py": "0b7d13e0048d1561d1372de6c6562ef4a1357bca89c2f256b7992e24bbd8e95e",
+    "harness\\planner\\token_estimator.py": "7195ad8b8d1003d1e86a912e228ce30f2819b2bc99e4ba59e4d55b499b23b4ab",
+    "harness\\planner\\unsolvable_filter.py": "d1a924ed268bd301f4a16f00baf7b6a9d0d9cb0c0bbc0ec0d1bcefccb585315a",
+    "harness\\planner\\__init__.py": "4d01f39c19f74266c5ea845cfddf01fc1f0158ebb8efe8dcc967784c92a42ce2",
+    "harness\\sandbox\\executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "harness\\sandbox\\file_guard.py": "ad6f2ecc823db803222bc335b146abbec7f40a90b76b901a49cd30d994d065de",
+    "harness\\sandbox\\__init__.py": "8c7432a63595673c1c625724162ffa77a637387775ecfb86f7708bfdf08840db",
+    "scripts\\budget_harness_benchmark.py": "f680eab82682a3336a41def343dbc0ece689e754bfd93935666f270a13bfd6f9"
+  }
+}

@@ -1,5 +1,6 @@
 """Изолированный запуск однострочников и скриптов Python с жёстким таймаутом."""
 import subprocess
+import sys
 from pathlib import Path
 from typing import Tuple
 
@@ -7,7 +8,7 @@ from typing import Tuple
 def run_python_snippet(code: str, cwd: Path, timeout_sec: int = 8) -> Tuple[bool, str, str]:
     try:
         proc = subprocess.run(
-            ["python3", "-c", code],
+            [sys.executable, "-c", code],
             cwd=str(cwd),
             capture_output=True,
             text=True,

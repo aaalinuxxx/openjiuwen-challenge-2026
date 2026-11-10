@@ -2,9 +2,7 @@ FROM python:3.11.10-slim-bookworm
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PIP_NO_CACHE_DIR=1 \
-    HOME=/tmp \
-    OPENJIUWEN_LOG_DIR=/tmp/logs
+    PIP_NO_CACHE_DIR=1
 
 WORKDIR /app
 

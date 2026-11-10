@@ -2,8 +2,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 .venv/
+.venv-sdk/
 venv/
 .env
+.env.*
+!.env.example
+neuraldeep.txt
 logs/
 *.log
 .pytest_cache/

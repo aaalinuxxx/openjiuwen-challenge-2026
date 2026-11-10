@@ -4,6 +4,7 @@ import csv
 import json
 import re
 import subprocess
+import sys
 from pathlib import Path
 from typing import Dict, Any, Tuple
 
@@ -40,7 +41,7 @@ def inspect_coding_tests(workspace_dir: Path) -> Tuple[int, int, bool, bool]:
 
     try:
         proc = subprocess.run(
-            ["python3", test_file.name],
+            [sys.executable, test_file.name],
             cwd=str(workspace_dir),
             capture_output=True,
             text=True,
@@ -56,7 +57,8 @@ def inspect_coding_tests(workspace_dir: Path) -> Tuple[int, int, bool, bool]:
             failed = 1
         return total, failed, has_syntax_error, conflicting_asserts
     except subprocess.TimeoutExpired:
-        return 1, 1, has_syntax_error, True
+        # A timeout can be a repairable loop, not a contradictory specification.
+        return 1, 1, has_syntax_error, conflicting_asserts
     except Exception:
         return 0, 1, has_syntax_error, conflicting_asserts
 
@@ -106,8 +108,8 @@ def extract_task_features(task_dir: Path) -> Tuple[Dict[str, Any], TaskFeatures]
                 with csv_files[0].open("r", encoding="utf-8", errors="replace") as f:
                     reader = list(csv.reader(f))
                     csv_rows = max(0, len(reader) - 1)
-                    if csv_rows == 0:
-                        missing_entity_or_column = True
+                    # A header-only table is valid for sum/count (answer may be 0).
+                    # Required schema is checked by the domain solver.
             except Exception:
                 missing_entity_or_column = True
 
@@ -122,11 +124,8 @@ def extract_task_features(task_dir: Path) -> Tuple[Dict[str, Any], TaskFeatures]
                 missing_entity_or_column = True
             else:
                 kb_corpus = "\n".join(p.read_text(encoding="utf-8", errors="replace") for p in md_files)
-                # Ищем имена собственные вида "Irina Smith" или "Sergei Garcia" в вопросе
-                proper_names = re.findall(r"\b([A-Z][a-z]+\s+[A-Z][a-z]+)\b", instruction)
-                for name in proper_names:
-                    if name not in kb_corpus:
-                        missing_entity_or_column = True
+                # Capitalization alone does not identify a requested entity.
+                # Resolve entities and required links in the search solver.
 
     elif task_type == "coding":
         initial_tests_total, initial_tests_failed, has_syntax_error, conflicting_tests = inspect_coding_tests(workspace_dir)

@@ -18,9 +18,12 @@ class HarnessConfig:
     llm_base_url: str
     llm_api_key: str
     max_concurrency: int = 5
-    initial_budget_tokens: float = 1e9
+    initial_budget_tokens: float = 100000.0
     tmp_root: Path = Path("/tmp/harness_work")
     reward_threshold_for_reasoning: int = 4
+    reasoning_usage_mode: str = "unverified"
+    budget_audit_path: Optional[Path] = None
+    execution_engine: str = "openjiuwen"
 
 
 @dataclass

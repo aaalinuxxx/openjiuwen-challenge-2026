@@ -1,0 +1,71 @@
+{
+  "scope": "real run_agent CLI; actual SDK; cleaned public fixtures; explicit budget 0 overrides env 999/888",
+  "python": "3.11.15 (main, Apr 14 2026, 14:31:26) [MSC v.1944 64 bit (AMD64)]",
+  "returncode": 0,
+  "api_calls": 0,
+  "budget_state": {
+    "budget": 0.0,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": []
+  },
+  "rows": [
+    {
+      "task_id": "coding_0003",
+      "answer": null,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "coding_0007",
+      "answer": null,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "data_analysis_0002",
+      "answer": "158",
+      "correct": true,
+      "reward": 3
+    },
+    {
+      "task_id": "data_analysis_0006",
+      "answer": "284",
+      "correct": true,
+      "reward": 3
+    },
+    {
+      "task_id": "math_0000",
+      "answer": "389",
+      "correct": true,
+      "reward": 5
+    },
+    {
+      "task_id": "math_0004",
+      "answer": "1735",
+      "correct": true,
+      "reward": 2
+    },
+    {
+      "task_id": "search_0001",
+      "answer": "1983",
+      "correct": true,
+      "reward": 1
+    },
+    {
+      "task_id": "search_0005",
+      "answer": "Osaka",
+      "correct": true,
+      "reward": 2
+    }
+  ],
+  "stdout": "2026-11-10 22:48:40,498 [INFO] scheduler: Отобрано выполнимых кандидатов в очередь: 8\n2026-11-10 22:48:41,931 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.schemas\n2026-11-10 22:48:41,932 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.tables\n2026-11-10 22:48:41,932 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.types\n2026-11-10 22:48:41,932 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.constraints\n2026-11-10 22:48:41,932 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.defaults\n2026-11-10 22:48:41,932 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.comments\n2026-11-10 22:48:41,932 [INFO] alembic.runtime.plugins: setup plugin alembic.ext.checkconstraint_byname\n2026-11-10 22:48:42,173 [INFO] scheduler: [SOLVED] math_0000 | type=math | reward=5 | answer='389' | cost=0.0\n2026-11-10 22:48:42,174 [INFO] scheduler: [SOLVED] data_analysis_0002 | type=data_analysis | reward=3 | answer='158' | cost=0.0\n2026-11-10 22:48:42,174 [INFO] scheduler: [SOLVED] data_analysis_0006 | type=data_analysis | reward=3 | answer='284' | cost=0.0\n2026-11-10 22:48:42,174 [INFO] scheduler: [SOLVED] search_0005 | type=search | reward=2 | answer='Osaka' | cost=0.0\n2026-11-10 22:48:42,174 [INFO] scheduler: [SOLVED] math_0004 | type=math | reward=2 | answer='1735' | cost=0.0\n2026-11-10 22:48:42,554 [INFO] scheduler: [SOLVED] search_0001 | type=search | reward=1 | answer='1983' | cost=0.0\n2026-11-10 22:48:42,554 [INFO] scheduler: [BUDGET_EXCEEDED] coding_0007 | type=coding | reward=2 | cost=0.0 | notes=Insufficient global or task reservation\n2026-11-10 22:48:42,554 [INFO] scheduler: [BUDGET_EXCEEDED] coding_0003 | type=coding | reward=2 | cost=0.0 | notes=Insufficient global or task reservation\n2026-11-10 22:48:42,554 [INFO] run_agent: Budget audit: C:\\Users\\PC\\AppData\\Local\\Temp\\openjiuwen_logs\\budget_20261110T194834411209.json; unaccounted request: False\n2026-11-10 22:48:42,554 [INFO] run_agent: Завершено. Решено задач: 6/8 | Набрано баллов (оценка): 16 | Потрачено приведённых токенов: 0.0\n",
+  "stderr": "",
+  "source_hashes": {
+    "scripts\\sdk_cli_benchmark.py": "3956843a267e28708c2241c369665d6bc53a8572440ab57038327a8bf023950c",
+    "run_agent.py": "12d0fa76933dc5b38f56bf1bedd69bf5c48259950bde43b7107720dd281b9fb5",
+    "harness\\workflow_runner.py": "3d0389010c2eadb7dc6425f7eb6326a5b361c7cc462422c2fdc52a057b3c0944"
+  }
+}

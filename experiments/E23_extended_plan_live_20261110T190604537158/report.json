@@ -1,0 +1,166 @@
+{
+  "mode": "V2_LIVE",
+  "scope": "known E22 dev; fresh v2 vs historical v1/Python; not independent holdout",
+  "baseline_report": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E22_plan_pairs_live_20261110T185542127852\\report.json",
+  "baseline_sha256": "a6332d9883a4b592036a16d8dc58671bde2b719879dacc2a6d2a396fbf6e7c4f",
+  "dataset_sha256": "ce5787e5168d3b19aa4ce66eaa0c81b22e131846d967ee1007c5aa97eab6901a",
+  "model": "qwen3.8-27b-noreason",
+  "output_cap": 200,
+  "system": "Translate the task into ONLY a JSON object: operation (sum/revenue/count/mean/max/median), product (string), months (array of distinct integers 1..12; include ONLY requested months), region (string or null; optional), predicates (array; optional). sum/mean/max/median aggregate units; revenue sums units*price; count counts rows. Each predicate is {\"column\":existing CSV column,\"op\":eq/ne/gt/ge/lt/le,\"value\":string}. eq/ne compare exact text; gt/ge/lt/le compare decimal numbers. ALL predicates apply together. Preserve EVERY condition. If any condition is not representable, output ONLY UNSUPPORTED. No markdown or computed answers.",
+  "local_budget": 2000.0,
+  "requests": [
+    {
+      "task_id": "total_control:json_v2",
+      "model": "qwen3.8-27b-noreason",
+      "output_cap": 200,
+      "reserved_effective_tokens": 393.5,
+      "status": "ACCOUNTED",
+      "prompt_tokens": 261,
+      "completion_tokens": 52,
+      "reasoning_tokens": 0,
+      "effective_cost": 78.1,
+      "elapsed_sec": 2.294
+    },
+    {
+      "task_id": "count_control:json_v2",
+      "model": "qwen3.8-27b-noreason",
+      "output_cap": 200,
+      "reserved_effective_tokens": 395.9,
+      "status": "ACCOUNTED",
+      "prompt_tokens": 264,
+      "completion_tokens": 52,
+      "reasoning_tokens": 0,
+      "effective_cost": 78.4,
+      "elapsed_sec": 1.258
+    },
+    {
+      "task_id": "refund_alias:json_v2",
+      "model": "qwen3.8-27b-noreason",
+      "output_cap": 200,
+      "reserved_effective_tokens": 394.1,
+      "status": "ACCOUNTED",
+      "prompt_tokens": 263,
+      "completion_tokens": 86,
+      "reasoning_tokens": 0,
+      "effective_cost": 112.3,
+      "elapsed_sec": 1.419
+    },
+    {
+      "task_id": "price_threshold:json_v2",
+      "model": "qwen3.8-27b-noreason",
+      "output_cap": 200,
+      "reserved_effective_tokens": 394.7,
+      "status": "ACCOUNTED",
+      "prompt_tokens": 269,
+      "completion_tokens": 88,
+      "reasoning_tokens": 0,
+      "effective_cost": 114.9,
+      "elapsed_sec": 1.94
+    },
+    {
+      "task_id": "median_units:json_v2",
+      "model": "qwen3.8-27b-noreason",
+      "output_cap": 200,
+      "reserved_effective_tokens": 394.8,
+      "status": "ACCOUNTED",
+      "prompt_tokens": 264,
+      "completion_tokens": 52,
+      "reasoning_tokens": 0,
+      "effective_cost": 78.4,
+      "elapsed_sec": 2.318
+    },
+    {
+      "task_id": "separated_months:json_v2",
+      "model": "qwen3.8-27b-noreason",
+      "output_cap": 200,
+      "reserved_effective_tokens": 392.4,
+      "status": "ACCOUNTED",
+      "prompt_tokens": 260,
+      "completion_tokens": 52,
+      "reasoning_tokens": 0,
+      "effective_cost": 78.0,
+      "elapsed_sec": 1.142
+    }
+  ],
+  "rows": [
+    {
+      "task_id": "total_control",
+      "correct": true,
+      "response": "{\n  \"operation\": \"sum\",\n  \"product\": \"widget\",\n  \"months\": [\n    2,\n    3\n  ],\n  \"region\": null,\n  \"predicates\": []\n}",
+      "status": "SOLVED",
+      "answer": "28",
+      "effective_cost": 78.1
+    },
+    {
+      "task_id": "count_control",
+      "correct": true,
+      "response": "{\n  \"operation\": \"count\",\n  \"product\": \"widget\",\n  \"months\": [\n    2,\n    3\n  ],\n  \"region\": null,\n  \"predicates\": []\n}",
+      "status": "SOLVED",
+      "answer": "3",
+      "effective_cost": 78.4
+    },
+    {
+      "task_id": "refund_alias",
+      "correct": true,
+      "response": "{\n  \"operation\": \"sum\",\n  \"product\": \"widget\",\n  \"months\": [\n    2,\n    3\n  ],\n  \"region\": null,\n  \"predicates\": [\n    {\n      \"column\": \"refunded\",\n      \"op\": \"eq\",\n      \"value\": \"no\"\n    }\n  ]\n}",
+      "status": "SOLVED",
+      "answer": "12",
+      "effective_cost": 112.3
+    },
+    {
+      "task_id": "price_threshold",
+      "correct": true,
+      "response": "{\n  \"operation\": \"sum\",\n  \"product\": \"widget\",\n  \"months\": [\n    2,\n    3\n  ],\n  \"region\": null,\n  \"predicates\": [\n    {\n      \"column\": \"price\",\n      \"op\": \"ge\",\n      \"value\": \"0.20\"\n    }\n  ]\n}",
+      "status": "SOLVED",
+      "answer": "12",
+      "effective_cost": 114.9
+    },
+    {
+      "task_id": "median_units",
+      "correct": true,
+      "response": "{\n  \"operation\": \"median\",\n  \"product\": \"widget\",\n  \"months\": [\n    2,\n    3\n  ],\n  \"region\": null,\n  \"predicates\": []\n}",
+      "status": "SOLVED",
+      "answer": "8",
+      "effective_cost": 78.4
+    },
+    {
+      "task_id": "separated_months",
+      "correct": true,
+      "response": "{\n  \"operation\": \"sum\",\n  \"product\": \"widget\",\n  \"months\": [\n    2,\n    4\n  ],\n  \"region\": null,\n  \"predicates\": []\n}",
+      "status": "SOLVED",
+      "answer": "34",
+      "effective_cost": 78.0
+    }
+  ],
+  "effective_tokens": 540.1,
+  "has_unaccounted_request": false,
+  "source_hashes": {
+    "scripts\\extended_plan_benchmark.py": "e3da544481aafd5bdc32bcc0781af3439f0fe9073e901d643bdad5d97734f738",
+    "scripts\\plan_api_benchmark.py": "633768cf1289aac9178165ecdfa9aaef3c5031b0299fed53233b6e2b322d8c55",
+    "scripts\\plan_constraint_cases.py": "ee6962328a95ac4a3af61a7f52c81ef214178946d9e865325243786c633a02f1",
+    "scripts\\sample_api_benchmark.py": "124a030e0f174e9dcf576a0568b6309baac7fb4fe84a5f373b95d3e3c6cd4e2c",
+    "harness\\agents\\extended_plans.py": "ce7b2a159a038d080ad134665f6e3bb4e3600d5ff7e7e7c1344d7c13682161c2",
+    "harness\\agents\\calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606"
+  },
+  "summary": {
+    "calls": 6,
+    "effective_tokens": 540.1,
+    "has_unaccounted_request": false,
+    "matched_tasks": 6,
+    "planned_tasks": 6,
+    "json_v2": {
+      "correct": 6,
+      "effective_tokens": 540.1
+    },
+    "historical": {
+      "json": {
+        "correct": 2,
+        "effective_tokens": 284.3
+      },
+      "python": {
+        "correct": 6,
+        "effective_tokens": 566.7
+      }
+    }
+  }
+}
