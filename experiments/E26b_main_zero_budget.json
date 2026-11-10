@@ -1,0 +1,49 @@
+{
+  "scope": "actual scheduler, cleaned public samples, zero API budget, coding not repaired",
+  "summary": {
+    "total_tasks": 0,
+    "solved_count": 0,
+    "estimated_score": 0,
+    "effective_tokens_spent": 0.0,
+    "budget_state": {
+      "budget": 0,
+      "known_effective_tokens": 0.0,
+      "reserved_effective_tokens": 0.0,
+      "has_unaccounted_request": false,
+      "remote_stopped": false,
+      "events": []
+    },
+    "budget_audit_path": null,
+    "execution_engine": "direct",
+    "workflow_runs": []
+  },
+  "rows": [],
+  "correct": 0,
+  "score": 0,
+  "source_hashes": {
+    "harness\\config.py": "a5af5492751abcd2f122e092bcaad55679745d1db34458d699c21f4fcd0c6487",
+    "harness\\workflow_runner.py": "e5b629eb3e8522a7c90670cb7f29278131611e6abe682e6e3a8ba852448321ad",
+    "harness\\__init__.py": "fe5768bfeef5b47f9598df506c72b7c7e5173100e0bee18eda875c3164cdd6d8",
+    "harness\\agents\\base_harness.py": "26979b7bac3792067e5fa3a6fb7a46945f415605778bb11a25722dfcd3347b13",
+    "harness\\agents\\calculation_plans.py": "dfb56d2ae2e3e0f3a63543208989ded069eadff4f97e3fb346e49ab411d7f0dd",
+    "harness\\agents\\coding_solver.py": "a12b7e5f23c8e8526a2cd8e9b888f18ba006e51a8dd9fa918210ee7d43476cb6",
+    "harness\\agents\\data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness\\agents\\extended_plans.py": "6e78553f73a13b29d4dc58854079dc7acf3ba7f43d046f025ed598a6e9eb726a",
+    "harness\\agents\\fallback_react.py": "2a6b14bfac2e7fc662363db07465ec593d3919a8371f670720482e54a6231115",
+    "harness\\agents\\instruction_scope.py": "ba782ee251f5c179e5938f1da8b435d40c38d4037bee80604e06961affe82538",
+    "harness\\agents\\math_solver.py": "a3a9cf2ecedd6a8206be386b0b6ccc7d202772f151594a9a7ddbbe6cfada30a7",
+    "harness\\agents\\model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness\\agents\\plan_scope.py": "3b657a8c06a0bb2ee51e455c63845cd34fe56652db3b0a6a7e373fbdedb9f7b9",
+    "harness\\agents\\search_solver.py": "0c2ee91537b62a1d9b535022a4102d4433c59466292721bfe02c5cdcff0b3db3",
+    "harness\\agents\\__init__.py": "42324fbbf33a052cc6267cfd9b3eb05b611bdd44c1c7cbddd6237085d6fb1fb1",
+    "harness\\planner\\budget_tracker.py": "2dc978fcc6bee6e96fc6847fcd322444b16f70bc4a91871dd68943ddab2a4f38",
+    "harness\\planner\\feature_extractor.py": "7d732941aa146a5bcc58f436dbef8c3411c569f8c3e0cd178e76e0b989f418a1",
+    "harness\\planner\\scheduler.py": "848a3fdf0609a585f89c7b290e6e40e8f899e58b8857ea76f672f9503a1a194c",
+    "harness\\planner\\token_estimator.py": "7195ad8b8d1003d1e86a912e228ce30f2819b2bc99e4ba59e4d55b499b23b4ab",
+    "harness\\planner\\unsolvable_filter.py": "d1a924ed268bd301f4a16f00baf7b6a9d0d9cb0c0bbc0ec0d1bcefccb585315a",
+    "harness\\planner\\__init__.py": "4d01f39c19f74266c5ea845cfddf01fc1f0158ebb8efe8dcc967784c92a42ce2",
+    "harness\\sandbox\\executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "harness\\sandbox\\file_guard.py": "ad6f2ecc823db803222bc335b146abbec7f40a90b76b901a49cd30d994d065de",
+    "harness\\sandbox\\__init__.py": "8c7432a63595673c1c625724162ffa77a637387775ecfb86f7708bfdf08840db"
+  }
+}

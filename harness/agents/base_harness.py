@@ -13,6 +13,138 @@ from harness.agents.fallback_react import solve_fallback_task
 
 logger = logging.getLogger('base_harness')
 
+import json
+import random
+
+class ProxyBudgetExhausted(BudgetDenied):
+    """Вызывается, когда прокси вернул 401/402/403 (лимит токенов хакатона исчерпан)."""
+    pass
+
+class TransientNetworkError(Exception):
+    """Временный сетевой сбой (таймаут, 502, 503)."""
+    pass
+
+
+class RobustHTTPTransport:
+    """Отказоустойчивый транспорт с гранулярными политиками под каждый тип сбоя."""
+
+    def __init__(self, base_url: str, api_key: str, max_retries: int = 3):
+        self.base_url = base_url.rstrip("/") + "/chat/completions"
+        self.headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json"
+        }
+        self.max_retries = max_retries
+        self._proxy_exhausted = False
+
+    async def send(self, payload: dict) -> dict:
+        import httpx
+
+        if self._proxy_exhausted:
+            raise ProxyBudgetExhausted("Прокси организаторов отключил доступ (лимит токенов выбран)")
+
+        last_error = None
+
+        for attempt in range(self.max_retries):
+            # Экспоненциальный джиттер для предотвращения резонанса запросов
+            jitter = random.uniform(0.1, 0.8)
+
+            try:
+                # На каждую попытку настраиваем чёткие тайм-ауты (10с на коннект, 60с на генерацию)
+                limits = httpx.Limits(max_keepalive_connections=5, max_connections=10)
+                timeout = httpx.Timeout(connect=10.0, read=60.0, write=10.0, pool=10.0)
+
+                async with httpx.AsyncClient(limits=limits, timeout=timeout, verify=True) as client:
+                    response = await client.post(self.base_url, headers=self.headers, json=payload)
+
+                    # 1. СТРАТЕГИЯ: Жесткий стоп по бюджету (401, 402, 403)
+                    if response.status_code in (401, 402, 403):
+                        self._proxy_exhausted = True
+                        logger.error(
+                            "Стена бюджета! Прокси вернул HTTP %d: %s",
+                            response.status_code, response.text[:200]
+                        )
+                        raise ProxyBudgetExhausted(f"HTTP {response.status_code}: Token limit reached")
+
+                    # 2. СТРАТЕГИЯ: Превышение частоты запросов (429 Too Many Requests)
+                    if response.status_code == 429:
+                        retry_after = response.headers.get("Retry-After")
+                        if retry_after and retry_after.isdigit():
+                            wait_time = float(retry_after) + jitter
+                        else:
+                            wait_time = (2.0 ** (attempt + 1)) + jitter
+                        logger.warning(
+                            "[429 RateLimit] Попытка %d/%d. Пауза %.2f с перед повтором...",
+                            attempt + 1, self.max_retries, wait_time
+                        )
+                        await asyncio.sleep(wait_time)
+                        continue
+
+                    # 3. СТРАТЕГИЯ: Временные сбои GPU-серверов или шлюза (500, 502, 503, 504)
+                    if response.status_code in (500, 502, 503, 504):
+                        wait_time = 1.5 * (attempt + 1) + jitter
+                        logger.warning(
+                            "[HTTP %d ServerError] Попытка %d/%d. Перезапрос через %.2f с...",
+                            response.status_code, attempt + 1, self.max_retries, wait_time
+                        )
+                        await asyncio.sleep(wait_time)
+                        continue
+
+                    # 4. Проверка остальных клиентских ошибок (400 Bad Request, 404 Not Found)
+                    if response.status_code >= 400:
+                        logger.error("Неисправимая ошибка запроса HTTP %d: %s", response.status_code, response.text[:300])
+                        response.raise_for_status()
+
+                    # 5. СТРАТЕГИЯ: Защита от поврежденного JSON (HTML от Nginx или обрыв)
+                    try:
+                        data = response.json()
+                    except json.JSONDecodeError as json_err:
+                        logger.warning("Ответ сервера не является валидным JSON: %s", response.text[:200])
+                        await asyncio.sleep(1.0 + jitter)
+                        continue
+
+                    # Валидация структуры ответа
+                    if not isinstance(data, dict) or "choices" not in data:
+                        logger.warning("Некорректная структура payload: отсутствует 'choices'")
+                        await asyncio.sleep(1.0 + jitter)
+                        continue
+
+                    # 6. СТРАТЕГИЯ: Детекция обрезки по длине finish_reason == 'length'
+                    finish_reason = data["choices"][0].get("finish_reason")
+                    if finish_reason == "length":
+                        logger.warning("Ответ модели был обрезан по лимиту max_tokens!")
+
+                    # Успех: возвращаем проверенный JSON
+                    return data
+
+            except httpx.ConnectTimeout:
+                last_error = TransientNetworkError("Таймаут подключения к серверу API")
+                wait_time = 2.0 + jitter
+                logger.warning("[ConnectTimeout] Сервер не ответил за 10с. Повтор через %.2f с...", wait_time)
+                await asyncio.sleep(wait_time)
+
+            except httpx.ReadTimeout:
+                last_error = TransientNetworkError("Таймаут чтения генерации (сервер думал > 60с)")
+                wait_time = 1.0 + jitter
+                logger.warning("[ReadTimeout] Генерация превысила 60с. Повтор через %.2f с...", wait_time)
+                await asyncio.sleep(wait_time)
+
+            except (httpx.ConnectError, httpx.NetworkError) as net_err:
+                last_error = TransientNetworkError(f"Сетевой разрыв: {type(net_err).__name__}")
+                wait_time = 2.0 * (attempt + 1) + jitter
+                logger.warning("[NetworkError] %s. Повтор через %.2f с...", type(net_err).__name__, wait_time)
+                await asyncio.sleep(wait_time)
+
+            except ProxyBudgetExhausted:
+                raise
+
+            except Exception as exc:
+                logger.error("Критическое исключение в транспорте: %s", exc)
+                raise
+
+        if last_error:
+            raise last_error
+        raise RuntimeError("Не удалось получить ответ от LLM API после всех попыток")
 
 class UnverifiedAccounting(BudgetDenied):
     pass
@@ -50,15 +182,14 @@ class OpenJiuwenLLMBridge:
         self.transport=transport
 
     def _get_transport(self):
-        if self.transport is not None: return self.transport
-        import httpx
-        async def send(payload):
-            async with httpx.AsyncClient(timeout=60.0, verify=True, follow_redirects=False) as client:
-                response=await client.post(self.config.llm_base_url.rstrip('/')+'/chat/completions',
-                    headers={'Authorization':'Bearer '+self.config.llm_api_key,'Content-Type':'application/json'},json=payload)
-                response.raise_for_status()
-                return response.json()
-        return send
+        if self.transport is not None:
+            return self.transport
+        robust_transport = RobustHTTPTransport(
+            base_url=self.config.llm_base_url,
+            api_key=self.config.llm_api_key,
+            max_retries=3
+        )
+        return robust_transport.send
 
     async def complete(self, model, system_prompt, user_prompt, max_tokens=512, temperature=0.0):
         mode=self.config.reasoning_usage_mode

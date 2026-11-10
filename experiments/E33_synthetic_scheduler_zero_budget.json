@@ -1,0 +1,497 @@
+{
+  "scope": "actual scheduler on synthetic dev pool at zero budget",
+  "total_tasks": 40,
+  "correct_behaviors": 8,
+  "earned_score": 0,
+  "summary": {
+    "total_tasks": 40,
+    "solved_count": 0,
+    "estimated_score": 0,
+    "effective_tokens_spent": 446.9,
+    "budget_state": {
+      "budget": 5000,
+      "known_effective_tokens": 446.9,
+      "reserved_effective_tokens": 576.2,
+      "has_unaccounted_request": true,
+      "remote_stopped": true,
+      "events": [
+        {
+          "ticket": 0,
+          "task_id": "data_analysis_0017",
+          "status": "ACCOUNTED",
+          "reserved_units": 2119,
+          "task_limit_units": 2125,
+          "input_token_estimate": 1689,
+          "output_cap": 43,
+          "input_tokens": 202,
+          "output_tokens": 43,
+          "reasoning_tokens": 0,
+          "effective_cost": 63.2
+        },
+        {
+          "ticket": 1,
+          "task_id": "data_analysis_0019",
+          "status": "ACCOUNTED",
+          "reserved_units": 2124,
+          "task_limit_units": 2125,
+          "input_token_estimate": 1684,
+          "output_cap": 44,
+          "input_tokens": 202,
+          "output_tokens": 44,
+          "reasoning_tokens": 0,
+          "effective_cost": 64.2
+        },
+        {
+          "ticket": 2,
+          "task_id": "data_analysis_0012",
+          "status": "ACCOUNTED",
+          "reserved_units": 2124,
+          "task_limit_units": 2125,
+          "input_token_estimate": 1684,
+          "output_cap": 44,
+          "input_tokens": 199,
+          "output_tokens": 44,
+          "reasoning_tokens": 0,
+          "effective_cost": 63.9
+        },
+        {
+          "ticket": 3,
+          "task_id": "data_analysis_0014",
+          "status": "ACCOUNTED",
+          "reserved_units": 2120,
+          "task_limit_units": 2125,
+          "input_token_estimate": 1680,
+          "output_cap": 44,
+          "input_tokens": 202,
+          "output_tokens": 44,
+          "reasoning_tokens": 0,
+          "effective_cost": 64.2
+        },
+        {
+          "ticket": 4,
+          "task_id": "data_analysis_0015",
+          "status": "ACCOUNTED",
+          "reserved_units": 2116,
+          "task_limit_units": 2125,
+          "input_token_estimate": 1666,
+          "output_cap": 45,
+          "input_tokens": 186,
+          "output_tokens": 45,
+          "reasoning_tokens": 0,
+          "effective_cost": 63.6
+        },
+        {
+          "ticket": 5,
+          "task_id": "data_analysis_0011",
+          "status": "ACCOUNTED",
+          "reserved_units": 2123,
+          "task_limit_units": 2125,
+          "input_token_estimate": 1683,
+          "output_cap": 44,
+          "input_tokens": 198,
+          "output_tokens": 44,
+          "reasoning_tokens": 0,
+          "effective_cost": 63.8
+        },
+        {
+          "ticket": 6,
+          "task_id": "data_analysis_0013",
+          "status": "ACCOUNTED",
+          "reserved_units": 2121,
+          "task_limit_units": 2125,
+          "input_token_estimate": 1681,
+          "output_cap": 44,
+          "input_tokens": 200,
+          "output_tokens": 44,
+          "reasoning_tokens": 0,
+          "effective_cost": 64.0
+        },
+        {
+          "ticket": 7,
+          "task_id": "math_0030",
+          "status": "COST_UNKNOWN_STOPPED",
+          "reserved_units": 2840,
+          "task_limit_units": 2848,
+          "input_token_estimate": 1630,
+          "output_cap": 121,
+          "error_type": "HTTPStatusError"
+        },
+        {
+          "ticket": 8,
+          "task_id": "math_0024",
+          "status": "COST_UNKNOWN_STOPPED",
+          "reserved_units": 2922,
+          "task_limit_units": 2926,
+          "input_token_estimate": 1692,
+          "output_cap": 123,
+          "error_type": "HTTPStatusError"
+        }
+      ]
+    },
+    "budget_audit_path": null,
+    "execution_engine": "direct",
+    "workflow_runs": []
+  },
+  "rows": [
+    {
+      "task_id": "coding_0001",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "DONE",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "coding_0002",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "DONE",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "coding_0003",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "DONE",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 4
+    },
+    {
+      "task_id": "coding_0004",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "DONE",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 3
+    },
+    {
+      "task_id": "coding_0005",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "UNSOLVABLE",
+      "unsolvable": true,
+      "correct": true,
+      "reward": 3
+    },
+    {
+      "task_id": "coding_0006",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "DONE",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 3
+    },
+    {
+      "task_id": "coding_0007",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "DONE",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "coding_0008",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "DONE",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 6
+    },
+    {
+      "task_id": "coding_0009",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "DONE",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "coding_0010",
+      "task_type": "coding",
+      "answer": null,
+      "expected": "UNSOLVABLE",
+      "unsolvable": true,
+      "correct": true,
+      "reward": 6
+    },
+    {
+      "task_id": "data_analysis_0011",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "20",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 3
+    },
+    {
+      "task_id": "data_analysis_0012",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "66",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 4
+    },
+    {
+      "task_id": "data_analysis_0013",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "71",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 3
+    },
+    {
+      "task_id": "data_analysis_0014",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "128",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 4
+    },
+    {
+      "task_id": "data_analysis_0015",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "UNSOLVABLE",
+      "unsolvable": true,
+      "correct": true,
+      "reward": 4
+    },
+    {
+      "task_id": "data_analysis_0016",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "48",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "data_analysis_0017",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "157",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 5
+    },
+    {
+      "task_id": "data_analysis_0018",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "207",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "data_analysis_0019",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "157",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 5
+    },
+    {
+      "task_id": "data_analysis_0020",
+      "task_type": "data_analysis",
+      "answer": null,
+      "expected": "UNSOLVABLE",
+      "unsolvable": true,
+      "correct": true,
+      "reward": 2
+    },
+    {
+      "task_id": "math_0021",
+      "task_type": "math",
+      "answer": null,
+      "expected": "175",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "math_0022",
+      "task_type": "math",
+      "answer": null,
+      "expected": "935",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 3
+    },
+    {
+      "task_id": "math_0023",
+      "task_type": "math",
+      "answer": null,
+      "expected": "6051",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 1
+    },
+    {
+      "task_id": "math_0024",
+      "task_type": "math",
+      "answer": null,
+      "expected": "4367",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 4
+    },
+    {
+      "task_id": "math_0025",
+      "task_type": "math",
+      "answer": null,
+      "expected": "UNSOLVABLE",
+      "unsolvable": true,
+      "correct": true,
+      "reward": 1
+    },
+    {
+      "task_id": "math_0026",
+      "task_type": "math",
+      "answer": null,
+      "expected": "4430",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 1
+    },
+    {
+      "task_id": "math_0027",
+      "task_type": "math",
+      "answer": null,
+      "expected": "368",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "math_0028",
+      "task_type": "math",
+      "answer": null,
+      "expected": "8936",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 1
+    },
+    {
+      "task_id": "math_0029",
+      "task_type": "math",
+      "answer": null,
+      "expected": "4070",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 3
+    },
+    {
+      "task_id": "math_0030",
+      "task_type": "math",
+      "answer": null,
+      "expected": "UNSOLVABLE",
+      "unsolvable": true,
+      "correct": true,
+      "reward": 4
+    },
+    {
+      "task_id": "search_0031",
+      "task_type": "search",
+      "answer": null,
+      "expected": "Warsaw",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 1
+    },
+    {
+      "task_id": "search_0032",
+      "task_type": "search",
+      "answer": null,
+      "expected": "1984",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 1
+    },
+    {
+      "task_id": "search_0033",
+      "task_type": "search",
+      "answer": null,
+      "expected": "Berlin",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "search_0034",
+      "task_type": "search",
+      "answer": null,
+      "expected": "Tallinn",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "search_0035",
+      "task_type": "search",
+      "answer": null,
+      "expected": "UNSOLVABLE",
+      "unsolvable": true,
+      "correct": true,
+      "reward": 2
+    },
+    {
+      "task_id": "search_0036",
+      "task_type": "search",
+      "answer": null,
+      "expected": "1968",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 4
+    },
+    {
+      "task_id": "search_0037",
+      "task_type": "search",
+      "answer": null,
+      "expected": "Paris",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 2
+    },
+    {
+      "task_id": "search_0038",
+      "task_type": "search",
+      "answer": null,
+      "expected": "Warsaw",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 1
+    },
+    {
+      "task_id": "search_0039",
+      "task_type": "search",
+      "answer": null,
+      "expected": "1966",
+      "unsolvable": false,
+      "correct": false,
+      "reward": 4
+    },
+    {
+      "task_id": "search_0040",
+      "task_type": "search",
+      "answer": null,
+      "expected": "UNSOLVABLE",
+      "unsolvable": true,
+      "correct": true,
+      "reward": 4
+    }
+  ]
+}
