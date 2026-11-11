@@ -1,0 +1,32 @@
+{
+  "task_id": "two_filters__scope",
+  "response": {
+    "id": "chatcmpl-9359de5762493b62",
+    "created": 1794425725,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\n\n# Read sales.csv\nsales = []\nwith open('sales.csv', 'r') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        sales.append(row)\n\n# Read zones.csv\nzones = {}\nwith open('zones.csv', 'r') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        zones[row['key']] = row['region']\n\n# Inner join on key, sum units where sales.state == 'paid' AND zones.region == 'west'\ntotal = 0\nfor sale in sales:\n    key = sale['key']\n    if key in zones:\n        if sale['state'] == 'paid' and zones[key] == 'west':\n            total += int(sale['units'])\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 184,
+      "prompt_tokens": 293,
+      "total_tokens": 477,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

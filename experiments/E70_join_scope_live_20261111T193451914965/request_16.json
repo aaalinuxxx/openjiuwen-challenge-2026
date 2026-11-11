@@ -1,0 +1,20 @@
+{
+  "task_id": "or_paraphrase__scope",
+  "stage": "python",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"orders.csv\", \"columns\": [\"key\", \"amount\"], \"rows\": 4, \"sample_rows\": [{\"key\": \"a\", \"amount\": \"4\"}, {\"key\": \"b\", \"amount\": \"9\"}, {\"key\": \"c\", \"amount\": \"8\"}]}, {\"file\": \"states.csv\", \"columns\": [\"key\", \"status\"], \"rows\": 3, \"sample_rows\": [{\"key\": \"a\", \"status\": \"active\"}, {\"key\": \"b\", \"status\": \"blocked\"}, {\"key\": \"c\", \"status\": \"active\"}]}]\nTask: Read orders.csv and states.csv. Match orders.key with states.key as exact strings, keeping every matching pair and also orders without a match. Add orders.amount for each pair if states.status is 'active'; orders with no states entry must also contribute their amount. Discard matched entries with any other status. Return only the sum."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

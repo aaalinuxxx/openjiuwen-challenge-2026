@@ -1,0 +1,32 @@
+{
+  "task_id": "supported_paraphrase__scope",
+  "response": {
+    "id": "chatcmpl-ba1536e57ee4c9d2",
+    "created": 1794425715,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\n\n# Read stocks.csv\nstocks = []\nwith open('stocks.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        stocks.append(row)\n\n# Read zones.csv\nzones = []\nwith open('zones.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        zones.append(row)\n\n# Filter zones to only those with region == 'west'\nwest_zones = {z['item']: z['region'] for z in zones if z['region'] == 'west'}\n\n# For each stock item, if it exists in west_zones, add its qty\ntotal = 0\nfor s in stocks:\n    item = s['item']\n    if item in west_zones:\n        total += int(s['qty'])\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 199,
+      "prompt_tokens": 269,
+      "total_tokens": 468,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "case": "supported_paraphrase",
+  "arm": "scope",
+  "selected_route": "python",
+  "expected_scope_route": "python",
+  "order_in_pair": 1,
+  "expected": "17",
+  "status": "SOLVED",
+  "answer": "10",
+  "solved": false,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": true,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "stocks.csv": "6541ca23723378fd58846c9cb4f8573f4c43e0344e4a11d042ba6aacfda7f667",
+    "zones.csv": "26320083027d556271730cda22dcf5d93efc271d3daeee478b0368818dd3f4bb"
+  },
+  "calls": 1,
+  "stages": [
+    "python"
+  ],
+  "effective_cost": 225.9,
+  "result": {
+    "task_id": "supported_paraphrase__scope",
+    "status": "SOLVED",
+    "answer": "10",
+    "input_tokens": 269,
+    "output_tokens": 199,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 2.8429999999934807,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Full-text scope route: python. "
+  },
+  "workflow": {
+    "task_id": "supported_paraphrase__scope",
+    "workflow_id": "task_4bf92b42d655436b9ae03ee3188d6eee",
+    "session_id": "88e669e21a6c463cad9be2404dc16c70",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

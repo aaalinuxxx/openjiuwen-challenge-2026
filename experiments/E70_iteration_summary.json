@@ -1,0 +1,246 @@
+{
+  "hypothesis": "H04.11",
+  "status": "PARTIAL_ACCEPTANCE_CRITERION_NOT_MET",
+  "frozen_commit": "0772ff4",
+  "report": "experiments/E70_join_scope_live_20261111T193451914965/report.json",
+  "real_api_attempts": 16,
+  "effective_tokens": 2634.7,
+  "metrics": {
+    "cascade": {
+      "attempted": 7,
+      "solved": 5,
+      "solvable_total": 7,
+      "supported_solved": 3,
+      "supported_total": 3,
+      "outside_plan_solved": 2,
+      "outside_plan_total": 4,
+      "fallback_tasks": 2,
+      "wrong_answers": 2,
+      "calls": 9,
+      "effective_tokens": 1251
+    },
+    "scope": {
+      "attempted": 7,
+      "solved": 6,
+      "solvable_total": 7,
+      "supported_solved": 2,
+      "supported_total": 3,
+      "outside_plan_solved": 4,
+      "outside_plan_total": 4,
+      "fallback_tasks": 0,
+      "wrong_answers": 1,
+      "calls": 7,
+      "effective_tokens": 1383.7
+    }
+  },
+  "usage": {
+    "cascade": {
+      "input": 3690,
+      "output": 882
+    },
+    "scope": {
+      "input": 2277,
+      "output": 1156
+    }
+  },
+  "local_tests": {
+    "passed": 136,
+    "report": "experiments/E69_join_scope/unit_tests.json"
+  },
+  "preflight_quality_evidence": false,
+  "verification": {
+    "responses": [
+      {
+        "task": "canonical_duplicates__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_01.json",
+        "effective_cost": 158.3,
+        "sha256": "951819fafa79bf89375bc2266f2fca1d40e8a2cc8a595d0a085c18514b9346d2"
+      },
+      {
+        "task": "canonical_duplicates__scope",
+        "stage": "json_plan",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_02.json",
+        "effective_cost": 158.3,
+        "sha256": "d848a37ed114f5b10a6cc17f0a925ea22e510d5a6e531ce6d47cb8032c36565c"
+      },
+      {
+        "task": "canonical_left_sum__scope",
+        "stage": "json_plan",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_03.json",
+        "effective_cost": 132.7,
+        "sha256": "49895055142dd21b2c50c51ea8c5cb6da686d227264a9795ed122c97e26688ec"
+      },
+      {
+        "task": "canonical_left_sum__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_04.json",
+        "effective_cost": 132.7,
+        "sha256": "57222dc9de5da2f0610c2289c4b5eda85fd91aada74c47bd7a0e0e57cb0b36cf"
+      },
+      {
+        "task": "supported_paraphrase__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_05.json",
+        "effective_cost": 157.9,
+        "sha256": "9a41f6514c82bb3210a123fd45196023f958229296868692f834eeb7bce7905e"
+      },
+      {
+        "task": "supported_paraphrase__scope",
+        "stage": "python",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_06.json",
+        "effective_cost": 225.9,
+        "sha256": "64eaedc6e43b8ea0b1d75500e3fa2d846c5b13c4d0701aa3e582d36a2df7242f"
+      },
+      {
+        "task": "numeric_threshold__scope",
+        "stage": "python",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_07.json",
+        "effective_cost": 202,
+        "sha256": "d1dfad4c73d141808d3e2122b7ed5ffeda0d6e3b8852c9c3aceed2b1c1131607"
+      },
+      {
+        "task": "numeric_threshold__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_08.json",
+        "effective_cost": 47,
+        "sha256": "31b5634b79debbed49217f4b8055e0e3e40f4b50fc08ad1cdd39595b55327730"
+      },
+      {
+        "task": "numeric_threshold__cascade",
+        "stage": "python",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_09.json",
+        "effective_cost": 202,
+        "sha256": "33b9d97fbab27bf41ab3d786a794a314bb55ea1e28430d2d66f6902c49cbff3f"
+      },
+      {
+        "task": "two_filters__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_10.json",
+        "effective_cost": 49.3,
+        "sha256": "e4224871d1a094282e46dcdaec3b6ebd0377d25195a59d8ee8534639b8854c39"
+      },
+      {
+        "task": "two_filters__cascade",
+        "stage": "python",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_11.json",
+        "effective_cost": 210.3,
+        "sha256": "72bfed7f7b290c2fc74a0b4a2fc77bd0d84cdee2d785b93622a30c587aa93316"
+      },
+      {
+        "task": "two_filters__scope",
+        "stage": "python",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_12.json",
+        "effective_cost": 213.3,
+        "sha256": "d5c29dbddccfa2d428429d6068aaeb4bcfff61c69974901acbebc0e36c0a1ab0"
+      },
+      {
+        "task": "left_or_unmatched__scope",
+        "stage": "python",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_13.json",
+        "effective_cost": 233.2,
+        "sha256": "c18dce8a945574a6da21b45543fe5f834cd4dfb957cb7430788d853df8e65e15"
+      },
+      {
+        "task": "left_or_unmatched__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_14.json",
+        "effective_cost": 133.2,
+        "sha256": "c743a0b149d1509abf9712cda9535c6115a05ed9e65178bf01577ebf0f72f938"
+      },
+      {
+        "task": "or_paraphrase__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_15.json",
+        "effective_cost": 160.3,
+        "sha256": "821075212dd28e708cf32d144ddd30cfae6317beac3ff318c9ac86fc91aa79aa"
+      },
+      {
+        "task": "or_paraphrase__scope",
+        "stage": "python",
+        "path": "experiments/E70_join_scope_live_20261111T193451914965/response_16.json",
+        "effective_cost": 218.3,
+        "sha256": "407bf3a0841ab67a8995b547aac9301232893b8d7a6d750a37ec732961d65a77"
+      }
+    ],
+    "usage_integer_tenths": 26347,
+    "all_frozen_hashes_unchanged": {
+      "harness/agents/join_cascade.py": true,
+      "harness/agents/join_plans.py": true,
+      "harness/agents/multi_csv.py": true,
+      "harness/agents/data_solver.py": true,
+      "harness/agents/calculation_plans.py": true,
+      "harness/agents/model_router.py": true,
+      "harness/agents/base_harness.py": true,
+      "harness/config.py": true,
+      "harness/workflow_runner.py": true,
+      "harness/planner/budget_tracker.py": true,
+      "harness/sandbox/executor.py": true,
+      "scripts/multimodule_live.py": true,
+      "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+      "experiments/E50_search_live_20261111T155649239479/budget.json": true,
+      "harness/agents/join_scope.py": true,
+      "scripts/join_scope_live.py": true,
+      "tests/test_join_scope.py": true,
+      "experiments/E69_join_scope/cases.json": true,
+      "experiments/E69_join_scope/oracle_validation.json": true,
+      "experiments/E69_join_scope/routing_validation.json": true,
+      "experiments/E69_join_scope/design.md": true
+    },
+    "all_usage_known": true,
+    "all_inputs_unchanged": true,
+    "all_scope_routes_match_predeclared": true,
+    "all_responses_stop": true,
+    "max_output": 400
+  },
+  "negative_examples": [
+    {
+      "case": "supported_paraphrase",
+      "arm": "scope",
+      "expected": "17",
+      "actual": "10",
+      "cause": "Conservative grammar routes representable paraphrase to Python, which uses a dict and loses duplicate keys. Old cascade JSON returns 17."
+    },
+    {
+      "case": "left_or_unmatched",
+      "arm": "cascade",
+      "expected": "29",
+      "actual": "36",
+      "cause": "New generation dropped the entire filter; scope Python returns 29. Earlier E68 returned 16 on same task; different wrong answer retained."
+    },
+    {
+      "case": "or_paraphrase",
+      "arm": "cascade",
+      "expected": "29",
+      "actual": "12",
+      "cause": "Valid JSON drops unmatched alternative; scope Python returns 29."
+    }
+  ],
+  "cost_difference_scope_minus_cascade": 132.7,
+  "production_enabled": false,
+  "next": [
+    {
+      "hypothesis": "H04.12",
+      "parents": [
+        "H04.11",
+        "H04.8"
+      ],
+      "status": "PROPOSED",
+      "description": "Extend strict full-text grammar with bounded equivalent join phrasings, preserving duplicates and routing unparsed conditions to Python; new live paraphrases and negative controls required."
+    },
+    {
+      "hypothesis": "H04.13",
+      "parents": [
+        "H04.9",
+        "H04.11"
+      ],
+      "status": "PROPOSED",
+      "description": "For fully parsed instructions execute the derived typed plan locally, removing redundant model translation. Evaluate separately from grammar expansion."
+    }
+  ],
+  "historical_broad_challenge": {
+    "correct": 9,
+    "solvable": 19,
+    "retested": false
+  }
+}

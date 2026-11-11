@@ -1,0 +1,49 @@
+{
+  "case": "supported_paraphrase",
+  "arm": "cascade",
+  "selected_route": "cascade",
+  "expected_scope_route": "python",
+  "order_in_pair": 0,
+  "expected": "17",
+  "status": "SOLVED",
+  "answer": "17",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "stocks.csv": "6541ca23723378fd58846c9cb4f8573f4c43e0344e4a11d042ba6aacfda7f667",
+    "zones.csv": "26320083027d556271730cda22dcf5d93efc271d3daeee478b0368818dd3f4bb"
+  },
+  "calls": 1,
+  "stages": [
+    "json_plan"
+  ],
+  "effective_cost": 157.9,
+  "result": {
+    "task_id": "supported_paraphrase__cascade",
+    "status": "SOLVED",
+    "answer": "17",
+    "input_tokens": 439,
+    "output_tokens": 114,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 3.062000000005355,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Executed typed join plan; question semantics are not formally verified"
+  },
+  "workflow": {
+    "task_id": "supported_paraphrase__cascade",
+    "workflow_id": "task_7e261452a7724036adef750c599e5c5a",
+    "session_id": "e3e5c3f9f1cb40b49f3396934a6fbc9f",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "case": "canonical_left_sum",
+  "arm": "scope",
+  "selected_route": "json_plan",
+  "expected_scope_route": "json_plan",
+  "order_in_pair": 0,
+  "expected": "19",
+  "status": "SOLVED",
+  "answer": "19",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "purchases.csv": "cbe6d56460f7c658d0ed53b98134739fc80ff578280a02218b4c9b44b24d3deb",
+    "rebates.csv": "50b89197d86fe976be7168b0d00c97ef743105615999cb5f470d9ddf01e43e7d"
+  },
+  "calls": 1,
+  "stages": [
+    "json_plan"
+  ],
+  "effective_cost": 132.7,
+  "result": {
+    "task_id": "canonical_left_sum__scope",
+    "status": "SOLVED",
+    "answer": "19",
+    "input_tokens": 427,
+    "output_tokens": 90,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 3.4219999999913853,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Full-text scope route: json_plan. Executed typed join plan; question semantics are not formally verified"
+  },
+  "workflow": {
+    "task_id": "canonical_left_sum__scope",
+    "workflow_id": "task_c1bcacf1e5b24e36bc81e2925f548327",
+    "session_id": "9053a2042fb7447aa3a512fc91ed6639",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}
