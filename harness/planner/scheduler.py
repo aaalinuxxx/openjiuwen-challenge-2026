@@ -79,7 +79,9 @@ class TaskScheduler:
         async with self.semaphore:
             task_budget = self.budget_tracker.allocate_task_budget(
                 expected_cost=item["expected_cost"], reward=item["reward"],
-                minimum=self.config.coding_min_task_budget if item["task_type"] == "coding" else 0
+                minimum={"coding": self.config.coding_min_task_budget,
+                         "search": self.config.search_min_task_budget,
+                         "data_analysis": self.config.data_min_task_budget}.get(item["task_type"], 0)
             )
             ctx = TaskContext(
                 task_id=item["task_id"],

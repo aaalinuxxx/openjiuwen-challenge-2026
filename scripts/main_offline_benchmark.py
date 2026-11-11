@@ -79,9 +79,28 @@ async def run(args):
             initial_budget_tokens=args.budget if args.live else 0, max_concurrency=args.concurrency,
             execution_engine=args.engine, max_api_calls=args.max_calls if args.live else 0,
             budget_audit_path=directory/'budget.json')
+        config.search_min_task_budget = args.search_min_budget
+        config.data_min_task_budget = args.data_min_budget
         scheduler = TaskScheduler(config)
         if args.live:
-            summary = await scheduler.run_all()
+            response_dir = directory/'http_responses'
+            response_dir.mkdir()
+            original_get_transport = OpenJiuwenLLMBridge._get_transport
+            def recording_transport(bridge):
+                transport = original_get_transport(bridge)
+                async def send(payload):
+                    data = await transport(payload)
+                    name = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%f')
+                    audit = dict(task_id=bridge.task_id, model=payload['model'],
+                        output_cap=payload['max_tokens'], response=data)
+                    try:
+                        (response_dir/(name+'.json')).write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding='utf-8')
+                    except OSError:
+                        pass  # Recording failure must not prevent the bridge from settling usage.
+                    return data
+                return send
+            with patch.object(OpenJiuwenLLMBridge, '_get_transport', recording_transport):
+                summary = await scheduler.run_all()
         else:
             with patch.object(OpenJiuwenLLMBridge, '_get_transport',
                               side_effect=AssertionError('Offline transport forbidden')):
@@ -122,6 +141,8 @@ async def run(args):
         scope='known dev or public examples; not independent holdout',
         input_hashes=initial, source_hashes=hashes(ROOT/'harness'),
         benchmark_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        configuration=dict(budget=args.budget, max_calls=args.max_calls,
+            search_min_budget=args.search_min_budget, data_min_budget=args.data_min_budget),
         metrics=metrics, summary=summary, rows=rows)
     output = directory/'report.json'
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -136,11 +157,15 @@ def parse_args(argv=None):
     parser.add_argument('--live', action='store_true')
     parser.add_argument('--budget', type=float, default=0)
     parser.add_argument('--max-calls', type=int, default=4)
+    parser.add_argument('--search-min-budget', type=float, default=0)
+    parser.add_argument('--data-min-budget', type=float, default=0)
     parser.add_argument('--concurrency', type=int, default=1)
     parser.add_argument('--engine', choices=['openjiuwen', 'direct'], default='openjiuwen')
     parser.add_argument('--config', type=Path, default=DEFAULT_CONFIG)
     parser.add_argument('--label', default='E34_scheduler_recheck')
     args = parser.parse_args(argv)
+    if any(not math.isfinite(v) or not 0 <= v <= 1000 for v in (args.search_min_budget, args.data_min_budget)):
+        parser.error('Per-domain minimum budget must be finite and between 0 and 1000')
     if not args.label.replace('_', '').isalnum():
         parser.error('Invalid report label')
     if not math.isfinite(args.budget) or not 0 <= args.budget <= 3000:

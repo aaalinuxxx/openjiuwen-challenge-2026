@@ -23,6 +23,8 @@ class HarnessConfig:
     reward_threshold_for_reasoning: int = 4
     reasoning_usage_mode: str = "unverified"
     budget_audit_path: Optional[Path] = None
+    search_min_task_budget: float = 0.0
+    data_min_task_budget: float = 0.0
     coding_min_task_budget: float = 800.0
     max_api_calls: Optional[int] = None
     execution_engine: str = "openjiuwen"
