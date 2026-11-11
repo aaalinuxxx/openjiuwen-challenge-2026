@@ -1,0 +1,20 @@
+{
+  "task_id": "chain_known_form__new",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: partial (partial_kb)\nKB Records:\n# Mira Vale\nSources: a.md\nborn: 1990\nmentor: Oren Pike\n\n# Oren Pike\nSources: b.md\nemployer: Luma Labs\n\n# Luma Labs\nSources: c.md\nheadquarters: Riga\n\nQuestion: Return the headquarters city of the company employing the mentor of Mira Vale."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_SYNTHETIC",
+  "started_at": "2026-11-11T15:56:16.636480+00:00"
+}

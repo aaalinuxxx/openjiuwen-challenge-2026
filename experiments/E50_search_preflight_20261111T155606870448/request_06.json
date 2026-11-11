@@ -1,0 +1,20 @@
+{
+  "task_id": "casefold_chain__new",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: partial (partial_kb)\nKB Records:\n# Nora Quill\nSources: a.md\nmentor: ELI ROSS\n\n# Eli Ross\nSources: b.md\nemployer: aurora forge\n\n# Aurora Forge\nSources: c.md\nheadquarters: Porto\n\nQuestion: According to the records, which city hosts the headquarters of the organisation employing the mentor of NORA QUILL?"
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_SYNTHETIC",
+  "started_at": "2026-11-11T15:56:16.902704+00:00"
+}

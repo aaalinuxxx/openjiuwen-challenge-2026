@@ -1,0 +1,685 @@
+{
+  "mode": "PREFLIGHT_SYNTHETIC",
+  "scope": "Authored targeted pilot: three known dev controls and three fresh forms of known mechanisms; not independent generalization estimate",
+  "experiment_status": "COMPLETED",
+  "plan_sha256": "d15b97e760988bceaf686a3f81aec0da5d17c8c612d454d6cff14a7d03b18a86",
+  "source_hashes": {
+    "harness/agents/search_solver.py": "d403c178332df0cdb1814e5aa00eecdce09946e9e37a751fbea7177208babcee",
+    "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/search_live_pairs.py": "f7b8feefae3d5d3b8b71d025ea3a1c5d665612364f4816d2ba621a38d747e2f3"
+  },
+  "legacy_E46": {
+    "path": "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "actual_cost": null,
+    "reserved_effective_tokens": 343.1,
+    "ledger_unchanged": true
+  },
+  "rows": [
+    {
+      "case": "chain_known_form",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": "Riga",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": true,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "chain_known_form__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.030999999988125637,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "chain_known_form__old",
+        "workflow_id": "task_c2bc7a2530a14c56b5eb9f60246716e8",
+        "session_id": "dcb3832c29864ddab2a5a8625a33e2b8",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "chain_known_form",
+      "arm": "new",
+      "order_in_pair": 1,
+      "expected": "Riga",
+      "answer": null,
+      "status": "UNKNOWN",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "chain_known_form__new",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0629999999946449,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: partial (partial_kb)"
+      },
+      "workflow": {
+        "task_id": "chain_known_form__new",
+        "workflow_id": "task_65c0b3522dd34c94a1fad1c1a0e79b50",
+        "session_id": "7136f5f8db1d477c8286a8ce0131a784",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "chain_fresh_form",
+      "arm": "new",
+      "order_in_pair": 0,
+      "expected": "Bergen",
+      "answer": null,
+      "status": "UNKNOWN",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "chain_fresh_form__new",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.07800000000861473,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: partial (partial_kb)"
+      },
+      "workflow": {
+        "task_id": "chain_fresh_form__new",
+        "workflow_id": "task_ab468bf7cb94411db5a0d0018f84c5e0",
+        "session_id": "a6690186a5cc454f8a45155ea9e08d1d",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "chain_fresh_form",
+      "arm": "old",
+      "order_in_pair": 1,
+      "expected": "Bergen",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": true,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "chain_fresh_form__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.014999999984866008,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "chain_fresh_form__old",
+        "workflow_id": "task_4abe6d7e8bd446f0b92ab60bc3669e4a",
+        "session_id": "ff32946b93a44633adbf57a64025473a",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "casefold_chain",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": "Porto",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": true,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "casefold_chain__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.07800000000861473,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "casefold_chain__old",
+        "workflow_id": "task_5a95dcb5909842bfb63109bc83404d19",
+        "session_id": "ba0436dff8ca494bb011e70efe4d046b",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "casefold_chain",
+      "arm": "new",
+      "order_in_pair": 1,
+      "expected": "Porto",
+      "answer": null,
+      "status": "UNKNOWN",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "casefold_chain__new",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.014999999984866008,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: partial (partial_kb)"
+      },
+      "workflow": {
+        "task_id": "casefold_chain__new",
+        "workflow_id": "task_7f4909777d0346049c093c6dda75a839",
+        "session_id": "a0bdd84a7597435dab841d5bd686377b",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "prefix_decoy",
+      "arm": "new",
+      "order_in_pair": 0,
+      "expected": "1988",
+      "answer": null,
+      "status": "UNKNOWN",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "prefix_decoy__new",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: partial (partial_kb)"
+      },
+      "workflow": {
+        "task_id": "prefix_decoy__new",
+        "workflow_id": "task_e6150ac9c75548c6b77e15d578735600",
+        "session_id": "fc5c4906cf204e739e15a0472342ed0c",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "prefix_decoy",
+      "arm": "old",
+      "order_in_pair": 1,
+      "expected": "1988",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": true,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "prefix_decoy__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.015000000013969839,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "prefix_decoy__old",
+        "workflow_id": "task_7cf1d2ee42ec486eade86ab0993dac3f",
+        "session_id": "48b18696f01b49d1b661b7ae3c370513",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "single_link_control",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": "Tallinn",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": true,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "single_link_control__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.015000000013969839,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "single_link_control__old",
+        "workflow_id": "task_fb4bdf5600794715b17016e82cf0bddb",
+        "session_id": "afa041be2fea4ba19e6d23a831ede830",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "single_link_control",
+      "arm": "new",
+      "order_in_pair": 1,
+      "expected": "Tallinn",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": true,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "single_link_control__new",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: complete"
+      },
+      "workflow": {
+        "task_id": "single_link_control__new",
+        "workflow_id": "task_47962aa16d3446d49993f23563ea3d59",
+        "session_id": "10a7d02c51c5496984ea76922a8def04",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "closed_kb_missing",
+      "arm": "new",
+      "order_in_pair": 0,
+      "expected": null,
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": true,
+      "correct": true,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "closed_kb_missing__new",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: complete"
+      },
+      "workflow": {
+        "task_id": "closed_kb_missing__new",
+        "workflow_id": "task_0cbe004993c64ea792a0bab0bc969757",
+        "session_id": "81e1e765f2b942af9cd9fe54159d8a33",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "closed_kb_missing",
+      "arm": "old",
+      "order_in_pair": 1,
+      "expected": null,
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": true,
+      "correct": true,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "closed_kb_missing__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "closed_kb_missing__old",
+        "workflow_id": "task_d1d69f5f64794db5bd00ed02853cee6d",
+        "session_id": "74a3e1dd983a4c8fb51963e20c212105",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    }
+  ],
+  "recording_errors": [],
+  "budget": {
+    "budget": 2000,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "chain_known_form__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1923,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1603,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 1,
+        "task_id": "chain_known_form__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1855,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1535,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 2,
+        "task_id": "chain_fresh_form__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1890,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1570,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 3,
+        "task_id": "chain_fresh_form__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1931,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1611,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 4,
+        "task_id": "casefold_chain__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1816,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1496,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 5,
+        "task_id": "casefold_chain__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1887,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1567,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 6,
+        "task_id": "prefix_decoy__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1692,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1372,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 7,
+        "task_id": "prefix_decoy__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1809,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1489,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 8,
+        "task_id": "single_link_control__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1887,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1567,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 9,
+        "task_id": "single_link_control__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1781,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1461,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 10,
+        "task_id": "closed_kb_missing__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1707,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1387,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 11,
+        "task_id": "closed_kb_missing__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1742,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1422,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      }
+    ]
+  },
+  "attempted_transport_calls": 12,
+  "real_api_calls": 0,
+  "real_known_effective_tokens": 0,
+  "metrics": {
+    "planned_pairs": 6,
+    "complete_pairs": 6,
+    "arms": {
+      "old": {
+        "attempted": 6,
+        "verified_solutions": 0,
+        "justified_refusals": 1,
+        "correct": 1,
+        "false_refusals": 5,
+        "wrong_answers": 0,
+        "known_effective_tokens": 0.0
+      },
+      "new": {
+        "attempted": 6,
+        "verified_solutions": 0,
+        "justified_refusals": 1,
+        "correct": 1,
+        "false_refusals": 1,
+        "wrong_answers": 0,
+        "known_effective_tokens": 0.0
+      }
+    }
+  },
+  "preflight_passed": true
+}

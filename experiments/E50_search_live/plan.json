@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-11-11T15:56:06.296Z",
+  "authorization": "User explicitly requested confirmation using real API; separate bounded experiment, historical unknown E46 is preserved",
+  "hypothesis": "H03.2 live validation of corrected search pipeline",
+  "scope": "Authored targeted pilot: three known dev controls and three fresh forms of known mechanisms; not independent generalization estimate",
+  "old_search_commit": "bef716967ae2643804b01b9240bc53cb22385414",
+  "new_search_commit": "c7e122d9061561ba25bb7e0f726d55b14ea2bd8f",
+  "budget": 2000,
+  "max_calls": 12,
+  "per_task_budget": 600,
+  "model": "qwen3.6-35b-a3b-noreason",
+  "output_cap": 32,
+  "temperature": 0,
+  "request_timeout_sec": 60,
+  "workflow_timeout_sec": 180,
+  "ordering": "old,new on even case indices; new,old on odd; sequential, no retries",
+  "acceptance": "Complete six pairs; compare verified solutions on five answerable cases, false refusals, wrong answers and one missing-fact negative control; exact answers and statuses graded from saved answer files",
+  "isolated_change": "Entire old versus new search pipeline (context, prompt, refusal handling); all other code, model and budgets shared. Does not isolate individual modifications.",
+  "stop_rule": "Stop new requests on any unknown cost or exhausted ledger; no automatic rerun; new experiment ledger does not rewrite E46",
+  "legacy_ledger_path": "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+  "legacy_ledger_sha256": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+  "frozen_hashes": {
+    "harness/agents/search_solver.py": "d403c178332df0cdb1814e5aa00eecdce09946e9e37a751fbea7177208babcee",
+    "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/search_live_pairs.py": "f7b8feefae3d5d3b8b71d025ea3a1c5d665612364f4816d2ba621a38d747e2f3",
+    "experiments/E50_search_live/cases.json": "c1875090fc4e81e647d542adbf1b81fe50d44a7dd6bfce6e7d79f5cd901d5133",
+    "experiments/E50_search_live/baseline_search_solver.py": "0c07eed717773544b9c97ce929e0bcc3144d0ac300acc0c753e9ff7da9bb115b"
+  }
+}

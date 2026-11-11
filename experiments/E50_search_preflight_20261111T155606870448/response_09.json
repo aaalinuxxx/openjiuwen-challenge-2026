@@ -1,0 +1,17 @@
+{
+  "task_id": "single_link_control__old",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "UNSOLVABLE"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

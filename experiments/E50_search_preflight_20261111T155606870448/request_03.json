@@ -1,0 +1,20 @@
+{
+  "task_id": "chain_fresh_form__new",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: partial (partial_kb)\nKB Records:\n# Tessa Reed\nSources: a.md\nmentor: Ivo Marsh\n\n# Ivo Marsh\nSources: b.md\nemployer: Cobalt Loom\n\n# Cobalt Loom\nSources: c.md\nheadquarters: Bergen\n\nQuestion: Look up Tessa Reed, follow her mentor, then that person employer. Give the city where that employer is headquartered."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_SYNTHETIC",
+  "started_at": "2026-11-11T15:56:16.751250+00:00"
+}

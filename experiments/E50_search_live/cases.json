@@ -1,0 +1,67 @@
+[
+  {
+    "id": "chain_known_form",
+    "question": "Return the headquarters city of the company employing the mentor of Mira Vale.",
+    "expected": "Riga",
+    "provenance": "E47 known dev form",
+    "files": {
+      "kb/a.md": "# Mira Vale\nMentor: Oren Pike\nBorn: 1990\n",
+      "kb/b.md": "# Oren Pike\nEmployer: Luma Labs\n",
+      "kb/c.md": "# Luma Labs\nHeadquarters: Riga\n",
+      "kb/d.md": "# Drift Works\nHeadquarters: Perth\n"
+    }
+  },
+  {
+    "id": "chain_fresh_form",
+    "question": "Look up Tessa Reed, follow her mentor, then that person employer. Give the city where that employer is headquartered.",
+    "expected": "Bergen",
+    "provenance": "new authored paraphrase before live; same mechanism as E47",
+    "files": {
+      "kb/a.md": "# Tessa Reed\nMentor: Ivo Marsh\n",
+      "kb/b.md": "# Ivo Marsh\nEmployer: Cobalt Loom\n",
+      "kb/c.md": "# Cobalt Loom\nHeadquarters: Bergen\n",
+      "kb/d.md": "# Kite Systems\nHeadquarters: Kyoto\n"
+    }
+  },
+  {
+    "id": "casefold_chain",
+    "question": "According to the records, which city hosts the headquarters of the organisation employing the mentor of NORA QUILL?",
+    "expected": "Porto",
+    "provenance": "new authored casefold chain",
+    "files": {
+      "kb/a.md": "# Nora Quill\nMentor: ELI ROSS\n",
+      "kb/b.md": "# Eli Ross\nEmployer: aurora forge\n",
+      "kb/c.md": "# Aurora Forge\nHeadquarters: Porto\n",
+      "kb/d.md": "# Island Labs\nHeadquarters: Suva\n"
+    }
+  },
+  {
+    "id": "prefix_decoy",
+    "question": "Tell me the birth year of Anne.",
+    "expected": "1988",
+    "provenance": "E47 known dev boundary control",
+    "files": {
+      "kb/a.md": "# Ann\nBorn: 9999\n",
+      "kb/b.md": "# Anne\nBorn: 1988\n"
+    }
+  },
+  {
+    "id": "single_link_control",
+    "question": "Name the headquarters city of the employer of Selma Pike.",
+    "expected": "Tallinn",
+    "provenance": "new authored positive single-link control",
+    "files": {
+      "kb/a.md": "# Selma Pike\nEmployer: Juniper Works\n",
+      "kb/b.md": "# Juniper Works\nHeadquarters: Tallinn\n"
+    }
+  },
+  {
+    "id": "closed_kb_missing",
+    "question": "Who founded Unknown Corporation? Use only these records.",
+    "expected": null,
+    "provenance": "known E47 closed-KB negative control",
+    "files": {
+      "kb/a.md": "# Ada\nBorn: 1991\n"
+    }
+  }
+]
