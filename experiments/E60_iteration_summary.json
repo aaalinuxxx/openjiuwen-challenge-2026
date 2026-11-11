@@ -1,0 +1,91 @@
+{
+  "experiment": "E59/E60",
+  "status": "COMPLETED",
+  "frozen_commit": "95a68b7",
+  "report": "experiments/E60_target_live_20261111T171835906195/report.json",
+  "scope": "Paired mechanism study on four known E57 code fixtures, three changed instructions; not independent holdout. Local negative controls separate from live quality.",
+  "metrics": {
+    "old": {
+      "attempted": 4,
+      "solved": 1,
+      "wrong_deliveries": 0,
+      "calls": 1,
+      "effective_tokens": 119.9
+    },
+    "new": {
+      "attempted": 4,
+      "solved": 4,
+      "wrong_deliveries": 0,
+      "calls": 4,
+      "effective_tokens": 332.9
+    }
+  },
+  "real_api_calls": 5,
+  "known_effective_tokens": 452.8,
+  "new_unaccounted_requests": 0,
+  "raw_usage": {
+    "old": {
+      "input": 429,
+      "output": 77
+    },
+    "new": {
+      "input": 1419,
+      "output": 191
+    }
+  },
+  "verified_responses": [
+    {
+      "task": "boundary__new",
+      "path": "experiments/E60_target_live_20261111T171835906195/response_01.json",
+      "effective_cost": 55.9,
+      "sha256": "ac73b81729834aebdf72add09fb633d9c43fd135b6cb5ee7f26026727f4dda06"
+    },
+    {
+      "task": "units__new",
+      "path": "experiments/E60_target_live_20261111T171835906195/response_02.json",
+      "effective_cost": 72.2,
+      "sha256": "50aaf8a55a16a319e98262f6faf87056a74c14721435c2aceae7d14cb30e66a0"
+    },
+    {
+      "task": "normalization__new",
+      "path": "experiments/E60_target_live_20261111T171835906195/response_03.json",
+      "effective_cost": 84.7,
+      "sha256": "669483af3936e04fe58917a9f8e1a9581beb5703760fe37216ab9701cc6d26e4"
+    },
+    {
+      "task": "two_test_files__new",
+      "path": "experiments/E60_target_live_20261111T171835906195/response_04.json",
+      "effective_cost": 120.1,
+      "sha256": "2eff0c2cc378e1696c1b55ad798e3e7389cda036efb9924cf5d2cb8fab336d75"
+    },
+    {
+      "task": "two_test_files__old",
+      "path": "experiments/E60_target_live_20261111T171835906195/response_05.json",
+      "effective_cost": 119.9,
+      "sha256": "bfe491c2b30702691cf09cad1441e0d70b2a80eb5a8120a510e9c22105866ae6"
+    }
+  ],
+  "integer_tenths_cost": 4528,
+  "prior_ledgers_unchanged": {
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+    "experiments/E50_search_live_20261111T155649239479/budget.json": true
+  },
+  "hypothesis": "H05.5 SUPPORTED on targeted paired pilot, not general natural language understanding",
+  "additional_solved": 3,
+  "incremental_new_vs_old_cost": 213,
+  "local_controls": {
+    "old_correct": 18,
+    "new_correct": 34,
+    "total": 34,
+    "api_calls": 0
+  },
+  "unit_tests": 107,
+  "production_change": "Bounded target grammar; patch generator unchanged",
+  "limitations": [
+    "Known E57 source code with three instruction changes; not independent holdout",
+    "Only one case incurred API in both arms; no claim of token savings",
+    "Negative controls are local; no paid generation for prohibited tasks",
+    "Finite grammar; unsupported wording may abstain",
+    "Wide challenge remains historical 9/19"
+  ]
+}

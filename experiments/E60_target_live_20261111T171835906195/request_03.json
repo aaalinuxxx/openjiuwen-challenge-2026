@@ -1,0 +1,19 @@
+{
+  "task_id": "normalization__new",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return complete corrected Python code only, without comments or Markdown. Preserve signatures and satisfy the task constraints and all tests. Never modify tests. Use UNSOLVABLE only for provably contradictory requirements. The harness runs tests and writes DONE; do not perform these delivery steps in the returned code."
+      },
+      {
+        "role": "user",
+        "content": "### Task constraints\nTarget file: z_lookup.py. lookup(mapping, query) returns the value at the first insertion-order key whose normalize(key) equals normalize(query), or None when no key matches. Use normalize from a_normalize.py. Do not modify dependencies or tests.\n\n### Target File: z_lookup.py\nfrom a_normalize import normalize\n\ndef lookup(mapping, query):\n    return mapping.get(query)\n\n\n### Read-only module: a_normalize.py\ndef normalize(text):\n    return ' '.join(text.casefold().split())\n\n\n### test_lookup.py\nfrom z_lookup import lookup\nassert lookup({' Alice  Holt ': 7}, 'alice holt') == 7\n\n\n### Failing Test Output (failures: 1)\n### test_lookup.py\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-hyof9cx3\\workspace\\test_lookup.py\", line 2, in <module>\n    assert lookup({' Alice  Holt ': 7}, 'alice holt') == 7\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      }
+    ],
+    "max_tokens": 700,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}
