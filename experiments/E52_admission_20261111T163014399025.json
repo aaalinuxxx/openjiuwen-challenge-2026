@@ -1,0 +1,555 @@
+{
+  "scope": "No API; captured prompts and actual BudgetTracker reservation grid",
+  "api_calls": 0,
+  "rows": [
+    {
+      "case": "dense_low_budget",
+      "arm": "plain",
+      "context_bytes": 1933,
+      "selected_names": [
+        "Lena Hart",
+        "Milo Voss",
+        "Silver Fern"
+      ],
+      "complete_kb": true,
+      "table_encoded": false,
+      "input_reserve_estimate": 3306,
+      "task_budget": 300,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "300": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\n# Lena Hart\nSources: person.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Milo Voss\n\n# Milo Voss\nSources: mentor.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nemployer: Silver Fern\n\n# Silver Fern\nSources: company.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Turku\n\nQuestion: Return the headquarters city of the employer of the mentor of Lena Hart.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "dense_low_budget",
+      "arm": "table",
+      "context_bytes": 1073,
+      "selected_names": [
+        "Lena Hart",
+        "Milo Voss",
+        "Silver Fern"
+      ],
+      "complete_kb": true,
+      "table_encoded": true,
+      "input_reserve_estimate": 2446,
+      "task_budget": 300,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": true,
+          "output_cap": 5
+        },
+        "300": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\nJSON table: records=[entity,sources,field values in fields order]; null=missing.\n{\"fields\":[\"administrative_reference_attribute_00\",\"administrative_reference_attribute_01\",\"administrative_reference_attribute_02\",\"administrative_reference_attribute_03\",\"administrative_reference_attribute_04\",\"administrative_reference_attribute_05\",\"administrative_reference_attribute_06\",\"administrative_reference_attribute_07\",\"administrative_reference_attribute_08\",\"administrative_reference_attribute_09\",\"administrative_reference_attribute_10\",\"administrative_reference_attribute_11\",\"administrative_reference_attribute_12\",\"administrative_reference_attribute_13\",\"employer\",\"headquarters\",\"mentor\"],\"records\":[[\"Lena Hart\",[\"person.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,null,\"Milo Voss\"],[\"Milo Voss\",[\"mentor.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",\"Silver Fern\",null,null],[\"Silver Fern\",[\"company.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,\"Turku\",null]]}\n\nQuestion: Return the headquarters city of the employer of the mentor of Lena Hart.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "dense_roomy",
+      "arm": "plain",
+      "context_bytes": 1931,
+      "selected_names": [
+        "Rina Cole",
+        "Omar Moss",
+        "Amber Mill"
+      ],
+      "complete_kb": true,
+      "table_encoded": false,
+      "input_reserve_estimate": 3304,
+      "task_budget": 900,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "300": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\n# Rina Cole\nSources: person.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Omar Moss\n\n# Omar Moss\nSources: mentor.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nemployer: Amber Mill\n\n# Amber Mill\nSources: company.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Tartu\n\nQuestion: Return the headquarters city of the employer of the mentor of Rina Cole.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "dense_roomy",
+      "arm": "table",
+      "context_bytes": 1071,
+      "selected_names": [
+        "Rina Cole",
+        "Omar Moss",
+        "Amber Mill"
+      ],
+      "complete_kb": true,
+      "table_encoded": true,
+      "input_reserve_estimate": 2444,
+      "task_budget": 900,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": true,
+          "output_cap": 5
+        },
+        "300": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\nJSON table: records=[entity,sources,field values in fields order]; null=missing.\n{\"fields\":[\"administrative_reference_attribute_00\",\"administrative_reference_attribute_01\",\"administrative_reference_attribute_02\",\"administrative_reference_attribute_03\",\"administrative_reference_attribute_04\",\"administrative_reference_attribute_05\",\"administrative_reference_attribute_06\",\"administrative_reference_attribute_07\",\"administrative_reference_attribute_08\",\"administrative_reference_attribute_09\",\"administrative_reference_attribute_10\",\"administrative_reference_attribute_11\",\"administrative_reference_attribute_12\",\"administrative_reference_attribute_13\",\"employer\",\"headquarters\",\"mentor\"],\"records\":[[\"Rina Cole\",[\"person.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,null,\"Omar Moss\"],[\"Omar Moss\",[\"mentor.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",\"Amber Mill\",null,null],[\"Amber Mill\",[\"company.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,\"Tartu\",null]]}\n\nQuestion: Return the headquarters city of the employer of the mentor of Rina Cole.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "conflicting_city",
+      "arm": "plain",
+      "context_bytes": 1971,
+      "selected_names": [
+        "Sera Lane",
+        "Niko Reed",
+        "Granite Loom"
+      ],
+      "complete_kb": true,
+      "table_encoded": false,
+      "input_reserve_estimate": 3344,
+      "task_budget": 900,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "300": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\n# Sera Lane\nSources: person.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Niko Reed\n\n# Niko Reed\nSources: mentor.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nemployer: Granite Loom\n\n# Granite Loom\nSources: company.md, company_update.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: CONFLICT [Bern | Oslo]\n\nQuestion: Return the headquarters city of the employer of the mentor of Sera Lane.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "conflicting_city",
+      "arm": "table",
+      "context_bytes": 1116,
+      "selected_names": [
+        "Sera Lane",
+        "Niko Reed",
+        "Granite Loom"
+      ],
+      "complete_kb": true,
+      "table_encoded": true,
+      "input_reserve_estimate": 2489,
+      "task_budget": 900,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": true,
+          "output_cap": 1
+        },
+        "300": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\nJSON table: records=[entity,sources,field values in fields order]; null=missing.\n{\"fields\":[\"administrative_reference_attribute_00\",\"administrative_reference_attribute_01\",\"administrative_reference_attribute_02\",\"administrative_reference_attribute_03\",\"administrative_reference_attribute_04\",\"administrative_reference_attribute_05\",\"administrative_reference_attribute_06\",\"administrative_reference_attribute_07\",\"administrative_reference_attribute_08\",\"administrative_reference_attribute_09\",\"administrative_reference_attribute_10\",\"administrative_reference_attribute_11\",\"administrative_reference_attribute_12\",\"administrative_reference_attribute_13\",\"employer\",\"headquarters\",\"mentor\"],\"records\":[[\"Sera Lane\",[\"person.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,null,\"Niko Reed\"],[\"Niko Reed\",[\"mentor.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",\"Granite Loom\",null,null],[\"Granite Loom\",[\"company.md\",\"company_update.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,{\"CONFLICT\":[\"Bern\",\"Oslo\"]},null]]}\n\nQuestion: Return the headquarters city of the employer of the mentor of Sera Lane.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "unicode_values",
+      "arm": "plain",
+      "context_bytes": 1992,
+      "selected_names": [
+        "Мира Лес",
+        "Олег Рощин",
+        "Северный свет"
+      ],
+      "complete_kb": true,
+      "table_encoded": false,
+      "input_reserve_estimate": 3371,
+      "task_budget": 900,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "300": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\n# Мира Лес\nSources: person.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Олег Рощин\n\n# Олег Рощин\nSources: mentor.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nemployer: Северный свет\n\n# Северный свет\nSources: company.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Псков\n\nQuestion: Return the headquarters city of the employer of the mentor of Мира Лес.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "unicode_values",
+      "arm": "table",
+      "context_bytes": 1132,
+      "selected_names": [
+        "Мира Лес",
+        "Олег Рощин",
+        "Северный свет"
+      ],
+      "complete_kb": true,
+      "table_encoded": true,
+      "input_reserve_estimate": 2511,
+      "task_budget": 900,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "300": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\nJSON table: records=[entity,sources,field values in fields order]; null=missing.\n{\"fields\":[\"administrative_reference_attribute_00\",\"administrative_reference_attribute_01\",\"administrative_reference_attribute_02\",\"administrative_reference_attribute_03\",\"administrative_reference_attribute_04\",\"administrative_reference_attribute_05\",\"administrative_reference_attribute_06\",\"administrative_reference_attribute_07\",\"administrative_reference_attribute_08\",\"administrative_reference_attribute_09\",\"administrative_reference_attribute_10\",\"administrative_reference_attribute_11\",\"administrative_reference_attribute_12\",\"administrative_reference_attribute_13\",\"employer\",\"headquarters\",\"mentor\"],\"records\":[[\"Мира Лес\",[\"person.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,null,\"Олег Рощин\"],[\"Олег Рощин\",[\"mentor.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",\"Северный свет\",null,null],[\"Северный свет\",[\"company.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,\"Псков\",null]]}\n\nQuestion: Return the headquarters city of the employer of the mentor of Мира Лес.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "sparse_control",
+      "arm": "plain",
+      "context_bytes": 36,
+      "selected_names": [
+        "Ada Finch"
+      ],
+      "complete_kb": true,
+      "table_encoded": false,
+      "input_reserve_estimate": 1373,
+      "task_budget": 300,
+      "grid": {
+        "200": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "250": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "300": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\n# Ada Finch\nSources: a.md\nborn: 1993\n\nQuestion: Tell me the birth year of Ada Finch.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "sparse_control",
+      "arm": "table",
+      "context_bytes": 36,
+      "selected_names": [
+        "Ada Finch"
+      ],
+      "complete_kb": true,
+      "table_encoded": false,
+      "input_reserve_estimate": 1373,
+      "task_budget": 300,
+      "grid": {
+        "200": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "250": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "300": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\n# Ada Finch\nSources: a.md\nborn: 1993\n\nQuestion: Tell me the birth year of Ada Finch.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "source_question",
+      "arm": "plain",
+      "context_bytes": 1945,
+      "selected_names": [
+        "Cedar Lake",
+        "Evan Wood",
+        "Tara Snow"
+      ],
+      "complete_kb": true,
+      "table_encoded": false,
+      "input_reserve_estimate": 3330,
+      "task_budget": 900,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "300": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\n# Cedar Lake\nSources: company.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Brno\nmentor: Evan Wood\n\n# Evan Wood\nSources: mentor.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Tara Snow\n\n# Tara Snow\nSources: person.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Evan Wood\n\nQuestion: Return only the source filename that provides the headquarters field for Cedar Lake.",
+        "max_tokens": 32
+      }
+    },
+    {
+      "case": "source_question",
+      "arm": "table",
+      "context_bytes": 1050,
+      "selected_names": [
+        "Cedar Lake",
+        "Evan Wood",
+        "Tara Snow"
+      ],
+      "complete_kb": true,
+      "table_encoded": true,
+      "input_reserve_estimate": 2435,
+      "task_budget": 900,
+      "grid": {
+        "200": {
+          "admitted": false,
+          "output_cap": 0
+        },
+        "250": {
+          "admitted": true,
+          "output_cap": 6
+        },
+        "300": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "400": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "600": {
+          "admitted": true,
+          "output_cap": 32
+        },
+        "900": {
+          "admitted": true,
+          "output_cap": 32
+        }
+      },
+      "payload": {
+        "model": "qwen3.6-35b-a3b-noreason",
+        "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+        "user_prompt": "KB coverage: complete\nKB Records:\nJSON table: records=[entity,sources,field values in fields order]; null=missing.\n{\"fields\":[\"administrative_reference_attribute_00\",\"administrative_reference_attribute_01\",\"administrative_reference_attribute_02\",\"administrative_reference_attribute_03\",\"administrative_reference_attribute_04\",\"administrative_reference_attribute_05\",\"administrative_reference_attribute_06\",\"administrative_reference_attribute_07\",\"administrative_reference_attribute_08\",\"administrative_reference_attribute_09\",\"administrative_reference_attribute_10\",\"administrative_reference_attribute_11\",\"administrative_reference_attribute_12\",\"administrative_reference_attribute_13\",\"headquarters\",\"mentor\"],\"records\":[[\"Cedar Lake\",[\"company.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",\"Brno\",\"Evan Wood\"],[\"Evan Wood\",[\"mentor.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,\"Tara Snow\"],[\"Tara Snow\",[\"person.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,\"Evan Wood\"]]}\n\nQuestion: Return only the source filename that provides the headquarters field for Cedar Lake.",
+        "max_tokens": 32
+      }
+    }
+  ],
+  "fixture_sha256": "b9749c65a57bc3a5ba0f77001a41d79c7199e2eb12c7b935ee56c9ecbbd3a97d"
+}

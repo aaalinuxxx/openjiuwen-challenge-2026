@@ -1,0 +1,67 @@
+[
+  {
+    "id": "dense_low_budget",
+    "question": "Return the headquarters city of the employer of the mentor of Lena Hart.",
+    "expected": "Turku",
+    "task_budget": 300,
+    "files": {
+      "kb/person.md": "# Lena Hart\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Milo Voss\n",
+      "kb/mentor.md": "# Milo Voss\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nemployer: Silver Fern\n",
+      "kb/company.md": "# Silver Fern\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Turku\n"
+    }
+  },
+  {
+    "id": "dense_roomy",
+    "question": "Return the headquarters city of the employer of the mentor of Rina Cole.",
+    "expected": "Tartu",
+    "task_budget": 900,
+    "files": {
+      "kb/person.md": "# Rina Cole\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Omar Moss\n",
+      "kb/mentor.md": "# Omar Moss\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nemployer: Amber Mill\n",
+      "kb/company.md": "# Amber Mill\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Tartu\n"
+    }
+  },
+  {
+    "id": "conflicting_city",
+    "question": "Return the headquarters city of the employer of the mentor of Sera Lane.",
+    "expected": null,
+    "task_budget": 900,
+    "files": {
+      "kb/person.md": "# Sera Lane\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Niko Reed\n",
+      "kb/mentor.md": "# Niko Reed\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nemployer: Granite Loom\n",
+      "kb/company.md": "# Granite Loom\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Bern\n",
+      "kb/company_update.md": "# Granite Loom\nheadquarters: Oslo\n"
+    }
+  },
+  {
+    "id": "unicode_values",
+    "question": "Return the headquarters city of the employer of the mentor of Мира Лес.",
+    "expected": "Псков",
+    "task_budget": 900,
+    "files": {
+      "kb/person.md": "# Мира Лес\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Олег Рощин\n",
+      "kb/mentor.md": "# Олег Рощин\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nemployer: Северный свет\n",
+      "kb/company.md": "# Северный свет\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Псков\n"
+    }
+  },
+  {
+    "id": "sparse_control",
+    "question": "Tell me the birth year of Ada Finch.",
+    "expected": "1993",
+    "task_budget": 300,
+    "files": {
+      "kb/a.md": "# Ada Finch\nBorn: 1993\n"
+    }
+  },
+  {
+    "id": "source_question",
+    "question": "Return only the source filename that provides the headquarters field for Cedar Lake.",
+    "expected": "company.md",
+    "task_budget": 900,
+    "files": {
+      "kb/person.md": "# Tara Snow\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Evan Wood\n",
+      "kb/mentor.md": "# Evan Wood\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Tara Snow\n",
+      "kb/company.md": "# Cedar Lake\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Brno\nmentor: Evan Wood\n"
+    }
+  }
+]

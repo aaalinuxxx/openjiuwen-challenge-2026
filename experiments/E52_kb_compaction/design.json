@@ -1,0 +1,21 @@
+{
+  "hypothesis": "H03.5a: lossless compact serialization",
+  "status": "PLANNED",
+  "baseline_commit": "86e92aa54630ade4861e192ea11e9d79c89d9705",
+  "scope": "Six targeted authored controls; repeated administrative field names favor table encoding. Not representative or independent generalization evaluation.",
+  "budget": 2500,
+  "max_calls": 12,
+  "model": "qwen3.6-35b-a3b-noreason",
+  "temperature": 0,
+  "output_cap": 32,
+  "ordering": "Alternate plain/table order by case; sequential, no automatic retries",
+  "local_acceptance": "Same selected entity names, fields, values, conflicts, sources, coverage and limits; representation never expands UTF-8 bytes. Inspect actual BudgetTracker admission over 200,250,300,400,600,900.",
+  "live_acceptance": "No loss of correct solutions or justified refusals; compare actual usage on matched successfully submitted pairs separately from constrained admission cases.",
+  "candidate": "JSON table used only when strictly shorter; no fields or sources removed. Original selected entity set unchanged.",
+  "production": "Experimental candidate; production default remains plain during comparison.",
+  "prior_unknown_ledgers": [
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "experiments/E50_search_live_20261111T155649239479/budget.json"
+  ],
+  "stop_rule": "Unknown cost stops this separately budgeted experiment; prior E46/E50 ledgers remain unchanged."
+}

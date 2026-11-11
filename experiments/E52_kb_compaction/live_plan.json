@@ -1,0 +1,35 @@
+{
+  "hypothesis": "H03.5a: lossless compact serialization",
+  "status": "PLANNED",
+  "baseline_commit": "86e92aa54630ade4861e192ea11e9d79c89d9705",
+  "scope": "Six targeted authored controls; repeated administrative field names favor table encoding. Not representative or independent generalization evaluation.",
+  "budget": 2500,
+  "max_calls": 12,
+  "model": "qwen3.6-35b-a3b-noreason",
+  "temperature": 0,
+  "output_cap": 32,
+  "ordering": "Alternate plain/table order by case; sequential, no automatic retries",
+  "local_acceptance": "Same selected entity names, fields, values, conflicts, sources, coverage and limits; representation never expands UTF-8 bytes. Inspect actual BudgetTracker admission over 200,250,300,400,600,900.",
+  "live_acceptance": "No loss of correct solutions or justified refusals; compare actual usage on matched successfully submitted pairs separately from constrained admission cases.",
+  "candidate": "JSON table used only when strictly shorter; no fields or sources removed. Original selected entity set unchanged.",
+  "production": "Experimental candidate; production default remains plain during comparison.",
+  "prior_unknown_ledgers": [
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "experiments/E50_search_live_20261111T155649239479/budget.json"
+  ],
+  "stop_rule": "Unknown cost stops this separately budgeted experiment; prior E46/E50 ledgers remain unchanged.",
+  "created_at": "2026-11-11T16:31:18.632Z",
+  "frozen_hashes": {
+    "harness/agents/search_solver.py": "d403c178332df0cdb1814e5aa00eecdce09946e9e37a751fbea7177208babcee",
+    "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+    "harness/agents/kb_compaction.py": "438ae744d34a48756485c9ca20a5095ebbaf11fc9a0335ae4918b0fe4358b5ac",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/kb_compaction_live.py": "ae255ea8b457ddaa2a9b1edb846dc922b326848922c09182d6a9e1c806266a48",
+    "experiments/E52_kb_compaction/cases.json": "b9749c65a57bc3a5ba0f77001a41d79c7199e2eb12c7b935ee56c9ecbbd3a97d",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d"
+  }
+}
