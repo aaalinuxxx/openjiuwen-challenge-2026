@@ -1,0 +1,4 @@
+{
+  "scope": "Unauthenticated GET /models; no generation",
+  "status": 401
+}

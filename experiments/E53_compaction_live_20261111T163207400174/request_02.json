@@ -1,0 +1,19 @@
+{
+  "task_id": "dense_roomy__table",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: complete\nKB Records:\nJSON table: records=[entity,sources,field values in fields order]; null=missing.\n{\"fields\":[\"administrative_reference_attribute_00\",\"administrative_reference_attribute_01\",\"administrative_reference_attribute_02\",\"administrative_reference_attribute_03\",\"administrative_reference_attribute_04\",\"administrative_reference_attribute_05\",\"administrative_reference_attribute_06\",\"administrative_reference_attribute_07\",\"administrative_reference_attribute_08\",\"administrative_reference_attribute_09\",\"administrative_reference_attribute_10\",\"administrative_reference_attribute_11\",\"administrative_reference_attribute_12\",\"administrative_reference_attribute_13\",\"employer\",\"headquarters\",\"mentor\"],\"records\":[[\"Rina Cole\",[\"person.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,null,\"Omar Moss\"],[\"Omar Moss\",[\"mentor.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",\"Amber Mill\",null,null],[\"Amber Mill\",[\"company.md\"],\"v0\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",null,\"Tartu\",null]]}\n\nQuestion: Return the headquarters city of the employer of the mentor of Rina Cole."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

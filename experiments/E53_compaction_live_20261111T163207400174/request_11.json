@@ -1,0 +1,19 @@
+{
+  "task_id": "source_question__plain",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: complete\nKB Records:\n# Cedar Lake\nSources: company.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nheadquarters: Brno\nmentor: Evan Wood\n\n# Evan Wood\nSources: mentor.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Tara Snow\n\n# Tara Snow\nSources: person.md\nadministrative_reference_attribute_00: v0\nadministrative_reference_attribute_01: v1\nadministrative_reference_attribute_02: v2\nadministrative_reference_attribute_03: v3\nadministrative_reference_attribute_04: v4\nadministrative_reference_attribute_05: v5\nadministrative_reference_attribute_06: v6\nadministrative_reference_attribute_07: v7\nadministrative_reference_attribute_08: v8\nadministrative_reference_attribute_09: v9\nadministrative_reference_attribute_10: v10\nadministrative_reference_attribute_11: v11\nadministrative_reference_attribute_12: v12\nadministrative_reference_attribute_13: v13\nmentor: Evan Wood\n\nQuestion: Return only the source filename that provides the headquarters field for Cedar Lake."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

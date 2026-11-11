@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-11T16:35:58.569Z",
+  "hypothesis": "H03.6",
+  "budget": 600,
+  "max_calls": 1,
+  "case": "conflicting_city",
+  "comparison": "Historical table response in completed E53; known dev follow-up only",
+  "acceptance": "No answer.txt on explicit contradiction; separate justified UNSOLVABLE from mere UNKNOWN abstention; preserve usage",
+  "frozen_hashes": {
+    "harness/agents/search_solver.py": "4d432225a4c631b5d7f38b1dd6670fba84c8b424ec9d32f6ef1f692d06283ab8",
+    "harness/agents/kb_compaction.py": "438ae744d34a48756485c9ca20a5095ebbaf11fc9a0335ae4918b0fe4358b5ac",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "scripts/search_conflict_live.py": "df827245704e3a2eba0ba805d07f2778019627a82b21a9a936116fa9d02a0b9f",
+    "experiments/E52_kb_compaction/cases.json": "b9749c65a57bc3a5ba0f77001a41d79c7199e2eb12c7b935ee56c9ecbbd3a97d"
+  }
+}

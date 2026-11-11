@@ -1,0 +1,32 @@
+{
+  "task_id": "source_question__plain",
+  "response": {
+    "id": "chatcmpl-a350e6d5ecf793b4",
+    "created": 1794414742,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "company.md",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 3,
+      "prompt_tokens": 606,
+      "total_tokens": 609,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

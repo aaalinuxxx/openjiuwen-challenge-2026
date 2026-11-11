@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-11-11T16:34:41.322Z",
+  "hypothesis": "H03.6 explicit conflict reports must not be submitted as solved answers",
+  "parent": "H03.5a / E53 live negative control",
+  "evidence": "E53_compaction_live_20261111T163207400174/report.json",
+  "observed": [
+    "CONFLICT [Bern | Oslo]",
+    "CONFLICT: Bern, Oslo"
+  ],
+  "local_acceptance": "Both explicit conflict formats become UNKNOWN with no answer; preserve usage, exact literal KB values and existing refusal behavior.",
+  "candidate": "Clarify prompt for contradictory REQUIRED facts; guard explicit CONFLICT marker unless exact stored literal. This is not general semantic verification.",
+  "live_plan": "One table-arm request on the same known conflicting_city dev case; no claim of independent quality estimate.",
+  "max_calls": 1,
+  "budget": 600,
+  "iteration_total_attempt_cap": 12,
+  "previous_known_tokens": 519.9,
+  "scope": "Targeted regression and live follow-up; no repeated sweeps"
+}
