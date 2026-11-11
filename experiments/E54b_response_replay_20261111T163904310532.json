@@ -1,0 +1,175 @@
+{
+  "scope": "Captured live-response replay with synthetic transport; NOT new live generations",
+  "real_api_calls": 0,
+  "real_effective_tokens": 0,
+  "passed": 3,
+  "total": 3,
+  "rows": [
+    {
+      "source": "experiments/E53_compaction_live_20261111T163207400174/response_04.json",
+      "source_sha256": "0781be69804845df7af640082dc234b595862ee9e8bfbc816ec8fd600c292582",
+      "original_response": "CONFLICT [Bern | Oslo]",
+      "result": {
+        "task_id": "replay",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 614,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model reported conflicting alternatives instead of a final value"
+      },
+      "answer_file_exists": false,
+      "passed": true,
+      "replayed_historical_budget": {
+        "budget": 900,
+        "known_effective_tokens": 69.4,
+        "reserved_effective_tokens": 0.0,
+        "has_unaccounted_request": false,
+        "remote_stopped": false,
+        "events": [
+          {
+            "ticket": 0,
+            "task_id": "replay",
+            "status": "ACCOUNTED",
+            "reserved_units": 3664,
+            "task_limit_units": 9000,
+            "input_token_estimate": 3344,
+            "output_cap": 32,
+            "input_tokens": 614,
+            "output_tokens": 8,
+            "reasoning_tokens": 0,
+            "effective_cost": 69.4
+          }
+        ]
+      },
+      "workflow": [
+        {
+          "task_id": "replay",
+          "workflow_id": "task_0821aeb8fa6247b1981c5036297e6546",
+          "session_id": "63259759db584fb6b5a2641e5cbe5351",
+          "stages": [
+            "solve",
+            "finalize"
+          ],
+          "saved": false,
+          "state": "COMPLETED",
+          "request_timeout_sec": 60.0,
+          "workflow_timeout_sec": 180.0
+        }
+      ]
+    },
+    {
+      "source": "experiments/E53_compaction_live_20261111T163207400174/response_05.json",
+      "source_sha256": "0ae5eada2f8037431fe9d84f8f90118792a38ba0b928dd2a76bc10042396d04e",
+      "original_response": "CONFLICT: Bern, Oslo",
+      "result": {
+        "task_id": "replay",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 427,
+        "output_tokens": 7,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model reported conflicting alternatives instead of a final value"
+      },
+      "answer_file_exists": false,
+      "passed": true,
+      "replayed_historical_budget": {
+        "budget": 900,
+        "known_effective_tokens": 49.7,
+        "reserved_effective_tokens": 0.0,
+        "has_unaccounted_request": false,
+        "remote_stopped": false,
+        "events": [
+          {
+            "ticket": 0,
+            "task_id": "replay",
+            "status": "ACCOUNTED",
+            "reserved_units": 2809,
+            "task_limit_units": 9000,
+            "input_token_estimate": 2489,
+            "output_cap": 32,
+            "input_tokens": 427,
+            "output_tokens": 7,
+            "reasoning_tokens": 0,
+            "effective_cost": 49.7
+          }
+        ]
+      },
+      "workflow": [
+        {
+          "task_id": "replay",
+          "workflow_id": "task_2ba1e45797234f97945253c803ec60f8",
+          "session_id": "205c0f428989443dad98e74dd497b020",
+          "stages": [
+            "solve",
+            "finalize"
+          ],
+          "saved": false,
+          "state": "COMPLETED",
+          "request_timeout_sec": 60.0,
+          "workflow_timeout_sec": 180.0
+        }
+      ]
+    },
+    {
+      "source": "experiments/E54_conflict_live_20261111T163627676731/response.json",
+      "source_sha256": "bf7f9ebf111f7d568cd090c3f83612c8e599f3a42e4552c5a1ce3f3b1de07ee7",
+      "original_response": "CONFLICT",
+      "result": {
+        "task_id": "replay",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 456,
+        "output_tokens": 3,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model reported conflicting alternatives instead of a final value"
+      },
+      "answer_file_exists": false,
+      "passed": true,
+      "replayed_historical_budget": {
+        "budget": 900,
+        "known_effective_tokens": 48.6,
+        "reserved_effective_tokens": 0.0,
+        "has_unaccounted_request": false,
+        "remote_stopped": false,
+        "events": [
+          {
+            "ticket": 0,
+            "task_id": "replay",
+            "status": "ACCOUNTED",
+            "reserved_units": 2809,
+            "task_limit_units": 9000,
+            "input_token_estimate": 2489,
+            "output_cap": 32,
+            "input_tokens": 456,
+            "output_tokens": 3,
+            "reasoning_tokens": 0,
+            "effective_cost": 48.6
+          }
+        ]
+      },
+      "workflow": [
+        {
+          "task_id": "replay",
+          "workflow_id": "task_21083e1a8d2548c29a14ee251b0bda90",
+          "session_id": "74bb1be5785c4bf486bfb1c1456f366a",
+          "stages": [
+            "solve",
+            "finalize"
+          ],
+          "saved": false,
+          "state": "COMPLETED",
+          "request_timeout_sec": 60.0,
+          "workflow_timeout_sec": 180.0
+        }
+      ]
+    }
+  ],
+  "solver_sha256": "d4e1081fda959a2b4e992edf0c5bd8773455301c2b82bb437eb648816f3a9293"
+}

@@ -27,6 +27,13 @@ class SearchConflictResponseTests(unittest.IsolatedAsyncioTestCase):
         self.assertIsNone(result.answer)
         self.assertEqual((result.input_tokens,result.output_tokens),(20,3))
 
+    async def test_bare_conflict_not_submitted_as_answer(self):
+        for reply in ('CONFLICT', 'conflict.'):
+            with self.subTest(reply=reply):
+                result=await self.run_reply(reply)
+                self.assertEqual(result.status,'UNKNOWN')
+                self.assertIsNone(result.answer)
+
     async def test_conflict_colon_not_submitted_as_answer(self):
         result=await self.run_reply('conflict: Bern, Oslo')
         self.assertEqual(result.status,'UNKNOWN')

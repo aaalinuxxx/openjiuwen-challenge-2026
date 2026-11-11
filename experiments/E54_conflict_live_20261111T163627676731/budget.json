@@ -1,0 +1,22 @@
+{
+  "budget": 600,
+  "known_effective_tokens": 48.6,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "conflicting_city_followup",
+      "status": "ACCOUNTED",
+      "reserved_units": 2971,
+      "task_limit_units": 6000,
+      "input_token_estimate": 2651,
+      "output_cap": 32,
+      "input_tokens": 456,
+      "output_tokens": 3,
+      "reasoning_tokens": 0,
+      "effective_cost": 48.6
+    }
+  ]
+}

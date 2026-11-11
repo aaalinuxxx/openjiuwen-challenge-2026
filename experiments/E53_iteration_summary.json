@@ -1,0 +1,177 @@
+{
+  "created_at": "2026-11-11T16:41:47.365Z",
+  "scope": "Targeted authored density/compression pilot plus conflict failure follow-up",
+  "hypotheses": {
+    "H03_5a": "SUPPORTED on authored dense KB cases, experimental candidate",
+    "H03_6": "Prompt change and first guard FAILED live; final guard passes replay of 3 real responses, no new live generation after final fix",
+    "H03_7": "PROPOSED structured evidence validation"
+  },
+  "commits": {
+    "E52_protocol": "8a7b7ed",
+    "E54_initial_fix_protocol": "7e74436"
+  },
+  "live_reports": {
+    "E53": "experiments/E53_compaction_live_20261111T163207400174/report.json",
+    "E54": "experiments/E54_conflict_live_20261111T163627676731/report.json"
+  },
+  "E53": {
+    "planned_pairs": 6,
+    "complete_pairs": 6,
+    "arms": {
+      "plain": {
+        "attempted": 6,
+        "solved": 4,
+        "justified_refusals": 0,
+        "correct": 4,
+        "wrong_answers": 1,
+        "false_refusals": 0,
+        "calls": 5,
+        "known_effective_tokens": 276
+      },
+      "table": {
+        "attempted": 6,
+        "solved": 5,
+        "justified_refusals": 0,
+        "correct": 5,
+        "wrong_answers": 1,
+        "false_refusals": 0,
+        "calls": 6,
+        "known_effective_tokens": 243.9
+      }
+    },
+    "paired_submitted_ids": [
+      "dense_roomy",
+      "conflicting_city",
+      "unicode_values",
+      "sparse_control",
+      "source_question"
+    ],
+    "paired_submitted": {
+      "plain": {
+        "attempted": 5,
+        "solved": 4,
+        "justified_refusals": 0,
+        "correct": 4,
+        "wrong_answers": 1,
+        "false_refusals": 0,
+        "calls": 5,
+        "known_effective_tokens": 276
+      },
+      "table": {
+        "attempted": 5,
+        "solved": 4,
+        "justified_refusals": 0,
+        "correct": 4,
+        "wrong_answers": 1,
+        "false_refusals": 0,
+        "calls": 5,
+        "known_effective_tokens": 199.4
+      }
+    }
+  },
+  "E54": {
+    "status": "SOLVED",
+    "answer": "CONFLICT",
+    "wrong_answer_prevented": false,
+    "cost": 48.6
+  },
+  "E54b": {
+    "report": "experiments/E54b_response_replay_20261111T163904310532.json",
+    "passed": 3,
+    "total": 3,
+    "api_calls": 0,
+    "known_new_tokens": 0
+  },
+  "real_completed_api_calls": 12,
+  "known_effective_tokens": 568.5,
+  "new_unknown_costs": 0,
+  "prior_ledgers_unchanged": {
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+    "experiments/E50_search_live_20261111T155649239479/budget.json": true
+  },
+  "unit_tests": {
+    "passed": 93,
+    "total": 93
+  },
+  "production": "Standard context remains plain; explicit conflict-response guard enabled, prompt-only experiment reverted.",
+  "paired_api_cost_savings": {
+    "plain": 276,
+    "table": 199.4,
+    "absolute": 76.6,
+    "percent": 27.75,
+    "includes_one_wrong_answer_each": true
+  },
+  "successful_paired_costs": {
+    "plain": 206.6,
+    "table": 149.7
+  },
+  "verified_responses": [
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_01.json",
+      "sha256": "5f803d07872f6702ac36c78d1a8fc7a22698b515484f8e862d7d546cd83a342a",
+      "cost_units": 445
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_02.json",
+      "sha256": "6d92c935384a515d2a0ed76c30e877d8ca736d4024cf4a801a2593dfa0ed68fd",
+      "cost_units": 457
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_03.json",
+      "sha256": "c3d78c6810f2391e3cddc289cff724d4bcf089a34f434464e79e9db91796fd32",
+      "cost_units": 643
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_04.json",
+      "sha256": "0781be69804845df7af640082dc234b595862ee9e8bfbc816ec8fd600c292582",
+      "cost_units": 694
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_05.json",
+      "sha256": "0ae5eada2f8037431fe9d84f8f90118792a38ba0b928dd2a76bc10042396d04e",
+      "cost_units": 497
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_06.json",
+      "sha256": "59211db95e52ecaeab81cb35f99fe6df078407b7da3043e2000d358200dbc6d4",
+      "cost_units": 454
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_07.json",
+      "sha256": "21f33995e5520f9d6d1e3f7dcd84d19e7b6d06d8e64e2bc10d87fa50c516f900",
+      "cost_units": 641
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_08.json",
+      "sha256": "b8ccdb563b630b606d84d4ae83e71b10898c9466e49ae36caabbd2357ecb7a83",
+      "cost_units": 146
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_09.json",
+      "sha256": "724f765a43e4d7df46668030e2ba699fd22c45957d6d6aa34f2bfc294a3d8291",
+      "cost_units": 146
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_10.json",
+      "sha256": "89471fad25de50f6c7a9ae8ff418e7e1ac695f9efb1f225c134d54e339523446",
+      "cost_units": 440
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_11.json",
+      "sha256": "35848328b1f3afdb6c40581495e6074229780b9a96b31a0b11e14740999b04d2",
+      "cost_units": 636
+    },
+    {
+      "path": "experiments/E54_conflict_live_20261111T163627676731/response.json",
+      "sha256": "bf7f9ebf111f7d568cd090c3f83612c8e599f3a42e4552c5a1ce3f3b1de07ee7",
+      "cost_units": 486
+    }
+  ],
+  "source_hashes": {
+    "harness/agents/search_solver.py": "d4e1081fda959a2b4e992edf0c5bd8773455301c2b82bb437eb648816f3a9293",
+    "harness/agents/kb_compaction.py": "438ae744d34a48756485c9ca20a5095ebbaf11fc9a0335ae4918b0fe4358b5ac",
+    "scripts/search_conflict_replay.py": "7430057a188b65678a6b3d65e02b411f0f2b2adc233ac069fefa8926f8aafaee",
+    "tests/test_kb_compaction.py": "a650f894022a8bf3b4734d25773df30749ed5465bf12ad2014c213d2981cc9b5",
+    "tests/test_search_conflict_response.py": "b98d6013680a9be34074c4d09d3c611898243b9e74661534a0d412d70f1115d6"
+  }
+}

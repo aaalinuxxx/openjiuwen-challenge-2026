@@ -1,0 +1,20 @@
+{
+  "scope": "Guard extended to bare CONFLICT; prompt-only change reverted after failed E54. No new API calls.",
+  "sources": [
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_04.json",
+      "arm": "plain",
+      "sha256": "0781be69804845df7af640082dc234b595862ee9e8bfbc816ec8fd600c292582"
+    },
+    {
+      "path": "experiments/E53_compaction_live_20261111T163207400174/response_05.json",
+      "arm": "table",
+      "sha256": "0ae5eada2f8037431fe9d84f8f90118792a38ba0b928dd2a76bc10042396d04e"
+    },
+    {
+      "path": "experiments/E54_conflict_live_20261111T163627676731/response.json",
+      "arm": "table",
+      "sha256": "bf7f9ebf111f7d568cd090c3f83612c8e599f3a42e4552c5a1ce3f3b1de07ee7"
+    }
+  ]
+}

@@ -113,8 +113,6 @@ async def solve_search_task(ctx: TaskContext, bridge) -> SolveResult:
     sys_prompt = (
         "Use ONLY the supplied KB records. Return only the exact requested value without explanation. "
         "Conflicting alternatives are explicitly marked. "
-        "If facts needed for the answer are contradictory, treat the answer as unsupported. "
-        "Never output a CONFLICT marker or conflicting alternatives as the final value. "
         f"If the answer is unsupported, return {refusal}. Never infer absence from omitted records."
     )
     coverage = "complete" if context.complete_kb else "partial (" + ", ".join(context.limits) + ")"
@@ -130,7 +128,7 @@ async def solve_search_task(ctx: TaskContext, bridge) -> SolveResult:
                       if not key.startswith('_') and isinstance(value, str)}
     literal_values.update(value for record in entities.values()
                           for alternatives in record.get('_conflicts', {}).values() for value in alternatives)
-    if re.match(r'^CONFLICT\s*(?:\[|:)', clean_ans, re.I) and clean_ans not in literal_values:
+    if re.match(r'^CONFLICT(?:\s*$|\s*(?:\[|:))', clean_ans, re.I) and clean_ans not in literal_values:
         return SolveResult(task_id=ctx.task_id, status="UNKNOWN",
             notes="Model reported conflicting alternatives instead of a final value",
             input_tokens=in_tok, output_tokens=out_tok, reasoning_tokens=r_tok, model_used=model)

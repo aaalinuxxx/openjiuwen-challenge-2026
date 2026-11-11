@@ -1,0 +1,65 @@
+{
+  "scope": "Single known dev failure follow-up; not independent generalization or repeated paired test",
+  "result": {
+    "task_id": "conflicting_city_followup",
+    "status": "SOLVED",
+    "answer": "CONFLICT",
+    "input_tokens": 456,
+    "output_tokens": 3,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.75,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": ""
+  },
+  "answer_file_exists": true,
+  "real_api_attempts": 1,
+  "known_effective_tokens": 48.6,
+  "budget": {
+    "budget": 600,
+    "known_effective_tokens": 48.6,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "conflicting_city_followup",
+        "status": "ACCOUNTED",
+        "reserved_units": 2971,
+        "task_limit_units": 6000,
+        "input_token_estimate": 2651,
+        "output_cap": 32,
+        "input_tokens": 456,
+        "output_tokens": 3,
+        "reasoning_tokens": 0,
+        "effective_cost": 48.6
+      }
+    ]
+  },
+  "wrong_answer_prevented": false,
+  "justified_refusal": false,
+  "workflow": [
+    {
+      "task_id": "conflicting_city_followup",
+      "workflow_id": "task_ad4898ec199b489c8a846ec600502d13",
+      "session_id": "d33ecc7044814ad4b08fb8ae30d68bbc",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    }
+  ],
+  "recording_errors": [],
+  "source_hashes": {
+    "harness/agents/search_solver.py": "4d432225a4c631b5d7f38b1dd6670fba84c8b424ec9d32f6ef1f692d06283ab8",
+    "harness/agents/kb_compaction.py": "438ae744d34a48756485c9ca20a5095ebbaf11fc9a0335ae4918b0fe4358b5ac",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "scripts/search_conflict_live.py": "df827245704e3a2eba0ba805d07f2778019627a82b21a9a936116fa9d02a0b9f",
+    "experiments/E52_kb_compaction/cases.json": "b9749c65a57bc3a5ba0f77001a41d79c7199e2eb12c7b935ee56c9ecbbd3a97d"
+  }
+}
