@@ -1,0 +1,20 @@
+{
+  "task_id": "outside_phrase__old",
+  "stage": "python",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"stocks.csv\", \"columns\": [\"item\", \"qty\"], \"rows\": 4, \"sample_rows\": [{\"item\": \"a\", \"qty\": \"3\"}, {\"item\": \"b\", \"qty\": \"8\"}, {\"item\": \"a\", \"qty\": \"5\"}]}, {\"file\": \"zones.csv\", \"columns\": [\"item\", \"region\"], \"rows\": 4, \"sample_rows\": [{\"item\": \"a\", \"region\": \"west\"}, {\"item\": \"b\", \"region\": \"east\"}, {\"item\": \"c\", \"region\": \"west\"}]}]\nTask: Read stocks.csv and zones.csv. For each stock row, find every zone row whose item is the same exact string and whose region is 'west'. Add that stock's qty once per matching zone row, retaining duplicates in both files. Return only the sum."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

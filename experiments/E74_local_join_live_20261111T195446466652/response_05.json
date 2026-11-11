@@ -1,0 +1,32 @@
+{
+  "task_id": "empty_join_sum__old",
+  "response": {
+    "id": "chatcmpl-a9d6bdb079b20eac",
+    "created": 1794426908,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"left\": \"stocks.csv\",\n  \"right\": \"zones.csv\",\n  \"left_key\": \"item\",\n  \"right_key\": \"item\",\n  \"join\": \"inner\",\n  \"filter\": {\n    \"side\": \"right\",\n    \"column\": \"region\",\n    \"equals\": \"west\"\n  },\n  \"aggregate\": {\n    \"op\": \"sum\",\n    \"side\": \"left\",\n    \"column\": \"qty\"\n  }\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 114,
+      "prompt_tokens": 439,
+      "total_tokens": 553,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

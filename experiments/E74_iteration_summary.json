@@ -1,0 +1,256 @@
+{
+  "hypothesis": "H04.13",
+  "status": "SUPPORTED_ON_BOUNDED_GRAMMAR_PILOT",
+  "frozen_commit": "5afa5af",
+  "report": "experiments/E74_local_join_live_20261111T195446466652/report.json",
+  "real_api_attempts": 11,
+  "effective_tokens": 2402.1,
+  "metrics": {
+    "old": {
+      "attempted": 8,
+      "solved": 7,
+      "solvable_total": 8,
+      "supported_solved": 6,
+      "supported_total": 6,
+      "outside_plan_solved": 1,
+      "outside_plan_total": 2,
+      "fallback_tasks": 0,
+      "wrong_answers": 1,
+      "calls": 8,
+      "effective_tokens": 1567.3
+    },
+    "new": {
+      "attempted": 8,
+      "solved": 7,
+      "solvable_total": 8,
+      "supported_solved": 6,
+      "supported_total": 6,
+      "outside_plan_solved": 1,
+      "outside_plan_total": 2,
+      "fallback_tasks": 0,
+      "wrong_answers": 1,
+      "calls": 3,
+      "effective_tokens": 834.8
+    }
+  },
+  "usage": {
+    "old": {
+      "input": 3063,
+      "output": 1261
+    },
+    "new": {
+      "input": 858,
+      "output": 749
+    }
+  },
+  "local_comparison": {
+    "old_correct": 5,
+    "new_correct": 5,
+    "old_calls": 5,
+    "new_calls": 0,
+    "old_effective_tokens": 766.5,
+    "new_effective_tokens": 0,
+    "verified_local_results": [
+      {
+        "case": "known_paraphrase_local",
+        "answer": "17",
+        "calls": 0,
+        "effective_cost": 0,
+        "model_used": "",
+        "wall_time_sec": 0
+      },
+      {
+        "case": "decimal_right_sum",
+        "answer": "0.67",
+        "calls": 0,
+        "effective_cost": 0,
+        "model_used": "",
+        "wall_time_sec": 0
+      },
+      {
+        "case": "string_keys_local",
+        "answer": "27",
+        "calls": 0,
+        "effective_cost": 0,
+        "model_used": "",
+        "wall_time_sec": 0
+      },
+      {
+        "case": "left_signed_sum",
+        "answer": "13",
+        "calls": 0,
+        "effective_cost": 0,
+        "model_used": "",
+        "wall_time_sec": 0
+      },
+      {
+        "case": "empty_join_sum",
+        "answer": "0",
+        "calls": 0,
+        "effective_cost": 0,
+        "model_used": "",
+        "wall_time_sec": 0
+      }
+    ]
+  },
+  "controls": [
+    {
+      "case": "outside_numeric",
+      "payloads_identical": true,
+      "old_cost": 319.3,
+      "new_cost": 327.3
+    },
+    {
+      "case": "outside_or",
+      "payloads_identical": true,
+      "old_cost": 254.6,
+      "new_cost": 282.6
+    },
+    {
+      "case": "outside_phrase",
+      "payloads_identical": true,
+      "old_cost": 226.9,
+      "new_cost": 224.9
+    }
+  ],
+  "net_cost_saving": 732.5,
+  "net_cost_saving_percent": 46.73642570024884,
+  "cost_interpretation": "Removal of five translation calls saves 766.5 measured baseline tokens; unchanged Python controls vary by +34.0 tokens on identical requests, yielding net saving 732.5. Local computation still consumes CPU; zero timer readings are not a claim of zero duration.",
+  "local_tests": {
+    "passed": 150,
+    "report": "experiments/E73_local_join/unit_tests.json",
+    "initial_metadata_failure_retained": true
+  },
+  "preflight_model_quality_evidence": false,
+  "verification": {
+    "responses": [
+      {
+        "task": "known_paraphrase_local__old",
+        "stage": "json_plan",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_01.json",
+        "effective_cost": 157.9,
+        "sha256": "27fb717daaac645654ccde775728952895de58ce442543016b85624832c4e719"
+      },
+      {
+        "task": "decimal_right_sum__old",
+        "stage": "json_plan",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_02.json",
+        "effective_cost": 158.9,
+        "sha256": "65ed94cfb53b2d34c707e5683cf7b0471186c4c1ff7ec6a0ac2f0b3cea7b6a16"
+      },
+      {
+        "task": "string_keys_local__old",
+        "stage": "json_plan",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_03.json",
+        "effective_cost": 159.1,
+        "sha256": "0e55e98a41649d5abe91a8e131ad4ec7aa8a93b87d95002687c7592ec041397b"
+      },
+      {
+        "task": "left_signed_sum__old",
+        "stage": "json_plan",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_04.json",
+        "effective_cost": 132.7,
+        "sha256": "58461144a5ee67ba2606599397df127d37af816a75d9091602159d4ef2fd9e2e"
+      },
+      {
+        "task": "empty_join_sum__old",
+        "stage": "json_plan",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_05.json",
+        "effective_cost": 157.9,
+        "sha256": "6756bbf01800cb3e418fad68d041667045a5f9bd1da38a343b1c58e870203972"
+      },
+      {
+        "task": "outside_numeric__new",
+        "stage": "python",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_06.json",
+        "effective_cost": 327.3,
+        "sha256": "02fe772096f2691c0e45e58c6a8b1dc2b2b75745faa41510e73bbaf708676e95"
+      },
+      {
+        "task": "outside_numeric__old",
+        "stage": "python",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_07.json",
+        "effective_cost": 319.3,
+        "sha256": "a721d47d1186cd2bdaa84e675bb2a7255bc09486deddf6d08bf695c985250020"
+      },
+      {
+        "task": "outside_or__old",
+        "stage": "python",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_08.json",
+        "effective_cost": 254.6,
+        "sha256": "c765b339f1a0f8af7301a367cfda67faba6c4790217ae6e131cfb15ec13f461b"
+      },
+      {
+        "task": "outside_or__new",
+        "stage": "python",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_09.json",
+        "effective_cost": 282.6,
+        "sha256": "3fbbb1cb8ae4584a7ca0088330ee6b835d30c4f30d753292d06269370bc0c386"
+      },
+      {
+        "task": "outside_phrase__new",
+        "stage": "python",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_10.json",
+        "effective_cost": 224.9,
+        "sha256": "8e48d43a192fea0d6269f5180b4fe760853693a9543c951025e74f997a3a90f5"
+      },
+      {
+        "task": "outside_phrase__old",
+        "stage": "python",
+        "path": "experiments/E74_local_join_live_20261111T195446466652/response_11.json",
+        "effective_cost": 226.9,
+        "sha256": "701d84aead5c005467e06b9c31fbb28223c5dc427f6da1a64e7ca2a95c0e2dab"
+      }
+    ],
+    "all_frozen_hashes_unchanged": {
+      "harness/agents/join_cascade.py": true,
+      "harness/agents/join_plans.py": true,
+      "harness/agents/multi_csv.py": true,
+      "harness/agents/data_solver.py": true,
+      "harness/agents/calculation_plans.py": true,
+      "harness/agents/model_router.py": true,
+      "harness/agents/base_harness.py": true,
+      "harness/config.py": true,
+      "harness/workflow_runner.py": true,
+      "harness/planner/budget_tracker.py": true,
+      "harness/sandbox/executor.py": true,
+      "scripts/multimodule_live.py": true,
+      "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+      "experiments/E50_search_live_20261111T155649239479/budget.json": true,
+      "harness/agents/join_scope.py": true,
+      "harness/agents/join_scope_v2.py": true,
+      "harness/agents/local_join.py": true,
+      "scripts/local_join_live.py": true,
+      "tests/test_local_join.py": true,
+      "experiments/E73_local_join/cases.json": true,
+      "experiments/E73_local_join/oracle_validation.json": true,
+      "experiments/E73_local_join/routing_validation.json": true,
+      "experiments/E73_local_join/design.md": true
+    },
+    "all_usage_known": true,
+    "all_inputs_unchanged": true,
+    "all_actual_routes_match_expected": true,
+    "all_responses_stop": true,
+    "local_ledger_events": 0,
+    "local_model_used": "",
+    "reasoning_tokens": 0,
+    "max_output": 400
+  },
+  "common_failure": {
+    "case": "outside_or",
+    "actual_both": "23",
+    "expected": "30",
+    "cause": "Unchanged Python route uses any matching region instead of accounting for every matching pair; unmatched rows are retained."
+  },
+  "production_enabled": false,
+  "next": {
+    "hypothesis": "H04.14",
+    "status": "PROPOSED",
+    "description": "Typed equality OR unmatched predicate with all-pairs multiplicity and strict full-text coverage, tested separately from local execution."
+  },
+  "historical_broad_challenge": {
+    "correct": 9,
+    "solvable": 19,
+    "retested": false
+  }
+}
