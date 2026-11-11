@@ -1,0 +1,5 @@
+{
+  "code": 0,
+  "stdout": "{\"case\": \"chain_known_form\", \"arm\": \"old\", \"status\": \"ACCOUNTING_UNKNOWN\", \"answer\": null, \"correct\": false, \"effective_cost\": 0.0, \"calls\": 1}\r\n{\"status\": \"STOPPED_UNKNOWN_COST\", \"metrics\": {\"planned_pairs\": 6, \"complete_pairs\": 0, \"arms\": {\"old\": {\"attempted\": 0, \"verified_solutions\": 0, \"justified_refusals\": 0, \"correct\": 0, \"false_refusals\": 0, \"wrong_answers\": 0, \"known_effective_tokens\": 0}, \"new\": {\"attempted\": 0, \"verified_solutions\": 0, \"justified_refusals\": 0, \"correct\": 0, \"false_refusals\": 0, \"wrong_answers\": 0, \"known_effective_tokens\": 0}}}, \"real_api_calls\": 1, \"real_known_effective_tokens\": 0.0, \"preflight_passed\": null}\r\nReport: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E50_search_live_20261111T155649239479\\report.json\r\n",
+  "stderr": "Task chain_known_form__old failed: ConnectTimeout\r\n"
+}

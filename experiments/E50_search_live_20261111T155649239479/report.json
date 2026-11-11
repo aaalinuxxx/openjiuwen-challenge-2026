@@ -1,0 +1,109 @@
+{
+  "mode": "LIVE",
+  "scope": "Authored targeted pilot: three known dev controls and three fresh forms of known mechanisms; not independent generalization estimate",
+  "experiment_status": "STOPPED_UNKNOWN_COST",
+  "plan_sha256": "d15b97e760988bceaf686a3f81aec0da5d17c8c612d454d6cff14a7d03b18a86",
+  "source_hashes": {
+    "harness/agents/search_solver.py": "d403c178332df0cdb1814e5aa00eecdce09946e9e37a751fbea7177208babcee",
+    "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/search_live_pairs.py": "f7b8feefae3d5d3b8b71d025ea3a1c5d665612364f4816d2ba621a38d747e2f3"
+  },
+  "legacy_E46": {
+    "path": "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "actual_cost": null,
+    "reserved_effective_tokens": 343.1,
+    "ledger_unchanged": true
+  },
+  "rows": [
+    {
+      "case": "chain_known_form",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": "Riga",
+      "answer": null,
+      "status": "ACCOUNTING_UNKNOWN",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "chain_known_form__old",
+        "status": "ACCOUNTING_UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 10.296999999991385,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "ConnectTimeout"
+      },
+      "workflow": {
+        "task_id": "chain_known_form__old",
+        "workflow_id": "task_f53807384ed14b27a0f99fcde979ea70",
+        "session_id": "5297df28fda24437beeb11bae53ece80",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    }
+  ],
+  "recording_errors": [],
+  "budget": {
+    "budget": 2000,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 192.3,
+    "has_unaccounted_request": true,
+    "remote_stopped": true,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "chain_known_form__old",
+        "status": "COST_UNKNOWN_STOPPED",
+        "reserved_units": 1923,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1603,
+        "output_cap": 32,
+        "error_type": "ConnectTimeout"
+      }
+    ]
+  },
+  "attempted_transport_calls": 1,
+  "real_api_calls": 1,
+  "real_known_effective_tokens": 0.0,
+  "metrics": {
+    "planned_pairs": 6,
+    "complete_pairs": 0,
+    "arms": {
+      "old": {
+        "attempted": 0,
+        "verified_solutions": 0,
+        "justified_refusals": 0,
+        "correct": 0,
+        "false_refusals": 0,
+        "wrong_answers": 0,
+        "known_effective_tokens": 0
+      },
+      "new": {
+        "attempted": 0,
+        "verified_solutions": 0,
+        "justified_refusals": 0,
+        "correct": 0,
+        "false_refusals": 0,
+        "wrong_answers": 0,
+        "known_effective_tokens": 0
+      }
+    }
+  }
+}

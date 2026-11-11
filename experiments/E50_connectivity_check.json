@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-11T15:58:11.681Z",
+  "scope": "Unauthenticated HEAD/GET /models only; no generation",
+  "curl_status": 401,
+  "python_httpx": {
+    "status": 401,
+    "elapsed": 0.828
+  },
+  "initial_generation_attempt": "ConnectTimeout",
+  "initial_ledger_preserved": true
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "chain_fresh_form__old",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE."
+      },
+      {
+        "role": "user",
+        "content": "KB Records:\n# Ivo Marsh: {'_file': 'b.md', '_sources': {'employer': ['b.md']}, '_conflicts': {}, 'employer': 'Cobalt Loom'}\n# Tessa Reed: {'_file': 'a.md', '_sources': {'mentor': ['a.md']}, '_conflicts': {}, 'mentor': 'Ivo Marsh'}\n\nQuestion: Look up Tessa Reed, follow her mentor, then that person employer. Give the city where that employer is headquartered."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_SYNTHETIC",
+  "started_at": "2026-11-11T15:59:27.851687+00:00"
+}
