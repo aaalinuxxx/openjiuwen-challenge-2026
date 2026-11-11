@@ -1,0 +1,32 @@
+{
+  "task_id": "left_or_unmatched__cascade",
+  "response": {
+    "id": "chatcmpl-9d2efc99a135908c",
+    "created": 1794425109,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"left\": \"orders.csv\",\n  \"right\": \"states.csv\",\n  \"left_key\": \"key\",\n  \"right_key\": \"key\",\n  \"join\": \"left\",\n  \"filter\": {\n    \"side\": \"right\",\n    \"column\": \"status\",\n    \"equals\": \"active\"\n  },\n  \"aggregate\": {\n    \"op\": \"sum\",\n    \"side\": \"left\",\n    \"column\": \"amount\"\n  }\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 114,
+      "prompt_tokens": 452,
+      "total_tokens": 566,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

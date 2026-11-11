@@ -1,0 +1,20 @@
+{
+  "task_id": "duplicate_control__python",
+  "stage": "python",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"stocks.csv\", \"columns\": [\"item\", \"qty\"], \"rows\": 4, \"sample_rows\": [{\"item\": \"a\", \"qty\": \"4\"}, {\"item\": \"b\", \"qty\": \"6\"}, {\"item\": \"a\", \"qty\": \"2\"}]}, {\"file\": \"zones.csv\", \"columns\": [\"item\", \"region\"], \"rows\": 4, \"sample_rows\": [{\"item\": \"a\", \"region\": \"west\"}, {\"item\": \"b\", \"region\": \"east\"}, {\"item\": \"c\", \"region\": \"west\"}]}]\nTask: Read stocks.csv and zones.csv. Inner join stocks.item to zones.item. Sum stocks.qty for all matching pairs with zones.region equal to 'west'. Each matching pair contributes once, including repeated rows. Print the integer total."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

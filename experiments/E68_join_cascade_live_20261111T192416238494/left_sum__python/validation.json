@@ -1,0 +1,47 @@
+{
+  "case": "left_sum",
+  "arm": "python",
+  "order_in_pair": 1,
+  "expected": "14",
+  "status": "SOLVED",
+  "answer": "14",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "purchases.csv": "cbe6d56460f7c658d0ed53b98134739fc80ff578280a02218b4c9b44b24d3deb",
+    "rebates.csv": "11b7b6ba5d3f32c958e1902449c44b6aa849623c13088e190863c86dfbbd4878"
+  },
+  "calls": 1,
+  "stages": [
+    "python"
+  ],
+  "effective_cost": 252.1,
+  "result": {
+    "task_id": "left_sum__python",
+    "status": "SOLVED",
+    "answer": "14",
+    "input_tokens": 261,
+    "output_tokens": 226,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 16.921000000002095,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "left_sum__python",
+    "workflow_id": "task_47e6608b15ee4c30a19963d1eb0ae9ef",
+    "session_id": "9c28c817af25486e97c4801026b979ee",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

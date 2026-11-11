@@ -1,0 +1,32 @@
+{
+  "task_id": "left_sum__cascade",
+  "response": {
+    "id": "chatcmpl-ab0fd99cd338de82",
+    "created": 1794425069,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"left\": \"purchases.csv\",\n  \"right\": \"rebates.csv\",\n  \"left_key\": \"id\",\n  \"right_key\": \"id\",\n  \"join\": \"left\",\n  \"filter\": null,\n  \"aggregate\": {\n    \"op\": \"sum\",\n    \"side\": \"right\",\n    \"column\": \"amount\"\n  }\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 90,
+      "prompt_tokens": 431,
+      "total_tokens": 521,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

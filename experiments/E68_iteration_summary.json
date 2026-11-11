@@ -1,0 +1,192 @@
+{
+  "hypothesis": "H04.10",
+  "status": "NOT_SUPPORTED_AS_QUALITY_PRESERVING_POLICY",
+  "frozen_commit": "5c756ad",
+  "report": "experiments/E68_join_cascade_live_20261111T192416238494/report.json",
+  "real_api_attempts": 12,
+  "effective_tokens": 2110.9,
+  "metrics": {
+    "python": {
+      "attempted": 5,
+      "solved": 5,
+      "solvable_total": 5,
+      "supported_solved": 2,
+      "supported_total": 2,
+      "outside_plan_solved": 3,
+      "outside_plan_total": 3,
+      "fallback_tasks": 0,
+      "wrong_answers": 0,
+      "calls": 5,
+      "effective_tokens": 1173.8
+    },
+    "cascade": {
+      "attempted": 5,
+      "solved": 4,
+      "solvable_total": 5,
+      "supported_solved": 2,
+      "supported_total": 2,
+      "outside_plan_solved": 2,
+      "outside_plan_total": 3,
+      "fallback_tasks": 2,
+      "wrong_answers": 1,
+      "calls": 7,
+      "effective_tokens": 937.1
+    }
+  },
+  "usage": {
+    "python": {
+      "input": 1378,
+      "output": 1036
+    },
+    "cascade": {
+      "input": 2791,
+      "output": 658
+    }
+  },
+  "local_tests": {
+    "passed": 128,
+    "report": "experiments/E67_join_cascade/unit_tests.json",
+    "budget_exhaustion_controls": "synthetic_only"
+  },
+  "preflight_is_quality_evidence": false,
+  "verification": {
+    "response_records": [
+      {
+        "task": "duplicate_control__python",
+        "stage": "python",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_01.json",
+        "effective_cost": 269.2,
+        "sha256": "7cefa071a7b47852088358b440e6cc222a66a97b0db9cd0a04213a5b1c1260df"
+      },
+      {
+        "task": "duplicate_control__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_02.json",
+        "effective_cost": 158.2,
+        "sha256": "ddcdb26a8dd53a9d6cb314f2e6ac33e3892efaf863d9d52bf4ade086d41caeb7"
+      },
+      {
+        "task": "left_sum__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_03.json",
+        "effective_cost": 133.1,
+        "sha256": "4b5777a2ff6433137520dce5bfa61f2de632a4e182344a890c655c09dd293d5a"
+      },
+      {
+        "task": "left_sum__python",
+        "stage": "python",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_04.json",
+        "effective_cost": 252.1,
+        "sha256": "c69467b97cd3c1dbd5c54bc46e5ed7196c2256484c8aac4c2f3021f1da03aa67"
+      },
+      {
+        "task": "numeric_threshold__python",
+        "stage": "python",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_05.json",
+        "effective_cost": 202,
+        "sha256": "3cc50147ff05fcd9144d0ec566c38ad0ac9d7664b49222494f17c7f44909a21a"
+      },
+      {
+        "task": "numeric_threshold__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_06.json",
+        "effective_cost": 47,
+        "sha256": "ec0aab819fe05071f9a733cb3d15bbdf61709404a9927b91a2ef23aa5549b4ce"
+      },
+      {
+        "task": "numeric_threshold__cascade",
+        "stage": "python",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_07.json",
+        "effective_cost": 180,
+        "sha256": "22f3831c1c2427e290e5cb195eb86257eaeabaa4f56bc95a37d6d41bc8e06b9e"
+      },
+      {
+        "task": "two_filters__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_08.json",
+        "effective_cost": 49.3,
+        "sha256": "4e5eb982f4ba45f1dfcde4e5a845a8b1a4530983ecb55a1980672ba9d2dbe1e8"
+      },
+      {
+        "task": "two_filters__cascade",
+        "stage": "python",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_09.json",
+        "effective_cost": 210.3,
+        "sha256": "f43059869421fae9ba5f87b8dd358d0d05f79afc8e1c56199e501382e4af6247"
+      },
+      {
+        "task": "two_filters__python",
+        "stage": "python",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_10.json",
+        "effective_cost": 210.3,
+        "sha256": "b062f3c267c6f4e2572b3ed737262ca3287acb87f3fc3c203b960cf536b3b465"
+      },
+      {
+        "task": "left_or_unmatched__python",
+        "stage": "python",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_11.json",
+        "effective_cost": 240.2,
+        "sha256": "874458e62197c5d648a75b984b67dd6f205279fa928516c4b07e622da66c5d33"
+      },
+      {
+        "task": "left_or_unmatched__cascade",
+        "stage": "json_plan",
+        "path": "experiments/E68_join_cascade_live_20261111T192416238494/response_12.json",
+        "effective_cost": 159.2,
+        "sha256": "cf4c7c5b3c34adc9d7ef61c84288e178b52ab0691d4e490c776b40efb2ab6eb5"
+      }
+    ],
+    "usage_integer_tenths": 21109,
+    "prior_ledgers_unchanged": {
+      "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+      "experiments/E50_search_live_20261111T155649239479/budget.json": true
+    },
+    "all_usage_known": true,
+    "all_responses_stop": true,
+    "reasoning_tokens": 0,
+    "all_caps": 400
+  },
+  "failure": {
+    "case": "left_or_unmatched",
+    "expected": "29",
+    "actual": "16",
+    "status": "SOLVED",
+    "raw_plan": {
+      "left": "orders.csv",
+      "right": "states.csv",
+      "left_key": "key",
+      "right_key": "key",
+      "join": "left",
+      "filter": {
+        "side": "right",
+        "column": "status",
+        "equals": "active"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "left",
+        "column": "amount"
+      }
+    },
+    "cause": "Valid JSON omitted OR unmatched; explicit UNSUPPORTED never occurred, so no Python fallback."
+  },
+  "real_fallbacks": [
+    "numeric_threshold",
+    "two_filters"
+  ],
+  "production_enabled": false,
+  "next": {
+    "hypothesis": "H04.11",
+    "parents": [
+      "H04.6",
+      "H04.10"
+    ],
+    "status": "PROPOSED",
+    "description": "Conservative full condition coverage before choosing JSON; unsupported or unparsed text routes to Python. Keyword detection alone is insufficient."
+  },
+  "historical_broad_challenge": {
+    "correct": 9,
+    "solvable": 19,
+    "retested": false
+  }
+}
