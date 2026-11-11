@@ -1,0 +1,20 @@
+{
+  "task_id": "numeric_threshold__cascade",
+  "stage": "python",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"prices.csv\", \"columns\": [\"key\", \"price\"], \"rows\": 4, \"sample_rows\": [{\"key\": \"a\", \"price\": \"5\"}, {\"key\": \"b\", \"price\": \"6\"}, {\"key\": \"c\", \"price\": \"2\"}]}, {\"file\": \"sales.csv\", \"columns\": [\"key\", \"units\"], \"rows\": 4, \"sample_rows\": [{\"key\": \"a\", \"units\": \"8\"}, {\"key\": \"b\", \"units\": \"6\"}, {\"key\": \"c\", \"units\": \"9\"}]}]\nTask: Read sales.csv and prices.csv. Inner join on key. Sum sales.units for every matching pair only if prices.price is numerically greater than 5; price 5 must not contribute. Print the integer sum."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_GOLD_PLANS_AND_ANSWERS"
+}

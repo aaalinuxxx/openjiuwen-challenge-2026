@@ -1,0 +1,50 @@
+{
+  "case": "or_paraphrase",
+  "arm": "cascade",
+  "selected_route": "cascade",
+  "expected_scope_route": "python",
+  "order_in_pair": 0,
+  "expected": "29",
+  "status": "SOLVED",
+  "answer": "29",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": false,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "orders.csv": "79e7af708d78e673198fc9218c4b9bb6a8186c8b21ebf811f66889cce9f058c8",
+    "states.csv": "ad392c6acef0b6498d4b3d1d24e3fd129ca73c2c0217960a2c864a77424a0491"
+  },
+  "calls": 2,
+  "stages": [
+    "json_plan",
+    "python"
+  ],
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "or_paraphrase__cascade",
+    "status": "SOLVED",
+    "answer": "29",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.0470000000204891,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Join cascade: Python after explicit UNSUPPORTED. "
+  },
+  "workflow": {
+    "task_id": "or_paraphrase__cascade",
+    "workflow_id": "task_0584e7de95e24a72b7e32b45f639544e",
+    "session_id": "a152105e306f481696e0d9797bd37443",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

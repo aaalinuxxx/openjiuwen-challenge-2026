@@ -1,0 +1,131 @@
+{
+  "api_calls": 0,
+  "suites": [
+    {
+      "suite": "E65_join_plan",
+      "rows": [
+        {
+          "case": "known_duplicate",
+          "route": "python",
+          "json_representable": true,
+          "gold_answer": "39"
+        },
+        {
+          "case": "many_pairs",
+          "route": "python",
+          "json_representable": true,
+          "gold_answer": "34"
+        },
+        {
+          "case": "left_pairs",
+          "route": "python",
+          "json_representable": true,
+          "gold_answer": "28"
+        },
+        {
+          "case": "string_keys",
+          "route": "python",
+          "json_representable": true,
+          "gold_answer": "9"
+        },
+        {
+          "case": "anti_rows",
+          "route": "python",
+          "json_representable": true,
+          "gold_answer": "3"
+        },
+        {
+          "case": "unsupported_threshold",
+          "route": "python",
+          "json_representable": false,
+          "gold_answer": null
+        }
+      ],
+      "json_routed": 0
+    },
+    {
+      "suite": "E67_join_cascade",
+      "rows": [
+        {
+          "case": "duplicate_control",
+          "route": "python",
+          "json_representable": true,
+          "gold_answer": "17"
+        },
+        {
+          "case": "left_sum",
+          "route": "python",
+          "json_representable": true,
+          "gold_answer": "14"
+        },
+        {
+          "case": "numeric_threshold",
+          "route": "python",
+          "json_representable": false,
+          "gold_answer": null
+        },
+        {
+          "case": "two_filters",
+          "route": "python",
+          "json_representable": false,
+          "gold_answer": null
+        },
+        {
+          "case": "left_or_unmatched",
+          "route": "python",
+          "json_representable": false,
+          "gold_answer": null
+        }
+      ],
+      "json_routed": 0
+    },
+    {
+      "suite": "E69_join_scope",
+      "rows": [
+        {
+          "case": "canonical_duplicates",
+          "route": "json_plan",
+          "json_representable": true,
+          "gold_answer": "22"
+        },
+        {
+          "case": "canonical_left_sum",
+          "route": "json_plan",
+          "json_representable": true,
+          "gold_answer": "19"
+        },
+        {
+          "case": "supported_paraphrase",
+          "route": "python",
+          "json_representable": true,
+          "gold_answer": "17"
+        },
+        {
+          "case": "numeric_threshold",
+          "route": "python",
+          "json_representable": false,
+          "gold_answer": null
+        },
+        {
+          "case": "two_filters",
+          "route": "python",
+          "json_representable": false,
+          "gold_answer": null
+        },
+        {
+          "case": "left_or_unmatched",
+          "route": "python",
+          "json_representable": false,
+          "gold_answer": null
+        },
+        {
+          "case": "or_paraphrase",
+          "route": "python",
+          "json_representable": false,
+          "gold_answer": null
+        }
+      ],
+      "json_routed": 2
+    }
+  ]
+}

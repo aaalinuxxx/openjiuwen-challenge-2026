@@ -1,0 +1,6 @@
+{
+  "api_calls": 0,
+  "initial_report": "experiments/E70_join_scope_preflight_20261111T193325571527/report.json",
+  "cause": "Copied preflight row-count assertion still expected 10 rows, but seven pairs produce 14. All per-row validations and routes passed.",
+  "fix": "Derive row count as 2*len(cases); retain failed initial preflight unchanged."
+}

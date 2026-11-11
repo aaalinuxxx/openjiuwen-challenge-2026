@@ -1,0 +1,20 @@
+{
+  "task_id": "canonical_left_sum__cascade",
+  "stage": "json_plan",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return ONLY a JSON join plan or the exact word UNSUPPORTED. No Python or SQL. Schema: {\"left\":\"file.csv\",\"right\":\"other.csv\",\"left_key\":\"column\",\"right_key\":\"column\",\"join\":\"inner|left|anti\",\"filter\":null,\"aggregate\":{\"op\":\"sum|count\",\"side\":\"left|right|null\",\"column\":\"name|null\"}}. filter is null or {\"side\":\"left|right\",\"column\":\"name\",\"equals\":\"literal string\"}. For count, side and column must be JSON null. For sum both must be strings. The local executor joins exact nonempty string keys, preserving ALL matching pairs, including duplicate rows. left includes unmatched left rows; absent right sum values contribute zero. anti keeps unmatched left rows. The optional equality filter applies AFTER the join. Sum is exact decimal arithmetic; count counts result rows. Only one key per table and at most one string equality filter are supported. Use UNSUPPORTED for numeric comparisons, rounding, multiple filters, distinct, mean, median, composite or numeric keys, or any condition not expressible in this schema. Never drop conditions. Use exact listed filenames and column names. Samples are incomplete; executor reads all rows."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"purchases.csv\", \"columns\": [\"id\"], \"rows\": 4, \"sample_rows\": [{\"id\": \"1\"}, {\"id\": \"2\"}, {\"id\": \"3\"}]}, {\"file\": \"rebates.csv\", \"columns\": [\"id\", \"amount\"], \"rows\": 4, \"sample_rows\": [{\"id\": \"1\", \"amount\": \"3\"}, {\"id\": \"1\", \"amount\": \"4\"}, {\"id\": \"2\", \"amount\": \"5\"}]}]\nTask: Read purchases.csv and rebates.csv. Left join purchases.id to rebates.id using exact string keys. Sum rebates.amount for all resulting pairs. Preserve every matching pair, including duplicates. Missing right values contribute zero. Print the exact sum."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_GOLD_PLANS_AND_ANSWERS"
+}

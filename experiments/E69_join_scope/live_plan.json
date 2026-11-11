@@ -1,0 +1,39 @@
+{
+  "hypothesis": "H04.11",
+  "scope": "Seven adaptive authored pairs, including known E68 failure. Narrow grammar routing, not representative holdout or general semantic validation.",
+  "budget": 5000,
+  "max_calls": 21,
+  "per_task_budget": 1200,
+  "expected_requests": 18,
+  "model": "qwen3.6-35b-a3b-noreason",
+  "max_output": 400,
+  "temperature": 0,
+  "production_enabled": false,
+  "prior_unknown_ledgers": [
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "experiments/E50_search_live_20261111T155649239479/budget.json"
+  ],
+  "frozen_hashes": {
+    "harness/agents/join_cascade.py": "7fad01e01d562e6837a8252bbb9352e8b599946fe423e13c14e8b66bac8f73d0",
+    "harness/agents/join_plans.py": "cd737ee0abc60fd27d5ca45a270a04d2f6e787bd295a7a88d2f78c8a32904ec9",
+    "harness/agents/multi_csv.py": "e716c619347995009c0bfe27bd957bda634d4bb306468f86c76e2375d5844578",
+    "harness/agents/data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness/agents/calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+    "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "harness/sandbox/executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "scripts/multimodule_live.py": "70a6737a2b3887d418e441aaaae373fe8368b961a88179680907b48ec8b67527",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d",
+    "harness/agents/join_scope.py": "b344c31ab06481ff59fd0f907c74a3215ebe1ae2f29fe39d913ed762f2b5640a",
+    "scripts/join_scope_live.py": "ea357f408cc02efb5902f75881ac91d6adfd2c6d83e29ccf3ab19a64c3fefd17",
+    "tests/test_join_scope.py": "eb141898a580288d82b0f0c5f5064201bb034d58fb3afd2ec7d0120fabbdd43f",
+    "experiments/E69_join_scope/cases.json": "323a3538b9b6dde3f0281e5f5584c6e417fbdeb89241f7ab4bbb91bffd02bdb0",
+    "experiments/E69_join_scope/oracle_validation.json": "ba5e814319d49082198eeaa942c2b8ee954be4dcd0815c28edba25851c9f7eff",
+    "experiments/E69_join_scope/routing_validation.json": "630de120de861ebcfb08c28b051e37fa19a9be4e3ebb38b6b2f678db9f3d0fe0",
+    "experiments/E69_join_scope/design.md": "85789e055564823ea7aed08d42075130163ec568afd88b109028e570d66fdf3f"
+  }
+}

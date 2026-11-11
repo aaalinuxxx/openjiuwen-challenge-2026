@@ -1,0 +1,17 @@
+{
+  "task_id": "or_paraphrase__scope",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('29')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

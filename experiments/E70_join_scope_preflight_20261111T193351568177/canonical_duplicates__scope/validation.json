@@ -1,0 +1,49 @@
+{
+  "case": "canonical_duplicates",
+  "arm": "scope",
+  "selected_route": "json_plan",
+  "expected_scope_route": "json_plan",
+  "order_in_pair": 1,
+  "expected": "22",
+  "status": "SOLVED",
+  "answer": "22",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "stocks.csv": "5aa19f9a984d5299b94c00d444391781681b81fc30b7cff3e2c6f0aae8188e43",
+    "zones.csv": "26320083027d556271730cda22dcf5d93efc271d3daeee478b0368818dd3f4bb"
+  },
+  "calls": 1,
+  "stages": [
+    "json_plan"
+  ],
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "canonical_duplicates__scope",
+    "status": "SOLVED",
+    "answer": "22",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.01600000000325963,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Full-text scope route: json_plan. Executed typed join plan; question semantics are not formally verified"
+  },
+  "workflow": {
+    "task_id": "canonical_duplicates__scope",
+    "workflow_id": "task_10f2e24c9d21411e9be2f09b006e9b6c",
+    "session_id": "562ca5ff4e594c65a6a6acfc05fcad3c",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

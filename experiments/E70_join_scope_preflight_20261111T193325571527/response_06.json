@@ -1,0 +1,17 @@
+{
+  "task_id": "supported_paraphrase__scope",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('17')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}
