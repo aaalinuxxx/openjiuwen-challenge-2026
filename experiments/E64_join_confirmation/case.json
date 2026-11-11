@@ -1,0 +1,10 @@
+{
+  "id": "duplicate_beyond_preview",
+  "instruction": "Read orders.csv and customers.csv. Inner join orders.customer_id = customers.customer_id. Sum orders.amount for joined rows with customers.region equal to 'north'. Each matching pair contributes once. Print the integer total.",
+  "files": {
+    "orders.csv": "order_id,customer_id,amount\no1,A,10\no2,B,7\no3,A,5\no4,C,9\n",
+    "customers.csv": "customer_id,region\nA,north\nB,south\nC,north\nA,north\n"
+  },
+  "expected": "39",
+  "sql": "SELECT COALESCE(SUM(CAST(o.amount AS INTEGER)),0) FROM orders o JOIN customers c ON o.customer_id=c.customer_id WHERE c.region='north'"
+}

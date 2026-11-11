@@ -1,0 +1,32 @@
+{
+  "task_id": "string_keys__multi",
+  "response": {
+    "id": "chatcmpl-9e11fe9433163060",
+    "created": 1794418086,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read regions.csv\nregions = {}\nwith open('regions.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        regions[row['key']] = row['region']\n\n# Join on key (exact string equality) and sum units for region 'north'\ntotal = 0\nfor order in orders:\n    key = order['key']\n    if key in regions and regions[key] == 'north':\n        total += int(order['units'])\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 170,
+      "prompt_tokens": 281,
+      "total_tokens": 451,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

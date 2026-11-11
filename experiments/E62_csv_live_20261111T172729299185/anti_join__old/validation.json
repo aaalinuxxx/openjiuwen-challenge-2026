@@ -1,0 +1,43 @@
+{
+  "case": "anti_join",
+  "arm": "old",
+  "order_in_pair": 0,
+  "expected": "2",
+  "status": "UNKNOWN",
+  "answer": null,
+  "solved": false,
+  "boundary_control_passed": false,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "customers.csv": "8c4555710a23372d8239298a92680125e16749bad29ba2bc74851affbd067a8d",
+    "invoices.csv": "f595dabe401b28f73ce2d8febff8117d529cbd4c8f309fbfb0b335ca98fd5b47"
+  },
+  "calls": 0,
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "anti_join__old",
+    "status": "UNKNOWN",
+    "answer": null,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.0,
+    "model_used": "qwen3.8-27b-noreason",
+    "notes": "Multiple CSV files without a recognized input selection"
+  },
+  "workflow": {
+    "task_id": "anti_join__old",
+    "workflow_id": "task_f38e10a399a84c02bed86ab1d36b7f0a",
+    "session_id": "9eae5391595c4a45b87d497cd32cd189",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": false,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

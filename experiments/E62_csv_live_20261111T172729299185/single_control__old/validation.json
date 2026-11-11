@@ -1,0 +1,42 @@
+{
+  "case": "single_control",
+  "arm": "old",
+  "order_in_pair": 1,
+  "expected": "8",
+  "status": "SOLVED",
+  "answer": "8",
+  "solved": true,
+  "boundary_control_passed": false,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "numbers.csv": "d6a3a6bdedb44a78552cb110527b918cff45b18302c4c5dd3a5ec5412b6f34ab"
+  },
+  "calls": 1,
+  "effective_cost": 65.0,
+  "result": {
+    "task_id": "single_control__old",
+    "status": "SOLVED",
+    "answer": "8",
+    "input_tokens": 90,
+    "output_tokens": 56,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 1.125,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "single_control__old",
+    "workflow_id": "task_e2c32706a29847deaaa8fbec33bf49a6",
+    "session_id": "c6b40410d0e84735becfcadef345dafe",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

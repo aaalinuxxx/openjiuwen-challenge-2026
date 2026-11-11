@@ -1,0 +1,43 @@
+{
+  "case": "ambiguous_inputs",
+  "arm": "multi",
+  "order_in_pair": 1,
+  "expected": null,
+  "status": "UNKNOWN",
+  "answer": null,
+  "solved": false,
+  "boundary_control_passed": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "left.csv": "38d7da9f518460cd8ad7f7f39aab6ef94d27b6ad322c6a214540eb1a1a4a0ef4",
+    "right.csv": "b583aa96838eed82201ffbf1a0b520594ac743e91d1ba7127365c23edf6fb9e0"
+  },
+  "calls": 0,
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "ambiguous_inputs__multi",
+    "status": "UNKNOWN",
+    "answer": null,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.0,
+    "model_used": "qwen3.8-27b-noreason",
+    "notes": "Need exactly two existing, explicitly named CSV inputs"
+  },
+  "workflow": {
+    "task_id": "ambiguous_inputs__multi",
+    "workflow_id": "task_34c287bff61a4eff9b6a8b2ee8e45057",
+    "session_id": "a8917bf332594e0e94a329f8af3f3e00",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": false,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

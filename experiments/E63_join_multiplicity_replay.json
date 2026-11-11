@@ -1,0 +1,18 @@
+{
+  "scope": "Post-hoc metamorphic replay of recorded real model code; not a new generation or independent live task",
+  "api_calls": 0,
+  "source_response": "experiments/E62_csv_live_20261111T172729299185/response_01.json",
+  "source_sha256": "ddd300bc30c93d2b278706f1cad344f26ebb5cc2543d2c42e23781d2ea10571d",
+  "instruction": "Read orders.csv and customers.csv. Inner join orders.customer_id = customers.customer_id. Sum orders.amount for joined rows with customers.region equal to 'north'. Each matching pair contributes once. Print the integer total.",
+  "mutation": "Append one additional A,north row to customers.csv; unchanged instruction",
+  "files": {
+    "orders.csv": "order_id,customer_id,amount\no1,A,10\no2,B,7\no3,A,5\no4,C,9\n",
+    "customers.csv": "customer_id,region\nA,north\nB,south\nC,north\nA,north\n"
+  },
+  "expected": "39",
+  "actual": "24",
+  "execution_ok": true,
+  "error": "",
+  "passed": false,
+  "conclusion": "A dictionary keyed by customer_id silently drops multiplicity; fixture correctness does not prove join semantics"
+}

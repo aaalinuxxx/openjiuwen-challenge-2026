@@ -1,0 +1,32 @@
+{
+  "task_id": "single_control__multi",
+  "response": {
+    "id": "chatcmpl-92132afe372d7e3d",
+    "created": 1794418094,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "import csv\nimport statistics\n\nwith open('numbers.csv', 'r') as f:\n    reader = csv.DictReader(f)\n    values = [int(row['value']) for row in reader]\n\nmedian = statistics.median(values)\nprint(int(median))",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 56,
+      "prompt_tokens": 90,
+      "total_tokens": 146,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

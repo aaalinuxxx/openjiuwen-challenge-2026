@@ -1,0 +1,840 @@
+{
+  "mode": "LIVE",
+  "status": "COMPLETED",
+  "scope": "Eight authored targeted cases: five joins, one single-CSV control, two input-selection boundaries; not independent holdout",
+  "plan_sha256": "32e84780a68a056e271196f653945baec33d59ded346f41a6c4e389d9be116a0",
+  "source_hashes": {
+    "harness/agents/multi_csv.py": "e716c619347995009c0bfe27bd957bda634d4bb306468f86c76e2375d5844578",
+    "harness/agents/data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness/agents/instruction_scope.py": "8f9d0f8bf4aee628b067f42072da1a7ffeff86950c51ce34aa5bc9a3e6f291ba",
+    "harness/agents/calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+    "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "harness/sandbox/executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "scripts/csv_join_live.py": "e5eff7ee399dc77768832269dce262f219db20a61a7807467cf63a31e51fa819",
+    "scripts/multimodule_live.py": "70a6737a2b3887d418e441aaaae373fe8368b961a88179680907b48ec8b67527",
+    "experiments/E61_csv_join/cases.json": "b6b6393a9df6dc949c1ea51ef81eb39bc467eedd65e639fc99500eb8d47870f7",
+    "experiments/E61_csv_join/oracle_validation.json": "91478b1c54960af10a630eb2fe5b09f0b6ac4d104a5ebcf8f0a1859a81504547",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d"
+  },
+  "rows": [
+    {
+      "case": "inner_filter",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": "24",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "193a4ca4d60ad039da48585e27533972c798ab9644048b553075c6f652e25b61",
+        "customers.csv": "19b8de577d523bd9d1d1dbaad299475f7d2b693f3d23c9faa78c00779a0a179d"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "inner_filter__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple CSV files without a recognized input selection"
+      },
+      "workflow": {
+        "task_id": "inner_filter__old",
+        "workflow_id": "task_2b143f6d9e4f47bfb6707c2cc9a9df89",
+        "session_id": "d8fe8dbbbcc04297a7d8d14bf398a916",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "inner_filter",
+      "arm": "multi",
+      "order_in_pair": 1,
+      "expected": "24",
+      "status": "SOLVED",
+      "answer": "24",
+      "solved": true,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "193a4ca4d60ad039da48585e27533972c798ab9644048b553075c6f652e25b61",
+        "customers.csv": "19b8de577d523bd9d1d1dbaad299475f7d2b693f3d23c9faa78c00779a0a179d"
+      },
+      "calls": 1,
+      "effective_cost": 178.6,
+      "result": {
+        "task_id": "inner_filter__multi",
+        "status": "SOLVED",
+        "answer": "24",
+        "input_tokens": 306,
+        "output_tokens": 148,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 3.2969999999913853,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "inner_filter__multi",
+        "workflow_id": "task_ced626b95ef84165823b5bea30a918a5",
+        "session_id": "3f5a7e2b5c904962ba1d337035191379",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "duplicate_matches",
+      "arm": "multi",
+      "order_in_pair": 0,
+      "expected": "14",
+      "status": "SOLVED",
+      "answer": "14",
+      "solved": true,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "sales.csv": "fca5d87894b0b2bc1d5ecce882aceee2fa122e9078b79ab2afaa41f2e8e7fcd4",
+        "tags.csv": "711e64482509ec2e88aed90106e7916675ed7e9a1f7f19acd5f748ea59642680"
+      },
+      "calls": 1,
+      "effective_cost": 244.9,
+      "result": {
+        "task_id": "duplicate_matches__multi",
+        "status": "SOLVED",
+        "answer": "14",
+        "input_tokens": 279,
+        "output_tokens": 217,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 4.703000000008615,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "duplicate_matches__multi",
+        "workflow_id": "task_04ab445ce37e4a5981a283a1a8b081e5",
+        "session_id": "831f1b8c9add4d2880a7df3bb55f0d8c",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "duplicate_matches",
+      "arm": "old",
+      "order_in_pair": 1,
+      "expected": "14",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "sales.csv": "fca5d87894b0b2bc1d5ecce882aceee2fa122e9078b79ab2afaa41f2e8e7fcd4",
+        "tags.csv": "711e64482509ec2e88aed90106e7916675ed7e9a1f7f19acd5f748ea59642680"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "duplicate_matches__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple CSV files without a recognized input selection"
+      },
+      "workflow": {
+        "task_id": "duplicate_matches__old",
+        "workflow_id": "task_344f502d69f6472e8b69dd772f13bfb1",
+        "session_id": "26be43e03bbd4d3e9ff3d3a298d7f0ba",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "left_missing",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": "16",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "e98839f5eddd96bdc38b4da7d81e09552047a3de33e94889b87119894db4b611",
+        "payments.csv": "f4aac901f922cf8acf7a2d8cfdb0d960285dd113c249299bc254fbaefe4be5aa"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "left_missing__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple CSV files without a recognized input selection"
+      },
+      "workflow": {
+        "task_id": "left_missing__old",
+        "workflow_id": "task_0c019469f2bc41dc803b704f93c83543",
+        "session_id": "64b042f2776e43ffa92af4ab6d239c7b",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "left_missing",
+      "arm": "multi",
+      "order_in_pair": 1,
+      "expected": "16",
+      "status": "SOLVED",
+      "answer": "16",
+      "solved": true,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "e98839f5eddd96bdc38b4da7d81e09552047a3de33e94889b87119894db4b611",
+        "payments.csv": "f4aac901f922cf8acf7a2d8cfdb0d960285dd113c249299bc254fbaefe4be5aa"
+      },
+      "calls": 1,
+      "effective_cost": 247.4,
+      "result": {
+        "task_id": "left_missing__multi",
+        "status": "SOLVED",
+        "answer": "16",
+        "input_tokens": 264,
+        "output_tokens": 221,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 23.687000000005355,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "left_missing__multi",
+        "workflow_id": "task_f8599d1a749d4caca2c60d867c64c6d0",
+        "session_id": "bbf4315c80b046acbf7b65b762d775d8",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "string_keys",
+      "arm": "multi",
+      "order_in_pair": 0,
+      "expected": "18",
+      "status": "SOLVED",
+      "answer": "18",
+      "solved": true,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "b0b5d80eb651c507bebaf6f97d54a0cf38ea7884f051530d8b6f3328507c64b9",
+        "regions.csv": "d278ed87e8436f5b39a4c7044e04f23c54f7b0a38b7273754c7fdf7da5288694"
+      },
+      "calls": 1,
+      "effective_cost": 198.1,
+      "result": {
+        "task_id": "string_keys__multi",
+        "status": "SOLVED",
+        "answer": "18",
+        "input_tokens": 281,
+        "output_tokens": 170,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 3.9219999999913853,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "string_keys__multi",
+        "workflow_id": "task_c22fb34591c24a9bbe106f38c1faaa05",
+        "session_id": "e37c446e5704440cb841a1990376e2c5",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "string_keys",
+      "arm": "old",
+      "order_in_pair": 1,
+      "expected": "18",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "b0b5d80eb651c507bebaf6f97d54a0cf38ea7884f051530d8b6f3328507c64b9",
+        "regions.csv": "d278ed87e8436f5b39a4c7044e04f23c54f7b0a38b7273754c7fdf7da5288694"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "string_keys__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple CSV files without a recognized input selection"
+      },
+      "workflow": {
+        "task_id": "string_keys__old",
+        "workflow_id": "task_83d0225439a64bf1959708d61aa9a60d",
+        "session_id": "8c1e1c3988e2491bb36d06f80d728091",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "anti_join",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": "2",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "customers.csv": "8c4555710a23372d8239298a92680125e16749bad29ba2bc74851affbd067a8d",
+        "invoices.csv": "f595dabe401b28f73ce2d8febff8117d529cbd4c8f309fbfb0b335ca98fd5b47"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "anti_join__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple CSV files without a recognized input selection"
+      },
+      "workflow": {
+        "task_id": "anti_join__old",
+        "workflow_id": "task_f38e10a399a84c02bed86ab1d36b7f0a",
+        "session_id": "9eae5391595c4a45b87d497cd32cd189",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "anti_join",
+      "arm": "multi",
+      "order_in_pair": 1,
+      "expected": "2",
+      "status": "SOLVED",
+      "answer": "2",
+      "solved": true,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "customers.csv": "8c4555710a23372d8239298a92680125e16749bad29ba2bc74851affbd067a8d",
+        "invoices.csv": "f595dabe401b28f73ce2d8febff8117d529cbd4c8f309fbfb0b335ca98fd5b47"
+      },
+      "calls": 1,
+      "effective_cost": 212.4,
+      "result": {
+        "task_id": "anti_join__multi",
+        "status": "SOLVED",
+        "answer": "2",
+        "input_tokens": 264,
+        "output_tokens": 186,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 5.01500000001397,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "anti_join__multi",
+        "workflow_id": "task_476819470cb04570a5d623bdaccd4626",
+        "session_id": "6b74804ab86b491794400ab9d7e6c713",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "single_control",
+      "arm": "multi",
+      "order_in_pair": 0,
+      "expected": "8",
+      "status": "SOLVED",
+      "answer": "8",
+      "solved": true,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "numbers.csv": "d6a3a6bdedb44a78552cb110527b918cff45b18302c4c5dd3a5ec5412b6f34ab"
+      },
+      "calls": 1,
+      "effective_cost": 65.0,
+      "result": {
+        "task_id": "single_control__multi",
+        "status": "SOLVED",
+        "answer": "8",
+        "input_tokens": 90,
+        "output_tokens": 56,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.1719999999913853,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "single_control__multi",
+        "workflow_id": "task_a4ce69be79e747008207518a37e3c651",
+        "session_id": "65c51548b6d240ce8d3b667072c82a1d",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "single_control",
+      "arm": "old",
+      "order_in_pair": 1,
+      "expected": "8",
+      "status": "SOLVED",
+      "answer": "8",
+      "solved": true,
+      "boundary_control_passed": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "numbers.csv": "d6a3a6bdedb44a78552cb110527b918cff45b18302c4c5dd3a5ec5412b6f34ab"
+      },
+      "calls": 1,
+      "effective_cost": 65.0,
+      "result": {
+        "task_id": "single_control__old",
+        "status": "SOLVED",
+        "answer": "8",
+        "input_tokens": 90,
+        "output_tokens": 56,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.125,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "single_control__old",
+        "workflow_id": "task_e2c32706a29847deaaa8fbec33bf49a6",
+        "session_id": "c6b40410d0e84735becfcadef345dafe",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "ambiguous_inputs",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "boundary_control_passed": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "left.csv": "38d7da9f518460cd8ad7f7f39aab6ef94d27b6ad322c6a214540eb1a1a4a0ef4",
+        "right.csv": "b583aa96838eed82201ffbf1a0b520594ac743e91d1ba7127365c23edf6fb9e0"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "ambiguous_inputs__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple CSV files without a recognized input selection"
+      },
+      "workflow": {
+        "task_id": "ambiguous_inputs__old",
+        "workflow_id": "task_b6c47850874b489cb1c4994ecebf7520",
+        "session_id": "cbf5c1745af54ca6967e1d4f13dbbb72",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "ambiguous_inputs",
+      "arm": "multi",
+      "order_in_pair": 1,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "boundary_control_passed": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "left.csv": "38d7da9f518460cd8ad7f7f39aab6ef94d27b6ad322c6a214540eb1a1a4a0ef4",
+        "right.csv": "b583aa96838eed82201ffbf1a0b520594ac743e91d1ba7127365c23edf6fb9e0"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "ambiguous_inputs__multi",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Need exactly two existing, explicitly named CSV inputs"
+      },
+      "workflow": {
+        "task_id": "ambiguous_inputs__multi",
+        "workflow_id": "task_34c287bff61a4eff9b6a8b2ee8e45057",
+        "session_id": "a8917bf332594e0e94a329f8af3f3e00",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "missing_input",
+      "arm": "multi",
+      "order_in_pair": 0,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "boundary_control_passed": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "left.csv": "aaf52dc16349094c5563f8959ff0a9814354e804ff5c4e09457ae70040bc037c",
+        "right.csv": "aaf52dc16349094c5563f8959ff0a9814354e804ff5c4e09457ae70040bc037c"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "missing_input__multi",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Need exactly two existing, explicitly named CSV inputs"
+      },
+      "workflow": {
+        "task_id": "missing_input__multi",
+        "workflow_id": "task_15855ee0166d4b48b5afb9e22bdba745",
+        "session_id": "c01edb9ad7fd4e32a4abac95edcaf74e",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "missing_input",
+      "arm": "old",
+      "order_in_pair": 1,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "boundary_control_passed": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "left.csv": "aaf52dc16349094c5563f8959ff0a9814354e804ff5c4e09457ae70040bc037c",
+        "right.csv": "aaf52dc16349094c5563f8959ff0a9814354e804ff5c4e09457ae70040bc037c"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "missing_input__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple CSV files without a recognized input selection"
+      },
+      "workflow": {
+        "task_id": "missing_input__old",
+        "workflow_id": "task_30bb09105135407daa053d0aeb34a1fe",
+        "session_id": "5ac1fe34f0344920b4763167f2a1c46c",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    }
+  ],
+  "recording_errors": [],
+  "budget": {
+    "budget": 3000,
+    "known_effective_tokens": 1211.4,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "inner_filter__multi",
+        "status": "ACCOUNTED",
+        "reserved_units": 6152,
+        "task_limit_units": 10000,
+        "input_token_estimate": 2152,
+        "output_cap": 400,
+        "input_tokens": 306,
+        "output_tokens": 148,
+        "reasoning_tokens": 0,
+        "effective_cost": 178.6
+      },
+      {
+        "ticket": 1,
+        "task_id": "duplicate_matches__multi",
+        "status": "ACCOUNTED",
+        "reserved_units": 6008,
+        "task_limit_units": 10000,
+        "input_token_estimate": 2008,
+        "output_cap": 400,
+        "input_tokens": 279,
+        "output_tokens": 217,
+        "reasoning_tokens": 0,
+        "effective_cost": 244.9
+      },
+      {
+        "ticket": 2,
+        "task_id": "left_missing__multi",
+        "status": "ACCOUNTED",
+        "reserved_units": 6021,
+        "task_limit_units": 10000,
+        "input_token_estimate": 2021,
+        "output_cap": 400,
+        "input_tokens": 264,
+        "output_tokens": 221,
+        "reasoning_tokens": 0,
+        "effective_cost": 247.4
+      },
+      {
+        "ticket": 3,
+        "task_id": "string_keys__multi",
+        "status": "ACCOUNTED",
+        "reserved_units": 6007,
+        "task_limit_units": 10000,
+        "input_token_estimate": 2007,
+        "output_cap": 400,
+        "input_tokens": 281,
+        "output_tokens": 170,
+        "reasoning_tokens": 0,
+        "effective_cost": 198.1
+      },
+      {
+        "ticket": 4,
+        "task_id": "anti_join__multi",
+        "status": "ACCOUNTED",
+        "reserved_units": 6056,
+        "task_limit_units": 10000,
+        "input_token_estimate": 2056,
+        "output_cap": 400,
+        "input_tokens": 264,
+        "output_tokens": 186,
+        "reasoning_tokens": 0,
+        "effective_cost": 212.4
+      },
+      {
+        "ticket": 5,
+        "task_id": "single_control__multi",
+        "status": "ACCOUNTED",
+        "reserved_units": 3332,
+        "task_limit_units": 10000,
+        "input_token_estimate": 1332,
+        "output_cap": 200,
+        "input_tokens": 90,
+        "output_tokens": 56,
+        "reasoning_tokens": 0,
+        "effective_cost": 65.0
+      },
+      {
+        "ticket": 6,
+        "task_id": "single_control__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 3332,
+        "task_limit_units": 10000,
+        "input_token_estimate": 1332,
+        "output_cap": 200,
+        "input_tokens": 90,
+        "output_tokens": 56,
+        "reasoning_tokens": 0,
+        "effective_cost": 65.0
+      }
+    ]
+  },
+  "real_api_attempts": 7,
+  "known_effective_tokens": 1211.4,
+  "metrics": {
+    "old": {
+      "attempted": 8,
+      "solved": 1,
+      "solvable_total": 6,
+      "join_solved": 0,
+      "join_total": 5,
+      "boundary_controls": 2,
+      "wrong_answers": 0,
+      "calls": 1,
+      "effective_tokens": 65.0
+    },
+    "multi": {
+      "attempted": 8,
+      "solved": 6,
+      "solvable_total": 6,
+      "join_solved": 5,
+      "join_total": 5,
+      "boundary_controls": 2,
+      "wrong_answers": 0,
+      "calls": 6,
+      "effective_tokens": 1146.4
+    }
+  },
+  "prior_ledgers_unchanged": true
+}

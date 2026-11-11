@@ -1,0 +1,19 @@
+{
+  "task_id": "string_keys__multi",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"orders.csv\", \"columns\": [\"key\", \"units\"], \"rows\": 4, \"sample_rows\": [{\"key\": \"01\", \"units\": \"5\"}, {\"key\": \"1\", \"units\": \"7\"}, {\"key\": \"002\", \"units\": \"11\"}]}, {\"file\": \"regions.csv\", \"columns\": [\"key\", \"region\"], \"rows\": 4, \"sample_rows\": [{\"key\": \"01\", \"region\": \"north\"}, {\"key\": \"1\", \"region\": \"south\"}, {\"key\": \"002\", \"region\": \"south\"}]}]\nTask: Read orders.csv and regions.csv. Join on key using exact string equality: '01' and '1' are different keys. Sum orders.units for matching region 'north'. Preserve leading zeroes in keys. Print the integer total."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

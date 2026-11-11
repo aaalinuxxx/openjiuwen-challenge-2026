@@ -1,0 +1,19 @@
+{
+  "task_id": "duplicate_matches__multi",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"sales.csv\", \"columns\": [\"key\", \"units\"], \"rows\": 4, \"sample_rows\": [{\"key\": \"a\", \"units\": \"2\"}, {\"key\": \"a\", \"units\": \"3\"}, {\"key\": \"b\", \"units\": \"4\"}]}, {\"file\": \"tags.csv\", \"columns\": [\"key\", \"tag\"], \"rows\": 4, \"sample_rows\": [{\"key\": \"a\", \"tag\": \"keep\"}, {\"key\": \"a\", \"tag\": \"keep\"}, {\"key\": \"b\", \"tag\": \"keep\"}]}]\nTask: Read sales.csv and tags.csv. Inner join on their key columns. Sum sales.units for every matching pair whose tags.tag is 'keep'. Repeated rows are distinct matches: do not deduplicate or retain only one tag per key. Print the integer sum."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}
