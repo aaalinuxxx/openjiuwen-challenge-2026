@@ -1,0 +1,136 @@
+{
+  "experiment": "E61-E64",
+  "status": "COMPLETED_WITH_LIVE_COUNTEREXAMPLE",
+  "frozen_main_commit": "927e666",
+  "frozen_followup_commit": "04d3b95",
+  "report": "experiments/E62_csv_live_20261111T172729299185/report.json",
+  "followup_report": "experiments/E64_join_live_20261111T172948319398/report.json",
+  "scope": "Eight authored targeted cases: five joins, one single-CSV control, two input-selection boundaries; not independent holdout",
+  "metrics": {
+    "old": {
+      "attempted": 8,
+      "solved": 1,
+      "solvable_total": 6,
+      "join_solved": 0,
+      "join_total": 5,
+      "boundary_controls": 2,
+      "wrong_answers": 0,
+      "calls": 1,
+      "effective_tokens": 65
+    },
+    "multi": {
+      "attempted": 8,
+      "solved": 6,
+      "solvable_total": 6,
+      "join_solved": 5,
+      "join_total": 5,
+      "boundary_controls": 2,
+      "wrong_answers": 0,
+      "calls": 6,
+      "effective_tokens": 1146.4
+    }
+  },
+  "primary_real_api_calls": 7,
+  "primary_known_effective_tokens": 1211.4,
+  "posthoc_replay": {
+    "report": "experiments/E63_join_multiplicity_replay.json",
+    "api_calls": 0,
+    "expected": "39",
+    "actual": "24",
+    "passed": false
+  },
+  "followup": {
+    "api_calls": 1,
+    "effective_tokens": 175.6,
+    "expected": "39",
+    "actual": "24",
+    "status": "SOLVED",
+    "wrong_answer": true,
+    "usage": {
+      "completion_tokens": 145,
+      "prompt_tokens": 306,
+      "total_tokens": 451,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "source_response": "experiments/E64_join_live_20261111T172948319398/response.json",
+    "response_sha256": "e9cb92b1f1b68d65cda03b9a38b88f97ff9836d91ae059965a72eda3f7637b96"
+  },
+  "total_real_api_calls": 8,
+  "total_known_effective_tokens": 1387,
+  "new_unaccounted_requests": 0,
+  "primary_raw_usage": {
+    "old": {
+      "input": 90,
+      "output": 56
+    },
+    "multi": {
+      "input": 1484,
+      "output": 998
+    }
+  },
+  "verified_primary_responses": [
+    {
+      "task": "inner_filter__multi",
+      "path": "experiments/E62_csv_live_20261111T172729299185/response_01.json",
+      "effective_cost": 178.6,
+      "sha256": "ddd300bc30c93d2b278706f1cad344f26ebb5cc2543d2c42e23781d2ea10571d"
+    },
+    {
+      "task": "duplicate_matches__multi",
+      "path": "experiments/E62_csv_live_20261111T172729299185/response_02.json",
+      "effective_cost": 244.9,
+      "sha256": "c98ca087bcdf7af96558dcfdfeb255aefe4818bc591ab0c8a099cfd0b1b1b3bd"
+    },
+    {
+      "task": "left_missing__multi",
+      "path": "experiments/E62_csv_live_20261111T172729299185/response_03.json",
+      "effective_cost": 247.4,
+      "sha256": "d2acc9d52b2f84dbcff8b650eee5b1acc1305f6ab9457549ae79b2fc591a0072"
+    },
+    {
+      "task": "string_keys__multi",
+      "path": "experiments/E62_csv_live_20261111T172729299185/response_04.json",
+      "effective_cost": 198.1,
+      "sha256": "14e6b79a316e686d5521290cb7fafa01674a615edc172a6c7733ebb7449d41d7"
+    },
+    {
+      "task": "anti_join__multi",
+      "path": "experiments/E62_csv_live_20261111T172729299185/response_05.json",
+      "effective_cost": 212.4,
+      "sha256": "5795266ced94bdae24b45965d3577f507b4af9833a3afe591069fca01a0eec8f"
+    },
+    {
+      "task": "single_control__multi",
+      "path": "experiments/E62_csv_live_20261111T172729299185/response_06.json",
+      "effective_cost": 65,
+      "sha256": "83253cd54bda814de9f13990f4d89e75d5943f047b89d3409bb3558069904fdd"
+    },
+    {
+      "task": "single_control__old",
+      "path": "experiments/E62_csv_live_20261111T172729299185/response_07.json",
+      "effective_cost": 65,
+      "sha256": "5472d4a6caf12868e3b3c37059f017f8b56aa27b079584c30617678bf84305dc"
+    }
+  ],
+  "prior_unknown_ledgers_unchanged": {
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+    "experiments/E50_search_live_20261111T155649239479/budget.json": true
+  },
+  "unit_tests": 114,
+  "production_enabled": false,
+  "hypotheses": {
+    "H04.8": "PARTIAL: five new join solutions on initial targeted fixtures, but general correctness fails fresh duplicate-row control",
+    "H04.9": "PROPOSED: validated local join execution preserving multiplicity instead of model-written ad hoc joins"
+  },
+  "limitations": [
+    "Small authored fixtures; follow-up selected adaptively",
+    "Different output caps: 200 existing single CSV, 400 candidate joins",
+    "UNKNOWN on boundary controls is not a solved task",
+    "Copy integrity checks are not operating-system sandboxing",
+    "No semantic validation of generated Python; candidate returned wrong answer as SOLVED",
+    "Wide challenge remains historical 9/19"
+  ]
+}

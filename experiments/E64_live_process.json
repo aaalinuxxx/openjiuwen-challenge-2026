@@ -1,0 +1,6 @@
+{
+  "done": true,
+  "code": 0,
+  "stdout": "{\"status\": \"COMPLETED\", \"expected\": \"39\", \"answer\": \"24\", \"solved\": false, \"real_api_attempts\": 1, \"known_effective_tokens\": 175.6, \"cumulative_calls\": 8, \"cumulative_known_effective_tokens\": 1387.0}\r\nReport: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E64_join_live_20261111T172948319398\\report.json\r\n",
+  "stderr": ""
+}
