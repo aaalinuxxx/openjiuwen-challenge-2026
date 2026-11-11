@@ -1,0 +1,81 @@
+[
+  {
+    "id": "boundary",
+    "target": "z_filter.py",
+    "instruction": "Fix z_filter.py. Keep input values greater than or equal to threshold() from a_settings.py, in their original order, preserving duplicates. Do not modify a_settings.py or tests.",
+    "files": {
+      "a_settings.py": "def threshold():\n    return 11\n",
+      "z_filter.py": "from a_settings import threshold\n\ndef keep(values):\n    return [x for x in values if x > threshold()]\n",
+      "test_filter.py": "from z_filter import keep\nassert keep([10,11,12]) == [11,12]\n"
+    },
+    "reference": "from a_settings import threshold\n\ndef keep(values):\n    return [x for x in values if x >= threshold()]\n",
+    "checks": "from z_filter import keep\nassert keep([]) == []\nassert keep([13,11,11,0,12]) == [13,11,11,12]\n",
+    "support": "explicit"
+  },
+  {
+    "id": "units",
+    "target": "z_convert.py",
+    "instruction": "Repair z_convert.py. convert(value, source, target) converts a length using the METRES_PER_UNIT mapping from a_units.py: value * METRES_PER_UNIT[source] / METRES_PER_UNIT[target]. Do not modify a_units.py or tests.",
+    "files": {
+      "a_units.py": "METRES_PER_UNIT = {'m': 1.0, 'cm': 0.01, 'km': 1000.0}\n",
+      "z_convert.py": "from a_units import METRES_PER_UNIT\n\ndef convert(value, source, target):\n    return value * METRES_PER_UNIT[target] / METRES_PER_UNIT[source]\n",
+      "test_convert.py": "from z_convert import convert\nassert convert(300, 'cm', 'm') == 3\nassert convert(2, 'km', 'm') == 2000\n"
+    },
+    "reference": "from a_units import METRES_PER_UNIT\n\ndef convert(value, source, target):\n    return value * METRES_PER_UNIT[source] / METRES_PER_UNIT[target]\n",
+    "checks": "from z_convert import convert\nassert convert(0, 'm', 'cm') == 0\nassert convert(-2, 'm', 'cm') == -200\nassert convert(7, 'km', 'km') == 7\n",
+    "support": "explicit"
+  },
+  {
+    "id": "normalization",
+    "target": "z_lookup.py",
+    "instruction": "Correct z_lookup.py. lookup(mapping, query) returns the value at the first insertion-order key whose normalize(key) equals normalize(query), or None when no key matches. Use normalize from a_normalize.py. Do not modify dependencies or tests.",
+    "files": {
+      "a_normalize.py": "def normalize(text):\n    return ' '.join(text.casefold().split())\n",
+      "z_lookup.py": "from a_normalize import normalize\n\ndef lookup(mapping, query):\n    return mapping.get(query)\n",
+      "test_lookup.py": "from z_lookup import lookup\nassert lookup({' Alice  Holt ': 7}, 'alice holt') == 7\n"
+    },
+    "reference": "from a_normalize import normalize\n\ndef lookup(mapping, query):\n    for key, value in mapping.items():\n        if normalize(key) == normalize(query):\n            return value\n    return None\n",
+    "checks": "from z_lookup import lookup\nassert lookup({}, 'a') is None\nassert lookup({'a': 0}, ' A ') == 0\nassert lookup({'A': 1, ' a ': 2}, 'a') == 1\nassert lookup({'Straße': 3}, 'STRASSE') == 3\n",
+    "support": "explicit"
+  },
+  {
+    "id": "two_test_files",
+    "target": "z_totals.py",
+    "instruction": "Update z_totals.py. total(rows) sums Decimal(str(amount)) * RATES[currency] for each (amount, currency), then rounds the final total to two decimals with ROUND_HALF_UP and returns its fixed-point string. For empty input return '0.00'. Use a_rates.py and never modify dependencies or tests.",
+    "files": {
+      "a_rates.py": "from decimal import Decimal\nRATES = {'A': Decimal('1'), 'B': Decimal('1.25')}\n",
+      "z_totals.py": "from decimal import Decimal, ROUND_HALF_UP\nfrom a_rates import RATES\n\ndef total(rows):\n    value = sum((Decimal(str(amount)) for amount, currency in rows), Decimal('0'))\n    return format(value.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP), 'f')\n",
+      "test_rates.py": "from z_totals import total\nassert total([('2', 'B')]) == '2.50'\n",
+      "test_rounding.py": "from z_totals import total\nassert total([]) == '0.00'\nassert total([('1.005', 'A')]) == '1.01'\n"
+    },
+    "reference": "from decimal import Decimal, ROUND_HALF_UP\nfrom a_rates import RATES\n\ndef total(rows):\n    value = sum((Decimal(str(amount)) * RATES[currency] for amount, currency in rows), Decimal('0'))\n    return format(value.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP), 'f')\n",
+    "checks": "from z_totals import total\nassert total([('0.004', 'A'), ('0.004', 'A')]) == '0.01'\nassert total([('3', 'B'), ('-1', 'A')]) == '2.75'\n",
+    "support": "explicit"
+  },
+  {
+    "id": "ambiguous_target",
+    "target": "z_filter.py",
+    "instruction": "Keep input values greater than or equal to the configured threshold, preserving order and duplicates. Repair the project without changing the tests.",
+    "files": {
+      "a_settings.py": "def threshold():\n    return 11\n",
+      "z_filter.py": "from a_settings import threshold\n\ndef keep(values):\n    return [x for x in values if x > threshold()]\n",
+      "test_filter.py": "from z_filter import keep\nassert keep([10,11,12]) == [11,12]\n"
+    },
+    "reference": "from a_settings import threshold\n\ndef keep(values):\n    return [x for x in values if x >= threshold()]\n",
+    "checks": "from z_filter import keep\nassert keep([]) == []\nassert keep([13,11,11,0,12]) == [13,11,11,12]\n",
+    "support": "ambiguous_control"
+  },
+  {
+    "id": "explicit_paraphrase",
+    "target": "z_filter.py",
+    "instruction": "The bug is in z_filter.py; change that module only. Keep values greater than or equal to threshold() from a_settings.py, preserving input order and duplicates. Dependencies and tests must remain unchanged.",
+    "files": {
+      "a_settings.py": "def threshold():\n    return 11\n",
+      "z_filter.py": "from a_settings import threshold\n\ndef keep(values):\n    return [x for x in values if x > threshold()]\n",
+      "test_filter.py": "from z_filter import keep\nassert keep([10,11,12]) == [11,12]\n"
+    },
+    "reference": "from a_settings import threshold\n\ndef keep(values):\n    return [x for x in values if x >= threshold()]\n",
+    "checks": "from z_filter import keep\nassert keep([]) == []\nassert keep([13,11,11,0,12]) == [13,11,11,12]\n",
+    "support": "paraphrase"
+  }
+]

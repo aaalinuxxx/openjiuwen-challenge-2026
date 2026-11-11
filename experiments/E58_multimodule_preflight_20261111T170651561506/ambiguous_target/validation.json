@@ -1,0 +1,64 @@
+{
+  "case": "ambiguous_target",
+  "support": "ambiguous_control",
+  "status": "UNKNOWN",
+  "answer": null,
+  "solved": false,
+  "wrong_delivery": false,
+  "boundary_control_passed": true,
+  "unchanged_non_target": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+    "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+    "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+  },
+  "final_hashes": {
+    "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+    "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+    "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+  },
+  "validation": {
+    "passed": false,
+    "checks": [
+      {
+        "name": "test_filter.py",
+        "code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-multimodule-2307lh2p\\ambiguous_target\\test_filter.py\", line 2, in <module>\n    assert keep([10,11,12]) == [11,12]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      },
+      {
+        "name": "additional_checks",
+        "code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+      }
+    ]
+  },
+  "calls": 0,
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "ambiguous_target",
+    "status": "UNKNOWN",
+    "answer": null,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.046999999991385266,
+    "model_used": "qwen3.8-27b-noreason",
+    "notes": "Multiple code modules without an unambiguous repair target"
+  },
+  "workflow": {
+    "task_id": "ambiguous_target",
+    "workflow_id": "task_dc9b2a2d871b4df394cd4cff1c033cec",
+    "session_id": "b5ed052d627349a2bc9907df06d7e8ae",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": false,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

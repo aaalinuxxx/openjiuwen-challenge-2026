@@ -1,0 +1,64 @@
+{
+  "case": "units",
+  "support": "explicit",
+  "status": "SOLVED",
+  "answer": "DONE",
+  "solved": true,
+  "wrong_delivery": false,
+  "boundary_control_passed": false,
+  "unchanged_non_target": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "a_units.py": "d85f265b437e3080cfaf9c63b448f54a7c158706fac90d9519cbe21d421ab194",
+    "z_convert.py": "824b1b721d1df410e9d032db4310ac9f694cea3e72bc3630e2e9a1ee4d01be12",
+    "test_convert.py": "37544f35c6363ecc877a9dc66bb107dc668fdb0fd3a6d2c3bd9e0ebcbcbbdea9"
+  },
+  "final_hashes": {
+    "a_units.py": "d85f265b437e3080cfaf9c63b448f54a7c158706fac90d9519cbe21d421ab194",
+    "z_convert.py": "248bb3551f33302f9088a6a136b8e62134f70d5a9a6d55fa88bf899c0d3afe3f",
+    "test_convert.py": "37544f35c6363ecc877a9dc66bb107dc668fdb0fd3a6d2c3bd9e0ebcbcbbdea9"
+  },
+  "validation": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "test_convert.py",
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "name": "additional_checks",
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ]
+  },
+  "calls": 1,
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "units",
+    "status": "SOLVED",
+    "answer": "DONE",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.10899999999674037,
+    "model_used": "qwen3.8-27b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "units",
+    "workflow_id": "task_9d8a5447f64c425096f1de33a0cc0773",
+    "session_id": "19c978f061384a5d87a44116ccd757ba",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

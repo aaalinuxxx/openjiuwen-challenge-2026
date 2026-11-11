@@ -1,0 +1,17 @@
+{
+  "task_id": "boundary",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "from a_settings import threshold\n\ndef keep(values):\n    return [x for x in values if x >= threshold()]\n"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

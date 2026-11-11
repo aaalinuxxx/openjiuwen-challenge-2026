@@ -1,0 +1,240 @@
+{
+  "api_calls": 0,
+  "passed": true,
+  "rows": [
+    {
+      "case": "boundary",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-oracles-uu5xwa4p\\boundary\\test_filter.py\", line 2, in <module>\n    assert keep([10,11,12]) == [11,12]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "case": "units",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_convert.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-oracles-uu5xwa4p\\units\\test_convert.py\", line 2, in <module>\n    assert convert(300, 'cm', 'm') == 3\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_convert.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "case": "normalization",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_lookup.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-oracles-uu5xwa4p\\normalization\\test_lookup.py\", line 2, in <module>\n    assert lookup({' Alice  Holt ': 7}, 'alice holt') == 7\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_lookup.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "case": "two_test_files",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_rates.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-oracles-uu5xwa4p\\two_test_files\\test_rates.py\", line 2, in <module>\n    assert total([('2', 'B')]) == '2.50'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "test_rounding.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_rates.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "test_rounding.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "case": "ambiguous_target",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-oracles-uu5xwa4p\\ambiguous_target\\test_filter.py\", line 2, in <module>\n    assert keep([10,11,12]) == [11,12]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "case": "explicit_paraphrase",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-oracles-uu5xwa4p\\explicit_paraphrase\\test_filter.py\", line 2, in <module>\n    assert keep([10,11,12]) == [11,12]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    }
+  ]
+}

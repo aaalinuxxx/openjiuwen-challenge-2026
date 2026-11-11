@@ -1,0 +1,17 @@
+{
+  "task_id": "two_test_files",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "from decimal import Decimal, ROUND_HALF_UP\nfrom a_rates import RATES\n\ndef total(rows):\n    value = sum((Decimal(str(amount)) * RATES[currency] for amount, currency in rows), Decimal('0'))\n    return format(value.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP), 'f')\n"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

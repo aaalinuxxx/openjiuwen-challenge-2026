@@ -1,0 +1,490 @@
+{
+  "mode": "PREFLIGHT_REFERENCE_PATCHES",
+  "status": "COMPLETED",
+  "plan_sha256": "30bffb806e90fb9ccb82a2968cde127598edb9641a7f57f7affc3ca7c1ccb205",
+  "source_hashes": {
+    "harness/agents/coding_solver.py": "346f1b35d99192eb1fd2bd3b0ba947abf365e83e1b33fd4852d92d38c7fb6bdd",
+    "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/multimodule_live.py": "70a6737a2b3887d418e441aaaae373fe8368b961a88179680907b48ec8b67527",
+    "experiments/E57_multimodule/cases.json": "81d9dfea494968d5a76d8e6902e010b610606b914771d7cd5fa7406db718758e",
+    "experiments/E57_multimodule/oracle_validation.json": "f589cb2f8f99da0de11b3ea55bdddee58824772fe091c6da730f4947c253aaeb",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d"
+  },
+  "scope": "Six authored targeted cases; four explicit targets, one solvable paraphrase and one ambiguous-target boundary control. Not independent representative holdout. Current implementation only, no old-arm advantage estimate.",
+  "rows": [
+    {
+      "case": "boundary",
+      "support": "explicit",
+      "status": "SOLVED",
+      "answer": "DONE",
+      "solved": true,
+      "wrong_delivery": false,
+      "boundary_control_passed": false,
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "final_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "aeecef5ee4aac42f5833017529242f6570648022011eef0b6fc47853bd81dd3d",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "boundary",
+        "status": "SOLVED",
+        "answer": "DONE",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.10899999999674037,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "boundary",
+        "workflow_id": "task_62ee0a19975d4005a0e66032e0a31963",
+        "session_id": "6b4d69c447994990a4d3fc0bda8b7005",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "units",
+      "support": "explicit",
+      "status": "SOLVED",
+      "answer": "DONE",
+      "solved": true,
+      "wrong_delivery": false,
+      "boundary_control_passed": false,
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_units.py": "d85f265b437e3080cfaf9c63b448f54a7c158706fac90d9519cbe21d421ab194",
+        "z_convert.py": "824b1b721d1df410e9d032db4310ac9f694cea3e72bc3630e2e9a1ee4d01be12",
+        "test_convert.py": "37544f35c6363ecc877a9dc66bb107dc668fdb0fd3a6d2c3bd9e0ebcbcbbdea9"
+      },
+      "final_hashes": {
+        "a_units.py": "d85f265b437e3080cfaf9c63b448f54a7c158706fac90d9519cbe21d421ab194",
+        "z_convert.py": "248bb3551f33302f9088a6a136b8e62134f70d5a9a6d55fa88bf899c0d3afe3f",
+        "test_convert.py": "37544f35c6363ecc877a9dc66bb107dc668fdb0fd3a6d2c3bd9e0ebcbcbbdea9"
+      },
+      "validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_convert.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "units",
+        "status": "SOLVED",
+        "answer": "DONE",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.10899999999674037,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "units",
+        "workflow_id": "task_9d8a5447f64c425096f1de33a0cc0773",
+        "session_id": "19c978f061384a5d87a44116ccd757ba",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "normalization",
+      "support": "explicit",
+      "status": "SOLVED",
+      "answer": "DONE",
+      "solved": true,
+      "wrong_delivery": false,
+      "boundary_control_passed": false,
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_normalize.py": "71fd311a31764eb80a610cc9fed4c59e6364e63b7ba91112bfc5292b75e12437",
+        "z_lookup.py": "2a01530551bab09321fcb91cd32b928c962619b1da35b3e5ab01663d52618fc6",
+        "test_lookup.py": "ea887ed39c18fb0fbe592754152046fa94ae617d86c7d03a348269147b1453ee"
+      },
+      "final_hashes": {
+        "a_normalize.py": "71fd311a31764eb80a610cc9fed4c59e6364e63b7ba91112bfc5292b75e12437",
+        "z_lookup.py": "6a761c051f79bfaf6e52111705d0d6bd3b6be34e23c3fc5a131a4f40bb2b06b6",
+        "test_lookup.py": "ea887ed39c18fb0fbe592754152046fa94ae617d86c7d03a348269147b1453ee"
+      },
+      "validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_lookup.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "normalization",
+        "status": "SOLVED",
+        "answer": "DONE",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.09400000001187436,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "normalization",
+        "workflow_id": "task_f7663a2465d043368bfc0c5ed50ed409",
+        "session_id": "88a1f268d94745f6b1ddfc18e87493be",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "two_test_files",
+      "support": "explicit",
+      "status": "SOLVED",
+      "answer": "DONE",
+      "solved": true,
+      "wrong_delivery": false,
+      "boundary_control_passed": false,
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_rates.py": "5a828bac18d43aeea3e197a737121938c4a6a66a708f7cbd9a6eb1d40bb641d0",
+        "z_totals.py": "7c591b8a58865a36ed45669a02c027fc403f6253264d46fa3828a97f9e4bda31",
+        "test_rates.py": "3b6c7e70327c99bc3dd401855dd0f3593f4dccd71667c349938c643f423d938f",
+        "test_rounding.py": "800dc915cad5a2cd53cbba571e622d23b521056c4cfc41101887a6b175c7ca9d"
+      },
+      "final_hashes": {
+        "a_rates.py": "5a828bac18d43aeea3e197a737121938c4a6a66a708f7cbd9a6eb1d40bb641d0",
+        "z_totals.py": "8d97fa0a4317aa44bc589f58f437168a6d6b7bd849c7ee0d9e6094edba4de166",
+        "test_rates.py": "3b6c7e70327c99bc3dd401855dd0f3593f4dccd71667c349938c643f423d938f",
+        "test_rounding.py": "800dc915cad5a2cd53cbba571e622d23b521056c4cfc41101887a6b175c7ca9d"
+      },
+      "validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_rates.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "test_rounding.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "two_test_files",
+        "status": "SOLVED",
+        "answer": "DONE",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.3120000000053551,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "two_test_files",
+        "workflow_id": "task_e9406642a95a4385b3fcb1a995796c37",
+        "session_id": "e0c3b0c37b8a428e8dc45411d0e36457",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "ambiguous_target",
+      "support": "ambiguous_control",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "wrong_delivery": false,
+      "boundary_control_passed": true,
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "final_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "validation": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-multimodule-2307lh2p\\ambiguous_target\\test_filter.py\", line 2, in <module>\n    assert keep([10,11,12]) == [11,12]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "ambiguous_target",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.046999999991385266,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple code modules without an unambiguous repair target"
+      },
+      "workflow": {
+        "task_id": "ambiguous_target",
+        "workflow_id": "task_dc9b2a2d871b4df394cd4cff1c033cec",
+        "session_id": "b5ed052d627349a2bc9907df06d7e8ae",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "explicit_paraphrase",
+      "support": "paraphrase",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "wrong_delivery": false,
+      "boundary_control_passed": false,
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "final_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "validation": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-multimodule-2307lh2p\\explicit_paraphrase\\test_filter.py\", line 2, in <module>\n    assert keep([10,11,12]) == [11,12]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "explicit_paraphrase",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.17199999999138527,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple code modules without an unambiguous repair target"
+      },
+      "workflow": {
+        "task_id": "explicit_paraphrase",
+        "workflow_id": "task_d3c0336439bb4b90b2921b5cfe1e7b8c",
+        "session_id": "b757536fd90048248b0cd3db1bf34aaf",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    }
+  ],
+  "recording_errors": [],
+  "budget": {
+    "budget": 3000,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "boundary",
+        "status": "ACCOUNTED",
+        "reserved_units": 9118,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2118,
+        "output_cap": 700,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 1,
+        "task_id": "units",
+        "status": "ACCOUNTED",
+        "reserved_units": 9264,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2264,
+        "output_cap": 700,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 2,
+        "task_id": "normalization",
+        "status": "ACCOUNTED",
+        "reserved_units": 9271,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2271,
+        "output_cap": 700,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 3,
+        "task_id": "two_test_files",
+        "status": "ACCOUNTED",
+        "reserved_units": 9566,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2566,
+        "output_cap": 700,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      }
+    ]
+  },
+  "real_api_attempts": 0,
+  "known_effective_tokens": 0,
+  "metrics": {
+    "planned": 6,
+    "attempted": 6,
+    "explicit_solved": 4,
+    "explicit_total": 4,
+    "solvable_solved": 4,
+    "solvable_total": 5,
+    "wrong_deliveries": 0,
+    "boundary_controls_passed": 1,
+    "calls": 4
+  },
+  "prior_ledgers_unchanged": true,
+  "preflight_passed": true
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "normalization",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "from a_normalize import normalize\n\ndef lookup(mapping, query):\n    for key, value in mapping.items():\n        if normalize(key) == normalize(query):\n            return value\n    return None\n"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}
