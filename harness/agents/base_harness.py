@@ -128,6 +128,9 @@ async def solve_task(ctx: TaskContext, config: HarnessConfig, budget_tracker=Non
     try:
         solver={'search':solve_search_task,'data_analysis':solve_data_task,'math':solve_math_task,
                 'coding':solve_coding_task}.get(ctx.task_type,solve_fallback_task)
+        if ctx.task_type == 'data_analysis' and config.experimental_joins:
+            from harness.agents.join_or import solve_join_or_task
+            solver = solve_join_or_task
         result=await solver(ctx,bridge)
     except APIHTTPError as exc:
         result=SolveResult(task_id=ctx.task_id,status='API_'+exc.category,notes=str(exc))

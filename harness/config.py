@@ -32,7 +32,11 @@ class HarnessConfig:
     request_timeout_sec: float = 60.0
     workflow_timeout_sec: float = 180.0
 
+    experimental_joins: bool = False
+
     def __post_init__(self):
+        if type(self.experimental_joins) is not bool:
+            raise ValueError("experimental_joins must be a bool")
         for value in (self.request_timeout_sec, self.workflow_timeout_sec):
             if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value <= 0:
                 raise ValueError("Timeouts must be finite positive numbers")

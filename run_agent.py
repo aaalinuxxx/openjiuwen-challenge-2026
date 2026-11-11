@@ -53,6 +53,8 @@ def parse_args(argv=None) -> argparse.Namespace:
         default=os.environ.get("BUDGET", os.environ.get("TOKEN_BUDGET", "100000")),
         help="Опциональный известный потолок бюджета в выходных токенах",
     )
+    parser.add_argument('--experimental-joins', action='store_true',
+                        help='Enable experimental typed/local joins and multi-CSV fallback')
     args, _ = parser.parse_known_args(argv)
     if not math.isfinite(args.budget) or args.budget < 0:
         parser.error("budget must be finite and non-negative")
@@ -77,6 +79,7 @@ async def async_main() -> int:
         llm_api_key=os.environ.get("LLM_API_KEY", "dummy-key"),
         max_concurrency=min(max(args.max_concurrency, 1), 5),
         initial_budget_tokens=args.budget,
+        experimental_joins=args.experimental_joins,
         budget_audit_path=Path(tempfile.gettempdir()) / "openjiuwen_logs" /
             ("budget_"+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%f')+".json"),
     )

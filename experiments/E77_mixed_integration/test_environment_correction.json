@@ -1,0 +1,6 @@
+{
+  "api_calls": 0,
+  "initial_report": "experiments/E77_mixed_integration/unit_tests_initial.json",
+  "cause": "SDK import calls Path.home(); Node child process lacked USERPROFILE.",
+  "fix": "Rerun test command with USERPROFILE default in Python process, using same bootstrap as live scripts; no application source changed to conceal failure."
+}
