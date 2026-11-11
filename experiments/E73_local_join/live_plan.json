@@ -1,0 +1,41 @@
+{
+  "hypothesis": "H04.13",
+  "scope": "Eight adaptive authored pairs: five changed JSON-to-local routes and three unchanged Python controls. Narrow existing grammar, not arbitrary language.",
+  "budget": 4000,
+  "max_calls": 11,
+  "per_task_budget": 800,
+  "expected_requests": 11,
+  "model": "qwen3.6-35b-a3b-noreason",
+  "max_output": 400,
+  "temperature": 0,
+  "production_enabled": false,
+  "prior_unknown_ledgers": [
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "experiments/E50_search_live_20261111T155649239479/budget.json"
+  ],
+  "frozen_hashes": {
+    "harness/agents/join_cascade.py": "7fad01e01d562e6837a8252bbb9352e8b599946fe423e13c14e8b66bac8f73d0",
+    "harness/agents/join_plans.py": "cd737ee0abc60fd27d5ca45a270a04d2f6e787bd295a7a88d2f78c8a32904ec9",
+    "harness/agents/multi_csv.py": "e716c619347995009c0bfe27bd957bda634d4bb306468f86c76e2375d5844578",
+    "harness/agents/data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness/agents/calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+    "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "harness/sandbox/executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "scripts/multimodule_live.py": "70a6737a2b3887d418e441aaaae373fe8368b961a88179680907b48ec8b67527",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d",
+    "harness/agents/join_scope.py": "b344c31ab06481ff59fd0f907c74a3215ebe1ae2f29fe39d913ed762f2b5640a",
+    "harness/agents/join_scope_v2.py": "e3c2329de3a4e7357c73f398d5ca1379caafb8add2cd3f4a927f9715cad0dc98",
+    "harness/agents/local_join.py": "5052871743da61203dd27bfd3fdc59a2711e1bfc3c3501ba3f425543ba3326f9",
+    "scripts/local_join_live.py": "a75b819dd948f890b83beaaffde505fdce2fa957dfe6a52e5a266ee82d468a20",
+    "tests/test_local_join.py": "716132a05d261d52a23bcbf3efeabecbe59a02707a178dcb9ce1e8b163c3358e",
+    "experiments/E73_local_join/cases.json": "21f6cde7f11ab9786dff8508e13c997ef25c610b08ac0e48cae1066ad92aedd3",
+    "experiments/E73_local_join/oracle_validation.json": "3b90f922de0979972b25b48fe0c077765a2a1b9abb7014eabceb9dc4e341c53c",
+    "experiments/E73_local_join/routing_validation.json": "2249af9b4561a87319d9a47bde29d57a6770b49d20cc0f53f1543d1c7f9ab266",
+    "experiments/E73_local_join/design.md": "59964e0fd4ae16bb8372f8bc2a0eac0d02cc2b533055b4396cbeed2d5e747820"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "decimal_right_sum__old",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "{\"left\": \"lots.csv\", \"right\": \"rates.csv\", \"left_key\": \"sku\", \"right_key\": \"sku\", \"join\": \"inner\", \"filter\": {\"side\": \"left\", \"column\": \"state\", \"equals\": \"open\"}, \"aggregate\": {\"op\": \"sum\", \"side\": \"right\", \"column\": \"fee\"}}"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

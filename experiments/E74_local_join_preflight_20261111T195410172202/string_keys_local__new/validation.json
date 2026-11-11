@@ -1,0 +1,47 @@
+{
+  "case": "string_keys_local",
+  "arm": "new",
+  "selected_route": "local",
+  "expected_scope_route": "local",
+  "order_in_pair": 1,
+  "expected": "27",
+  "status": "SOLVED",
+  "answer": "27",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "orders.csv": "d63e8d1fdd91b45768889a8ab82b76a223b8164c4e49a1925151f704b6c265fb",
+    "labels.csv": "4171fcc01b2ae03a8af4eba102efd5337760f070b869c873c395c2104ad62777"
+  },
+  "calls": 0,
+  "stages": [],
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "string_keys_local__new",
+    "status": "SOLVED",
+    "answer": "27",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.0,
+    "model_used": "",
+    "notes": "Executed complete bounded grammar locally; no model translation"
+  },
+  "workflow": {
+    "task_id": "string_keys_local__new",
+    "workflow_id": "task_ad28b93d1edf4930aff62166322e01f3",
+    "session_id": "2b50af96103f4e8a8e4823aa3eb14fad",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

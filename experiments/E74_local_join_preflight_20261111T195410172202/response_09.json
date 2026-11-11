@@ -1,0 +1,17 @@
+{
+  "task_id": "outside_or__new",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('30')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

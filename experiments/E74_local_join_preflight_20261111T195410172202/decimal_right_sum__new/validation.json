@@ -1,0 +1,47 @@
+{
+  "case": "decimal_right_sum",
+  "arm": "new",
+  "selected_route": "local",
+  "expected_scope_route": "local",
+  "order_in_pair": 0,
+  "expected": "0.67",
+  "status": "SOLVED",
+  "answer": "0.67",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "lots.csv": "fdf40172b09e10a432447a8a726161bffd51a7b724ee06830a5f4fa1b39efecf",
+    "rates.csv": "78e00dc7b33c750e1b810cdf14cd112af75b56be1b13d0da774a9b925c9431fe"
+  },
+  "calls": 0,
+  "stages": [],
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "decimal_right_sum__new",
+    "status": "SOLVED",
+    "answer": "0.67",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.0,
+    "model_used": "",
+    "notes": "Executed complete bounded grammar locally; no model translation"
+  },
+  "workflow": {
+    "task_id": "decimal_right_sum__new",
+    "workflow_id": "task_253b7e1944c849459c6e2a16c6de1816",
+    "session_id": "6ea0e01a05714016bf5297b109f85c20",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

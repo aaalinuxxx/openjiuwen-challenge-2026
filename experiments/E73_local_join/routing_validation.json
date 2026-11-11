@@ -1,0 +1,70 @@
+{
+  "api_calls": 0,
+  "passed": true,
+  "rows": [
+    {
+      "case": "known_paraphrase_local",
+      "routes": {
+        "old": "json_plan",
+        "new": "local"
+      },
+      "parsed_answer": "17"
+    },
+    {
+      "case": "decimal_right_sum",
+      "routes": {
+        "old": "json_plan",
+        "new": "local"
+      },
+      "parsed_answer": "0.67"
+    },
+    {
+      "case": "string_keys_local",
+      "routes": {
+        "old": "json_plan",
+        "new": "local"
+      },
+      "parsed_answer": "27"
+    },
+    {
+      "case": "left_signed_sum",
+      "routes": {
+        "old": "json_plan",
+        "new": "local"
+      },
+      "parsed_answer": "13"
+    },
+    {
+      "case": "empty_join_sum",
+      "routes": {
+        "old": "json_plan",
+        "new": "local"
+      },
+      "parsed_answer": "0"
+    },
+    {
+      "case": "outside_numeric",
+      "routes": {
+        "old": "python",
+        "new": "python"
+      },
+      "parsed_answer": null
+    },
+    {
+      "case": "outside_or",
+      "routes": {
+        "old": "python",
+        "new": "python"
+      },
+      "parsed_answer": null
+    },
+    {
+      "case": "outside_phrase",
+      "routes": {
+        "old": "python",
+        "new": "python"
+      },
+      "parsed_answer": null
+    }
+  ]
+}

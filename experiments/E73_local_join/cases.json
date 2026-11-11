@@ -1,0 +1,222 @@
+[
+  {
+    "id": "known_paraphrase_local",
+    "instruction": "From stocks.csv and zones.csv, keep every pair with identical item strings and zones.region equal to 'west'. Add stocks.qty across those pairs. Duplicate rows must contribute repeatedly. Return the sum as a number.",
+    "files": {
+      "stocks.csv": "item,qty\na,5\nb,9\na,2\nc,3\n",
+      "zones.csv": "item,region\na,west\nb,east\nc,west\na,west\n"
+    },
+    "expected": "17",
+    "sql": "SELECT SUM(CAST(s.qty AS INTEGER)) FROM stocks s JOIN zones z ON s.item=z.item WHERE z.region='west'",
+    "gold_plan": {
+      "left": "stocks.csv",
+      "right": "zones.csv",
+      "left_key": "item",
+      "right_key": "item",
+      "join": "inner",
+      "filter": {
+        "side": "right",
+        "column": "region",
+        "equals": "west"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "left",
+        "column": "qty"
+      }
+    },
+    "expected_routes": {
+      "old": "json_plan",
+      "new": "local"
+    },
+    "origin": "known_E70_E72_control"
+  },
+  {
+    "id": "decimal_right_sum",
+    "instruction": "From lots.csv and rates.csv, keep every pair with identical sku strings and lots.state equal to 'open'. Add rates.fee across those pairs. Duplicate rows must contribute repeatedly. Return the sum as a number.",
+    "files": {
+      "lots.csv": "sku,state\nA,open\nB,closed\nA,open\nC,open\n",
+      "rates.csv": "sku,fee\nA,0.10\nB,1.20\nC,0.07\nA,0.20\n"
+    },
+    "expected": "0.67",
+    "sql": "SELECT SUM(CAST(REPLACE(r.fee,'.','') AS INTEGER))/100.0 FROM lots l JOIN rates r ON l.sku=r.sku WHERE l.state='open'",
+    "gold_plan": {
+      "left": "lots.csv",
+      "right": "rates.csv",
+      "left_key": "sku",
+      "right_key": "sku",
+      "join": "inner",
+      "filter": {
+        "side": "left",
+        "column": "state",
+        "equals": "open"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "right",
+        "column": "fee"
+      }
+    },
+    "expected_routes": {
+      "old": "json_plan",
+      "new": "local"
+    },
+    "origin": "new_exact_cents_fixture"
+  },
+  {
+    "id": "string_keys_local",
+    "instruction": "Using orders.csv and labels.csv, match every orders.code with every labels.sku as exact strings. Keep only pairs where labels.region is 'west'. Total orders.qty over all retained pairs, counting duplicate rows separately. Output only the numeric sum.",
+    "files": {
+      "orders.csv": "code,qty\n01,5\n1,11\n01,6\n02,5\n",
+      "labels.csv": "sku,region\n01,west\n1,east\n02,west\n01,west\n"
+    },
+    "expected": "27",
+    "sql": "SELECT SUM(CAST(o.qty AS INTEGER)) FROM orders o JOIN labels l ON o.code=l.sku WHERE l.region='west'",
+    "gold_plan": {
+      "left": "orders.csv",
+      "right": "labels.csv",
+      "left_key": "code",
+      "right_key": "sku",
+      "join": "inner",
+      "filter": {
+        "side": "right",
+        "column": "region",
+        "equals": "west"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "left",
+        "column": "qty"
+      }
+    },
+    "expected_routes": {
+      "old": "json_plan",
+      "new": "local"
+    },
+    "origin": "changed_data_key_control"
+  },
+  {
+    "id": "left_signed_sum",
+    "instruction": "Read purchases.csv and rebates.csv. Left join purchases.id to rebates.id using exact string keys. Sum rebates.amount for all resulting pairs. Preserve every matching pair, including duplicates. Missing right values contribute zero. Print the exact sum.",
+    "files": {
+      "purchases.csv": "id\n1\n2\n3\n1\n",
+      "rebates.csv": "id,amount\n1,-2\n1,5\n2,7\n9,12\n"
+    },
+    "expected": "13",
+    "sql": "SELECT SUM(CAST(r.amount AS INTEGER)) FROM purchases p LEFT JOIN rebates r ON p.id=r.id",
+    "gold_plan": {
+      "left": "purchases.csv",
+      "right": "rebates.csv",
+      "left_key": "id",
+      "right_key": "id",
+      "join": "left",
+      "filter": null,
+      "aggregate": {
+        "op": "sum",
+        "side": "right",
+        "column": "amount"
+      }
+    },
+    "expected_routes": {
+      "old": "json_plan",
+      "new": "local"
+    },
+    "origin": "new_signed_values"
+  },
+  {
+    "id": "empty_join_sum",
+    "instruction": "From stocks.csv and zones.csv, keep every pair with identical item strings and zones.region equal to 'west'. Add stocks.qty across those pairs. Duplicate rows must contribute repeatedly. Return the sum as a number.",
+    "files": {
+      "stocks.csv": "item,qty\na,5\nb,9\na,2\nc,3\n",
+      "zones.csv": "item,region\nx,west\ny,east\nz,west\n"
+    },
+    "expected": "0",
+    "sql": "SELECT COALESCE(SUM(CAST(s.qty AS INTEGER)),0) FROM stocks s JOIN zones z ON s.item=z.item WHERE z.region='west'",
+    "gold_plan": {
+      "left": "stocks.csv",
+      "right": "zones.csv",
+      "left_key": "item",
+      "right_key": "item",
+      "join": "inner",
+      "filter": {
+        "side": "right",
+        "column": "region",
+        "equals": "west"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "left",
+        "column": "qty"
+      }
+    },
+    "expected_routes": {
+      "old": "json_plan",
+      "new": "local"
+    },
+    "origin": "new_empty_result"
+  },
+  {
+    "id": "outside_numeric",
+    "instruction": "From lots.csv and rates.csv, keep every pair with identical sku strings and lots.state equal to 'open' and rates.fee is numerically greater than 3. Add rates.fee across those pairs. Duplicate rows must contribute repeatedly. Return the sum as a number.",
+    "files": {
+      "lots.csv": "sku,state\nA,open\nB,closed\nA,open\nC,open\n",
+      "rates.csv": "sku,fee\nA,4\nB,20\nC,5\nA,6\n"
+    },
+    "expected": "25",
+    "sql": "SELECT SUM(CAST(r.fee AS INTEGER)) FROM lots l JOIN rates r ON l.sku=r.sku WHERE l.state='open' AND CAST(r.fee AS INTEGER)>3",
+    "gold_plan": null,
+    "expected_routes": {
+      "old": "python",
+      "new": "python"
+    },
+    "origin": "outside_grammar_changed_values"
+  },
+  {
+    "id": "outside_or",
+    "instruction": "Using orders.csv and labels.csv, match every orders.code with every labels.sku as exact strings. Keep only pairs where labels.region is 'west' OR there is no matching labels row. Total orders.qty over all retained pairs, counting duplicate rows separately. Also include orders without a matching label. Output only the numeric sum.",
+    "files": {
+      "orders.csv": "code,qty\n01,4\n1,9\n01,3\n02,5\n03,11\n",
+      "labels.csv": "sku,region\n01,west\n1,east\n02,west\n01,west\n"
+    },
+    "expected": "30",
+    "sql": "SELECT SUM(CAST(o.qty AS INTEGER)) FROM orders o LEFT JOIN labels l ON o.code=l.sku WHERE l.region='west' OR l.sku IS NULL",
+    "gold_plan": null,
+    "expected_routes": {
+      "old": "python",
+      "new": "python"
+    },
+    "origin": "exact_E72_common_failure"
+  },
+  {
+    "id": "outside_phrase",
+    "instruction": "Read stocks.csv and zones.csv. For each stock row, find every zone row whose item is the same exact string and whose region is 'west'. Add that stock's qty once per matching zone row, retaining duplicates in both files. Return only the sum.",
+    "files": {
+      "stocks.csv": "item,qty\na,3\nb,8\na,5\nc,4\n",
+      "zones.csv": "item,region\na,west\nb,east\nc,west\na,west\n"
+    },
+    "expected": "20",
+    "sql": "SELECT SUM(CAST(s.qty AS INTEGER)) FROM stocks s JOIN zones z ON s.item=z.item WHERE z.region='west'",
+    "gold_plan": {
+      "left": "stocks.csv",
+      "right": "zones.csv",
+      "left_key": "item",
+      "right_key": "item",
+      "join": "inner",
+      "filter": {
+        "side": "right",
+        "column": "region",
+        "equals": "west"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "left",
+        "column": "qty"
+      }
+    },
+    "expected_routes": {
+      "old": "python",
+      "new": "python"
+    },
+    "origin": "unrecognized_phrase_changed_values"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "task_id": "known_paraphrase_local__old",
+  "stage": "json_plan",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return ONLY a JSON join plan or the exact word UNSUPPORTED. No Python or SQL. Schema: {\"left\":\"file.csv\",\"right\":\"other.csv\",\"left_key\":\"column\",\"right_key\":\"column\",\"join\":\"inner|left|anti\",\"filter\":null,\"aggregate\":{\"op\":\"sum|count\",\"side\":\"left|right|null\",\"column\":\"name|null\"}}. filter is null or {\"side\":\"left|right\",\"column\":\"name\",\"equals\":\"literal string\"}. For count, side and column must be JSON null. For sum both must be strings. The local executor joins exact nonempty string keys, preserving ALL matching pairs, including duplicate rows. left includes unmatched left rows; absent right sum values contribute zero. anti keeps unmatched left rows. The optional equality filter applies AFTER the join. Sum is exact decimal arithmetic; count counts result rows. Only one key per table and at most one string equality filter are supported. Use UNSUPPORTED for numeric comparisons, rounding, multiple filters, distinct, mean, median, composite or numeric keys, or any condition not expressible in this schema. Never drop conditions. Use exact listed filenames and column names. Samples are incomplete; executor reads all rows."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"stocks.csv\", \"columns\": [\"item\", \"qty\"], \"rows\": 4, \"sample_rows\": [{\"item\": \"a\", \"qty\": \"5\"}, {\"item\": \"b\", \"qty\": \"9\"}, {\"item\": \"a\", \"qty\": \"2\"}]}, {\"file\": \"zones.csv\", \"columns\": [\"item\", \"region\"], \"rows\": 4, \"sample_rows\": [{\"item\": \"a\", \"region\": \"west\"}, {\"item\": \"b\", \"region\": \"east\"}, {\"item\": \"c\", \"region\": \"west\"}]}]\nTask: From stocks.csv and zones.csv, keep every pair with identical item strings and zones.region equal to 'west'. Add stocks.qty across those pairs. Duplicate rows must contribute repeatedly. Return the sum as a number."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_GOLD_PLANS_AND_ANSWERS"
+}

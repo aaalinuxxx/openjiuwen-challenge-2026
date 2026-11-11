@@ -1,0 +1,17 @@
+{
+  "task_id": "left_signed_sum__old",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "{\"left\": \"purchases.csv\", \"right\": \"rebates.csv\", \"left_key\": \"id\", \"right_key\": \"id\", \"join\": \"left\", \"filter\": null, \"aggregate\": {\"op\": \"sum\", \"side\": \"right\", \"column\": \"amount\"}}"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

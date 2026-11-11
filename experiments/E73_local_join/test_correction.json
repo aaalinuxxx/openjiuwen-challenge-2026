@@ -1,0 +1,6 @@
+{
+  "api_calls": 0,
+  "cause": "SolveResult defaults model_used to a model identifier even when no model is called.",
+  "fix": "New local solver explicitly sets model_used to empty on success and local rejection. Global result defaults and historical solvers unchanged.",
+  "initial_report": "experiments/E73_local_join/unit_tests_initial.json"
+}
