@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"total\": 18, \"verified_solutions\": 5, \"justified_refusals\": 2, \"mere_abstentions\": 2, \"wrong_submitted_answers\": 0, \"earned_score\": 15, \"max_solvable_score\": 42, \"calls\": 11, \"known_effective_tokens\": 402.9, \"has_unaccounted_request\": false}\r\nReport: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E43_family_noncoding_live_20261111T150954291259\\report.json\r\n{\"false_refusals\": [\"math_zero_warning\", \"search_three_hop\"], \"truncations\": [\"data_distinct\", \"data_filtered_median\", \"data_weighted_mean\", \"search_paraphrase_chain\"]}\r\nControl: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E43_family_noncoding_live_control_20261111T150954079317.json\r\n",
+  "stderr": ""
+}

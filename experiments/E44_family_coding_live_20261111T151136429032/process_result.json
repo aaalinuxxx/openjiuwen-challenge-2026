@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"total\": 6, \"verified_solutions\": 4, \"justified_refusals\": 0, \"mere_abstentions\": 1, \"wrong_submitted_answers\": 0, \"earned_score\": 12, \"max_solvable_score\": 15, \"calls\": 6, \"known_effective_tokens\": 672.2, \"has_unaccounted_request\": false}\r\nReport: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E44_family_coding_live_20261111T151136429032\\report.json\r\n{\"false_refusals\": [], \"truncations\": []}\r\nControl: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E44_family_coding_live_control_20261111T151136322255.json\r\n",
+  "stderr": ""
+}

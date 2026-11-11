@@ -29,7 +29,10 @@ ADMINISTRATIVE = (
 def administrative_tail(text):
     text = ' '.join(text.split())
     sentences = [s.strip() for s in re.split(r'\.\s+|\.$', text) if s.strip()]
-    return all(s in ADMINISTRATIVE for s in sentences)
+    allowed = {clause.casefold() for clause in ADMINISTRATIVE}
+    return all(s.casefold() in allowed and
+               ('answer.txt' not in s.casefold() or 'answer.txt' in s)
+               for s in sentences)
 
 
 def question_with_scope(instruction, pattern, kind):

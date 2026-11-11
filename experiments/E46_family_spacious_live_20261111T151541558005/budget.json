@@ -1,0 +1,97 @@
+{
+  "budget": 3000.0,
+  "known_effective_tokens": 159.2,
+  "reserved_effective_tokens": 343.1,
+  "has_unaccounted_request": true,
+  "remote_stopped": true,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "search_new_relation",
+      "status": "ACCOUNTED",
+      "reserved_units": 1916,
+      "task_limit_units": 6000,
+      "input_token_estimate": 1596,
+      "output_cap": 32,
+      "input_tokens": 171,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "effective_cost": 22.1
+    },
+    {
+      "ticket": 1,
+      "task_id": "search_conflicting_fact",
+      "status": "ACCOUNTED",
+      "reserved_units": 2106,
+      "task_limit_units": 6000,
+      "input_token_estimate": 1786,
+      "output_cap": 32,
+      "input_tokens": 230,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "effective_cost": 28.0
+    },
+    {
+      "ticket": 2,
+      "task_id": "search_irrelevant_conflict",
+      "status": "ACCOUNTED",
+      "reserved_units": 2093,
+      "task_limit_units": 6000,
+      "input_token_estimate": 1773,
+      "output_cap": 32,
+      "input_tokens": 223,
+      "output_tokens": 2,
+      "reasoning_tokens": 0,
+      "effective_cost": 24.3
+    },
+    {
+      "ticket": 3,
+      "task_id": "search_absent",
+      "status": "ACCOUNTED",
+      "reserved_units": 2350,
+      "task_limit_units": 6000,
+      "input_token_estimate": 2030,
+      "output_cap": 32,
+      "input_tokens": 329,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "effective_cost": 37.9
+    },
+    {
+      "ticket": 4,
+      "task_id": "search_paraphrase_chain",
+      "status": "ACCOUNTED",
+      "reserved_units": 1990,
+      "task_limit_units": 6000,
+      "input_token_estimate": 1670,
+      "output_cap": 32,
+      "input_tokens": 187,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "effective_cost": 23.7
+    },
+    {
+      "ticket": 5,
+      "task_id": "search_three_hop",
+      "status": "ACCOUNTED",
+      "reserved_units": 1955,
+      "task_limit_units": 6000,
+      "input_token_estimate": 1635,
+      "output_cap": 32,
+      "input_tokens": 182,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "effective_cost": 23.2
+    },
+    {
+      "ticket": 6,
+      "task_id": "data_distinct",
+      "status": "COST_UNKNOWN_STOPPED",
+      "reserved_units": 3431,
+      "task_limit_units": 6000,
+      "input_token_estimate": 1431,
+      "output_cap": 200,
+      "error_type": "CancelledError"
+    }
+  ]
+}

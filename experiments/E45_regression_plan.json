@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-11T15:16:19.935Z",
+  "parents": [
+    "E42_family_offline_20261111T150910996476",
+    "E43_family_noncoding_live_20261111T150954291259",
+    "E44_family_coding_live_20261111T151136429032"
+  ],
+  "hypotheses": {
+    "H02_1": "Only a fully parsed impossible operation justifies zero-token rejection; quoted/negated phrases do not",
+    "H00_3": "Capitalization of known administrative prose should not force an API fallback; unknown constraints must remain rejected",
+    "H05_4": "An explicitly named coding target must take precedence over alphabetical file order"
+  },
+  "plan": "Record failing controls first; make narrow corrections; rerun controls and offline E41 as dev replay; no live calls in E45",
+  "api_calls": 0
+}

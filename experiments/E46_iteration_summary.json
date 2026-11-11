@@ -1,0 +1,99 @@
+{
+  "created_at": "2026-11-11T15:22:55.117Z",
+  "frozen_fixture_commit": "25d30a8",
+  "baseline_and_comparison_plan_commit": "d945afe",
+  "scope": "prospective authored challenge, then dev replays; not external blind evaluation",
+  "live": [
+    {
+      "experiment": "E43_family_noncoding_live_20261111T150954291259",
+      "metrics": {
+        "total": 18,
+        "verified_solutions": 5,
+        "justified_refusals": 2,
+        "mere_abstentions": 2,
+        "wrong_submitted_answers": 0,
+        "earned_score": 15,
+        "max_solvable_score": 42,
+        "calls": 11,
+        "known_effective_tokens": 402.9,
+        "has_unaccounted_request": false
+      },
+      "evaluation_status": "FINISHED",
+      "false_refusals": [
+        "math_zero_warning",
+        "search_three_hop"
+      ]
+    },
+    {
+      "experiment": "E44_family_coding_live_20261111T151136429032",
+      "metrics": {
+        "total": 6,
+        "verified_solutions": 4,
+        "justified_refusals": 0,
+        "mere_abstentions": 1,
+        "wrong_submitted_answers": 0,
+        "earned_score": 12,
+        "max_solvable_score": 15,
+        "calls": 6,
+        "known_effective_tokens": 672.2,
+        "has_unaccounted_request": false
+      },
+      "evaluation_status": "FINISHED",
+      "false_refusals": []
+    },
+    {
+      "experiment": "E46_family_spacious_live_20261111T151541558005",
+      "metrics": {
+        "total": 18,
+        "verified_solutions": 2,
+        "justified_refusals": 4,
+        "mere_abstentions": 0,
+        "wrong_submitted_answers": 0,
+        "earned_score": 6,
+        "max_solvable_score": 42,
+        "calls": 7,
+        "known_effective_tokens": 159.2,
+        "has_unaccounted_request": true
+      },
+      "evaluation_status": "INTERRUPTED_UNKNOWN_COST",
+      "false_refusals": [
+        "math_zero_warning",
+        "search_paraphrase_chain",
+        "search_three_hop"
+      ]
+    }
+  ],
+  "api_requests": 24,
+  "accounted_requests": 23,
+  "unknown_requests": 1,
+  "known_effective_tokens": 1234.3,
+  "unknown_request_reservation": 343.1,
+  "reservation_is_not_actual_cost_or_guaranteed_upper_bound": true,
+  "new_live_requests_stopped": true,
+  "unit_tests_after": 72,
+  "unit_tests_passed": true,
+  "new_regression_controls_before": {
+    "total": 5,
+    "failed": 3
+  },
+  "new_regression_controls_after": {
+    "total": 5,
+    "failed": 0
+  },
+  "baseline_combined": {
+    "tasks": 24,
+    "solvable": 19,
+    "verified_solutions": 9,
+    "score": 27,
+    "max_score": 57,
+    "wrong_answers": 0,
+    "false_refusals": 2
+  },
+  "remaining": [
+    "Incomplete KB context",
+    "Unfinished budget comparison due cancellation",
+    "No live recheck of target-selection fix",
+    "Multi-CSV join unsupported",
+    "Provider cost of canceled request unknown"
+  ]
+}

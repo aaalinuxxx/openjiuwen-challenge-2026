@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "Executing <Task finished name='Task-32' coro=<CodingTargetControls.test_explicit_target_wins_over_alphabetical_order() done, defined at D:\\хаки\\openjiuwen\\openjuuweg\\tests\\test_family_shift_regressions.py:37> result=None created at D:\\хаки\\openjiuwen\\sdk-python\\cpython-3.11.15-windows-x86_64-none\\Lib\\asyncio\\runners.py:100> took 0.250 seconds\r\nTask a failed: OSError\r\nExecuting <Task finished name='Task-117' coro=<CodingRollbackTests.test_invalid_syntax_keeps_best_code_and_explains_rejection() done, defined at D:\\хаки\\openjiuwen\\openjuuweg\\tests\\test_review_regressions.py:89> result=None created at D:\\хаки\\openjiuwen\\sdk-python\\cpython-3.11.15-windows-x86_64-none\\Lib\\asyncio\\runners.py:100> took 0.453 seconds\r\nExecuting <Task finished name='Task-122' coro=<CodingRollbackTests.test_regression_rolls_back_prompt_and_traceback_together() done, defined at D:\\хаки\\openjiuwen\\openjuuweg\\tests\\test_review_regressions.py:81> result=None created at D:\\хаки\\openjiuwen\\sdk-python\\cpython-3.11.15-windows-x86_64-none\\Lib\\asyncio\\runners.py:100> took 0.688 seconds\r\n----------------------------------------------------------------------\r\nRan 72 tests in 4.501s\r\n\r\nOK\r\n",
+  "api_calls": 0
+}

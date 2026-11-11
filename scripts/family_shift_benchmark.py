@@ -37,7 +37,7 @@ async def execute(options):
     if live and previous:
         raise ValueError('This paid phase was already started; inspect its saved ledger instead of repeating it')
     if live:
-        for p in (ROOT/'experiments').glob('E4[34]_family_*_live_*/budget.json'):
+        for p in (ROOT/'experiments').glob('E4[346]_family_*_live_*/budget.json'):
             if json.loads(p.read_text())['has_unaccounted_request']:
                 raise ValueError('Earlier phase has unknown cost; no more live calls')
     stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%f')
@@ -64,7 +64,7 @@ async def execute(options):
         if hashes(FIXTURE/'tasks')!=current: raise AssertionError('Frozen inputs changed')
         false_refusals=[r['task_id'] for r in report['rows']
                         if not r['unsolvable'] and r['status'] in ('UNSOLVABLE','SKIPPED')]
-        record.update(status='COMPLETED',metrics=report['metrics'],false_refusals=false_refusals,
+        record.update(status='STOPPED_UNKNOWN_COST' if report['metrics']['has_unaccounted_request'] else 'COMPLETED',metrics=report['metrics'],false_refusals=false_refusals,
             truncations=[r['task_id'] for r in report['rows'] if r['status']=='TRUNCATED'],
             rows=report['rows'])
         print(json.dumps(dict(false_refusals=false_refusals,truncations=record['truncations'])))

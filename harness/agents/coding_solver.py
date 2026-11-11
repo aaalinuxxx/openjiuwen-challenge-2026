@@ -72,7 +72,12 @@ async def solve_coding_task(ctx: TaskContext, bridge) -> SolveResult:
     if not test_files or not code_files:
         return SolveResult(task_id=ctx.task_id, status="UNSOLVABLE", notes="Missing code or test file")
 
-    target_file = code_files[0]
+    # Honor an explicit repair target; filename ordering is not task intent.
+    requested = re.findall(
+        r'\b(?:fix|repair|correct|update)\s+(?:the\s+)?(?:bugs?\s+in\s+)?`?([A-Za-z_][A-Za-z0-9_]*\.py)\b',
+        ctx.instruction, re.IGNORECASE)
+    matches = [p for p in code_files if p.name in requested]
+    target_file = matches[0] if len(matches) == 1 else (code_files[0] if len(code_files) == 1 and not requested else None)
 
     with tempfile.TemporaryDirectory(prefix="oj-coding-") as temp_dir:
         sandbox_dir = Path(temp_dir) / "workspace"
@@ -87,6 +92,9 @@ async def _repair(ctx: TaskContext, bridge, sandbox_dir: Path, test_files, targe
     if passed:
         return SolveResult(task_id=ctx.task_id, status="SOLVED", answer="DONE", notes="Tests already pass")
 
+    if target_file is None:
+        return SolveResult(task_id=ctx.task_id, status="UNKNOWN", notes="Multiple code modules without an unambiguous repair target")
+
     original_code = target_file.read_text(encoding="utf-8", errors="replace")
     best_code = original_code
     min_failures = initial_failures
@@ -96,6 +104,11 @@ async def _repair(ctx: TaskContext, bridge, sandbox_dir: Path, test_files, targe
 
     test_code = '\n\n'.join(f"### {p.name}\n{p.read_text(encoding='utf-8', errors='replace')}"
                             for p in test_files)
+
+    dependencies = '\n\n'.join(
+        f"### Read-only module: {p.name}\n{p.read_text(encoding='utf-8', errors='replace')}"
+        for p in sorted(ctx.workspace_dir.glob('*.py'))
+        if p != target_file and not p.name.startswith('test_'))
 
     total_in, total_out, total_r = 0, 0, 0
     models_to_try = [select_primary_model(ctx)]
@@ -114,7 +127,7 @@ async def _repair(ctx: TaskContext, bridge, sandbox_dir: Path, test_files, targe
         user_prompt = (
             f"### Task constraints\n{ctx.instruction}\n\n"
             f"### Target File: {target_file.name}\n{current_code}\n\n"
-            f"{test_code}\n\n"
+            f"{dependencies}\n\n{test_code}\n\n"
             f"### Failing Test Output (failures: {min_failures})\n{test_out}\n{retry_feedback}"
         )
         resp, in_tok, out_tok, r_tok = await bridge.complete(
