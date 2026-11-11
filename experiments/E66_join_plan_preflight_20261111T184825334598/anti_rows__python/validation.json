@@ -1,0 +1,44 @@
+{
+  "case": "anti_rows",
+  "arm": "python",
+  "order_in_pair": 0,
+  "expected": "3",
+  "status": "SOLVED",
+  "answer": "3",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "customers.csv": "35adf90377ac55e64307e6098f5e846c48599ada7e4949afd7a7de75cc5e93e5",
+    "invoices.csv": "f595dabe401b28f73ce2d8febff8117d529cbd4c8f309fbfb0b335ca98fd5b47"
+  },
+  "calls": 1,
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "anti_rows__python",
+    "status": "SOLVED",
+    "answer": "3",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.0629999999946449,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "anti_rows__python",
+    "workflow_id": "task_e486c0dc6a8e42c8aa19ba8f89aa9547",
+    "session_id": "78c8285782b848f0bafdb7d6abe61dfb",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

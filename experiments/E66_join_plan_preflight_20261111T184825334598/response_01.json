@@ -1,0 +1,17 @@
+{
+  "task_id": "known_duplicate__python",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('39')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

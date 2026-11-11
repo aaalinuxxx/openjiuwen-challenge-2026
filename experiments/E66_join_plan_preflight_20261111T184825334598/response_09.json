@@ -1,0 +1,17 @@
+{
+  "task_id": "anti_rows__python",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('3')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

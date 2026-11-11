@@ -1,0 +1,43 @@
+{
+  "api_calls": 0,
+  "passed": true,
+  "rows": [
+    {
+      "case": "known_duplicate",
+      "expected": "39",
+      "oracle": "39",
+      "passed": true
+    },
+    {
+      "case": "many_pairs",
+      "expected": "34",
+      "oracle": "34",
+      "passed": true
+    },
+    {
+      "case": "left_pairs",
+      "expected": "28",
+      "oracle": "28",
+      "passed": true
+    },
+    {
+      "case": "string_keys",
+      "expected": "9",
+      "oracle": "9",
+      "passed": true
+    },
+    {
+      "case": "anti_rows",
+      "expected": "3",
+      "oracle": "3",
+      "passed": true
+    },
+    {
+      "case": "unsupported_threshold",
+      "expected": "7",
+      "oracle": "7",
+      "passed": true
+    }
+  ],
+  "scope": "Independent SQLite calculation with TEXT join keys; not model-generated code"
+}

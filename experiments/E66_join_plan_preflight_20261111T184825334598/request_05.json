@@ -1,0 +1,19 @@
+{
+  "task_id": "left_pairs__python",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"orders.csv\", \"columns\": [\"order_id\"], \"rows\": 4, \"sample_rows\": [{\"order_id\": \"o1\"}, {\"order_id\": \"o1\"}, {\"order_id\": \"o2\"}]}, {\"file\": \"payments.csv\", \"columns\": [\"order_id\", \"amount\"], \"rows\": 4, \"sample_rows\": [{\"order_id\": \"o1\", \"amount\": \"5\"}, {\"order_id\": \"o1\", \"amount\": \"7\"}, {\"order_id\": \"o2\", \"amount\": \"4\"}]}]\nTask: Read orders.csv and payments.csv. Left join orders.order_id to payments.order_id. Sum payments.amount once for every matching pair, preserving repeated orders and payments. Each unmatched order contributes zero; payments with no matching order are ignored. Print the integer total."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_GOLD_PLANS_AND_ANSWERS"
+}

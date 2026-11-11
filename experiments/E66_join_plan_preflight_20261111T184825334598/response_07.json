@@ -1,0 +1,17 @@
+{
+  "task_id": "string_keys__json",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "{\"left\": \"orders.csv\", \"right\": \"regions.csv\", \"left_key\": \"key\", \"right_key\": \"key\", \"join\": \"inner\", \"filter\": {\"side\": \"right\", \"column\": \"region\", \"equals\": \"north\"}, \"aggregate\": {\"op\": \"sum\", \"side\": \"left\", \"column\": \"units\"}}"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "task_id": "string_keys__json",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return ONLY a JSON join plan or the exact word UNSUPPORTED. No Python or SQL. Schema: {\"left\":\"file.csv\",\"right\":\"other.csv\",\"left_key\":\"column\",\"right_key\":\"column\",\"join\":\"inner|left|anti\",\"filter\":null,\"aggregate\":{\"op\":\"sum|count\",\"side\":\"left|right|null\",\"column\":\"name|null\"}}. filter is null or {\"side\":\"left|right\",\"column\":\"name\",\"equals\":\"literal string\"}. For count, side and column must be JSON null. For sum both must be strings. The local executor joins exact nonempty string keys, preserving ALL matching pairs, including duplicate rows. left includes unmatched left rows; absent right sum values contribute zero. anti keeps unmatched left rows. The optional equality filter applies AFTER the join. Sum is exact decimal arithmetic; count counts result rows. Only one key per table and at most one string equality filter are supported. Use UNSUPPORTED for numeric comparisons, rounding, multiple filters, distinct, mean, median, composite or numeric keys, or any condition not expressible in this schema. Never drop conditions. Use exact listed filenames and column names. Samples are incomplete; executor reads all rows."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"orders.csv\", \"columns\": [\"key\", \"units\"], \"rows\": 4, \"sample_rows\": [{\"key\": \"01\", \"units\": \"2\"}, {\"key\": \"1\", \"units\": \"11\"}, {\"key\": \"002\", \"units\": \"9\"}]}, {\"file\": \"regions.csv\", \"columns\": [\"key\", \"region\"], \"rows\": 4, \"sample_rows\": [{\"key\": \"01\", \"region\": \"north\"}, {\"key\": \"1\", \"region\": \"south\"}, {\"key\": \"002\", \"region\": \"south\"}]}]\nTask: Read orders.csv and regions.csv. Inner join on key using exact string equality: '01' and '1' differ, as do '002' and '2'. Sum orders.units for every matching pair with regions.region equal to 'north'. Print the integer sum."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_GOLD_PLANS_AND_ANSWERS"
+}

@@ -1,0 +1,749 @@
+{
+  "mode": "PREFLIGHT_GOLD_PLANS_AND_ANSWERS",
+  "status": "COMPLETED",
+  "scope": "Six targeted pairs: known E64 counterexample, four variants and one unsupported numeric predicate. Not independent holdout.",
+  "plan_sha256": "569d13327e23229671078d25af823aec0afd0affbf6b241f4ba0bf9bbcc3e4c7",
+  "source_hashes": {
+    "harness/agents/join_plans.py": "cd737ee0abc60fd27d5ca45a270a04d2f6e787bd295a7a88d2f78c8a32904ec9",
+    "harness/agents/multi_csv.py": "e716c619347995009c0bfe27bd957bda634d4bb306468f86c76e2375d5844578",
+    "harness/agents/data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness/agents/calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+    "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "harness/sandbox/executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "scripts/join_plan_live.py": "8dad2ae0d6dd2c0022c2ac20a717e06b0e81cda25f3005ee4b3e2d6087719d36",
+    "scripts/multimodule_live.py": "70a6737a2b3887d418e441aaaae373fe8368b961a88179680907b48ec8b67527",
+    "experiments/E65_join_plan/cases.json": "a5650dbf4eb0627af124fac450999d6cb18266819e67de3fa5b11fdf383a966e",
+    "experiments/E65_join_plan/oracle_validation.json": "d98859c41746120696c500f77e10318bdd61bbb0401a770d5c20c2c1db0ecca6",
+    "tests/test_join_plans.py": "a4619b0c00c14551060633927dd87aec39b13f2ca6164b496e29969f5612462e",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d"
+  },
+  "rows": [
+    {
+      "case": "known_duplicate",
+      "arm": "python",
+      "order_in_pair": 0,
+      "expected": "39",
+      "status": "SOLVED",
+      "answer": "39",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "193a4ca4d60ad039da48585e27533972c798ab9644048b553075c6f652e25b61",
+        "customers.csv": "d6130889481e5eafe552b24361851a6e2ad07d1c23a86a0392aaf53156e48463"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "known_duplicate__python",
+        "status": "SOLVED",
+        "answer": "39",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.062000000005355105,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "known_duplicate__python",
+        "workflow_id": "task_43843fa70dad43e4bb4aa0b95e0e3ddb",
+        "session_id": "b07172a34a0e47b7852194de8dd70562",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "known_duplicate",
+      "arm": "json",
+      "order_in_pair": 1,
+      "expected": "39",
+      "status": "SOLVED",
+      "answer": "39",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "193a4ca4d60ad039da48585e27533972c798ab9644048b553075c6f652e25b61",
+        "customers.csv": "d6130889481e5eafe552b24361851a6e2ad07d1c23a86a0392aaf53156e48463"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "known_duplicate__json",
+        "status": "SOLVED",
+        "answer": "39",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Executed typed join plan; question semantics are not formally verified"
+      },
+      "workflow": {
+        "task_id": "known_duplicate__json",
+        "workflow_id": "task_09ca9eaf32be471496314e0ee3e2ab2d",
+        "session_id": "a279cb4ee8d04366aa3bf33776795ed6",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "many_pairs",
+      "arm": "json",
+      "order_in_pair": 0,
+      "expected": "34",
+      "status": "SOLVED",
+      "answer": "34",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "sales.csv": "08e3a19d7bcfb8f95c23e4e92080a71a1f269ac703fff2ebed32d7dfa9e52cbc",
+        "labels.csv": "7b0bb42d4ad1b5ade9ec634ff3c0ccc8affde83dbd418fbfdc78d05e5638882a"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "many_pairs__json",
+        "status": "SOLVED",
+        "answer": "34",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Executed typed join plan; question semantics are not formally verified"
+      },
+      "workflow": {
+        "task_id": "many_pairs__json",
+        "workflow_id": "task_728eb65c4c1149ecb638f0c2b7ab3cbe",
+        "session_id": "804214092efa474facdaf21ee808308a",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "many_pairs",
+      "arm": "python",
+      "order_in_pair": 1,
+      "expected": "34",
+      "status": "SOLVED",
+      "answer": "34",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "sales.csv": "08e3a19d7bcfb8f95c23e4e92080a71a1f269ac703fff2ebed32d7dfa9e52cbc",
+        "labels.csv": "7b0bb42d4ad1b5ade9ec634ff3c0ccc8affde83dbd418fbfdc78d05e5638882a"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "many_pairs__python",
+        "status": "SOLVED",
+        "answer": "34",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.046000000002095476,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "many_pairs__python",
+        "workflow_id": "task_aca497b0c6a74145bd6eaf0e0ddaccd8",
+        "session_id": "aa02609f75ed4e21bbb8b2bb1edbc0a7",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "left_pairs",
+      "arm": "python",
+      "order_in_pair": 0,
+      "expected": "28",
+      "status": "SOLVED",
+      "answer": "28",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "69a6b1332d3dcc39dc638b5318aa8128c7cb88b0c584ff3683a016fe713976c4",
+        "payments.csv": "f4aac901f922cf8acf7a2d8cfdb0d960285dd113c249299bc254fbaefe4be5aa"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "left_pairs__python",
+        "status": "SOLVED",
+        "answer": "28",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.062000000005355105,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "left_pairs__python",
+        "workflow_id": "task_a333cefe93a9424e8c6a25cabe825862",
+        "session_id": "fb487407d99043a2b6d8732de35c4e2d",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "left_pairs",
+      "arm": "json",
+      "order_in_pair": 1,
+      "expected": "28",
+      "status": "SOLVED",
+      "answer": "28",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "69a6b1332d3dcc39dc638b5318aa8128c7cb88b0c584ff3683a016fe713976c4",
+        "payments.csv": "f4aac901f922cf8acf7a2d8cfdb0d960285dd113c249299bc254fbaefe4be5aa"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "left_pairs__json",
+        "status": "SOLVED",
+        "answer": "28",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Executed typed join plan; question semantics are not formally verified"
+      },
+      "workflow": {
+        "task_id": "left_pairs__json",
+        "workflow_id": "task_dbfa7eaa08244061845ab93d14201aff",
+        "session_id": "9f0fea391ee74fdda814530ff15104a1",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "string_keys",
+      "arm": "json",
+      "order_in_pair": 0,
+      "expected": "9",
+      "status": "SOLVED",
+      "answer": "9",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "67f68d6dda76cf59b47291f2824db20fcd23d5f5fc88133d3f2ec14c984a3b11",
+        "regions.csv": "d278ed87e8436f5b39a4c7044e04f23c54f7b0a38b7273754c7fdf7da5288694"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "string_keys__json",
+        "status": "SOLVED",
+        "answer": "9",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Executed typed join plan; question semantics are not formally verified"
+      },
+      "workflow": {
+        "task_id": "string_keys__json",
+        "workflow_id": "task_80107ab098f2402b8fb0a65ce4c06897",
+        "session_id": "015e1f320037433d905c943c5453fc80",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "string_keys",
+      "arm": "python",
+      "order_in_pair": 1,
+      "expected": "9",
+      "status": "SOLVED",
+      "answer": "9",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "orders.csv": "67f68d6dda76cf59b47291f2824db20fcd23d5f5fc88133d3f2ec14c984a3b11",
+        "regions.csv": "d278ed87e8436f5b39a4c7044e04f23c54f7b0a38b7273754c7fdf7da5288694"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "string_keys__python",
+        "status": "SOLVED",
+        "answer": "9",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0629999999946449,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "string_keys__python",
+        "workflow_id": "task_22a8cf33584f48fea0570f6a82c9ff7c",
+        "session_id": "8b6f7a23ab3947f7af2fb82718d5ba26",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "anti_rows",
+      "arm": "python",
+      "order_in_pair": 0,
+      "expected": "3",
+      "status": "SOLVED",
+      "answer": "3",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "customers.csv": "35adf90377ac55e64307e6098f5e846c48599ada7e4949afd7a7de75cc5e93e5",
+        "invoices.csv": "f595dabe401b28f73ce2d8febff8117d529cbd4c8f309fbfb0b335ca98fd5b47"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "anti_rows__python",
+        "status": "SOLVED",
+        "answer": "3",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0629999999946449,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "anti_rows__python",
+        "workflow_id": "task_e486c0dc6a8e42c8aa19ba8f89aa9547",
+        "session_id": "78c8285782b848f0bafdb7d6abe61dfb",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "anti_rows",
+      "arm": "json",
+      "order_in_pair": 1,
+      "expected": "3",
+      "status": "SOLVED",
+      "answer": "3",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": true,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "customers.csv": "35adf90377ac55e64307e6098f5e846c48599ada7e4949afd7a7de75cc5e93e5",
+        "invoices.csv": "f595dabe401b28f73ce2d8febff8117d529cbd4c8f309fbfb0b335ca98fd5b47"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "anti_rows__json",
+        "status": "SOLVED",
+        "answer": "3",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Executed typed join plan; question semantics are not formally verified"
+      },
+      "workflow": {
+        "task_id": "anti_rows__json",
+        "workflow_id": "task_9e0cf498f90340a987a8f27c74a54fbc",
+        "session_id": "2a73d40b73d047cfa77edffc3c72ed58",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "unsupported_threshold",
+      "arm": "json",
+      "order_in_pair": 0,
+      "expected": "7",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "unsupported_abstention": true,
+      "supported": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "sales.csv": "13348d4330aaee298dbd474567f30eb21362c90a103784f53c7f20a641b1aa6c",
+        "prices.csv": "28600c0142697521dfa1b0264de2d7c0a2dad9ba6a2c8188afa4772bef5c0563"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "unsupported_threshold__json",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.10999999998603016,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model declared unsupported conditions"
+      },
+      "workflow": {
+        "task_id": "unsupported_threshold__json",
+        "workflow_id": "task_0b8ffee93c59415fab4d38099e113afe",
+        "session_id": "9cdf2139103342f1818afd8767d1c50c",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "unsupported_threshold",
+      "arm": "python",
+      "order_in_pair": 1,
+      "expected": "7",
+      "status": "SOLVED",
+      "answer": "7",
+      "solved": true,
+      "unsupported_abstention": false,
+      "supported": false,
+      "wrong_answer": false,
+      "unchanged_inputs": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "sales.csv": "13348d4330aaee298dbd474567f30eb21362c90a103784f53c7f20a641b1aa6c",
+        "prices.csv": "28600c0142697521dfa1b0264de2d7c0a2dad9ba6a2c8188afa4772bef5c0563"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "unsupported_threshold__python",
+        "status": "SOLVED",
+        "answer": "7",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.062000000005355105,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "unsupported_threshold__python",
+        "workflow_id": "task_92df29f8244347e9ad0798390819948b",
+        "session_id": "47a7a82bf616449b9f892cf2c1b4d55b",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    }
+  ],
+  "recording_errors": [],
+  "budget": {
+    "budget": 4000,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "known_duplicate__python",
+        "status": "ACCOUNTED",
+        "reserved_units": 6152,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2152,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 1,
+        "task_id": "known_duplicate__json",
+        "status": "ACCOUNTED",
+        "reserved_units": 6914,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2914,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 2,
+        "task_id": "many_pairs__json",
+        "status": "ACCOUNTED",
+        "reserved_units": 6758,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2758,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 3,
+        "task_id": "many_pairs__python",
+        "status": "ACCOUNTED",
+        "reserved_units": 5996,
+        "task_limit_units": 12000,
+        "input_token_estimate": 1996,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 4,
+        "task_id": "left_pairs__python",
+        "status": "ACCOUNTED",
+        "reserved_units": 6055,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2055,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 5,
+        "task_id": "left_pairs__json",
+        "status": "ACCOUNTED",
+        "reserved_units": 6817,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2817,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 6,
+        "task_id": "string_keys__json",
+        "status": "ACCOUNTED",
+        "reserved_units": 6782,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2782,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 7,
+        "task_id": "string_keys__python",
+        "status": "ACCOUNTED",
+        "reserved_units": 6020,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2020,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 8,
+        "task_id": "anti_rows__python",
+        "status": "ACCOUNTED",
+        "reserved_units": 6060,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2060,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 9,
+        "task_id": "anti_rows__json",
+        "status": "ACCOUNTED",
+        "reserved_units": 6822,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2822,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 10,
+        "task_id": "unsupported_threshold__json",
+        "status": "ACCOUNTED",
+        "reserved_units": 6696,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2696,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 11,
+        "task_id": "unsupported_threshold__python",
+        "status": "ACCOUNTED",
+        "reserved_units": 5934,
+        "task_limit_units": 12000,
+        "input_token_estimate": 1934,
+        "output_cap": 400,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      }
+    ]
+  },
+  "real_api_attempts": 0,
+  "known_effective_tokens": 0,
+  "metrics": {
+    "python": {
+      "attempted": 6,
+      "solved": 6,
+      "solvable_total": 6,
+      "supported_solved": 5,
+      "supported_total": 5,
+      "unsupported_abstentions": 0,
+      "wrong_answers": 0,
+      "calls": 6,
+      "effective_tokens": 0.0
+    },
+    "json": {
+      "attempted": 6,
+      "solved": 5,
+      "solvable_total": 6,
+      "supported_solved": 5,
+      "supported_total": 5,
+      "unsupported_abstentions": 1,
+      "wrong_answers": 0,
+      "calls": 6,
+      "effective_tokens": 0.0
+    }
+  },
+  "prior_ledgers_unchanged": true,
+  "preflight_passed": true
+}

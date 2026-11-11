@@ -1,0 +1,17 @@
+{
+  "task_id": "many_pairs__json",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "{\"left\": \"sales.csv\", \"right\": \"labels.csv\", \"left_key\": \"key\", \"right_key\": \"key\", \"join\": \"inner\", \"filter\": {\"side\": \"right\", \"column\": \"tag\", \"equals\": \"keep\"}, \"aggregate\": {\"op\": \"sum\", \"side\": \"left\", \"column\": \"units\"}}"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

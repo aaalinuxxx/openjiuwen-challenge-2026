@@ -1,0 +1,17 @@
+{
+  "task_id": "anti_rows__json",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "{\"left\": \"customers.csv\", \"right\": \"invoices.csv\", \"left_key\": \"customer_id\", \"right_key\": \"customer_id\", \"join\": \"anti\", \"filter\": null, \"aggregate\": {\"op\": \"count\", \"side\": null, \"column\": null}}"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

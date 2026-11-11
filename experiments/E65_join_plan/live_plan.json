@@ -1,0 +1,35 @@
+{
+  "hypothesis": "H04.9",
+  "scope": "Six targeted pairs: known E64 counterexample, four variants and one unsupported numeric predicate. Not independent holdout.",
+  "budget": 4000,
+  "max_calls": 12,
+  "per_task_budget": 1200,
+  "expected_requests": 12,
+  "model": "qwen3.6-35b-a3b-noreason",
+  "max_output": 400,
+  "temperature": 0,
+  "production_enabled": false,
+  "prior_unknown_ledgers": [
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "experiments/E50_search_live_20261111T155649239479/budget.json"
+  ],
+  "frozen_hashes": {
+    "harness/agents/join_plans.py": "cd737ee0abc60fd27d5ca45a270a04d2f6e787bd295a7a88d2f78c8a32904ec9",
+    "harness/agents/multi_csv.py": "e716c619347995009c0bfe27bd957bda634d4bb306468f86c76e2375d5844578",
+    "harness/agents/data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness/agents/calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+    "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "harness/sandbox/executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "scripts/join_plan_live.py": "8dad2ae0d6dd2c0022c2ac20a717e06b0e81cda25f3005ee4b3e2d6087719d36",
+    "scripts/multimodule_live.py": "70a6737a2b3887d418e441aaaae373fe8368b961a88179680907b48ec8b67527",
+    "experiments/E65_join_plan/cases.json": "a5650dbf4eb0627af124fac450999d6cb18266819e67de3fa5b11fdf383a966e",
+    "experiments/E65_join_plan/oracle_validation.json": "d98859c41746120696c500f77e10318bdd61bbb0401a770d5c20c2c1db0ecca6",
+    "tests/test_join_plans.py": "a4619b0c00c14551060633927dd87aec39b13f2ca6164b496e29969f5612462e",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d"
+  }
+}

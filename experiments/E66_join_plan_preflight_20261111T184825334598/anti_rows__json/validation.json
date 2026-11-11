@@ -1,0 +1,44 @@
+{
+  "case": "anti_rows",
+  "arm": "json",
+  "order_in_pair": 1,
+  "expected": "3",
+  "status": "SOLVED",
+  "answer": "3",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "customers.csv": "35adf90377ac55e64307e6098f5e846c48599ada7e4949afd7a7de75cc5e93e5",
+    "invoices.csv": "f595dabe401b28f73ce2d8febff8117d529cbd4c8f309fbfb0b335ca98fd5b47"
+  },
+  "calls": 1,
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "anti_rows__json",
+    "status": "SOLVED",
+    "answer": "3",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.0,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Executed typed join plan; question semantics are not formally verified"
+  },
+  "workflow": {
+    "task_id": "anti_rows__json",
+    "workflow_id": "task_9e0cf498f90340a987a8f27c74a54fbc",
+    "session_id": "2a73d40b73d047cfa77edffc3c72ed58",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

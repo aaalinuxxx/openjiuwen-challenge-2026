@@ -1,0 +1,17 @@
+{
+  "task_id": "left_pairs__json",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "{\"left\": \"orders.csv\", \"right\": \"payments.csv\", \"left_key\": \"order_id\", \"right_key\": \"order_id\", \"join\": \"left\", \"filter\": null, \"aggregate\": {\"op\": \"sum\", \"side\": \"right\", \"column\": \"amount\"}}"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

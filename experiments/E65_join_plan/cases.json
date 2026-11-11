@@ -1,0 +1,140 @@
+[
+  {
+    "id": "known_duplicate",
+    "instruction": "Read orders.csv and customers.csv. Inner join orders.customer_id = customers.customer_id. Sum orders.amount for joined rows with customers.region equal to 'north'. Each matching pair contributes once. Print the integer total.",
+    "files": {
+      "orders.csv": "order_id,customer_id,amount\no1,A,10\no2,B,7\no3,A,5\no4,C,9\n",
+      "customers.csv": "customer_id,region\nA,north\nB,south\nC,north\nA,north\n"
+    },
+    "expected": "39",
+    "sql": "SELECT SUM(CAST(o.amount AS INTEGER)) FROM orders o JOIN customers c ON o.customer_id=c.customer_id WHERE c.region='north'",
+    "gold_plan": {
+      "left": "orders.csv",
+      "right": "customers.csv",
+      "left_key": "customer_id",
+      "right_key": "customer_id",
+      "join": "inner",
+      "filter": {
+        "side": "right",
+        "column": "region",
+        "equals": "north"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "left",
+        "column": "amount"
+      }
+    }
+  },
+  {
+    "id": "many_pairs",
+    "instruction": "Read sales.csv and labels.csv. Join sales.key to labels.key using exact string equality. For every matching pair with labels.tag equal to 'keep', add sales.units. Preserve repeated rows on both sides. Print the integer sum.",
+    "files": {
+      "sales.csv": "key,units\na,2\na,7\nb,5\nc,11\n",
+      "labels.csv": "key,tag\na,keep\na,keep\nb,keep\nc,drop\nc,keep\n"
+    },
+    "expected": "34",
+    "sql": "SELECT SUM(CAST(s.units AS INTEGER)) FROM sales s JOIN labels t ON s.key=t.key WHERE t.tag='keep'",
+    "gold_plan": {
+      "left": "sales.csv",
+      "right": "labels.csv",
+      "left_key": "key",
+      "right_key": "key",
+      "join": "inner",
+      "filter": {
+        "side": "right",
+        "column": "tag",
+        "equals": "keep"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "left",
+        "column": "units"
+      }
+    }
+  },
+  {
+    "id": "left_pairs",
+    "instruction": "Read orders.csv and payments.csv. Left join orders.order_id to payments.order_id. Sum payments.amount once for every matching pair, preserving repeated orders and payments. Each unmatched order contributes zero; payments with no matching order are ignored. Print the integer total.",
+    "files": {
+      "orders.csv": "order_id\no1\no1\no2\no4\n",
+      "payments.csv": "order_id,amount\no1,5\no1,7\no2,4\no3,9\n"
+    },
+    "expected": "28",
+    "sql": "SELECT SUM(CAST(p.amount AS INTEGER)) FROM orders o LEFT JOIN payments p ON o.order_id=p.order_id",
+    "gold_plan": {
+      "left": "orders.csv",
+      "right": "payments.csv",
+      "left_key": "order_id",
+      "right_key": "order_id",
+      "join": "left",
+      "filter": null,
+      "aggregate": {
+        "op": "sum",
+        "side": "right",
+        "column": "amount"
+      }
+    }
+  },
+  {
+    "id": "string_keys",
+    "instruction": "Read orders.csv and regions.csv. Inner join on key using exact string equality: '01' and '1' differ, as do '002' and '2'. Sum orders.units for every matching pair with regions.region equal to 'north'. Print the integer sum.",
+    "files": {
+      "orders.csv": "key,units\n01,2\n1,11\n002,9\n2,7\n",
+      "regions.csv": "key,region\n01,north\n1,south\n002,south\n2,north\n"
+    },
+    "expected": "9",
+    "sql": "SELECT SUM(CAST(o.units AS INTEGER)) FROM orders o JOIN regions r ON o.key=r.key WHERE r.region='north'",
+    "gold_plan": {
+      "left": "orders.csv",
+      "right": "regions.csv",
+      "left_key": "key",
+      "right_key": "key",
+      "join": "inner",
+      "filter": {
+        "side": "right",
+        "column": "region",
+        "equals": "north"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "left",
+        "column": "units"
+      }
+    }
+  },
+  {
+    "id": "anti_rows",
+    "instruction": "Read customers.csv and invoices.csv. Count rows in customers whose customer_id never appears in invoices.customer_id. Duplicate customer rows each count separately if unmatched; duplicate invoices do not affect existence. Print the integer count.",
+    "files": {
+      "customers.csv": "customer_id\nA\nB\nB\nC\nD\n",
+      "invoices.csv": "customer_id,invoice_id\nA,i1\nA,i2\nC,i3\nX,i4\n"
+    },
+    "expected": "3",
+    "sql": "SELECT COUNT(*) FROM customers c WHERE NOT EXISTS (SELECT 1 FROM invoices i WHERE i.customer_id=c.customer_id)",
+    "gold_plan": {
+      "left": "customers.csv",
+      "right": "invoices.csv",
+      "left_key": "customer_id",
+      "right_key": "customer_id",
+      "join": "anti",
+      "filter": null,
+      "aggregate": {
+        "op": "count",
+        "side": null,
+        "column": null
+      }
+    }
+  },
+  {
+    "id": "unsupported_threshold",
+    "instruction": "Read sales.csv and prices.csv. Inner join on key. Sum sales.units for matching pairs only when prices.price is numerically greater than 5. Print the integer sum.",
+    "files": {
+      "sales.csv": "key,units\na,2\nb,3\nc,4\n",
+      "prices.csv": "key,price\na,4\nb,7\nc,10\n"
+    },
+    "expected": "7",
+    "sql": "SELECT SUM(CAST(s.units AS INTEGER)) FROM sales s JOIN prices p ON s.key=p.key WHERE CAST(p.price AS INTEGER)>5",
+    "gold_plan": null
+  }
+]

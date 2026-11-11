@@ -1,0 +1,17 @@
+{
+  "task_id": "known_duplicate__json",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "{\"left\": \"orders.csv\", \"right\": \"customers.csv\", \"left_key\": \"customer_id\", \"right_key\": \"customer_id\", \"join\": \"inner\", \"filter\": {\"side\": \"right\", \"column\": \"region\", \"equals\": \"north\"}, \"aggregate\": {\"op\": \"sum\", \"side\": \"left\", \"column\": \"amount\"}}"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}
