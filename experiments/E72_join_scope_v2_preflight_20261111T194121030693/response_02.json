@@ -1,0 +1,17 @@
+{
+  "task_id": "known_paraphrase__new",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "{\"left\": \"stocks.csv\", \"right\": \"zones.csv\", \"left_key\": \"item\", \"right_key\": \"item\", \"join\": \"inner\", \"filter\": {\"side\": \"right\", \"column\": \"region\", \"equals\": \"west\"}, \"aggregate\": {\"op\": \"sum\", \"side\": \"left\", \"column\": \"qty\"}}"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

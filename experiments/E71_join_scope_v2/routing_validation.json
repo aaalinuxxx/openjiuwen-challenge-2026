@@ -1,0 +1,233 @@
+{
+  "api_calls": 0,
+  "suites": [
+    {
+      "suite": "E65_join_plan",
+      "rows": [
+        {
+          "case": "known_duplicate",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "many_pairs",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "left_pairs",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "string_keys",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "anti_rows",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "unsupported_threshold",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        }
+      ],
+      "old_json": 0,
+      "new_json": 0
+    },
+    {
+      "suite": "E67_join_cascade",
+      "rows": [
+        {
+          "case": "duplicate_control",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "left_sum",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "numeric_threshold",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        },
+        {
+          "case": "two_filters",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        },
+        {
+          "case": "left_or_unmatched",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        }
+      ],
+      "old_json": 0,
+      "new_json": 0
+    },
+    {
+      "suite": "E69_join_scope",
+      "rows": [
+        {
+          "case": "canonical_duplicates",
+          "routes": {
+            "old": "json_plan",
+            "new": "json_plan"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "canonical_left_sum",
+          "routes": {
+            "old": "json_plan",
+            "new": "json_plan"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "supported_paraphrase",
+          "routes": {
+            "old": "python",
+            "new": "json_plan"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "numeric_threshold",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        },
+        {
+          "case": "two_filters",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        },
+        {
+          "case": "left_or_unmatched",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        },
+        {
+          "case": "or_paraphrase",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        }
+      ],
+      "old_json": 2,
+      "new_json": 3
+    },
+    {
+      "suite": "E71_join_scope_v2",
+      "rows": [
+        {
+          "case": "known_paraphrase",
+          "routes": {
+            "old": "python",
+            "new": "json_plan"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "shared_key_right_sum",
+          "routes": {
+            "old": "python",
+            "new": "json_plan"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "qualified_keys_zeroes",
+          "routes": {
+            "old": "python",
+            "new": "json_plan"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "canonical_left_control",
+          "routes": {
+            "old": "json_plan",
+            "new": "json_plan"
+          },
+          "json_representable": true
+        },
+        {
+          "case": "qualified_or_control",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        },
+        {
+          "case": "shared_key_and_control",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": false
+        },
+        {
+          "case": "unrecognized_supported",
+          "routes": {
+            "old": "python",
+            "new": "python"
+          },
+          "json_representable": true
+        }
+      ],
+      "old_json": 1,
+      "new_json": 4
+    }
+  ]
+}

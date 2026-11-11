@@ -1,0 +1,17 @@
+{
+  "task_id": "qualified_keys_zeroes__new",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "{\"left\": \"orders.csv\", \"right\": \"labels.csv\", \"left_key\": \"code\", \"right_key\": \"sku\", \"join\": \"inner\", \"filter\": {\"side\": \"right\", \"column\": \"region\", \"equals\": \"west\"}, \"aggregate\": {\"op\": \"sum\", \"side\": \"left\", \"column\": \"qty\"}}"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

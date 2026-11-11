@@ -1,0 +1,17 @@
+{
+  "task_id": "unrecognized_supported__old",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('22')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

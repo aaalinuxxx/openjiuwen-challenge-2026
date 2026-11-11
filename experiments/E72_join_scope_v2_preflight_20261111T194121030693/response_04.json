@@ -1,0 +1,17 @@
+{
+  "task_id": "shared_key_right_sum__old",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('19')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

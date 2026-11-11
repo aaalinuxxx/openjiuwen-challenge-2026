@@ -1,0 +1,49 @@
+{
+  "api_calls": 0,
+  "passed": true,
+  "rows": [
+    {
+      "case": "known_paraphrase",
+      "expected": "17",
+      "oracle": "17",
+      "passed": true
+    },
+    {
+      "case": "shared_key_right_sum",
+      "expected": "19",
+      "oracle": "19",
+      "passed": true
+    },
+    {
+      "case": "qualified_keys_zeroes",
+      "expected": "19",
+      "oracle": "19",
+      "passed": true
+    },
+    {
+      "case": "canonical_left_control",
+      "expected": "30",
+      "oracle": "30",
+      "passed": true
+    },
+    {
+      "case": "qualified_or_control",
+      "expected": "30",
+      "oracle": "30",
+      "passed": true
+    },
+    {
+      "case": "shared_key_and_control",
+      "expected": "13",
+      "oracle": "13",
+      "passed": true
+    },
+    {
+      "case": "unrecognized_supported",
+      "expected": "22",
+      "oracle": "22",
+      "passed": true
+    }
+  ],
+  "scope": "Independent SQLite calculation with TEXT join keys; not model-generated code"
+}
