@@ -1,0 +1,278 @@
+{
+  "hypothesis": "H04.12",
+  "status": "SUPPORTED_ON_TARGETED_PILOT",
+  "frozen_commit": "7d6172a",
+  "report": "experiments/E72_join_scope_v2_live_20261111T194153615816/report.json",
+  "real_api_attempts": 14,
+  "effective_tokens": 3092,
+  "metrics": {
+    "old": {
+      "attempted": 7,
+      "solved": 4,
+      "solvable_total": 7,
+      "supported_solved": 3,
+      "supported_total": 5,
+      "outside_plan_solved": 1,
+      "outside_plan_total": 2,
+      "fallback_tasks": 0,
+      "wrong_answers": 3,
+      "calls": 7,
+      "effective_tokens": 1749.5
+    },
+    "new": {
+      "attempted": 7,
+      "solved": 6,
+      "solvable_total": 7,
+      "supported_solved": 5,
+      "supported_total": 5,
+      "outside_plan_solved": 1,
+      "outside_plan_total": 2,
+      "fallback_tasks": 0,
+      "wrong_answers": 1,
+      "calls": 7,
+      "effective_tokens": 1342.5
+    }
+  },
+  "usage": {
+    "old": {
+      "input": 2105,
+      "output": 1539
+    },
+    "new": {
+      "input": 2615,
+      "output": 1081
+    }
+  },
+  "changed_routes": {
+    "cases": [
+      "known_paraphrase",
+      "shared_key_right_sum",
+      "qualified_keys_zeroes"
+    ],
+    "old_correct": 1,
+    "new_correct": 3,
+    "old_effective_tokens": 759,
+    "new_effective_tokens": 475,
+    "saving": 284,
+    "saving_percent": 37.417654808959156
+  },
+  "unchanged_routes": [
+    {
+      "case": "canonical_left_control",
+      "identical_payloads": true,
+      "cost_old": 132.7,
+      "cost_new": 132.7
+    },
+    {
+      "case": "qualified_or_control",
+      "identical_payloads": true,
+      "cost_old": 290.6,
+      "cost_new": 254.6
+    },
+    {
+      "case": "shared_key_and_control",
+      "identical_payloads": true,
+      "cost_old": 340.3,
+      "cost_new": 253.3
+    },
+    {
+      "case": "unrecognized_supported",
+      "identical_payloads": true,
+      "cost_old": 226.9,
+      "cost_new": 226.9
+    }
+  ],
+  "cost_interpretation": "407 total observed difference includes 123 on identical-request controls; do not attribute the entire saving to routing. Single generation per arm.",
+  "local_tests": {
+    "passed": 143,
+    "report": "experiments/E71_join_scope_v2/unit_tests.json"
+  },
+  "preflight_quality_evidence": false,
+  "verification": {
+    "responses": [
+      {
+        "task": "known_paraphrase__old",
+        "stage": "python",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_01.json",
+        "effective_cost": 222.9,
+        "sha256": "0ccbd25b49c691e88f4fef6c89153842004b8823a7234dea6de121445244ac56"
+      },
+      {
+        "task": "known_paraphrase__new",
+        "stage": "json_plan",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_02.json",
+        "effective_cost": 157.9,
+        "sha256": "045671ee86d86a7302fff65bc35c610a7bbb79725af96ca067cc420c046035ea"
+      },
+      {
+        "task": "shared_key_right_sum__new",
+        "stage": "json_plan",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_03.json",
+        "effective_cost": 158.1,
+        "sha256": "80c2a6f09dc6743c87dd1fffe33c99114f0171c6d7c889d45ae44e276b520e7d"
+      },
+      {
+        "task": "shared_key_right_sum__old",
+        "stage": "python",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_04.json",
+        "effective_cost": 331.1,
+        "sha256": "73841a197dc2df2a30c8427868f1eb41eb4255cae7f235d08d517996dd9061ae"
+      },
+      {
+        "task": "qualified_keys_zeroes__old",
+        "stage": "python",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_05.json",
+        "effective_cost": 205,
+        "sha256": "ebd7cedda69ebbf0b19f6a41b81ee86978c6406b9393f5442230461f2176a679"
+      },
+      {
+        "task": "qualified_keys_zeroes__new",
+        "stage": "json_plan",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_06.json",
+        "effective_cost": 159,
+        "sha256": "97fd5c982081354569cecd6303aa351afeb6b8a0ab0a26a7720f6e2e7207700d"
+      },
+      {
+        "task": "canonical_left_control__new",
+        "stage": "json_plan",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_07.json",
+        "effective_cost": 132.7,
+        "sha256": "506c5099572bb969f9b81a0930e782af8d51fa703f5cb1bae39788ea78e9cfd6"
+      },
+      {
+        "task": "canonical_left_control__old",
+        "stage": "json_plan",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_08.json",
+        "effective_cost": 132.7,
+        "sha256": "a1f766f920e3407b3fbe5c8229970fdb168d9b5eb910485a8615293902d0293b"
+      },
+      {
+        "task": "qualified_or_control__old",
+        "stage": "python",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_09.json",
+        "effective_cost": 290.6,
+        "sha256": "28c8d37791568788f9323b54ebed4648aafb01ad376b2af37697794ac8f491d7"
+      },
+      {
+        "task": "qualified_or_control__new",
+        "stage": "python",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_10.json",
+        "effective_cost": 254.6,
+        "sha256": "4de03d8ed57fe2f1067e2767deb8bdcfe85febe02877a4402438bba93763d317"
+      },
+      {
+        "task": "shared_key_and_control__new",
+        "stage": "python",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_11.json",
+        "effective_cost": 253.3,
+        "sha256": "6db3e1fe180838d3f8508f64020ae4537007481b7244c2c0541a3b971a735705"
+      },
+      {
+        "task": "shared_key_and_control__old",
+        "stage": "python",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_12.json",
+        "effective_cost": 340.3,
+        "sha256": "fab8f272ce078403187e115e52e5d8b90706f926981ca2aabaef2229c2ec7493"
+      },
+      {
+        "task": "unrecognized_supported__old",
+        "stage": "python",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_13.json",
+        "effective_cost": 226.9,
+        "sha256": "7f97a9b630f6dbf07ca6de0ea8484df84d51b573b60dee842f9046de17382c43"
+      },
+      {
+        "task": "unrecognized_supported__new",
+        "stage": "python",
+        "path": "experiments/E72_join_scope_v2_live_20261111T194153615816/response_14.json",
+        "effective_cost": 226.9,
+        "sha256": "a23cab3031c584f1cbe8e28dfc727438c31b1efc23b999c8310d2ae57582f5a5"
+      }
+    ],
+    "all_frozen_hashes_unchanged": {
+      "harness/agents/join_cascade.py": true,
+      "harness/agents/join_plans.py": true,
+      "harness/agents/multi_csv.py": true,
+      "harness/agents/data_solver.py": true,
+      "harness/agents/calculation_plans.py": true,
+      "harness/agents/model_router.py": true,
+      "harness/agents/base_harness.py": true,
+      "harness/config.py": true,
+      "harness/workflow_runner.py": true,
+      "harness/planner/budget_tracker.py": true,
+      "harness/sandbox/executor.py": true,
+      "scripts/multimodule_live.py": true,
+      "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+      "experiments/E50_search_live_20261111T155649239479/budget.json": true,
+      "harness/agents/join_scope.py": true,
+      "harness/agents/join_scope_v2.py": true,
+      "scripts/join_scope_v2_live.py": true,
+      "tests/test_join_scope_v2.py": true,
+      "experiments/E71_join_scope_v2/cases.json": true,
+      "experiments/E71_join_scope_v2/oracle_validation.json": true,
+      "experiments/E71_join_scope_v2/routing_validation.json": true,
+      "experiments/E71_join_scope_v2/design.md": true
+    },
+    "all_usage_known": true,
+    "all_inputs_unchanged": true,
+    "all_actual_routes_match_expected": true,
+    "all_responses_stop": true,
+    "all_json_plans_match_gold": [
+      {
+        "case": "known_paraphrase",
+        "arm": "new",
+        "matches_gold": true
+      },
+      {
+        "case": "shared_key_right_sum",
+        "arm": "new",
+        "matches_gold": true
+      },
+      {
+        "case": "qualified_keys_zeroes",
+        "arm": "new",
+        "matches_gold": true
+      },
+      {
+        "case": "canonical_left_control",
+        "arm": "new",
+        "matches_gold": true
+      },
+      {
+        "case": "canonical_left_control",
+        "arm": "old",
+        "matches_gold": true
+      }
+    ],
+    "reasoning_tokens": 0,
+    "max_output": 400
+  },
+  "common_failure": {
+    "case": "qualified_or_control",
+    "expected": "30",
+    "actual_both": "23",
+    "cause": "Both generated Python programs use any matching west region, adding each order once, instead of once per matching pair. Unmatched-row alternative itself is retained."
+  },
+  "production_enabled": false,
+  "next": [
+    {
+      "hypothesis": "H04.13",
+      "status": "PROPOSED",
+      "description": "Execute already fully parsed specifications locally without redundant API translation; measure separately, do not claim arbitrary language coverage."
+    },
+    {
+      "hypothesis": "H04.14",
+      "parents": [
+        "H04.9",
+        "H04.12"
+      ],
+      "status": "PROPOSED",
+      "description": "Extend typed join predicates to equality OR unmatched with strict condition coverage and unchanged all-pairs multiplicity. Fresh mixed matched/duplicate/unmatched controls required."
+    }
+  ],
+  "historical_broad_challenge": {
+    "correct": 9,
+    "solvable": 19,
+    "retested": false
+  }
+}

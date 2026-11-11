@@ -1,0 +1,32 @@
+{
+  "task_id": "qualified_keys_zeroes__new",
+  "response": {
+    "id": "chatcmpl-b3988bf35ea9396d",
+    "created": 1794426144,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"left\": \"orders.csv\",\n  \"right\": \"labels.csv\",\n  \"left_key\": \"code\",\n  \"right_key\": \"sku\",\n  \"join\": \"inner\",\n  \"filter\": {\n    \"side\": \"right\",\n    \"column\": \"region\",\n    \"equals\": \"west\"\n  },\n  \"aggregate\": {\n    \"op\": \"sum\",\n    \"side\": \"left\",\n    \"column\": \"qty\"\n  }\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 114,
+      "prompt_tokens": 450,
+      "total_tokens": 564,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

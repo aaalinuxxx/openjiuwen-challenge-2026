@@ -1,0 +1,49 @@
+{
+  "case": "qualified_keys_zeroes",
+  "arm": "old",
+  "selected_route": "python",
+  "expected_scope_route": "python",
+  "order_in_pair": 0,
+  "expected": "19",
+  "status": "SOLVED",
+  "answer": "12",
+  "solved": false,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": true,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "orders.csv": "57b405b4883a1de4f8ca6f0d0514bb3320c904943eab5af1144dd0ff0ef652cc",
+    "labels.csv": "4171fcc01b2ae03a8af4eba102efd5337760f070b869c873c395c2104ad62777"
+  },
+  "calls": 1,
+  "stages": [
+    "python"
+  ],
+  "effective_cost": 205.0,
+  "result": {
+    "task_id": "qualified_keys_zeroes__old",
+    "status": "SOLVED",
+    "answer": "12",
+    "input_tokens": 280,
+    "output_tokens": 177,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 3.01500000001397,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Full-text scope route: python. "
+  },
+  "workflow": {
+    "task_id": "qualified_keys_zeroes__old",
+    "workflow_id": "task_a9f06604dedb476fbed788efe0edd8a0",
+    "session_id": "16cdd399c5924fc9bed2dbfd0e995899",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "case": "shared_key_and_control",
+  "arm": "new",
+  "selected_route": "python",
+  "expected_scope_route": "python",
+  "order_in_pair": 0,
+  "expected": "13",
+  "status": "SOLVED",
+  "answer": "13.0",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": false,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "lots.csv": "fdf40172b09e10a432447a8a726161bffd51a7b724ee06830a5f4fa1b39efecf",
+    "rates.csv": "109d4e5fbbdd77181eb50d308c322bf61bdf93081c212dbdee807419806fe321"
+  },
+  "calls": 1,
+  "stages": [
+    "python"
+  ],
+  "effective_cost": 253.3,
+  "result": {
+    "task_id": "shared_key_and_control__new",
+    "status": "SOLVED",
+    "answer": "13.0",
+    "input_tokens": 283,
+    "output_tokens": 225,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 2.639999999984866,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Full-text scope v2 route: python. "
+  },
+  "workflow": {
+    "task_id": "shared_key_and_control__new",
+    "workflow_id": "task_314666dcba7e4557bff82d14184ad9fd",
+    "session_id": "6a26d8244a2a4d6497902941cc7fb4c7",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

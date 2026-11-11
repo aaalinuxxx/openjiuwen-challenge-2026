@@ -1,0 +1,20 @@
+{
+  "task_id": "qualified_or_control__old",
+  "stage": "python",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"labels.csv\", \"columns\": [\"sku\", \"region\"], \"rows\": 4, \"sample_rows\": [{\"sku\": \"01\", \"region\": \"west\"}, {\"sku\": \"1\", \"region\": \"east\"}, {\"sku\": \"02\", \"region\": \"west\"}]}, {\"file\": \"orders.csv\", \"columns\": [\"code\", \"qty\"], \"rows\": 5, \"sample_rows\": [{\"code\": \"01\", \"qty\": \"4\"}, {\"code\": \"1\", \"qty\": \"9\"}, {\"code\": \"01\", \"qty\": \"3\"}]}]\nTask: Using orders.csv and labels.csv, match every orders.code with every labels.sku as exact strings. Keep only pairs where labels.region is 'west' OR there is no matching labels row. Total orders.qty over all retained pairs, counting duplicate rows separately. Also include orders without a matching label. Output only the numeric sum."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

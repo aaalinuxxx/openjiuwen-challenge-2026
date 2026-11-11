@@ -1,0 +1,32 @@
+{
+  "task_id": "qualified_keys_zeroes__old",
+  "response": {
+    "id": "chatcmpl-84cbfbd9bb66fe26",
+    "created": 1794426141,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\n\n# Read labels.csv\nlabels = []\nwith open('labels.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        labels.append(row)\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Filter labels where region is 'west'\nwest_labels = {row['sku'] for row in labels if row['region'] == 'west'}\n\n# Match orders with west labels and sum qty\ntotal = 0\nfor order in orders:\n    if order['code'] in west_labels:\n        total += int(order['qty'])\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 177,
+      "prompt_tokens": 280,
+      "total_tokens": 457,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
