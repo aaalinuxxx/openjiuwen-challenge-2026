@@ -1,0 +1,8 @@
+{
+  "task_id": "math_percentage",
+  "task_type": "math",
+  "instruction": "A coat costs 200 units. A discount is 15 percent of the original price. What is the final price? Return an integer. Write only the final answer to answer.txt.",
+  "expected": "170",
+  "unsolvable": false,
+  "reward": 3
+}

@@ -1,0 +1,267 @@
+{
+  "created_at": "2026-11-11T15:08:01.743470+00:00",
+  "baseline_commit": "8823e525e5c5d02be468738ed2c0a7ebdb5d44a2",
+  "scope": "prospective authored family-shift/edge-case challenge; not external blind or representative holdout",
+  "hypotheses": [
+    "H00.2",
+    "H02",
+    "H05.3"
+  ],
+  "total": 24,
+  "solvable": 19,
+  "fixtures_sha256": {
+    "coding_brackets/mylib.py": "ef1b1c1c78e131ebc8d3291d7900271017201e672ba3452df9e045a3651ae8ae",
+    "coding_brackets/task.json": "a3fc900db7b9f1b9ad8dc521332708843e3913e5ebdcbbfc76b24370a27dfa4d",
+    "coding_brackets/test_mylib.py": "fb02c57fa16fb132f442f3dc302353c5f176c002556afd33bc0019392ee89fea",
+    "coding_intervals/mylib.py": "016913fcf4eeb0a558852000917732ec6b5affcb5882737f764216186d2ec045",
+    "coding_intervals/task.json": "9f37874895d59c1929907719065beb79d99bdfa9ebee686a9d818f2440cd625d",
+    "coding_intervals/test_mylib.py": "ad01e4f1a21d08735b3e4839eeaa500f361a036fbea31a7f7e7cb5fd9f590125",
+    "coding_multimodule/a_settings.py": "d36e24768a9a7092fd2e2a7f119ed4cbfc981f007a913e6deb6b36699cfb5ee8",
+    "coding_multimodule/mylib.py": "6a60dcbd103707561d215f66656c5d9141f287a6a72ba21adcd611ad0ca1b1db",
+    "coding_multimodule/task.json": "c85e3a5a096fbb9809d9dfc00f533aea50f819f08b48eba8437a1eb9edb5e4c1",
+    "coding_multimodule/test_mylib.py": "7318e6533729022b63981ebc6c881523983a91aea11be7f4b2c06254dd978577",
+    "coding_overlap/mylib.py": "2cf4e39693af96410a7d73f55ab05eaa27cc0ce8c9e9d0d0eb4c7b94cd941ac7",
+    "coding_overlap/task.json": "da6e2cd7183f2c3dc5a67a0074a2c230064b6a62930a600a4bb8cb87c852e45e",
+    "coding_overlap/test_mylib.py": "10b4adb194a7af673050fcd22d3efd2cb64e42819a335be1a15dec3a5d0cba25",
+    "coding_pure_conflict/mylib.py": "14b197e884377c3974cd251bfca7668002dfb2e7ba117e765f7f85ca09636029",
+    "coding_pure_conflict/task.json": "5bf256a3df264decc2f493c234889317b7913c323f94a54e56c530ce1bc7e1af",
+    "coding_pure_conflict/test_mylib.py": "2eff526bec69f81020514a6c392b1a0b54928c9f3d5125e4bb4c8a43cb6206b4",
+    "coding_stateful/mylib.py": "aaffd0a5359bdbef82b8ba35a81d8b2686d5abf7622442e8b2d63f22c0de1aab",
+    "coding_stateful/task.json": "30bd2ae76755072e68b1e773361407018161632c3c738d82a738a0a7888f3b4f",
+    "coding_stateful/test_mylib.py": "de8c557bda1a47051307ee916160bee9db33a209f990f8975c129cac6155636a",
+    "data_distinct/sales.csv": "0af57b169311d8fcbcad7e6038a27343f159f82cc1fdc350b85ce1957347ea67",
+    "data_distinct/task.json": "abf68ac3eb26dc0bcbc215cadcdcfe38881322268b9840d6b82c0b685bfdf8b0",
+    "data_empty_count/sales.csv": "0af57b169311d8fcbcad7e6038a27343f159f82cc1fdc350b85ce1957347ea67",
+    "data_empty_count/task.json": "94a481a0d079213b63828960ab40444ed0ac9d4cc0ee0ffba388f2919dd76e0b",
+    "data_filtered_median/sales.csv": "0af57b169311d8fcbcad7e6038a27343f159f82cc1fdc350b85ce1957347ea67",
+    "data_filtered_median/task.json": "a0dc6f9b382b25e236adb97463325e49f6e81bd29355b0feadd19ab36432a5c0",
+    "data_missing_source/task.json": "a3867f2bd39645fe73a404e9316f8b1b866e24272cae7ce98d53d6ba4ee05e5f",
+    "data_two_file_join/orders.csv": "fd53f93a5967d53a3811719271579e02b18a46ed6ca64063b2588868dca7e1e5",
+    "data_two_file_join/prices.csv": "fbff0d2a891acf974ab2ed46736ffb04696c365e1f06eb6d49e492ab1eb527f9",
+    "data_two_file_join/task.json": "d06b654242a9198676fc2d65cf6d747f0fba08a983d6ed674703158d2db69e07",
+    "data_weighted_mean/sales.csv": "0af57b169311d8fcbcad7e6038a27343f159f82cc1fdc350b85ce1957347ea67",
+    "data_weighted_mean/task.json": "dcc89ccb3f0927286df538c077546a9552cdfd55c39714f52d477f59f39e2d86",
+    "math_gcd/task.json": "33e7194f9cc0726c7b3471d39e537354ea7477a6a8632ebf408ae724143fea1d",
+    "math_paraphrase/task.json": "f0645f36d5c0f3ccd458788feedfab9d73791bb2bcda36fafcd35806d41c2f8e",
+    "math_percentage/task.json": "e58e0b87e6d60dd81c881d23fa632d31675a2c095af633bfa61ae41a0a558274",
+    "math_sum/task.json": "5ab333d8ebc8c3fbd4438a3083a845b30816952a8e0f8e49c864c96d46036767",
+    "math_zero_operation/task.json": "773fdc0c089ef56d49f14b0a45615e6011ba719b28ee36d3211d0fd28f556bf1",
+    "math_zero_warning/task.json": "c76ebcb02a7966e1a51e41dc2891e9cb4fdb0b9ae5282b51e7ae202bd0968a64",
+    "search_absent/task.json": "523477229099ea1880a18a7f8dd61294d4d206c9c7b049286d5029fff8a87c8e",
+    "search_absent/kb/a.md": "51a02f8e05b83805e91e69ca1853a2521ea1e2f7d7c0fbf831a702c2c2bee6b3",
+    "search_absent/kb/b.md": "11533cd6d3242816245122de76cee6e172d89d4b728501e831bc757867b64cf9",
+    "search_absent/kb/c.md": "10823ba8093bf844349f90171a32db504ff5b3c906df28cda844149a023985f8",
+    "search_absent/kb/d.md": "a2cf0823c11190557aa54a2f783fa1e9e862d38c0df74dda2c2ef2e94cfd8504",
+    "search_absent/kb/e.md": "f1c1f54b70b458df6fc080a3b3fa9d714be16b86fe7832399f65aae91f2e8cc6",
+    "search_conflicting_fact/task.json": "b6f30270deccf17beb208c14e8c06534367f7a7768ab0800a28195a6349ea397",
+    "search_conflicting_fact/kb/a.md": "1982511d6a5c2e0b6af35a49a5cae73fadff4f9ee230e2d8fe346096aada2aa4",
+    "search_conflicting_fact/kb/b.md": "dd4c1749e9167ffb04e92a27675600c82b183a58429849296c2a409ebfb52246",
+    "search_conflicting_fact/kb/c.md": "9aa295bc647eedab1a70ac39b8b3b4fdf60e268e68771c08baa988bc0b201e88",
+    "search_irrelevant_conflict/task.json": "96a83da19c3731d68bcaccbfe607e50193051d086d5f5a6189d1e2545f92aa28",
+    "search_irrelevant_conflict/kb/a.md": "1982511d6a5c2e0b6af35a49a5cae73fadff4f9ee230e2d8fe346096aada2aa4",
+    "search_irrelevant_conflict/kb/b.md": "dd4c1749e9167ffb04e92a27675600c82b183a58429849296c2a409ebfb52246",
+    "search_irrelevant_conflict/kb/c.md": "9aa295bc647eedab1a70ac39b8b3b4fdf60e268e68771c08baa988bc0b201e88",
+    "search_new_relation/task.json": "8992f11d7cdb7e1632cc45ba61a56802ede3887f0ecb9c1d490ccfc24c49ead1",
+    "search_new_relation/kb/a.md": "e7cd02b835087235461e27dff14371c76a7ea371c08b89a63d6b82cbc81829ca",
+    "search_new_relation/kb/b.md": "b47a8d3e4b9317b556721168690ff90c621663c2d958ad58a3837e8ede2c2711",
+    "search_paraphrase_chain/task.json": "b9de0316fa53d8578e7db6760521cad4862c40d28fcf48583679f6e17e1c8c4e",
+    "search_paraphrase_chain/kb/a.md": "51a02f8e05b83805e91e69ca1853a2521ea1e2f7d7c0fbf831a702c2c2bee6b3",
+    "search_paraphrase_chain/kb/b.md": "11533cd6d3242816245122de76cee6e172d89d4b728501e831bc757867b64cf9",
+    "search_paraphrase_chain/kb/c.md": "10823ba8093bf844349f90171a32db504ff5b3c906df28cda844149a023985f8",
+    "search_paraphrase_chain/kb/d.md": "a2cf0823c11190557aa54a2f783fa1e9e862d38c0df74dda2c2ef2e94cfd8504",
+    "search_paraphrase_chain/kb/e.md": "f1c1f54b70b458df6fc080a3b3fa9d714be16b86fe7832399f65aae91f2e8cc6",
+    "search_three_hop/task.json": "ae270d21f9405c330948b4cac6be433a80ef476824f661a2bb3cc75048a16974",
+    "search_three_hop/kb/a.md": "51a02f8e05b83805e91e69ca1853a2521ea1e2f7d7c0fbf831a702c2c2bee6b3",
+    "search_three_hop/kb/b.md": "11533cd6d3242816245122de76cee6e172d89d4b728501e831bc757867b64cf9",
+    "search_three_hop/kb/c.md": "10823ba8093bf844349f90171a32db504ff5b3c906df28cda844149a023985f8",
+    "search_three_hop/kb/d.md": "a2cf0823c11190557aa54a2f783fa1e9e862d38c0df74dda2c2ef2e94cfd8504",
+    "search_three_hop/kb/e.md": "f1c1f54b70b458df6fc080a3b3fa9d714be16b86fe7832399f65aae91f2e8cc6"
+  },
+  "validation": [
+    {
+      "task_id": "math_paraphrase",
+      "valid": true,
+      "evidence": "Integer inventory: 47 + 13 - 9 = 51."
+    },
+    {
+      "task_id": "math_percentage",
+      "valid": true,
+      "evidence": "200 * 85 / 100 = 170."
+    },
+    {
+      "task_id": "math_gcd",
+      "valid": true,
+      "evidence": "Euclidean algorithm: gcd(84,126)=42."
+    },
+    {
+      "task_id": "math_sum",
+      "valid": true,
+      "evidence": "20 * 21 / 2 = 210."
+    },
+    {
+      "task_id": "math_zero_warning",
+      "valid": true,
+      "evidence": "The only requested operation is multiplication: 42."
+    },
+    {
+      "task_id": "math_zero_operation",
+      "valid": true,
+      "evidence": "Explicit division of nonzero inventory by zero."
+    },
+    {
+      "task_id": "data_weighted_mean",
+      "valid": true,
+      "evidence": "Weighted sum 110; units 14; rounded to two decimals = 7.86."
+    },
+    {
+      "task_id": "data_distinct",
+      "valid": true,
+      "evidence": "Distinct clients A,D: 2."
+    },
+    {
+      "task_id": "data_filtered_median",
+      "valid": true,
+      "evidence": "Sorted red units: 1,2,3,4; median 2.5."
+    },
+    {
+      "task_id": "data_empty_count",
+      "valid": true,
+      "evidence": "No category green: 0."
+    },
+    {
+      "task_id": "data_two_file_join",
+      "valid": true,
+      "evidence": "2*7 + 3*4 + 1*7 = 33."
+    },
+    {
+      "task_id": "data_missing_source",
+      "valid": true,
+      "evidence": "Required source file is absent."
+    },
+    {
+      "task_id": "search_three_hop",
+      "valid": true,
+      "evidence": "Mira Vale -> Mentor Oren Pike -> Employer Luma Labs -> Headquarters Riga."
+    },
+    {
+      "task_id": "search_paraphrase_chain",
+      "valid": true,
+      "evidence": "Same three-edge path; phrasing differs."
+    },
+    {
+      "task_id": "search_irrelevant_conflict",
+      "valid": true,
+      "evidence": "Both cards agree on employer Delta Works; headquarters Bern."
+    },
+    {
+      "task_id": "search_new_relation",
+      "valid": true,
+      "evidence": "Sol Materials -> Founder Elin Wood -> Born 1977."
+    },
+    {
+      "task_id": "search_absent",
+      "valid": true,
+      "evidence": "Zora Cloud has no record; closed KB."
+    },
+    {
+      "task_id": "search_conflicting_fact",
+      "valid": true,
+      "evidence": "Two equally authoritative birth years, 1980 and 1981."
+    },
+    {
+      "task_id": "coding_intervals",
+      "valid": true,
+      "method": "reference passes original tests; initial code fails"
+    },
+    {
+      "task_id": "coding_brackets",
+      "valid": true,
+      "method": "reference passes original tests; initial code fails"
+    },
+    {
+      "task_id": "coding_overlap",
+      "valid": true,
+      "method": "reference passes original tests; initial code fails"
+    },
+    {
+      "task_id": "coding_multimodule",
+      "valid": true,
+      "method": "reference passes original tests; initial code fails"
+    },
+    {
+      "task_id": "coding_stateful",
+      "valid": true,
+      "method": "reference passes original tests; initial code fails"
+    },
+    {
+      "task_id": "coding_pure_conflict",
+      "valid": true,
+      "method": "logical contradiction under explicit purity",
+      "evidence": "For deterministic pure f and the same input 7, f(7)=3 and f(7)=4 contradict."
+    }
+  ],
+  "oracle_evidence": {
+    "math_paraphrase": "Integer inventory: 47 + 13 - 9 = 51.",
+    "math_percentage": "200 * 85 / 100 = 170.",
+    "math_gcd": "Euclidean algorithm: gcd(84,126)=42.",
+    "math_sum": "20 * 21 / 2 = 210.",
+    "math_zero_warning": "The only requested operation is multiplication: 42.",
+    "math_zero_operation": "Explicit division of nonzero inventory by zero.",
+    "data_weighted_mean": "Weighted sum 110; units 14; rounded to two decimals = 7.86.",
+    "data_distinct": "Distinct clients A,D: 2.",
+    "data_filtered_median": "Sorted red units: 1,2,3,4; median 2.5.",
+    "data_empty_count": "No category green: 0.",
+    "data_two_file_join": "2*7 + 3*4 + 1*7 = 33.",
+    "data_missing_source": "Required source file is absent.",
+    "search_three_hop": "Mira Vale -> Mentor Oren Pike -> Employer Luma Labs -> Headquarters Riga.",
+    "search_paraphrase_chain": "Same three-edge path; phrasing differs.",
+    "search_irrelevant_conflict": "Both cards agree on employer Delta Works; headquarters Bern.",
+    "search_new_relation": "Sol Materials -> Founder Elin Wood -> Born 1977.",
+    "search_absent": "Zora Cloud has no record; closed KB.",
+    "search_conflicting_fact": "Two equally authoritative birth years, 1980 and 1981.",
+    "coding_intervals": "Reference implementation passes; initial implementation fails.",
+    "coding_brackets": "Reference implementation passes; initial implementation fails.",
+    "coding_overlap": "Reference implementation passes; initial implementation fails.",
+    "coding_multimodule": "Reference implementation passes; initial implementation fails.",
+    "coding_stateful": "Reference implementation passes; initial implementation fails.",
+    "coding_pure_conflict": "For deterministic pure f and the same input 7, f(7)=3 and f(7)=4 contradict."
+  },
+  "coding_references": {
+    "coding_intervals": {
+      "mylib.py": "def merge_intervals(intervals):\n    out = []\n    for start, end in sorted(intervals):\n        if out and start <= out[-1][1]:\n            out[-1] = (out[-1][0], max(end, out[-1][1]))\n        else:\n            out.append((start, end))\n    return out\n"
+    },
+    "coding_brackets": {
+      "mylib.py": "def balanced(s):\n    stack = []\n    pairs = {')':'(', ']':'[', '}':'{'}\n    for c in s:\n        if c in '([{':\n            stack.append(c)\n        elif c in pairs:\n            if not stack or stack.pop() != pairs[c]:\n                return False\n    return not stack\n"
+    },
+    "coding_overlap": {
+      "mylib.py": "def occurrences(text, pattern):\n    if not pattern:\n        return 0\n    return sum(text.startswith(pattern, i) for i in range(len(text)-len(pattern)+1))\n"
+    },
+    "coding_multimodule": {
+      "mylib.py": "from a_settings import threshold\ndef keep(values):\n    return [v for v in values if v >= threshold()]\n"
+    },
+    "coding_stateful": {
+      "mylib.py": "class Counter:\n    def __init__(self): self.value = 0\n    def next(self):\n        self.value += 1\n        return self.value\n"
+    }
+  },
+  "plan": {
+    "order": [
+      "offline all 24 on frozen production code",
+      "live noncoding (18 tasks, budget<=3000, calls<=12)",
+      "live coding (6 tasks, budget<=2000, calls<=6)"
+    ],
+    "total_live_budget_cap": 5000,
+    "total_live_calls_cap": 18,
+    "no_automatic_retries": true,
+    "stop_on_unknown_cost": true,
+    "metrics": [
+      "verified solutions",
+      "score",
+      "wrong submissions",
+      "false refusals",
+      "truncations",
+      "API usage"
+    ],
+    "acceptance": "No false positive UNSOLVABLE/SKIPPED on solvable tasks; zero wrong submitted answers. Coverage reported, not assumed.",
+    "data_policy": "Never tune then present reuse as independent; any later replay of this suite is dev."
+  }
+}

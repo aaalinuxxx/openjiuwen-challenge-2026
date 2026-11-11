@@ -1,0 +1,8 @@
+{
+  "task_id": "search_paraphrase_chain",
+  "task_type": "search",
+  "instruction": "Use only kb/. Identify the company employing the mentor of Mira Vale and return its headquarters city. Write only the final answer to answer.txt.",
+  "expected": "Riga",
+  "unsolvable": false,
+  "reward": 3
+}

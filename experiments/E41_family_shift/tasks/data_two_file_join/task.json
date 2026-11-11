@@ -1,0 +1,8 @@
+{
+  "task_id": "data_two_file_join",
+  "task_type": "data_analysis",
+  "instruction": "Join orders.csv with prices.csv on sku. Compute total qty times price over all orders. Return an integer. Write only the final answer to answer.txt.",
+  "expected": "33",
+  "unsolvable": false,
+  "reward": 3
+}

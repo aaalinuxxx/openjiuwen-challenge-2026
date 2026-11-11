@@ -1,0 +1,8 @@
+{
+  "task_id": "search_three_hop",
+  "task_type": "search",
+  "instruction": "In which city is the headquarters of Mira Vale's mentor's employer? Write only the final answer to answer.txt.",
+  "expected": "Riga",
+  "unsolvable": false,
+  "reward": 3
+}
