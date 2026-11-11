@@ -1,0 +1,1 @@
+{"task_id": "coding_0006", "task_type": "coding", "instruction": "Run python3 test_mylib.py. Fix mylib.py without editing tests. rotate(xs) rotates a list one position to the right; empty lists stay empty. Functions must be pure and deterministic; do not inspect test names or call order. When done, write ONLY DONE to answer.txt.", "reward": 4, "family": "rotate"}

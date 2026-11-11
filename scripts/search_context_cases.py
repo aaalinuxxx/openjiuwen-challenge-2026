@@ -55,7 +55,7 @@ if __name__=='__main__':
     DEST.mkdir(parents=True,exist_ok=False)
     (DEST/'cases.json').write_text(json.dumps(CASES,ensure_ascii=False,indent=2),encoding='utf-8')
     plan=dict(created_at=datetime.now(timezone.utc).isoformat(),baseline='bef716967ae2643804b01b9240bc53cb22385414',
-        hypotheses=['H03.2 bounded transitive KB context','H03.3 only conflicts on required fields block local proof'],
+        hypotheses=['H03.2 bounded transitive KB context','H03.4 only conflicts on required fields block local proof'],
         api_calls=0,scope='targeted deterministic structural controls; no LLM quality claim',
         controls=len(CASES),before_after='same frozen inputs and fixed refusal response',
         candidate_limits=dict(max_hops=3,max_records=32,max_context_utf8_bytes=12000),

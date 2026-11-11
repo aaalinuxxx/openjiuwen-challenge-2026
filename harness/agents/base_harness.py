@@ -105,7 +105,7 @@ class OpenJiuwenLLMBridge:
             await self.tracker.not_sent(ticket,type(exc).__name__)
             raise
         try:
-            data=await transport(payload)
+            data=await asyncio.wait_for(transport(payload), timeout=self.config.request_timeout_sec)
             counts=parse_usage(data,mode)
             await self.tracker.settle(ticket,*counts)
             choice=data['choices'][0]

@@ -1,0 +1,22 @@
+{
+  "budget": 1000,
+  "known_effective_tokens": 12.0,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "main",
+      "status": "ACCOUNTED",
+      "reserved_units": 2458,
+      "task_limit_units": 10000,
+      "input_token_estimate": 1178,
+      "output_cap": 128,
+      "input_tokens": 20,
+      "output_tokens": 10,
+      "reasoning_tokens": 0,
+      "effective_cost": 12.0
+    }
+  ]
+}

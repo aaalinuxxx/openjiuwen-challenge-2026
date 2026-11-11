@@ -1,0 +1,233 @@
+{
+  "label": "E47_search_before",
+  "api_calls": 0,
+  "scope": "structural prompt/control evaluation with fixed synthetic refusal; not model accuracy",
+  "fixture_sha256": "996947cd5bfa4082f06bfe3fce7797265bd3c277ddf1741a2599888e4e950827",
+  "solver_sha256": "0c2ee91537b62a1d9b535022a4102d4433c59466292721bfe02c5cdcff0b3db3",
+  "total": 12,
+  "passed": 3,
+  "rows": [
+    {
+      "case": "chain_paraphrase",
+      "passed": false,
+      "failed_checks": [
+        "status",
+        "missing:Riga"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 2,
+      "context_bytes": 249,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE.",
+          "user_prompt": "KB Records:\n# Mira Vale: {'_file': 'a.md', '_sources': {'mentor': ['a.md'], 'born': ['a.md']}, '_conflicts': {}, 'mentor': 'Oren Pike', 'born': '1990'}\n# Oren Pike: {'_file': 'b.md', '_sources': {'employer': ['b.md']}, '_conflicts': {}, 'employer': 'Luma Labs'}\n\nQuestion: Return the headquarters city of the company employing the mentor of Mira Vale.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "cycle",
+      "passed": false,
+      "failed_checks": [
+        "status",
+        "missing:Riga"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 2,
+      "context_bytes": 292,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE.",
+          "user_prompt": "KB Records:\n# Mira Vale: {'_file': 'a.md', '_sources': {'mentor': ['a.md'], 'born': ['a.md']}, '_conflicts': {}, 'mentor': 'Oren Pike', 'born': '1990'}\n# Oren Pike: {'_file': 'b.md', '_sources': {'employer': ['b.md'], 'mentor': ['b.md']}, '_conflicts': {}, 'employer': 'Luma Labs', 'mentor': 'Mira Vale'}\n\nQuestion: Using the records about Mira Vale, return the city of her mentor employer.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "casefold_links",
+      "passed": false,
+      "failed_checks": [
+        "status",
+        "missing:Luma Labs",
+        "missing:Riga"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 1,
+      "context_bytes": 105,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE.",
+          "user_prompt": "KB Records:\n# Mira Vale: {'_file': 'a.md', '_sources': {'mentor': ['a.md']}, '_conflicts': {}, 'mentor': 'OREN PIKE'}\n\nQuestion: Return the headquarters of the employer of the mentor of MIRA VALE.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "prefix_decoy",
+      "passed": false,
+      "failed_checks": [
+        "status",
+        "decoy:9999"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 2,
+      "context_bytes": 182,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE.",
+          "user_prompt": "KB Records:\n# Ann: {'_file': 'a.md', '_sources': {'born': ['a.md']}, '_conflicts': {}, 'born': '9999'}\n# Anne: {'_file': 'b.md', '_sources': {'born': ['b.md']}, '_conflicts': {}, 'born': '1988'}\n\nQuestion: Tell me the birth year of Anne.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "node_cap",
+      "passed": false,
+      "failed_checks": [
+        "status",
+        "record_cap"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 41,
+      "context_bytes": 6389,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE.",
+          "user_prompt": "KB Records:\n# Hub: {'_file': 'root.md', '_sources': {'relation0': ['root.md'], 'relation1': ['root.md'], 'relation2': ['root.md'], 'relation3': ['root.md'], 'relation4': ['root.md'], 'relation5': ['root.md'], 'relation6': ['root.md'], 'relation7': ['root.md'], 'relation8': ['root.md'], 'relation9': ['root.md'], 'relation10': ['root.md'], 'relation11': ['root.md'], 'relation12': ['root.md'], 'relation13': ['root.md'], 'relation14': ['root.md'], 'relation15': ['root.md'], 'relation16': ['root.md'], 'relation17': ['root.md'], 'relation18': ['root.md'], 'relation19': ['root.md'], 'relation20': ['root.md'], 'relation21': ['root.md'], 'relation22': ['root.md'], 'relation23': ['root.md'], 'relation24': ['root.md'], 'relation25': ['root.md'], 'relation26': ['root.md'], 'relation27': ['root.md'], 'relation28': ['root.md'], 'relation29': ['root.md'], 'relation30': ['root.md'], 'relation31': ['root.md'], 'relation32': ['root.md'], 'relation33': ['root.md'], 'relation34': ['root.md'], 'relation35': ['root.md'], 'relation36': ['root.md'], 'relation37': ['root.md'], 'relation38': ['root.md'], 'relation39': ['root.md']}, '_conflicts': {}, 'relation0': 'Node 00', 'relation1': 'Node 01', 'relation2': 'Node 02', 'relation3': 'Node 03', 'relation4': 'Node 04', 'relation5': 'Node 05', 'relation6': 'Node 06', 'relation7': 'Node 07', 'relation8': 'Node 08', 'relation9': 'Node 09', 'relation10': 'Node 10', 'relation11': 'Node 11', 'relation12': 'Node 12', 'relation13': 'Node 13', 'relation14': 'Node 14', 'relation15': 'Node 15', 'relation16': 'Node 16', 'relation17': 'Node 17', 'relation18': 'Node 18', 'relation19': 'Node 19', 'relation20': 'Node 20', 'relation21': 'Node 21', 'relation22': 'Node 22', 'relation23': 'Node 23', 'relation24': 'Node 24', 'relation25': 'Node 25', 'relation26': 'Node 26', 'relation27': 'Node 27', 'relation28': 'Node 28', 'relation29': 'Node 29', 'relation30': 'Node 30', 'relation31': 'Node 31', 'relation32': 'Node 32', 'relation33': 'Node 33', 'relation34': 'Node 34', 'relation35': 'Node 35', 'relation36': 'Node 36', 'relation37': 'Node 37', 'relation38': 'Node 38', 'relation39': 'Node 39'}\n# Node 00: {'_file': 'node_00.md', '_sources': {'value': ['node_00.md']}, '_conflicts': {}, 'value': '0'}\n# Node 01: {'_file': 'node_01.md', '_sources': {'value': ['node_01.md']}, '_conflicts': {}, 'value': '1'}\n# Node 02: {'_file': 'node_02.md', '_sources': {'value': ['node_02.md']}, '_conflicts': {}, 'value': '2'}\n# Node 03: {'_file': 'node_03.md', '_sources': {'value': ['node_03.md']}, '_conflicts': {}, 'value': '3'}\n# Node 04: {'_file': 'node_04.md', '_sources': {'value': ['node_04.md']}, '_conflicts': {}, 'value': '4'}\n# Node 05: {'_file': 'node_05.md', '_sources': {'value': ['node_05.md']}, '_conflicts': {}, 'value': '5'}\n# Node 06: {'_file': 'node_06.md', '_sources': {'value': ['node_06.md']}, '_conflicts': {}, 'value': '6'}\n# Node 07: {'_file': 'node_07.md', '_sources': {'value': ['node_07.md']}, '_conflicts': {}, 'value': '7'}\n# Node 08: {'_file': 'node_08.md', '_sources': {'value': ['node_08.md']}, '_conflicts': {}, 'value': '8'}\n# Node 09: {'_file': 'node_09.md', '_sources': {'value': ['node_09.md']}, '_conflicts': {}, 'value': '9'}\n# Node 10: {'_file': 'node_10.md', '_sources': {'value': ['node_10.md']}, '_conflicts': {}, 'value': '10'}\n# Node 11: {'_file': 'node_11.md', '_sources': {'value': ['node_11.md']}, '_conflicts': {}, 'value': '11'}\n# Node 12: {'_file': 'node_12.md', '_sources': {'value': ['node_12.md']}, '_conflicts': {}, 'value': '12'}\n# Node 13: {'_file': 'node_13.md', '_sources': {'value': ['node_13.md']}, '_conflicts': {}, 'value': '13'}\n# Node 14: {'_file': 'node_14.md', '_sources': {'value': ['node_14.md']}, '_conflicts': {}, 'value': '14'}\n# Node 15: {'_file': 'node_15.md', '_sources': {'value': ['node_15.md']}, '_conflicts': {}, 'value': '15'}\n# Node 16: {'_file': 'node_16.md', '_sources': {'value': ['node_16.md']}, '_conflicts': {}, 'value': '16'}\n# Node 17: {'_file': 'node_17.md', '_sources': {'value': ['node_17.md']}, '_conflicts': {}, 'value': '17'}\n# Node 18: {'_file': 'node_18.md', '_sources': {'value': ['node_18.md']}, '_conflicts': {}, 'value': '18'}\n# Node 19: {'_file': 'node_19.md', '_sources': {'value': ['node_19.md']}, '_conflicts': {}, 'value': '19'}\n# Node 20: {'_file': 'node_20.md', '_sources': {'value': ['node_20.md']}, '_conflicts': {}, 'value': '20'}\n# Node 21: {'_file': 'node_21.md', '_sources': {'value': ['node_21.md']}, '_conflicts': {}, 'value': '21'}\n# Node 22: {'_file': 'node_22.md', '_sources': {'value': ['node_22.md']}, '_conflicts': {}, 'value': '22'}\n# Node 23: {'_file': 'node_23.md', '_sources': {'value': ['node_23.md']}, '_conflicts': {}, 'value': '23'}\n# Node 24: {'_file': 'node_24.md', '_sources': {'value': ['node_24.md']}, '_conflicts': {}, 'value': '24'}\n# Node 25: {'_file': 'node_25.md', '_sources': {'value': ['node_25.md']}, '_conflicts': {}, 'value': '25'}\n# Node 26: {'_file': 'node_26.md', '_sources': {'value': ['node_26.md']}, '_conflicts': {}, 'value': '26'}\n# Node 27: {'_file': 'node_27.md', '_sources': {'value': ['node_27.md']}, '_conflicts': {}, 'value': '27'}\n# Node 28: {'_file': 'node_28.md', '_sources': {'value': ['node_28.md']}, '_conflicts': {}, 'value': '28'}\n# Node 29: {'_file': 'node_29.md', '_sources': {'value': ['node_29.md']}, '_conflicts': {}, 'value': '29'}\n# Node 30: {'_file': 'node_30.md', '_sources': {'value': ['node_30.md']}, '_conflicts': {}, 'value': '30'}\n# Node 31: {'_file': 'node_31.md', '_sources': {'value': ['node_31.md']}, '_conflicts': {}, 'value': '31'}\n# Node 32: {'_file': 'node_32.md', '_sources': {'value': ['node_32.md']}, '_conflicts': {}, 'value': '32'}\n# Node 33: {'_file': 'node_33.md', '_sources': {'value': ['node_33.md']}, '_conflicts': {}, 'value': '33'}\n# Node 34: {'_file': 'node_34.md', '_sources': {'value': ['node_34.md']}, '_conflicts': {}, 'value': '34'}\n# Node 35: {'_file': 'node_35.md', '_sources': {'value': ['node_35.md']}, '_conflicts': {}, 'value': '35'}\n# Node 36: {'_file': 'node_36.md', '_sources': {'value': ['node_36.md']}, '_conflicts': {}, 'value': '36'}\n# Node 37: {'_file': 'node_37.md', '_sources': {'value': ['node_37.md']}, '_conflicts': {}, 'value': '37'}\n# Node 38: {'_file': 'node_38.md', '_sources': {'value': ['node_38.md']}, '_conflicts': {}, 'value': '38'}\n# Node 39: {'_file': 'node_39.md', '_sources': {'value': ['node_39.md']}, '_conflicts': {}, 'value': '39'}\n\nQuestion: Summarize a fact connected to Hub.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "oversized_card",
+      "passed": false,
+      "failed_checks": [
+        "status",
+        "calls",
+        "byte_cap"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 1,
+      "context_bytes": 13138,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE.",
+          "user_prompt": "KB Records:\n# Huge Person: {'_file': 'a.md', '_sources': {'biography': ['a.md'], 'born': ['a.md']}, '_conflicts': {}, 'biography': 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', 'born': '1982'}\n\nQuestion: Tell me a fact about Huge Person.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "no_anchor_large",
+      "passed": false,
+      "failed_checks": [
+        "status"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 15,
+      "context_bytes": 1445,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE.",
+          "user_prompt": "KB Records:\n# Item 00: {'_file': '0.md', '_sources': {'value': ['0.md']}, '_conflicts': {}, 'value': '0'}\n# Item 01: {'_file': '1.md', '_sources': {'value': ['1.md']}, '_conflicts': {}, 'value': '1'}\n# Item 10: {'_file': '10.md', '_sources': {'value': ['10.md']}, '_conflicts': {}, 'value': '10'}\n# Item 11: {'_file': '11.md', '_sources': {'value': ['11.md']}, '_conflicts': {}, 'value': '11'}\n# Item 12: {'_file': '12.md', '_sources': {'value': ['12.md']}, '_conflicts': {}, 'value': '12'}\n# Item 13: {'_file': '13.md', '_sources': {'value': ['13.md']}, '_conflicts': {}, 'value': '13'}\n# Item 14: {'_file': '14.md', '_sources': {'value': ['14.md']}, '_conflicts': {}, 'value': '14'}\n# Item 15: {'_file': '15.md', '_sources': {'value': ['15.md']}, '_conflicts': {}, 'value': '15'}\n# Item 16: {'_file': '16.md', '_sources': {'value': ['16.md']}, '_conflicts': {}, 'value': '16'}\n# Item 17: {'_file': '17.md', '_sources': {'value': ['17.md']}, '_conflicts': {}, 'value': '17'}\n# Item 18: {'_file': '18.md', '_sources': {'value': ['18.md']}, '_conflicts': {}, 'value': '18'}\n# Item 19: {'_file': '19.md', '_sources': {'value': ['19.md']}, '_conflicts': {}, 'value': '19'}\n# Item 02: {'_file': '2.md', '_sources': {'value': ['2.md']}, '_conflicts': {}, 'value': '2'}\n# Item 20: {'_file': '20.md', '_sources': {'value': ['20.md']}, '_conflicts': {}, 'value': '20'}\n# Item 21: {'_file': '21.md', '_sources': {'value': ['21.md']}, '_conflicts': {}, 'value': '21'}\n\nQuestion: Give the unavailable value for someone not mentioned here.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "full_kb_refusal",
+      "passed": true,
+      "failed_checks": [],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 1,
+      "context_bytes": 90,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE.",
+          "user_prompt": "KB Records:\n# Ada: {'_file': 'a.md', '_sources': {'born': ['a.md']}, '_conflicts': {}, 'born': '1991'}\n\nQuestion: Who founded Unknown Corporation? Use only these records.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "conflicting_links",
+      "passed": false,
+      "failed_checks": [
+        "missing:Oslo"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 2,
+      "context_bytes": 348,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE.",
+          "user_prompt": "KB Records:\n# Delta Works: {'_file': 'c.md', '_sources': {'headquarters': ['c.md']}, '_conflicts': {}, 'headquarters': 'Bern'}\n# Nia Moss: {'_file': 'a.md', '_sources': {'employer': ['a.md'], 'born': ['a.md', 'b.md']}, '_conflicts': {'employer': {'Delta Works': ['a.md'], 'Beacon Labs': ['b.md']}}, 'employer': 'Delta Works', 'born': '1980', '_ambiguous': '1'}\n\nQuestion: Return the city of the employer of Nia Moss.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "irrelevant_field_conflict",
+      "passed": false,
+      "failed_checks": [
+        "status",
+        "answer"
+      ],
+      "status": "UNKNOWN",
+      "answer": null,
+      "synthetic_calls": 0,
+      "context_records": 0,
+      "context_bytes": 0,
+      "captured_requests": []
+    },
+    {
+      "case": "relevant_field_conflict",
+      "passed": true,
+      "failed_checks": [],
+      "status": "UNKNOWN",
+      "answer": null,
+      "synthetic_calls": 0,
+      "context_records": 0,
+      "context_bytes": 0,
+      "captured_requests": []
+    },
+    {
+      "case": "finite_cycle_local",
+      "passed": true,
+      "failed_checks": [],
+      "status": "SOLVED",
+      "answer": "1991",
+      "synthetic_calls": 0,
+      "context_records": 0,
+      "context_bytes": 0,
+      "captured_requests": []
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "created_at": "2026-11-11T15:48:09.211Z",
+  "scope": "Local structural controls and regression verification; no live quality measurement",
+  "api_calls": 0,
+  "real_effective_tokens": 0,
+  "baseline_commit": "bef716967ae2643804b01b9240bc53cb22385414",
+  "frozen_plan_commit": "e799803",
+  "hypothesis_mapping": {
+    "frozen_E47_plan_H03_3": "H03.4 (unrelated field conflict); original frozen plan retained",
+    "H03_2": "PARTIAL: context structure supported, live model quality unmeasured",
+    "H03_4": "SUPPORTED on local path-specific conflict controls",
+    "G0_4": "SUPPORTED on five scaled real-SDK scenarios, not provider availability",
+    "H03_5": "PROPOSED: budget-aware context preserving required facts"
+  },
+  "measurements": {
+    "E47": {
+      "before": 3,
+      "intermediate": 6,
+      "after": 12,
+      "total": 12,
+      "fixture_sha256": "996947cd5bfa4082f06bfe3fce7797265bd3c277ddf1741a2599888e4e950827",
+      "before_report": "E47_search_before_20261111T153503829235.json",
+      "intermediate_report": "E47_search_after_20261111T153820223033.json",
+      "after_report": "E47_search_final_20261111T153934832508.json"
+    },
+    "E48": {
+      "status": "CALIBRATION_ONLY",
+      "reason": "Cold SDK initialization invalidates fast timing control",
+      "report": "E48_deadlines_before_20261111T153509470852/report.json"
+    },
+    "E48b": {
+      "before": 2,
+      "after": 5,
+      "total": 5,
+      "before_report": "E48b_deadlines_before_20261111T153653412792/report.json",
+      "after_report": "E48b_deadlines_after_20261111T153941259620/report.json",
+      "protocol": "E48b_deadline_plan.json"
+    },
+    "E49": {
+      "unit_tests": 82,
+      "unit_passed": 82,
+      "scope_controls": 160,
+      "scope_passed": 160,
+      "old_dev_solved": 24,
+      "old_dev_score": 80,
+      "old_dev_max": 113,
+      "public_solved": 6,
+      "public_total": 8,
+      "sdk_additional_controls": 5,
+      "family_solved": 1,
+      "family_solvable": 19,
+      "family_false_refusals": 0
+    }
+  },
+  "unchanged_live_evidence": {
+    "solved": 9,
+    "solvable": 19,
+    "score": 27,
+    "max_score": 57,
+    "source": "E43 + E44"
+  },
+  "unresolved_E46": {
+    "requests_with_unknown_usage": 1,
+    "reserve": 343.1,
+    "actual_cost": null,
+    "action": "No new paid requests; ledger not changed"
+  },
+  "source_hashes": {
+    "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+    "harness/agents/search_solver.py": "d403c178332df0cdb1814e5aa00eecdce09946e9e37a751fbea7177208babcee",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "scripts/search_context_benchmark.py": "b56ff601ecfff55e48a273e654933610a4a33ed3236984f6fb70bac69e196e3f",
+    "scripts/search_context_cases.py": "40e5fb7458b6679ae3a305fc6af351ae248083819d43706d9c26054f44489bd3",
+    "scripts/deadline_benchmark.py": "5077db2a2edb5579d7e56978c639c5ad8b2279812e44f7ec42853ff92c94a45c",
+    "tests/test_context_deadlines.py": "0c9a96c3bc979923aa72f689a3d6b088828408222bf24684c60d06c5c6484ef4"
+  }
+}

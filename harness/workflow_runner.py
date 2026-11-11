@@ -64,8 +64,11 @@ class OpenJiuwenTaskRunner:
 
     async def run(self,ctx):
         sdk=self.sdk
+        from openjiuwen.core.session.constants import WORKFLOW_EXECUTE_TIMEOUT
         trace=dict(task_id=ctx.task_id,workflow_id='task_'+uuid4().hex,session_id=uuid4().hex,
                    stages=[],saved=False,state='STARTED')
+        trace.update(request_timeout_sec=self.config.request_timeout_sec,
+                     workflow_timeout_sec=self.config.workflow_timeout_sec)
         self.runs.append(trace)
         owner=self
 
@@ -93,7 +96,8 @@ class OpenJiuwenTaskRunner:
         flow.add_connection('solve','finalize')
         flow.add_connection('finalize','end')
         try:
-            output=await flow.invoke({'task_id':ctx.task_id},sdk.create_workflow_session(session_id=trace['session_id']))
+            output=await flow.invoke({'task_id':ctx.task_id},sdk.create_workflow_session(session_id=trace['session_id'],
+                envs={WORKFLOW_EXECUTE_TIMEOUT: self.config.workflow_timeout_sec}))
             if output.state!=sdk.WorkflowExecutionState.COMPLETED:
                 raise RuntimeError('Workflow did not complete')
             result=SolveResult(**output.result['output']['result'])

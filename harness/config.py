@@ -1,5 +1,6 @@
 """Общие структуры данных, контракты между Планировщиком и Агентами, конфигурация моделей."""
 from dataclasses import dataclass, field
+import math
 from pathlib import Path
 from typing import Any, Dict, Optional
 
@@ -28,6 +29,15 @@ class HarnessConfig:
     coding_min_task_budget: float = 800.0
     max_api_calls: Optional[int] = None
     execution_engine: str = "openjiuwen"
+    request_timeout_sec: float = 60.0
+    workflow_timeout_sec: float = 180.0
+
+    def __post_init__(self):
+        for value in (self.request_timeout_sec, self.workflow_timeout_sec):
+            if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value <= 0:
+                raise ValueError("Timeouts must be finite positive numbers")
+        if self.workflow_timeout_sec <= self.request_timeout_sec:
+            raise ValueError("Workflow deadline must exceed one request deadline")
 
 
 @dataclass

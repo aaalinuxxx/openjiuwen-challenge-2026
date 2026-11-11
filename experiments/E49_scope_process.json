@@ -1,0 +1,5 @@
+{
+  "code": 0,
+  "stdout": "{\"summary\": {\"total\": 160, \"correct_behavior\": 160, \"solved_correct\": 64, \"wrong_answers\": 0, \"statuses\": {\"SOLVED\": 64, \"UNKNOWN\": 32, \"NEEDS_API\": 56, \"UNSOLVABLE\": 8}}, \"groups\": {\"duplicates\": {\"total\": 48, \"correct_behavior\": 48, \"solved_correct\": 24, \"wrong_answers\": 0, \"statuses\": {\"SOLVED\": 24, \"UNKNOWN\": 24}}, \"context\": {\"total\": 80, \"correct_behavior\": 80, \"solved_correct\": 24, \"wrong_answers\": 0, \"statuses\": {\"SOLVED\": 24, \"NEEDS_API\": 56}}, \"files\": {\"total\": 32, \"correct_behavior\": 32, \"solved_correct\": 16, \"wrong_answers\": 0, \"statuses\": {\"SOLVED\": 16, \"UNKNOWN\": 8, \"UNSOLVABLE\": 8}}}}\r\n",
+  "stderr": ""
+}

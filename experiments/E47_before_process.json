@@ -1,0 +1,5 @@
+{
+  "code": 0,
+  "stdout": "{\"total\": 12, \"passed\": 3, \"failures\": {\"chain_paraphrase\": [\"status\", \"missing:Riga\"], \"cycle\": [\"status\", \"missing:Riga\"], \"casefold_links\": [\"status\", \"missing:Luma Labs\", \"missing:Riga\"], \"prefix_decoy\": [\"status\", \"decoy:9999\"], \"node_cap\": [\"status\", \"record_cap\"], \"oversized_card\": [\"status\", \"calls\", \"byte_cap\"], \"no_anchor_large\": [\"status\"], \"conflicting_links\": [\"missing:Oslo\"], \"irrelevant_field_conflict\": [\"status\", \"answer\"]}, \"api_calls\": 0}\r\nReport: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E47_search_before_20261111T153503829235.json\r\n",
+  "stderr": ""
+}

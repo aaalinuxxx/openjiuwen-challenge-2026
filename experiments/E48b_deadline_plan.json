@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-11-11T15:36:46.294Z",
+  "supersedes_protocol": "E48_deadline_plan.json",
+  "reason": "Cold SDK initialization took 3.11 seconds in fast control; first E48 is calibration, not comparative evidence",
+  "changes": [
+    "Unscored warmup with 10-second SDK deadline and synthetic fast response",
+    "Inherited SDK deadline 1.0 seconds",
+    "Slow valid response 1.5 seconds, explicit request limit 2.0 and workflow 3.0",
+    "Post-usage delay 1.5 seconds with workflow 3.0"
+  ],
+  "other_controls": "unchanged",
+  "api_calls": 0,
+  "live_E46_charge": "still unresolved"
+}

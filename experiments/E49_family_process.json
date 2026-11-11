@@ -1,0 +1,5 @@
+{
+  "code": 0,
+  "stdout": "{\"total\": 24, \"verified_solutions\": 1, \"justified_refusals\": 1, \"mere_abstentions\": 4, \"wrong_submitted_answers\": 0, \"earned_score\": 3, \"max_solvable_score\": 57, \"calls\": 0, \"known_effective_tokens\": 0.0, \"has_unaccounted_request\": false}\r\nReport: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E45_family_offline_replay_20261111T154401031548\\report.json\r\n{\"false_refusals\": [], \"truncations\": []}\r\nControl: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E45_family_offline_replay_control_20261111T154400555444.json\r\n",
+  "stderr": ""
+}

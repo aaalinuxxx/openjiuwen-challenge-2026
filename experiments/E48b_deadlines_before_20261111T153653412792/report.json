@@ -1,0 +1,415 @@
+{
+  "scope": "real openJiuwen 0.1.19 with scaled deadlines after explicit warmup and synthetic transport; not API latency",
+  "api_calls": 0,
+  "real_effective_tokens": 0,
+  "warmup": {
+    "case": "warmup_not_scored",
+    "desired": {
+      "name": "warmup_not_scored",
+      "delay": 0.01,
+      "request": 0.8,
+      "workflow": 1.2,
+      "post": 0,
+      "forced_sdk": 10,
+      "status": "SOLVED",
+      "unknown": false,
+      "known": 12
+    },
+    "actual_sdk_timeout": [
+      10
+    ],
+    "status": "SOLVED",
+    "answer": "OK",
+    "elapsed_sec": 3.172,
+    "calls": 1,
+    "checks": {
+      "status": true,
+      "known": true,
+      "unknown": true,
+      "exactly_one_transport": true,
+      "no_followup_after_unknown": true,
+      "error": true,
+      "local_continues": true
+    },
+    "passed": true,
+    "followup_status": null,
+    "local_answer": null,
+    "budget": {
+      "budget": 1000,
+      "known_effective_tokens": 12.0,
+      "reserved_effective_tokens": 0.0,
+      "has_unaccounted_request": false,
+      "remote_stopped": false,
+      "events": [
+        {
+          "ticket": 0,
+          "task_id": "main",
+          "status": "ACCOUNTED",
+          "reserved_units": 2458,
+          "task_limit_units": 10000,
+          "input_token_estimate": 1178,
+          "output_cap": 128,
+          "input_tokens": 20,
+          "output_tokens": 10,
+          "reasoning_tokens": 0,
+          "effective_cost": 12.0
+        }
+      ]
+    },
+    "workflow_runs": [
+      {
+        "task_id": "main",
+        "workflow_id": "task_48cc184381814ce8a467bc9680583d00",
+        "session_id": "1f33375981fa4a51b04113cea7915a4d",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED"
+      }
+    ]
+  },
+  "total": 5,
+  "passed": 2,
+  "rows": [
+    {
+      "case": "fast",
+      "desired": {
+        "name": "fast",
+        "delay": 0.02,
+        "request": 0.8,
+        "workflow": 1.2,
+        "post": 0,
+        "status": "SOLVED",
+        "unknown": false,
+        "known": 12
+      },
+      "actual_sdk_timeout": [
+        1.0
+      ],
+      "status": "SOLVED",
+      "answer": "OK",
+      "elapsed_sec": 0.063,
+      "calls": 1,
+      "checks": {
+        "status": true,
+        "known": true,
+        "unknown": true,
+        "exactly_one_transport": true,
+        "no_followup_after_unknown": true,
+        "error": true,
+        "local_continues": true
+      },
+      "passed": true,
+      "followup_status": null,
+      "local_answer": null,
+      "budget": {
+        "budget": 1000,
+        "known_effective_tokens": 12.0,
+        "reserved_effective_tokens": 0.0,
+        "has_unaccounted_request": false,
+        "remote_stopped": false,
+        "events": [
+          {
+            "ticket": 0,
+            "task_id": "main",
+            "status": "ACCOUNTED",
+            "reserved_units": 2458,
+            "task_limit_units": 10000,
+            "input_token_estimate": 1178,
+            "output_cap": 128,
+            "input_tokens": 20,
+            "output_tokens": 10,
+            "reasoning_tokens": 0,
+            "effective_cost": 12.0
+          }
+        ]
+      },
+      "workflow_runs": [
+        {
+          "task_id": "main",
+          "workflow_id": "task_69a35b759a6d450abd4cad5505244798",
+          "session_id": "0c693d0a27de400d84f449e94223060f",
+          "stages": [
+            "solve",
+            "finalize"
+          ],
+          "saved": true,
+          "state": "COMPLETED"
+        }
+      ]
+    },
+    {
+      "case": "within_request_after_inherited_sdk",
+      "desired": {
+        "name": "within_request_after_inherited_sdk",
+        "delay": 1.5,
+        "request": 2.0,
+        "workflow": 3.0,
+        "post": 0,
+        "status": "SOLVED",
+        "unknown": false,
+        "known": 12
+      },
+      "actual_sdk_timeout": [
+        1.0
+      ],
+      "status": "WORKFLOW_FAILED",
+      "answer": null,
+      "elapsed_sec": 1.078,
+      "calls": 1,
+      "checks": {
+        "status": false,
+        "known": false,
+        "unknown": false,
+        "exactly_one_transport": true,
+        "no_followup_after_unknown": true,
+        "error": true,
+        "local_continues": true
+      },
+      "passed": false,
+      "followup_status": "BUDGET_EXCEEDED",
+      "local_answer": "12",
+      "budget": {
+        "budget": 1000,
+        "known_effective_tokens": 0.0,
+        "reserved_effective_tokens": 245.8,
+        "has_unaccounted_request": true,
+        "remote_stopped": true,
+        "events": [
+          {
+            "ticket": 0,
+            "task_id": "main",
+            "status": "COST_UNKNOWN_STOPPED",
+            "reserved_units": 2458,
+            "task_limit_units": 10000,
+            "input_token_estimate": 1178,
+            "output_cap": 128,
+            "error_type": "CancelledError"
+          }
+        ]
+      },
+      "workflow_runs": [
+        {
+          "task_id": "main",
+          "workflow_id": "task_831fc6e57641432683d8fd63ad1638ae",
+          "session_id": "f011790d84494440b62156612a9041fc",
+          "stages": [
+            "solve"
+          ],
+          "saved": false,
+          "state": "FAILED",
+          "error_type": "ExecutionError"
+        }
+      ]
+    },
+    {
+      "case": "request_deadline",
+      "desired": {
+        "name": "request_deadline",
+        "delay": 0.6,
+        "request": 0.1,
+        "workflow": 1.2,
+        "post": 0,
+        "status": "ACCOUNTING_UNKNOWN",
+        "unknown": true,
+        "known": 0,
+        "error": "TimeoutError"
+      },
+      "actual_sdk_timeout": [
+        1.0
+      ],
+      "status": "SOLVED",
+      "answer": "OK",
+      "elapsed_sec": 0.672,
+      "calls": 1,
+      "checks": {
+        "status": false,
+        "known": false,
+        "unknown": false,
+        "exactly_one_transport": true,
+        "no_followup_after_unknown": true,
+        "error": false,
+        "local_continues": true
+      },
+      "passed": false,
+      "followup_status": null,
+      "local_answer": null,
+      "budget": {
+        "budget": 1000,
+        "known_effective_tokens": 12.0,
+        "reserved_effective_tokens": 0.0,
+        "has_unaccounted_request": false,
+        "remote_stopped": false,
+        "events": [
+          {
+            "ticket": 0,
+            "task_id": "main",
+            "status": "ACCOUNTED",
+            "reserved_units": 2458,
+            "task_limit_units": 10000,
+            "input_token_estimate": 1178,
+            "output_cap": 128,
+            "input_tokens": 20,
+            "output_tokens": 10,
+            "reasoning_tokens": 0,
+            "effective_cost": 12.0
+          }
+        ]
+      },
+      "workflow_runs": [
+        {
+          "task_id": "main",
+          "workflow_id": "task_7971228055694da088ed6761299803b4",
+          "session_id": "4ecdccd273a34628b464b386b01e9a61",
+          "stages": [
+            "solve",
+            "finalize"
+          ],
+          "saved": true,
+          "state": "COMPLETED"
+        }
+      ]
+    },
+    {
+      "case": "external_workflow_cancellation",
+      "desired": {
+        "name": "external_workflow_cancellation",
+        "delay": 0.35,
+        "request": 0.8,
+        "workflow": 1.2,
+        "post": 0,
+        "forced_sdk": 0.15,
+        "status": "WORKFLOW_FAILED",
+        "unknown": true,
+        "known": 0,
+        "error": "CancelledError"
+      },
+      "actual_sdk_timeout": [
+        0.15
+      ],
+      "status": "WORKFLOW_FAILED",
+      "answer": null,
+      "elapsed_sec": 0.187,
+      "calls": 1,
+      "checks": {
+        "status": true,
+        "known": true,
+        "unknown": true,
+        "exactly_one_transport": true,
+        "no_followup_after_unknown": true,
+        "error": true,
+        "local_continues": true
+      },
+      "passed": true,
+      "followup_status": "BUDGET_EXCEEDED",
+      "local_answer": "12",
+      "budget": {
+        "budget": 1000,
+        "known_effective_tokens": 0.0,
+        "reserved_effective_tokens": 245.8,
+        "has_unaccounted_request": true,
+        "remote_stopped": true,
+        "events": [
+          {
+            "ticket": 0,
+            "task_id": "main",
+            "status": "COST_UNKNOWN_STOPPED",
+            "reserved_units": 2458,
+            "task_limit_units": 10000,
+            "input_token_estimate": 1178,
+            "output_cap": 128,
+            "error_type": "CancelledError"
+          }
+        ]
+      },
+      "workflow_runs": [
+        {
+          "task_id": "main",
+          "workflow_id": "task_fa9c544ba75e46b6afaa7b40d377ae1d",
+          "session_id": "08e36b2acb2a4c028cd9ff59d8714280",
+          "stages": [
+            "solve"
+          ],
+          "saved": false,
+          "state": "FAILED",
+          "error_type": "ExecutionError"
+        }
+      ]
+    },
+    {
+      "case": "post_usage_processing",
+      "desired": {
+        "name": "post_usage_processing",
+        "delay": 0.02,
+        "request": 0.1,
+        "workflow": 3.0,
+        "post": 1.5,
+        "status": "SOLVED",
+        "unknown": false,
+        "known": 12
+      },
+      "actual_sdk_timeout": [
+        1.0
+      ],
+      "status": "WORKFLOW_FAILED",
+      "answer": null,
+      "elapsed_sec": 1.016,
+      "calls": 1,
+      "checks": {
+        "status": false,
+        "known": true,
+        "unknown": true,
+        "exactly_one_transport": true,
+        "no_followup_after_unknown": true,
+        "error": true,
+        "local_continues": true
+      },
+      "passed": false,
+      "followup_status": null,
+      "local_answer": null,
+      "budget": {
+        "budget": 1000,
+        "known_effective_tokens": 12.0,
+        "reserved_effective_tokens": 0.0,
+        "has_unaccounted_request": false,
+        "remote_stopped": false,
+        "events": [
+          {
+            "ticket": 0,
+            "task_id": "main",
+            "status": "ACCOUNTED",
+            "reserved_units": 2458,
+            "task_limit_units": 10000,
+            "input_token_estimate": 1178,
+            "output_cap": 128,
+            "input_tokens": 20,
+            "output_tokens": 10,
+            "reasoning_tokens": 0,
+            "effective_cost": 12.0
+          }
+        ]
+      },
+      "workflow_runs": [
+        {
+          "task_id": "main",
+          "workflow_id": "task_1572e953df364f4d9cbfe1c312dfe43a",
+          "session_id": "e506456210014e5e99ecbb7c2f1eb44a",
+          "stages": [
+            "solve"
+          ],
+          "saved": false,
+          "state": "FAILED",
+          "error_type": "ExecutionError"
+        }
+      ]
+    }
+  ],
+  "source_hashes": {
+    "harness\\workflow_runner.py": "3d0389010c2eadb7dc6425f7eb6326a5b361c7cc462422c2fdc52a057b3c0944",
+    "harness\\agents\\base_harness.py": "8653d9f38413713d02574698a6faf67626a509f13fb1e787c16590b0bdf9590f",
+    "harness\\config.py": "ee45d721db052359e1eacd6f35801f98d4533dd46a06adf150d84cf70e6b1b24",
+    "scripts\\deadline_benchmark.py": "5077db2a2edb5579d7e56978c639c5ad8b2279812e44f7ec42853ff92c94a45c"
+  }
+}

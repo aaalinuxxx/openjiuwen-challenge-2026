@@ -1,0 +1,5 @@
+{
+  "code": 0,
+  "stdout": "{\"total\": 40, \"verified_solutions\": 24, \"justified_refusals\": 6, \"mere_abstentions\": 2, \"wrong_submitted_answers\": 0, \"earned_score\": 80, \"max_solvable_score\": 113, \"calls\": 0, \"known_effective_tokens\": 0.0, \"has_unaccounted_request\": false}\r\nReport: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E49_previous_dev_offline_20261111T154400648036\\report.json\r\n",
+  "stderr": ""
+}

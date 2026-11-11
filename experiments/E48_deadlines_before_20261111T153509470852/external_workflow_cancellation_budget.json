@@ -1,0 +1,19 @@
+{
+  "budget": 1000,
+  "known_effective_tokens": 0.0,
+  "reserved_effective_tokens": 245.8,
+  "has_unaccounted_request": true,
+  "remote_stopped": true,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "main",
+      "status": "COST_UNKNOWN_STOPPED",
+      "reserved_units": 2458,
+      "task_limit_units": 10000,
+      "input_token_estimate": 1178,
+      "output_cap": 128,
+      "error_type": "CancelledError"
+    }
+  ]
+}

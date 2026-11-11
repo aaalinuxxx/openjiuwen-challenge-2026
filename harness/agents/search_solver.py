@@ -6,6 +6,7 @@ from typing import Dict
 from harness.config import TaskContext, SolveResult
 from harness.agents.model_router import select_primary_model
 from harness.agents.instruction_scope import question_with_scope
+from harness.agents.kb_context import build_kb_context
 
 
 def _parse_kb(kb_dir: Path) -> Dict[str, dict]:
@@ -76,7 +77,8 @@ def _resolve_graph_query(instruction, entities):
             return 'UNKNOWN', None, f'Ambiguous entity: {current}'
         current = matches[0]
         record = entities[current]
-        if record.get('_ambiguous'):
+        conflicts = record.get('_conflicts', {})
+        if property_name in conflicts or (record.get('_ambiguous') and not conflicts):
             return 'UNKNOWN', None, f'Duplicate/conflicting fields: {current}'
         value = record.get(property_name)
         if not value:
@@ -103,35 +105,28 @@ async def solve_search_task(ctx: TaskContext, bridge) -> SolveResult:
         status, answer, evidence = graph_result
         return SolveResult(task_id=ctx.task_id, status=status, answer=answer, notes=evidence)
 
-    # Попытка 2: Если вопрос нестандартный, отбираем только релевантные карточки (1-hop и 2-hop) и подаём в noreason LLM
-    relevant_Names = [name for name in entities if name.lower() in q.lower()]
-    expanded = set(relevant_Names)
-    for name in list(expanded):
-        for key, val in entities[name].items():
-            if not key.startswith('_') and isinstance(val, str) and val in entities:
-                expanded.add(val)
-
-    if not expanded:
-        snippets = [f"# {k}: {v}" for k, v in list(entities.items())[:15]]
-    else:
-        snippets = [f"# {k}: {entities[k]}" for k in sorted(expanded)]
-
+    context = build_kb_context(q, entities)
+    if not context.names:
+        return SolveResult(task_id=ctx.task_id, status="UNKNOWN", notes="No complete KB record fits the context limits")
     model = select_primary_model(ctx)
+    refusal = "UNSOLVABLE" if context.complete_kb else "UNKNOWN"
     sys_prompt = (
-        "Answer the user question using ONLY the provided KB records. "
-        "Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. "
-        "If the information is missing or contradictory, output UNSOLVABLE."
+        "Use ONLY the supplied KB records. Return only the exact requested value without explanation. "
+        "Conflicting alternatives are explicitly marked. "
+        f"If the answer is unsupported, return {refusal}. Never infer absence from omitted records."
     )
-    user_prompt = f"KB Records:\n" + "\n".join(snippets) + f"\n\nQuestion: {q}"
+    coverage = "complete" if context.complete_kb else "partial (" + ", ".join(context.limits) + ")"
+    user_prompt = f"KB coverage: {coverage}\nKB Records:\n{context.text}\n\nQuestion: {q}"
 
     ans, in_tok, out_tok, r_tok = await bridge.complete(
         model=model, system_prompt=sys_prompt, user_prompt=user_prompt, max_tokens=32
     )
     clean_ans = ans.splitlines()[-1].strip().strip(".") if ans.strip() else ''
-    if "UNSOLVABLE" in clean_ans.upper() or not clean_ans:
+    if clean_ans.upper() in ("UNSOLVABLE", "UNKNOWN") or not clean_ans:
         return SolveResult(
             task_id=ctx.task_id,
-            status="UNSOLVABLE",
+            status="UNSOLVABLE" if clean_ans.upper() == "UNSOLVABLE" and context.complete_kb else "UNKNOWN",
+            notes=f"Model refusal; KB coverage: {coverage}",
             input_tokens=in_tok,
             output_tokens=out_tok,
             reasoning_tokens=r_tok,

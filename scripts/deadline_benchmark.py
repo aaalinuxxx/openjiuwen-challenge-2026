@@ -21,10 +21,10 @@ import harness.workflow_runner as workflow_module
 
 CASES=[
     dict(name='fast',delay=.02,request=.8,workflow=1.2,post=0,status='SOLVED',unknown=False,known=12),
-    dict(name='within_request_after_inherited_sdk',delay=.35,request=.8,workflow=1.2,post=0,status='SOLVED',unknown=False,known=12),
+    dict(name='within_request_after_inherited_sdk',delay=1.5,request=2.0,workflow=3.0,post=0,status='SOLVED',unknown=False,known=12),
     dict(name='request_deadline',delay=.6,request=.1,workflow=1.2,post=0,status='ACCOUNTING_UNKNOWN',unknown=True,known=0,error='TimeoutError'),
     dict(name='external_workflow_cancellation',delay=.35,request=.8,workflow=1.2,post=0,forced_sdk=.15,status='WORKFLOW_FAILED',unknown=True,known=0,error='CancelledError'),
-    dict(name='post_usage_processing',delay=.02,request=.1,workflow=1.2,post=.35,status='SOLVED',unknown=False,known=12),
+    dict(name='post_usage_processing',delay=.02,request=.1,workflow=3.0,post=1.5,status='SOLVED',unknown=False,known=12),
 ]
 
 async def run(label):
@@ -32,8 +32,9 @@ async def run(label):
     directory=ROOT/'experiments'/(label+'_'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%f'))
     directory.mkdir(parents=True,exist_ok=False)
     rows=[]
-    with patch.dict(os.environ,{'WORKFLOW_EXECUTE_TIMEOUT':'0.2'}):
-        for case in CASES:
+    with patch.dict(os.environ,{'WORKFLOW_EXECUTE_TIMEOUT':'1.0'}):
+        warmup=dict(name='warmup_not_scored',delay=.01,request=.8,workflow=1.2,post=0,forced_sdk=10,status='SOLVED',unknown=False,known=12)
+        for case in [warmup]+CASES:
             with tempfile.TemporaryDirectory(prefix='oj-deadlines-') as temp:
                 root=Path(temp)
                 config=HarnessConfig(root,None,'https://fixture.invalid/v1','fixture-only',
@@ -49,7 +50,7 @@ async def run(label):
                 def session_factory(*args,**kwargs):
                     envs=dict(kwargs.get('envs') or {})
                     if 'forced_sdk' in case: envs[WORKFLOW_EXECUTE_TIMEOUT]=case['forced_sdk']
-                    actual_sdk.append(envs.get(WORKFLOW_EXECUTE_TIMEOUT,.2))
+                    actual_sdk.append(envs.get(WORKFLOW_EXECUTE_TIMEOUT,1.0))
                     kwargs['envs']=envs
                     return factory(*args,**kwargs)
                 calls=[]
@@ -93,9 +94,11 @@ async def run(label):
                     calls=len(calls),checks=checks,passed=all(checks.values()),
                     followup_status=followup.status if followup else None,local_answer=local_answer,
                     budget=snapshot,workflow_runs=runner.runs))
+    warmup_row=rows.pop(0)
+    if not warmup_row['passed']: raise AssertionError('SDK warmup failed; measurements invalid')
     sources=[ROOT/'harness/workflow_runner.py',ROOT/'harness/agents/base_harness.py',ROOT/'harness/config.py',Path(__file__).resolve()]
-    report=dict(scope='real openJiuwen 0.1.19 with scaled subsecond deadlines and synthetic transport; not API latency',
-        api_calls=0,real_effective_tokens=0,total=len(rows),passed=sum(r['passed'] for r in rows),rows=rows,
+    report=dict(scope='real openJiuwen 0.1.19 with scaled deadlines after explicit warmup and synthetic transport; not API latency',
+        api_calls=0,real_effective_tokens=0,warmup=warmup_row,total=len(rows),passed=sum(r['passed'] for r in rows),rows=rows,
         source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sources})
     (directory/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(dict(total=report['total'],passed=report['passed'],

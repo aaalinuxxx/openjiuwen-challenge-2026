@@ -1,0 +1,1 @@
+{"task_id": "coding_0001", "task_type": "coding", "instruction": "Run python3 test_mylib.py. Fix mylib.py without editing tests. average(xs) returns the arithmetic mean, or 0 for an empty list. Functions must be pure and deterministic; do not inspect test names or call order. When done, write ONLY DONE to answer.txt.", "reward": 3, "family": "average"}

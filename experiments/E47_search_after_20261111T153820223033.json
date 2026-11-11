@@ -1,0 +1,211 @@
+{
+  "label": "E47_search_after",
+  "api_calls": 0,
+  "scope": "structural prompt/control evaluation with fixed synthetic refusal; not model accuracy",
+  "fixture_sha256": "996947cd5bfa4082f06bfe3fce7797265bd3c277ddf1741a2599888e4e950827",
+  "solver_sha256": "3ef3b2925c29d58482bcb4ad4a1124136915cd03720414070461fa78969dd386",
+  "total": 12,
+  "passed": 6,
+  "rows": [
+    {
+      "case": "chain_paraphrase",
+      "passed": false,
+      "failed_checks": [
+        "status"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 3,
+      "context_bytes": 147,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records.",
+          "user_prompt": "KB coverage: partial (partial_kb)\nKB Records:\n# Mira Vale\nSources: a.md\nborn: 1990\nmentor: Oren Pike\n\n# Oren Pike\nSources: b.md\nemployer: Luma Labs\n\n# Luma Labs\nSources: c.md\nheadquarters: Riga\n\nQuestion: Return the headquarters city of the company employing the mentor of Mira Vale.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "cycle",
+      "passed": false,
+      "failed_checks": [
+        "status"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 3,
+      "context_bytes": 165,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records.",
+          "user_prompt": "KB coverage: partial (partial_kb)\nKB Records:\n# Mira Vale\nSources: a.md\nborn: 1990\nmentor: Oren Pike\n\n# Oren Pike\nSources: b.md\nemployer: Luma Labs\nmentor: Mira Vale\n\n# Luma Labs\nSources: c.md\nheadquarters: Riga\n\nQuestion: Using the records about Mira Vale, return the city of her mentor employer.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "casefold_links",
+      "passed": false,
+      "failed_checks": [
+        "status"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 3,
+      "context_bytes": 136,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records.",
+          "user_prompt": "KB coverage: partial (partial_kb)\nKB Records:\n# Mira Vale\nSources: a.md\nmentor: OREN PIKE\n\n# Oren Pike\nSources: b.md\nemployer: luma labs\n\n# Luma Labs\nSources: c.md\nheadquarters: Riga\n\nQuestion: Return the headquarters of the employer of the mentor of MIRA VALE.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "prefix_decoy",
+      "passed": false,
+      "failed_checks": [
+        "status"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 1,
+      "context_bytes": 31,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records.",
+          "user_prompt": "KB coverage: partial (partial_kb)\nKB Records:\n# Anne\nSources: b.md\nborn: 1988\n\nQuestion: Tell me the birth year of Anne.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "node_cap",
+      "passed": false,
+      "failed_checks": [
+        "status"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 32,
+      "context_bytes": 2073,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records.",
+          "user_prompt": "KB coverage: partial (partial_kb, record_limit)\nKB Records:\n# Hub\nSources: root.md\nrelation0: Node 00\nrelation1: Node 01\nrelation10: Node 10\nrelation11: Node 11\nrelation12: Node 12\nrelation13: Node 13\nrelation14: Node 14\nrelation15: Node 15\nrelation16: Node 16\nrelation17: Node 17\nrelation18: Node 18\nrelation19: Node 19\nrelation2: Node 02\nrelation20: Node 20\nrelation21: Node 21\nrelation22: Node 22\nrelation23: Node 23\nrelation24: Node 24\nrelation25: Node 25\nrelation26: Node 26\nrelation27: Node 27\nrelation28: Node 28\nrelation29: Node 29\nrelation3: Node 03\nrelation30: Node 30\nrelation31: Node 31\nrelation32: Node 32\nrelation33: Node 33\nrelation34: Node 34\nrelation35: Node 35\nrelation36: Node 36\nrelation37: Node 37\nrelation38: Node 38\nrelation39: Node 39\nrelation4: Node 04\nrelation5: Node 05\nrelation6: Node 06\nrelation7: Node 07\nrelation8: Node 08\nrelation9: Node 09\n\n# Node 00\nSources: node_00.md\nvalue: 0\n\n# Node 01\nSources: node_01.md\nvalue: 1\n\n# Node 02\nSources: node_02.md\nvalue: 2\n\n# Node 03\nSources: node_03.md\nvalue: 3\n\n# Node 04\nSources: node_04.md\nvalue: 4\n\n# Node 05\nSources: node_05.md\nvalue: 5\n\n# Node 06\nSources: node_06.md\nvalue: 6\n\n# Node 07\nSources: node_07.md\nvalue: 7\n\n# Node 08\nSources: node_08.md\nvalue: 8\n\n# Node 09\nSources: node_09.md\nvalue: 9\n\n# Node 10\nSources: node_10.md\nvalue: 10\n\n# Node 11\nSources: node_11.md\nvalue: 11\n\n# Node 12\nSources: node_12.md\nvalue: 12\n\n# Node 13\nSources: node_13.md\nvalue: 13\n\n# Node 14\nSources: node_14.md\nvalue: 14\n\n# Node 15\nSources: node_15.md\nvalue: 15\n\n# Node 16\nSources: node_16.md\nvalue: 16\n\n# Node 17\nSources: node_17.md\nvalue: 17\n\n# Node 18\nSources: node_18.md\nvalue: 18\n\n# Node 19\nSources: node_19.md\nvalue: 19\n\n# Node 20\nSources: node_20.md\nvalue: 20\n\n# Node 21\nSources: node_21.md\nvalue: 21\n\n# Node 22\nSources: node_22.md\nvalue: 22\n\n# Node 23\nSources: node_23.md\nvalue: 23\n\n# Node 24\nSources: node_24.md\nvalue: 24\n\n# Node 25\nSources: node_25.md\nvalue: 25\n\n# Node 26\nSources: node_26.md\nvalue: 26\n\n# Node 27\nSources: node_27.md\nvalue: 27\n\n# Node 28\nSources: node_28.md\nvalue: 28\n\n# Node 29\nSources: node_29.md\nvalue: 29\n\n# Node 30\nSources: node_30.md\nvalue: 30\n\nQuestion: Summarize a fact connected to Hub.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "oversized_card",
+      "passed": true,
+      "failed_checks": [],
+      "status": "UNKNOWN",
+      "answer": null,
+      "synthetic_calls": 0,
+      "context_records": 0,
+      "context_bytes": 0,
+      "captured_requests": []
+    },
+    {
+      "case": "no_anchor_large",
+      "passed": false,
+      "failed_checks": [
+        "status"
+      ],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 32,
+      "context_bytes": 1130,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records.",
+          "user_prompt": "KB coverage: partial (partial_kb, record_limit)\nKB Records:\n# Item 00\nSources: 0.md\nvalue: 0\n\n# Item 01\nSources: 1.md\nvalue: 1\n\n# Item 02\nSources: 2.md\nvalue: 2\n\n# Item 03\nSources: 3.md\nvalue: 3\n\n# Item 04\nSources: 4.md\nvalue: 4\n\n# Item 05\nSources: 5.md\nvalue: 5\n\n# Item 06\nSources: 6.md\nvalue: 6\n\n# Item 07\nSources: 7.md\nvalue: 7\n\n# Item 08\nSources: 8.md\nvalue: 8\n\n# Item 09\nSources: 9.md\nvalue: 9\n\n# Item 10\nSources: 10.md\nvalue: 10\n\n# Item 11\nSources: 11.md\nvalue: 11\n\n# Item 12\nSources: 12.md\nvalue: 12\n\n# Item 13\nSources: 13.md\nvalue: 13\n\n# Item 14\nSources: 14.md\nvalue: 14\n\n# Item 15\nSources: 15.md\nvalue: 15\n\n# Item 16\nSources: 16.md\nvalue: 16\n\n# Item 17\nSources: 17.md\nvalue: 17\n\n# Item 18\nSources: 18.md\nvalue: 18\n\n# Item 19\nSources: 19.md\nvalue: 19\n\n# Item 20\nSources: 20.md\nvalue: 20\n\n# Item 21\nSources: 21.md\nvalue: 21\n\n# Item 22\nSources: 22.md\nvalue: 22\n\n# Item 23\nSources: 23.md\nvalue: 23\n\n# Item 24\nSources: 24.md\nvalue: 24\n\n# Item 25\nSources: 25.md\nvalue: 25\n\n# Item 26\nSources: 26.md\nvalue: 26\n\n# Item 27\nSources: 27.md\nvalue: 27\n\n# Item 28\nSources: 28.md\nvalue: 28\n\n# Item 29\nSources: 29.md\nvalue: 29\n\n# Item 30\nSources: 30.md\nvalue: 30\n\n# Item 31\nSources: 31.md\nvalue: 31\n\nQuestion: Give the unavailable value for someone not mentioned here.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "full_kb_refusal",
+      "passed": true,
+      "failed_checks": [],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 1,
+      "context_bytes": 30,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+          "user_prompt": "KB coverage: complete\nKB Records:\n# Ada\nSources: a.md\nborn: 1991\n\nQuestion: Who founded Unknown Corporation? Use only these records.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "conflicting_links",
+      "passed": true,
+      "failed_checks": [],
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "synthetic_calls": 1,
+      "context_records": 3,
+      "context_bytes": 184,
+      "captured_requests": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "system_prompt": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records.",
+          "user_prompt": "KB coverage: complete\nKB Records:\n# Nia Moss\nSources: a.md, b.md\nborn: 1980\nemployer: CONFLICT [Beacon Labs | Delta Works]\n\n# Beacon Labs\nSources: d.md\nheadquarters: Oslo\n\n# Delta Works\nSources: c.md\nheadquarters: Bern\n\nQuestion: Return the city of the employer of Nia Moss.",
+          "max_tokens": 32
+        }
+      ]
+    },
+    {
+      "case": "irrelevant_field_conflict",
+      "passed": true,
+      "failed_checks": [],
+      "status": "SOLVED",
+      "answer": "Bern",
+      "synthetic_calls": 0,
+      "context_records": 0,
+      "context_bytes": 0,
+      "captured_requests": []
+    },
+    {
+      "case": "relevant_field_conflict",
+      "passed": true,
+      "failed_checks": [],
+      "status": "UNKNOWN",
+      "answer": null,
+      "synthetic_calls": 0,
+      "context_records": 0,
+      "context_bytes": 0,
+      "captured_requests": []
+    },
+    {
+      "case": "finite_cycle_local",
+      "passed": true,
+      "failed_checks": [],
+      "status": "SOLVED",
+      "answer": "1991",
+      "synthetic_calls": 0,
+      "context_records": 0,
+      "context_bytes": 0,
+      "captured_requests": []
+    }
+  ]
+}

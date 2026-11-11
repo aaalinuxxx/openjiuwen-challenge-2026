@@ -1,0 +1,896 @@
+{
+  "scope": "real openJiuwen SDK; synthetic HTTP only; no live model-quality measurements",
+  "sdk_version": "0.1.19",
+  "python_version": "3.11.15 (main, Apr 14 2026, 14:31:26) [MSC v.1944 64 bit (AMD64)]",
+  "api_calls": 0,
+  "rows": [
+    {
+      "case": "public_zero_budget",
+      "summary": {
+        "total_tasks": 8,
+        "task_results": {
+          "math_0000": {
+            "task_id": "math_0000",
+            "status": "SOLVED",
+            "answer": "389",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Solved zero-token via rule parser"
+          },
+          "data_analysis_0002": {
+            "task_id": "data_analysis_0002",
+            "status": "SOLVED",
+            "answer": "158",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.015000000013969839,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Solved zero-token via CSV parser"
+          },
+          "data_analysis_0006": {
+            "task_id": "data_analysis_0006",
+            "status": "SOLVED",
+            "answer": "284",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Solved zero-token via CSV parser"
+          },
+          "search_0005": {
+            "task_id": "search_0005",
+            "status": "SOLVED",
+            "answer": "Osaka",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.01600000000325963,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "person_sergei_garcia.md:employer=Fjord Data -> company_fjord_data.md:headquarters=Osaka"
+          },
+          "math_0004": {
+            "task_id": "math_0004",
+            "status": "SOLVED",
+            "answer": "1735",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Solved zero-token via rule parser"
+          },
+          "search_0001": {
+            "task_id": "search_0001",
+            "status": "SOLVED",
+            "answer": "1983",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0159999999741558,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "person_irina_smith.md:born=1983"
+          },
+          "coding_0007": {
+            "task_id": "coding_0007",
+            "status": "BUDGET_EXCEEDED",
+            "answer": null,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.25,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Insufficient global or task reservation"
+          },
+          "coding_0003": {
+            "task_id": "coding_0003",
+            "status": "BUDGET_EXCEEDED",
+            "answer": null,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.21900000001187436,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Insufficient global or task reservation"
+          }
+        },
+        "skipped_tasks": {},
+        "solved_count": 6,
+        "estimated_score": 16,
+        "effective_tokens_spent": 0.0,
+        "budget_state": {
+          "budget": 0,
+          "known_effective_tokens": 0.0,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": []
+        },
+        "budget_audit_path": null,
+        "execution_engine": "openjiuwen",
+        "workflow_runs": [
+          {
+            "task_id": "math_0000",
+            "workflow_id": "task_5e0a966cab1b4c6d9e568e86e89a5dfe",
+            "session_id": "569559dd78c340f9a822bd3af3a5db29",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_analysis_0002",
+            "workflow_id": "task_ddefdd7f75314a299221af7250fae1c4",
+            "session_id": "bb5b0a0bedfe40868734e520ea8417ad",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_analysis_0006",
+            "workflow_id": "task_3d679523293e445bb3d4d3ec2669785a",
+            "session_id": "4f4e64f4e2ea416594ba21d66cff7a57",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "search_0005",
+            "workflow_id": "task_5bb54819c3b34fc087dc3d525af00532",
+            "session_id": "db04b5bf543648d0a5e14ed0c59e11d3",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "math_0004",
+            "workflow_id": "task_d421b47489f64cfb9e7dcf8cba8a8a09",
+            "session_id": "6a2d807767ca461fa42ca4ad1004e391",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "search_0001",
+            "workflow_id": "task_238937ca12cc4b47afbd11676fe3abb6",
+            "session_id": "09fe0cf2cfbc4302b0085414af95721e",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "coding_0007",
+            "workflow_id": "task_0768c1cdbbf04756a339b17752aabf92",
+            "session_id": "d653ed62cc114b77aa000d18aafd00a0",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "coding_0003",
+            "workflow_id": "task_307412faac684b10bc8b75a8bd505f10",
+            "session_id": "27c1fb73dca04b17af6a7e92b89162ca",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          }
+        ]
+      },
+      "answers": {
+        "coding_0003": {
+          "answer": null,
+          "correct": false,
+          "reward": 2
+        },
+        "coding_0007": {
+          "answer": null,
+          "correct": false,
+          "reward": 2
+        },
+        "data_analysis_0002": {
+          "answer": "158",
+          "correct": true,
+          "reward": 3
+        },
+        "data_analysis_0006": {
+          "answer": "284",
+          "correct": true,
+          "reward": 3
+        },
+        "math_0000": {
+          "answer": "389",
+          "correct": true,
+          "reward": 5
+        },
+        "math_0004": {
+          "answer": "1735",
+          "correct": true,
+          "reward": 2
+        },
+        "search_0001": {
+          "answer": "1983",
+          "correct": true,
+          "reward": 1
+        },
+        "search_0005": {
+          "answer": "Osaka",
+          "correct": true,
+          "reward": 2
+        }
+      }
+    },
+    {
+      "case": "parallel",
+      "summary": {
+        "total_tasks": 5,
+        "task_results": {
+          "remote_1": {
+            "task_id": "remote_1",
+            "status": "SOLVED",
+            "answer": "OK",
+            "input_tokens": 0,
+            "output_tokens": 62,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": ""
+          },
+          "remote_2": {
+            "task_id": "remote_2",
+            "status": "BUDGET_EXCEEDED",
+            "answer": null,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Insufficient global or task reservation"
+          },
+          "remote_3": {
+            "task_id": "remote_3",
+            "status": "BUDGET_EXCEEDED",
+            "answer": null,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Insufficient global or task reservation"
+          },
+          "remote_4": {
+            "task_id": "remote_4",
+            "status": "BUDGET_EXCEEDED",
+            "answer": null,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Insufficient global or task reservation"
+          },
+          "remote_0": {
+            "task_id": "remote_0",
+            "status": "SOLVED",
+            "answer": "OK",
+            "input_tokens": 0,
+            "output_tokens": 120,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.34399999998277053,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": ""
+          }
+        },
+        "skipped_tasks": {},
+        "solved_count": 2,
+        "estimated_score": 2,
+        "effective_tokens_spent": 182.0,
+        "budget_state": {
+          "budget": 300,
+          "known_effective_tokens": 182.0,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "remote_0",
+              "status": "ACCOUNTED",
+              "reserved_units": 2459,
+              "task_limit_units": 3000,
+              "input_token_estimate": 1179,
+              "output_cap": 128,
+              "input_tokens": 0,
+              "output_tokens": 120,
+              "reasoning_tokens": 0,
+              "effective_cost": 120.0
+            },
+            {
+              "ticket": 1,
+              "task_id": "remote_1",
+              "status": "ACCOUNTED",
+              "reserved_units": 1799,
+              "task_limit_units": 1800,
+              "input_token_estimate": 1179,
+              "output_cap": 62,
+              "input_tokens": 0,
+              "output_tokens": 62,
+              "reasoning_tokens": 0,
+              "effective_cost": 62.0
+            }
+          ]
+        },
+        "budget_audit_path": null,
+        "execution_engine": "openjiuwen",
+        "workflow_runs": [
+          {
+            "task_id": "remote_0",
+            "workflow_id": "task_618022ee3f484929ba437c43bc3b1b22",
+            "session_id": "dac42b223aa541fc8f4e48b619505df1",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_1",
+            "workflow_id": "task_281ee0533853410797631e8f72e54549",
+            "session_id": "af3e3257474b47f3bf3d0c9c660d9bdb",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_2",
+            "workflow_id": "task_9a6fe8c7bbcd4b92b79b9290764b3296",
+            "session_id": "eee963fc4dd54af5a936e6ec2e87e039",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_3",
+            "workflow_id": "task_70a23287bccd44fca19b804d05bcc8ef",
+            "session_id": "132fce661acd4514a07471ff2dd84f59",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_4",
+            "workflow_id": "task_2ca3d5c35c7d4cb1bb98a19ecefaf7f3",
+            "session_id": "81a77835d35d4707aaa95af0da4e1450",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_1",
+            "workflow_id": "task_e657cf237bf848928a1fb64f79ff312d",
+            "session_id": "7a08b326e36b4b27a7e48a7e3ef2cb0f",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_2",
+            "workflow_id": "task_5fadf71b821a4b9d9f69dd903645ecaf",
+            "session_id": "8133f7b5ec4245bbba55ae4adfb35978",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_3",
+            "workflow_id": "task_72dbaa02c9c7498998071ccdac4baed6",
+            "session_id": "cde861c260d34b7ab828410b2b8fe8d4",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_4",
+            "workflow_id": "task_5ec4afbc43be4c3483026469680eae2b",
+            "session_id": "a62299e7372b4735b738889ff503e08c",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_2",
+            "workflow_id": "task_802e8288b2ba43038bf07cabb0475237",
+            "session_id": "e689fc1b0913403eb10d013d624f05af",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_3",
+            "workflow_id": "task_fb246f98bf9b40e1b3a1efa4dedf13ae",
+            "session_id": "5085aca1b67f4788beb1395b0effab4a",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_4",
+            "workflow_id": "task_6a6ecb43fda1426a827dceb945c883a3",
+            "session_id": "02565bc11a944903a35f6cb455844aea",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          }
+        ]
+      },
+      "synthetic_http_calls": [
+        {
+          "model": "qwen3.8-27b-noreason",
+          "output_cap": 128
+        },
+        {
+          "model": "qwen3.8-27b-noreason",
+          "output_cap": 62
+        }
+      ],
+      "answers": {
+        "remote_0": "OK",
+        "remote_1": "OK"
+      }
+    },
+    {
+      "case": "bad_content",
+      "summary": {
+        "total_tasks": 1,
+        "task_results": {
+          "remote_0": {
+            "task_id": "remote_0",
+            "status": "FAILED",
+            "answer": null,
+            "input_tokens": 20,
+            "output_tokens": 10,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.01600000000325963,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "KeyError"
+          }
+        },
+        "skipped_tasks": {},
+        "solved_count": 0,
+        "estimated_score": 0,
+        "effective_tokens_spent": 12.0,
+        "budget_state": {
+          "budget": 1000,
+          "known_effective_tokens": 12.0,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "remote_0",
+              "status": "ACCOUNTED",
+              "reserved_units": 2459,
+              "task_limit_units": 6300,
+              "input_token_estimate": 1179,
+              "output_cap": 128,
+              "input_tokens": 20,
+              "output_tokens": 10,
+              "reasoning_tokens": 0,
+              "effective_cost": 12.0
+            }
+          ]
+        },
+        "budget_audit_path": null,
+        "execution_engine": "openjiuwen",
+        "workflow_runs": [
+          {
+            "task_id": "remote_0",
+            "workflow_id": "task_a34f99d6d4944656bb3cecf6324e4c2b",
+            "session_id": "37db2c26707941479207191cf7471110",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          }
+        ]
+      },
+      "synthetic_http_calls": [
+        {
+          "model": "qwen3.8-27b-noreason",
+          "output_cap": 128
+        }
+      ],
+      "answers": {}
+    },
+    {
+      "case": "unknown_cost",
+      "summary": {
+        "total_tasks": 3,
+        "task_results": {
+          "local": {
+            "task_id": "local",
+            "status": "SOLVED",
+            "answer": "12",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Solved zero-token via rule parser"
+          },
+          "remote_0": {
+            "task_id": "remote_0",
+            "status": "ACCOUNTING_UNKNOWN",
+            "answer": null,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0159999999741558,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "OSError"
+          },
+          "remote_1": {
+            "task_id": "remote_1",
+            "status": "BUDGET_EXCEEDED",
+            "answer": null,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "Remote work stopped"
+          }
+        },
+        "skipped_tasks": {},
+        "solved_count": 1,
+        "estimated_score": 1,
+        "effective_tokens_spent": 0.0,
+        "budget_state": {
+          "budget": 1000,
+          "known_effective_tokens": 0.0,
+          "reserved_effective_tokens": 245.9,
+          "has_unaccounted_request": true,
+          "remote_stopped": true,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "remote_0",
+              "status": "COST_UNKNOWN_STOPPED",
+              "reserved_units": 2459,
+              "task_limit_units": 6300,
+              "input_token_estimate": 1179,
+              "output_cap": 128,
+              "error_type": "OSError"
+            }
+          ]
+        },
+        "budget_audit_path": null,
+        "execution_engine": "openjiuwen",
+        "workflow_runs": [
+          {
+            "task_id": "local",
+            "workflow_id": "task_2d7f6d90268f4eab9a29a8be81120c86",
+            "session_id": "c59bfcddd66c49d6a6668b81574ab8e4",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_0",
+            "workflow_id": "task_70a2f0fa659343c0b2a5c7bb88906d73",
+            "session_id": "be3a442e37794a379013993bca05c960",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "remote_1",
+            "workflow_id": "task_4f0c127783a94a508874b754d0bb81d2",
+            "session_id": "01af6ea3822d429fbc773b6996568395",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          }
+        ]
+      },
+      "synthetic_http_calls": [
+        {
+          "model": "qwen3.8-27b-noreason",
+          "output_cap": 128
+        }
+      ],
+      "answers": {
+        "local": "12"
+      }
+    },
+    {
+      "case": "coding_delivery",
+      "summary": {
+        "total_tasks": 1,
+        "task_results": {
+          "remote_0": {
+            "task_id": "remote_0",
+            "status": "SOLVED",
+            "answer": "DONE",
+            "input_tokens": 0,
+            "output_tokens": 120,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.5,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": ""
+          }
+        },
+        "skipped_tasks": {},
+        "solved_count": 1,
+        "estimated_score": 1,
+        "effective_tokens_spent": 120.0,
+        "budget_state": {
+          "budget": 2000,
+          "known_effective_tokens": 120.0,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "remote_0",
+              "status": "ACCOUNTED",
+              "reserved_units": 7994,
+              "task_limit_units": 8000,
+              "input_token_estimate": 2224,
+              "output_cap": 577,
+              "input_tokens": 0,
+              "output_tokens": 120,
+              "reasoning_tokens": 0,
+              "effective_cost": 120.0
+            }
+          ]
+        },
+        "budget_audit_path": null,
+        "execution_engine": "openjiuwen",
+        "workflow_runs": [
+          {
+            "task_id": "remote_0",
+            "workflow_id": "task_c61962bc44584d7b8050a04682112279",
+            "session_id": "644d68a44a05481e88443ddb26cbd9d1",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          }
+        ]
+      },
+      "synthetic_http_calls": [
+        {
+          "model": "qwen3.8-27b-noreason",
+          "output_cap": 577
+        }
+      ],
+      "answers": {
+        "remote_0": "DONE"
+      }
+    },
+    {
+      "case": "finalize_failure",
+      "summary": {
+        "total_tasks": 1,
+        "task_results": {
+          "remote_0": {
+            "task_id": "remote_0",
+            "status": "WORKFLOW_FAILED",
+            "answer": null,
+            "input_tokens": 0,
+            "output_tokens": 120,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "qwen3.8-27b-noreason",
+            "notes": "ExecutionError"
+          }
+        },
+        "skipped_tasks": {},
+        "solved_count": 0,
+        "estimated_score": 0,
+        "effective_tokens_spent": 120.0,
+        "budget_state": {
+          "budget": 1000,
+          "known_effective_tokens": 120.0,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "remote_0",
+              "status": "ACCOUNTED",
+              "reserved_units": 2459,
+              "task_limit_units": 6300,
+              "input_token_estimate": 1179,
+              "output_cap": 128,
+              "input_tokens": 0,
+              "output_tokens": 120,
+              "reasoning_tokens": 0,
+              "effective_cost": 120.0
+            }
+          ]
+        },
+        "budget_audit_path": null,
+        "execution_engine": "openjiuwen",
+        "workflow_runs": [
+          {
+            "task_id": "remote_0",
+            "workflow_id": "task_a3d14a7ae0c54c729f92235e54d90179",
+            "session_id": "dfb06a1b3173470eb15d41dc3b2d0955",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "FAILED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0,
+            "error_type": "ExecutionError"
+          }
+        ]
+      },
+      "synthetic_http_calls": [
+        {
+          "model": "qwen3.8-27b-noreason",
+          "output_cap": 128
+        }
+      ],
+      "answers": {}
+    }
+  ],
+  "source_hashes": {
+    "harness\\config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness\\workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness\\__init__.py": "fe5768bfeef5b47f9598df506c72b7c7e5173100e0bee18eda875c3164cdd6d8",
+    "harness\\agents\\base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness\\agents\\calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+    "harness\\agents\\coding_solver.py": "346f1b35d99192eb1fd2bd3b0ba947abf365e83e1b33fd4852d92d38c7fb6bdd",
+    "harness\\agents\\data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness\\agents\\extended_plans.py": "ce7b2a159a038d080ad134665f6e3bb4e3600d5ff7e7e7c1344d7c13682161c2",
+    "harness\\agents\\fallback_react.py": "2a6b14bfac2e7fc662363db07465ec593d3919a8371f670720482e54a6231115",
+    "harness\\agents\\instruction_scope.py": "8f9d0f8bf4aee628b067f42072da1a7ffeff86950c51ce34aa5bc9a3e6f291ba",
+    "harness\\agents\\kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+    "harness\\agents\\math_solver.py": "a3a9cf2ecedd6a8206be386b0b6ccc7d202772f151594a9a7ddbbe6cfada30a7",
+    "harness\\agents\\model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness\\agents\\plan_scope.py": "8f1253a0870fe27a744944b1decaca591f4d1e43ff74953e6e0e1d5fdcf073e5",
+    "harness\\agents\\search_solver.py": "d403c178332df0cdb1814e5aa00eecdce09946e9e37a751fbea7177208babcee",
+    "harness\\agents\\__init__.py": "42324fbbf33a052cc6267cfd9b3eb05b611bdd44c1c7cbddd6237085d6fb1fb1",
+    "harness\\planner\\budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "harness\\planner\\feature_extractor.py": "7d732941aa146a5bcc58f436dbef8c3411c569f8c3e0cd178e76e0b989f418a1",
+    "harness\\planner\\scheduler.py": "9141af37f46c83179d13de20a8ddabb3736d5f8b57a474d0c42e170c6120273e",
+    "harness\\planner\\token_estimator.py": "7195ad8b8d1003d1e86a912e228ce30f2819b2bc99e4ba59e4d55b499b23b4ab",
+    "harness\\planner\\unsolvable_filter.py": "0889489ecfeee490037e2c81eb2d96e0db3695b3efb171877a114817de78afea",
+    "harness\\planner\\__init__.py": "4d01f39c19f74266c5ea845cfddf01fc1f0158ebb8efe8dcc967784c92a42ce2",
+    "harness\\sandbox\\executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "harness\\sandbox\\file_guard.py": "ad6f2ecc823db803222bc335b146abbec7f40a90b76b901a49cd30d994d065de",
+    "harness\\sandbox\\__init__.py": "8c7432a63595673c1c625724162ffa77a637387775ecfb86f7708bfdf08840db",
+    "scripts\\sdk_workflow_benchmark.py": "ca97c658f34b3bae2a765b5692035a32adba2d787005c97544c15abc55028ac4"
+  }
+}
