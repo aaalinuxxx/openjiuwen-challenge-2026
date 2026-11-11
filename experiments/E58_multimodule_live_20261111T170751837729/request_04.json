@@ -1,0 +1,19 @@
+{
+  "task_id": "two_test_files",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return complete corrected Python code only, without comments or Markdown. Preserve signatures and satisfy the task constraints and all tests. Never modify tests. Use UNSOLVABLE only for provably contradictory requirements. The harness runs tests and writes DONE; do not perform these delivery steps in the returned code."
+      },
+      {
+        "role": "user",
+        "content": "### Task constraints\nUpdate z_totals.py. total(rows) sums Decimal(str(amount)) * RATES[currency] for each (amount, currency), then rounds the final total to two decimals with ROUND_HALF_UP and returns its fixed-point string. For empty input return '0.00'. Use a_rates.py and never modify dependencies or tests.\n\n### Target File: z_totals.py\nfrom decimal import Decimal, ROUND_HALF_UP\nfrom a_rates import RATES\n\ndef total(rows):\n    value = sum((Decimal(str(amount)) for amount, currency in rows), Decimal('0'))\n    return format(value.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP), 'f')\n\n\n### Read-only module: a_rates.py\nfrom decimal import Decimal\nRATES = {'A': Decimal('1'), 'B': Decimal('1.25')}\n\n\n### test_rates.py\nfrom z_totals import total\nassert total([('2', 'B')]) == '2.50'\n\n\n### test_rounding.py\nfrom z_totals import total\nassert total([]) == '0.00'\nassert total([('1.005', 'A')]) == '1.01'\n\n\n### Failing Test Output (failures: 1)\n### test_rates.py\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-u20mkqv2\\workspace\\test_rates.py\", line 2, in <module>\n    assert total([('2', 'B')]) == '2.50'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n### test_rounding.py\n\n"
+      }
+    ],
+    "max_tokens": 700,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

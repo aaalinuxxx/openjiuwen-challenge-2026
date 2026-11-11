@@ -1,0 +1,75 @@
+{
+  "experiment": "E57/E58",
+  "status": "COMPLETED",
+  "frozen_commit": "9ca1b5e",
+  "report": "experiments/E58_multimodule_live_20261111T170751837729/report.json",
+  "scope": "Six authored targeted cases; four explicit targets, one solvable paraphrase and one ambiguous-target boundary control. Not independent representative holdout. Current implementation only, no old-arm advantage estimate.",
+  "metrics": {
+    "planned": 6,
+    "attempted": 6,
+    "explicit_solved": 4,
+    "explicit_total": 4,
+    "solvable_solved": 4,
+    "solvable_total": 5,
+    "wrong_deliveries": 0,
+    "boundary_controls_passed": 1,
+    "calls": 4
+  },
+  "real_api_calls": 4,
+  "known_effective_tokens": 326.8,
+  "new_unaccounted_requests": 0,
+  "verified_responses": [
+    {
+      "task": "boundary",
+      "response": "response_01.json",
+      "prompt_tokens": 301,
+      "completion_tokens": 25,
+      "sha256": "0f4c00d4b5bfbb22605638f56196fa892d78f6f483edae4e0d6d09222c9396d3"
+    },
+    {
+      "task": "units",
+      "response": "response_02.json",
+      "prompt_tokens": 362,
+      "completion_tokens": 36,
+      "sha256": "ea79d482e722306ddc63163d47783612de9bf079d59c9ba32a408ede436c83ac"
+    },
+    {
+      "task": "normalization",
+      "response": "response_03.json",
+      "prompt_tokens": 315,
+      "completion_tokens": 48,
+      "sha256": "3904aff6213d5757b03bd5cee005866f93c8d4ec756efa9a084209e1bad56cf9"
+    },
+    {
+      "task": "two_test_files",
+      "response": "response_04.json",
+      "prompt_tokens": 430,
+      "completion_tokens": 77,
+      "sha256": "c2d428f1c8183389c2e8e08aa59caebde4303da4558687924c4d1d3d962d602f"
+    }
+  ],
+  "integer_tenths_cost": 3268,
+  "prior_ledgers_unchanged": {
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+    "experiments/E50_search_live_20261111T155649239479/budget.json": true
+  },
+  "hypotheses": {
+    "H05.4": "SUPPORTED on four authored explicit-target real API cases",
+    "H05.5": "PROPOSED: support clear paraphrases without selecting forbidden or ambiguous files"
+  },
+  "production_changed": false,
+  "validation": {
+    "oracle_cases": 6,
+    "preflight": "experiments/E58_multimodule_preflight_20261111T170651561506/report.json",
+    "real_patches_rechecked": 4,
+    "full_unit_suite_rerun": false,
+    "previous_unit_suite": "experiments/E55_tests.json"
+  },
+  "limitations": [
+    "Targeted authored pilot, not independent holdout",
+    "One writable module; not simultaneous multiple-file patching",
+    "No paired old implementation; no measured improvement claim",
+    "4/5 solvable because paraphrase is unsupported; ambiguous control is not a solved task",
+    "Historical challenge remains 9/19"
+  ]
+}

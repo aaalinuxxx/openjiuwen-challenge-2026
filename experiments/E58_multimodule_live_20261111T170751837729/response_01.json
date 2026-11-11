@@ -1,0 +1,35 @@
+{
+  "task_id": "boundary",
+  "response": {
+    "id": "chatcmpl-9f658d7b5f3bf32a",
+    "created": 1794416877,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "from a_settings import threshold\n\ndef keep(values):\n    return [x for x in values if x >= threshold()]",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 25,
+      "prompt_tokens": 301,
+      "total_tokens": 326,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

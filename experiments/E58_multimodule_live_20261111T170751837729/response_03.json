@@ -1,0 +1,35 @@
+{
+  "task_id": "normalization",
+  "response": {
+    "id": "chatcmpl-9bd2b2807570e3d8",
+    "created": 1794416879,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "from a_normalize import normalize\n\ndef lookup(mapping, query):\n    normalized_query = normalize(query)\n    for key in mapping:\n        if normalize(key) == normalized_query:\n            return mapping[key]\n    return None",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 48,
+      "prompt_tokens": 315,
+      "total_tokens": 363,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

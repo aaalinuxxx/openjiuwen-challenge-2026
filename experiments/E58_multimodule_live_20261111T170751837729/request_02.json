@@ -1,0 +1,19 @@
+{
+  "task_id": "units",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return complete corrected Python code only, without comments or Markdown. Preserve signatures and satisfy the task constraints and all tests. Never modify tests. Use UNSOLVABLE only for provably contradictory requirements. The harness runs tests and writes DONE; do not perform these delivery steps in the returned code."
+      },
+      {
+        "role": "user",
+        "content": "### Task constraints\nRepair z_convert.py. convert(value, source, target) converts a length using the METRES_PER_UNIT mapping from a_units.py: value * METRES_PER_UNIT[source] / METRES_PER_UNIT[target]. Do not modify a_units.py or tests.\n\n### Target File: z_convert.py\nfrom a_units import METRES_PER_UNIT\n\ndef convert(value, source, target):\n    return value * METRES_PER_UNIT[target] / METRES_PER_UNIT[source]\n\n\n### Read-only module: a_units.py\nMETRES_PER_UNIT = {'m': 1.0, 'cm': 0.01, 'km': 1000.0}\n\n\n### test_convert.py\nfrom z_convert import convert\nassert convert(300, 'cm', 'm') == 3\nassert convert(2, 'km', 'm') == 2000\n\n\n### Failing Test Output (failures: 1)\n### test_convert.py\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-9c4d2zun\\workspace\\test_convert.py\", line 2, in <module>\n    assert convert(300, 'cm', 'm') == 3\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      }
+    ],
+    "max_tokens": 700,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

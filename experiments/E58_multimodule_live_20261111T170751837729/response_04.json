@@ -1,0 +1,35 @@
+{
+  "task_id": "two_test_files",
+  "response": {
+    "id": "chatcmpl-bb41d04c569089a2",
+    "created": 1794416881,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nfrom decimal import Decimal, ROUND_HALF_UP\nfrom a_rates import RATES\n\ndef total(rows):\n    value = sum((Decimal(str(amount)) * RATES[currency] for amount, currency in rows), Decimal('0'))\n    return format(value.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP), 'f')\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 77,
+      "prompt_tokens": 430,
+      "total_tokens": 507,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
