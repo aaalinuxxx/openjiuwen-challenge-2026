@@ -1,0 +1,47 @@
+{
+  "case": "previous_local_control",
+  "arm": "new",
+  "selected_route": "local",
+  "expected_scope_route": "local",
+  "order_in_pair": 1,
+  "expected": "17",
+  "status": "SOLVED",
+  "answer": "17",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "stocks.csv": "6541ca23723378fd58846c9cb4f8573f4c43e0344e4a11d042ba6aacfda7f667",
+    "zones.csv": "26320083027d556271730cda22dcf5d93efc271d3daeee478b0368818dd3f4bb"
+  },
+  "calls": 0,
+  "stages": [],
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "previous_local_control__new",
+    "status": "SOLVED",
+    "answer": "17",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.0,
+    "model_used": "",
+    "notes": "Executed complete bounded grammar locally; no model translation"
+  },
+  "workflow": {
+    "task_id": "previous_local_control__new",
+    "workflow_id": "task_992c9e3b0d744da2a1162fe6a634a1e3",
+    "session_id": "6d2eef5c4bb542ad885a2c28f4eccbf0",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

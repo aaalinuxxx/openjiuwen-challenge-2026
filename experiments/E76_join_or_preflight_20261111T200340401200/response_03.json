@@ -1,0 +1,17 @@
+{
+  "task_id": "empty_filter_not_unmatched__old",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('13')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

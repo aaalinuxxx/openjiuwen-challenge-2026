@@ -1,0 +1,42 @@
+{
+  "hypothesis": "H04.14",
+  "scope": "Seven adaptive authored pairs; five OR routes change Python to local execution. One exact E72/E74 failure and new targeted controls, not blind language holdout.",
+  "budget": 3500,
+  "max_calls": 7,
+  "per_task_budget": 800,
+  "expected_requests": 7,
+  "model": "qwen3.6-35b-a3b-noreason",
+  "max_output": 400,
+  "temperature": 0,
+  "production_enabled": false,
+  "prior_unknown_ledgers": [
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "experiments/E50_search_live_20261111T155649239479/budget.json"
+  ],
+  "frozen_hashes": {
+    "harness/agents/join_cascade.py": "7fad01e01d562e6837a8252bbb9352e8b599946fe423e13c14e8b66bac8f73d0",
+    "harness/agents/join_plans.py": "cd737ee0abc60fd27d5ca45a270a04d2f6e787bd295a7a88d2f78c8a32904ec9",
+    "harness/agents/multi_csv.py": "e716c619347995009c0bfe27bd957bda634d4bb306468f86c76e2375d5844578",
+    "harness/agents/data_solver.py": "75a1be71ed7223230526ddce6edce3e05822c54b7b19dae0fd01aa0fc862d556",
+    "harness/agents/calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+    "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "harness/sandbox/executor.py": "a36c7d6abca6a3702d4d9861e157e5bd0b1830d33fdc05c3b2db9b55e055478e",
+    "scripts/multimodule_live.py": "70a6737a2b3887d418e441aaaae373fe8368b961a88179680907b48ec8b67527",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d",
+    "harness/agents/join_scope.py": "b344c31ab06481ff59fd0f907c74a3215ebe1ae2f29fe39d913ed762f2b5640a",
+    "harness/agents/join_scope_v2.py": "e3c2329de3a4e7357c73f398d5ca1379caafb8add2cd3f4a927f9715cad0dc98",
+    "harness/agents/local_join.py": "5052871743da61203dd27bfd3fdc59a2711e1bfc3c3501ba3f425543ba3326f9",
+    "harness/agents/join_or.py": "e6c3644b76aa252f07e3dfe18671c4eb6ef12c3c9213413fbd67b608fb1d63cf",
+    "scripts/join_or_live.py": "2d5b40de560964712582aa76ad71ad668c3c03312baf0cc6b01de9cd9ae78c13",
+    "tests/test_join_or.py": "69e6a8e701471484f2652b8d6c1dff48d0dfb64626ca45bf2c8f070e3a61c96c",
+    "experiments/E75_join_or/cases.json": "4ce6bed2cf69b2b18bd68b9f404038556cb642f5c43684f17ec29889b0006c9e",
+    "experiments/E75_join_or/oracle_validation.json": "7ec277aa04b8345cc8dbf4e129aed55570b199ec4ba94f11a737205c1c6ed46e",
+    "experiments/E75_join_or/routing_validation.json": "63e4008b16fcc62eaf8078d09ab1cb7618cf7b909243ecab678e009475672090",
+    "experiments/E75_join_or/design.md": "dc555703add06bb5b5fd932a1624facadbe0cc324240603333d769b67985dbb3"
+  }
+}

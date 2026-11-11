@@ -1,0 +1,17 @@
+{
+  "task_id": "string_keys_and_blocked__old",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('10')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "api_calls": 0,
+  "passed": true,
+  "rows": [
+    {
+      "case": "known_or_failure",
+      "routes": {
+        "old": "python",
+        "new": "local_or"
+      },
+      "parsed_answer": "30"
+    },
+    {
+      "case": "mixed_duplicates",
+      "routes": {
+        "old": "python",
+        "new": "local_or"
+      },
+      "parsed_answer": "32"
+    },
+    {
+      "case": "empty_filter_not_unmatched",
+      "routes": {
+        "old": "python",
+        "new": "local_or"
+      },
+      "parsed_answer": "13"
+    },
+    {
+      "case": "empty_right",
+      "routes": {
+        "old": "python",
+        "new": "local_or"
+      },
+      "parsed_answer": "10"
+    },
+    {
+      "case": "string_keys_and_blocked",
+      "routes": {
+        "old": "python",
+        "new": "local_or"
+      },
+      "parsed_answer": "10"
+    },
+    {
+      "case": "extra_numeric_control",
+      "routes": {
+        "old": "python",
+        "new": "python"
+      },
+      "parsed_answer": null
+    },
+    {
+      "case": "previous_local_control",
+      "routes": {
+        "old": "local",
+        "new": "local"
+      },
+      "parsed_answer": "17"
+    }
+  ]
+}
