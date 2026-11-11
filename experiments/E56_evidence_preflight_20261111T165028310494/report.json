@@ -1,0 +1,743 @@
+{
+  "mode": "PREFLIGHT_SYNTHETIC",
+  "status": "COMPLETED",
+  "scope": "Six new authored targeted cases using known mechanisms; not independent representative holdout",
+  "plan_sha256": "68989fd47ae6c489b23c8851a1c1e72be9cd3615f1c2bc9530ba15f5ef5d53a6",
+  "rows": [
+    {
+      "case": "needed_conflict",
+      "arm": "plain",
+      "order_in_pair": 0,
+      "task_budget": 900,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": true,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "needed_conflict__plain",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0159999999741558,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: complete"
+      },
+      "workflow": {
+        "task_id": "needed_conflict__plain",
+        "workflow_id": "task_756091b644ee46248c6ab99fc75f0d8a",
+        "session_id": "00b4a444e18149c68dff90a399600f41",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "needed_conflict",
+      "arm": "evidence",
+      "order_in_pair": 1,
+      "task_budget": 900,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": true,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "needed_conflict__evidence",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.046999999991385266,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Invalid JSON response"
+      },
+      "workflow": {
+        "task_id": "needed_conflict__evidence",
+        "workflow_id": "task_c4eabd62f2874104b00a2cf378502714",
+        "session_id": "267473095c8342319dfca3b25ae73e05",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "unrelated_conflict",
+      "arm": "evidence",
+      "order_in_pair": 0,
+      "task_budget": 900,
+      "expected": "Graz",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "unrelated_conflict__evidence",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Invalid JSON response"
+      },
+      "workflow": {
+        "task_id": "unrelated_conflict__evidence",
+        "workflow_id": "task_71060a74f69146418555c1aa923856b5",
+        "session_id": "3b1c050842a94610bfd0e2b2b82340c4",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "unrelated_conflict",
+      "arm": "plain",
+      "order_in_pair": 1,
+      "task_budget": 900,
+      "expected": "Graz",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "unrelated_conflict__plain",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.030999999988125637,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: complete"
+      },
+      "workflow": {
+        "task_id": "unrelated_conflict__plain",
+        "workflow_id": "task_a49bb512912f4854836d82a280490a1e",
+        "session_id": "81dd9e48f03b405b8c9686cdcd247485",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "clear_chain",
+      "arm": "plain",
+      "order_in_pair": 0,
+      "task_budget": 900,
+      "expected": "Vilnius",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "clear_chain__plain",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.015000000013969839,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: complete"
+      },
+      "workflow": {
+        "task_id": "clear_chain__plain",
+        "workflow_id": "task_b53ec77e886c473bbc0f8db4a464d6bb",
+        "session_id": "cef33b4e8efb478db4bdf124bacf1a4a",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "clear_chain",
+      "arm": "evidence",
+      "order_in_pair": 1,
+      "task_budget": 900,
+      "expected": "Vilnius",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "clear_chain__evidence",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Invalid JSON response"
+      },
+      "workflow": {
+        "task_id": "clear_chain__evidence",
+        "workflow_id": "task_4715dc47f8bd4e3cb86b2d115bef7e57",
+        "session_id": "fa114c59d6b2400eb6f1784f31900e40",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "literal_marker",
+      "arm": "evidence",
+      "order_in_pair": 0,
+      "task_budget": 900,
+      "expected": "CONFLICT",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "literal_marker__evidence",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Invalid JSON response"
+      },
+      "workflow": {
+        "task_id": "literal_marker__evidence",
+        "workflow_id": "task_a36e6135025e4a5e8ed0c6e97e979d47",
+        "session_id": "f76e9e86fabc4319ba16c1d4e2b0c5d7",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "literal_marker",
+      "arm": "plain",
+      "order_in_pair": 1,
+      "task_budget": 900,
+      "expected": "CONFLICT",
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": false,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "literal_marker__plain",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0159999999741558,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: complete"
+      },
+      "workflow": {
+        "task_id": "literal_marker__plain",
+        "workflow_id": "task_7521789f87494323961896860ce02ec0",
+        "session_id": "694b3fb493b84511a33a5daccf4f98ad",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "missing_field",
+      "arm": "plain",
+      "order_in_pair": 0,
+      "task_budget": 900,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": true,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "missing_field__plain",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: complete"
+      },
+      "workflow": {
+        "task_id": "missing_field__plain",
+        "workflow_id": "task_bf1018b7a1ff45f0b5eacfa07dde9c71",
+        "session_id": "cfb03f9935d44dfd86d690c3063de302",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "missing_field",
+      "arm": "evidence",
+      "order_in_pair": 1,
+      "task_budget": 900,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": true,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "missing_field__evidence",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Invalid JSON response"
+      },
+      "workflow": {
+        "task_id": "missing_field__evidence",
+        "workflow_id": "task_88acea07e8794348b92ee762e31e71ec",
+        "session_id": "001d5a1ab54f475aa39acde4af0d3f13",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "conflicting_link",
+      "arm": "evidence",
+      "order_in_pair": 0,
+      "task_budget": 900,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": true,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "conflicting_link__evidence",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.01600000000325963,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Invalid JSON response"
+      },
+      "workflow": {
+        "task_id": "conflicting_link__evidence",
+        "workflow_id": "task_a0c2f6c4f64d420dbf376101ac749300",
+        "session_id": "f802228d91584a9d8084b1249e0be582",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "conflicting_link",
+      "arm": "plain",
+      "order_in_pair": 1,
+      "task_budget": 900,
+      "expected": null,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "conservative_abstention": true,
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "conflicting_link__plain",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.030999999988125637,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: complete"
+      },
+      "workflow": {
+        "task_id": "conflicting_link__plain",
+        "workflow_id": "task_6981a596c20044c78cc1decd219ef977",
+        "session_id": "c7349b43e2914469b26c88ee9146e092",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    }
+  ],
+  "recording_errors": [],
+  "source_hashes": {
+    "harness/agents/search_solver.py": "d4e1081fda959a2b4e992edf0c5bd8773455301c2b82bb437eb648816f3a9293",
+    "harness/agents/search_evidence.py": "5df03c11d29c08406423ec1a8cee05933122361803e3926dc30e9c0d8557d0cb",
+    "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/search_evidence_live.py": "c2589fc1e9ac82087cb477425f4ccecbe3f2eaa33a8a9e78cc1f0f534c01d133",
+    "experiments/E55_evidence/cases.json": "ffc48bd305939fda99211c9fd0c758044f67bb9a5669eb58d89b51e66bee77d2",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d"
+  },
+  "budget": {
+    "budget": 2500,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "needed_conflict__plain",
+        "status": "ACCOUNTED",
+        "reserved_units": 1800,
+        "task_limit_units": 9000,
+        "input_token_estimate": 1480,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 1,
+        "task_id": "needed_conflict__evidence",
+        "status": "ACCOUNTED",
+        "reserved_units": 3914,
+        "task_limit_units": 9000,
+        "input_token_estimate": 1994,
+        "output_cap": 192,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 2,
+        "task_id": "unrelated_conflict__evidence",
+        "status": "ACCOUNTED",
+        "reserved_units": 3925,
+        "task_limit_units": 9000,
+        "input_token_estimate": 2005,
+        "output_cap": 192,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 3,
+        "task_id": "unrelated_conflict__plain",
+        "status": "ACCOUNTED",
+        "reserved_units": 1811,
+        "task_limit_units": 9000,
+        "input_token_estimate": 1491,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 4,
+        "task_id": "clear_chain__plain",
+        "status": "ACCOUNTED",
+        "reserved_units": 1834,
+        "task_limit_units": 9000,
+        "input_token_estimate": 1514,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 5,
+        "task_id": "clear_chain__evidence",
+        "status": "ACCOUNTED",
+        "reserved_units": 3948,
+        "task_limit_units": 9000,
+        "input_token_estimate": 2028,
+        "output_cap": 192,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 6,
+        "task_id": "literal_marker__evidence",
+        "status": "ACCOUNTED",
+        "reserved_units": 3810,
+        "task_limit_units": 9000,
+        "input_token_estimate": 1890,
+        "output_cap": 192,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 7,
+        "task_id": "literal_marker__plain",
+        "status": "ACCOUNTED",
+        "reserved_units": 1696,
+        "task_limit_units": 9000,
+        "input_token_estimate": 1376,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 8,
+        "task_id": "missing_field__plain",
+        "status": "ACCOUNTED",
+        "reserved_units": 1710,
+        "task_limit_units": 9000,
+        "input_token_estimate": 1390,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 9,
+        "task_id": "missing_field__evidence",
+        "status": "ACCOUNTED",
+        "reserved_units": 3824,
+        "task_limit_units": 9000,
+        "input_token_estimate": 1904,
+        "output_cap": 192,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 10,
+        "task_id": "conflicting_link__evidence",
+        "status": "ACCOUNTED",
+        "reserved_units": 4022,
+        "task_limit_units": 9000,
+        "input_token_estimate": 2102,
+        "output_cap": 192,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 11,
+        "task_id": "conflicting_link__plain",
+        "status": "ACCOUNTED",
+        "reserved_units": 1908,
+        "task_limit_units": 9000,
+        "input_token_estimate": 1588,
+        "output_cap": 32,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      }
+    ]
+  },
+  "real_api_attempts": 0,
+  "known_effective_tokens": 0,
+  "metrics": {
+    "planned_pairs": 6,
+    "complete_pairs": 6,
+    "arms": {
+      "plain": {
+        "attempted": 6,
+        "solved": 0,
+        "justified_refusals": 0,
+        "correct": 0,
+        "wrong_answers": 0,
+        "conservative_abstentions": 3,
+        "false_refusals": 0,
+        "calls": 6,
+        "known_effective_tokens": 0.0
+      },
+      "evidence": {
+        "attempted": 6,
+        "solved": 0,
+        "justified_refusals": 0,
+        "correct": 0,
+        "wrong_answers": 0,
+        "conservative_abstentions": 3,
+        "false_refusals": 0,
+        "calls": 6,
+        "known_effective_tokens": 0.0
+      }
+    },
+    "paired_submitted_ids": [
+      "needed_conflict",
+      "unrelated_conflict",
+      "clear_chain",
+      "literal_marker",
+      "missing_field",
+      "conflicting_link"
+    ],
+    "paired_submitted": {
+      "plain": {
+        "attempted": 6,
+        "solved": 0,
+        "justified_refusals": 0,
+        "correct": 0,
+        "wrong_answers": 0,
+        "conservative_abstentions": 3,
+        "false_refusals": 0,
+        "calls": 6,
+        "known_effective_tokens": 0.0
+      },
+      "evidence": {
+        "attempted": 6,
+        "solved": 0,
+        "justified_refusals": 0,
+        "correct": 0,
+        "wrong_answers": 0,
+        "conservative_abstentions": 3,
+        "false_refusals": 0,
+        "calls": 6,
+        "known_effective_tokens": 0.0
+      }
+    }
+  },
+  "prior_ledgers_unchanged": true,
+  "preflight_passed": true
+}

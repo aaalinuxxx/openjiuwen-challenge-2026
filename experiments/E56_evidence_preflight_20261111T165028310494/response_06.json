@@ -1,0 +1,17 @@
+{
+  "task_id": "clear_chain__evidence",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "UNKNOWN"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

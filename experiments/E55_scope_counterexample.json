@@ -1,0 +1,64 @@
+{
+  "scope": "Adversarial local scope probe; no API",
+  "api_calls": 0,
+  "question": "Give the headquarters city of the mentor of the employer of Robin.",
+  "entities": {
+    "Robin": {
+      "mentor": "Alex",
+      "employer": "Birch"
+    },
+    "Alex": {
+      "employer": "Cedar"
+    },
+    "Birch": {
+      "mentor": "Dara"
+    },
+    "Cedar": {
+      "headquarters": "Turku"
+    },
+    "Dara": {
+      "headquarters": "Split"
+    }
+  },
+  "model_proposal": {
+    "status": "SOLVED",
+    "answer": "Turku",
+    "evidence": [
+      [
+        "Robin",
+        "mentor"
+      ],
+      [
+        "Alex",
+        "employer"
+      ],
+      [
+        "Cedar",
+        "headquarters"
+      ]
+    ]
+  },
+  "correct_answer": "Split",
+  "correct_path": [
+    [
+      "Robin",
+      "employer"
+    ],
+    [
+      "Birch",
+      "mentor"
+    ],
+    [
+      "Dara",
+      "headquarters"
+    ]
+  ],
+  "validator_result": {
+    "status": "SOLVED",
+    "answer": "Turku",
+    "notes": "Checked field path: [{\"entity\": \"Robin\", \"field\": \"mentor\", \"value\": \"Alex\", \"sources\": []}, {\"entity\": \"Alex\", \"field\": \"employer\", \"value\": \"Cedar\", \"sources\": []}, {\"entity\": \"Cedar\", \"field\": \"headquarters\", \"value\": \"Turku\", \"sources\": []}]"
+  },
+  "semantic_check_passed": false,
+  "conclusion": "Existing connected facts and relation counts do not prove relationship order in the question",
+  "blocks_general_semantic_validation_claim": true
+}

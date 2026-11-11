@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-11-11",
+  "hypotheses": [
+    "H03.6 fresh live validation of final conflict guard",
+    "H03.7 structured status/answer/field evidence"
+  ],
+  "baseline_commit": "a6d4822c6170d1ac01aa0b3f3d5af72daf768100",
+  "scope": "Six new authored targeted cases using known mechanisms; not independent representative holdout",
+  "budget": 2500,
+  "max_calls": 12,
+  "per_task_budget": 900,
+  "model": "qwen3.6-35b-a3b-noreason",
+  "temperature": 0,
+  "baseline_output_cap": 32,
+  "candidate_output_cap": 192,
+  "ordering": "plain/evidence alternated by case; sequential; no retries",
+  "acceptance": "Compare incorrect submitted answers, solved positives, false refusals, justified refusals and conservative abstentions separately. Require no loss on positives; include extra output tokens and rejected requests in costs.",
+  "validator": "Exact existing KB entity/field pointers; unique anchored root, connected evidence path; exact terminal answer and conflicts. Limited question-field/relationship checks; not full natural-language semantic validation.",
+  "production": "Candidate experimental; current plain solver unchanged during comparison",
+  "prior_unknown_ledgers": [
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "experiments/E50_search_live_20261111T155649239479/budget.json"
+  ]
+}

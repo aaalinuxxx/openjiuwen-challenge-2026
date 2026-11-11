@@ -1,0 +1,19 @@
+{
+  "task_id": "needed_conflict__evidence",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use only the supplied KB. Return one JSON object, no markdown, with exactly keys \"status\",\"answer\",\"evidence\". status is SOLVED, UNKNOWN, or UNSOLVABLE. answer is the exact requested value for SOLVED, otherwise null. evidence is an ordered path of [entity,field] pointers starting at the entity in the question, following relations and ending at the requested field. Use exact entity names and lowercase fields. For missing or contradictory facts, include the path up to that field and refuse; never choose one conflicting alternative. Ignore conflicts in unrelated fields. Use UNSOLVABLE only if the supplied complete KB proves the requested value missing or contradictory; otherwise use UNKNOWN. A literal value CONFLICT may be a valid answer."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: complete\nKB Records:\n# Kira Sol\nSources: a.md\nemployer: Aster Works\n\n# Aster Works\nSources: b.md, c.md\nheadquarters: CONFLICT [Leuven | Valencia]\n\nQuestion: Give the headquarters city of the employer of Kira Sol."
+      }
+    ],
+    "max_tokens": 192,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_SYNTHETIC"
+}

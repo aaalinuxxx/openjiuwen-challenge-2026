@@ -1,0 +1,19 @@
+{
+  "task_id": "unrelated_conflict__plain",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: complete\nKB Records:\n# Daria Holt\nSources: a.md, b.md\nborn: CONFLICT [1985 | 1986]\nemployer: Blue Willow\n\n# Blue Willow\nSources: c.md\nheadquarters: Graz\n\nQuestion: Report the headquarters city of the employer of Daria Holt."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_SYNTHETIC"
+}

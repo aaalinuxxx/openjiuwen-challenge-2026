@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-11-11T16:50:27.701Z",
+  "hypotheses": [
+    "H03.6 fresh live validation of final conflict guard",
+    "H03.7 structured status/answer/field evidence"
+  ],
+  "baseline_commit": "a6d4822c6170d1ac01aa0b3f3d5af72daf768100",
+  "scope": "Six new authored targeted cases using known mechanisms; not independent representative holdout",
+  "budget": 2500,
+  "max_calls": 12,
+  "per_task_budget": 900,
+  "model": "qwen3.6-35b-a3b-noreason",
+  "temperature": 0,
+  "baseline_output_cap": 32,
+  "candidate_output_cap": 192,
+  "ordering": "plain/evidence alternated by case; sequential; no retries",
+  "acceptance": "Compare incorrect submitted answers, solved positives, false refusals, justified refusals and conservative abstentions separately. Require no loss on positives; include extra output tokens and rejected requests in costs.",
+  "validator": "Exact existing KB entity/field pointers; unique anchored root, connected evidence path; exact terminal answer and conflicts. Limited question-field/relationship checks; not full natural-language semantic validation.",
+  "production": "Candidate experimental; current plain solver unchanged during comparison",
+  "prior_unknown_ledgers": [
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "experiments/E50_search_live_20261111T155649239479/budget.json"
+  ],
+  "frozen_hashes": {
+    "harness/agents/search_solver.py": "d4e1081fda959a2b4e992edf0c5bd8773455301c2b82bb437eb648816f3a9293",
+    "harness/agents/search_evidence.py": "5df03c11d29c08406423ec1a8cee05933122361803e3926dc30e9c0d8557d0cb",
+    "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/search_evidence_live.py": "c2589fc1e9ac82087cb477425f4ccecbe3f2eaa33a8a9e78cc1f0f534c01d133",
+    "experiments/E55_evidence/cases.json": "ffc48bd305939fda99211c9fd0c758044f67bb9a5669eb58d89b51e66bee77d2",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d"
+  },
+  "known_scope_counterexample": "experiments/E55_scope_counterexample.json",
+  "production_gate": "Not eligible for production/general semantic proof: relation-order counterexample fails before live"
+}

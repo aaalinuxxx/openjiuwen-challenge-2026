@@ -1,0 +1,72 @@
+[
+  {
+    "id": "needed_conflict",
+    "question": "Give the headquarters city of the employer of Kira Sol.",
+    "expected": null,
+    "unsolvable": true,
+    "reason": "Aster Works has two conflicting headquarters",
+    "files": {
+      "kb/a.md": "# Kira Sol\nEmployer: Aster Works\n",
+      "kb/b.md": "# Aster Works\nHeadquarters: Valencia\n",
+      "kb/c.md": "# Aster Works\nHeadquarters: Leuven\n"
+    }
+  },
+  {
+    "id": "unrelated_conflict",
+    "question": "Report the headquarters city of the employer of Daria Holt.",
+    "expected": "Graz",
+    "unsolvable": false,
+    "reason": "Born conflict is irrelevant; employer and headquarters are unique",
+    "files": {
+      "kb/a.md": "# Daria Holt\nBorn: 1985\nEmployer: Blue Willow\n",
+      "kb/b.md": "# Daria Holt\nBorn: 1986\nEmployer: Blue Willow\n",
+      "kb/c.md": "# Blue Willow\nHeadquarters: Graz\n"
+    }
+  },
+  {
+    "id": "clear_chain",
+    "question": "Give the headquarters city of the employer of the mentor of Felix Orr.",
+    "expected": "Vilnius",
+    "unsolvable": false,
+    "reason": "Felix -> Sara -> Maple Glass -> Vilnius",
+    "files": {
+      "kb/a.md": "# Felix Orr\nMentor: Sara Glen\n",
+      "kb/b.md": "# Sara Glen\nEmployer: Maple Glass\n",
+      "kb/c.md": "# Maple Glass\nHeadquarters: Vilnius\n"
+    }
+  },
+  {
+    "id": "literal_marker",
+    "question": "Give the title of Archive Book.",
+    "expected": "CONFLICT",
+    "unsolvable": false,
+    "reason": "CONFLICT is the literal title, not a refusal",
+    "files": {
+      "kb/a.md": "# Archive Book\nTitle: CONFLICT\n"
+    }
+  },
+  {
+    "id": "missing_field",
+    "question": "Report the headquarters city of Meadow Studio.",
+    "expected": null,
+    "unsolvable": true,
+    "reason": "Closed KB contains only founded; headquarters missing",
+    "files": {
+      "kb/a.md": "# Meadow Studio\nFounded: 2012\n"
+    }
+  },
+  {
+    "id": "conflicting_link",
+    "question": "Give the headquarters city of the employer of the mentor of Iris Pike.",
+    "expected": null,
+    "unsolvable": true,
+    "reason": "Mentor has two employers with different headquarters",
+    "files": {
+      "kb/a.md": "# Iris Pike\nMentor: Leon Vale\n",
+      "kb/b.md": "# Leon Vale\nEmployer: Red Maple\n",
+      "kb/c.md": "# Leon Vale\nEmployer: Stone Birch\n",
+      "kb/d.md": "# Red Maple\nHeadquarters: Split\n",
+      "kb/e.md": "# Stone Birch\nHeadquarters: Braga\n"
+    }
+  }
+]
