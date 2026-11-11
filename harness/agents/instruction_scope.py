@@ -12,6 +12,7 @@ SALES_PREFIX = re.compile(
     r'\(\d+ rows\)\.', re.I)
 
 ADMINISTRATIVE = (
+    'When you are done, write ONLY the final answer to the file answer.txt in the current directory',
     'Write ONLY the answer to answer.txt',
     'Write ONLY the final answer to answer.txt',
     'Use bash with python3 to compute it',

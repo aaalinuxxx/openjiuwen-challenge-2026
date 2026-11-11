@@ -91,6 +91,8 @@ async def _repair(ctx: TaskContext, bridge, sandbox_dir: Path, test_files, targe
     best_code = original_code
     min_failures = initial_failures
     current_code = original_code
+    best_test_out = test_out
+    retry_feedback = ""
 
     test_code = '\n\n'.join(f"### {p.name}\n{p.read_text(encoding='utf-8', errors='replace')}"
                             for p in test_files)
@@ -102,19 +104,18 @@ async def _repair(ctx: TaskContext, bridge, sandbox_dir: Path, test_files, targe
         models_to_try.append(fb)
 
     sys_prompt = (
-        "You are an expert Python developer. Fix the bug(s) in the target module so that all unit tests pass.\n"
-        "Rules:\n"
-        "1. Do NOT modify or rename functions that already work. Only fix the failing logic.\n"
-        "2. Keep the exact same function signatures and imports.\n"
-        "3. If unit tests are contradictory and impossible to satisfy simultaneously, output ONLY the word UNSOLVABLE.\n"
-        "4. Otherwise, output ONLY the complete corrected Python code without markdown code fences or explanations."
+        "Return complete corrected Python code only, without comments or Markdown. "
+        "Preserve signatures and satisfy the task constraints and all tests. Never modify tests. "
+        "Use UNSOLVABLE only for provably contradictory requirements. "
+        "The harness runs tests and writes DONE; do not perform these delivery steps in the returned code."
     )
 
     for attempt, model in enumerate(models_to_try, 1):
         user_prompt = (
+            f"### Task constraints\n{ctx.instruction}\n\n"
             f"### Target File: {target_file.name}\n{current_code}\n\n"
             f"{test_code}\n\n"
-            f"### Failing Test Output (failures: {min_failures})\n{test_out}"
+            f"### Failing Test Output (failures: {min_failures})\n{test_out}\n{retry_feedback}"
         )
         resp, in_tok, out_tok, r_tok = await bridge.complete(
             model=model, system_prompt=sys_prompt, user_prompt=user_prompt, max_tokens=700
@@ -139,7 +140,8 @@ async def _repair(ctx: TaskContext, bridge, sandbox_dir: Path, test_files, targe
         # Быстрая валидация синтаксиса в памяти
         try:
             ast.parse(patched_code)
-        except SyntaxError:
+        except SyntaxError as exc:
+            retry_feedback = f"Previous candidate was invalid Python ({exc.msg}, line {exc.lineno}); it was discarded."
             continue
 
         (sandbox_dir / target_file.name).write_text(patched_code + "\n", encoding="utf-8")
@@ -158,16 +160,17 @@ async def _repair(ctx: TaskContext, bridge, sandbox_dir: Path, test_files, targe
                 model_used=model,
             )
 
-        # Обновляем контекст для следующего запроса модели (чтобы она видела свой упавший патч и новый трейсбек)
-        current_code = patched_code
-        test_out = new_test_out
-
-        # Анти-регрессионный контроль в файловой системе песочницы:
-        if new_failures < min_failures:
+        # Continue from the best candidate with its matching traceback.
+        if new_failures <= min_failures:
             min_failures = new_failures
             best_code = patched_code
+            best_test_out = new_test_out
+            retry_feedback = ""
         else:
-            (sandbox_dir / target_file.name).write_text(best_code + "\n", encoding="utf-8")
+            retry_feedback = f"Previous candidate increased failures to {new_failures}; it was discarded."
+        current_code = best_code
+        test_out = best_test_out
+        (sandbox_dir / target_file.name).write_text(best_code + "\n", encoding="utf-8")
 
     return SolveResult(
         task_id=ctx.task_id,

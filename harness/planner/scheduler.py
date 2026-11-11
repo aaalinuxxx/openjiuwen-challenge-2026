@@ -1,4 +1,5 @@
 """Планировщик очереди задач по ROI = (reward * P_solvable) / E[tokens]."""
+from dataclasses import asdict
 import asyncio
 import logging
 from pathlib import Path
@@ -19,10 +20,12 @@ class TaskScheduler:
         if type(config.max_concurrency) is not int or not 1 <= config.max_concurrency <= 5:
             raise ValueError('max_concurrency must be an integer from 1 to 5')
         self.config = config
+        self.results = {}
+        self.skipped_tasks = {}
         self.estimator = TokenCostEstimator(
             weights_dir=Path(__file__).resolve().parent.parent / "models_weights"
         )
-        self.budget_tracker = BudgetTracker(max_budget=config.initial_budget_tokens, audit_path=config.budget_audit_path)
+        self.budget_tracker = BudgetTracker(max_budget=config.initial_budget_tokens, audit_path=config.budget_audit_path, max_requests=config.max_api_calls)
         self.task_runner = task_runner(config,self.budget_tracker)
         self.semaphore = asyncio.Semaphore(config.max_concurrency)
 
@@ -38,6 +41,7 @@ class TaskScheduler:
                 instruction = str(meta.get("instruction", ""))
                 is_unsolvable, reason = check_unsolvable_zero_token(instruction, features)
                 if is_unsolvable:
+                    self.skipped_tasks[features.task_id] = reason
                     logger.info(
                         "[SKIP Zero-Token] %s (reward=%d): %s",
                         features.task_id,
@@ -74,7 +78,8 @@ class TaskScheduler:
     async def _run_single(self, item: Dict[str, Any]) -> SolveResult:
         async with self.semaphore:
             task_budget = self.budget_tracker.allocate_task_budget(
-                expected_cost=item["expected_cost"], reward=item["reward"]
+                expected_cost=item["expected_cost"], reward=item["reward"],
+                minimum=self.config.coding_min_task_budget if item["task_type"] == "coding" else 0
             )
             ctx = TaskContext(
                 task_id=item["task_id"],
@@ -89,6 +94,7 @@ class TaskScheduler:
             )
 
             res = await self.task_runner.run(ctx)
+            self.results[ctx.task_id] = asdict(res)
 
             if res.status == "SOLVED" and res.answer is not None:
                 logger.info(
@@ -137,6 +143,8 @@ class TaskScheduler:
 
         return {
             "total_tasks": len(ranked),
+            "task_results": self.results,
+            "skipped_tasks": self.skipped_tasks,
             "solved_count": solved_count,
             "estimated_score": estimated_score,
             "effective_tokens_spent": self.budget_tracker.spent_effective_tokens,

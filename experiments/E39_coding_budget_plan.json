@@ -1,0 +1,10 @@
+{
+  "hypothesis": "H05.3: coding allowance floor 800 prevents output truncation on public pilot",
+  "parent": "E38_public_sdk_live_20261111T144358316608",
+  "change": "coding task allocation = min(available global budget, max(previous allocation, 800)); other domains unchanged; no automatic retries",
+  "planned_budget": 2000,
+  "planned_calls_max": 4,
+  "criteria": "8/8 externally verified, zero truncated generations, no unaccounted requests",
+  "scope": "public dev sequential pilot; not tuning on independent holdout",
+  "created_at": "2026-11-11T14:45:04.897Z"
+}

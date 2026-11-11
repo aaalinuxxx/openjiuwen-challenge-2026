@@ -1,0 +1,22 @@
+{
+  "label": "E35_coding_recheck",
+  "api_calls": 0,
+  "scope": "scripted bridge; real unittest subprocesses; no LLM quality/cost inference",
+  "rows": [
+    {
+      "case": "feedback",
+      "status": "SOLVED",
+      "scripted_calls": 2,
+      "corrected_source_copied": true,
+      "second_prompt_matches_failed_patch": true
+    },
+    {
+      "case": "all_tests",
+      "status": "SOLVED",
+      "scripted_calls": 1,
+      "corrected_source_copied": true,
+      "all_tests_seen": true
+    }
+  ],
+  "solver_sha256": "4ad79e7f0f91d68d69c40fee920714425505ae3d3b230fc9b94ef25edb322cdc"
+}

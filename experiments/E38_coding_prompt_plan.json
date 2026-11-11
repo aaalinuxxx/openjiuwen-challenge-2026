@@ -1,0 +1,10 @@
+{
+  "hypothesis": "H05.2: include task constraints and request code without comments to reduce truncation risk",
+  "baseline": "E37_public_sdk_live_20261111T144136908418",
+  "change": "compact system prompt; explicit task instruction; no comments; corrected evaluator and saved task artifacts",
+  "scope": "sequential public/dev pilot, no independent holdout",
+  "planned_calls_max": 4,
+  "planned_budget": 2000,
+  "criteria": "tests pass unchanged, no truncation, actual usage recorded, no uncertain requests",
+  "created_at": "2026-11-11T14:43:44.956Z"
+}

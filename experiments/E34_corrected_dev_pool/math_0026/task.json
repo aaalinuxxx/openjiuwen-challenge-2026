@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0026",
+  "task_type": "math",
+  "instruction": "A warehouse starts with 2216 boxes. Then the stock is doubled by merging with a sister warehouse. It receives 2 deliveries of 28 boxes each. It ships 10 boxes per day for 3 days. It ships 29 boxes per day for 3 days. How many boxes does it have at the end? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory.",
+  "reward": 3,
+  "expected": "4371",
+  "unsolvable": false
+}

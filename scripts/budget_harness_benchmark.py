@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 import sys
 import tempfile
-from types import SimpleNamespace
+import httpx
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,7 +48,7 @@ async def run(label):
                ('bad_content',1000,1,'bad_content',1,False),
                ('unknown_cost',1000,1,'unknown_cost',2,True)]
     rows=[]
-    with patch.dict(sys.modules,{'httpx':SimpleNamespace(AsyncClient=Client)}):
+    with patch.object(httpx, 'AsyncClient', Client):
         from harness.planner.scheduler import TaskScheduler
         with tempfile.TemporaryDirectory(prefix='oj-budget-controls-') as tmp:
             for name,budget,concurrency,mode,remote_count,add_local in scenarios:

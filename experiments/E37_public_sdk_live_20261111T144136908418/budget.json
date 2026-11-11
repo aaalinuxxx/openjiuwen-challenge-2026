@@ -1,0 +1,35 @@
+{
+  "budget": 2000.0,
+  "known_effective_tokens": 365.7,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "coding_0007",
+      "status": "ACCOUNTED",
+      "reserved_units": 4775,
+      "task_limit_units": 4775,
+      "input_token_estimate": 3295,
+      "output_cap": 148,
+      "input_tokens": 613,
+      "output_tokens": 105,
+      "reasoning_tokens": 0,
+      "effective_cost": 166.3
+    },
+    {
+      "ticket": 1,
+      "task_id": "coding_0003",
+      "status": "ACCOUNTED",
+      "reserved_units": 4867,
+      "task_limit_units": 4868,
+      "input_token_estimate": 3587,
+      "output_cap": 128,
+      "input_tokens": 714,
+      "output_tokens": 128,
+      "reasoning_tokens": 0,
+      "effective_cost": 199.4
+    }
+  ]
+}

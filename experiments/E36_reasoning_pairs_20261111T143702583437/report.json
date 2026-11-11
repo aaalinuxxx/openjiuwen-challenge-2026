@@ -1,0 +1,191 @@
+{
+  "mode": "LIVE_MATCHED_PILOT",
+  "candidate_reasoning_contract": "included",
+  "contract_status": "candidate, limited evidence; not universal provider guarantee",
+  "max_calls": 4,
+  "output_cap": 128,
+  "requests": [
+    {
+      "case_id": "precedence",
+      "model": "qwen3.8-27b-noreason",
+      "question": "Solve: 2 + 2 * 2. Output ONLY the single final number.",
+      "expected": "6",
+      "output_cap": 128,
+      "status": "ACCOUNTED",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 31,
+        "total_tokens": 33,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "created_cache_tokens": 0
+        }
+      },
+      "effective_cost": 5.1,
+      "content": "6",
+      "reasoning_content": null,
+      "finish_reason": "stop",
+      "correct": true,
+      "total_equals_prompt_plus_completion": true
+    },
+    {
+      "case_id": "precedence",
+      "model": "qwen3.8-27b",
+      "question": "Solve: 2 + 2 * 2. Output ONLY the single final number.",
+      "expected": "6",
+      "output_cap": 128,
+      "status": "ACCOUNTED",
+      "usage": {
+        "completion_tokens": 58,
+        "prompt_tokens": 59,
+        "total_tokens": 117,
+        "completion_tokens_details": {
+          "reasoning_tokens": 54
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "created_cache_tokens": 0
+        }
+      },
+      "effective_cost": 63.9,
+      "content": "\n\n6",
+      "reasoning_content": "The user wants me to solve 2 + 2 * 2 following the order of operations (PEMDAS/BODMAS). Multiplication comes before addition, so 2 * 2 = 4, then 2 + 4 = 6.\n",
+      "finish_reason": "stop",
+      "correct": true,
+      "total_equals_prompt_plus_completion": true
+    },
+    {
+      "case_id": "multiply",
+      "model": "qwen3.8-27b",
+      "question": "Compute 17 * 19. Output ONLY the single final number.",
+      "expected": "323",
+      "output_cap": 128,
+      "status": "ACCOUNTED",
+      "usage": {
+        "completion_tokens": 59,
+        "prompt_tokens": 56,
+        "total_tokens": 115,
+        "completion_tokens_details": {
+          "reasoning_tokens": 53
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "created_cache_tokens": 0
+        }
+      },
+      "effective_cost": 64.6,
+      "content": "\n\n323",
+      "reasoning_content": "The user wants me to compute 17 * 19 and output only the number.\n\n17 * 19 = 17 * 20 - 17 = 340 - 17 = 323\n",
+      "finish_reason": "stop",
+      "correct": true,
+      "total_equals_prompt_plus_completion": true
+    },
+    {
+      "case_id": "multiply",
+      "model": "qwen3.8-27b-noreason",
+      "question": "Compute 17 * 19. Output ONLY the single final number.",
+      "expected": "323",
+      "output_cap": 128,
+      "status": "ACCOUNTED",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 28,
+        "total_tokens": 32,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "created_cache_tokens": 0
+        }
+      },
+      "effective_cost": 6.8,
+      "content": "323",
+      "reasoning_content": null,
+      "finish_reason": "stop",
+      "correct": true,
+      "total_equals_prompt_plus_completion": true
+    }
+  ],
+  "source_sha256": "25837d92b8ba474ad004273fe5c32d2af063721a774fadfa6202bdc5989d3d0f",
+  "budget": {
+    "budget": 800.0,
+    "known_effective_tokens": 140.4,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "precedence:qwen3.8-27b-noreason",
+        "status": "ACCOUNTED",
+        "reserved_units": 2358,
+        "task_limit_units": 8000,
+        "input_token_estimate": 1078,
+        "output_cap": 128,
+        "input_tokens": 31,
+        "output_tokens": 2,
+        "reasoning_tokens": 0,
+        "effective_cost": 5.1
+      },
+      {
+        "ticket": 1,
+        "task_id": "precedence:qwen3.8-27b",
+        "status": "ACCOUNTED",
+        "reserved_units": 2358,
+        "task_limit_units": 8000,
+        "input_token_estimate": 1078,
+        "output_cap": 128,
+        "input_tokens": 59,
+        "output_tokens": 4,
+        "reasoning_tokens": 54,
+        "effective_cost": 63.9
+      },
+      {
+        "ticket": 2,
+        "task_id": "multiply:qwen3.8-27b",
+        "status": "ACCOUNTED",
+        "reserved_units": 2357,
+        "task_limit_units": 8000,
+        "input_token_estimate": 1077,
+        "output_cap": 128,
+        "input_tokens": 56,
+        "output_tokens": 6,
+        "reasoning_tokens": 53,
+        "effective_cost": 64.6
+      },
+      {
+        "ticket": 3,
+        "task_id": "multiply:qwen3.8-27b-noreason",
+        "status": "ACCOUNTED",
+        "reserved_units": 2357,
+        "task_limit_units": 8000,
+        "input_token_estimate": 1077,
+        "output_cap": 128,
+        "input_tokens": 28,
+        "output_tokens": 4,
+        "reasoning_tokens": 0,
+        "effective_cost": 6.8
+      }
+    ]
+  },
+  "summary": {
+    "complete_pairs": 2,
+    "requests": 4,
+    "known_effective_tokens": 140.4,
+    "has_unaccounted_request": false,
+    "models": {
+      "qwen3.8-27b-noreason": {
+        "correct": 2,
+        "known_cost": 11.899999999999999
+      },
+      "qwen3.8-27b": {
+        "correct": 2,
+        "known_cost": 128.5
+      }
+    }
+  }
+}

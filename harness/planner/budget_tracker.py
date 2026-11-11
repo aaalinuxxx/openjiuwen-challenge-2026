@@ -17,7 +17,10 @@ class BudgetDenied(RuntimeError):
 
 
 class BudgetTracker:
-    def __init__(self, max_budget, audit_path=None):
+    def __init__(self, max_budget, audit_path=None, max_requests=None):
+        if max_requests is not None and (type(max_requests) is not int or max_requests < 0):
+            raise ValueError("Invalid request cap")
+        self.max_requests = max_requests
         if not math.isfinite(max_budget) or max_budget < 0:
             raise ValueError('Budget must be finite and nonnegative')
         self.max_budget = max_budget
@@ -43,8 +46,10 @@ class BudgetTracker:
     def remaining(self):
         return max(0.0, self.max_budget-self.spent_effective_tokens-self.reserved_effective_tokens)
 
-    def allocate_task_budget(self, expected_cost, reward):
-        return min(self.remaining, expected_cost*(1.8 if reward <= 2 else 2.5))
+    def allocate_task_budget(self, expected_cost, reward, minimum=0):
+        if not math.isfinite(minimum) or minimum < 0:
+            raise ValueError("Invalid minimum task budget")
+        return min(self.remaining, max(minimum, expected_cost*(1.8 if reward <= 2 else 2.5)))
 
     def usage_for_task(self, task_id):
         return tuple(self._task_totals.get(task_id, (0,0,0)))
@@ -69,6 +74,8 @@ class BudgetTracker:
             raise ValueError('Invalid reservation')
         async with self._lock:
             if self.proxy_exhausted: raise BudgetDenied('Remote work stopped')
+            if self.max_requests is not None and sum(e['status'] != 'NOT_SENT' for e in self.events) >= self.max_requests:
+                raise BudgetDenied('Request count limit reached')
             held = sum(e['reserved_units'] for e in self.events if e['status']=='RESERVED')
             task_held = sum(e['reserved_units'] for e in self.events if e['status']=='RESERVED' and e['task_id']==task_id)
             task_limit = int(Decimal(str(task_budget))*10)

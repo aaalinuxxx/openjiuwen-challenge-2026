@@ -137,6 +137,8 @@ def main():
     args = parser.parse_args()
     if not args.label.replace('-', '').replace('_', '').isalnum():
         parser.error('label must be alphanumeric')
+    if not args.tasks_dir.is_dir() or not any(args.tasks_dir.glob("*/task.json")):
+        parser.error("Task directory is missing or contains no tasks")
     sources = sorted((ROOT / 'harness').rglob('*.py'))
     inputs = sorted(p for p in args.tasks_dir.rglob('*') if p.is_file() and '__pycache__' not in p.parts)
     before = {str(p.relative_to(args.tasks_dir)): fingerprint(p) for p in inputs}
