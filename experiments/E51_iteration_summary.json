@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-11-11T16:03:24.368Z",
+  "status": "LIVE_CONFIRMATION_COMPLETED",
+  "hypothesis": "H03.2 supported on targeted authored live pilot; not generalization proof",
+  "plan_commits": {
+    "E50": "a5e99d4",
+    "E51": "eae71c8"
+  },
+  "live_report": "experiments/E51_search_live_20261111T160047726857/report.json",
+  "failed_attempt_report": "experiments/E50_search_live_20261111T155649239479/report.json",
+  "metrics": {
+    "planned_pairs": 5,
+    "complete_pairs": 5,
+    "arms": {
+      "old": {
+        "attempted": 5,
+        "verified_solutions": 1,
+        "justified_refusals": 1,
+        "correct": 2,
+        "false_refusals": 3,
+        "wrong_answers": 0,
+        "known_effective_tokens": 98.7
+      },
+      "new": {
+        "attempted": 5,
+        "verified_solutions": 4,
+        "justified_refusals": 1,
+        "correct": 5,
+        "false_refusals": 0,
+        "wrong_answers": 0,
+        "known_effective_tokens": 80.4
+      }
+    }
+  },
+  "real_completed_api_calls": 10,
+  "known_effective_tokens": 179.1,
+  "savings_on_this_pilot": {
+    "absolute": 18.3,
+    "percent": 18.54
+  },
+  "checks": {
+    "all_response_models_match": true,
+    "all_output_caps_32": true,
+    "temperature_zero": true,
+    "all_finish_reason_stop": true,
+    "all_sdk_workflows_completed": true,
+    "recalculated_usage_units": 1791,
+    "legacy_E46_unchanged": true,
+    "E50_ledger_unchanged": true
+  },
+  "unresolved_requests": [
+    {
+      "experiment": "E46",
+      "actual_cost": null,
+      "reserve": 343.1
+    },
+    {
+      "experiment": "E50",
+      "error": "ConnectTimeout",
+      "actual_cost": null,
+      "reserve": 192.3
+    }
+  ],
+  "limitations": [
+    "Four solvable authored tasks plus one missing-fact control",
+    "Three known dev cases and two fresh formulations of known mechanisms",
+    "One generation per arm/task",
+    "Entire search pipeline changed, not individual-component ablation",
+    "Does not rerun full 24-task challenge; historical 9/19 retained",
+    "Timeout behavior under long delays remains validated by synthetic E48b controls"
+  ],
+  "next_hypothesis": "H03.5 context fidelity under small budget and larger KB"
+}

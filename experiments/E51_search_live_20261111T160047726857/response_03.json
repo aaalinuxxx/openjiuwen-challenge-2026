@@ -1,0 +1,32 @@
+{
+  "task_id": "chain_fresh_form__new",
+  "response": {
+    "id": "chatcmpl-bdda8ad268ed90b8",
+    "created": 1794412860,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "Bergen",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 3,
+      "prompt_tokens": 144,
+      "total_tokens": 147,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

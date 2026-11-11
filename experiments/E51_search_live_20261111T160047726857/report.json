@@ -1,0 +1,580 @@
+{
+  "mode": "LIVE",
+  "scope": "Continuation after E50 ConnectTimeout. Five authored targeted pairs: four answerable, one negative control. Not independent generalization estimate.",
+  "experiment_status": "COMPLETED",
+  "plan_sha256": "c0960e75eb94fba0d6887d727eb6b6068b02f66dd376dc53c169fa0f5d328774",
+  "source_hashes": {
+    "harness/agents/search_solver.py": "d403c178332df0cdb1814e5aa00eecdce09946e9e37a751fbea7177208babcee",
+    "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/search_live_confirmation.py": "f35f03fd6f74c01cb87294906de90d6ed1a578462e508b317f997f6044283d78"
+  },
+  "legacy_E46": {
+    "path": "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "actual_cost": null,
+    "reserved_effective_tokens": 343.1,
+    "ledger_unchanged": true
+  },
+  "rows": [
+    {
+      "case": "chain_known_form",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": "Riga",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": true,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 22.3,
+      "result": {
+        "task_id": "chain_known_form__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 173,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.7190000000118744,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "chain_known_form__old",
+        "workflow_id": "task_f61aba83550b4c6c91bf3ab7a0fd0c84",
+        "session_id": "11de17368b494533a8a4ccd5145ec993",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "chain_known_form",
+      "arm": "new",
+      "order_in_pair": 1,
+      "expected": "Riga",
+      "answer": "Riga",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "justified_refusal": false,
+      "correct": true,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 17.0,
+      "result": {
+        "task_id": "chain_known_form__new",
+        "status": "SOLVED",
+        "answer": "Riga",
+        "input_tokens": 140,
+        "output_tokens": 3,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.5929999999934807,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "chain_known_form__new",
+        "workflow_id": "task_559bd04e6ce64366a575622e5984946c",
+        "session_id": "9627043a8a7f4eeca04a11ec2f91dac0",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "chain_fresh_form",
+      "arm": "new",
+      "order_in_pair": 0,
+      "expected": "Bergen",
+      "answer": "Bergen",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "justified_refusal": false,
+      "correct": true,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 17.4,
+      "result": {
+        "task_id": "chain_fresh_form__new",
+        "status": "SOLVED",
+        "answer": "Bergen",
+        "input_tokens": 144,
+        "output_tokens": 3,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.7029999999795109,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "chain_fresh_form__new",
+        "workflow_id": "task_6c6d2313afcb4f29b548d8c12ca4e736",
+        "session_id": "3d356887a3654826ba173ecc190d01c4",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "chain_fresh_form",
+      "arm": "old",
+      "order_in_pair": 1,
+      "expected": "Bergen",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": true,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 22.0,
+      "result": {
+        "task_id": "chain_fresh_form__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 170,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.75,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "chain_fresh_form__old",
+        "workflow_id": "task_be4d480caa9b4525a13fc46a4f5d17f4",
+        "session_id": "2cfc87bf795647cb9bb44d2e59f5110a",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "casefold_chain",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": "Porto",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": false,
+      "correct": false,
+      "false_refusal": true,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 17.9,
+      "result": {
+        "task_id": "casefold_chain__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 129,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.5309999999881256,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "casefold_chain__old",
+        "workflow_id": "task_f1ed7eaca2114821b32f4f8647c82c15",
+        "session_id": "5ab166bb5a454a67a3dba9fd985fe4c9",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "casefold_chain",
+      "arm": "new",
+      "order_in_pair": 1,
+      "expected": "Porto",
+      "answer": "Porto",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "justified_refusal": false,
+      "correct": true,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 16.9,
+      "result": {
+        "task_id": "casefold_chain__new",
+        "status": "SOLVED",
+        "answer": "Porto",
+        "input_tokens": 139,
+        "output_tokens": 3,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.7030000000086147,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "casefold_chain__new",
+        "workflow_id": "task_b22079f57c504d61a8fd0fe647f5e9a1",
+        "session_id": "20db92d5ff0e42aa87ea83be19ece5f9",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "prefix_decoy",
+      "arm": "new",
+      "order_in_pair": 0,
+      "expected": "1988",
+      "answer": "1988",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "justified_refusal": false,
+      "correct": true,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 14.5,
+      "result": {
+        "task_id": "prefix_decoy__new",
+        "status": "SOLVED",
+        "answer": "1988",
+        "input_tokens": 95,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.6570000000065193,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "prefix_decoy__new",
+        "workflow_id": "task_e1539c7428614d76bcb248bc3a5cfd8b",
+        "session_id": "2613cf187a2846678e2da045d794f43d",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "prefix_decoy",
+      "arm": "old",
+      "order_in_pair": 1,
+      "expected": "1988",
+      "answer": "1988",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "justified_refusal": false,
+      "correct": true,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 20.0,
+      "result": {
+        "task_id": "prefix_decoy__old",
+        "status": "SOLVED",
+        "answer": "1988",
+        "input_tokens": 150,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.9530000000086147,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "prefix_decoy__old",
+        "workflow_id": "task_0042c4894c874e04bb522b1626adb1d6",
+        "session_id": "a28399e2f3d04de89f61f906fea5ea05",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "closed_kb_missing",
+      "arm": "old",
+      "order_in_pair": 0,
+      "expected": null,
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": true,
+      "correct": true,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 16.5,
+      "result": {
+        "task_id": "closed_kb_missing__old",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 115,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.062999999994645,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "closed_kb_missing__old",
+        "workflow_id": "task_d2016a312b364c2c928ed10143bea6cf",
+        "session_id": "ac703862a0b443ae8a6f8bfc2bef1077",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "closed_kb_missing",
+      "arm": "new",
+      "order_in_pair": 1,
+      "expected": null,
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "justified_refusal": true,
+      "correct": true,
+      "false_refusal": false,
+      "wrong_answer": false,
+      "calls": 1,
+      "effective_cost": 14.6,
+      "result": {
+        "task_id": "closed_kb_missing__new",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 96,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.202999999979511,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": "Model refusal; KB coverage: complete"
+      },
+      "workflow": {
+        "task_id": "closed_kb_missing__new",
+        "workflow_id": "task_0160f0d707454d449409a2caf82ac171",
+        "session_id": "c87843e004644e4eb7d76b10ee269b7d",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    }
+  ],
+  "recording_errors": [],
+  "budget": {
+    "budget": 1800,
+    "known_effective_tokens": 179.1,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "chain_known_form__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1923,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1603,
+        "output_cap": 32,
+        "input_tokens": 173,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 22.3
+      },
+      {
+        "ticket": 1,
+        "task_id": "chain_known_form__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1855,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1535,
+        "output_cap": 32,
+        "input_tokens": 140,
+        "output_tokens": 3,
+        "reasoning_tokens": 0,
+        "effective_cost": 17.0
+      },
+      {
+        "ticket": 2,
+        "task_id": "chain_fresh_form__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1890,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1570,
+        "output_cap": 32,
+        "input_tokens": 144,
+        "output_tokens": 3,
+        "reasoning_tokens": 0,
+        "effective_cost": 17.4
+      },
+      {
+        "ticket": 3,
+        "task_id": "chain_fresh_form__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1931,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1611,
+        "output_cap": 32,
+        "input_tokens": 170,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 22.0
+      },
+      {
+        "ticket": 4,
+        "task_id": "casefold_chain__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1816,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1496,
+        "output_cap": 32,
+        "input_tokens": 129,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 17.9
+      },
+      {
+        "ticket": 5,
+        "task_id": "casefold_chain__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1887,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1567,
+        "output_cap": 32,
+        "input_tokens": 139,
+        "output_tokens": 3,
+        "reasoning_tokens": 0,
+        "effective_cost": 16.9
+      },
+      {
+        "ticket": 6,
+        "task_id": "prefix_decoy__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1692,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1372,
+        "output_cap": 32,
+        "input_tokens": 95,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 14.5
+      },
+      {
+        "ticket": 7,
+        "task_id": "prefix_decoy__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1809,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1489,
+        "output_cap": 32,
+        "input_tokens": 150,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 20.0
+      },
+      {
+        "ticket": 8,
+        "task_id": "closed_kb_missing__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 1742,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1422,
+        "output_cap": 32,
+        "input_tokens": 115,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 16.5
+      },
+      {
+        "ticket": 9,
+        "task_id": "closed_kb_missing__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 1707,
+        "task_limit_units": 6000,
+        "input_token_estimate": 1387,
+        "output_cap": 32,
+        "input_tokens": 96,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 14.6
+      }
+    ]
+  },
+  "attempted_transport_calls": 10,
+  "real_api_calls": 10,
+  "real_known_effective_tokens": 179.1,
+  "metrics": {
+    "planned_pairs": 5,
+    "complete_pairs": 5,
+    "arms": {
+      "old": {
+        "attempted": 5,
+        "verified_solutions": 1,
+        "justified_refusals": 1,
+        "correct": 2,
+        "false_refusals": 3,
+        "wrong_answers": 0,
+        "known_effective_tokens": 98.7
+      },
+      "new": {
+        "attempted": 5,
+        "verified_solutions": 4,
+        "justified_refusals": 1,
+        "correct": 5,
+        "false_refusals": 0,
+        "wrong_answers": 0,
+        "known_effective_tokens": 80.4
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "casefold_chain__old",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the user question using ONLY the provided KB records. Output ONLY the exact final value (single number, name, or city) without punctuation or explanation. If the information is missing or contradictory, output UNSOLVABLE."
+      },
+      {
+        "role": "user",
+        "content": "KB Records:\n# Nora Quill: {'_file': 'a.md', '_sources': {'mentor': ['a.md']}, '_conflicts': {}, 'mentor': 'ELI ROSS'}\n\nQuestion: According to the records, which city hosts the headquarters of the organisation employing the mentor of NORA QUILL?"
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  },
+  "mode": "LIVE",
+  "started_at": "2026-11-11T16:01:01.334724+00:00"
+}
