@@ -1,0 +1,17 @@
+{
+  "task_id": "left_missing__multi",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('16')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "budget": 3000,
+  "known_effective_tokens": 0.0,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "inner_filter__multi",
+      "status": "ACCOUNTED",
+      "reserved_units": 6152,
+      "task_limit_units": 10000,
+      "input_token_estimate": 2152,
+      "output_cap": 400,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 1,
+      "task_id": "duplicate_matches__multi",
+      "status": "ACCOUNTED",
+      "reserved_units": 6008,
+      "task_limit_units": 10000,
+      "input_token_estimate": 2008,
+      "output_cap": 400,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 2,
+      "task_id": "left_missing__multi",
+      "status": "ACCOUNTED",
+      "reserved_units": 6021,
+      "task_limit_units": 10000,
+      "input_token_estimate": 2021,
+      "output_cap": 400,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 3,
+      "task_id": "string_keys__multi",
+      "status": "ACCOUNTED",
+      "reserved_units": 6007,
+      "task_limit_units": 10000,
+      "input_token_estimate": 2007,
+      "output_cap": 400,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 4,
+      "task_id": "anti_join__multi",
+      "status": "ACCOUNTED",
+      "reserved_units": 6056,
+      "task_limit_units": 10000,
+      "input_token_estimate": 2056,
+      "output_cap": 400,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 5,
+      "task_id": "single_control__multi",
+      "status": "ACCOUNTED",
+      "reserved_units": 3332,
+      "task_limit_units": 10000,
+      "input_token_estimate": 1332,
+      "output_cap": 200,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 6,
+      "task_id": "single_control__old",
+      "status": "ACCOUNTED",
+      "reserved_units": 3332,
+      "task_limit_units": 10000,
+      "input_token_estimate": 1332,
+      "output_cap": 200,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    }
+  ]
+}

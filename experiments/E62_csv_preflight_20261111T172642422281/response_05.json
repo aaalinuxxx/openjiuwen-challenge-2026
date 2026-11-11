@@ -1,0 +1,17 @@
+{
+  "task_id": "anti_join__multi",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('2')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

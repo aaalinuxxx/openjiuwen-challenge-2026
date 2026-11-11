@@ -1,0 +1,17 @@
+{
+  "task_id": "duplicate_matches__multi",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('14')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

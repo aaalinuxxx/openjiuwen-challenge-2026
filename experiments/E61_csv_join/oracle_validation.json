@@ -1,0 +1,55 @@
+{
+  "api_calls": 0,
+  "passed": true,
+  "rows": [
+    {
+      "case": "inner_filter",
+      "expected": "24",
+      "oracle": "24",
+      "passed": true
+    },
+    {
+      "case": "duplicate_matches",
+      "expected": "14",
+      "oracle": "14",
+      "passed": true
+    },
+    {
+      "case": "left_missing",
+      "expected": "16",
+      "oracle": "16",
+      "passed": true
+    },
+    {
+      "case": "string_keys",
+      "expected": "18",
+      "oracle": "18",
+      "passed": true
+    },
+    {
+      "case": "anti_join",
+      "expected": "2",
+      "oracle": "2",
+      "passed": true
+    },
+    {
+      "case": "single_control",
+      "expected": "8",
+      "oracle": "8",
+      "passed": true
+    },
+    {
+      "case": "ambiguous_inputs",
+      "boundary_control": true,
+      "selection_rejected": true,
+      "passed": true
+    },
+    {
+      "case": "missing_input",
+      "boundary_control": true,
+      "selection_rejected": true,
+      "passed": true
+    }
+  ],
+  "scope": "Independent SQLite calculation with TEXT join keys; not model-generated code"
+}

@@ -1,0 +1,43 @@
+{
+  "case": "inner_filter",
+  "arm": "multi",
+  "order_in_pair": 1,
+  "expected": "24",
+  "status": "SOLVED",
+  "answer": "24",
+  "solved": true,
+  "boundary_control_passed": false,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "orders.csv": "193a4ca4d60ad039da48585e27533972c798ab9644048b553075c6f652e25b61",
+    "customers.csv": "19b8de577d523bd9d1d1dbaad299475f7d2b693f3d23c9faa78c00779a0a179d"
+  },
+  "calls": 1,
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "inner_filter__multi",
+    "status": "SOLVED",
+    "answer": "24",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.062000000005355105,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "inner_filter__multi",
+    "workflow_id": "task_0ec0a05ef0c34ea7bddeb11367e7e40d",
+    "session_id": "c4ed0b1e60104878a2f0eedc040cc72d",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

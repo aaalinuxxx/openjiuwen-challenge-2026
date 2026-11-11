@@ -1,0 +1,19 @@
+{
+  "task_id": "anti_join__multi",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"customers.csv\", \"columns\": [\"customer_id\"], \"rows\": 4, \"sample_rows\": [{\"customer_id\": \"A\"}, {\"customer_id\": \"B\"}, {\"customer_id\": \"C\"}]}, {\"file\": \"invoices.csv\", \"columns\": [\"customer_id\", \"invoice_id\"], \"rows\": 4, \"sample_rows\": [{\"customer_id\": \"A\", \"invoice_id\": \"i1\"}, {\"customer_id\": \"A\", \"invoice_id\": \"i2\"}, {\"customer_id\": \"C\", \"invoice_id\": \"i3\"}]}]\nTask: Read customers.csv and invoices.csv. Count customer rows whose customer_id never appears in invoices.customer_id. Repeated invoices must not change whether a customer is counted. Ignore invoices for unknown customers. Print the integer count."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_SYNTHETIC_ANSWERS"
+}

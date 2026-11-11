@@ -1,0 +1,81 @@
+[
+  {
+    "id": "inner_filter",
+    "instruction": "Read orders.csv and customers.csv. Inner join orders.customer_id = customers.customer_id. Sum orders.amount for joined rows with customers.region equal to 'north'. Each matching pair contributes once. Print the integer total.",
+    "files": {
+      "orders.csv": "order_id,customer_id,amount\no1,A,10\no2,B,7\no3,A,5\no4,C,9\n",
+      "customers.csv": "customer_id,region\nA,north\nB,south\nC,north\n"
+    },
+    "expected": "24",
+    "sql": "SELECT COALESCE(SUM(CAST(o.amount AS INTEGER)),0) FROM orders o JOIN customers c ON o.customer_id=c.customer_id WHERE c.region='north'"
+  },
+  {
+    "id": "duplicate_matches",
+    "instruction": "Read sales.csv and tags.csv. Inner join on their key columns. Sum sales.units for every matching pair whose tags.tag is 'keep'. Repeated rows are distinct matches: do not deduplicate or retain only one tag per key. Print the integer sum.",
+    "files": {
+      "sales.csv": "key,units\na,2\na,3\nb,4\nc,8\n",
+      "tags.csv": "key,tag\na,keep\na,keep\nb,keep\nc,drop\n"
+    },
+    "expected": "14",
+    "sql": "SELECT COALESCE(SUM(CAST(s.units AS INTEGER)),0) FROM sales s JOIN tags t ON s.key=t.key WHERE t.tag='keep'"
+  },
+  {
+    "id": "left_missing",
+    "instruction": "Read orders.csv and payments.csv. Left join orders.order_id to payments.order_id. Each matched payment contributes its amount; unmatched orders contribute zero. Ignore payments for unknown orders. Sum the contributions and print the integer total.",
+    "files": {
+      "orders.csv": "order_id\no1\no2\no4\n",
+      "payments.csv": "order_id,amount\no1,5\no1,7\no2,4\no3,9\n"
+    },
+    "expected": "16",
+    "sql": "SELECT COALESCE(SUM(CAST(p.amount AS INTEGER)),0) FROM orders o LEFT JOIN payments p ON o.order_id=p.order_id"
+  },
+  {
+    "id": "string_keys",
+    "instruction": "Read orders.csv and regions.csv. Join on key using exact string equality: '01' and '1' are different keys. Sum orders.units for matching region 'north'. Preserve leading zeroes in keys. Print the integer total.",
+    "files": {
+      "orders.csv": "key,units\n01,5\n1,7\n002,11\n2,13\n",
+      "regions.csv": "key,region\n01,north\n1,south\n002,south\n2,north\n"
+    },
+    "expected": "18",
+    "sql": "SELECT COALESCE(SUM(CAST(o.units AS INTEGER)),0) FROM orders o JOIN regions r ON o.key=r.key WHERE r.region='north'"
+  },
+  {
+    "id": "anti_join",
+    "instruction": "Read customers.csv and invoices.csv. Count customer rows whose customer_id never appears in invoices.customer_id. Repeated invoices must not change whether a customer is counted. Ignore invoices for unknown customers. Print the integer count.",
+    "files": {
+      "customers.csv": "customer_id\nA\nB\nC\nD\n",
+      "invoices.csv": "customer_id,invoice_id\nA,i1\nA,i2\nC,i3\nX,i4\n"
+    },
+    "expected": "2",
+    "sql": "SELECT COUNT(*) FROM customers c WHERE NOT EXISTS (SELECT 1 FROM invoices i WHERE i.customer_id=c.customer_id)"
+  },
+  {
+    "id": "single_control",
+    "instruction": "Read numbers.csv. Print the median of all values in column value as an integer.",
+    "files": {
+      "numbers.csv": "value\n10\n2\n8\n"
+    },
+    "expected": "8",
+    "sql": "SELECT CAST(value AS INTEGER) FROM numbers ORDER BY CAST(value AS INTEGER) LIMIT 1 OFFSET 1"
+  },
+  {
+    "id": "ambiguous_inputs",
+    "instruction": "Compute the total amount.",
+    "files": {
+      "left.csv": "amount\n7\n",
+      "right.csv": "amount\n11\n"
+    },
+    "expected": null,
+    "sql": null
+  },
+  {
+    "id": "missing_input",
+    "instruction": "Read left.csv and absent.csv and inner join on id. Print the number of matching pairs.",
+    "files": {
+      "left.csv": "id\n1\n",
+      "right.csv": "id\n1\n"
+    },
+    "expected": null,
+    "sql": null
+  }
+]
