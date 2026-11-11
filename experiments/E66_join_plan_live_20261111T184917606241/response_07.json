@@ -1,0 +1,32 @@
+{
+  "task_id": "string_keys__json",
+  "response": {
+    "id": "chatcmpl-a1b76029325704d2",
+    "created": 1794422979,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"left\": \"orders.csv\",\n  \"right\": \"regions.csv\",\n  \"left_key\": \"key\",\n  \"right_key\": \"key\",\n  \"join\": \"inner\",\n  \"filter\": {\n    \"side\": \"right\",\n    \"column\": \"region\",\n    \"equals\": \"north\"\n  },\n  \"aggregate\": {\n    \"op\": \"sum\",\n    \"side\": \"left\",\n    \"column\": \"units\"\n  }\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 114,
+      "prompt_tokens": 461,
+      "total_tokens": 575,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

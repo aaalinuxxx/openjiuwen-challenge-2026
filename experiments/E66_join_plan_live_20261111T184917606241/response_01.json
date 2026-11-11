@@ -1,0 +1,32 @@
+{
+  "task_id": "known_duplicate__python",
+  "response": {
+    "id": "chatcmpl-8f869f616cd0158c",
+    "created": 1794422963,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\n\n# Read customers.csv\ncustomers = {}\nwith open('customers.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        customers[row['customer_id']] = row['region']\n\n# Read orders.csv and compute sum\ntotal = 0\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        customer_id = row['customer_id']\n        if customer_id in customers and customers[customer_id] == 'north':\n            total += int(row['amount'])\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 145,
+      "prompt_tokens": 306,
+      "total_tokens": 451,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

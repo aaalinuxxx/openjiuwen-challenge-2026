@@ -1,0 +1,32 @@
+{
+  "task_id": "string_keys__python",
+  "response": {
+    "id": "chatcmpl-b57175182349d310",
+    "created": 1794422980,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read regions.csv\nregions = []\nwith open('regions.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        regions.append(row)\n\n# Create a lookup for regions by key (string)\nregion_lookup = {}\nfor row in regions:\n    key = row['key']\n    region = row['region']\n    region_lookup[key] = region\n\n# Inner join: for each order, check if its key exists in regions and region is 'north'\ntotal_units = 0\nfor order in orders:\n    key = order['key']\n    if key in region_lookup and region_lookup[key] == 'north':\n        total_units += int(order['units'])\n\nprint(total_units)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 220,
+      "prompt_tokens": 291,
+      "total_tokens": 511,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

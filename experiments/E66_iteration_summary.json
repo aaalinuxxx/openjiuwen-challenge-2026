@@ -1,0 +1,174 @@
+{
+  "experiment": "E65/E66",
+  "status": "COMPLETED",
+  "frozen_commit": "e935ce9",
+  "report": "experiments/E66_join_plan_live_20261111T184917606241/report.json",
+  "scope": "Six targeted pairs: known E64 counterexample, four variants and one unsupported numeric predicate. Not independent holdout.",
+  "metrics": {
+    "python": {
+      "attempted": 6,
+      "solved": 5,
+      "solvable_total": 6,
+      "supported_solved": 4,
+      "supported_total": 5,
+      "unsupported_abstentions": 0,
+      "wrong_answers": 1,
+      "calls": 6,
+      "effective_tokens": 1200.7
+    },
+    "json": {
+      "attempted": 6,
+      "solved": 5,
+      "solvable_total": 6,
+      "supported_solved": 5,
+      "supported_total": 5,
+      "unsupported_abstentions": 1,
+      "wrong_answers": 0,
+      "calls": 6,
+      "effective_tokens": 792.7
+    }
+  },
+  "total_real_api_calls": 12,
+  "total_known_effective_tokens": 1993.4,
+  "new_unaccounted_requests": 0,
+  "raw_usage": {
+    "python": {
+      "input": 1667,
+      "output": 1034
+    },
+    "json": {
+      "input": 2687,
+      "output": 524
+    }
+  },
+  "verified_responses": [
+    {
+      "task": "known_duplicate__python",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_01.json",
+      "effective_cost": 175.6,
+      "sha256": "137cd08a154920d21169cb349ecbc5cac4280065f5db43717baa09b96f922e21"
+    },
+    {
+      "task": "known_duplicate__json",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_02.json",
+      "effective_cost": 163.6,
+      "sha256": "521e8c76ee171e012e51b71e1095a36ded86bf9f376efb9a88a5de6e91ef5f0a"
+    },
+    {
+      "task": "many_pairs__json",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_03.json",
+      "effective_cost": 158.3,
+      "sha256": "9015b93fd71a9c5bb53c17fb66e34d842ca85627f0ba5f50732f61367f068b82"
+    },
+    {
+      "task": "many_pairs__python",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_04.json",
+      "effective_cost": 210.3,
+      "sha256": "8909fbd56fc2eb7d21363bd6885198504ce567ebb3dd89a8d2c8aa883a168a72"
+    },
+    {
+      "task": "left_pairs__python",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_05.json",
+      "effective_cost": 215.1,
+      "sha256": "c5e6dcf5ef26618f36564520471c354340599f3ebfca2ca7e10382df0b5c127f"
+    },
+    {
+      "task": "left_pairs__json",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_06.json",
+      "effective_cost": 134.1,
+      "sha256": "96047ec59f9a5fda2c5ea37b6211c0c966ca5098f2549d15931256e0a13f2c5d"
+    },
+    {
+      "task": "string_keys__json",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_07.json",
+      "effective_cost": 160.1,
+      "sha256": "6774ce40920f90d58f7b6fcec12d40796e1964ed33b00ae0932859e16164c4b4"
+    },
+    {
+      "task": "string_keys__python",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_08.json",
+      "effective_cost": 249.1,
+      "sha256": "66f51e3a2143a1730c86ee122bb7db06199eac6b3906973330fa416c9781a5e4"
+    },
+    {
+      "task": "anti_rows__python",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_09.json",
+      "effective_cost": 188.3,
+      "sha256": "9412909b5f236efe4a1d5cc25c65f0ed6097695902d732035557680a3c3dc526"
+    },
+    {
+      "task": "anti_rows__json",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_10.json",
+      "effective_cost": 130.3,
+      "sha256": "6e7ad9d206cec9d6718a952f8e2bcf4ebde6a5d682d6b7630bfed87c4b715703"
+    },
+    {
+      "task": "unsupported_threshold__json",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_11.json",
+      "effective_cost": 46.3,
+      "sha256": "98c9fbfa77810da7356f8cd42bba3458a90c1c683d352cd1a05ad045022bfaad"
+    },
+    {
+      "task": "unsupported_threshold__python",
+      "path": "experiments/E66_join_plan_live_20261111T184917606241/response_12.json",
+      "effective_cost": 162.3,
+      "sha256": "749c3553ba731309772240accb47d0514fe99cacd216d16a278eba8d0bb49c11"
+    }
+  ],
+  "plan_gold_matches": [
+    {
+      "case": "known_duplicate",
+      "gold_match": true,
+      "unsupported": false
+    },
+    {
+      "case": "many_pairs",
+      "gold_match": true,
+      "unsupported": false
+    },
+    {
+      "case": "left_pairs",
+      "gold_match": true,
+      "unsupported": false
+    },
+    {
+      "case": "string_keys",
+      "gold_match": true,
+      "unsupported": false
+    },
+    {
+      "case": "anti_rows",
+      "gold_match": true,
+      "unsupported": false
+    },
+    {
+      "case": "unsupported_threshold",
+      "gold_match": true,
+      "unsupported": true
+    }
+  ],
+  "prior_unknown_ledgers_unchanged": {
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+    "experiments/E50_search_live_20261111T155649239479/budget.json": true
+  },
+  "unit_tests": 121,
+  "sqlite_differential_cases": 168,
+  "production_enabled": false,
+  "cost_comparison": {
+    "python": 1200.7,
+    "json": 792.7,
+    "reduction": 408,
+    "reduction_percent": 33.9801782293662
+  },
+  "hypotheses": {
+    "H04.9": "SUPPORTED on five representable targeted cases; five of six solved overall in both arms, no JSON wrong answers",
+    "H04.10": "PROPOSED: fresh live cascade using Python only after explicit UNSUPPORTED, with both costs counted"
+  },
+  "limitations": [
+    "Targeted authored cases including known counterexample, not representative independent holdout",
+    "Question-to-plan semantics are not formally verified by schema validation",
+    "Numeric predicate abstention is a coverage loss, not a correct solution",
+    "No live cascade run; no full system score update",
+    "Wide challenge remains historical 9/19"
+  ]
+}

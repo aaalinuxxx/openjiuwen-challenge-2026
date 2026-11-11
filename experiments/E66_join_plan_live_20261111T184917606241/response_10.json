@@ -1,0 +1,32 @@
+{
+  "task_id": "anti_rows__json",
+  "response": {
+    "id": "chatcmpl-b2c3f6005e5754b4",
+    "created": 1794422984,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"left\": \"customers.csv\",\n  \"right\": \"invoices.csv\",\n  \"left_key\": \"customer_id\",\n  \"right_key\": \"customer_id\",\n  \"join\": \"anti\",\n  \"filter\": null,\n  \"aggregate\": {\n    \"op\": \"count\",\n    \"side\": null,\n    \"column\": null\n  }\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 87,
+      "prompt_tokens": 433,
+      "total_tokens": 520,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "case": "known_duplicate",
+  "arm": "json",
+  "order_in_pair": 1,
+  "expected": "39",
+  "status": "SOLVED",
+  "answer": "39",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "orders.csv": "193a4ca4d60ad039da48585e27533972c798ab9644048b553075c6f652e25b61",
+    "customers.csv": "d6130889481e5eafe552b24361851a6e2ad07d1c23a86a0392aaf53156e48463"
+  },
+  "calls": 1,
+  "effective_cost": 163.6,
+  "result": {
+    "task_id": "known_duplicate__json",
+    "status": "SOLVED",
+    "answer": "39",
+    "input_tokens": 476,
+    "output_tokens": 116,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 5.312999999994645,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Executed typed join plan; question semantics are not formally verified"
+  },
+  "workflow": {
+    "task_id": "known_duplicate__json",
+    "workflow_id": "task_cf4fbdbb82ec45d29ce64cd46c84b0f4",
+    "session_id": "354e7d07abed48a49e82319864d2d8de",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "case": "unsupported_threshold",
+  "arm": "json",
+  "order_in_pair": 0,
+  "expected": "7",
+  "status": "UNKNOWN",
+  "answer": null,
+  "solved": false,
+  "unsupported_abstention": true,
+  "supported": false,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "sales.csv": "13348d4330aaee298dbd474567f30eb21362c90a103784f53c7f20a641b1aa6c",
+    "prices.csv": "28600c0142697521dfa1b0264de2d7c0a2dad9ba6a2c8188afa4772bef5c0563"
+  },
+  "calls": 1,
+  "effective_cost": 46.3,
+  "result": {
+    "task_id": "unsupported_threshold__json",
+    "status": "UNKNOWN",
+    "answer": null,
+    "input_tokens": 433,
+    "output_tokens": 3,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.29699999999138527,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": "Model declared unsupported conditions"
+  },
+  "workflow": {
+    "task_id": "unsupported_threshold__json",
+    "workflow_id": "task_796e5bfd2d7c405285112f66f660c813",
+    "session_id": "1eb2f332f0c2466db93e72755b38d530",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": false,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

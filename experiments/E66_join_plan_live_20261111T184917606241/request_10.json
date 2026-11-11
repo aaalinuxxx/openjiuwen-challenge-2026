@@ -1,0 +1,19 @@
+{
+  "task_id": "anti_rows__json",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return ONLY a JSON join plan or the exact word UNSUPPORTED. No Python or SQL. Schema: {\"left\":\"file.csv\",\"right\":\"other.csv\",\"left_key\":\"column\",\"right_key\":\"column\",\"join\":\"inner|left|anti\",\"filter\":null,\"aggregate\":{\"op\":\"sum|count\",\"side\":\"left|right|null\",\"column\":\"name|null\"}}. filter is null or {\"side\":\"left|right\",\"column\":\"name\",\"equals\":\"literal string\"}. For count, side and column must be JSON null. For sum both must be strings. The local executor joins exact nonempty string keys, preserving ALL matching pairs, including duplicate rows. left includes unmatched left rows; absent right sum values contribute zero. anti keeps unmatched left rows. The optional equality filter applies AFTER the join. Sum is exact decimal arithmetic; count counts result rows. Only one key per table and at most one string equality filter are supported. Use UNSUPPORTED for numeric comparisons, rounding, multiple filters, distinct, mean, median, composite or numeric keys, or any condition not expressible in this schema. Never drop conditions. Use exact listed filenames and column names. Samples are incomplete; executor reads all rows."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"customers.csv\", \"columns\": [\"customer_id\"], \"rows\": 5, \"sample_rows\": [{\"customer_id\": \"A\"}, {\"customer_id\": \"B\"}, {\"customer_id\": \"B\"}]}, {\"file\": \"invoices.csv\", \"columns\": [\"customer_id\", \"invoice_id\"], \"rows\": 4, \"sample_rows\": [{\"customer_id\": \"A\", \"invoice_id\": \"i1\"}, {\"customer_id\": \"A\", \"invoice_id\": \"i2\"}, {\"customer_id\": \"C\", \"invoice_id\": \"i3\"}]}]\nTask: Read customers.csv and invoices.csv. Count rows in customers whose customer_id never appears in invoices.customer_id. Duplicate customer rows each count separately if unmatched; duplicate invoices do not affect existence. Print the integer count."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

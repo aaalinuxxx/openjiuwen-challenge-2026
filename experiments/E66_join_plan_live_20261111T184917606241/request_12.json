@@ -1,0 +1,19 @@
+{
+  "task_id": "unsupported_threshold__python",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"prices.csv\", \"columns\": [\"key\", \"price\"], \"rows\": 3, \"sample_rows\": [{\"key\": \"a\", \"price\": \"4\"}, {\"key\": \"b\", \"price\": \"7\"}, {\"key\": \"c\", \"price\": \"10\"}]}, {\"file\": \"sales.csv\", \"columns\": [\"key\", \"units\"], \"rows\": 3, \"sample_rows\": [{\"key\": \"a\", \"units\": \"2\"}, {\"key\": \"b\", \"units\": \"3\"}, {\"key\": \"c\", \"units\": \"4\"}]}]\nTask: Read sales.csv and prices.csv. Inner join on key. Sum sales.units for matching pairs only when prices.price is numerically greater than 5. Print the integer sum."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

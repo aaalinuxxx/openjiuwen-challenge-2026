@@ -1,0 +1,19 @@
+{
+  "task_id": "known_duplicate__python",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"customers.csv\", \"columns\": [\"customer_id\", \"region\"], \"rows\": 4, \"sample_rows\": [{\"customer_id\": \"A\", \"region\": \"north\"}, {\"customer_id\": \"B\", \"region\": \"south\"}, {\"customer_id\": \"C\", \"region\": \"north\"}]}, {\"file\": \"orders.csv\", \"columns\": [\"order_id\", \"customer_id\", \"amount\"], \"rows\": 4, \"sample_rows\": [{\"order_id\": \"o1\", \"customer_id\": \"A\", \"amount\": \"10\"}, {\"order_id\": \"o2\", \"customer_id\": \"B\", \"amount\": \"7\"}, {\"order_id\": \"o3\", \"customer_id\": \"A\", \"amount\": \"5\"}]}]\nTask: Read orders.csv and customers.csv. Inner join orders.customer_id = customers.customer_id. Sum orders.amount for joined rows with customers.region equal to 'north'. Each matching pair contributes once. Print the integer total."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "LIVE"
+}

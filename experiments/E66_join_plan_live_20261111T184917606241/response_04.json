@@ -1,0 +1,32 @@
+{
+  "task_id": "many_pairs__python",
+  "response": {
+    "id": "chatcmpl-bb7c60cffac6680c",
+    "created": 1794422973,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\n\n# Read labels.csv\nlabels = {}\nwith open('labels.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        key = row['key']\n        tag = row['tag']\n        if key not in labels:\n            labels[key] = []\n        labels[key].append(tag)\n\n# Read sales.csv and compute sum\ntotal = 0\nwith open('sales.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        key = row['key']\n        units = int(row['units'])\n        if key in labels:\n            for tag in labels[key]:\n                if tag == 'keep':\n                    total += units\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 183,
+      "prompt_tokens": 273,
+      "total_tokens": 456,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
