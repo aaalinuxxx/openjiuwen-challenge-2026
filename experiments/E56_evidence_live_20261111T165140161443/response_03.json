@@ -1,0 +1,32 @@
+{
+  "task_id": "unrelated_conflict__evidence",
+  "response": {
+    "id": "chatcmpl-a4ff62ddc6877bd2",
+    "created": 1794415917,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n\"status\": \"SOLVED\",\n\"answer\": \"Graz\",\n\"evidence\": [\n[\"Daria Holt\", \"employer\"],\n[\"Blue Willow\", \"headquarters\"]\n]\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 47,
+      "prompt_tokens": 239,
+      "total_tokens": 286,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

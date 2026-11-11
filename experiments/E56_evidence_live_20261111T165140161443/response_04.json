@@ -1,0 +1,32 @@
+{
+  "task_id": "unrelated_conflict__plain",
+  "response": {
+    "id": "chatcmpl-b3bcf169660a2543",
+    "created": 1794415918,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "Graz",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 3,
+      "prompt_tokens": 131,
+      "total_tokens": 134,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

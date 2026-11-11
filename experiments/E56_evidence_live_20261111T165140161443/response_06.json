@@ -1,0 +1,32 @@
+{
+  "task_id": "clear_chain__evidence",
+  "response": {
+    "id": "chatcmpl-b05df114f7bf6838",
+    "created": 1794415920,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n\"status\": \"SOLVED\",\n\"answer\": \"Vilnius\",\n\"evidence\": [\n[\"Felix Orr\", \"mentor\"],\n[\"Sara Glen\", \"employer\"],\n[\"Maple Glass\", \"headquarters\"]\n]\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 58,
+      "prompt_tokens": 235,
+      "total_tokens": 293,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

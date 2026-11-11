@@ -1,0 +1,32 @@
+{
+  "task_id": "missing_field__evidence",
+  "response": {
+    "id": "chatcmpl-ad3419fdea5e8d7b",
+    "created": 1794415926,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n\"status\": \"UNKNOWN\",\n\"answer\": null,\n\"evidence\": [\n\"Meadow Studio\",\n\"headquarters city\"\n]\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 37,
+      "prompt_tokens": 204,
+      "total_tokens": 241,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

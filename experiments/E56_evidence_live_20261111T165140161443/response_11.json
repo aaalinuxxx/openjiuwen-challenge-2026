@@ -1,0 +1,32 @@
+{
+  "task_id": "conflicting_link__evidence",
+  "response": {
+    "id": "chatcmpl-99c07d60a30d4a10",
+    "created": 1794415928,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n\"status\": \"UNKNOWN\",\n\"answer\": null,\n\"evidence\": [\n\"Iris Pike\",\n\"mentor\",\n\"Leon Vale\",\n\"employer\",\n\"CONFLICT\"\n]\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 48,
+      "prompt_tokens": 258,
+      "total_tokens": 306,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

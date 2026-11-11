@@ -1,0 +1,32 @@
+{
+  "task_id": "literal_marker__evidence",
+  "response": {
+    "id": "chatcmpl-b653d9352b231f97",
+    "created": 1794415921,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"status\": \"SOLVED\",\n  \"answer\": \"CONFLICT\",\n  \"evidence\": [\n    [\n      \"Archive Book\",\n      \"title\"\n    ]\n  ]\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 50,
+      "prompt_tokens": 199,
+      "total_tokens": 249,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

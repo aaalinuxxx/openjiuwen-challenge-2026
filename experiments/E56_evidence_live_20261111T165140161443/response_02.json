@@ -1,0 +1,32 @@
+{
+  "task_id": "needed_conflict__evidence",
+  "response": {
+    "id": "chatcmpl-a2afb6efc56c5bc3",
+    "created": 1794415914,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"status\": \"SOLVED\",\n  \"answer\": \"CONFLICT\",\n  \"evidence\": [\n    [\n      \"Kira Sol\",\n      \"employer\"\n    ],\n    [\n      \"Aster Works\",\n      \"headquarters\"\n    ]\n  ]\n}",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 70,
+      "prompt_tokens": 230,
+      "total_tokens": 300,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

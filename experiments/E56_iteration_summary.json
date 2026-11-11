@@ -1,0 +1,161 @@
+{
+  "experiment": "E55/E56",
+  "status": "COMPLETED",
+  "frozen_commit": "5055861",
+  "report": "experiments/E56_evidence_live_20261111T165140161443/report.json",
+  "scope": "Six authored targeted cases, three solvable and three impossible; not an independent representative holdout",
+  "real_api_calls": 12,
+  "known_effective_tokens": 548.2,
+  "new_unaccounted_requests": 0,
+  "formula": "prompt_tokens / 10 + completion_tokens",
+  "metrics": {
+    "plain": {
+      "attempted": 6,
+      "solved": 3,
+      "justified_refusals": 2,
+      "correct": 5,
+      "wrong_answers": 0,
+      "conservative_abstentions": 1,
+      "false_refusals": 0,
+      "calls": 6,
+      "known_effective_tokens": 101.7
+    },
+    "evidence": {
+      "attempted": 6,
+      "solved": 3,
+      "justified_refusals": 0,
+      "correct": 3,
+      "wrong_answers": 0,
+      "conservative_abstentions": 3,
+      "false_refusals": 0,
+      "calls": 6,
+      "known_effective_tokens": 446.5
+    }
+  },
+  "raw_usage": {
+    "prompt_tokens": {
+      "plain": 717,
+      "evidence": 1365
+    },
+    "completion_tokens": {
+      "plain": 30,
+      "evidence": 310
+    }
+  },
+  "cost_ratio_evidence_over_plain": 4.390363815142576,
+  "extra_effective_tokens": 344.8,
+  "output_caps": {
+    "plain": 32,
+    "evidence": 192
+  },
+  "hypotheses": {
+    "H03.6": "SUPPORTED on fresh live targeted pilot; no general semantic guarantee",
+    "H03.7": "No added solved tasks, higher cost, fewer correct UNSOLVABLE classifications; experimental only",
+    "H03.7_general_semantic_validation": "REFUTED for current validator by local relationship-order counterexample"
+  },
+  "evidence_schema_failures": [
+    "missing_field",
+    "conflicting_link"
+  ],
+  "raw_json_valid_for_all_evidence_responses": true,
+  "blocked_wrong_solved_proposal": "needed_conflict evidence arm proposed SOLVED CONFLICT; validator returned UNKNOWN",
+  "counterexample": "experiments/E55_scope_counterexample.json",
+  "production_changed": false,
+  "tests": {
+    "passed": 105,
+    "report": "experiments/E55_tests.json"
+  },
+  "verification": {
+    "verified_responses": [
+      {
+        "task": "needed_conflict__plain",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_01.json",
+        "cost": 22.2,
+        "sha256": "928834325728476d844c888b422d894224c3e8cdb4bba397e52ac6ed40d61524"
+      },
+      {
+        "task": "needed_conflict__evidence",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_02.json",
+        "cost": 93,
+        "sha256": "d319ca6765d07cb03f81ff043af6ac9343d61f1f77f3a221cba52c7711bed539"
+      },
+      {
+        "task": "unrelated_conflict__evidence",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_03.json",
+        "cost": 70.9,
+        "sha256": "a5329ab9833878be8910867dfc9ee5a1a5d2036eebd7d4c160337735da33decf"
+      },
+      {
+        "task": "unrelated_conflict__plain",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_04.json",
+        "cost": 16.1,
+        "sha256": "6993d2422f2f8a3bfde2863f069c1a9dd522ddf21f6aeeaa3a6c818872326ff2"
+      },
+      {
+        "task": "clear_chain__plain",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_05.json",
+        "cost": 16.7,
+        "sha256": "436a25b81a59bb70b0cafa12541799d97b73d37b0cf44f4b68296a0832817a13"
+      },
+      {
+        "task": "clear_chain__evidence",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_06.json",
+        "cost": 81.5,
+        "sha256": "287d8564775ff4466d9516bae105a59629c7d324469ecac43223c7288b73fd76"
+      },
+      {
+        "task": "literal_marker__evidence",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_07.json",
+        "cost": 69.9,
+        "sha256": "70b1da13682f3e7c606f7a20570a08d2b9e2e0e99f8bddce6c1b712b9bb79a5d"
+      },
+      {
+        "task": "literal_marker__plain",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_08.json",
+        "cost": 12.1,
+        "sha256": "03bd34d09515daa2239b2f91bd529fea1c317a883b90c957458ef4f22eed7924"
+      },
+      {
+        "task": "missing_field__plain",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_09.json",
+        "cost": 14.6,
+        "sha256": "7eef296178c744d2e9abbbe93b64c0cc0e891bdf521f6be76fce04f7fc229638"
+      },
+      {
+        "task": "missing_field__evidence",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_10.json",
+        "cost": 57.4,
+        "sha256": "e57fff6804316aeb254da276a8156d86963d50fd182f318c6251c1b8b4eea868"
+      },
+      {
+        "task": "conflicting_link__evidence",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_11.json",
+        "cost": 73.8,
+        "sha256": "a4470727916eb81152952c21eb478c7779986fb32708dfc435fc195c3f00ec06"
+      },
+      {
+        "task": "conflicting_link__plain",
+        "path": "experiments/E56_evidence_live_20261111T165140161443/response_12.json",
+        "cost": 20,
+        "sha256": "dc8f85a2d4ec3b596e138168c06c9c8b8fc2594a1e2ad7c4da63e5ffc2a4bb8e"
+      }
+    ],
+    "integer_cost_units": 5482,
+    "previous_ledgers_unchanged": {
+      "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+      "experiments/E50_search_live_20261111T155649239479/budget.json": true
+    }
+  },
+  "limitations": [
+    "Small authored pilot; no confidence/generalization claim",
+    "UNKNOWN is conservative abstention, not proof of impossibility",
+    "Plain UNSOLVABLE labels agree with oracle; not a formal proof validator",
+    "Different output caps are intentional architecture overhead; actual usage compared",
+    "Old E46/E50 unknown usage remains unknown and is not included in this iteration"
+  ],
+  "next_priority": [
+    "H05.4: fresh live multimodule coding confirmation",
+    "H04: CSV joins beyond single-table plans"
+  ],
+  "remaining_search_question": "Parse ordered question relations before treating field paths as semantic proof"
+}
