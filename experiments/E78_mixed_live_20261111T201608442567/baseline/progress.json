@@ -1,0 +1,1008 @@
+{
+  "results": {
+    "search_new_relation": {
+      "task_id": "search_new_relation",
+      "status": "SOLVED",
+      "answer": "1977",
+      "input_tokens": 129,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.3280000000086147,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "search_conflicting_fact": {
+      "task_id": "search_conflicting_fact",
+      "status": "UNSOLVABLE",
+      "answer": null,
+      "input_tokens": 158,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.4529999999795109,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": "Model refusal; KB coverage: complete"
+    },
+    "search_irrelevant_conflict": {
+      "task_id": "search_irrelevant_conflict",
+      "status": "SOLVED",
+      "answer": "Bern",
+      "input_tokens": 151,
+      "output_tokens": 2,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.75,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "search_absent": {
+      "task_id": "search_absent",
+      "status": "TRUNCATED",
+      "answer": null,
+      "input_tokens": 193,
+      "output_tokens": 2,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.6879999999946449,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Output limit reached; usage accounted"
+    },
+    "search_paraphrase_chain": {
+      "task_id": "search_paraphrase_chain",
+      "status": "SOLVED",
+      "answer": "Riga",
+      "input_tokens": 163,
+      "output_tokens": 3,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.5150000000139698,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "search_three_hop": {
+      "task_id": "search_three_hop",
+      "status": "SOLVED",
+      "answer": "Riga",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "a.md:mentor=Oren Pike -> b.md:employer=Luma Labs -> c.md:headquarters=Riga"
+    },
+    "data_distinct": {
+      "task_id": "data_distinct",
+      "status": "TRUNCATED",
+      "answer": null,
+      "input_tokens": 131,
+      "output_tokens": 69,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.5940000000118744,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Output limit reached; usage accounted"
+    },
+    "data_empty_count": {
+      "task_id": "data_empty_count",
+      "status": "TRUNCATED",
+      "answer": null,
+      "input_tokens": 133,
+      "output_tokens": 68,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.3909999999741558,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Output limit reached; usage accounted"
+    },
+    "data_filtered_median": {
+      "task_id": "data_filtered_median",
+      "status": "TRUNCATED",
+      "answer": null,
+      "input_tokens": 132,
+      "output_tokens": 67,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 2.3440000000118744,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Output limit reached; usage accounted"
+    },
+    "data_two_file_join": {
+      "task_id": "data_two_file_join",
+      "status": "UNKNOWN",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Multiple CSV files without a recognized input selection"
+    },
+    "data_weighted_mean": {
+      "task_id": "data_weighted_mean",
+      "status": "TRUNCATED",
+      "answer": null,
+      "input_tokens": 135,
+      "output_tokens": 66,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.5929999999934807,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Output limit reached; usage accounted"
+    },
+    "pilot_empty_filter_not_unmatched": {
+      "task_id": "pilot_empty_filter_not_unmatched",
+      "status": "UNKNOWN",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Multiple CSV files without a recognized input selection"
+    },
+    "pilot_empty_right": {
+      "task_id": "pilot_empty_right",
+      "status": "UNKNOWN",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.01600000000325963,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Multiple CSV files without a recognized input selection"
+    },
+    "pilot_extra_numeric_control": {
+      "task_id": "pilot_extra_numeric_control",
+      "status": "UNKNOWN",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Multiple CSV files without a recognized input selection"
+    },
+    "pilot_known_or_failure": {
+      "task_id": "pilot_known_or_failure",
+      "status": "UNKNOWN",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Multiple CSV files without a recognized input selection"
+    },
+    "pilot_mixed_duplicates": {
+      "task_id": "pilot_mixed_duplicates",
+      "status": "UNKNOWN",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Multiple CSV files without a recognized input selection"
+    },
+    "pilot_previous_local_control": {
+      "task_id": "pilot_previous_local_control",
+      "status": "UNKNOWN",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Multiple CSV files without a recognized input selection"
+    },
+    "pilot_string_keys_and_blocked": {
+      "task_id": "pilot_string_keys_and_blocked",
+      "status": "UNKNOWN",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Multiple CSV files without a recognized input selection"
+    },
+    "math_sum": {
+      "task_id": "math_sum",
+      "status": "SOLVED",
+      "answer": "210",
+      "input_tokens": 85,
+      "output_tokens": 11,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.9679999999934807,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    },
+    "math_gcd": {
+      "task_id": "math_gcd",
+      "status": "SOLVED",
+      "answer": "42",
+      "input_tokens": 87,
+      "output_tokens": 17,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.25,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    },
+    "math_paraphrase": {
+      "task_id": "math_paraphrase",
+      "status": "SOLVED",
+      "answer": "51",
+      "input_tokens": 95,
+      "output_tokens": 13,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 7.327999999979511,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    },
+    "math_zero_warning": {
+      "task_id": "math_zero_warning",
+      "status": "SOLVED",
+      "answer": "42",
+      "input_tokens": 94,
+      "output_tokens": 6,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 2.4530000000086147,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    },
+    "math_zero_operation": {
+      "task_id": "math_zero_operation",
+      "status": "FAILED",
+      "answer": null,
+      "input_tokens": 95,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.3910000000032596,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nNameError: name 'UNSOLVABLE' is not defined\n"
+    },
+    "math_percentage": {
+      "task_id": "math_percentage",
+      "status": "SOLVED",
+      "answer": "170",
+      "input_tokens": 101,
+      "output_tokens": 32,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 11.125,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    },
+    "coding_multimodule": {
+      "task_id": "coding_multimodule",
+      "status": "SOLVED",
+      "answer": "DONE",
+      "input_tokens": 489,
+      "output_tokens": 25,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.875,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    },
+    "coding_overlap": {
+      "task_id": "coding_overlap",
+      "status": "SOLVED",
+      "answer": "DONE",
+      "input_tokens": 523,
+      "output_tokens": 74,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 13.875,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    },
+    "coding_intervals": {
+      "task_id": "coding_intervals",
+      "status": "SOLVED",
+      "answer": "DONE",
+      "input_tokens": 766,
+      "output_tokens": 102,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 4.187000000005355,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    },
+    "coding_brackets": {
+      "task_id": "coding_brackets",
+      "status": "SOLVED",
+      "answer": "DONE",
+      "input_tokens": 630,
+      "output_tokens": 89,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 7.219000000011874,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    },
+    "coding_pure_conflict": {
+      "task_id": "coding_pure_conflict",
+      "status": "FAILED",
+      "answer": null,
+      "input_tokens": 463,
+      "output_tokens": 23,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.2810000000172295,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Tests still failing after patch attempts (min failures: 1)"
+    },
+    "coding_stateful": {
+      "task_id": "coding_stateful",
+      "status": "SOLVED",
+      "answer": "DONE",
+      "input_tokens": 384,
+      "output_tokens": 42,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.437000000005355,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": ""
+    }
+  },
+  "budget": {
+    "budget": 3000,
+    "known_effective_tokens": 1239.7,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "search_new_relation",
+        "status": "ACCOUNTED",
+        "reserved_units": 1649,
+        "task_limit_units": 1650,
+        "input_token_estimate": 1499,
+        "output_cap": 15,
+        "input_tokens": 129,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 17.9
+      },
+      {
+        "ticket": 1,
+        "task_id": "search_conflicting_fact",
+        "status": "ACCOUNTED",
+        "reserved_units": 1660,
+        "task_limit_units": 1662,
+        "input_token_estimate": 1610,
+        "output_cap": 5,
+        "input_tokens": 158,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 20.8
+      },
+      {
+        "ticket": 2,
+        "task_id": "search_irrelevant_conflict",
+        "status": "ACCOUNTED",
+        "reserved_units": 1657,
+        "task_limit_units": 1662,
+        "input_token_estimate": 1597,
+        "output_cap": 6,
+        "input_tokens": 151,
+        "output_tokens": 2,
+        "reasoning_tokens": 0,
+        "effective_cost": 17.1
+      },
+      {
+        "ticket": 3,
+        "task_id": "search_absent",
+        "status": "ACCOUNTED",
+        "reserved_units": 1681,
+        "task_limit_units": 1687,
+        "input_token_estimate": 1661,
+        "output_cap": 2,
+        "input_tokens": 193,
+        "output_tokens": 2,
+        "reasoning_tokens": 0,
+        "effective_cost": 21.3
+      },
+      {
+        "ticket": 4,
+        "task_id": "search_paraphrase_chain",
+        "status": "ACCOUNTED",
+        "reserved_units": 1686,
+        "task_limit_units": 1687,
+        "input_token_estimate": 1616,
+        "output_cap": 7,
+        "input_tokens": 163,
+        "output_tokens": 3,
+        "reasoning_tokens": 0,
+        "effective_cost": 19.3
+      },
+      {
+        "ticket": 5,
+        "task_id": "data_distinct",
+        "status": "ACCOUNTED",
+        "reserved_units": 2121,
+        "task_limit_units": 2125,
+        "input_token_estimate": 1431,
+        "output_cap": 69,
+        "input_tokens": 131,
+        "output_tokens": 69,
+        "reasoning_tokens": 0,
+        "effective_cost": 82.1
+      },
+      {
+        "ticket": 6,
+        "task_id": "data_empty_count",
+        "status": "ACCOUNTED",
+        "reserved_units": 2117,
+        "task_limit_units": 2125,
+        "input_token_estimate": 1437,
+        "output_cap": 68,
+        "input_tokens": 133,
+        "output_tokens": 68,
+        "reasoning_tokens": 0,
+        "effective_cost": 81.3
+      },
+      {
+        "ticket": 7,
+        "task_id": "data_filtered_median",
+        "status": "ACCOUNTED",
+        "reserved_units": 2117,
+        "task_limit_units": 2125,
+        "input_token_estimate": 1447,
+        "output_cap": 67,
+        "input_tokens": 132,
+        "output_tokens": 67,
+        "reasoning_tokens": 0,
+        "effective_cost": 80.2
+      },
+      {
+        "ticket": 8,
+        "task_id": "data_weighted_mean",
+        "status": "ACCOUNTED",
+        "reserved_units": 2125,
+        "task_limit_units": 2125,
+        "input_token_estimate": 1465,
+        "output_cap": 66,
+        "input_tokens": 135,
+        "output_tokens": 66,
+        "reasoning_tokens": 0,
+        "effective_cost": 79.5
+      },
+      {
+        "ticket": 9,
+        "task_id": "math_sum",
+        "status": "ACCOUNTED",
+        "reserved_units": 2489,
+        "task_limit_units": 2497,
+        "input_token_estimate": 1349,
+        "output_cap": 114,
+        "input_tokens": 85,
+        "output_tokens": 11,
+        "reasoning_tokens": 0,
+        "effective_cost": 19.5
+      },
+      {
+        "ticket": 10,
+        "task_id": "math_gcd",
+        "status": "ACCOUNTED",
+        "reserved_units": 2508,
+        "task_limit_units": 2508,
+        "input_token_estimate": 1358,
+        "output_cap": 115,
+        "input_tokens": 87,
+        "output_tokens": 17,
+        "reasoning_tokens": 0,
+        "effective_cost": 25.7
+      },
+      {
+        "ticket": 11,
+        "task_id": "math_paraphrase",
+        "status": "ACCOUNTED",
+        "reserved_units": 2520,
+        "task_limit_units": 2523,
+        "input_token_estimate": 1370,
+        "output_cap": 115,
+        "input_tokens": 95,
+        "output_tokens": 13,
+        "reasoning_tokens": 0,
+        "effective_cost": 22.5
+      },
+      {
+        "ticket": 12,
+        "task_id": "math_zero_warning",
+        "status": "ACCOUNTED",
+        "reserved_units": 2524,
+        "task_limit_units": 2528,
+        "input_token_estimate": 1374,
+        "output_cap": 115,
+        "input_tokens": 94,
+        "output_tokens": 6,
+        "reasoning_tokens": 0,
+        "effective_cost": 15.4
+      },
+      {
+        "ticket": 13,
+        "task_id": "math_zero_operation",
+        "status": "ACCOUNTED",
+        "reserved_units": 2566,
+        "task_limit_units": 2568,
+        "input_token_estimate": 1406,
+        "output_cap": 116,
+        "input_tokens": 95,
+        "output_tokens": 5,
+        "reasoning_tokens": 0,
+        "effective_cost": 14.5
+      },
+      {
+        "ticket": 14,
+        "task_id": "math_percentage",
+        "status": "ACCOUNTED",
+        "reserved_units": 2569,
+        "task_limit_units": 2572,
+        "input_token_estimate": 1409,
+        "output_cap": 116,
+        "input_tokens": 101,
+        "output_tokens": 32,
+        "reasoning_tokens": 0,
+        "effective_cost": 42.1
+      },
+      {
+        "ticket": 15,
+        "task_id": "coding_multimodule",
+        "status": "ACCOUNTED",
+        "reserved_units": 7998,
+        "task_limit_units": 8000,
+        "input_token_estimate": 3008,
+        "output_cap": 499,
+        "input_tokens": 489,
+        "output_tokens": 25,
+        "reasoning_tokens": 0,
+        "effective_cost": 73.9
+      },
+      {
+        "ticket": 16,
+        "task_id": "coding_overlap",
+        "status": "ACCOUNTED",
+        "reserved_units": 7999,
+        "task_limit_units": 8000,
+        "input_token_estimate": 3259,
+        "output_cap": 474,
+        "input_tokens": 523,
+        "output_tokens": 74,
+        "reasoning_tokens": 0,
+        "effective_cost": 126.3
+      },
+      {
+        "ticket": 17,
+        "task_id": "coding_intervals",
+        "status": "ACCOUNTED",
+        "reserved_units": 7998,
+        "task_limit_units": 8000,
+        "input_token_estimate": 3838,
+        "output_cap": 416,
+        "input_tokens": 766,
+        "output_tokens": 102,
+        "reasoning_tokens": 0,
+        "effective_cost": 178.6
+      },
+      {
+        "ticket": 18,
+        "task_id": "coding_brackets",
+        "status": "ACCOUNTED",
+        "reserved_units": 7995,
+        "task_limit_units": 8000,
+        "input_token_estimate": 3755,
+        "output_cap": 424,
+        "input_tokens": 630,
+        "output_tokens": 89,
+        "reasoning_tokens": 0,
+        "effective_cost": 152.0
+      },
+      {
+        "ticket": 19,
+        "task_id": "coding_pure_conflict",
+        "status": "ACCOUNTED",
+        "reserved_units": 9995,
+        "task_limit_units": 19100,
+        "input_token_estimate": 2995,
+        "output_cap": 700,
+        "input_tokens": 463,
+        "output_tokens": 23,
+        "reasoning_tokens": 0,
+        "effective_cost": 69.3
+      },
+      {
+        "ticket": 20,
+        "task_id": "coding_stateful",
+        "status": "ACCOUNTED",
+        "reserved_units": 9623,
+        "task_limit_units": 18407,
+        "input_token_estimate": 2623,
+        "output_cap": 700,
+        "input_tokens": 384,
+        "output_tokens": 42,
+        "reasoning_tokens": 0,
+        "effective_cost": 80.4
+      }
+    ]
+  },
+  "workflow_runs": [
+    {
+      "task_id": "search_new_relation",
+      "workflow_id": "task_e826b83ca0c9495595e61d9027e63c3e",
+      "session_id": "1636c06cde564e89a67bf0eba78bff14",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "search_conflicting_fact",
+      "workflow_id": "task_b85f81d5f483497588fc93069e83eb45",
+      "session_id": "d2b037f12a834bf49552b41f36f3ae34",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "search_irrelevant_conflict",
+      "workflow_id": "task_4a589fb5a166468789a2cdf24c12af2d",
+      "session_id": "dc61b15d1b00450e89043daa3fe89bb6",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "search_absent",
+      "workflow_id": "task_9629b5cf488b4d3bb47c2368905a5161",
+      "session_id": "694953ac360441478eb12df3db40501f",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "search_paraphrase_chain",
+      "workflow_id": "task_632ce12614ba40729e9aba1a35533a3d",
+      "session_id": "ea360c45b47d4c43b58f6401e0ff15c3",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "search_three_hop",
+      "workflow_id": "task_a957467144094d00b1f96fde01a0e5cc",
+      "session_id": "583c5b2c15a94812b3d4d1f287b28bf4",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "data_distinct",
+      "workflow_id": "task_28cc8d12d13447259a9fd0cfd1bb2ed1",
+      "session_id": "9f1a7bd3506e4a9a89feb2ae282a4379",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "data_empty_count",
+      "workflow_id": "task_81f4a6b1bf1844698466d89f1803f71f",
+      "session_id": "1cdaf686b3554e4eb345447dcbae56fe",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "data_filtered_median",
+      "workflow_id": "task_3f977730a1014a43a8b7fb45c365dfb9",
+      "session_id": "6eda52faff514671b83648b5aafefbfc",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "data_two_file_join",
+      "workflow_id": "task_117f295f871548528cd89d30a78c268c",
+      "session_id": "030eb2edf1e141e0ac1490aab0d301a5",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "data_weighted_mean",
+      "workflow_id": "task_3ae833ce7aae4fd8b16d50d5dcbacb0f",
+      "session_id": "6d6da77060994a4ea4966b8785ed1c5a",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "pilot_empty_filter_not_unmatched",
+      "workflow_id": "task_bd3a12189d58452b9d615cf9d93e822d",
+      "session_id": "8b70d09c346a441795b44328f8d0605c",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "pilot_empty_right",
+      "workflow_id": "task_bdd2ab4853714d349315664f8befbdf7",
+      "session_id": "20195534bf8f465e9e3664d4b683c7e5",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "pilot_extra_numeric_control",
+      "workflow_id": "task_c057ac42c10e4f7ea3f7827d463dee09",
+      "session_id": "0665f592fb20403ca0c1a6353d38c777",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "pilot_known_or_failure",
+      "workflow_id": "task_916249831a164ea88637a93e5c444dc2",
+      "session_id": "fc5e5431d2f24df78cc8d9b93e0d5e1d",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "pilot_mixed_duplicates",
+      "workflow_id": "task_feee15daafac48b88576233deb3bf328",
+      "session_id": "01ceed48dc5f439887a9c071d4ea466a",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "pilot_previous_local_control",
+      "workflow_id": "task_b26285cf25624a599802020498f95dee",
+      "session_id": "e5d1840ac81c4734ae7c41a6509579e3",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "pilot_string_keys_and_blocked",
+      "workflow_id": "task_d02af0b1c1b84f6cbc114a764ad8688b",
+      "session_id": "55a8859ccaa149848f5ddb48af8d9042",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "math_sum",
+      "workflow_id": "task_a5bdddf0b6184baf9d4ac99f0aae0caf",
+      "session_id": "57035cdd7e3a4d77a20f8f25f0b9df88",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "math_gcd",
+      "workflow_id": "task_c75838acb2594d0f98d50c66640e5992",
+      "session_id": "6651ad5be71a44fb8ac6edb33f6b994a",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "math_paraphrase",
+      "workflow_id": "task_fc007430cdd6467486016da673bf2c8d",
+      "session_id": "1380faa3d35e4a929607cd1e5968f15a",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "math_zero_warning",
+      "workflow_id": "task_250be4c0c69a4e2daa1c0ca11aa8e383",
+      "session_id": "689d49e0b7ec4d13a285cfbc4955c6ae",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "math_zero_operation",
+      "workflow_id": "task_3de877b176904023b7995d76b0cc0d40",
+      "session_id": "0d456dc1a3fe4270b04fe4fc1e064144",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "math_percentage",
+      "workflow_id": "task_9c0c6ecb99f4490a961d4e8f6f44dbbd",
+      "session_id": "6871d055b1904abdb52ddf46fdc74283",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "coding_multimodule",
+      "workflow_id": "task_2260126d473a44f3a276ec52dbba00b6",
+      "session_id": "3ed50941135a4f44945b24ad2b73c57c",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "coding_overlap",
+      "workflow_id": "task_deb0877f91114ba4824d778c308f5d45",
+      "session_id": "17806a18a75d42199e4b6059ef1cc4d4",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "coding_intervals",
+      "workflow_id": "task_de19edf923634033aa33bacaba4e7bcd",
+      "session_id": "b716aa555970407485241d73803b320f",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "coding_brackets",
+      "workflow_id": "task_1cff06de38a94583b4ccefc2973d3263",
+      "session_id": "9da0a51eb3564428913f93ebe293ea38",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "coding_pure_conflict",
+      "workflow_id": "task_07aae62aea6247cb9b68ed5848a63650",
+      "session_id": "7c5b9a0f0c1748deafcb106c12ac0394",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": false,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "coding_stateful",
+      "workflow_id": "task_cc79f8738a4c47a2b100ee8c8dceed3b",
+      "session_id": "97bed1a0a0ff4ed9aa7a51424d2bbd8b",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    }
+  ]
+}

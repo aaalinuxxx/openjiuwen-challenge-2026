@@ -1,0 +1,881 @@
+{
+  "hypothesis": "H04.15",
+  "status": "SUPPORTED_INTEGRATION_ONLY_NO_CORE_TRANSFER_GAIN",
+  "frozen_commit": "cc91b56",
+  "report": "experiments/E78_mixed_live_20261111T201608442567/report.json",
+  "real_api_attempts": 43,
+  "effective_tokens": 2522.7,
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "total": 31,
+        "solvable": 26,
+        "correct": 14,
+        "score": 42,
+        "max_score": 78,
+        "wrong_answers": 0,
+        "justified_refusals": 2,
+        "false_refusals": 0,
+        "truncations": 5
+      },
+      "groups": {
+        "E41_core": {
+          "total": 24,
+          "solvable": 19,
+          "correct": 14,
+          "score": 42,
+          "max_score": 57,
+          "wrong_answers": 0,
+          "justified_refusals": 2,
+          "false_refusals": 0,
+          "truncations": 5
+        },
+        "E75_pilot": {
+          "total": 7,
+          "solvable": 7,
+          "correct": 0,
+          "score": 0,
+          "max_score": 21,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        }
+      },
+      "by_type": {
+        "math": {
+          "total": 6,
+          "solvable": 5,
+          "correct": 5,
+          "score": 15,
+          "max_score": 15,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        },
+        "search": {
+          "total": 6,
+          "solvable": 4,
+          "correct": 4,
+          "score": 12,
+          "max_score": 12,
+          "wrong_answers": 0,
+          "justified_refusals": 1,
+          "false_refusals": 0,
+          "truncations": 1
+        },
+        "data_analysis": {
+          "total": 13,
+          "solvable": 12,
+          "correct": 0,
+          "score": 0,
+          "max_score": 36,
+          "wrong_answers": 0,
+          "justified_refusals": 1,
+          "false_refusals": 0,
+          "truncations": 4
+        },
+        "coding": {
+          "total": 6,
+          "solvable": 5,
+          "correct": 5,
+          "score": 15,
+          "max_score": 15,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        }
+      },
+      "calls": 21,
+      "effective_tokens": 1239.7,
+      "budget": 3000,
+      "unspent": 1760.3
+    },
+    "candidate": {
+      "metrics": {
+        "total": 31,
+        "solvable": 26,
+        "correct": 20,
+        "score": 60,
+        "max_score": 78,
+        "wrong_answers": 0,
+        "justified_refusals": 2,
+        "false_refusals": 0,
+        "truncations": 6
+      },
+      "groups": {
+        "E41_core": {
+          "total": 24,
+          "solvable": 19,
+          "correct": 14,
+          "score": 42,
+          "max_score": 57,
+          "wrong_answers": 0,
+          "justified_refusals": 2,
+          "false_refusals": 0,
+          "truncations": 6
+        },
+        "E75_pilot": {
+          "total": 7,
+          "solvable": 7,
+          "correct": 6,
+          "score": 18,
+          "max_score": 21,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        }
+      },
+      "by_type": {
+        "math": {
+          "total": 6,
+          "solvable": 5,
+          "correct": 5,
+          "score": 15,
+          "max_score": 15,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        },
+        "search": {
+          "total": 6,
+          "solvable": 4,
+          "correct": 4,
+          "score": 12,
+          "max_score": 12,
+          "wrong_answers": 0,
+          "justified_refusals": 1,
+          "false_refusals": 0,
+          "truncations": 1
+        },
+        "data_analysis": {
+          "total": 13,
+          "solvable": 12,
+          "correct": 6,
+          "score": 18,
+          "max_score": 36,
+          "wrong_answers": 0,
+          "justified_refusals": 1,
+          "false_refusals": 0,
+          "truncations": 5
+        },
+        "coding": {
+          "total": 6,
+          "solvable": 5,
+          "correct": 5,
+          "score": 15,
+          "max_score": 15,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        }
+      },
+      "calls": 22,
+      "effective_tokens": 1283,
+      "budget": 3000,
+      "unspent": 1717
+    }
+  },
+  "usage": {
+    "baseline": {
+      "input": 5137,
+      "output": 726
+    },
+    "candidate": {
+      "input": 5390,
+      "output": 744
+    }
+  },
+  "score_gain": 18,
+  "correct_gain": 6,
+  "gain_group": "E75_pilot_only",
+  "core_transfer": {
+    "baseline_correct": 14,
+    "candidate_correct": 14,
+    "solvable": 19,
+    "local_grammar_matches": 0,
+    "interpretation": "Known E41 replay; no verified score gain attributable to joins on the core."
+  },
+  "verification": {
+    "responses": [
+      {
+        "arm": "baseline",
+        "task": "search_new_relation",
+        "output_cap": 15,
+        "finish_reason": "stop",
+        "effective_cost": 17.9,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_01.json",
+        "sha256": "0130310033b0082540d1e82e0310b03e39c4fbb7905b0eac73e16c2ba352b309"
+      },
+      {
+        "arm": "baseline",
+        "task": "search_conflicting_fact",
+        "output_cap": 5,
+        "finish_reason": "stop",
+        "effective_cost": 20.8,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_02.json",
+        "sha256": "8777200fea79b0845ff49d912f2bb044786f174f2cff4e617ecf3c8870c707b3"
+      },
+      {
+        "arm": "baseline",
+        "task": "search_irrelevant_conflict",
+        "output_cap": 6,
+        "finish_reason": "stop",
+        "effective_cost": 17.1,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_03.json",
+        "sha256": "f28a668a6bbdb2284d03e5a7ff832c9a3ef7093e8409e9a975a9a3835d024381"
+      },
+      {
+        "arm": "baseline",
+        "task": "search_absent",
+        "output_cap": 2,
+        "finish_reason": "length",
+        "effective_cost": 21.3,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_04.json",
+        "sha256": "36a82ec2b685f7898e7c8a248f4b14d7607efe4a662b4d051700042bc152decf"
+      },
+      {
+        "arm": "baseline",
+        "task": "search_paraphrase_chain",
+        "output_cap": 7,
+        "finish_reason": "stop",
+        "effective_cost": 19.3,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_05.json",
+        "sha256": "c0aa43c558dd91c7c3642256aba8b802a45929600e19ae460f625e3bf1194250"
+      },
+      {
+        "arm": "baseline",
+        "task": "data_distinct",
+        "output_cap": 69,
+        "finish_reason": "length",
+        "effective_cost": 82.1,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_06.json",
+        "sha256": "186205010f8957447e75c88a0572356a803b0487e99859cfa865bf195fee6ae3"
+      },
+      {
+        "arm": "baseline",
+        "task": "data_empty_count",
+        "output_cap": 68,
+        "finish_reason": "length",
+        "effective_cost": 81.3,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_07.json",
+        "sha256": "3dbda79cedcc7ac965b302d22ad927ca6cfa82273720308bc636a86fced98919"
+      },
+      {
+        "arm": "baseline",
+        "task": "data_filtered_median",
+        "output_cap": 67,
+        "finish_reason": "length",
+        "effective_cost": 80.2,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_08.json",
+        "sha256": "f4cd9616261dba8a78bf74624c0a757bbb971dc65d50c3796f7cc58693827008"
+      },
+      {
+        "arm": "baseline",
+        "task": "data_weighted_mean",
+        "output_cap": 66,
+        "finish_reason": "length",
+        "effective_cost": 79.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_09.json",
+        "sha256": "8bb3853d5395af8df26351d40a5140086d83b391dd71a36f825fd6c6758283d2"
+      },
+      {
+        "arm": "baseline",
+        "task": "math_sum",
+        "output_cap": 114,
+        "finish_reason": "stop",
+        "effective_cost": 19.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_10.json",
+        "sha256": "375652fedf51b4109df0383733ed7d483f33a24314c1e283f794bc6c5267742b"
+      },
+      {
+        "arm": "baseline",
+        "task": "math_gcd",
+        "output_cap": 115,
+        "finish_reason": "stop",
+        "effective_cost": 25.7,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_11.json",
+        "sha256": "c73b2ba5b0a28fa777577bc13b58e360af7e00bf93c8ce245b4567dbcb837fb1"
+      },
+      {
+        "arm": "baseline",
+        "task": "math_paraphrase",
+        "output_cap": 115,
+        "finish_reason": "stop",
+        "effective_cost": 22.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_12.json",
+        "sha256": "05a623096611de971277a5e4a5ef4aa3c9846baac3a3d38cc8a7ac011d0d3a96"
+      },
+      {
+        "arm": "baseline",
+        "task": "math_zero_warning",
+        "output_cap": 115,
+        "finish_reason": "stop",
+        "effective_cost": 15.4,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_13.json",
+        "sha256": "83671f099840ce8e4b521803e7c8bb745773d858c91e6be8bd511456a84228bb"
+      },
+      {
+        "arm": "baseline",
+        "task": "math_zero_operation",
+        "output_cap": 116,
+        "finish_reason": "stop",
+        "effective_cost": 14.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_14.json",
+        "sha256": "48254ede80d3f19428a0b5392d45e145dd1e7b24fcdb62c661818089561238aa"
+      },
+      {
+        "arm": "baseline",
+        "task": "math_percentage",
+        "output_cap": 116,
+        "finish_reason": "stop",
+        "effective_cost": 42.1,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_15.json",
+        "sha256": "865ef6dcf405008b815b76f9b17d5c1dc4a2f6f7ef98ff8a91e2ebfcefa34857"
+      },
+      {
+        "arm": "baseline",
+        "task": "coding_multimodule",
+        "output_cap": 499,
+        "finish_reason": "stop",
+        "effective_cost": 73.9,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_16.json",
+        "sha256": "220ee6a1e9af8d4be3a3d7b008f20127dadbd8f6890bbb83515dfcfc7f1665b0"
+      },
+      {
+        "arm": "baseline",
+        "task": "coding_overlap",
+        "output_cap": 474,
+        "finish_reason": "stop",
+        "effective_cost": 126.3,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_17.json",
+        "sha256": "44d4a1abad16ac812c45bf0c82444d971f566a6aab7bdc51a75ee9fbf4a6734a"
+      },
+      {
+        "arm": "baseline",
+        "task": "coding_intervals",
+        "output_cap": 416,
+        "finish_reason": "stop",
+        "effective_cost": 178.6,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_18.json",
+        "sha256": "720238fefcf63d9125e24a2c6fe8a1445a5646648d5d7454883711b47d409644"
+      },
+      {
+        "arm": "baseline",
+        "task": "coding_brackets",
+        "output_cap": 424,
+        "finish_reason": "stop",
+        "effective_cost": 152,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_19.json",
+        "sha256": "4222869d0ae008f32531666a36c4630b08aa47eaeeb59dbf97f107cba0c2bd7b"
+      },
+      {
+        "arm": "baseline",
+        "task": "coding_pure_conflict",
+        "output_cap": 700,
+        "finish_reason": "stop",
+        "effective_cost": 69.3,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_20.json",
+        "sha256": "b92799298a0493e70cbcf187768d278772dad35e4badef7a3104e72bf7ce45a0"
+      },
+      {
+        "arm": "baseline",
+        "task": "coding_stateful",
+        "output_cap": 700,
+        "finish_reason": "stop",
+        "effective_cost": 80.4,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/baseline/response_21.json",
+        "sha256": "7faf2a32a5e43fecee84b0f4f8a5f323e0bd3fbf9a48751e3faf7a9745e68ba0"
+      },
+      {
+        "arm": "candidate",
+        "task": "search_new_relation",
+        "output_cap": 15,
+        "finish_reason": "stop",
+        "effective_cost": 17.9,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_01.json",
+        "sha256": "f3a4249e7d4346edc4a8953814c481ff8f4fca2ae68085aaf7b6937ba4345438"
+      },
+      {
+        "arm": "candidate",
+        "task": "search_conflicting_fact",
+        "output_cap": 5,
+        "finish_reason": "stop",
+        "effective_cost": 20.8,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_02.json",
+        "sha256": "d8bf8766907684a68eab5b37730321e909475f5ffb9573908ecff30b05d98e79"
+      },
+      {
+        "arm": "candidate",
+        "task": "search_irrelevant_conflict",
+        "output_cap": 6,
+        "finish_reason": "stop",
+        "effective_cost": 17.1,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_03.json",
+        "sha256": "3711c8041381feed0389efec7ba7187d05fdf630ca6d58282d9bcf3b482d7c7a"
+      },
+      {
+        "arm": "candidate",
+        "task": "search_absent",
+        "output_cap": 2,
+        "finish_reason": "length",
+        "effective_cost": 21.3,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_04.json",
+        "sha256": "b99bd23a26902af61eb9f9b62eaf1b828ff6b83750a3ce5d67b655ffebe29459"
+      },
+      {
+        "arm": "candidate",
+        "task": "search_paraphrase_chain",
+        "output_cap": 7,
+        "finish_reason": "stop",
+        "effective_cost": 19.3,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_05.json",
+        "sha256": "b57c3df026706464b98f7dc8da30b585a79f62912518b66d0c5c95c85f483f64"
+      },
+      {
+        "arm": "candidate",
+        "task": "data_distinct",
+        "output_cap": 69,
+        "finish_reason": "length",
+        "effective_cost": 82.1,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_06.json",
+        "sha256": "fe278029bdc979502a00c29d41f31b2f7e57462e3f936c6c4b527a73398dca1d"
+      },
+      {
+        "arm": "candidate",
+        "task": "data_empty_count",
+        "output_cap": 68,
+        "finish_reason": "length",
+        "effective_cost": 81.3,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_07.json",
+        "sha256": "33ed576cbcd1cd9843b4bf2a11cbd383051b3696873f00a3593564c0f1b3087f"
+      },
+      {
+        "arm": "candidate",
+        "task": "data_filtered_median",
+        "output_cap": 67,
+        "finish_reason": "length",
+        "effective_cost": 80.2,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_08.json",
+        "sha256": "ced424373bcd2c9db9582f5e0f802bc20f055a55a47427d4c6c537b8437e2737"
+      },
+      {
+        "arm": "candidate",
+        "task": "data_two_file_join",
+        "output_cap": 24,
+        "finish_reason": "length",
+        "effective_cost": 48.6,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_09.json",
+        "sha256": "1e242de348a2594ee6f810580ace04e08c82c1ee9982c2afc39c0da727bf7d20"
+      },
+      {
+        "arm": "candidate",
+        "task": "data_weighted_mean",
+        "output_cap": 66,
+        "finish_reason": "length",
+        "effective_cost": 79.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_10.json",
+        "sha256": "1469a33d48f80c9cce650dc06f3d190d6ab16e7aac25ab7b268fc708b4b761c2"
+      },
+      {
+        "arm": "candidate",
+        "task": "math_sum",
+        "output_cap": 114,
+        "finish_reason": "stop",
+        "effective_cost": 15.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_11.json",
+        "sha256": "904f05172bf2817c9287d3dbc07576c0eb681ea805693f4ff5b6f287bf5e66e9"
+      },
+      {
+        "arm": "candidate",
+        "task": "math_gcd",
+        "output_cap": 115,
+        "finish_reason": "stop",
+        "effective_cost": 25.7,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_12.json",
+        "sha256": "4a2e4f4c7c3e1799ca849aa34e92c614e5dd460be9475b0df6182e6dcc296ab2"
+      },
+      {
+        "arm": "candidate",
+        "task": "math_paraphrase",
+        "output_cap": 115,
+        "finish_reason": "stop",
+        "effective_cost": 22.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_13.json",
+        "sha256": "cb5d75003235a1b2d8eccb65381b0816ea7f0aba7def84869b327e731b7ba22d"
+      },
+      {
+        "arm": "candidate",
+        "task": "math_zero_warning",
+        "output_cap": 115,
+        "finish_reason": "stop",
+        "effective_cost": 15.4,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_14.json",
+        "sha256": "1628656f6af255734e9310e37be280a8f7c4f5475db9b27947029d91d9ef121a"
+      },
+      {
+        "arm": "candidate",
+        "task": "math_zero_operation",
+        "output_cap": 116,
+        "finish_reason": "stop",
+        "effective_cost": 14.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_15.json",
+        "sha256": "c809623d1f2c70cdad099e8c875e192050c28e5e43d07ed6228ab82ad19a755b"
+      },
+      {
+        "arm": "candidate",
+        "task": "math_percentage",
+        "output_cap": 116,
+        "finish_reason": "stop",
+        "effective_cost": 42.1,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_16.json",
+        "sha256": "4c26e5ee9aec7244ba9026a1f9e259dd764b47b0099f65ed6a465e8e8ecebbe6"
+      },
+      {
+        "arm": "candidate",
+        "task": "coding_multimodule",
+        "output_cap": 499,
+        "finish_reason": "stop",
+        "effective_cost": 73.8,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_17.json",
+        "sha256": "c0663f27d5a6b9668db138f20469addd43d4821143097212e9e4a8ae374257ed"
+      },
+      {
+        "arm": "candidate",
+        "task": "coding_overlap",
+        "output_cap": 474,
+        "finish_reason": "stop",
+        "effective_cost": 126.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_18.json",
+        "sha256": "ce71e5ce2ab2c3ba04ceab5cf44a4ddbb6c2e2e21bf59779db7802affd8b80ba"
+      },
+      {
+        "arm": "candidate",
+        "task": "coding_intervals",
+        "output_cap": 416,
+        "finish_reason": "stop",
+        "effective_cost": 181.6,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_19.json",
+        "sha256": "727f0f08edac371c8761b531a0ad597df679579f61b9731785bf58dcccaad6bf"
+      },
+      {
+        "arm": "candidate",
+        "task": "coding_brackets",
+        "output_cap": 424,
+        "finish_reason": "stop",
+        "effective_cost": 152.3,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_20.json",
+        "sha256": "ad445cfe5466c5cb4b6d05b7b71621ba813f2b57f14067c938d5c3fab60a3fe0"
+      },
+      {
+        "arm": "candidate",
+        "task": "coding_pure_conflict",
+        "output_cap": 700,
+        "finish_reason": "stop",
+        "effective_cost": 69.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_21.json",
+        "sha256": "6f80491ada12a53a0c7c012237e0b4ba2b654d83cf11fe97b3ed5fb0f760f083"
+      },
+      {
+        "arm": "candidate",
+        "task": "coding_stateful",
+        "output_cap": 700,
+        "finish_reason": "stop",
+        "effective_cost": 75.5,
+        "path": "experiments/E78_mixed_live_20261111T201608442567/candidate/response_22.json",
+        "sha256": "497ca6238bf3580b4f782c67486704a5a3af80f1ec6b296e2abca9b67398d562"
+      }
+    ],
+    "all_frozen_hashes_unchanged": {
+      "harness/agents/base_harness.py": true,
+      "harness/agents/calculation_plans.py": true,
+      "harness/agents/coding_solver.py": true,
+      "harness/agents/coding_target.py": true,
+      "harness/agents/data_solver.py": true,
+      "harness/agents/extended_plans.py": true,
+      "harness/agents/fallback_react.py": true,
+      "harness/agents/instruction_scope.py": true,
+      "harness/agents/join_cascade.py": true,
+      "harness/agents/join_or.py": true,
+      "harness/agents/join_plans.py": true,
+      "harness/agents/join_scope.py": true,
+      "harness/agents/join_scope_v2.py": true,
+      "harness/agents/kb_compaction.py": true,
+      "harness/agents/kb_context.py": true,
+      "harness/agents/local_join.py": true,
+      "harness/agents/math_solver.py": true,
+      "harness/agents/model_router.py": true,
+      "harness/agents/multi_csv.py": true,
+      "harness/agents/plan_scope.py": true,
+      "harness/agents/search_evidence.py": true,
+      "harness/agents/search_solver.py": true,
+      "harness/agents/__init__.py": true,
+      "harness/config.py": true,
+      "harness/planner/budget_tracker.py": true,
+      "harness/planner/feature_extractor.py": true,
+      "harness/planner/scheduler.py": true,
+      "harness/planner/token_estimator.py": true,
+      "harness/planner/unsolvable_filter.py": true,
+      "harness/planner/__init__.py": true,
+      "harness/sandbox/executor.py": true,
+      "harness/sandbox/file_guard.py": true,
+      "harness/sandbox/__init__.py": true,
+      "harness/workflow_runner.py": true,
+      "harness/__init__.py": true,
+      "run_agent.py": true,
+      "scripts/mixed_integration_live.py": true,
+      "scripts/main_offline_benchmark.py": true,
+      "scripts/multimodule_live.py": true,
+      "scripts/api_settings.py": true,
+      "tests/test_join_integration.py": true,
+      "experiments/E77_mixed_integration/labels.json": true,
+      "experiments/E77_mixed_integration/fixture_validation.json": true,
+      "experiments/E77_mixed_integration/design.md": true,
+      "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+      "experiments/E50_search_live_20261111T155649239479/budget.json": true,
+      "experiments/E77_mixed_integration/tasks/coding_brackets/mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_brackets/task.json": true,
+      "experiments/E77_mixed_integration/tasks/coding_brackets/test_mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_intervals/mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_intervals/task.json": true,
+      "experiments/E77_mixed_integration/tasks/coding_intervals/test_mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_multimodule/a_settings.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_multimodule/mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_multimodule/task.json": true,
+      "experiments/E77_mixed_integration/tasks/coding_multimodule/test_mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_overlap/mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_overlap/task.json": true,
+      "experiments/E77_mixed_integration/tasks/coding_overlap/test_mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_pure_conflict/mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_pure_conflict/task.json": true,
+      "experiments/E77_mixed_integration/tasks/coding_pure_conflict/test_mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_stateful/mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/coding_stateful/task.json": true,
+      "experiments/E77_mixed_integration/tasks/coding_stateful/test_mylib.py": true,
+      "experiments/E77_mixed_integration/tasks/data_distinct/sales.csv": true,
+      "experiments/E77_mixed_integration/tasks/data_distinct/task.json": true,
+      "experiments/E77_mixed_integration/tasks/data_empty_count/sales.csv": true,
+      "experiments/E77_mixed_integration/tasks/data_empty_count/task.json": true,
+      "experiments/E77_mixed_integration/tasks/data_filtered_median/sales.csv": true,
+      "experiments/E77_mixed_integration/tasks/data_filtered_median/task.json": true,
+      "experiments/E77_mixed_integration/tasks/data_missing_source/task.json": true,
+      "experiments/E77_mixed_integration/tasks/data_two_file_join/orders.csv": true,
+      "experiments/E77_mixed_integration/tasks/data_two_file_join/prices.csv": true,
+      "experiments/E77_mixed_integration/tasks/data_two_file_join/task.json": true,
+      "experiments/E77_mixed_integration/tasks/data_weighted_mean/sales.csv": true,
+      "experiments/E77_mixed_integration/tasks/data_weighted_mean/task.json": true,
+      "experiments/E77_mixed_integration/tasks/math_gcd/task.json": true,
+      "experiments/E77_mixed_integration/tasks/math_paraphrase/task.json": true,
+      "experiments/E77_mixed_integration/tasks/math_percentage/task.json": true,
+      "experiments/E77_mixed_integration/tasks/math_sum/task.json": true,
+      "experiments/E77_mixed_integration/tasks/math_zero_operation/task.json": true,
+      "experiments/E77_mixed_integration/tasks/math_zero_warning/task.json": true,
+      "experiments/E77_mixed_integration/tasks/pilot_empty_filter_not_unmatched/labels.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_empty_filter_not_unmatched/orders.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_empty_filter_not_unmatched/task.json": true,
+      "experiments/E77_mixed_integration/tasks/pilot_empty_right/labels.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_empty_right/orders.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_empty_right/task.json": true,
+      "experiments/E77_mixed_integration/tasks/pilot_extra_numeric_control/labels.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_extra_numeric_control/orders.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_extra_numeric_control/task.json": true,
+      "experiments/E77_mixed_integration/tasks/pilot_known_or_failure/labels.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_known_or_failure/orders.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_known_or_failure/task.json": true,
+      "experiments/E77_mixed_integration/tasks/pilot_mixed_duplicates/labels.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_mixed_duplicates/orders.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_mixed_duplicates/task.json": true,
+      "experiments/E77_mixed_integration/tasks/pilot_previous_local_control/stocks.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_previous_local_control/task.json": true,
+      "experiments/E77_mixed_integration/tasks/pilot_previous_local_control/zones.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_string_keys_and_blocked/labels.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_string_keys_and_blocked/orders.csv": true,
+      "experiments/E77_mixed_integration/tasks/pilot_string_keys_and_blocked/task.json": true,
+      "experiments/E77_mixed_integration/tasks/search_absent/kb/a.md": true,
+      "experiments/E77_mixed_integration/tasks/search_absent/kb/b.md": true,
+      "experiments/E77_mixed_integration/tasks/search_absent/kb/c.md": true,
+      "experiments/E77_mixed_integration/tasks/search_absent/kb/d.md": true,
+      "experiments/E77_mixed_integration/tasks/search_absent/kb/e.md": true,
+      "experiments/E77_mixed_integration/tasks/search_absent/task.json": true,
+      "experiments/E77_mixed_integration/tasks/search_conflicting_fact/kb/a.md": true,
+      "experiments/E77_mixed_integration/tasks/search_conflicting_fact/kb/b.md": true,
+      "experiments/E77_mixed_integration/tasks/search_conflicting_fact/kb/c.md": true,
+      "experiments/E77_mixed_integration/tasks/search_conflicting_fact/task.json": true,
+      "experiments/E77_mixed_integration/tasks/search_irrelevant_conflict/kb/a.md": true,
+      "experiments/E77_mixed_integration/tasks/search_irrelevant_conflict/kb/b.md": true,
+      "experiments/E77_mixed_integration/tasks/search_irrelevant_conflict/kb/c.md": true,
+      "experiments/E77_mixed_integration/tasks/search_irrelevant_conflict/task.json": true,
+      "experiments/E77_mixed_integration/tasks/search_new_relation/kb/a.md": true,
+      "experiments/E77_mixed_integration/tasks/search_new_relation/kb/b.md": true,
+      "experiments/E77_mixed_integration/tasks/search_new_relation/task.json": true,
+      "experiments/E77_mixed_integration/tasks/search_paraphrase_chain/kb/a.md": true,
+      "experiments/E77_mixed_integration/tasks/search_paraphrase_chain/kb/b.md": true,
+      "experiments/E77_mixed_integration/tasks/search_paraphrase_chain/kb/c.md": true,
+      "experiments/E77_mixed_integration/tasks/search_paraphrase_chain/kb/d.md": true,
+      "experiments/E77_mixed_integration/tasks/search_paraphrase_chain/kb/e.md": true,
+      "experiments/E77_mixed_integration/tasks/search_paraphrase_chain/task.json": true,
+      "experiments/E77_mixed_integration/tasks/search_three_hop/kb/a.md": true,
+      "experiments/E77_mixed_integration/tasks/search_three_hop/kb/b.md": true,
+      "experiments/E77_mixed_integration/tasks/search_three_hop/kb/c.md": true,
+      "experiments/E77_mixed_integration/tasks/search_three_hop/kb/d.md": true,
+      "experiments/E77_mixed_integration/tasks/search_three_hop/kb/e.md": true,
+      "experiments/E77_mixed_integration/tasks/search_three_hop/task.json": true
+    },
+    "all_usage_known": true,
+    "fixtures_unchanged": true,
+    "prior_ledgers_unchanged": true,
+    "ranking_identical": true,
+    "common_payloads": [
+      {
+        "task": "search_new_relation",
+        "identical_payloads": true
+      },
+      {
+        "task": "search_conflicting_fact",
+        "identical_payloads": true
+      },
+      {
+        "task": "search_irrelevant_conflict",
+        "identical_payloads": true
+      },
+      {
+        "task": "search_absent",
+        "identical_payloads": true
+      },
+      {
+        "task": "search_paraphrase_chain",
+        "identical_payloads": true
+      },
+      {
+        "task": "data_distinct",
+        "identical_payloads": true
+      },
+      {
+        "task": "data_empty_count",
+        "identical_payloads": true
+      },
+      {
+        "task": "data_filtered_median",
+        "identical_payloads": true
+      },
+      {
+        "task": "data_weighted_mean",
+        "identical_payloads": true
+      },
+      {
+        "task": "math_sum",
+        "identical_payloads": true
+      },
+      {
+        "task": "math_gcd",
+        "identical_payloads": true
+      },
+      {
+        "task": "math_paraphrase",
+        "identical_payloads": true
+      },
+      {
+        "task": "math_zero_warning",
+        "identical_payloads": true
+      },
+      {
+        "task": "math_zero_operation",
+        "identical_payloads": true
+      },
+      {
+        "task": "math_percentage",
+        "identical_payloads": true
+      },
+      {
+        "task": "coding_multimodule",
+        "identical_payloads": false
+      },
+      {
+        "task": "coding_overlap",
+        "identical_payloads": false
+      },
+      {
+        "task": "coding_intervals",
+        "identical_payloads": false
+      },
+      {
+        "task": "coding_brackets",
+        "identical_payloads": false
+      },
+      {
+        "task": "coding_pure_conflict",
+        "identical_payloads": false
+      },
+      {
+        "task": "coding_stateful",
+        "identical_payloads": false
+      }
+    ],
+    "common_payload_difference": "Six coding prompts contain independently generated temporary workspace paths/diagnostics; no code or tests changed between arms.",
+    "finish_reason_counts": {
+      "baseline": {
+        "stop": 16,
+        "length": 5
+      },
+      "candidate": {
+        "stop": 16,
+        "length": 6
+      }
+    },
+    "local_no_events": true,
+    "model_call_counts": {
+      "qwen3.6-35b-a3b-noreason": 19,
+      "qwen3.8-27b-noreason": 24
+    }
+  },
+  "local_tests": {
+    "passed": 163,
+    "report": "experiments/E77_mixed_integration/unit_tests.json",
+    "environment_correction_retained": true
+  },
+  "offline_is_live_quality_evidence": false,
+  "coverage_limit": {
+    "data_solvable": 12,
+    "local_solved": 6,
+    "all_local_solutions_known_pilot": true
+  },
+  "allocation_findings": {
+    "single_csv_task_budget": 212.5,
+    "single_csv_actual_output_caps": [
+      69,
+      68,
+      67,
+      66
+    ],
+    "two_csv_actual_output_cap": 24,
+    "extra_pilot_input_reservation": 213,
+    "extra_pilot_task_budget": 212.5,
+    "extra_pilot_http_calls": 0,
+    "candidate_remaining_budget": 1717
+  },
+  "feature": {
+    "flag": "--experimental-joins",
+    "default_enabled": false,
+    "production_default_changed": false
+  },
+  "next": {
+    "hypothesis": "H04.17",
+    "parents": [
+      "H04.15",
+      "H04.16"
+    ],
+    "status": "PROPOSED",
+    "description": "Compare per-task reservations that cover conservative input cost plus useful output allowance, under the same total budget. Keep grammar and hard solver output caps unchanged to isolate allocation from H04.16."
+  },
+  "historical_core": {
+    "E43_E44_correct": 9,
+    "solvable": 19,
+    "current_E78_correct_both": 14,
+    "comparison_caveat": "Current replay uses updated whole agent and common 3000 budget; historical phases had different configuration. Do not attribute 9-to-14 to join flag."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "search_new_relation",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: complete\nKB Records:\n# Sol Materials\nSources: a.md\nfounder: Elin Wood\n\n# Elin Wood\nSources: b.md\nborn: 1977\n\nQuestion: Use only kb/. What is the birth year of the founder of Sol Materials? Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 15,
+    "temperature": 0.0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "data_distinct",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Write ONLY raw executable Python 3 code (no markdown fences, no explanations) that reads the CSV file in the current directory and prints ONLY the final answer to stdout."
+      },
+      {
+        "role": "user",
+        "content": "File: sales.csv\nHeader & first rows:\nclient,category,units,price,month\nA,red,2,10,1\nB,blue,4,5,1\nA,red,3,6,2\n\nTask: Using sales.csv, count DISTINCT clients with category red and month at most 2. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 69,
+    "temperature": 0.0
+  }
+}

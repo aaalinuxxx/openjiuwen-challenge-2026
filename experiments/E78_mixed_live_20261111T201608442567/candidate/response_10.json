@@ -1,0 +1,32 @@
+{
+  "task_id": "data_weighted_mean",
+  "response": {
+    "id": "chatcmpl-aa2dfaa2005bfa53",
+    "created": 1794428254,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "import csv\n\ntotal_weighted_price = 0\ntotal_units = 0\n\nwith open('sales.csv', 'r') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        units = int(row['units'])\n        price = float(row['price'])\n        total",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 66,
+      "prompt_tokens": 135,
+      "total_tokens": 201,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

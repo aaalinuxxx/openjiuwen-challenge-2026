@@ -1,0 +1,182 @@
+[
+  {
+    "task_id": "search_new_relation",
+    "roi": 0.04363636363636363,
+    "expected_cost": 66.0,
+    "reward": 3
+  },
+  {
+    "task_id": "search_conflicting_fact",
+    "roi": 0.043308270676691726,
+    "expected_cost": 66.5,
+    "reward": 3
+  },
+  {
+    "task_id": "search_irrelevant_conflict",
+    "roi": 0.043308270676691726,
+    "expected_cost": 66.5,
+    "reward": 3
+  },
+  {
+    "task_id": "search_absent",
+    "roi": 0.042666666666666665,
+    "expected_cost": 67.5,
+    "reward": 3
+  },
+  {
+    "task_id": "search_paraphrase_chain",
+    "roi": 0.042666666666666665,
+    "expected_cost": 67.5,
+    "reward": 3
+  },
+  {
+    "task_id": "search_three_hop",
+    "roi": 0.042666666666666665,
+    "expected_cost": 67.5,
+    "reward": 3
+  },
+  {
+    "task_id": "data_distinct",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "data_empty_count",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "data_filtered_median",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "data_two_file_join",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "data_weighted_mean",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_empty_filter_not_unmatched",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_empty_right",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_extra_numeric_control",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_known_or_failure",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_mixed_duplicates",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_previous_local_control",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_string_keys_and_blocked",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "math_sum",
+    "roi": 0.027927927927927927,
+    "expected_cost": 99.9,
+    "reward": 3
+  },
+  {
+    "task_id": "math_gcd",
+    "roi": 0.027802690582959644,
+    "expected_cost": 100.35,
+    "reward": 3
+  },
+  {
+    "task_id": "math_paraphrase",
+    "roi": 0.02763744427934621,
+    "expected_cost": 100.95,
+    "reward": 3
+  },
+  {
+    "task_id": "math_zero_warning",
+    "roi": 0.027582797825012356,
+    "expected_cost": 101.15,
+    "reward": 3
+  },
+  {
+    "task_id": "math_zero_operation",
+    "roi": 0.027153284671532846,
+    "expected_cost": 102.75,
+    "reward": 3
+  },
+  {
+    "task_id": "math_percentage",
+    "roi": 0.027113702623906704,
+    "expected_cost": 102.9,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_multimodule",
+    "roi": 0.012217697149203998,
+    "expected_cost": 216.08,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_overlap",
+    "roi": 0.010157752981916122,
+    "expected_cost": 259.9,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_intervals",
+    "roi": 0.010069417957128691,
+    "expected_cost": 262.18,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_brackets",
+    "roi": 0.008648931987943913,
+    "expected_cost": 305.24,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_pure_conflict",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_stateful",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 3
+  }
+]
