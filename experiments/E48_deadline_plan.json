@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-11T15:34:48.656Z",
+  "baseline": "bef716967ae2643804b01b9240bc53cb22385414",
+  "hypothesis": "G0.4: explicit request deadline inside a longer explicit SDK workflow deadline preserves fast/slow valid responses and makes cancellation/accounting states predictable",
+  "actual_sdk_default_seconds": 60,
+  "scaled_test_sdk_default_seconds": 0.2,
+  "controls": [
+    "fast",
+    "within_request_after_inherited_sdk",
+    "request_deadline",
+    "external_workflow_cancellation",
+    "post_usage_processing"
+  ],
+  "candidate_default_request_seconds": 60,
+  "candidate_default_workflow_seconds": 180,
+  "acceptance": "Five controls pass in real SDK, one transport attempt each, unknown costs stop new calls, post-usage cancellation never loses known usage",
+  "api_calls": 0,
+  "limits": "No actual latency measurement, no guarantee of provider success, old unknown E46 charge remains unresolved"
+}
