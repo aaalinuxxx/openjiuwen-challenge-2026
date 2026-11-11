@@ -1,0 +1,648 @@
+{
+  "mode": "PREFLIGHT_REFERENCE_PATCHES",
+  "status": "COMPLETED",
+  "scope": "Paired mechanism study on four known E57 code fixtures, three changed instructions; not independent holdout. Local negative controls separate from live quality.",
+  "plan_sha256": "f9b3a0c1765196bfb1b436e6f5d12f1cf58b6dbfbf2740053a777307ae27179d",
+  "source_hashes": {
+    "harness/agents/coding_solver.py": "32dbee26f8d81b62e6022923018f491702a68a58c127bbb0a349b606c28163a7",
+    "harness/agents/coding_target.py": "e834418fbe1b05a0bb90ce8d4f6661f2b4348eba4e2430ce2192acad716299f4",
+    "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/target_selection_live.py": "3cc8b7b415f77bc36a1ee50b24218ae2557cd1e057181ff56d40da91e5f14faf",
+    "scripts/multimodule_live.py": "70a6737a2b3887d418e441aaaae373fe8368b961a88179680907b48ec8b67527",
+    "experiments/E59_target_selection/cases.json": "456b6ba07e4179ff80e9318e8c1d6c397a2a15abb5f627cc2513b2412dead2aa",
+    "experiments/E59_target_selection/legacy_coding_solver.py": "346f1b35d99192eb1fd2bd3b0ba947abf365e83e1b33fd4852d92d38c7fb6bdd",
+    "experiments/E59_target_selection/selector_controls.json": "a10b061870cd88b2dcec0ce51d2bac816739d970dadd3b59ed363b68f160b940",
+    "experiments/E59_target_selection/local_validation.json": "1aedb8f9038ed4d4fe4343c50162dd1036c154e434806fec89e259718b527aa0",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d"
+  },
+  "rows": [
+    {
+      "case": "boundary",
+      "arm": "old",
+      "order_in_pair": 0,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "wrong_delivery": false,
+      "validation": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-target-pairs-3j5hl1co\\boundary__old\\test_filter.py\", line 2, in <module>\n    assert keep([10,11,12]) == [11,12]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "final_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "boundary__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0629999999946449,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple code modules without an unambiguous repair target"
+      },
+      "workflow": {
+        "task_id": "boundary__old",
+        "workflow_id": "task_73cb119efa5b4c0eb1abf99f63251076",
+        "session_id": "2f60841ec46a43e78119fe9126bedb5c",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "boundary",
+      "arm": "new",
+      "order_in_pair": 1,
+      "status": "SOLVED",
+      "answer": "DONE",
+      "solved": true,
+      "wrong_delivery": false,
+      "validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "af2884052621b117524e3ca515622a2656a3469fa1fcfad784ffbba3ac2669aa",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "final_hashes": {
+        "a_settings.py": "11683b7371eaeb8833da9dea0f253680cb06bdf8129cb3f3311f1325bac2f447",
+        "z_filter.py": "aeecef5ee4aac42f5833017529242f6570648022011eef0b6fc47853bd81dd3d",
+        "test_filter.py": "63c57554ce05052219e3a9312a87f483eb67b9264daba860780dda54fe928b85"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "boundary__new",
+        "status": "SOLVED",
+        "answer": "DONE",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.14000000001396984,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "boundary__new",
+        "workflow_id": "task_9afda40ba73649d88d9b3029bb3be16b",
+        "session_id": "47d09d3ac966465bbd859c5db3a20dd8",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "units",
+      "arm": "new",
+      "order_in_pair": 0,
+      "status": "SOLVED",
+      "answer": "DONE",
+      "solved": true,
+      "wrong_delivery": false,
+      "validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_convert.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_units.py": "d85f265b437e3080cfaf9c63b448f54a7c158706fac90d9519cbe21d421ab194",
+        "z_convert.py": "824b1b721d1df410e9d032db4310ac9f694cea3e72bc3630e2e9a1ee4d01be12",
+        "test_convert.py": "37544f35c6363ecc877a9dc66bb107dc668fdb0fd3a6d2c3bd9e0ebcbcbbdea9"
+      },
+      "final_hashes": {
+        "a_units.py": "d85f265b437e3080cfaf9c63b448f54a7c158706fac90d9519cbe21d421ab194",
+        "z_convert.py": "248bb3551f33302f9088a6a136b8e62134f70d5a9a6d55fa88bf899c0d3afe3f",
+        "test_convert.py": "37544f35c6363ecc877a9dc66bb107dc668fdb0fd3a6d2c3bd9e0ebcbcbbdea9"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "units__new",
+        "status": "SOLVED",
+        "answer": "DONE",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.10899999999674037,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "units__new",
+        "workflow_id": "task_7f5f084fecea4bd6868ae2003142afef",
+        "session_id": "2d05110711dd4f49babca07caee72c45",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "units",
+      "arm": "old",
+      "order_in_pair": 1,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "wrong_delivery": false,
+      "validation": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_convert.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-target-pairs-3j5hl1co\\units__old\\test_convert.py\", line 2, in <module>\n    assert convert(300, 'cm', 'm') == 3\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_units.py": "d85f265b437e3080cfaf9c63b448f54a7c158706fac90d9519cbe21d421ab194",
+        "z_convert.py": "824b1b721d1df410e9d032db4310ac9f694cea3e72bc3630e2e9a1ee4d01be12",
+        "test_convert.py": "37544f35c6363ecc877a9dc66bb107dc668fdb0fd3a6d2c3bd9e0ebcbcbbdea9"
+      },
+      "final_hashes": {
+        "a_units.py": "d85f265b437e3080cfaf9c63b448f54a7c158706fac90d9519cbe21d421ab194",
+        "z_convert.py": "824b1b721d1df410e9d032db4310ac9f694cea3e72bc3630e2e9a1ee4d01be12",
+        "test_convert.py": "37544f35c6363ecc877a9dc66bb107dc668fdb0fd3a6d2c3bd9e0ebcbcbbdea9"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "units__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.046999999991385266,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple code modules without an unambiguous repair target"
+      },
+      "workflow": {
+        "task_id": "units__old",
+        "workflow_id": "task_38d11c73567e4e699e77a0b848c83dbb",
+        "session_id": "4ce3080e72974e9a9514a7e0cead530e",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "normalization",
+      "arm": "old",
+      "order_in_pair": 0,
+      "status": "UNKNOWN",
+      "answer": null,
+      "solved": false,
+      "wrong_delivery": false,
+      "validation": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_lookup.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-target-pairs-3j5hl1co\\normalization__old\\test_lookup.py\", line 2, in <module>\n    assert lookup({' Alice  Holt ': 7}, 'alice holt') == 7\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_normalize.py": "71fd311a31764eb80a610cc9fed4c59e6364e63b7ba91112bfc5292b75e12437",
+        "z_lookup.py": "2a01530551bab09321fcb91cd32b928c962619b1da35b3e5ab01663d52618fc6",
+        "test_lookup.py": "ea887ed39c18fb0fbe592754152046fa94ae617d86c7d03a348269147b1453ee"
+      },
+      "final_hashes": {
+        "a_normalize.py": "71fd311a31764eb80a610cc9fed4c59e6364e63b7ba91112bfc5292b75e12437",
+        "z_lookup.py": "2a01530551bab09321fcb91cd32b928c962619b1da35b3e5ab01663d52618fc6",
+        "test_lookup.py": "ea887ed39c18fb0fbe592754152046fa94ae617d86c7d03a348269147b1453ee"
+      },
+      "calls": 0,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "normalization__old",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.10899999999674037,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Multiple code modules without an unambiguous repair target"
+      },
+      "workflow": {
+        "task_id": "normalization__old",
+        "workflow_id": "task_94c5eebb0f7045a0bb45979504ed2445",
+        "session_id": "a691cdfb14884245a2ee386268fcbe58",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "normalization",
+      "arm": "new",
+      "order_in_pair": 1,
+      "status": "SOLVED",
+      "answer": "DONE",
+      "solved": true,
+      "wrong_delivery": false,
+      "validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_lookup.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_normalize.py": "71fd311a31764eb80a610cc9fed4c59e6364e63b7ba91112bfc5292b75e12437",
+        "z_lookup.py": "2a01530551bab09321fcb91cd32b928c962619b1da35b3e5ab01663d52618fc6",
+        "test_lookup.py": "ea887ed39c18fb0fbe592754152046fa94ae617d86c7d03a348269147b1453ee"
+      },
+      "final_hashes": {
+        "a_normalize.py": "71fd311a31764eb80a610cc9fed4c59e6364e63b7ba91112bfc5292b75e12437",
+        "z_lookup.py": "6a761c051f79bfaf6e52111705d0d6bd3b6be34e23c3fc5a131a4f40bb2b06b6",
+        "test_lookup.py": "ea887ed39c18fb0fbe592754152046fa94ae617d86c7d03a348269147b1453ee"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "normalization__new",
+        "status": "SOLVED",
+        "answer": "DONE",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.15599999998812564,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "normalization__new",
+        "workflow_id": "task_6856ce58523e491e9004162dd61fa999",
+        "session_id": "8fadb4e1ceca4b68b5180aaf44d07990",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "two_test_files",
+      "arm": "new",
+      "order_in_pair": 0,
+      "status": "SOLVED",
+      "answer": "DONE",
+      "solved": true,
+      "wrong_delivery": false,
+      "validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_rates.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "test_rounding.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_rates.py": "5a828bac18d43aeea3e197a737121938c4a6a66a708f7cbd9a6eb1d40bb641d0",
+        "z_totals.py": "7c591b8a58865a36ed45669a02c027fc403f6253264d46fa3828a97f9e4bda31",
+        "test_rates.py": "3b6c7e70327c99bc3dd401855dd0f3593f4dccd71667c349938c643f423d938f",
+        "test_rounding.py": "800dc915cad5a2cd53cbba571e622d23b521056c4cfc41101887a6b175c7ca9d"
+      },
+      "final_hashes": {
+        "a_rates.py": "5a828bac18d43aeea3e197a737121938c4a6a66a708f7cbd9a6eb1d40bb641d0",
+        "z_totals.py": "8d97fa0a4317aa44bc589f58f437168a6d6b7bd849c7ee0d9e6094edba4de166",
+        "test_rates.py": "3b6c7e70327c99bc3dd401855dd0f3593f4dccd71667c349938c643f423d938f",
+        "test_rounding.py": "800dc915cad5a2cd53cbba571e622d23b521056c4cfc41101887a6b175c7ca9d"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "two_test_files__new",
+        "status": "SOLVED",
+        "answer": "DONE",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.29699999999138527,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "two_test_files__new",
+        "workflow_id": "task_675d355ff74249cfa14325ac266cb7af",
+        "session_id": "3bb16f0b40714d96b1f5b3300ffca82f",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    },
+    {
+      "case": "two_test_files",
+      "arm": "old",
+      "order_in_pair": 1,
+      "status": "SOLVED",
+      "answer": "DONE",
+      "solved": true,
+      "wrong_delivery": false,
+      "validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_rates.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "test_rounding.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      "unchanged_non_target": true,
+      "unexpected_files": [],
+      "original_hashes": {
+        "a_rates.py": "5a828bac18d43aeea3e197a737121938c4a6a66a708f7cbd9a6eb1d40bb641d0",
+        "z_totals.py": "7c591b8a58865a36ed45669a02c027fc403f6253264d46fa3828a97f9e4bda31",
+        "test_rates.py": "3b6c7e70327c99bc3dd401855dd0f3593f4dccd71667c349938c643f423d938f",
+        "test_rounding.py": "800dc915cad5a2cd53cbba571e622d23b521056c4cfc41101887a6b175c7ca9d"
+      },
+      "final_hashes": {
+        "a_rates.py": "5a828bac18d43aeea3e197a737121938c4a6a66a708f7cbd9a6eb1d40bb641d0",
+        "z_totals.py": "8d97fa0a4317aa44bc589f58f437168a6d6b7bd849c7ee0d9e6094edba4de166",
+        "test_rates.py": "3b6c7e70327c99bc3dd401855dd0f3593f4dccd71667c349938c643f423d938f",
+        "test_rounding.py": "800dc915cad5a2cd53cbba571e622d23b521056c4cfc41101887a6b175c7ca9d"
+      },
+      "calls": 1,
+      "effective_cost": 0.0,
+      "result": {
+        "task_id": "two_test_files__old",
+        "status": "SOLVED",
+        "answer": "DONE",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.3120000000053551,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "workflow": {
+        "task_id": "two_test_files__old",
+        "workflow_id": "task_54e38b2e0ae84f34866a09d62eabdb9c",
+        "session_id": "85391ba337b94fc98c1430924c4e1f87",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60,
+        "workflow_timeout_sec": 180
+      }
+    }
+  ],
+  "recording_errors": [],
+  "budget": {
+    "budget": 3000,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "boundary__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 9153,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2153,
+        "output_cap": 700,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 1,
+        "task_id": "units__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 9269,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2269,
+        "output_cap": 700,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 2,
+        "task_id": "normalization__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 9276,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2276,
+        "output_cap": 700,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 3,
+        "task_id": "two_test_files__new",
+        "status": "ACCOUNTED",
+        "reserved_units": 9566,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2566,
+        "output_cap": 700,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      },
+      {
+        "ticket": 4,
+        "task_id": "two_test_files__old",
+        "status": "ACCOUNTED",
+        "reserved_units": 9566,
+        "task_limit_units": 12000,
+        "input_token_estimate": 2566,
+        "output_cap": 700,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "effective_cost": 0.0
+      }
+    ]
+  },
+  "real_api_attempts": 0,
+  "known_effective_tokens": 0,
+  "metrics": {
+    "old": {
+      "attempted": 4,
+      "solved": 1,
+      "wrong_deliveries": 0,
+      "calls": 1,
+      "effective_tokens": 0.0
+    },
+    "new": {
+      "attempted": 4,
+      "solved": 4,
+      "wrong_deliveries": 0,
+      "calls": 4,
+      "effective_tokens": 0.0
+    }
+  },
+  "prior_ledgers_unchanged": true,
+  "preflight_passed": true
+}

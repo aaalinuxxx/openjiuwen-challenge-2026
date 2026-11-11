@@ -1,0 +1,74 @@
+{
+  "budget": 3000,
+  "known_effective_tokens": 0.0,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "boundary__new",
+      "status": "ACCOUNTED",
+      "reserved_units": 9153,
+      "task_limit_units": 12000,
+      "input_token_estimate": 2153,
+      "output_cap": 700,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 1,
+      "task_id": "units__new",
+      "status": "ACCOUNTED",
+      "reserved_units": 9269,
+      "task_limit_units": 12000,
+      "input_token_estimate": 2269,
+      "output_cap": 700,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 2,
+      "task_id": "normalization__new",
+      "status": "ACCOUNTED",
+      "reserved_units": 9276,
+      "task_limit_units": 12000,
+      "input_token_estimate": 2276,
+      "output_cap": 700,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 3,
+      "task_id": "two_test_files__new",
+      "status": "ACCOUNTED",
+      "reserved_units": 9566,
+      "task_limit_units": 12000,
+      "input_token_estimate": 2566,
+      "output_cap": 700,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    },
+    {
+      "ticket": 4,
+      "task_id": "two_test_files__old",
+      "status": "ACCOUNTED",
+      "reserved_units": 9566,
+      "task_limit_units": 12000,
+      "input_token_estimate": 2566,
+      "output_cap": 700,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "effective_cost": 0.0
+    }
+  ]
+}

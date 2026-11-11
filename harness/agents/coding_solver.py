@@ -10,6 +10,7 @@ from typing import Tuple, Dict
 
 from harness.config import TaskContext, SolveResult
 from harness.agents.model_router import select_primary_model, select_fallback_model
+from harness.agents.coding_target import select_coding_target
 
 
 def _parse_failures_count(output: str) -> int:
@@ -72,12 +73,7 @@ async def solve_coding_task(ctx: TaskContext, bridge) -> SolveResult:
     if not test_files or not code_files:
         return SolveResult(task_id=ctx.task_id, status="UNSOLVABLE", notes="Missing code or test file")
 
-    # Honor an explicit repair target; filename ordering is not task intent.
-    requested = re.findall(
-        r'\b(?:fix|repair|correct|update)\s+(?:the\s+)?(?:bugs?\s+in\s+)?`?([A-Za-z_][A-Za-z0-9_]*\.py)\b',
-        ctx.instruction, re.IGNORECASE)
-    matches = [p for p in code_files if p.name in requested]
-    target_file = matches[0] if len(matches) == 1 else (code_files[0] if len(code_files) == 1 and not requested else None)
+    target_file = select_coding_target(ctx.instruction, code_files)
 
     with tempfile.TemporaryDirectory(prefix="oj-coding-") as temp_dir:
         sandbox_dir = Path(temp_dir) / "workspace"

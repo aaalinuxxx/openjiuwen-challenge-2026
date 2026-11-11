@@ -1,0 +1,72 @@
+{
+  "case": "two_test_files",
+  "arm": "old",
+  "order_in_pair": 1,
+  "status": "SOLVED",
+  "answer": "DONE",
+  "solved": true,
+  "wrong_delivery": false,
+  "validation": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "test_rates.py",
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "name": "test_rounding.py",
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "name": "additional_checks",
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ]
+  },
+  "unchanged_non_target": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "a_rates.py": "5a828bac18d43aeea3e197a737121938c4a6a66a708f7cbd9a6eb1d40bb641d0",
+    "z_totals.py": "7c591b8a58865a36ed45669a02c027fc403f6253264d46fa3828a97f9e4bda31",
+    "test_rates.py": "3b6c7e70327c99bc3dd401855dd0f3593f4dccd71667c349938c643f423d938f",
+    "test_rounding.py": "800dc915cad5a2cd53cbba571e622d23b521056c4cfc41101887a6b175c7ca9d"
+  },
+  "final_hashes": {
+    "a_rates.py": "5a828bac18d43aeea3e197a737121938c4a6a66a708f7cbd9a6eb1d40bb641d0",
+    "z_totals.py": "8d97fa0a4317aa44bc589f58f437168a6d6b7bd849c7ee0d9e6094edba4de166",
+    "test_rates.py": "3b6c7e70327c99bc3dd401855dd0f3593f4dccd71667c349938c643f423d938f",
+    "test_rounding.py": "800dc915cad5a2cd53cbba571e622d23b521056c4cfc41101887a6b175c7ca9d"
+  },
+  "calls": 1,
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "two_test_files__old",
+    "status": "SOLVED",
+    "answer": "DONE",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.3120000000053551,
+    "model_used": "qwen3.8-27b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "two_test_files__old",
+    "workflow_id": "task_54e38b2e0ae84f34866a09d62eabdb9c",
+    "session_id": "85391ba337b94fc98c1430924c4e1f87",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

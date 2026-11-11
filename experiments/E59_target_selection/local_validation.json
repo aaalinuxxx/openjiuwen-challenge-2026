@@ -1,0 +1,375 @@
+{
+  "api_calls": 0,
+  "oracle_passed": true,
+  "rows": [
+    {
+      "case": "boundary",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-target-oracle-w_2ll4y3\\boundary\\test_filter.py\", line 2, in <module>\n    assert keep([10,11,12]) == [11,12]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_filter.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "case": "units",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_convert.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-target-oracle-w_2ll4y3\\units\\test_convert.py\", line 2, in <module>\n    assert convert(300, 'cm', 'm') == 3\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_convert.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "case": "normalization",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_lookup.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-target-oracle-w_2ll4y3\\normalization\\test_lookup.py\", line 2, in <module>\n    assert lookup({' Alice  Holt ': 7}, 'alice holt') == 7\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_lookup.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "case": "two_test_files",
+      "original": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "test_rates.py",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-target-oracle-w_2ll4y3\\two_test_files\\test_rates.py\", line 2, in <module>\n    assert total([('2', 'B')]) == '2.50'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+          },
+          {
+            "name": "test_rounding.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 1,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nAssertionError\n"
+          }
+        ]
+      },
+      "reference": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "test_rates.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "test_rounding.py",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "name": "additional_checks",
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      }
+    }
+  ],
+  "controls": [
+    {
+      "instruction": "Fix z_filter.py.",
+      "expected": "z_filter.py",
+      "old": "z_filter.py",
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "The bug is in z_filter.py; change that module only.",
+      "expected": "z_filter.py",
+      "old": null,
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "Only modify `z_filter.py`. Do not edit a_settings.py.",
+      "expected": "z_filter.py",
+      "old": null,
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "Target file: z_filter.py. Leave a_settings.py unchanged.",
+      "expected": "z_filter.py",
+      "old": null,
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "Repair the module z_filter.py.",
+      "expected": "z_filter.py",
+      "old": null,
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "Please fix the bug in z_filter.py.",
+      "expected": "z_filter.py",
+      "old": "z_filter.py",
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "Fix bugs.",
+      "expected": "z_filter.py",
+      "old": "z_filter.py",
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "Do not fix z_filter.py.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Never repair z_filter.py.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Don't edit z_filter.py. Fix z_filter.py.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "The log says \"Fix z_filter.py\".",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Example: 'Repair z_filter.py'.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "```\nFix z_filter.py.\n```",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Fix missing.py. Fix z_filter.py.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Fix missing.py.",
+      "expected": null,
+      "old": null,
+      "new": null
+    },
+    {
+      "instruction": "Fix z_filter.py and a_settings.py.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Fix z_filter.py. Repair a_settings.py.",
+      "expected": null,
+      "old": null,
+      "new": null
+    },
+    {
+      "instruction": "Fix z_filter.py. z_filter.py is read-only.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Fix z_filter.py. Leave z_filter.py unchanged.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Repair both modules.",
+      "expected": null,
+      "old": null,
+      "new": null
+    },
+    {
+      "instruction": "Fix ../z_filter.py.",
+      "expected": null,
+      "old": null,
+      "new": null
+    },
+    {
+      "instruction": "Fix pkg/z_filter.py.",
+      "expected": null,
+      "old": null,
+      "new": null
+    },
+    {
+      "instruction": "Fix test_filter.py.",
+      "expected": null,
+      "old": null,
+      "new": null
+    },
+    {
+      "instruction": "Fix z_filter.py. Do not edit any files.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Fix z_filter.py. Use threshold from a_settings.py.",
+      "expected": "z_filter.py",
+      "old": "z_filter.py",
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "Do not edit.",
+      "expected": null,
+      "old": "z_filter.py",
+      "new": null
+    },
+    {
+      "instruction": "Do not modify tests. Fix bugs.",
+      "expected": "z_filter.py",
+      "old": "z_filter.py",
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "Run `python3 test_mylib.py` in the current directory; some tests fail. Fix the bugs in mylib.py (do not edit the tests) until all tests pass. Work only inside the current directory. When you are done, write ONLY the word DONE to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+      "expected": "mylib.py",
+      "old": "mylib.py",
+      "new": "mylib.py"
+    },
+    {
+      "instruction": "Run python3 test_mylib.py. Fix mylib.py without editing tests. average(xs) returns the arithmetic mean, or 0 for an empty list. Functions must be pure and deterministic; do not inspect test names or call order. When done, write ONLY DONE to answer.txt.",
+      "expected": "mylib.py",
+      "old": "mylib.py",
+      "new": "mylib.py"
+    },
+    {
+      "instruction": "Fix mylib.py: keep values at least the threshold returned by settings.threshold(). Preserve that imported function. Do not edit a_settings.py. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+      "expected": "mylib.py",
+      "old": "mylib.py",
+      "new": "mylib.py"
+    },
+    {
+      "instruction": "Fix z_filter.py. Keep input values greater than or equal to threshold() from a_settings.py, in their original order, preserving duplicates. Do not modify a_settings.py or tests.",
+      "expected": "z_filter.py",
+      "old": "z_filter.py",
+      "new": "z_filter.py"
+    },
+    {
+      "instruction": "Repair z_convert.py. convert(value, source, target) converts a length using the METRES_PER_UNIT mapping from a_units.py: value * METRES_PER_UNIT[source] / METRES_PER_UNIT[target]. Do not modify a_units.py or tests.",
+      "expected": "z_convert.py",
+      "old": "z_convert.py",
+      "new": "z_convert.py"
+    },
+    {
+      "instruction": "Correct z_lookup.py. lookup(mapping, query) returns the value at the first insertion-order key whose normalize(key) equals normalize(query), or None when no key matches. Use normalize from a_normalize.py. Do not modify dependencies or tests.",
+      "expected": "z_lookup.py",
+      "old": "z_lookup.py",
+      "new": "z_lookup.py"
+    },
+    {
+      "instruction": "Update z_totals.py. total(rows) sums Decimal(str(amount)) * RATES[currency] for each (amount, currency), then rounds the final total to two decimals with ROUND_HALF_UP and returns its fixed-point string. For empty input return '0.00'. Use a_rates.py and never modify dependencies or tests.",
+      "expected": "z_totals.py",
+      "old": "z_totals.py",
+      "new": "z_totals.py"
+    }
+  ],
+  "old_correct": 18,
+  "new_correct": 34,
+  "total": 34
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "units__new",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "from a_units import METRES_PER_UNIT\n\ndef convert(value, source, target):\n    return value * METRES_PER_UNIT[source] / METRES_PER_UNIT[target]\n"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

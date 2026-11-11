@@ -1,0 +1,64 @@
+{
+  "case": "normalization",
+  "arm": "new",
+  "order_in_pair": 1,
+  "status": "SOLVED",
+  "answer": "DONE",
+  "solved": true,
+  "wrong_delivery": false,
+  "validation": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "test_lookup.py",
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "name": "additional_checks",
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ]
+  },
+  "unchanged_non_target": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "a_normalize.py": "71fd311a31764eb80a610cc9fed4c59e6364e63b7ba91112bfc5292b75e12437",
+    "z_lookup.py": "2a01530551bab09321fcb91cd32b928c962619b1da35b3e5ab01663d52618fc6",
+    "test_lookup.py": "ea887ed39c18fb0fbe592754152046fa94ae617d86c7d03a348269147b1453ee"
+  },
+  "final_hashes": {
+    "a_normalize.py": "71fd311a31764eb80a610cc9fed4c59e6364e63b7ba91112bfc5292b75e12437",
+    "z_lookup.py": "6a761c051f79bfaf6e52111705d0d6bd3b6be34e23c3fc5a131a4f40bb2b06b6",
+    "test_lookup.py": "ea887ed39c18fb0fbe592754152046fa94ae617d86c7d03a348269147b1453ee"
+  },
+  "calls": 1,
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "normalization__new",
+    "status": "SOLVED",
+    "answer": "DONE",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.15599999998812564,
+    "model_used": "qwen3.8-27b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "normalization__new",
+    "workflow_id": "task_6856ce58523e491e9004162dd61fa999",
+    "session_id": "8fadb4e1ceca4b68b5180aaf44d07990",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

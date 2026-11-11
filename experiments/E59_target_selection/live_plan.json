@@ -1,0 +1,32 @@
+{
+  "hypothesis": "H05.5",
+  "scope": "Paired mechanism study on four known E57 code fixtures, three changed instructions; not independent holdout. Local negative controls separate from live quality.",
+  "budget": 3000,
+  "max_calls": 8,
+  "per_task_budget": 1200,
+  "expected_requests": 5,
+  "model": "qwen3.8-27b-noreason",
+  "max_output": 700,
+  "temperature": 0,
+  "prior_unknown_ledgers": [
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json",
+    "experiments/E50_search_live_20261111T155649239479/budget.json"
+  ],
+  "frozen_hashes": {
+    "harness/agents/coding_solver.py": "32dbee26f8d81b62e6022923018f491702a68a58c127bbb0a349b606c28163a7",
+    "harness/agents/coding_target.py": "e834418fbe1b05a0bb90ce8d4f6661f2b4348eba4e2430ce2192acad716299f4",
+    "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+    "harness/agents/base_harness.py": "dc0ff4336becac61c178b0b5eff711f69dd0d75424dffccd974d10bf3345776d",
+    "harness/config.py": "81e369dfa1b74219d1bb53787ce8df4d68e6ece44d6a35ea7cc455c8c324be87",
+    "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+    "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+    "scripts/target_selection_live.py": "3cc8b7b415f77bc36a1ee50b24218ae2557cd1e057181ff56d40da91e5f14faf",
+    "scripts/multimodule_live.py": "70a6737a2b3887d418e441aaaae373fe8368b961a88179680907b48ec8b67527",
+    "experiments/E59_target_selection/cases.json": "456b6ba07e4179ff80e9318e8c1d6c397a2a15abb5f627cc2513b2412dead2aa",
+    "experiments/E59_target_selection/legacy_coding_solver.py": "346f1b35d99192eb1fd2bd3b0ba947abf365e83e1b33fd4852d92d38c7fb6bdd",
+    "experiments/E59_target_selection/selector_controls.json": "a10b061870cd88b2dcec0ce51d2bac816739d970dadd3b59ed363b68f160b940",
+    "experiments/E59_target_selection/local_validation.json": "1aedb8f9038ed4d4fe4343c50162dd1036c154e434806fec89e259718b527aa0",
+    "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": "a81e57032e943a94c79978f6fa237d8d2b62194f84f7f6ace9e07edc84d97773",
+    "experiments/E50_search_live_20261111T155649239479/budget.json": "73d904ac1f312080e0780e58aa27631740b8e4c9863e9ce1383e2cf610af195d"
+  }
+}
