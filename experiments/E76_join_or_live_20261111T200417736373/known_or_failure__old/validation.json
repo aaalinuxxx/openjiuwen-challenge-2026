@@ -1,0 +1,49 @@
+{
+  "case": "known_or_failure",
+  "arm": "old",
+  "selected_route": "python",
+  "expected_scope_route": "python",
+  "order_in_pair": 0,
+  "expected": "30",
+  "status": "SOLVED",
+  "answer": "23",
+  "solved": false,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": true,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "orders.csv": "010c1e494af5369dcbf9df0b158a7765a200e01034e33e9f668ce66f5e2a19be",
+    "labels.csv": "4171fcc01b2ae03a8af4eba102efd5337760f070b869c873c395c2104ad62777"
+  },
+  "calls": 1,
+  "stages": [
+    "python"
+  ],
+  "effective_cost": 289.6,
+  "result": {
+    "task_id": "known_or_failure__old",
+    "status": "SOLVED",
+    "answer": "23",
+    "input_tokens": 296,
+    "output_tokens": 260,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 5.26600000000326,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "known_or_failure__old",
+    "workflow_id": "task_69d0cfb41fe9421cb77d421e7d26f4a2",
+    "session_id": "033f5f77ae7d49aea1937d9b4c6007ce",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "string_keys_and_blocked__old",
+  "response": {
+    "id": "chatcmpl-839c46aae8c755e2",
+    "created": 1794427520,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read labels.csv\nlabels = []\nwith open('labels.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        labels.append(row)\n\n# Build a lookup for labels by sku (string key)\n# Since we need to preserve duplicates and match all pairs, we need to handle the join carefully.\n# Left join: for each order row, find all matching label rows where labels.sku == orders.code\n# If no match, the order row still appears with no region (or we treat it as no match)\n\n# For each order, find all matching labels\n# Sum qty for pairs where labels.region == 'west' OR no matching right row\n\ntotal = 0\n\nfor order in orders:\n    code = order['code']\n    qty = int(order['qty'])\n    \n    # Find all matching labels\n    matching_labels = [label for label in labels if label['sku'] == code]\n    \n    if not matching_labels:\n        # No matching right row: include this order's qty\n        total += qty\n    else:\n        # For each matching label, check if region is 'west'\n        for label in matching_labels:\n            if label['region'] == 'west':\n                total += qty\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 338,
+      "prompt_tokens": 286,
+      "total_tokens": 624,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

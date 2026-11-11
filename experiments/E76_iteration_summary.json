@@ -1,0 +1,245 @@
+{
+  "hypothesis": "H04.14",
+  "status": "SUPPORTED_ON_TARGETED_PILOT",
+  "frozen_commit": "5d72f0d",
+  "report": "experiments/E76_join_or_live_20261111T200417736373/report.json",
+  "real_api_attempts": 7,
+  "effective_tokens": 2600.4,
+  "metrics": {
+    "old": {
+      "attempted": 7,
+      "solved": 5,
+      "solvable_total": 7,
+      "supported_solved": 5,
+      "supported_total": 6,
+      "outside_plan_solved": 0,
+      "outside_plan_total": 1,
+      "fallback_tasks": 0,
+      "wrong_answers": 1,
+      "calls": 6,
+      "effective_tokens": 2170.7
+    },
+    "new": {
+      "attempted": 7,
+      "solved": 6,
+      "solvable_total": 7,
+      "supported_solved": 6,
+      "supported_total": 6,
+      "outside_plan_solved": 0,
+      "outside_plan_total": 1,
+      "fallback_tasks": 0,
+      "wrong_answers": 0,
+      "calls": 1,
+      "effective_tokens": 429.7
+    }
+  },
+  "usage": {
+    "old": {
+      "input": 1677,
+      "output": 2003
+    },
+    "new": {
+      "input": 297,
+      "output": 400
+    }
+  },
+  "changed_OR_routes": {
+    "old_correct": 4,
+    "new_correct": 5,
+    "total": 5,
+    "old_calls": 5,
+    "new_calls": 0,
+    "old_effective_tokens": 1741,
+    "new_effective_tokens": 0
+  },
+  "net_cost_saving": 1741,
+  "net_cost_saving_percent": 80.20454231353942,
+  "verification": {
+    "responses": [
+      {
+        "task": "known_or_failure__old",
+        "stage": "python",
+        "finish_reason": "stop",
+        "path": "experiments/E76_join_or_live_20261111T200417736373/response_01.json",
+        "effective_cost": 289.6,
+        "sha256": "a25975fbd0528dcdd3dfcc0e0eb12490274f4d13aa016ad52cab3e8ec9add132"
+      },
+      {
+        "task": "mixed_duplicates__old",
+        "stage": "python",
+        "finish_reason": "stop",
+        "path": "experiments/E76_join_or_live_20261111T200417736373/response_02.json",
+        "effective_cost": 343.2,
+        "sha256": "339dd1c4800ddb690622cb31a2c45b93e6f1d4abe531590e7b3c357565c2a41b"
+      },
+      {
+        "task": "empty_filter_not_unmatched__old",
+        "stage": "python",
+        "finish_reason": "stop",
+        "path": "experiments/E76_join_or_live_20261111T200417736373/response_03.json",
+        "effective_cost": 347.7,
+        "sha256": "4d7ee85b0409b7e85e77fa982823f7432785559374adc8efb4f0f417f13d37f8"
+      },
+      {
+        "task": "empty_right__old",
+        "stage": "python",
+        "finish_reason": "stop",
+        "path": "experiments/E76_join_or_live_20261111T200417736373/response_04.json",
+        "effective_cost": 393.9,
+        "sha256": "15747e380d38e0edc33b0ec2e6c201b493b243ad8611c013d4527cab8acc481a"
+      },
+      {
+        "task": "string_keys_and_blocked__old",
+        "stage": "python",
+        "finish_reason": "stop",
+        "path": "experiments/E76_join_or_live_20261111T200417736373/response_05.json",
+        "effective_cost": 366.6,
+        "sha256": "9c809aad72df2f47b5f6ff3bfd8d1f917ca4b86027876c835d45c6984aad34e6"
+      },
+      {
+        "task": "extra_numeric_control__new",
+        "stage": "python",
+        "finish_reason": "length",
+        "path": "experiments/E76_join_or_live_20261111T200417736373/response_06.json",
+        "effective_cost": 429.7,
+        "sha256": "47e020eb53dcb525a7047c0fa3ea606a4521abba2545c174bce2b045fe5e8ea1"
+      },
+      {
+        "task": "extra_numeric_control__old",
+        "stage": "python",
+        "finish_reason": "length",
+        "path": "experiments/E76_join_or_live_20261111T200417736373/response_07.json",
+        "effective_cost": 429.7,
+        "sha256": "96b2d070c98b7289fe2f71da99e5e7e8edb386a8be6ac47843c9c4cc2a9fdaf4"
+      }
+    ],
+    "all_frozen_hashes_unchanged": {
+      "harness/agents/join_cascade.py": true,
+      "harness/agents/join_plans.py": true,
+      "harness/agents/multi_csv.py": true,
+      "harness/agents/data_solver.py": true,
+      "harness/agents/calculation_plans.py": true,
+      "harness/agents/model_router.py": true,
+      "harness/agents/base_harness.py": true,
+      "harness/config.py": true,
+      "harness/workflow_runner.py": true,
+      "harness/planner/budget_tracker.py": true,
+      "harness/sandbox/executor.py": true,
+      "scripts/multimodule_live.py": true,
+      "experiments/E46_family_spacious_live_20261111T151541558005/budget.json": true,
+      "experiments/E50_search_live_20261111T155649239479/budget.json": true,
+      "harness/agents/join_scope.py": true,
+      "harness/agents/join_scope_v2.py": true,
+      "harness/agents/local_join.py": true,
+      "harness/agents/join_or.py": true,
+      "scripts/join_or_live.py": true,
+      "tests/test_join_or.py": true,
+      "experiments/E75_join_or/cases.json": true,
+      "experiments/E75_join_or/oracle_validation.json": true,
+      "experiments/E75_join_or/routing_validation.json": true,
+      "experiments/E75_join_or/design.md": true
+    },
+    "all_usage_known": true,
+    "all_inputs_unchanged": true,
+    "all_actual_routes_match_expected": true,
+    "finish_reason_counts": {
+      "stop": 5,
+      "length": 2
+    },
+    "local_results": [
+      {
+        "task": "known_or_failure__new",
+        "route": "local_or",
+        "answer": "30",
+        "calls": 0,
+        "cost": 0
+      },
+      {
+        "task": "mixed_duplicates__new",
+        "route": "local_or",
+        "answer": "32",
+        "calls": 0,
+        "cost": 0
+      },
+      {
+        "task": "empty_filter_not_unmatched__new",
+        "route": "local_or",
+        "answer": "13",
+        "calls": 0,
+        "cost": 0
+      },
+      {
+        "task": "empty_right__new",
+        "route": "local_or",
+        "answer": "10",
+        "calls": 0,
+        "cost": 0
+      },
+      {
+        "task": "string_keys_and_blocked__new",
+        "route": "local_or",
+        "answer": "10",
+        "calls": 0,
+        "cost": 0
+      },
+      {
+        "task": "previous_local_control__old",
+        "route": "local",
+        "answer": "17",
+        "calls": 0,
+        "cost": 0
+      },
+      {
+        "task": "previous_local_control__new",
+        "route": "local",
+        "answer": "17",
+        "calls": 0,
+        "cost": 0
+      }
+    ],
+    "local_ledger_events": 0,
+    "local_model_used": "",
+    "reasoning_tokens": 0,
+    "max_output": 400
+  },
+  "local_tests": {
+    "passed": 159,
+    "sqlite_differential_cases": 120,
+    "report": "experiments/E75_join_or/unit_tests.json"
+  },
+  "preflight_model_quality_evidence": false,
+  "known_failure_fixed": {
+    "case": "known_or_failure",
+    "old": "23",
+    "new": "30",
+    "expected": "30"
+  },
+  "common_failure": {
+    "case": "extra_numeric_control",
+    "status_both": "TRUNCATED",
+    "expected": "19",
+    "answers_both": null,
+    "output_tokens_each": 400,
+    "effective_cost_each": 429.7,
+    "payloads_identical": true,
+    "incomplete_code_executed": false
+  },
+  "production_enabled": false,
+  "next": [
+    {
+      "hypothesis": "H04.15",
+      "status": "PROPOSED",
+      "description": "Controlled integration into the common harness and evaluation on a mixed frozen suite under a shared budget; measure actual grammar coverage without extending grammar to fit the suite."
+    },
+    {
+      "hypothesis": "H04.16",
+      "status": "PROPOSED",
+      "description": "Budget-aware output cap comparison for complex Python fallbacks, including E76 truncation; compare fresh generations at fixed caps rather than silently retrying failed calls."
+    }
+  ],
+  "historical_broad_challenge": {
+    "correct": 9,
+    "solvable": 19,
+    "retested": false
+  }
+}

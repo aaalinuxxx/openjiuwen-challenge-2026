@@ -1,0 +1,32 @@
+{
+  "task_id": "mixed_duplicates__old",
+  "response": {
+    "id": "chatcmpl-968d6c249478fbc8",
+    "created": 1794427467,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\n\n# Read labels.csv\nlabels = []\nwith open('labels.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        labels.append(row)\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Build a lookup for labels by sku (string key)\n# We need to handle the left join: for each order, find all matching labels\n# If no match, the order still appears with no region (treated as \"no matching right row\")\n\n# Group labels by sku\nfrom collections import defaultdict\nlabels_by_sku = defaultdict(list)\nfor label in labels:\n    labels_by_sku[label['sku']].append(label)\n\ntotal_sum = 0\n\nfor order in orders:\n    code = order['code']\n    qty = int(order['qty'])\n    \n    matching_labels = labels_by_sku.get(code, [])\n    \n    if len(matching_labels) == 0:\n        # No matching right row -> include this order\n        total_sum += qty\n    else:\n        # For each matching label, check if region is 'west'\n        for label in matching_labels:\n            if label['region'] == 'west':\n                total_sum += qty\n\nprint(total_sum)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 315,
+      "prompt_tokens": 282,
+      "total_tokens": 597,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

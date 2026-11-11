@@ -1,0 +1,100 @@
+{
+  "budget": 3500,
+  "known_effective_tokens": 2600.4,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "known_or_failure__old",
+      "status": "ACCOUNTED",
+      "reserved_units": 6117,
+      "task_limit_units": 8000,
+      "input_token_estimate": 2117,
+      "output_cap": 400,
+      "input_tokens": 296,
+      "output_tokens": 260,
+      "reasoning_tokens": 0,
+      "effective_cost": 289.6
+    },
+    {
+      "ticket": 1,
+      "task_id": "mixed_duplicates__old",
+      "status": "ACCOUNTED",
+      "reserved_units": 6055,
+      "task_limit_units": 8000,
+      "input_token_estimate": 2055,
+      "output_cap": 400,
+      "input_tokens": 282,
+      "output_tokens": 315,
+      "reasoning_tokens": 0,
+      "effective_cost": 343.2
+    },
+    {
+      "ticket": 2,
+      "task_id": "empty_filter_not_unmatched__old",
+      "status": "ACCOUNTED",
+      "reserved_units": 6015,
+      "task_limit_units": 8000,
+      "input_token_estimate": 2015,
+      "output_cap": 400,
+      "input_tokens": 267,
+      "output_tokens": 321,
+      "reasoning_tokens": 0,
+      "effective_cost": 347.7
+    },
+    {
+      "ticket": 3,
+      "task_id": "empty_right__old",
+      "status": "ACCOUNTED",
+      "reserved_units": 5963,
+      "task_limit_units": 8000,
+      "input_token_estimate": 1963,
+      "output_cap": 400,
+      "input_tokens": 249,
+      "output_tokens": 369,
+      "reasoning_tokens": 0,
+      "effective_cost": 393.9
+    },
+    {
+      "ticket": 4,
+      "task_id": "string_keys_and_blocked__old",
+      "status": "ACCOUNTED",
+      "reserved_units": 6059,
+      "task_limit_units": 8000,
+      "input_token_estimate": 2059,
+      "output_cap": 400,
+      "input_tokens": 286,
+      "output_tokens": 338,
+      "reasoning_tokens": 0,
+      "effective_cost": 366.6
+    },
+    {
+      "ticket": 5,
+      "task_id": "extra_numeric_control__new",
+      "status": "ACCOUNTED",
+      "reserved_units": 6130,
+      "task_limit_units": 8000,
+      "input_token_estimate": 2130,
+      "output_cap": 400,
+      "input_tokens": 297,
+      "output_tokens": 400,
+      "reasoning_tokens": 0,
+      "effective_cost": 429.7
+    },
+    {
+      "ticket": 6,
+      "task_id": "extra_numeric_control__old",
+      "status": "ACCOUNTED",
+      "reserved_units": 6130,
+      "task_limit_units": 8000,
+      "input_token_estimate": 2130,
+      "output_cap": 400,
+      "input_tokens": 297,
+      "output_tokens": 400,
+      "reasoning_tokens": 0,
+      "effective_cost": 429.7
+    }
+  ]
+}

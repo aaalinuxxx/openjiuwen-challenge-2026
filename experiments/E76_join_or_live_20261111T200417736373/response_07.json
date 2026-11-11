@@ -1,0 +1,32 @@
+{
+  "task_id": "extra_numeric_control__old",
+  "response": {
+    "id": "chatcmpl-aa034151f4c2fc4c",
+    "created": 1794427534,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport sys\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read labels.csv\nlabels = []\nwith open('labels.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        labels.append(row)\n\n# Build a lookup for labels by sku\n# Since there can be multiple labels per sku, we need to handle the join properly\n# Left join: for each order, find all matching labels (or no match)\n# Then filter: region == 'west' OR no matching right row\n# Also filter: qty > 5\n\n# Parse qty as integer\n# For each order, we need to find all matching labels\n# If no match, it's included if qty > 5\n# If match, include only if region == 'west'\n\n# Build labels lookup: sku -> list of regions\nlabels_by_sku = {}\nfor label in labels:\n    sku = label['sku']\n    region = label['region']\n    if sku not in labels_by_sku:\n        labels_by_sku[sku] = []\n    labels_by_sku[sku].append(region)\n\ntotal_sum = 0\n\nfor order in orders:\n    code = order['code']\n    qty_str = order['qty']\n    try:\n        qty = int(qty_str)\n    except ValueError:\n        try:\n            qty = float(qty_str)\n            # If it's a float, we still need to check > 5\n        except:\n            continue\n    \n    # Filter: qty > 5\n    if qty <= 5:\n        continue\n    \n    # Left join: find matching labels\n   ",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 400,
+      "prompt_tokens": 297,
+      "total_tokens": 697,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
