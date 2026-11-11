@@ -1,0 +1,20 @@
+{
+  "task_id": "left_sum__python",
+  "stage": "python",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"purchases.csv\", \"columns\": [\"id\"], \"rows\": 4, \"sample_rows\": [{\"id\": \"1\"}, {\"id\": \"2\"}, {\"id\": \"3\"}]}, {\"file\": \"rebates.csv\", \"columns\": [\"id\", \"amount\"], \"rows\": 4, \"sample_rows\": [{\"id\": \"1\", \"amount\": \"2\"}, {\"id\": \"1\", \"amount\": \"3\"}, {\"id\": \"2\", \"amount\": \"4\"}]}]\nTask: Read purchases.csv and rebates.csv. Left join purchases.id to rebates.id. Sum rebates.amount for every matching pair. Preserve repeated purchase and rebate rows. An unmatched purchase contributes zero, and rebates without a purchase contribute nothing. Print the integer total."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  },
+  "mode": "PREFLIGHT_GOLD_PLANS_AND_ANSWERS"
+}

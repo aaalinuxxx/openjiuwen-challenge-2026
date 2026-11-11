@@ -1,0 +1,17 @@
+{
+  "task_id": "numeric_threshold__python",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('9')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

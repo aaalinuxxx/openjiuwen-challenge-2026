@@ -1,0 +1,85 @@
+[
+  {
+    "id": "duplicate_control",
+    "instruction": "Read stocks.csv and zones.csv. Inner join stocks.item to zones.item. Sum stocks.qty for all matching pairs with zones.region equal to 'west'. Each matching pair contributes once, including repeated rows. Print the integer total.",
+    "files": {
+      "stocks.csv": "item,qty\na,4\nb,6\na,2\nc,5\n",
+      "zones.csv": "item,region\na,west\nb,east\nc,west\na,west\n"
+    },
+    "expected": "17",
+    "sql": "SELECT SUM(CAST(s.qty AS INTEGER)) FROM stocks s JOIN zones z ON s.item=z.item WHERE z.region='west'",
+    "gold_plan": {
+      "left": "stocks.csv",
+      "right": "zones.csv",
+      "left_key": "item",
+      "right_key": "item",
+      "join": "inner",
+      "filter": {
+        "side": "right",
+        "column": "region",
+        "equals": "west"
+      },
+      "aggregate": {
+        "op": "sum",
+        "side": "left",
+        "column": "qty"
+      }
+    }
+  },
+  {
+    "id": "left_sum",
+    "instruction": "Read purchases.csv and rebates.csv. Left join purchases.id to rebates.id. Sum rebates.amount for every matching pair. Preserve repeated purchase and rebate rows. An unmatched purchase contributes zero, and rebates without a purchase contribute nothing. Print the integer total.",
+    "files": {
+      "purchases.csv": "id\n1\n2\n3\n1\n",
+      "rebates.csv": "id,amount\n1,2\n1,3\n2,4\n9,12\n"
+    },
+    "expected": "14",
+    "sql": "SELECT SUM(CAST(r.amount AS INTEGER)) FROM purchases p LEFT JOIN rebates r ON p.id=r.id",
+    "gold_plan": {
+      "left": "purchases.csv",
+      "right": "rebates.csv",
+      "left_key": "id",
+      "right_key": "id",
+      "join": "left",
+      "filter": null,
+      "aggregate": {
+        "op": "sum",
+        "side": "right",
+        "column": "amount"
+      }
+    }
+  },
+  {
+    "id": "numeric_threshold",
+    "instruction": "Read sales.csv and prices.csv. Inner join on key. Sum sales.units for every matching pair only if prices.price is numerically greater than 5; price 5 must not contribute. Print the integer sum.",
+    "files": {
+      "sales.csv": "key,units\na,3\nb,4\nc,9\nd,5\n",
+      "prices.csv": "key,price\na,5\nb,6\nc,2\nd,8\n"
+    },
+    "expected": "9",
+    "sql": "SELECT SUM(CAST(s.units AS INTEGER)) FROM sales s JOIN prices p ON s.key=p.key WHERE CAST(p.price AS INTEGER)>5",
+    "gold_plan": null
+  },
+  {
+    "id": "two_filters",
+    "instruction": "Read sales.csv and zones.csv. Inner join on key. Sum sales.units for matching pairs only when BOTH sales.state equals 'paid' AND zones.region equals 'west'. Do not omit either condition. Print the integer sum.",
+    "files": {
+      "sales.csv": "key,units,state\na,2,paid\nb,7,void\nc,5,paid\nd,11,paid\n",
+      "zones.csv": "key,region\na,west\nb,west\nc,east\nd,west\n"
+    },
+    "expected": "13",
+    "sql": "SELECT SUM(CAST(s.units AS INTEGER)) FROM sales s JOIN zones z ON s.key=z.key WHERE s.state='paid' AND z.region='west'",
+    "gold_plan": null
+  },
+  {
+    "id": "left_or_unmatched",
+    "instruction": "Read orders.csv and states.csv. Left join orders.key to states.key. Sum orders.amount for every resulting pair where states.status equals 'active' OR there is no matching states row. Include unmatched orders; exclude matched rows with status 'blocked'. Print the integer sum.",
+    "files": {
+      "orders.csv": "key,amount\na,5\nb,7\nc,11\nd,13\n",
+      "states.csv": "key,status\na,active\nb,blocked\nc,active\n"
+    },
+    "expected": "29",
+    "sql": "SELECT SUM(CAST(o.amount AS INTEGER)) FROM orders o LEFT JOIN states s ON o.key=s.key WHERE s.status='active' OR s.key IS NULL",
+    "gold_plan": null
+  }
+]

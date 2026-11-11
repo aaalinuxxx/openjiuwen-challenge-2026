@@ -1,0 +1,47 @@
+{
+  "case": "two_filters",
+  "arm": "python",
+  "order_in_pair": 1,
+  "expected": "13",
+  "status": "SOLVED",
+  "answer": "13",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": false,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "sales.csv": "46954c47bd93a8122360af58d81a5a424d073290f8d08081f964efbf73df1ea7",
+    "zones.csv": "d1ed085ce4c2dd0b9f0601825d1dabf1f9f80cdd4d8516d1bc80b5b95fb911c1"
+  },
+  "calls": 1,
+  "stages": [
+    "python"
+  ],
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "two_filters__python",
+    "status": "SOLVED",
+    "answer": "13",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.046999999991385266,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "two_filters__python",
+    "workflow_id": "task_c0c94eab53a744c4b5b0f4afd2700c43",
+    "session_id": "2b8e1ac727404788a46e29b851dafaa6",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

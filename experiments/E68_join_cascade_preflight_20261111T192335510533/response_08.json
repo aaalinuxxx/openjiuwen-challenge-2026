@@ -1,0 +1,17 @@
+{
+  "task_id": "two_filters__cascade",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "UNSUPPORTED"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

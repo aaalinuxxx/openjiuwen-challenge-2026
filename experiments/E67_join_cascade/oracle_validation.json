@@ -1,0 +1,37 @@
+{
+  "api_calls": 0,
+  "passed": true,
+  "rows": [
+    {
+      "case": "duplicate_control",
+      "expected": "17",
+      "oracle": "17",
+      "passed": true
+    },
+    {
+      "case": "left_sum",
+      "expected": "14",
+      "oracle": "14",
+      "passed": true
+    },
+    {
+      "case": "numeric_threshold",
+      "expected": "9",
+      "oracle": "9",
+      "passed": true
+    },
+    {
+      "case": "two_filters",
+      "expected": "13",
+      "oracle": "13",
+      "passed": true
+    },
+    {
+      "case": "left_or_unmatched",
+      "expected": "29",
+      "oracle": "29",
+      "passed": true
+    }
+  ],
+  "scope": "Independent SQLite calculation with TEXT join keys; not model-generated code"
+}

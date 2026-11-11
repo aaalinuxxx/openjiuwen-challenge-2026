@@ -1,0 +1,17 @@
+{
+  "task_id": "left_sum__python",
+  "response": {
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "choices": [
+      {
+        "message": {
+          "content": "print('14')"
+        },
+        "finish_reason": "stop"
+      }
+    ]
+  }
+}

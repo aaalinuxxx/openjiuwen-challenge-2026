@@ -1,0 +1,47 @@
+{
+  "case": "duplicate_control",
+  "arm": "python",
+  "order_in_pair": 0,
+  "expected": "17",
+  "status": "SOLVED",
+  "answer": "17",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": true,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "stocks.csv": "51f32260ea32b5b3e8a4467f6ab21e414a91df297b3901e1582725d86aef5e17",
+    "zones.csv": "26320083027d556271730cda22dcf5d93efc271d3daeee478b0368818dd3f4bb"
+  },
+  "calls": 1,
+  "stages": [
+    "python"
+  ],
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "duplicate_control__python",
+    "status": "SOLVED",
+    "answer": "17",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.062000000005355105,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "duplicate_control__python",
+    "workflow_id": "task_8b126ca5043848daa7625042c9864dec",
+    "session_id": "44e069d0d9db45f9b8c903468df68f1a",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}

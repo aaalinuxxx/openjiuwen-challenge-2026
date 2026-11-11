@@ -1,0 +1,47 @@
+{
+  "case": "numeric_threshold",
+  "arm": "python",
+  "order_in_pair": 0,
+  "expected": "9",
+  "status": "SOLVED",
+  "answer": "9",
+  "solved": true,
+  "unsupported_abstention": false,
+  "supported": false,
+  "wrong_answer": false,
+  "unchanged_inputs": true,
+  "unexpected_files": [],
+  "original_hashes": {
+    "sales.csv": "2a25ae9714da981d19ad11719b47898d58dddb6955992607785066b210bb5236",
+    "prices.csv": "65d429bb6be0d8465f9c2e7c67fb5036619e65a925e92af16bfc24c09cac5d58"
+  },
+  "calls": 1,
+  "stages": [
+    "python"
+  ],
+  "effective_cost": 0.0,
+  "result": {
+    "task_id": "numeric_threshold__python",
+    "status": "SOLVED",
+    "answer": "9",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "wall_time_sec": 0.07800000000861473,
+    "model_used": "qwen3.6-35b-a3b-noreason",
+    "notes": ""
+  },
+  "workflow": {
+    "task_id": "numeric_threshold__python",
+    "workflow_id": "task_4f8d7ac34c9d406a8fe84615c35818a3",
+    "session_id": "6d63b668651749969f05dd8582138915",
+    "stages": [
+      "solve",
+      "finalize"
+    ],
+    "saved": true,
+    "state": "COMPLETED",
+    "request_timeout_sec": 60,
+    "workflow_timeout_sec": 180
+  }
+}
