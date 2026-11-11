@@ -1,0 +1,449 @@
+{
+  "arms": {
+    "baseline": {
+      "input": 5393,
+      "output": 745,
+      "cost": 1284.3,
+      "finish": {
+        "stop": 16,
+        "length": 6
+      },
+      "models": {
+        "qwen3.6-35b-a3b-noreason": 10,
+        "qwen3.8-27b-noreason": 12
+      },
+      "calls": 22,
+      "caps": [
+        {
+          "task": "search_new_relation",
+          "cap": 15,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "search_conflicting_fact",
+          "cap": 5,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "search_irrelevant_conflict",
+          "cap": 6,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "search_absent",
+          "cap": 2,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "search_paraphrase_chain",
+          "cap": 7,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_distinct",
+          "cap": 69,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_empty_count",
+          "cap": 68,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_filtered_median",
+          "cap": 67,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_two_file_join",
+          "cap": 24,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_weighted_mean",
+          "cap": 66,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "math_sum",
+          "cap": 114,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_gcd",
+          "cap": 115,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_paraphrase",
+          "cap": 115,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_zero_warning",
+          "cap": 115,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_zero_operation",
+          "cap": 116,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_percentage",
+          "cap": 116,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_multimodule",
+          "cap": 499,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_overlap",
+          "cap": 474,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_intervals",
+          "cap": 416,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_brackets",
+          "cap": 424,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_pure_conflict",
+          "cap": 700,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_stateful",
+          "cap": 700,
+          "model": "qwen3.8-27b-noreason"
+        }
+      ]
+    },
+    "candidate": {
+      "input": 5683,
+      "output": 1286,
+      "cost": 1854.3,
+      "finish": {
+        "stop": 23
+      },
+      "models": {
+        "qwen3.6-35b-a3b-noreason": 11,
+        "qwen3.8-27b-noreason": 12
+      },
+      "calls": 23,
+      "caps": [
+        {
+          "task": "search_new_relation",
+          "cap": 32,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "search_conflicting_fact",
+          "cap": 32,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "search_irrelevant_conflict",
+          "cap": 32,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "search_absent",
+          "cap": 32,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "search_paraphrase_chain",
+          "cap": 32,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_distinct",
+          "cap": 200,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_empty_count",
+          "cap": 200,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_filtered_median",
+          "cap": 200,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_two_file_join",
+          "cap": 400,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "data_weighted_mean",
+          "cap": 200,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "pilot_extra_numeric_control",
+          "cap": 400,
+          "model": "qwen3.6-35b-a3b-noreason"
+        },
+        {
+          "task": "math_sum",
+          "cap": 114,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_gcd",
+          "cap": 115,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_paraphrase",
+          "cap": 115,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_zero_warning",
+          "cap": 115,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_zero_operation",
+          "cap": 116,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "math_percentage",
+          "cap": 116,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_multimodule",
+          "cap": 499,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_overlap",
+          "cap": 474,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_intervals",
+          "cap": 416,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_brackets",
+          "cap": 424,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_pure_conflict",
+          "cap": 700,
+          "model": "qwen3.8-27b-noreason"
+        },
+        {
+          "task": "coding_stateful",
+          "cap": 700,
+          "model": "qwen3.8-27b-noreason"
+        }
+      ]
+    }
+  },
+  "frozen_files": 148,
+  "request_pairs": [
+    {
+      "task_id": "search_new_relation",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 15,
+      "candidate_cap": 32
+    },
+    {
+      "task_id": "search_conflicting_fact",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 5,
+      "candidate_cap": 32
+    },
+    {
+      "task_id": "search_irrelevant_conflict",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 6,
+      "candidate_cap": 32
+    },
+    {
+      "task_id": "search_absent",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 2,
+      "candidate_cap": 32
+    },
+    {
+      "task_id": "search_paraphrase_chain",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 7,
+      "candidate_cap": 32
+    },
+    {
+      "task_id": "data_distinct",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 69,
+      "candidate_cap": 200
+    },
+    {
+      "task_id": "data_empty_count",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 68,
+      "candidate_cap": 200
+    },
+    {
+      "task_id": "data_filtered_median",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 67,
+      "candidate_cap": 200
+    },
+    {
+      "task_id": "data_two_file_join",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 24,
+      "candidate_cap": 400
+    },
+    {
+      "task_id": "data_weighted_mean",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 66,
+      "candidate_cap": 200
+    },
+    {
+      "task_id": "math_sum",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 114,
+      "candidate_cap": 114
+    },
+    {
+      "task_id": "math_gcd",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 115,
+      "candidate_cap": 115
+    },
+    {
+      "task_id": "math_paraphrase",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 115,
+      "candidate_cap": 115
+    },
+    {
+      "task_id": "math_zero_warning",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 115,
+      "candidate_cap": 115
+    },
+    {
+      "task_id": "math_zero_operation",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 116,
+      "candidate_cap": 116
+    },
+    {
+      "task_id": "math_percentage",
+      "same_model": true,
+      "same_messages": true,
+      "baseline_cap": 116,
+      "candidate_cap": 116
+    },
+    {
+      "task_id": "coding_multimodule",
+      "same_model": true,
+      "same_messages": false,
+      "baseline_cap": 499,
+      "candidate_cap": 499
+    },
+    {
+      "task_id": "coding_overlap",
+      "same_model": true,
+      "same_messages": false,
+      "baseline_cap": 474,
+      "candidate_cap": 474
+    },
+    {
+      "task_id": "coding_intervals",
+      "same_model": true,
+      "same_messages": false,
+      "baseline_cap": 416,
+      "candidate_cap": 416
+    },
+    {
+      "task_id": "coding_brackets",
+      "same_model": true,
+      "same_messages": false,
+      "baseline_cap": 424,
+      "candidate_cap": 424
+    },
+    {
+      "task_id": "coding_pure_conflict",
+      "same_model": true,
+      "same_messages": false,
+      "baseline_cap": 700,
+      "candidate_cap": 700
+    },
+    {
+      "task_id": "coding_stateful",
+      "same_model": true,
+      "same_messages": false,
+      "baseline_cap": 700,
+      "candidate_cap": 700
+    }
+  ],
+  "rankings_equal": true,
+  "local_zero_cost_tasks_per_arm": 6,
+  "prior_unknown_ledgers_unchanged": true,
+  "model_metadata_note": "All common HTTP payloads use identical model IDs. Truncated SolveResult.model_used defaults to 27b and is not authoritative; raw request/response records are authoritative.",
+  "grading_note": "wrong_answers counts any existing answer file not verified as SOLVED. Three candidate files equal expected numeric values but FAILED status; they are lifecycle failures, not incorrect numeric answers.",
+  "non_solved_answer_files": [
+    {
+      "task_id": "data_distinct",
+      "answer": "2",
+      "expected": "2",
+      "status": "FAILED",
+      "exact_match": true
+    },
+    {
+      "task_id": "data_filtered_median",
+      "answer": "2.5",
+      "expected": "2.5",
+      "status": "FAILED",
+      "exact_match": true
+    },
+    {
+      "task_id": "data_weighted_mean",
+      "answer": "7.86",
+      "expected": "7.86",
+      "status": "FAILED",
+      "exact_match": true
+    }
+  ],
+  "new_verified": [
+    "pilot_extra_numeric_control"
+  ],
+  "lost_verified": []
+}

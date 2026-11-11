@@ -1,0 +1,526 @@
+{
+  "hypothesis": "H04.17",
+  "status": "PARTIAL_ADMISSION_CONFIRMED_ACCEPTANCE_NOT_MET",
+  "frozen_commit": "2bb8bdc",
+  "report": "experiments/E80_allocation_live_20261111T202642547670/report.json",
+  "audit": "experiments/E80_allocation_live_20261111T202642547670/independent_audit.json",
+  "real_api_attempts": 45,
+  "effective_tokens": 3138.6,
+  "production_defaults_changed": false,
+  "arms": {
+    "baseline": {
+      "configuration": {
+        "budget": 3000,
+        "max_calls": 26,
+        "concurrency": 1,
+        "search_min_task_budget": 0,
+        "data_min_task_budget": 0,
+        "coding_min_task_budget": 800
+      },
+      "metrics": {
+        "total": 31,
+        "solvable": 26,
+        "correct": 20,
+        "score": 60,
+        "max_score": 78,
+        "wrong_answers": 0,
+        "justified_refusals": 2,
+        "false_refusals": 0,
+        "truncations": 6
+      },
+      "groups": {
+        "E41_core": {
+          "total": 24,
+          "solvable": 19,
+          "correct": 14,
+          "score": 42,
+          "max_score": 57,
+          "wrong_answers": 0,
+          "justified_refusals": 2,
+          "false_refusals": 0,
+          "truncations": 6
+        },
+        "E75_pilot": {
+          "total": 7,
+          "solvable": 7,
+          "correct": 6,
+          "score": 18,
+          "max_score": 21,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        }
+      },
+      "by_type": {
+        "math": {
+          "total": 6,
+          "solvable": 5,
+          "correct": 5,
+          "score": 15,
+          "max_score": 15,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        },
+        "search": {
+          "total": 6,
+          "solvable": 4,
+          "correct": 4,
+          "score": 12,
+          "max_score": 12,
+          "wrong_answers": 0,
+          "justified_refusals": 1,
+          "false_refusals": 0,
+          "truncations": 1
+        },
+        "data_analysis": {
+          "total": 13,
+          "solvable": 12,
+          "correct": 6,
+          "score": 18,
+          "max_score": 36,
+          "wrong_answers": 0,
+          "justified_refusals": 1,
+          "false_refusals": 0,
+          "truncations": 5
+        },
+        "coding": {
+          "total": 6,
+          "solvable": 5,
+          "correct": 5,
+          "score": 15,
+          "max_score": 15,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        }
+      },
+      "tokens": {
+        "input": 5393,
+        "output": 745,
+        "cost": 1284.3,
+        "finish": {
+          "stop": 16,
+          "length": 6
+        },
+        "models": {
+          "qwen3.6-35b-a3b-noreason": 10,
+          "qwen3.8-27b-noreason": 12
+        },
+        "calls": 22,
+        "caps": [
+          {
+            "task": "search_new_relation",
+            "cap": 15,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "search_conflicting_fact",
+            "cap": 5,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "search_irrelevant_conflict",
+            "cap": 6,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "search_absent",
+            "cap": 2,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "search_paraphrase_chain",
+            "cap": 7,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_distinct",
+            "cap": 69,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_empty_count",
+            "cap": 68,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_filtered_median",
+            "cap": 67,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_two_file_join",
+            "cap": 24,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_weighted_mean",
+            "cap": 66,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "math_sum",
+            "cap": 114,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_gcd",
+            "cap": 115,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_paraphrase",
+            "cap": 115,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_zero_warning",
+            "cap": 115,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_zero_operation",
+            "cap": 116,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_percentage",
+            "cap": 116,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_multimodule",
+            "cap": 499,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_overlap",
+            "cap": 474,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_intervals",
+            "cap": 416,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_brackets",
+            "cap": 424,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_pure_conflict",
+            "cap": 700,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_stateful",
+            "cap": 700,
+            "model": "qwen3.8-27b-noreason"
+          }
+        ]
+      },
+      "unspent": 1715.7
+    },
+    "candidate": {
+      "configuration": {
+        "budget": 3000,
+        "max_calls": 26,
+        "concurrency": 1,
+        "search_min_task_budget": 300,
+        "data_min_task_budget": 700,
+        "coding_min_task_budget": 800
+      },
+      "metrics": {
+        "total": 31,
+        "solvable": 26,
+        "correct": 21,
+        "score": 63,
+        "max_score": 78,
+        "wrong_answers": 3,
+        "justified_refusals": 3,
+        "false_refusals": 0,
+        "truncations": 0
+      },
+      "groups": {
+        "E41_core": {
+          "total": 24,
+          "solvable": 19,
+          "correct": 14,
+          "score": 42,
+          "max_score": 57,
+          "wrong_answers": 3,
+          "justified_refusals": 3,
+          "false_refusals": 0,
+          "truncations": 0
+        },
+        "E75_pilot": {
+          "total": 7,
+          "solvable": 7,
+          "correct": 7,
+          "score": 21,
+          "max_score": 21,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        }
+      },
+      "by_type": {
+        "math": {
+          "total": 6,
+          "solvable": 5,
+          "correct": 5,
+          "score": 15,
+          "max_score": 15,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        },
+        "search": {
+          "total": 6,
+          "solvable": 4,
+          "correct": 4,
+          "score": 12,
+          "max_score": 12,
+          "wrong_answers": 0,
+          "justified_refusals": 2,
+          "false_refusals": 0,
+          "truncations": 0
+        },
+        "data_analysis": {
+          "total": 13,
+          "solvable": 12,
+          "correct": 7,
+          "score": 21,
+          "max_score": 36,
+          "wrong_answers": 3,
+          "justified_refusals": 1,
+          "false_refusals": 0,
+          "truncations": 0
+        },
+        "coding": {
+          "total": 6,
+          "solvable": 5,
+          "correct": 5,
+          "score": 15,
+          "max_score": 15,
+          "wrong_answers": 0,
+          "justified_refusals": 0,
+          "false_refusals": 0,
+          "truncations": 0
+        }
+      },
+      "tokens": {
+        "input": 5683,
+        "output": 1286,
+        "cost": 1854.3,
+        "finish": {
+          "stop": 23
+        },
+        "models": {
+          "qwen3.6-35b-a3b-noreason": 11,
+          "qwen3.8-27b-noreason": 12
+        },
+        "calls": 23,
+        "caps": [
+          {
+            "task": "search_new_relation",
+            "cap": 32,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "search_conflicting_fact",
+            "cap": 32,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "search_irrelevant_conflict",
+            "cap": 32,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "search_absent",
+            "cap": 32,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "search_paraphrase_chain",
+            "cap": 32,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_distinct",
+            "cap": 200,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_empty_count",
+            "cap": 200,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_filtered_median",
+            "cap": 200,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_two_file_join",
+            "cap": 400,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "data_weighted_mean",
+            "cap": 200,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "pilot_extra_numeric_control",
+            "cap": 400,
+            "model": "qwen3.6-35b-a3b-noreason"
+          },
+          {
+            "task": "math_sum",
+            "cap": 114,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_gcd",
+            "cap": 115,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_paraphrase",
+            "cap": 115,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_zero_warning",
+            "cap": 115,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_zero_operation",
+            "cap": 116,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "math_percentage",
+            "cap": 116,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_multimodule",
+            "cap": 499,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_overlap",
+            "cap": 474,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_intervals",
+            "cap": 416,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_brackets",
+            "cap": 424,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_pure_conflict",
+            "cap": 700,
+            "model": "qwen3.8-27b-noreason"
+          },
+          {
+            "task": "coding_stateful",
+            "cap": 700,
+            "model": "qwen3.8-27b-noreason"
+          }
+        ]
+      },
+      "unspent": 1145.7
+    }
+  },
+  "acceptance": {
+    "score_improved": true,
+    "previous_verified_preserved": true,
+    "unverified_answer_files_not_increased": false,
+    "accepted": false
+  },
+  "limitations": [
+    "Known adaptive replay: all E41 and E75 fixtures were seen previously; not blind holdout.",
+    "One sequential generation per arm; output-length variation remains.",
+    "Six coding prompts differ in temporary diagnostic paths; 16 of 22 common prompt pairs identical.",
+    "Wrong_answers=3 denotes matching answer files with FAILED status, not numerically incorrect answers.",
+    "SolveResult.model_used on truncated exceptions defaults to 27b; raw HTTP IDs agree across all common pairs."
+  ],
+  "next_hypotheses": [
+    {
+      "id": "H04.18",
+      "parents": [
+        "H04.17"
+      ],
+      "status": "PROPOSED",
+      "claim": "Explicit stdout-only generated-code contract plus isolated execution prevents stray answer files and restores solver completion; compare fresh API arms with same model, floors, caps and grading."
+    },
+    {
+      "id": "H04.19",
+      "parents": [
+        "H04.17"
+      ],
+      "status": "PROPOSED",
+      "claim": "Exception diagnostics preserve actual attempted model and distinguish invalid lifecycle artifacts from numerically wrong SOLVED answers."
+    },
+    {
+      "id": "H04.16",
+      "status": "PROPOSED_DEFERRED",
+      "reason": "No candidate truncations in this replay; output contract now higher priority. E76 cap400 failure remains historical."
+    }
+  ],
+  "new_verified": [
+    "pilot_extra_numeric_control"
+  ],
+  "lost_verified": [],
+  "non_solved_answer_files": [
+    {
+      "task_id": "data_distinct",
+      "answer": "2",
+      "expected": "2",
+      "status": "FAILED",
+      "exact_match": true
+    },
+    {
+      "task_id": "data_filtered_median",
+      "answer": "2.5",
+      "expected": "2.5",
+      "status": "FAILED",
+      "exact_match": true
+    },
+    {
+      "task_id": "data_weighted_mean",
+      "answer": "7.86",
+      "expected": "7.86",
+      "status": "FAILED",
+      "exact_match": true
+    }
+  ],
+  "validation": {
+    "frozen_files_unchanged": 148,
+    "ranking_equal": true,
+    "local_zero_cost_tasks_each": 6,
+    "all_raw_usage_reconciled": true,
+    "new_unknown_cost": false,
+    "old_E46_E50_unchanged": true,
+    "offline_admission_checks": 22,
+    "offline_full_sdk_passed": true,
+    "unit_tests": "163 passed previously in E77; unchanged harness, not rerun in E79/E80"
+  }
+}

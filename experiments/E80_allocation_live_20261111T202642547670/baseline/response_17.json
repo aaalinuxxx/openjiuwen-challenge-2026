@@ -1,0 +1,35 @@
+{
+  "task_id": "coding_multimodule",
+  "response": {
+    "id": "chatcmpl-99a8ef7d4acd2a93",
+    "created": 1794428852,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "from a_settings import threshold\ndef keep(values):\n    return [v for v in values if v >= threshold()]",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 25,
+      "prompt_tokens": 490,
+      "total_tokens": 515,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

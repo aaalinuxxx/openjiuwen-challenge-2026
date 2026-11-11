@@ -1,0 +1,18 @@
+{
+  "task_id": "coding_multimodule",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return complete corrected Python code only, without comments or Markdown. Preserve signatures and satisfy the task constraints and all tests. Never modify tests. Use UNSOLVABLE only for provably contradictory requirements. The harness runs tests and writes DONE; do not perform these delivery steps in the returned code."
+      },
+      {
+        "role": "user",
+        "content": "### Task constraints\nFix mylib.py: keep values at least the threshold returned by settings.threshold(). Preserve that imported function. Do not edit a_settings.py. Do not change tests. Write DONE to answer.txt only after all tests pass.\n\n### Target File: mylib.py\nfrom a_settings import threshold\ndef keep(values):\n    return [v for v in values if v > threshold()]\n\n\n### Read-only module: a_settings.py\ndef threshold():\n    return 5\n\n\n### test_mylib.py\nimport unittest\nimport mylib\n\nclass Checks(unittest.TestCase):\n    def test_edge(self): self.assertEqual(mylib.keep([4,5,6]), [5,6])\n    def test_empty(self): self.assertEqual(mylib.keep([]), [])\n    def test_import(self):\n        import a_settings\n        self.assertEqual(a_settings.threshold(), 5)\n        self.assertIs(mylib.threshold, a_settings.threshold)\n\nif __name__ == '__main__': unittest.main()\n\n\n### Failing Test Output (failures: 1)\n### test_mylib.py\nF..\n======================================================================\nFAIL: test_edge (__main__.Checks.test_edge)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-okhrl58z\\workspace\\test_mylib.py\", line 5, in test_edge\n    def test_edge(self): self.assertEqual(mylib.keep([4,5,6]), [5,6])\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [6] != [5, 6]\n\nFirst differing element 0:\n6\n5\n\nSecond list contains 1 additional elements.\nFirst extra element 1:\n6\n\n- [6]\n+ [5, 6]\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nFAILED (failures=1)\n"
+      }
+    ],
+    "max_tokens": 499,
+    "temperature": 0.0
+  }
+}

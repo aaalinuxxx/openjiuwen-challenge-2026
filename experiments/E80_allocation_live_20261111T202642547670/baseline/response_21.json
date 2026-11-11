@@ -1,0 +1,35 @@
+{
+  "task_id": "coding_pure_conflict",
+  "response": {
+    "id": "chatcmpl-a6717abfe6cf444e",
+    "created": 1794428862,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\ndef f(x):\n    if x == 7:\n        return 3\n    return 0\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 28,
+      "prompt_tokens": 469,
+      "total_tokens": 497,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "task_id": "math_zero_operation",
+  "response": {
+    "id": "chatcmpl-91bc42f4ce2c52e5",
+    "created": 1794428848,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "UNSOLVABLE",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 5,
+      "prompt_tokens": 95,
+      "total_tokens": 100,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
