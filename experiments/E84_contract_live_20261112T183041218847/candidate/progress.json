@@ -1,0 +1,223 @@
+{
+  "results": {
+    "data_distinct": {
+      "task_id": "data_distinct",
+      "status": "SOLVED",
+      "answer": "2",
+      "input_tokens": 169,
+      "output_tokens": 75,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 5.562000000005355,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "data_empty_count": {
+      "task_id": "data_empty_count",
+      "status": "SOLVED",
+      "answer": "0",
+      "input_tokens": 171,
+      "output_tokens": 58,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.7810000000172295,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "data_filtered_median": {
+      "task_id": "data_filtered_median",
+      "status": "SOLVED",
+      "answer": "2.5",
+      "input_tokens": 170,
+      "output_tokens": 80,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 2.109000000025844,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "data_two_file_join": {
+      "task_id": "data_two_file_join",
+      "status": "SOLVED",
+      "answer": "33",
+      "input_tokens": 264,
+      "output_tokens": 165,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 2.937000000005355,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "data_weighted_mean": {
+      "task_id": "data_weighted_mean",
+      "status": "SOLVED",
+      "answer": "7.86",
+      "input_tokens": 173,
+      "output_tokens": 101,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 1.4690000000118744,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "pilot_empty_filter_not_unmatched": {
+      "task_id": "pilot_empty_filter_not_unmatched",
+      "status": "SOLVED",
+      "answer": "13",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_empty_right": {
+      "task_id": "pilot_empty_right",
+      "status": "SOLVED",
+      "answer": "10",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_extra_numeric_control": {
+      "task_id": "pilot_extra_numeric_control",
+      "status": "SOLVED",
+      "answer": "19",
+      "input_tokens": 315,
+      "output_tokens": 394,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 4.4060000000172295,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "pilot_known_or_failure": {
+      "task_id": "pilot_known_or_failure",
+      "status": "SOLVED",
+      "answer": "30",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_mixed_duplicates": {
+      "task_id": "pilot_mixed_duplicates",
+      "status": "SOLVED",
+      "answer": "32",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_previous_local_control": {
+      "task_id": "pilot_previous_local_control",
+      "status": "SOLVED",
+      "answer": "17",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed complete bounded grammar locally; no model translation"
+    },
+    "pilot_string_keys_and_blocked": {
+      "task_id": "pilot_string_keys_and_blocked",
+      "status": "SOLVED",
+      "answer": "10",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    }
+  },
+  "budget": {
+    "budget": 3000,
+    "known_effective_tokens": 999.2,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "data_distinct",
+        "status": "ACCOUNTED",
+        "reserved_units": 3624,
+        "task_limit_units": 7000,
+        "input_token_estimate": 1624,
+        "output_cap": 200,
+        "input_tokens": 169,
+        "output_tokens": 75,
+        "reasoning_tokens": 0,
+        "effective_cost": 91.9
+      },
+      {
+        "ticket": 1,
+        "task_id": "data_empty_count",
+        "status": "ACCOUNTED",
+        "reserved_units": 3630,
+        "task_limit_units": 7000,
+        "input_token_estimate": 1630,
+        "output_cap": 200,
+        "input_tokens": 171,
+        "output_tokens": 58,
+        "reasoning_tokens": 0,
+        "effective_cost": 75.1
+      },
+      {
+        "ticket": 2,
+        "task_id": "data_filtered_median",
+        "status": "ACCOUNTED",
+        "reserved_units": 3640,
+        "task_limit_units": 7000,
+        "input_token_estimate": 1640,
+        "output_cap": 200,
+        "input_tokens": 170,
+        "output_tokens": 80,
+        "reasoning_tokens": 0,
+        "effective_cost": 97.0
+      },
+      {
+        "ticket": 3,
+        "task_id": "data_two_file_join",
+        "status": "ACCOUNTED",
+        "reserved_units": 5983,
+        "task_limit_units": 7000,
+        "input_token_estimate": 1983,
+        "output_cap": 400,
+        "input_tokens": 264,
+        "output_tokens": 165,
+        "reasoning_tokens": 0,
+        "effective_cost": 191.4
+      },
+      {
+        "ticket": 4,
+        "task_id": "data_weighted_mean",
+        "status": "ACCOUNTED",
+        "reserved_units": 3658,
+        "task_limit_units": 7000,
+        "input_token_estimate": 1658,
+        "output_cap": 200,
+        "input_tokens": 173,
+        "output_tokens": 101,
+        "reasoning_tokens": 0,
+        "effective_cost": 118.3
+      },
+      {
+        "ticket": 5,
+        "task_id": "pilot_extra_numeric_control",
+        "status": "ACCOUNTED",
+        "reserved_units": 6228,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2228,
+        "output_cap": 400,
+        "input_tokens": 315,
+        "output_tokens": 394,
+        "reasoning_tokens": 0,
+        "effective_cost": 425.5
+      }
+    ]
+  }
+}

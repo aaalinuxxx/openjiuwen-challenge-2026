@@ -1,0 +1,87 @@
+{
+  "budget": 3000,
+  "known_effective_tokens": 979.6,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "data_distinct",
+      "status": "ACCOUNTED",
+      "reserved_units": 3494,
+      "task_limit_units": 7000,
+      "input_token_estimate": 1494,
+      "output_cap": 200,
+      "input_tokens": 144,
+      "output_tokens": 72,
+      "reasoning_tokens": 0,
+      "effective_cost": 86.4
+    },
+    {
+      "ticket": 1,
+      "task_id": "data_empty_count",
+      "status": "ACCOUNTED",
+      "reserved_units": 3500,
+      "task_limit_units": 7000,
+      "input_token_estimate": 1500,
+      "output_cap": 200,
+      "input_tokens": 146,
+      "output_tokens": 58,
+      "reasoning_tokens": 0,
+      "effective_cost": 72.6
+    },
+    {
+      "ticket": 2,
+      "task_id": "data_filtered_median",
+      "status": "ACCOUNTED",
+      "reserved_units": 3510,
+      "task_limit_units": 7000,
+      "input_token_estimate": 1510,
+      "output_cap": 200,
+      "input_tokens": 145,
+      "output_tokens": 69,
+      "reasoning_tokens": 0,
+      "effective_cost": 83.5
+    },
+    {
+      "ticket": 3,
+      "task_id": "data_two_file_join",
+      "status": "ACCOUNTED",
+      "reserved_units": 5885,
+      "task_limit_units": 7000,
+      "input_token_estimate": 1885,
+      "output_cap": 400,
+      "input_tokens": 246,
+      "output_tokens": 183,
+      "reasoning_tokens": 0,
+      "effective_cost": 207.6
+    },
+    {
+      "ticket": 4,
+      "task_id": "data_weighted_mean",
+      "status": "ACCOUNTED",
+      "reserved_units": 3528,
+      "task_limit_units": 7000,
+      "input_token_estimate": 1528,
+      "output_cap": 200,
+      "input_tokens": 148,
+      "output_tokens": 101,
+      "reasoning_tokens": 0,
+      "effective_cost": 115.8
+    },
+    {
+      "ticket": 5,
+      "task_id": "pilot_extra_numeric_control",
+      "status": "ACCOUNTED",
+      "reserved_units": 6130,
+      "task_limit_units": 7000,
+      "input_token_estimate": 2130,
+      "output_cap": 400,
+      "input_tokens": 297,
+      "output_tokens": 384,
+      "reasoning_tokens": 0,
+      "effective_cost": 413.7
+    }
+  ]
+}

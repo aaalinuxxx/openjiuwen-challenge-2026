@@ -1,0 +1,407 @@
+{
+  "hypothesis": "H04.18",
+  "status": "SUPPORTED_ON_TARGETED_LIVE_REPLAY",
+  "frozen_commit": "ed40e58",
+  "baseline_commit": "892223f45b9675e4ddd83039a152e64e6fe4a898",
+  "report": "experiments/E84_contract_live_20261112T183041218847/report.json",
+  "audit": "experiments/E84_contract_live_20261112T183041218847/independent_audit.json",
+  "actual_http_calls": 12,
+  "effective_tokens": 1978.8,
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "total": 13,
+        "solvable": 12,
+        "verified": 11,
+        "non_solved_answer_files": 0,
+        "incorrect_solved_answers": 0,
+        "unverified_answer_files": 0,
+        "integrity_passed": true
+      },
+      "groups": {
+        "E41_core": {
+          "solvable": 5,
+          "verified": 4
+        },
+        "E75_pilot": {
+          "solvable": 7,
+          "verified": 7
+        }
+      },
+      "cost": 979.6,
+      "tokens": {
+        "input_tokens": 1126,
+        "output_tokens": 867,
+        "reasoning_tokens": 0,
+        "finish": {
+          "stop": 6
+        },
+        "requests": [
+          {
+            "task_id": "data_distinct",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 200,
+            "cost": 86.4,
+            "finish": "stop"
+          },
+          {
+            "task_id": "data_empty_count",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 200,
+            "cost": 72.6,
+            "finish": "stop"
+          },
+          {
+            "task_id": "data_filtered_median",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 200,
+            "cost": 83.5,
+            "finish": "stop"
+          },
+          {
+            "task_id": "data_two_file_join",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 400,
+            "cost": 207.6,
+            "finish": "stop"
+          },
+          {
+            "task_id": "data_weighted_mean",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 200,
+            "cost": 115.8,
+            "finish": "stop"
+          },
+          {
+            "task_id": "pilot_extra_numeric_control",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 400,
+            "cost": 413.7,
+            "finish": "stop"
+          }
+        ],
+        "local_tasks": [
+          "pilot_known_or_failure",
+          "pilot_mixed_duplicates",
+          "pilot_empty_filter_not_unmatched",
+          "pilot_empty_right",
+          "pilot_string_keys_and_blocked",
+          "pilot_previous_local_control"
+        ],
+        "effective_tokens": 979.6
+      },
+      "rows": [
+        {
+          "task_id": "data_distinct",
+          "status": "SOLVED",
+          "answer": "2",
+          "expected": "2",
+          "verified": true
+        },
+        {
+          "task_id": "data_empty_count",
+          "status": "SOLVED",
+          "answer": "0",
+          "expected": "0",
+          "verified": true
+        },
+        {
+          "task_id": "data_filtered_median",
+          "status": "SOLVED",
+          "answer": "2.5",
+          "expected": "2.5",
+          "verified": true
+        },
+        {
+          "task_id": "data_missing_source",
+          "status": "SKIPPED",
+          "answer": null,
+          "expected": "UNSOLVABLE",
+          "verified": false
+        },
+        {
+          "task_id": "data_two_file_join",
+          "status": "UNKNOWN",
+          "answer": null,
+          "expected": "33",
+          "verified": false
+        },
+        {
+          "task_id": "data_weighted_mean",
+          "status": "SOLVED",
+          "answer": "7.86",
+          "expected": "7.86",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_known_or_failure",
+          "status": "SOLVED",
+          "answer": "30",
+          "expected": "30",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_mixed_duplicates",
+          "status": "SOLVED",
+          "answer": "32",
+          "expected": "32",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_empty_filter_not_unmatched",
+          "status": "SOLVED",
+          "answer": "13",
+          "expected": "13",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_empty_right",
+          "status": "SOLVED",
+          "answer": "10",
+          "expected": "10",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_string_keys_and_blocked",
+          "status": "SOLVED",
+          "answer": "10",
+          "expected": "10",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_extra_numeric_control",
+          "status": "SOLVED",
+          "answer": "19",
+          "expected": "19",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_previous_local_control",
+          "status": "SOLVED",
+          "answer": "17",
+          "expected": "17",
+          "verified": true
+        }
+      ]
+    },
+    "candidate": {
+      "metrics": {
+        "total": 13,
+        "solvable": 12,
+        "verified": 12,
+        "non_solved_answer_files": 0,
+        "incorrect_solved_answers": 0,
+        "unverified_answer_files": 0,
+        "integrity_passed": true
+      },
+      "groups": {
+        "E41_core": {
+          "solvable": 5,
+          "verified": 5
+        },
+        "E75_pilot": {
+          "solvable": 7,
+          "verified": 7
+        }
+      },
+      "cost": 999.2,
+      "tokens": {
+        "input_tokens": 1262,
+        "output_tokens": 873,
+        "reasoning_tokens": 0,
+        "finish": {
+          "stop": 6
+        },
+        "requests": [
+          {
+            "task_id": "data_distinct",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 200,
+            "cost": 91.9,
+            "finish": "stop"
+          },
+          {
+            "task_id": "data_empty_count",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 200,
+            "cost": 75.1,
+            "finish": "stop"
+          },
+          {
+            "task_id": "data_filtered_median",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 200,
+            "cost": 97,
+            "finish": "stop"
+          },
+          {
+            "task_id": "data_two_file_join",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 400,
+            "cost": 191.4,
+            "finish": "stop"
+          },
+          {
+            "task_id": "data_weighted_mean",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 200,
+            "cost": 118.3,
+            "finish": "stop"
+          },
+          {
+            "task_id": "pilot_extra_numeric_control",
+            "model": "qwen3.6-35b-a3b-noreason",
+            "cap": 400,
+            "cost": 425.5,
+            "finish": "stop"
+          }
+        ],
+        "local_tasks": [
+          "pilot_known_or_failure",
+          "pilot_mixed_duplicates",
+          "pilot_empty_filter_not_unmatched",
+          "pilot_empty_right",
+          "pilot_string_keys_and_blocked",
+          "pilot_previous_local_control"
+        ],
+        "effective_tokens": 999.2
+      },
+      "rows": [
+        {
+          "task_id": "data_distinct",
+          "status": "SOLVED",
+          "answer": "2",
+          "expected": "2",
+          "verified": true
+        },
+        {
+          "task_id": "data_empty_count",
+          "status": "SOLVED",
+          "answer": "0",
+          "expected": "0",
+          "verified": true
+        },
+        {
+          "task_id": "data_filtered_median",
+          "status": "SOLVED",
+          "answer": "2.5",
+          "expected": "2.5",
+          "verified": true
+        },
+        {
+          "task_id": "data_missing_source",
+          "status": "SKIPPED",
+          "answer": null,
+          "expected": "UNSOLVABLE",
+          "verified": false
+        },
+        {
+          "task_id": "data_two_file_join",
+          "status": "SOLVED",
+          "answer": "33",
+          "expected": "33",
+          "verified": true
+        },
+        {
+          "task_id": "data_weighted_mean",
+          "status": "SOLVED",
+          "answer": "7.86",
+          "expected": "7.86",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_known_or_failure",
+          "status": "SOLVED",
+          "answer": "30",
+          "expected": "30",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_mixed_duplicates",
+          "status": "SOLVED",
+          "answer": "32",
+          "expected": "32",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_empty_filter_not_unmatched",
+          "status": "SOLVED",
+          "answer": "13",
+          "expected": "13",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_empty_right",
+          "status": "SOLVED",
+          "answer": "10",
+          "expected": "10",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_string_keys_and_blocked",
+          "status": "SOLVED",
+          "answer": "10",
+          "expected": "10",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_extra_numeric_control",
+          "status": "SOLVED",
+          "answer": "19",
+          "expected": "19",
+          "verified": true
+        },
+        {
+          "task_id": "pilot_previous_local_control",
+          "status": "SOLVED",
+          "answer": "17",
+          "expected": "17",
+          "verified": true
+        }
+      ]
+    }
+  },
+  "acceptance": {
+    "more_verified": true,
+    "no_lost_verified": true,
+    "no_unverified_answer_files": true,
+    "no_input_mutations": true,
+    "all_costs_accounted": true
+  },
+  "unit_tests": {
+    "methods_passed": 168,
+    "new_parameterized_execution_subcases": 28,
+    "new_timeout_test": true,
+    "real_sdk": true
+  },
+  "historical_full_mixed_result": {
+    "experiment": "E80",
+    "verified": 21,
+    "solvable": 26,
+    "rerun": false
+  },
+  "limitations": [
+    "Known E77 data tasks, not blind holdout.",
+    "Data-only comparison, not a new 26-task mixed score.",
+    "One fresh generation per arm; prompt and executor changes evaluated jointly.",
+    "Temporary cwd is not an OS security sandbox."
+  ],
+  "next": [
+    {
+      "id": "H04.20",
+      "status": "PROPOSED",
+      "claim": "Repeat full mixed scheduler benchmark under a shared budget with the corrected CSV contract."
+    },
+    {
+      "id": "H04.21",
+      "status": "PROPOSED",
+      "claim": "Check fresh numeric join cases with fractional prices, duplicate keys and missing matches; current generated code uses int(price) and a dictionary, whose general validity is not established."
+    },
+    {
+      "id": "H04.19",
+      "status": "PROPOSED",
+      "claim": "Preserve actual attempted model in exception metadata; this production diagnostic remains unchanged."
+    }
+  ],
+  "restoration_note": "Cloud commit fb847f9 was unavailable locally and unpublished. Equivalent production behavior restored in Windows under a separate E83 plan; initial CRLF splice failure preserved, corrected before freeze/API."
+}

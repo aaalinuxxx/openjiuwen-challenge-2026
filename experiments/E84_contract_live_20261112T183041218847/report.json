@@ -1,0 +1,1512 @@
+{
+  "mode": "LIVE",
+  "status": "COMPLETED",
+  "plan_sha256": "68cf5b4fef3207cceb8d883e07b54c6578e3c6c5b884031b66094024a5ec38d8",
+  "arms": {
+    "baseline": {
+      "mode": "LIVE",
+      "rows": [
+        {
+          "task_id": "data_distinct",
+          "group": "E41_core",
+          "expected": "2",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "2",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_distinct",
+            "status": "SOLVED",
+            "answer": "2",
+            "input_tokens": 144,
+            "output_tokens": 72,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.1400000000139698,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "data_empty_count",
+          "group": "E41_core",
+          "expected": "0",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "0",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_empty_count",
+            "status": "SOLVED",
+            "answer": "0",
+            "input_tokens": 146,
+            "output_tokens": 58,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.1400000000139698,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "data_filtered_median",
+          "group": "E41_core",
+          "expected": "2.5",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "2.5",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_filtered_median",
+            "status": "SOLVED",
+            "answer": "2.5",
+            "input_tokens": 145,
+            "output_tokens": 69,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.0160000000032596,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "data_missing_source",
+          "group": "E41_core",
+          "expected": "UNSOLVABLE",
+          "unsolvable": true,
+          "status": "SKIPPED",
+          "answer": null,
+          "verified": false,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "status": "SKIPPED"
+          }
+        },
+        {
+          "task_id": "data_two_file_join",
+          "group": "E41_core",
+          "expected": "33",
+          "unsolvable": false,
+          "status": "UNKNOWN",
+          "answer": null,
+          "verified": false,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_two_file_join",
+            "status": "UNKNOWN",
+            "answer": null,
+            "input_tokens": 246,
+            "output_tokens": 183,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.5939999999827705,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": "Generated code changed execution inputs or created files"
+          }
+        },
+        {
+          "task_id": "data_weighted_mean",
+          "group": "E41_core",
+          "expected": "7.86",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "7.86",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_weighted_mean",
+            "status": "SOLVED",
+            "answer": "7.86",
+            "input_tokens": 148,
+            "output_tokens": 101,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.797000000020489,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "pilot_known_or_failure",
+          "group": "E75_pilot",
+          "expected": "30",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "30",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_known_or_failure",
+            "status": "SOLVED",
+            "answer": "30",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_mixed_duplicates",
+          "group": "E75_pilot",
+          "expected": "32",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "32",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_mixed_duplicates",
+            "status": "SOLVED",
+            "answer": "32",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_empty_filter_not_unmatched",
+          "group": "E75_pilot",
+          "expected": "13",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "13",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_empty_filter_not_unmatched",
+            "status": "SOLVED",
+            "answer": "13",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_empty_right",
+          "group": "E75_pilot",
+          "expected": "10",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "10",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_empty_right",
+            "status": "SOLVED",
+            "answer": "10",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_string_keys_and_blocked",
+          "group": "E75_pilot",
+          "expected": "10",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "10",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_string_keys_and_blocked",
+            "status": "SOLVED",
+            "answer": "10",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_extra_numeric_control",
+          "group": "E75_pilot",
+          "expected": "19",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "19",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_extra_numeric_control",
+            "status": "SOLVED",
+            "answer": "19",
+            "input_tokens": 297,
+            "output_tokens": 384,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 4.125,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "pilot_previous_local_control",
+          "group": "E75_pilot",
+          "expected": "17",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "17",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_previous_local_control",
+            "status": "SOLVED",
+            "answer": "17",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed complete bounded grammar locally; no model translation"
+          }
+        }
+      ],
+      "metrics": {
+        "total": 13,
+        "solvable": 12,
+        "verified": 11,
+        "non_solved_answer_files": 0,
+        "incorrect_solved_answers": 0,
+        "unverified_answer_files": 0,
+        "integrity_passed": true
+      },
+      "summary": {
+        "total_tasks": 12,
+        "task_results": {
+          "data_distinct": {
+            "task_id": "data_distinct",
+            "status": "SOLVED",
+            "answer": "2",
+            "input_tokens": 144,
+            "output_tokens": 72,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.1400000000139698,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "data_empty_count": {
+            "task_id": "data_empty_count",
+            "status": "SOLVED",
+            "answer": "0",
+            "input_tokens": 146,
+            "output_tokens": 58,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.1400000000139698,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "data_filtered_median": {
+            "task_id": "data_filtered_median",
+            "status": "SOLVED",
+            "answer": "2.5",
+            "input_tokens": 145,
+            "output_tokens": 69,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.0160000000032596,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "data_two_file_join": {
+            "task_id": "data_two_file_join",
+            "status": "UNKNOWN",
+            "answer": null,
+            "input_tokens": 246,
+            "output_tokens": 183,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.5939999999827705,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": "Generated code changed execution inputs or created files"
+          },
+          "data_weighted_mean": {
+            "task_id": "data_weighted_mean",
+            "status": "SOLVED",
+            "answer": "7.86",
+            "input_tokens": 148,
+            "output_tokens": 101,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.797000000020489,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "pilot_empty_filter_not_unmatched": {
+            "task_id": "pilot_empty_filter_not_unmatched",
+            "status": "SOLVED",
+            "answer": "13",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          },
+          "pilot_empty_right": {
+            "task_id": "pilot_empty_right",
+            "status": "SOLVED",
+            "answer": "10",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          },
+          "pilot_extra_numeric_control": {
+            "task_id": "pilot_extra_numeric_control",
+            "status": "SOLVED",
+            "answer": "19",
+            "input_tokens": 297,
+            "output_tokens": 384,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 4.125,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "pilot_known_or_failure": {
+            "task_id": "pilot_known_or_failure",
+            "status": "SOLVED",
+            "answer": "30",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          },
+          "pilot_mixed_duplicates": {
+            "task_id": "pilot_mixed_duplicates",
+            "status": "SOLVED",
+            "answer": "32",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          },
+          "pilot_previous_local_control": {
+            "task_id": "pilot_previous_local_control",
+            "status": "SOLVED",
+            "answer": "17",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed complete bounded grammar locally; no model translation"
+          },
+          "pilot_string_keys_and_blocked": {
+            "task_id": "pilot_string_keys_and_blocked",
+            "status": "SOLVED",
+            "answer": "10",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        "skipped_tasks": {
+          "data_missing_source": "Отсутствуют необходимые данные/сущности в data_analysis"
+        },
+        "solved_count": 11,
+        "estimated_score": 33,
+        "effective_tokens_spent": 979.6,
+        "budget_state": {
+          "budget": 3000,
+          "known_effective_tokens": 979.6,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "data_distinct",
+              "status": "ACCOUNTED",
+              "reserved_units": 3494,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1494,
+              "output_cap": 200,
+              "input_tokens": 144,
+              "output_tokens": 72,
+              "reasoning_tokens": 0,
+              "effective_cost": 86.4
+            },
+            {
+              "ticket": 1,
+              "task_id": "data_empty_count",
+              "status": "ACCOUNTED",
+              "reserved_units": 3500,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1500,
+              "output_cap": 200,
+              "input_tokens": 146,
+              "output_tokens": 58,
+              "reasoning_tokens": 0,
+              "effective_cost": 72.6
+            },
+            {
+              "ticket": 2,
+              "task_id": "data_filtered_median",
+              "status": "ACCOUNTED",
+              "reserved_units": 3510,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1510,
+              "output_cap": 200,
+              "input_tokens": 145,
+              "output_tokens": 69,
+              "reasoning_tokens": 0,
+              "effective_cost": 83.5
+            },
+            {
+              "ticket": 3,
+              "task_id": "data_two_file_join",
+              "status": "ACCOUNTED",
+              "reserved_units": 5885,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1885,
+              "output_cap": 400,
+              "input_tokens": 246,
+              "output_tokens": 183,
+              "reasoning_tokens": 0,
+              "effective_cost": 207.6
+            },
+            {
+              "ticket": 4,
+              "task_id": "data_weighted_mean",
+              "status": "ACCOUNTED",
+              "reserved_units": 3528,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1528,
+              "output_cap": 200,
+              "input_tokens": 148,
+              "output_tokens": 101,
+              "reasoning_tokens": 0,
+              "effective_cost": 115.8
+            },
+            {
+              "ticket": 5,
+              "task_id": "pilot_extra_numeric_control",
+              "status": "ACCOUNTED",
+              "reserved_units": 6130,
+              "task_limit_units": 7000,
+              "input_token_estimate": 2130,
+              "output_cap": 400,
+              "input_tokens": 297,
+              "output_tokens": 384,
+              "reasoning_tokens": 0,
+              "effective_cost": 413.7
+            }
+          ]
+        },
+        "budget_audit_path": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E84_contract_live_20261112T183041218847\\baseline\\budget.json",
+        "execution_engine": "openjiuwen",
+        "workflow_runs": [
+          {
+            "task_id": "data_distinct",
+            "workflow_id": "task_0fa440505d014d7e960e18186321aff0",
+            "session_id": "35a16e2aa9a043288da16b830a313c22",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_empty_count",
+            "workflow_id": "task_25a6395356304af196c6db7dcfea3f6c",
+            "session_id": "6b41099012f74d3eb0a0b772b76bf04f",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_filtered_median",
+            "workflow_id": "task_b16530ef03034c968bde332096670cc3",
+            "session_id": "44430c24ecf647bd83df3fce720ea6b8",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_two_file_join",
+            "workflow_id": "task_8a8ca3ade4bd497eb1141e601ff6e045",
+            "session_id": "d8a04755e7d5407c9a1e04ff12fc6219",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": false,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_weighted_mean",
+            "workflow_id": "task_9fd252e974cf4cfbb69e2b9b320631bc",
+            "session_id": "fc0a77dae63148cdb45f445acc2d402c",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_empty_filter_not_unmatched",
+            "workflow_id": "task_0d2ce85f1d484101992dc47713b3f717",
+            "session_id": "440fcef8709945d9ac2b72a569e031c9",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_empty_right",
+            "workflow_id": "task_7434b1558b0d424c82e16ae17d8cf973",
+            "session_id": "d74079c0007545239fafcbdad73afd0d",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_extra_numeric_control",
+            "workflow_id": "task_883db48583bc42969d1a6860952ab086",
+            "session_id": "f7b6f4ad25824d61bd6dd31c1aae89af",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_known_or_failure",
+            "workflow_id": "task_ef036fac5fd54c9b974c631d48a0b388",
+            "session_id": "27d99b65c3754f228a8a84aa6cc806d0",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_mixed_duplicates",
+            "workflow_id": "task_6cccc40a6d3842058b74115dd5299e56",
+            "session_id": "6f34aaa2556b43a382c36e930be286b4",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_previous_local_control",
+            "workflow_id": "task_768d95fdc5f5410da3e2e6ce6be64d15",
+            "session_id": "a6288b39aebf4b62bbc87fb3c2871c87",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_string_keys_and_blocked",
+            "workflow_id": "task_f174f1563f084ba6bd6f90b52fb57c33",
+            "session_id": "f8789dd36b9942f6ba7aa5c7b1020ae8",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          }
+        ]
+      },
+      "actual_http_calls": 6,
+      "effective_tokens": 979.6,
+      "has_unaccounted_request": false,
+      "remote_stopped": false,
+      "recording_errors": [],
+      "arm": "baseline",
+      "sources_sha256": {
+        "harness/__init__.py": "0d9fcec5687afb88fb07880fad79929f00b14f30eb4c68e0bec771b2c56715e3",
+        "harness/agents/__init__.py": "82125633dcdc7f6fda85f610fb933bf578393969d335182c897f80cde0f0d0be",
+        "harness/agents/base_harness.py": "d7c80c5f88dcc2ca28c8bdfc1f76bfd1eaab15ce89b1b3d63d4c86d92c6ebd59",
+        "harness/agents/calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+        "harness/agents/coding_solver.py": "32dbee26f8d81b62e6022923018f491702a68a58c127bbb0a349b606c28163a7",
+        "harness/agents/coding_target.py": "e834418fbe1b05a0bb90ce8d4f6661f2b4348eba4e2430ce2192acad716299f4",
+        "harness/agents/data_solver.py": "36388b2af6bce9a703e7a1c023886313cda93ca73abb5481a05d5c892a5d8c52",
+        "harness/agents/extended_plans.py": "ce7b2a159a038d080ad134665f6e3bb4e3600d5ff7e7e7c1344d7c13682161c2",
+        "harness/agents/fallback_react.py": "e4680241fe233986267dab69644170a99ac93b2b95beb6c2398198ff294b4814",
+        "harness/agents/instruction_scope.py": "8f9d0f8bf4aee628b067f42072da1a7ffeff86950c51ce34aa5bc9a3e6f291ba",
+        "harness/agents/join_cascade.py": "7fad01e01d562e6837a8252bbb9352e8b599946fe423e13c14e8b66bac8f73d0",
+        "harness/agents/join_or.py": "e6c3644b76aa252f07e3dfe18671c4eb6ef12c3c9213413fbd67b608fb1d63cf",
+        "harness/agents/join_plans.py": "cd737ee0abc60fd27d5ca45a270a04d2f6e787bd295a7a88d2f78c8a32904ec9",
+        "harness/agents/join_scope.py": "b344c31ab06481ff59fd0f907c74a3215ebe1ae2f29fe39d913ed762f2b5640a",
+        "harness/agents/join_scope_v2.py": "e3c2329de3a4e7357c73f398d5ca1379caafb8add2cd3f4a927f9715cad0dc98",
+        "harness/agents/kb_compaction.py": "438ae744d34a48756485c9ca20a5095ebbaf11fc9a0335ae4918b0fe4358b5ac",
+        "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+        "harness/agents/local_join.py": "5052871743da61203dd27bfd3fdc59a2711e1bfc3c3501ba3f425543ba3326f9",
+        "harness/agents/math_solver.py": "72b7f860cf02d8935afb16ed082d6135279c943368304807012c2b39815521b6",
+        "harness/agents/model_router.py": "12e8b9a898182bbbc034696d6c8b1b23d0187b6be5c0debde6e26b2d4c47df5c",
+        "harness/agents/multi_csv.py": "3183d7cbe95ef2476fc126e5e1adf770a52c0c08ea7371891ff72e0e490a2e12",
+        "harness/agents/plan_scope.py": "8f1253a0870fe27a744944b1decaca591f4d1e43ff74953e6e0e1d5fdcf073e5",
+        "harness/agents/search_evidence.py": "5df03c11d29c08406423ec1a8cee05933122361803e3926dc30e9c0d8557d0cb",
+        "harness/agents/search_solver.py": "d4e1081fda959a2b4e992edf0c5bd8773455301c2b82bb437eb648816f3a9293",
+        "harness/config.py": "cbdb713bcdefdde7fb8c3c6cf5fbcc0c4b5491b9dec8950af1fc01f80a25c2a0",
+        "harness/planner/__init__.py": "89c97443a406ee0fd78af936f78dfbd4c1799fab98dd7439a777cef0a394ff0d",
+        "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+        "harness/planner/feature_extractor.py": "b95e9e0b1b17b285b4d7254a64511799a8c4ed181091a5924ddd34e9176e4a7e",
+        "harness/planner/scheduler.py": "9141af37f46c83179d13de20a8ddabb3736d5f8b57a474d0c42e170c6120273e",
+        "harness/planner/token_estimator.py": "dfc00c5e554eefcde4ca8e5f1535370f82765d75f936ebcc354656dfdff15b9a",
+        "harness/planner/unsolvable_filter.py": "40c77815d28ed550a2244ff9df84dcb6bb97567bfea684c96a3b2b30faaf2eab",
+        "harness/sandbox/__init__.py": "87b4b1d95e154ce88031f9cd7801935a346a35cd3b8abcb63b56df46c9078dfa",
+        "harness/sandbox/executor.py": "401d7b6617bc5de5e9a5de1b9ebddeb6af1f56b37eab898e128483aaa1cc9afd",
+        "harness/sandbox/file_guard.py": "6696cc48778564178973d936a12620ac925e40144312666bf04b54e1e9e3b2f0",
+        "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66"
+      }
+    },
+    "candidate": {
+      "mode": "LIVE",
+      "rows": [
+        {
+          "task_id": "data_distinct",
+          "group": "E41_core",
+          "expected": "2",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "2",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_distinct",
+            "status": "SOLVED",
+            "answer": "2",
+            "input_tokens": 169,
+            "output_tokens": 75,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 5.562000000005355,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "data_empty_count",
+          "group": "E41_core",
+          "expected": "0",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "0",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_empty_count",
+            "status": "SOLVED",
+            "answer": "0",
+            "input_tokens": 171,
+            "output_tokens": 58,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.7810000000172295,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "data_filtered_median",
+          "group": "E41_core",
+          "expected": "2.5",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "2.5",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_filtered_median",
+            "status": "SOLVED",
+            "answer": "2.5",
+            "input_tokens": 170,
+            "output_tokens": 80,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 2.109000000025844,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "data_missing_source",
+          "group": "E41_core",
+          "expected": "UNSOLVABLE",
+          "unsolvable": true,
+          "status": "SKIPPED",
+          "answer": null,
+          "verified": false,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "status": "SKIPPED"
+          }
+        },
+        {
+          "task_id": "data_two_file_join",
+          "group": "E41_core",
+          "expected": "33",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "33",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_two_file_join",
+            "status": "SOLVED",
+            "answer": "33",
+            "input_tokens": 264,
+            "output_tokens": 165,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 2.937000000005355,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "data_weighted_mean",
+          "group": "E41_core",
+          "expected": "7.86",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "7.86",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "data_weighted_mean",
+            "status": "SOLVED",
+            "answer": "7.86",
+            "input_tokens": 173,
+            "output_tokens": 101,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.4690000000118744,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "pilot_known_or_failure",
+          "group": "E75_pilot",
+          "expected": "30",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "30",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_known_or_failure",
+            "status": "SOLVED",
+            "answer": "30",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_mixed_duplicates",
+          "group": "E75_pilot",
+          "expected": "32",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "32",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_mixed_duplicates",
+            "status": "SOLVED",
+            "answer": "32",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_empty_filter_not_unmatched",
+          "group": "E75_pilot",
+          "expected": "13",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "13",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_empty_filter_not_unmatched",
+            "status": "SOLVED",
+            "answer": "13",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_empty_right",
+          "group": "E75_pilot",
+          "expected": "10",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "10",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_empty_right",
+            "status": "SOLVED",
+            "answer": "10",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_string_keys_and_blocked",
+          "group": "E75_pilot",
+          "expected": "10",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "10",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_string_keys_and_blocked",
+            "status": "SOLVED",
+            "answer": "10",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        {
+          "task_id": "pilot_extra_numeric_control",
+          "group": "E75_pilot",
+          "expected": "19",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "19",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_extra_numeric_control",
+            "status": "SOLVED",
+            "answer": "19",
+            "input_tokens": 315,
+            "output_tokens": 394,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 4.4060000000172295,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          }
+        },
+        {
+          "task_id": "pilot_previous_local_control",
+          "group": "E75_pilot",
+          "expected": "17",
+          "unsolvable": false,
+          "status": "SOLVED",
+          "answer": "17",
+          "verified": true,
+          "integrity": true,
+          "unverified_answer_file": false,
+          "non_solved_answer_file": false,
+          "incorrect_solved_answer": false,
+          "result": {
+            "task_id": "pilot_previous_local_control",
+            "status": "SOLVED",
+            "answer": "17",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed complete bounded grammar locally; no model translation"
+          }
+        }
+      ],
+      "metrics": {
+        "total": 13,
+        "solvable": 12,
+        "verified": 12,
+        "non_solved_answer_files": 0,
+        "incorrect_solved_answers": 0,
+        "unverified_answer_files": 0,
+        "integrity_passed": true
+      },
+      "summary": {
+        "total_tasks": 12,
+        "task_results": {
+          "data_distinct": {
+            "task_id": "data_distinct",
+            "status": "SOLVED",
+            "answer": "2",
+            "input_tokens": 169,
+            "output_tokens": 75,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 5.562000000005355,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "data_empty_count": {
+            "task_id": "data_empty_count",
+            "status": "SOLVED",
+            "answer": "0",
+            "input_tokens": 171,
+            "output_tokens": 58,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.7810000000172295,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "data_filtered_median": {
+            "task_id": "data_filtered_median",
+            "status": "SOLVED",
+            "answer": "2.5",
+            "input_tokens": 170,
+            "output_tokens": 80,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 2.109000000025844,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "data_two_file_join": {
+            "task_id": "data_two_file_join",
+            "status": "SOLVED",
+            "answer": "33",
+            "input_tokens": 264,
+            "output_tokens": 165,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 2.937000000005355,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "data_weighted_mean": {
+            "task_id": "data_weighted_mean",
+            "status": "SOLVED",
+            "answer": "7.86",
+            "input_tokens": 173,
+            "output_tokens": 101,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 1.4690000000118744,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "pilot_empty_filter_not_unmatched": {
+            "task_id": "pilot_empty_filter_not_unmatched",
+            "status": "SOLVED",
+            "answer": "13",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          },
+          "pilot_empty_right": {
+            "task_id": "pilot_empty_right",
+            "status": "SOLVED",
+            "answer": "10",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          },
+          "pilot_extra_numeric_control": {
+            "task_id": "pilot_extra_numeric_control",
+            "status": "SOLVED",
+            "answer": "19",
+            "input_tokens": 315,
+            "output_tokens": 394,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 4.4060000000172295,
+            "model_used": "qwen3.6-35b-a3b-noreason",
+            "notes": ""
+          },
+          "pilot_known_or_failure": {
+            "task_id": "pilot_known_or_failure",
+            "status": "SOLVED",
+            "answer": "30",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          },
+          "pilot_mixed_duplicates": {
+            "task_id": "pilot_mixed_duplicates",
+            "status": "SOLVED",
+            "answer": "32",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          },
+          "pilot_previous_local_control": {
+            "task_id": "pilot_previous_local_control",
+            "status": "SOLVED",
+            "answer": "17",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed complete bounded grammar locally; no model translation"
+          },
+          "pilot_string_keys_and_blocked": {
+            "task_id": "pilot_string_keys_and_blocked",
+            "status": "SOLVED",
+            "answer": "10",
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "wall_time_sec": 0.0,
+            "model_used": "",
+            "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+          }
+        },
+        "skipped_tasks": {
+          "data_missing_source": "Отсутствуют необходимые данные/сущности в data_analysis"
+        },
+        "solved_count": 12,
+        "estimated_score": 36,
+        "effective_tokens_spent": 999.2,
+        "budget_state": {
+          "budget": 3000,
+          "known_effective_tokens": 999.2,
+          "reserved_effective_tokens": 0.0,
+          "has_unaccounted_request": false,
+          "remote_stopped": false,
+          "events": [
+            {
+              "ticket": 0,
+              "task_id": "data_distinct",
+              "status": "ACCOUNTED",
+              "reserved_units": 3624,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1624,
+              "output_cap": 200,
+              "input_tokens": 169,
+              "output_tokens": 75,
+              "reasoning_tokens": 0,
+              "effective_cost": 91.9
+            },
+            {
+              "ticket": 1,
+              "task_id": "data_empty_count",
+              "status": "ACCOUNTED",
+              "reserved_units": 3630,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1630,
+              "output_cap": 200,
+              "input_tokens": 171,
+              "output_tokens": 58,
+              "reasoning_tokens": 0,
+              "effective_cost": 75.1
+            },
+            {
+              "ticket": 2,
+              "task_id": "data_filtered_median",
+              "status": "ACCOUNTED",
+              "reserved_units": 3640,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1640,
+              "output_cap": 200,
+              "input_tokens": 170,
+              "output_tokens": 80,
+              "reasoning_tokens": 0,
+              "effective_cost": 97.0
+            },
+            {
+              "ticket": 3,
+              "task_id": "data_two_file_join",
+              "status": "ACCOUNTED",
+              "reserved_units": 5983,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1983,
+              "output_cap": 400,
+              "input_tokens": 264,
+              "output_tokens": 165,
+              "reasoning_tokens": 0,
+              "effective_cost": 191.4
+            },
+            {
+              "ticket": 4,
+              "task_id": "data_weighted_mean",
+              "status": "ACCOUNTED",
+              "reserved_units": 3658,
+              "task_limit_units": 7000,
+              "input_token_estimate": 1658,
+              "output_cap": 200,
+              "input_tokens": 173,
+              "output_tokens": 101,
+              "reasoning_tokens": 0,
+              "effective_cost": 118.3
+            },
+            {
+              "ticket": 5,
+              "task_id": "pilot_extra_numeric_control",
+              "status": "ACCOUNTED",
+              "reserved_units": 6228,
+              "task_limit_units": 7000,
+              "input_token_estimate": 2228,
+              "output_cap": 400,
+              "input_tokens": 315,
+              "output_tokens": 394,
+              "reasoning_tokens": 0,
+              "effective_cost": 425.5
+            }
+          ]
+        },
+        "budget_audit_path": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E84_contract_live_20261112T183041218847\\candidate\\budget.json",
+        "execution_engine": "openjiuwen",
+        "workflow_runs": [
+          {
+            "task_id": "data_distinct",
+            "workflow_id": "task_286b305bd07d4955825353aa52267376",
+            "session_id": "572fcb61cbcf4c789fa599a517f2dd42",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_empty_count",
+            "workflow_id": "task_11ed5579e16a4d26adfa8e50a5d0aef2",
+            "session_id": "3de61d2b28284b0c9a0d984f4ba6964c",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_filtered_median",
+            "workflow_id": "task_b046d11d284a41aeb7bf9a1f9a55da04",
+            "session_id": "23a5785643b4414097b8899551308563",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_two_file_join",
+            "workflow_id": "task_5e17ccde8d754e8f86e6634d52ed2528",
+            "session_id": "31daff624dda4b8fbed724d6b77f77e1",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "data_weighted_mean",
+            "workflow_id": "task_8e6276760818426b983bca6b054c1ccd",
+            "session_id": "f491d89d2771417590ff73166723e751",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_empty_filter_not_unmatched",
+            "workflow_id": "task_bda520844ad1424ca3cdf319b349800f",
+            "session_id": "4805d4b6b8934e0e9fc09dd5327c261a",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_empty_right",
+            "workflow_id": "task_6a6f62c2c2524cfa86cbdce12290d4f6",
+            "session_id": "8c2503996d054d5a9b4628749abdc61d",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_extra_numeric_control",
+            "workflow_id": "task_b244d5c81f24429a8c832d13d6479992",
+            "session_id": "e75dc948d4994fa4952706b079d6e0da",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_known_or_failure",
+            "workflow_id": "task_305eccabe627432eb914272baf8d5366",
+            "session_id": "3fddaf66f14444c0a0affd7301a6fe73",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_mixed_duplicates",
+            "workflow_id": "task_4f7cba5cce3540e0ae1d055b9195a16b",
+            "session_id": "40b1789964b1438f986b8cd34454ceaf",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_previous_local_control",
+            "workflow_id": "task_551abbfd2a594694a729344e093421fd",
+            "session_id": "15f99f651fba4637918e150ae86edf91",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          },
+          {
+            "task_id": "pilot_string_keys_and_blocked",
+            "workflow_id": "task_5d1581cfc773482080ef4a031913299f",
+            "session_id": "569b29f24a7f4c3394d6389a775a85eb",
+            "stages": [
+              "solve",
+              "finalize"
+            ],
+            "saved": true,
+            "state": "COMPLETED",
+            "request_timeout_sec": 60.0,
+            "workflow_timeout_sec": 180.0
+          }
+        ]
+      },
+      "actual_http_calls": 6,
+      "effective_tokens": 999.2,
+      "has_unaccounted_request": false,
+      "remote_stopped": false,
+      "recording_errors": [],
+      "arm": "candidate",
+      "sources_sha256": {
+        "harness/agents/base_harness.py": "d7c80c5f88dcc2ca28c8bdfc1f76bfd1eaab15ce89b1b3d63d4c86d92c6ebd59",
+        "harness/agents/calculation_plans.py": "b592ee9ac143243f094751d6976f29f25285f50f34a7489b5ffd74b783bbb606",
+        "harness/agents/coding_solver.py": "32dbee26f8d81b62e6022923018f491702a68a58c127bbb0a349b606c28163a7",
+        "harness/agents/coding_target.py": "e834418fbe1b05a0bb90ce8d4f6661f2b4348eba4e2430ce2192acad716299f4",
+        "harness/agents/data_solver.py": "7a696b5f8a649224f8ba8cb822eda1ae7b79fa40a27bf9533d91cf34ae3c3ab5",
+        "harness/agents/extended_plans.py": "ce7b2a159a038d080ad134665f6e3bb4e3600d5ff7e7e7c1344d7c13682161c2",
+        "harness/agents/fallback_react.py": "2a6b14bfac2e7fc662363db07465ec593d3919a8371f670720482e54a6231115",
+        "harness/agents/instruction_scope.py": "8f9d0f8bf4aee628b067f42072da1a7ffeff86950c51ce34aa5bc9a3e6f291ba",
+        "harness/agents/join_cascade.py": "7fad01e01d562e6837a8252bbb9352e8b599946fe423e13c14e8b66bac8f73d0",
+        "harness/agents/join_or.py": "e6c3644b76aa252f07e3dfe18671c4eb6ef12c3c9213413fbd67b608fb1d63cf",
+        "harness/agents/join_plans.py": "cd737ee0abc60fd27d5ca45a270a04d2f6e787bd295a7a88d2f78c8a32904ec9",
+        "harness/agents/join_scope.py": "b344c31ab06481ff59fd0f907c74a3215ebe1ae2f29fe39d913ed762f2b5640a",
+        "harness/agents/join_scope_v2.py": "e3c2329de3a4e7357c73f398d5ca1379caafb8add2cd3f4a927f9715cad0dc98",
+        "harness/agents/kb_compaction.py": "438ae744d34a48756485c9ca20a5095ebbaf11fc9a0335ae4918b0fe4358b5ac",
+        "harness/agents/kb_context.py": "be968e39c3f7d24fc015c1402d844bec55709c0252e2f00338346ffff7ffa20e",
+        "harness/agents/local_join.py": "5052871743da61203dd27bfd3fdc59a2711e1bfc3c3501ba3f425543ba3326f9",
+        "harness/agents/math_solver.py": "a3a9cf2ecedd6a8206be386b0b6ccc7d202772f151594a9a7ddbbe6cfada30a7",
+        "harness/agents/model_router.py": "4c079483e65f0078b88639210af73d1b6c775f146af275928010e704abb83af3",
+        "harness/agents/multi_csv.py": "a47599c56d6f1ee14349a285348ca9bb5fa6ea696679a61bffb7a382a2a1bd84",
+        "harness/agents/plan_scope.py": "8f1253a0870fe27a744944b1decaca591f4d1e43ff74953e6e0e1d5fdcf073e5",
+        "harness/agents/search_evidence.py": "5df03c11d29c08406423ec1a8cee05933122361803e3926dc30e9c0d8557d0cb",
+        "harness/agents/search_solver.py": "d4e1081fda959a2b4e992edf0c5bd8773455301c2b82bb437eb648816f3a9293",
+        "harness/agents/__init__.py": "42324fbbf33a052cc6267cfd9b3eb05b611bdd44c1c7cbddd6237085d6fb1fb1",
+        "harness/config.py": "cbdb713bcdefdde7fb8c3c6cf5fbcc0c4b5491b9dec8950af1fc01f80a25c2a0",
+        "harness/planner/budget_tracker.py": "ee51379ad583bee8abf289b8c676b292256d03dc48c16b4246693aa518fc7991",
+        "harness/planner/feature_extractor.py": "7d732941aa146a5bcc58f436dbef8c3411c569f8c3e0cd178e76e0b989f418a1",
+        "harness/planner/scheduler.py": "9141af37f46c83179d13de20a8ddabb3736d5f8b57a474d0c42e170c6120273e",
+        "harness/planner/token_estimator.py": "7195ad8b8d1003d1e86a912e228ce30f2819b2bc99e4ba59e4d55b499b23b4ab",
+        "harness/planner/unsolvable_filter.py": "0889489ecfeee490037e2c81eb2d96e0db3695b3efb171877a114817de78afea",
+        "harness/planner/__init__.py": "4d01f39c19f74266c5ea845cfddf01fc1f0158ebb8efe8dcc967784c92a42ce2",
+        "harness/sandbox/executor.py": "3345fe08d70ff1396e627cdd67719a12da1fd14210359a0cbb6e39da9e6401e6",
+        "harness/sandbox/file_guard.py": "ad6f2ecc823db803222bc335b146abbec7f40a90b76b901a49cd30d994d065de",
+        "harness/sandbox/__init__.py": "8c7432a63595673c1c625724162ffa77a637387775ecfb86f7708bfdf08840db",
+        "harness/workflow_runner.py": "d647381a121014579016682b658bf4985ca86c8f2cd1d0cc20d66727a4c5eb66",
+        "harness/__init__.py": "fe5768bfeef5b47f9598df506c72b7c7e5173100e0bee18eda875c3164cdd6d8"
+      }
+    }
+  },
+  "real_api_attempts": 12,
+  "known_effective_tokens": 1978.8000000000002,
+  "frozen_files_unchanged": true
+}

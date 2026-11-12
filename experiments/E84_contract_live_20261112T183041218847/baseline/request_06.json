@@ -1,0 +1,18 @@
+{
+  "task_id": "pilot_extra_numeric_control",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"labels.csv\", \"columns\": [\"sku\", \"region\"], \"rows\": 5, \"sample_rows\": [{\"sku\": \"a\", \"region\": \"west\"}, {\"sku\": \"a\", \"region\": \"east\"}, {\"sku\": \"a\", \"region\": \"west\"}]}, {\"file\": \"orders.csv\", \"columns\": [\"code\", \"qty\"], \"rows\": 5, \"sample_rows\": [{\"code\": \"a\", \"qty\": \"4\"}, {\"code\": \"a\", \"qty\": \"6\"}, {\"code\": \"b\", \"qty\": \"9\"}]}]\nTask: Read orders.csv and labels.csv. Left join orders.code to labels.sku using exact string keys. Sum orders.qty for all resulting pairs where labels.region equals 'west' OR there is no matching right row. Preserve every matching pair, including duplicates. Print the exact sum. Additionally, include only orders whose qty is numerically greater than 5."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  }
+}

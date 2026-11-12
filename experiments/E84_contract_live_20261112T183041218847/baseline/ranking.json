@@ -1,0 +1,74 @@
+[
+  {
+    "task_id": "data_distinct",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "data_empty_count",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "data_filtered_median",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "data_two_file_join",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "data_weighted_mean",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_empty_filter_not_unmatched",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_empty_right",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_extra_numeric_control",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_known_or_failure",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_mixed_duplicates",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_previous_local_control",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_string_keys_and_blocked",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  }
+]
