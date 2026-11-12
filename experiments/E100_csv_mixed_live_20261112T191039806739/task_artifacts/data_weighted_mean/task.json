@@ -1,0 +1,6 @@
+{
+  "task_id": "data_weighted_mean",
+  "task_type": "data_analysis",
+  "instruction": "Using sales.csv, calculate the average price weighted by units over ALL rows. Return exactly two decimal places. Write only the final answer to answer.txt.",
+  "reward": 3
+}

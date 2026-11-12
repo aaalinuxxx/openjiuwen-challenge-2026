@@ -1,0 +1,6 @@
+{
+  "task_id": "load_019_coding_stateful",
+  "task_type": "coding",
+  "instruction": "Fix Counter. It starts at zero; next() increments and returns its own state. Each instance is independent. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+  "reward": 2
+}

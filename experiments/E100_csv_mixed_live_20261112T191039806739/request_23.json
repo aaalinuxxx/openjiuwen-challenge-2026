@@ -1,0 +1,18 @@
+{
+  "task_id": "coding_stateful",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return complete corrected Python code only, without comments or Markdown. Preserve signatures and satisfy the task constraints and all tests. Never modify tests. Use UNSOLVABLE only for provably contradictory requirements. The harness runs tests and writes DONE; do not perform these delivery steps in the returned code."
+      },
+      {
+        "role": "user",
+        "content": "### Task constraints\nFix Counter. It starts at zero; next() increments and returns its own state. Each instance is independent. Do not change tests. Write DONE to answer.txt only after all tests pass.\n\n### Target File: mylib.py\nclass Counter:\n    def __init__(self): self.value = 0\n    def next(self): return 1\n\n\n\n\n### test_mylib.py\nimport unittest\nimport mylib\n\nclass Checks(unittest.TestCase):\n    def test_sequence(self):\n        c = mylib.Counter()\n        self.assertEqual(c.next(), 1)\n        self.assertEqual(c.next(), 2)\n    def test_independent(self):\n        a, b = mylib.Counter(), mylib.Counter()\n        a.next()\n        self.assertEqual(b.next(), 1)\n\nif __name__ == '__main__': unittest.main()\n\n\n### Failing Test Output (failures: 1)\n### test_mylib.py\n.F\n======================================================================\nFAIL: test_sequence (__main__.Checks.test_sequence)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-6gv_m1je\\workspace\\test_mylib.py\", line 8, in test_sequence\n    self.assertEqual(c.next(), 2)\nAssertionError: 1 != 2\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nFAILED (failures=1)\n"
+      }
+    ],
+    "max_tokens": 700,
+    "temperature": 0.0
+  }
+}

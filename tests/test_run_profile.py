@@ -20,8 +20,10 @@ class RunProfileTests(unittest.TestCase):
         c=self.config(['--profile','validated','--max-concurrency','2','--max-api-calls','0'])
         self.assertEqual((c.max_concurrency,c.max_api_calls),(2,0))
 
-    def test_organizer_command_uses_validated_profile_without_extra_flags(self):
+    def test_organizer_command_uses_roomy_profile_without_extra_flags(self):
         c=self.config([])
-        explicit=self.config(['--profile','validated'])
+        explicit=self.config(['--profile','csv-roomy'])
         self.assertEqual(c,explicit)
-        self.assertEqual((c.experimental_joins,c.search_min_task_budget,c.data_min_task_budget,c.max_concurrency),(True,300,700,1))
+        self.assertEqual((c.experimental_joins,c.search_min_task_budget,c.data_min_task_budget,c.max_concurrency),(True,300,1000,1))
+
+        self.assertEqual(c.multi_csv_max_output_tokens,600)

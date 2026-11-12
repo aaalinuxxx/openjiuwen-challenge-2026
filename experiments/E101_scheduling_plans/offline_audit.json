@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "local_correct": 25,
+  "local_score": 75,
+  "orders_differ": true,
+  "same_ranked_ids": true,
+  "reward_order_valid": true
+}

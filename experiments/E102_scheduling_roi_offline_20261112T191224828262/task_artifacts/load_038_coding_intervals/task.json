@@ -1,0 +1,6 @@
+{
+  "task_id": "load_038_coding_intervals",
+  "task_type": "coding",
+  "instruction": "Fix merge_intervals. Merge overlapping OR touching intervals, sort output by start, and do not mutate the input. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+  "reward": 5
+}

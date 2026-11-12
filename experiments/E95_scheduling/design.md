@@ -11,3 +11,5 @@ Accept a useful alternative only with higher verified score and no increase in i
 Two zero-budget rehearsals must have identical verified identities, scores and zero HTTP. Inputs/labels frozen before live. Six E87 holdout are NOT part of these100 tasks.
 
 Status: DEFERRED before any scheduling API. E94 holdout found another truncation; repair/output-budget validation has priority. Fixture prepared, no ranking experiment executed yet.
+
+Revision before any policy API: E98/E100 accepted; now use csv-roomy (data reserve1000,multi-CSV cap600) in BOTH arms. To preserve the8500 additional-session allowance, each policy receives1000 effective tokens, not the originally proposed3000. At this tighter budget the question is explicitly low-budget allocation. All other criteria unchanged. Current actual spend 5795.8; two arms add at most2000. Scheduling experiment is now active.
