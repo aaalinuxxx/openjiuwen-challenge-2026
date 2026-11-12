@@ -1,0 +1,32 @@
+{
+  "task_id": "filter_after_pairing",
+  "response": {
+    "id": "chatcmpl-b702ef28a6a4bac0",
+    "created": 1794509429,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\nfrom decimal import Decimal, InvalidOperation\n\ndef main():\n    # Read orders.csv\n    orders = []\n    with open('orders.csv', 'r', newline='') as f:\n        reader = csv.DictReader(f)\n        for row in reader:\n            orders.append(row)\n    \n    # Read prices.csv\n    prices = []\n    with open('prices.csv', 'r', newline='') as f:\n        reader = csv.DictReader(f)\n        for row in reader:\n            prices.append(row)\n    \n    # Build a lookup for prices by code\n    # We need to preserve all rows, so group by code\n    from collections import defaultdict\n    prices_by_code = defaultdict(list)\n    for p in prices:\n        prices_by_code[p['code']].append(p)\n    \n    total_sum = Decimal('0')\n    \n    for order in orders:\n        sku = order['sku']\n        qty = Decimal(order['qty'])\n        \n        # Check if there are any matching prices\n        matching_prices = prices_by_code.get(sku, [])\n        \n        if not matching_prices:\n            # No match in original prices.csv: include once with price 2.50\n            total_sum += qty * Decimal('2.50')\n        else:\n            # Filter to only those with state 'ok'\n            ok_prices = [p for p in matching_prices if p['state'] == 'ok']\n            \n            if ok_prices:\n                # For each matching price with state 'ok', create a pair\n                for p in ok_prices:\n                    price = Decimal(p['price'])\n                    total_sum += qty * price\n            else:\n                # Matched order with only rejected states is NOT unmatched\n                # So we don't add anything for this order\n                pass\n    \n    # Print the result",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 400,
+      "prompt_tokens": 429,
+      "total_tokens": 829,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

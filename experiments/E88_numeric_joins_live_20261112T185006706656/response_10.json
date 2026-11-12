@@ -1,0 +1,32 @@
+{
+  "task_id": "weighted_average",
+  "response": {
+    "id": "chatcmpl-b79a0776ff17afef",
+    "created": 1794509455,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\nfrom decimal import Decimal, ROUND_HALF_UP\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read prices.csv\nprices = []\nwith open('prices.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        prices.append(row)\n\n# Build a lookup from code to list of price records\nprice_lookup = {}\nfor p in prices:\n    code = p['code']\n    if code not in price_lookup:\n        price_lookup[code] = []\n    price_lookup[code].append(p)\n\n# For each order, find all matching price records\n# Compute sum(qty * price) and sum(qty) over all retained pairs\ntotal_weighted_sum = Decimal('0')\ntotal_qty = Decimal('0')\n\nfor order in orders:\n    sku = order['sku']\n    qty = Decimal(order['qty'])\n    \n    if sku in price_lookup:\n        for price_record in price_lookup[sku]:\n            price = Decimal(price_record['price'])\n            total_weighted_sum += qty * price\n            total_qty += qty\n\n# Compute the result: sum(qty * price) / sum(qty)\nif total_qty == 0:\n    result = Decimal('0')\nelse:\n    result = total_weighted_sum / total_qty\n\n# Round to two decimal places using ROUND_HALF_UP\nresult = result.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)\n\n# Print the result\nprint(result)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 372,
+      "prompt_tokens": 390,
+      "total_tokens": 762,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

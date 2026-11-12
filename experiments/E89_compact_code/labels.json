@@ -1,0 +1,52 @@
+{
+  "filter_after_pairing": {
+    "task_id": "filter_after_pairing",
+    "task_type": "data_analysis",
+    "instruction": "Read orders.csv and prices.csv. Match orders.sku to prices.code by exact string equality, preserving leading zeros. Each left row must be paired with EVERY matching right row; retain duplicates on both sides. If an order has no match in the original prices.csv, include it once with price 2.50. After forming the pairs, keep only pairs whose right state is 'ok', plus unmatched orders. A matched order with only rejected states is NOT unmatched. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Return the exact decimal sum without rounding. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "12.50",
+    "unsolvable": false,
+    "group": "E87_dev",
+    "comparison": "decimal"
+  },
+  "duplicate_pairs": {
+    "task_id": "duplicate_pairs",
+    "task_type": "data_analysis",
+    "instruction": "Read orders.csv and prices.csv. Match orders.sku to prices.code by exact string equality, preserving leading zeros. Each left row must be paired with EVERY matching right row; retain duplicates on both sides. Discard orders that have no price match. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Return the exact decimal sum without rounding. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "20.55",
+    "unsolvable": false,
+    "group": "E87_dev",
+    "comparison": "decimal"
+  },
+  "round_once": {
+    "task_id": "round_once",
+    "task_type": "data_analysis",
+    "instruction": "Read orders.csv and prices.csv. Match orders.sku to prices.code by exact string equality, preserving leading zeros. Each left row must be paired with EVERY matching right row; retain duplicates on both sides. Discard orders that have no price match. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Round only the final result to two decimal places using ROUND_HALF_UP. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "0.02",
+    "unsolvable": false,
+    "group": "E87_dev",
+    "comparison": "decimal"
+  },
+  "weighted_average": {
+    "task_id": "weighted_average",
+    "task_type": "data_analysis",
+    "instruction": "Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. Discard orders that have no price match. Compute sum(qty * price) divided by sum(qty) over all retained pairs; repeat qty for each matching price row. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Round only the final result to two decimal places using ROUND_HALF_UP. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "2.43",
+    "unsolvable": false,
+    "group": "E87_dev",
+    "comparison": "decimal"
+  },
+  "pilot_extra_numeric_control": {
+    "task_id": "pilot_extra_numeric_control",
+    "task_type": "data_analysis",
+    "instruction": "Read orders.csv and labels.csv. Left join orders.code to labels.sku using exact string keys. Sum orders.qty for all resulting pairs where labels.region equals 'west' OR there is no matching right row. Preserve every matching pair, including duplicates. Print the exact sum. Additionally, include only orders whose qty is numerically greater than 5.",
+    "reward": 3,
+    "expected": "19",
+    "unsolvable": false,
+    "group": "E75_pilot",
+    "source": "experiments/E75_join_or/cases.json#extra_numeric_control"
+  }
+}

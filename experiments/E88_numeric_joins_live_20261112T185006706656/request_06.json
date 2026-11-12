@@ -1,0 +1,18 @@
+{
+  "task_id": "negative_quantities",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. The harness handles any instruction to write answer.txt; your program must only print the result. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"orders.csv\", \"columns\": [\"sku\", \"qty\"], \"rows\": 3, \"sample_rows\": [{\"sku\": \"A\", \"qty\": \"-2\"}, {\"sku\": \"B\", \"qty\": \"3\"}, {\"sku\": \"A\", \"qty\": \"1\"}]}, {\"file\": \"prices.csv\", \"columns\": [\"code\", \"price\", \"state\"], \"rows\": 2, \"sample_rows\": [{\"code\": \"A\", \"price\": \"1.25\", \"state\": \"ok\"}, {\"code\": \"B\", \"price\": \"0.40\", \"state\": \"ok\"}]}]\nTask: Read orders.csv and prices.csv. Match orders.sku to prices.code by exact string equality, preserving leading zeros. Each left row must be paired with EVERY matching right row; retain duplicates on both sides. Discard orders that have no price match. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Return the exact decimal sum without rounding. Write only the numeric result to answer.txt."
+      }
+    ],
+    "max_tokens": 400,
+    "temperature": 0.0
+  }
+}

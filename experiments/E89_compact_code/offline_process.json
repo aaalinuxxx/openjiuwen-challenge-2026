@@ -1,0 +1,6 @@
+{
+  "done": true,
+  "code": 0,
+  "stdout": "Report: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E90_compact_code_offline_20261112T185216936203\\report.json\r\n{\"task_id\": \"duplicate_pairs\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"filter_after_pairing\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"pilot_extra_numeric_control\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"round_once\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"weighted_average\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"status\": \"COMPLETED\", \"metrics\": {\"total\": 5, \"solvable\": 5, \"correct\": 0, \"score\": 0, \"max_score\": 15, \"incorrect_solved_answers\": 0, \"non_solved_answer_files\": 0, \"justified_refusals\": 0, \"truncations\": 0, \"integrity_passed\": true}, \"audit\": {\"passed\": true, \"calls\": 0, \"effective_tokens\": 0.0, \"requests\": []}, \"historical_comparison\": {\"note\": \"Historical comparison, not simultaneous causal A/B\", \"lost\": [\"duplicate_pairs\", \"round_once\", \"weighted_average\"], \"gained\": []}, \"offline_passed\": true}\r\n",
+  "stderr": ""
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "task_id": "beyond_preview",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "duplicate_pairs",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "empty_inner",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "filter_after_pairing",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "fractional_prices",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "negative_quantities",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "round_once",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "string_keys",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "unmatched_default",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "weighted_average",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  }
+]

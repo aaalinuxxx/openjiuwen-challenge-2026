@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "calls": 10,
+  "effective_tokens": 3568.1,
+  "requests": [
+    {
+      "task_id": "beyond_preview",
+      "cost": 386.6,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "duplicate_pairs",
+      "cost": 337.6,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "empty_inner",
+      "cost": 362.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "filter_after_pairing",
+      "cost": 442.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "fractional_prices",
+      "cost": 367.6,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "negative_quantities",
+      "cost": 302.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "round_once",
+      "cost": 323.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "string_keys",
+      "cost": 309.2,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "unmatched_default",
+      "cost": 324.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "weighted_average",
+      "cost": 411.0,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    }
+  ]
+}

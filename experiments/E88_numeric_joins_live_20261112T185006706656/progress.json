@@ -1,0 +1,253 @@
+{
+  "results": {
+    "beyond_preview": {
+      "task_id": "beyond_preview",
+      "status": "SOLVED",
+      "answer": "11.30",
+      "input_tokens": 386,
+      "output_tokens": 348,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 7.327999999979511,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "duplicate_pairs": {
+      "task_id": "duplicate_pairs",
+      "status": "SOLVED",
+      "answer": "20.55",
+      "input_tokens": 386,
+      "output_tokens": 299,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 5.35899999999674,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "empty_inner": {
+      "task_id": "empty_inner",
+      "status": "SOLVED",
+      "answer": "0",
+      "input_tokens": 353,
+      "output_tokens": 327,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 5.797000000020489,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "filter_after_pairing": {
+      "task_id": "filter_after_pairing",
+      "status": "TRUNCATED",
+      "answer": null,
+      "input_tokens": 429,
+      "output_tokens": 400,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 4.25,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Output limit reached; usage accounted"
+    },
+    "fractional_prices": {
+      "task_id": "fractional_prices",
+      "status": "SOLVED",
+      "answer": "22.35",
+      "input_tokens": 386,
+      "output_tokens": 329,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 4.063000000023749,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "negative_quantities": {
+      "task_id": "negative_quantities",
+      "status": "SOLVED",
+      "answer": "-0.05",
+      "input_tokens": 365,
+      "output_tokens": 266,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 2.1709999999729916,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "round_once": {
+      "task_id": "round_once",
+      "status": "SOLVED",
+      "answer": "0.02",
+      "input_tokens": 395,
+      "output_tokens": 284,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 3.75,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "string_keys": {
+      "task_id": "string_keys",
+      "status": "SOLVED",
+      "answer": "10.40",
+      "input_tokens": 392,
+      "output_tokens": 270,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 6.64000000001397,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "unmatched_default": {
+      "task_id": "unmatched_default",
+      "status": "SOLVED",
+      "answer": "19.70",
+      "input_tokens": 379,
+      "output_tokens": 287,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 5.2189999999827705,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "weighted_average": {
+      "task_id": "weighted_average",
+      "status": "SOLVED",
+      "answer": "2.43",
+      "input_tokens": 390,
+      "output_tokens": 372,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 3.4839999999967404,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    }
+  },
+  "budget": {
+    "budget": 4000.0,
+    "known_effective_tokens": 3568.1,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "beyond_preview",
+        "status": "ACCOUNTED",
+        "reserved_units": 6476,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2476,
+        "output_cap": 400,
+        "input_tokens": 386,
+        "output_tokens": 348,
+        "reasoning_tokens": 0,
+        "effective_cost": 386.6
+      },
+      {
+        "ticket": 1,
+        "task_id": "duplicate_pairs",
+        "status": "ACCOUNTED",
+        "reserved_units": 6476,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2476,
+        "output_cap": 400,
+        "input_tokens": 386,
+        "output_tokens": 299,
+        "reasoning_tokens": 0,
+        "effective_cost": 337.6
+      },
+      {
+        "ticket": 2,
+        "task_id": "empty_inner",
+        "status": "ACCOUNTED",
+        "reserved_units": 6403,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2403,
+        "output_cap": 400,
+        "input_tokens": 353,
+        "output_tokens": 327,
+        "reasoning_tokens": 0,
+        "effective_cost": 362.3
+      },
+      {
+        "ticket": 3,
+        "task_id": "filter_after_pairing",
+        "status": "ACCOUNTED",
+        "reserved_units": 6681,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2681,
+        "output_cap": 400,
+        "input_tokens": 429,
+        "output_tokens": 400,
+        "reasoning_tokens": 0,
+        "effective_cost": 442.9
+      },
+      {
+        "ticket": 4,
+        "task_id": "fractional_prices",
+        "status": "ACCOUNTED",
+        "reserved_units": 6476,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2476,
+        "output_cap": 400,
+        "input_tokens": 386,
+        "output_tokens": 329,
+        "reasoning_tokens": 0,
+        "effective_cost": 367.6
+      },
+      {
+        "ticket": 5,
+        "task_id": "negative_quantities",
+        "status": "ACCOUNTED",
+        "reserved_units": 6430,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2430,
+        "output_cap": 400,
+        "input_tokens": 365,
+        "output_tokens": 266,
+        "reasoning_tokens": 0,
+        "effective_cost": 302.5
+      },
+      {
+        "ticket": 6,
+        "task_id": "round_once",
+        "status": "ACCOUNTED",
+        "reserved_units": 6503,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2503,
+        "output_cap": 400,
+        "input_tokens": 395,
+        "output_tokens": 284,
+        "reasoning_tokens": 0,
+        "effective_cost": 323.5
+      },
+      {
+        "ticket": 7,
+        "task_id": "string_keys",
+        "status": "ACCOUNTED",
+        "reserved_units": 6482,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2482,
+        "output_cap": 400,
+        "input_tokens": 392,
+        "output_tokens": 270,
+        "reasoning_tokens": 0,
+        "effective_cost": 309.2
+      },
+      {
+        "ticket": 8,
+        "task_id": "unmatched_default",
+        "status": "ACCOUNTED",
+        "reserved_units": 6474,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2474,
+        "output_cap": 400,
+        "input_tokens": 379,
+        "output_tokens": 287,
+        "reasoning_tokens": 0,
+        "effective_cost": 324.9
+      },
+      {
+        "ticket": 9,
+        "task_id": "weighted_average",
+        "status": "ACCOUNTED",
+        "reserved_units": 6500,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2500,
+        "output_cap": 400,
+        "input_tokens": 390,
+        "output_tokens": 372,
+        "reasoning_tokens": 0,
+        "effective_cost": 411.0
+      }
+    ]
+  }
+}

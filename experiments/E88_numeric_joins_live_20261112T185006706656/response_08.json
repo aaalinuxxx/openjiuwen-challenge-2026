@@ -1,0 +1,32 @@
+{
+  "task_id": "string_keys",
+  "response": {
+    "id": "chatcmpl-bc326862023eab00",
+    "created": 1794509445,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\nfrom decimal import Decimal, InvalidOperation\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read prices.csv\nprices = []\nwith open('prices.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        prices.append(row)\n\n# Build a lookup from prices.code to list of prices (to handle duplicates)\n# Use exact string equality for code matching\nprice_lookup = {}\nfor p in prices:\n    code = p['code']\n    if code not in price_lookup:\n        price_lookup[code] = []\n    price_lookup[code].append(p)\n\n# For each order, find all matching prices and compute qty * price\ntotal = Decimal('0')\nfor order in orders:\n    sku = order['sku']\n    if sku in price_lookup:\n        qty = Decimal(order['qty'])\n        for p in price_lookup[sku]:\n            price = Decimal(p['price'])\n            total += qty * price\n\n# Print the result\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 270,
+      "prompt_tokens": 392,
+      "total_tokens": 662,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

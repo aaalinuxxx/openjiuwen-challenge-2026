@@ -62,7 +62,8 @@ async def solve_multi_csv_task(ctx, bridge):
               "Read the named CSV files in the current directory; print only the final answer. The harness handles any instruction to write answer.txt; your program must only print the result. "
               "Do not modify files. Samples are incomplete: compute from all rows. "
               "Keep join keys as strings unless the task explicitly requests numeric keys. "
-              "Honor the specified join multiplicity, missing-match handling, filters and rounding.")
+              "Honor the specified join multiplicity, missing-match handling, filters and rounding. "
+              "Keep the code concise: no comments, explanations, markdown fences or unused imports.")
     prompt = "CSV schemas and first three data rows:\n" + description + "\nTask: " + ctx.instruction
     code, inp, out, reasoning = await bridge.complete(model=model,system_prompt=system,user_prompt=prompt,max_tokens=400)
     code = re.sub(r"^```(?:python)?|```$", "", code.strip(), flags=re.MULTILINE).strip()
