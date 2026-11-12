@@ -1,0 +1,6 @@
+{
+  "task_id": "load_030_coding_overlap",
+  "task_type": "coding",
+  "instruction": "Fix occurrences(text, pattern). Count overlapping exact matches. Empty pattern returns 0. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+  "reward": 4
+}

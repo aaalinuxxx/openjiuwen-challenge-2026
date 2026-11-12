@@ -1,0 +1,10 @@
+{
+  "post_live_changes": [
+    "run_agent.py"
+  ],
+  "reason": "Default profile validated -> csv-roomy; explicit csv-roomy in E100 already exercised same configuration",
+  "unit_tests": 180,
+  "default_profile_equivalence_test": true,
+  "standard_cli_offline_passed": true,
+  "production_ranking_unchanged": true
+}

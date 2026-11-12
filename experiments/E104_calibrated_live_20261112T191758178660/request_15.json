@@ -1,0 +1,18 @@
+{
+  "task_id": "load_040_math_zero_operation",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown."
+      },
+      {
+        "role": "user",
+        "content": "A warehouse starts with 9 boxes. It is split equally into 0 warehouses. How many boxes does each warehouse have? Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 116,
+    "temperature": 0.0
+  }
+}

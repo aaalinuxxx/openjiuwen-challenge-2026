@@ -1,0 +1,32 @@
+{
+  "task_id": "load_050_search_conflicting_fact",
+  "response": {
+    "id": "chatcmpl-ba32a163a74221a2",
+    "created": 1794511155,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "UNSOLVABLE",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 5,
+      "prompt_tokens": 158,
+      "total_tokens": 163,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

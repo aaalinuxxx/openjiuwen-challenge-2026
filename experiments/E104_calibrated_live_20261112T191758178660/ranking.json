@@ -1,0 +1,584 @@
+[
+  {
+    "task_id": "load_095_search_new_relation",
+    "roi": 0.24870466321243523,
+    "expected_cost": 66.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_009_search_conflicting_fact",
+    "roi": 0.24870466321243523,
+    "expected_cost": 66.5,
+    "reward": 5
+  },
+  {
+    "task_id": "load_060_search_irrelevant_conflict",
+    "roi": 0.24870466321243523,
+    "expected_cost": 66.5,
+    "reward": 5
+  },
+  {
+    "task_id": "load_046_search_absent",
+    "roi": 0.24870466321243523,
+    "expected_cost": 67.5,
+    "reward": 5
+  },
+  {
+    "task_id": "load_075_search_three_hop",
+    "roi": 0.24870466321243523,
+    "expected_cost": 67.5,
+    "reward": 5
+  },
+  {
+    "task_id": "load_074_math_sum",
+    "roi": 0.24473684210526317,
+    "expected_cost": 99.9,
+    "reward": 5
+  },
+  {
+    "task_id": "load_016_math_paraphrase",
+    "roi": 0.24473684210526317,
+    "expected_cost": 100.95,
+    "reward": 5
+  },
+  {
+    "task_id": "load_036_math_paraphrase",
+    "roi": 0.24473684210526317,
+    "expected_cost": 100.95,
+    "reward": 5
+  },
+  {
+    "task_id": "load_093_math_paraphrase",
+    "roi": 0.24473684210526317,
+    "expected_cost": 100.95,
+    "reward": 5
+  },
+  {
+    "task_id": "load_031_math_zero_operation",
+    "roi": 0.24473684210526317,
+    "expected_cost": 102.75,
+    "reward": 5
+  },
+  {
+    "task_id": "load_011_search_conflicting_fact",
+    "roi": 0.19896373056994818,
+    "expected_cost": 66.5,
+    "reward": 4
+  },
+  {
+    "task_id": "load_042_search_absent",
+    "roi": 0.19896373056994818,
+    "expected_cost": 67.5,
+    "reward": 4
+  },
+  {
+    "task_id": "load_043_search_paraphrase_chain",
+    "roi": 0.19896373056994818,
+    "expected_cost": 67.5,
+    "reward": 4
+  },
+  {
+    "task_id": "load_049_math_zero_warning",
+    "roi": 0.19578947368421054,
+    "expected_cost": 101.15,
+    "reward": 4
+  },
+  {
+    "task_id": "load_063_math_zero_warning",
+    "roi": 0.19578947368421054,
+    "expected_cost": 101.15,
+    "reward": 4
+  },
+  {
+    "task_id": "load_040_math_zero_operation",
+    "roi": 0.19578947368421054,
+    "expected_cost": 102.75,
+    "reward": 4
+  },
+  {
+    "task_id": "load_058_math_percentage",
+    "roi": 0.19578947368421054,
+    "expected_cost": 102.9,
+    "reward": 4
+  },
+  {
+    "task_id": "load_083_math_percentage",
+    "roi": 0.19578947368421054,
+    "expected_cost": 102.9,
+    "reward": 4
+  },
+  {
+    "task_id": "load_014_search_new_relation",
+    "roi": 0.14922279792746113,
+    "expected_cost": 66.0,
+    "reward": 3
+  },
+  {
+    "task_id": "load_028_search_irrelevant_conflict",
+    "roi": 0.14922279792746113,
+    "expected_cost": 66.5,
+    "reward": 3
+  },
+  {
+    "task_id": "load_071_search_irrelevant_conflict",
+    "roi": 0.14922279792746113,
+    "expected_cost": 66.5,
+    "reward": 3
+  },
+  {
+    "task_id": "load_020_search_three_hop",
+    "roi": 0.14922279792746113,
+    "expected_cost": 67.5,
+    "reward": 3
+  },
+  {
+    "task_id": "load_077_search_paraphrase_chain",
+    "roi": 0.14922279792746113,
+    "expected_cost": 67.5,
+    "reward": 3
+  },
+  {
+    "task_id": "load_017_math_gcd",
+    "roi": 0.14684210526315788,
+    "expected_cost": 100.35,
+    "reward": 3
+  },
+  {
+    "task_id": "load_069_math_gcd",
+    "roi": 0.14684210526315788,
+    "expected_cost": 100.35,
+    "reward": 3
+  },
+  {
+    "task_id": "load_081_math_zero_operation",
+    "roi": 0.14684210526315788,
+    "expected_cost": 102.75,
+    "reward": 3
+  },
+  {
+    "task_id": "load_096_math_percentage",
+    "roi": 0.14684210526315788,
+    "expected_cost": 102.9,
+    "reward": 3
+  },
+  {
+    "task_id": "load_054_search_paraphrase_chain",
+    "roi": 0.09948186528497409,
+    "expected_cost": 67.5,
+    "reward": 2
+  },
+  {
+    "task_id": "load_092_search_three_hop",
+    "roi": 0.09948186528497409,
+    "expected_cost": 67.5,
+    "reward": 2
+  },
+  {
+    "task_id": "load_088_math_sum",
+    "roi": 0.09789473684210527,
+    "expected_cost": 99.9,
+    "reward": 2
+  },
+  {
+    "task_id": "load_079_math_gcd",
+    "roi": 0.09789473684210527,
+    "expected_cost": 100.35,
+    "reward": 2
+  },
+  {
+    "task_id": "load_091_math_zero_warning",
+    "roi": 0.09789473684210527,
+    "expected_cost": 101.15,
+    "reward": 2
+  },
+  {
+    "task_id": "load_082_search_new_relation",
+    "roi": 0.049740932642487044,
+    "expected_cost": 66.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_050_search_conflicting_fact",
+    "roi": 0.049740932642487044,
+    "expected_cost": 66.5,
+    "reward": 1
+  },
+  {
+    "task_id": "load_037_search_absent",
+    "roi": 0.049740932642487044,
+    "expected_cost": 67.5,
+    "reward": 1
+  },
+  {
+    "task_id": "load_012_math_sum",
+    "roi": 0.048947368421052635,
+    "expected_cost": 99.9,
+    "reward": 1
+  },
+  {
+    "task_id": "load_033_math_percentage",
+    "roi": 0.048947368421052635,
+    "expected_cost": 102.9,
+    "reward": 1
+  },
+  {
+    "task_id": "load_001_pilot_empty_right",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_002_data_two_file_join",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_026_pilot_extra_numeric_control",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_032_pilot_previous_local_control",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_035_pilot_empty_right",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_039_data_weighted_mean",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_044_pilot_empty_filter_not_unmatched",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_051_pilot_previous_local_control",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_078_data_filtered_median",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "load_038_coding_intervals",
+    "roi": 0.04360753221010902,
+    "expected_cost": 262.18,
+    "reward": 5
+  },
+  {
+    "task_id": "load_048_coding_brackets",
+    "roi": 0.04360753221010902,
+    "expected_cost": 305.24,
+    "reward": 5
+  },
+  {
+    "task_id": "load_004_pilot_previous_local_control",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "load_027_pilot_empty_filter_not_unmatched",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "load_034_pilot_mixed_duplicates",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "load_053_data_weighted_mean",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "load_070_data_weighted_mean",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "load_085_pilot_empty_right",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "load_097_pilot_string_keys_and_blocked",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "load_023_coding_multimodule",
+    "roi": 0.03488602576808721,
+    "expected_cost": 216.08,
+    "reward": 4
+  },
+  {
+    "task_id": "load_030_coding_overlap",
+    "roi": 0.03488602576808721,
+    "expected_cost": 259.9,
+    "reward": 4
+  },
+  {
+    "task_id": "load_067_coding_overlap",
+    "roi": 0.03488602576808721,
+    "expected_cost": 259.9,
+    "reward": 4
+  },
+  {
+    "task_id": "load_008_pilot_string_keys_and_blocked",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "load_013_pilot_extra_numeric_control",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "load_068_pilot_known_or_failure",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "load_089_data_empty_count",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "load_057_coding_multimodule",
+    "roi": 0.02616451932606541,
+    "expected_cost": 216.08,
+    "reward": 3
+  },
+  {
+    "task_id": "load_087_coding_intervals",
+    "roi": 0.02616451932606541,
+    "expected_cost": 262.18,
+    "reward": 3
+  },
+  {
+    "task_id": "load_018_coding_brackets",
+    "roi": 0.02616451932606541,
+    "expected_cost": 305.24,
+    "reward": 3
+  },
+  {
+    "task_id": "load_010_data_filtered_median",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_041_pilot_string_keys_and_blocked",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_045_pilot_empty_filter_not_unmatched",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_047_data_distinct",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_056_data_empty_count",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_072_pilot_known_or_failure",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_080_data_filtered_median",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_084_pilot_mixed_duplicates",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_086_data_distinct",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_065_coding_multimodule",
+    "roi": 0.017443012884043606,
+    "expected_cost": 216.08,
+    "reward": 2
+  },
+  {
+    "task_id": "load_021_coding_intervals",
+    "roi": 0.017443012884043606,
+    "expected_cost": 262.18,
+    "reward": 2
+  },
+  {
+    "task_id": "load_098_coding_brackets",
+    "roi": 0.017443012884043606,
+    "expected_cost": 305.24,
+    "reward": 2
+  },
+  {
+    "task_id": "load_000_pilot_string_keys_and_blocked",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_003_pilot_known_or_failure",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_006_pilot_mixed_duplicates",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_007_data_two_file_join",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_015_pilot_empty_filter_not_unmatched",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_022_pilot_mixed_duplicates",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_024_pilot_known_or_failure",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_055_pilot_extra_numeric_control",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_062_data_distinct",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_066_data_empty_count",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_094_data_two_file_join",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_090_coding_overlap",
+    "roi": 0.008721506442021803,
+    "expected_cost": 259.9,
+    "reward": 1
+  },
+  {
+    "task_id": "load_059_coding_brackets",
+    "roi": 0.008721506442021803,
+    "expected_cost": 305.24,
+    "reward": 1
+  },
+  {
+    "task_id": "load_025_coding_pure_conflict",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 4
+  },
+  {
+    "task_id": "load_073_coding_pure_conflict",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 4
+  },
+  {
+    "task_id": "load_019_coding_stateful",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_029_coding_pure_conflict",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_076_coding_stateful",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 2
+  },
+  {
+    "task_id": "load_052_coding_stateful",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 1
+  },
+  {
+    "task_id": "load_099_coding_pure_conflict",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 1
+  }
+]

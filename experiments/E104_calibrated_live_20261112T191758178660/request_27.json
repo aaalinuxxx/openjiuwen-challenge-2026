@@ -1,0 +1,18 @@
+{
+  "task_id": "load_088_math_sum",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown."
+      },
+      {
+        "role": "user",
+        "content": "Compute the sum of all integers from 1 to 20 inclusive. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 44,
+    "temperature": 0.0
+  }
+}

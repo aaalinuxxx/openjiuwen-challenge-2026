@@ -1,0 +1,191 @@
+{
+  "status": "COMPLETED",
+  "runs": [
+    {
+      "id": "E94",
+      "hypothesis": "H04.21_FIRST_HOLDOUT",
+      "report": "experiments/E94_join_holdout_live_20261112T190446912551/report.json",
+      "metrics": {
+        "total": 6,
+        "solvable": 6,
+        "correct": 5,
+        "score": 15,
+        "max_score": 18,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 0,
+        "truncations": 1,
+        "integrity_passed": true
+      },
+      "calls": 6,
+      "effective_tokens": 2028.4,
+      "budget": 2500,
+      "profile": "validated",
+      "all_costs_accounted": true
+    },
+    {
+      "id": "E98",
+      "hypothesis": "H04.16_TARGETED",
+      "report": "experiments/E98_csv_output_budget_live_20261112T190902195039/report.json",
+      "metrics": {
+        "total": 6,
+        "solvable": 6,
+        "correct": 6,
+        "score": 18,
+        "max_score": 18,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 0,
+        "truncations": 0,
+        "integrity_passed": true
+      },
+      "calls": 6,
+      "effective_tokens": 1960.4,
+      "budget": 3000,
+      "profile": "csv-roomy",
+      "all_costs_accounted": true
+    },
+    {
+      "id": "E100",
+      "hypothesis": "H04.16_MIXED",
+      "report": "experiments/E100_csv_mixed_live_20261112T191039806739/report.json",
+      "metrics": {
+        "total": 31,
+        "solvable": 26,
+        "correct": 26,
+        "score": 78,
+        "max_score": 78,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 3,
+        "truncations": 0,
+        "integrity_passed": true
+      },
+      "calls": 23,
+      "effective_tokens": 1807,
+      "budget": 3000,
+      "profile": "csv-roomy",
+      "all_costs_accounted": true
+    },
+    {
+      "id": "E102_ROI",
+      "hypothesis": "H04.23",
+      "report": "experiments/E102_scheduling_roi_live_20261112T191340531205/report.json",
+      "metrics": {
+        "total": 100,
+        "solvable": 84,
+        "correct": 32,
+        "score": 109,
+        "max_score": 250,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 7,
+        "truncations": 1,
+        "integrity_passed": true
+      },
+      "calls": 12,
+      "effective_tokens": 868.4,
+      "budget": 1000,
+      "profile": "csv-roomy",
+      "all_costs_accounted": true
+    },
+    {
+      "id": "E102_REWARD",
+      "hypothesis": "H04.23",
+      "report": "experiments/E102_scheduling_reward_live_20261112T191503082994/report.json",
+      "metrics": {
+        "total": 100,
+        "solvable": 84,
+        "correct": 31,
+        "score": 105,
+        "max_score": 250,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 5,
+        "truncations": 2,
+        "integrity_passed": true
+      },
+      "calls": 11,
+      "effective_tokens": 873.2,
+      "budget": 1000,
+      "profile": "csv-roomy",
+      "all_costs_accounted": true
+    },
+    {
+      "id": "E104",
+      "hypothesis": "H04.24",
+      "report": "experiments/E104_calibrated_live_20261112T191758178660/report.json",
+      "metrics": {
+        "total": 100,
+        "solvable": 84,
+        "correct": 50,
+        "score": 157,
+        "max_score": 250,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 9,
+        "truncations": 0,
+        "integrity_passed": true
+      },
+      "calls": 34,
+      "effective_tokens": 760.4,
+      "budget": 900,
+      "profile": "csv-roomy",
+      "all_costs_accounted": true
+    }
+  ],
+  "total_real_http_calls": 92,
+  "total_effective_tokens": 8297.8,
+  "session_cap": 8500,
+  "remaining": 202.2,
+  "with_prior_evening_effective_tokens": 17354.3,
+  "with_prior_evening_http_calls": 153,
+  "all_new_costs_accounted": true,
+  "production": {
+    "default_profile": "csv-roomy",
+    "multi_csv_output_cap": 600,
+    "data_min_task_budget": 1000,
+    "concurrency": 1,
+    "ranking": "original ROI unchanged",
+    "mixed_known_score": "26/26;78/78",
+    "mixed_cost": 1807,
+    "unit_tests": 180
+  },
+  "hypotheses": {
+    "H04_21": "First untouched holdout5/6; after adaptation6/6. No untouched holdout remains.",
+    "H04_16": "Supported on targeted6/6 and known mixed26/26; requested output600 with reserve1000 promoted.",
+    "H04_23": "Reward-only not supported on this workload:105vs109points.",
+    "H04_24": "Promising adaptive pilot:157vs109points;900vs1000budget; same100 repeated-source tasks. Production NOT changed."
+  },
+  "policy_comparison": {
+    "offline_local_score": 75,
+    "roi": {
+      "budget": 1000,
+      "score": 109,
+      "correct": 32,
+      "cost": 868.4
+    },
+    "reward": {
+      "budget": 1000,
+      "score": 105,
+      "correct": 31,
+      "cost": 873.2
+    },
+    "calibrated": {
+      "budget": 900,
+      "score": 157,
+      "correct": 50,
+      "cost": 760.4
+    },
+    "ranking_only_calibration": true,
+    "request_allocation_expected_cost_unchanged": true,
+    "unique_source_families": 31,
+    "seed": 2026111201,
+    "independent_external_holdout": false
+  },
+  "next": [
+    "H04.24 validation: new reward seed and additional task families, matched budgets, frozen priors.",
+    "If ranking holds, production integration and a complete known mixed regression before release.",
+    "Colleague verifies Docker/Linux read-only execution."
+  ]
+}
