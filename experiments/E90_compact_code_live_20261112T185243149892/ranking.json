@@ -1,0 +1,32 @@
+[
+  {
+    "task_id": "duplicate_pairs",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "filter_after_pairing",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "pilot_extra_numeric_control",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "round_once",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "weighted_average",
+    "roi": 0.03352941176470588,
+    "expected_cost": 85.0,
+    "reward": 3
+  }
+]

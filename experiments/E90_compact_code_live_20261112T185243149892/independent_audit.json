@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "calls": 5,
+  "effective_tokens": 1767.5,
+  "requests": [
+    {
+      "task_id": "duplicate_pairs",
+      "cost": 293.2,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "filter_after_pairing",
+      "cost": 443.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "pilot_extra_numeric_control",
+      "cost": 356.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "round_once",
+      "cost": 321.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "weighted_average",
+      "cost": 353.6,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 327,
+      "finish": "stop",
+      "passed": true
+    }
+  ]
+}

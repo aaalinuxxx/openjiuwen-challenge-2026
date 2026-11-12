@@ -80,6 +80,7 @@ class OpenJiuwenLLMBridge:
         self.task_id=ctx.task_id if ctx else 'standalone'
         self.task_budget=ctx.max_token_budget if ctx else config.initial_budget_tokens
         self.transport=transport
+        self.last_attempted_model = ""
 
     def _get_transport(self):
         if self.transport is not None:
@@ -105,6 +106,7 @@ class OpenJiuwenLLMBridge:
             await self.tracker.not_sent(ticket,type(exc).__name__)
             raise
         try:
+            self.last_attempted_model = model
             data=await asyncio.wait_for(transport(payload), timeout=self.config.request_timeout_sec)
             counts=parse_usage(data,mode)
             await self.tracker.settle(ticket,*counts)
@@ -148,6 +150,9 @@ async def solve_task(ctx: TaskContext, config: HarnessConfig, budget_tracker=Non
         uncertain=any(e['task_id']==ctx.task_id and e['status']=='COST_UNKNOWN_STOPPED' for e in bridge.tracker.events)
         result=SolveResult(task_id=ctx.task_id,status='ACCOUNTING_UNKNOWN' if uncertain else 'FAILED',
                            notes=type(exc).__name__)
+    # Report the last model actually passed to transport, including failed responses.
+    # Preflight/admission failures and local-only solutions have no attempted model.
+    result.model_used = bridge.last_attempted_model
     result.input_tokens,result.output_tokens,result.reasoning_tokens=bridge.tracker.usage_for_task(ctx.task_id)
     result.wall_time_sec=time.monotonic()-started
     return result

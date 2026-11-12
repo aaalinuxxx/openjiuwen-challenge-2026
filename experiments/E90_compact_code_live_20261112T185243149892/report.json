@@ -1,0 +1,519 @@
+{
+  "status": "COMPLETED",
+  "mode": "LIVE",
+  "hypothesis": "H04.22",
+  "plan_sha256": "d4a078f69b2a3234152dc9898ed20b8e4daa4a2481ef214b8d853def6e20ea45",
+  "recording_errors": [],
+  "configuration": {
+    "profile": "validated",
+    "budget": 2000.0,
+    "max_calls": 5,
+    "concurrency": 1,
+    "experimental_joins": true,
+    "search_min_task_budget": 300,
+    "data_min_task_budget": 700,
+    "coding_min_task_budget": 800.0
+  },
+  "summary": {
+    "total_tasks": 5,
+    "task_results": {
+      "duplicate_pairs": {
+        "task_id": "duplicate_pairs",
+        "status": "SOLVED",
+        "answer": "20.55",
+        "input_tokens": 402,
+        "output_tokens": 253,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.8589999999967404,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "filter_after_pairing": {
+        "task_id": "filter_after_pairing",
+        "status": "SOLVED",
+        "answer": "12.50",
+        "input_tokens": 445,
+        "output_tokens": 399,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 7.092999999993481,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "pilot_extra_numeric_control": {
+        "task_id": "pilot_extra_numeric_control",
+        "status": "SOLVED",
+        "answer": "19",
+        "input_tokens": 331,
+        "output_tokens": 323,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 3.6869999999762513,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "round_once": {
+        "task_id": "round_once",
+        "status": "SOLVED",
+        "answer": "0.02",
+        "input_tokens": 411,
+        "output_tokens": 280,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.672000000020489,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      },
+      "weighted_average": {
+        "task_id": "weighted_average",
+        "status": "SOLVED",
+        "answer": "2.43",
+        "input_tokens": 406,
+        "output_tokens": 313,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.2969999999622814,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      }
+    },
+    "skipped_tasks": {},
+    "solved_count": 5,
+    "estimated_score": 15,
+    "effective_tokens_spent": 1767.5,
+    "budget_state": {
+      "budget": 2000.0,
+      "known_effective_tokens": 1767.5,
+      "reserved_effective_tokens": 0.0,
+      "has_unaccounted_request": false,
+      "remote_stopped": false,
+      "events": [
+        {
+          "ticket": 0,
+          "task_id": "duplicate_pairs",
+          "status": "ACCOUNTED",
+          "reserved_units": 6561,
+          "task_limit_units": 7000,
+          "input_token_estimate": 2561,
+          "output_cap": 400,
+          "input_tokens": 402,
+          "output_tokens": 253,
+          "reasoning_tokens": 0,
+          "effective_cost": 293.2
+        },
+        {
+          "ticket": 1,
+          "task_id": "filter_after_pairing",
+          "status": "ACCOUNTED",
+          "reserved_units": 6766,
+          "task_limit_units": 7000,
+          "input_token_estimate": 2766,
+          "output_cap": 400,
+          "input_tokens": 445,
+          "output_tokens": 399,
+          "reasoning_tokens": 0,
+          "effective_cost": 443.5
+        },
+        {
+          "ticket": 2,
+          "task_id": "pilot_extra_numeric_control",
+          "status": "ACCOUNTED",
+          "reserved_units": 6313,
+          "task_limit_units": 7000,
+          "input_token_estimate": 2313,
+          "output_cap": 400,
+          "input_tokens": 331,
+          "output_tokens": 323,
+          "reasoning_tokens": 0,
+          "effective_cost": 356.1
+        },
+        {
+          "ticket": 3,
+          "task_id": "round_once",
+          "status": "ACCOUNTED",
+          "reserved_units": 6588,
+          "task_limit_units": 7000,
+          "input_token_estimate": 2588,
+          "output_cap": 400,
+          "input_tokens": 411,
+          "output_tokens": 280,
+          "reasoning_tokens": 0,
+          "effective_cost": 321.1
+        },
+        {
+          "ticket": 4,
+          "task_id": "weighted_average",
+          "status": "ACCOUNTED",
+          "reserved_units": 5855,
+          "task_limit_units": 5860,
+          "input_token_estimate": 2585,
+          "output_cap": 327,
+          "input_tokens": 406,
+          "output_tokens": 313,
+          "reasoning_tokens": 0,
+          "effective_cost": 353.6
+        }
+      ]
+    },
+    "budget_audit_path": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E90_compact_code_live_20261112T185243149892\\budget.json",
+    "execution_engine": "openjiuwen",
+    "workflow_runs": [
+      {
+        "task_id": "duplicate_pairs",
+        "workflow_id": "task_fa79532f9e6e49b4b91cc07d2f34b52b",
+        "session_id": "b643b744b29c4ecc97b89a0cae2024d3",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "filter_after_pairing",
+        "workflow_id": "task_99f19223b67c4b61bc25a16ecbe15baf",
+        "session_id": "2539191d0cbc494689c692d5d3cfb1b0",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "pilot_extra_numeric_control",
+        "workflow_id": "task_c5a8ca792a8447e6b67d563e056a3b40",
+        "session_id": "0bab972c11e6441aaf269bbb9c3901cb",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "round_once",
+        "workflow_id": "task_9eef3148295f40b58ffc5447810928ea",
+        "session_id": "519b79329fb04664854611b3e45bec1b",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "weighted_average",
+        "workflow_id": "task_102aff01f1f64616a1c9ff4d6df7d2c6",
+        "session_id": "85c94e544c6447daa1528cc41b31e859",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      }
+    ]
+  },
+  "rows": [
+    {
+      "task_id": "filter_after_pairing",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "12.50",
+      "answer": "12.50",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "filter_after_pairing",
+        "status": "SOLVED",
+        "answer": "12.50",
+        "input_tokens": 445,
+        "output_tokens": 399,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 7.092999999993481,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "duplicate_pairs",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "20.55",
+      "answer": "20.55",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "duplicate_pairs",
+        "status": "SOLVED",
+        "answer": "20.55",
+        "input_tokens": 402,
+        "output_tokens": 253,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.8589999999967404,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "round_once",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "0.02",
+      "answer": "0.02",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "round_once",
+        "status": "SOLVED",
+        "answer": "0.02",
+        "input_tokens": 411,
+        "output_tokens": 280,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.672000000020489,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "weighted_average",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "2.43",
+      "answer": "2.43",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "weighted_average",
+        "status": "SOLVED",
+        "answer": "2.43",
+        "input_tokens": 406,
+        "output_tokens": 313,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.2969999999622814,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "pilot_extra_numeric_control",
+      "task_type": "data_analysis",
+      "group": "E75_pilot",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "19",
+      "answer": "19",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "pilot_extra_numeric_control",
+        "status": "SOLVED",
+        "answer": "19",
+        "input_tokens": 331,
+        "output_tokens": 323,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 3.6869999999762513,
+        "model_used": "qwen3.6-35b-a3b-noreason",
+        "notes": ""
+      }
+    }
+  ],
+  "metrics": {
+    "total": 5,
+    "solvable": 5,
+    "correct": 5,
+    "score": 15,
+    "max_score": 15,
+    "incorrect_solved_answers": 0,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 0,
+    "truncations": 0,
+    "integrity_passed": true
+  },
+  "by_type": {
+    "data_analysis": {
+      "total": 5,
+      "solvable": 5,
+      "correct": 5,
+      "score": 15,
+      "max_score": 15,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 0,
+      "truncations": 0,
+      "integrity_passed": true
+    }
+  },
+  "audit": {
+    "passed": true,
+    "calls": 5,
+    "effective_tokens": 1767.5,
+    "requests": [
+      {
+        "task_id": "duplicate_pairs",
+        "cost": 293.2,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 400,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "filter_after_pairing",
+        "cost": 443.5,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 400,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "pilot_extra_numeric_control",
+        "cost": 356.1,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 400,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "round_once",
+        "cost": 321.1,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 400,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "weighted_average",
+        "cost": 353.6,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 327,
+        "finish": "stop",
+        "passed": true
+      }
+    ]
+  },
+  "historical_comparison": {
+    "note": "Historical comparison, not simultaneous causal A/B",
+    "lost": [],
+    "gained": [
+      "filter_after_pairing",
+      "pilot_extra_numeric_control"
+    ]
+  },
+  "actual_http_calls": 5,
+  "elapsed_seconds": 23.797,
+  "budget": {
+    "budget": 2000.0,
+    "known_effective_tokens": 1767.5,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "duplicate_pairs",
+        "status": "ACCOUNTED",
+        "reserved_units": 6561,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2561,
+        "output_cap": 400,
+        "input_tokens": 402,
+        "output_tokens": 253,
+        "reasoning_tokens": 0,
+        "effective_cost": 293.2
+      },
+      {
+        "ticket": 1,
+        "task_id": "filter_after_pairing",
+        "status": "ACCOUNTED",
+        "reserved_units": 6766,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2766,
+        "output_cap": 400,
+        "input_tokens": 445,
+        "output_tokens": 399,
+        "reasoning_tokens": 0,
+        "effective_cost": 443.5
+      },
+      {
+        "ticket": 2,
+        "task_id": "pilot_extra_numeric_control",
+        "status": "ACCOUNTED",
+        "reserved_units": 6313,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2313,
+        "output_cap": 400,
+        "input_tokens": 331,
+        "output_tokens": 323,
+        "reasoning_tokens": 0,
+        "effective_cost": 356.1
+      },
+      {
+        "ticket": 3,
+        "task_id": "round_once",
+        "status": "ACCOUNTED",
+        "reserved_units": 6588,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2588,
+        "output_cap": 400,
+        "input_tokens": 411,
+        "output_tokens": 280,
+        "reasoning_tokens": 0,
+        "effective_cost": 321.1
+      },
+      {
+        "ticket": 4,
+        "task_id": "weighted_average",
+        "status": "ACCOUNTED",
+        "reserved_units": 5855,
+        "task_limit_units": 5860,
+        "input_token_estimate": 2585,
+        "output_cap": 327,
+        "input_tokens": 406,
+        "output_tokens": 313,
+        "reasoning_tokens": 0,
+        "effective_cost": 353.6
+      }
+    ]
+  },
+  "frozen_files_unchanged": true
+}

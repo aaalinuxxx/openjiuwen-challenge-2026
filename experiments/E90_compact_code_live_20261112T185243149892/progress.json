@@ -1,0 +1,133 @@
+{
+  "results": {
+    "duplicate_pairs": {
+      "task_id": "duplicate_pairs",
+      "status": "SOLVED",
+      "answer": "20.55",
+      "input_tokens": 402,
+      "output_tokens": 253,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 2.8589999999967404,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "filter_after_pairing": {
+      "task_id": "filter_after_pairing",
+      "status": "SOLVED",
+      "answer": "12.50",
+      "input_tokens": 445,
+      "output_tokens": 399,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 7.092999999993481,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "pilot_extra_numeric_control": {
+      "task_id": "pilot_extra_numeric_control",
+      "status": "SOLVED",
+      "answer": "19",
+      "input_tokens": 331,
+      "output_tokens": 323,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 3.6869999999762513,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "round_once": {
+      "task_id": "round_once",
+      "status": "SOLVED",
+      "answer": "0.02",
+      "input_tokens": 411,
+      "output_tokens": 280,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 2.672000000020489,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "weighted_average": {
+      "task_id": "weighted_average",
+      "status": "SOLVED",
+      "answer": "2.43",
+      "input_tokens": 406,
+      "output_tokens": 313,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 2.2969999999622814,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    }
+  },
+  "budget": {
+    "budget": 2000.0,
+    "known_effective_tokens": 1767.5,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "duplicate_pairs",
+        "status": "ACCOUNTED",
+        "reserved_units": 6561,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2561,
+        "output_cap": 400,
+        "input_tokens": 402,
+        "output_tokens": 253,
+        "reasoning_tokens": 0,
+        "effective_cost": 293.2
+      },
+      {
+        "ticket": 1,
+        "task_id": "filter_after_pairing",
+        "status": "ACCOUNTED",
+        "reserved_units": 6766,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2766,
+        "output_cap": 400,
+        "input_tokens": 445,
+        "output_tokens": 399,
+        "reasoning_tokens": 0,
+        "effective_cost": 443.5
+      },
+      {
+        "ticket": 2,
+        "task_id": "pilot_extra_numeric_control",
+        "status": "ACCOUNTED",
+        "reserved_units": 6313,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2313,
+        "output_cap": 400,
+        "input_tokens": 331,
+        "output_tokens": 323,
+        "reasoning_tokens": 0,
+        "effective_cost": 356.1
+      },
+      {
+        "ticket": 3,
+        "task_id": "round_once",
+        "status": "ACCOUNTED",
+        "reserved_units": 6588,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2588,
+        "output_cap": 400,
+        "input_tokens": 411,
+        "output_tokens": 280,
+        "reasoning_tokens": 0,
+        "effective_cost": 321.1
+      },
+      {
+        "ticket": 4,
+        "task_id": "weighted_average",
+        "status": "ACCOUNTED",
+        "reserved_units": 5855,
+        "task_limit_units": 5860,
+        "input_token_estimate": 2585,
+        "output_cap": 327,
+        "input_tokens": 406,
+        "output_tokens": 313,
+        "reasoning_tokens": 0,
+        "effective_cost": 353.6
+      }
+    ]
+  }
+}

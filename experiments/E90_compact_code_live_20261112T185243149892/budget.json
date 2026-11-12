@@ -1,0 +1,74 @@
+{
+  "budget": 2000.0,
+  "known_effective_tokens": 1767.5,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "duplicate_pairs",
+      "status": "ACCOUNTED",
+      "reserved_units": 6561,
+      "task_limit_units": 7000,
+      "input_token_estimate": 2561,
+      "output_cap": 400,
+      "input_tokens": 402,
+      "output_tokens": 253,
+      "reasoning_tokens": 0,
+      "effective_cost": 293.2
+    },
+    {
+      "ticket": 1,
+      "task_id": "filter_after_pairing",
+      "status": "ACCOUNTED",
+      "reserved_units": 6766,
+      "task_limit_units": 7000,
+      "input_token_estimate": 2766,
+      "output_cap": 400,
+      "input_tokens": 445,
+      "output_tokens": 399,
+      "reasoning_tokens": 0,
+      "effective_cost": 443.5
+    },
+    {
+      "ticket": 2,
+      "task_id": "pilot_extra_numeric_control",
+      "status": "ACCOUNTED",
+      "reserved_units": 6313,
+      "task_limit_units": 7000,
+      "input_token_estimate": 2313,
+      "output_cap": 400,
+      "input_tokens": 331,
+      "output_tokens": 323,
+      "reasoning_tokens": 0,
+      "effective_cost": 356.1
+    },
+    {
+      "ticket": 3,
+      "task_id": "round_once",
+      "status": "ACCOUNTED",
+      "reserved_units": 6588,
+      "task_limit_units": 7000,
+      "input_token_estimate": 2588,
+      "output_cap": 400,
+      "input_tokens": 411,
+      "output_tokens": 280,
+      "reasoning_tokens": 0,
+      "effective_cost": 321.1
+    },
+    {
+      "ticket": 4,
+      "task_id": "weighted_average",
+      "status": "ACCOUNTED",
+      "reserved_units": 5855,
+      "task_limit_units": 5860,
+      "input_token_estimate": 2585,
+      "output_cap": 327,
+      "input_tokens": 406,
+      "output_tokens": 313,
+      "reasoning_tokens": 0,
+      "effective_cost": 353.6
+    }
+  ]
+}
