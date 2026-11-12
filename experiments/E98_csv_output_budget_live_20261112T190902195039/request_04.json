@@ -1,0 +1,18 @@
+{
+  "task_id": "hold_no_right_rows",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. The harness handles any instruction to write answer.txt; your program must only print the result. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding. Keep the code concise: no comments, explanations, markdown fences or unused imports."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"orders.csv\", \"columns\": [\"sku\", \"qty\"], \"rows\": 2, \"sample_rows\": [{\"sku\": \"K\", \"qty\": \"2\"}, {\"sku\": \"Z\", \"qty\": \"3\"}]}, {\"file\": \"prices.csv\", \"columns\": [\"code\", \"price\", \"state\"], \"rows\": 0, \"sample_rows\": []}]\nTask: Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. If an order has no match in the original prices.csv, include it once with price 0.75. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Return the exact decimal sum without rounding. Write only the numeric result to answer.txt."
+      }
+    ],
+    "max_tokens": 600,
+    "temperature": 0.0
+  }
+}

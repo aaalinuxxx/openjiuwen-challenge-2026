@@ -1,0 +1,32 @@
+{
+  "task_id": "hold_negative_round",
+  "response": {
+    "id": "chatcmpl-9f4806db51c56f8b",
+    "created": 1794510561,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\nfrom decimal import Decimal, ROUND_HALF_UP\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read prices.csv\nprices = []\nwith open('prices.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        prices.append(row)\n\n# Build a dictionary of price records keyed by code\n# Each code can have multiple price records (distinct matches)\nprice_by_code = {}\nfor row in prices:\n    code = row['code']\n    if code not in price_by_code:\n        price_by_code[code] = []\n    price_by_code[code].append(Decimal(row['price']))\n\n# Calculate the sum\ntotal = Decimal('0')\nfor order in orders:\n    sku = order['sku']\n    qty = Decimal(order['qty'])\n    if sku in price_by_code:\n        for price in price_by_code[sku]:\n            total += qty * price\n\n# Round to two decimal places using ROUND_HALF_UP\nrounded_total = total.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)\n\n# Print the result\nprint(rounded_total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 294,
+      "prompt_tokens": 339,
+      "total_tokens": 633,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

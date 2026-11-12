@@ -1,0 +1,18 @@
+{
+  "task_id": "hold_weighted",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. The harness handles any instruction to write answer.txt; your program must only print the result. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding. Keep the code concise: no comments, explanations, markdown fences or unused imports."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"orders.csv\", \"columns\": [\"sku\", \"qty\"], \"rows\": 2, \"sample_rows\": [{\"sku\": \"K\", \"qty\": \"2\"}, {\"sku\": \"Q\", \"qty\": \"1\"}]}, {\"file\": \"prices.csv\", \"columns\": [\"code\", \"price\", \"state\"], \"rows\": 3, \"sample_rows\": [{\"code\": \"K\", \"price\": \"0.25\", \"state\": \"ok\"}, {\"code\": \"K\", \"price\": \"1.25\", \"state\": \"ok\"}, {\"code\": \"Q\", \"price\": \"2.00\", \"state\": \"ok\"}]}]\nTask: Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. Discard orders that have no price match. Compute sum(qty * price) divided by sum(qty) over all retained pairs; repeat qty for each matching price row. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Round only the final result to two decimal places using ROUND_HALF_UP. Write only the numeric result to answer.txt."
+      }
+    ],
+    "max_tokens": 600,
+    "temperature": 0.0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "hold_postfilter",
+  "response": {
+    "id": "chatcmpl-bcc8e91fc1aa4855",
+    "created": 1794510571,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\nfrom decimal import Decimal, getcontext\n\n# Set high precision for decimal operations\ngetcontext().prec = 50\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read prices.csv\nprices = []\nwith open('prices.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        prices.append(row)\n\n# Build a lookup for prices by code\n# For each code, store all price records\nprice_by_code = {}\nfor p in prices:\n    code = p['code']\n    if code not in price_by_code:\n        price_by_code[code] = []\n    price_by_code[code].append(p)\n\ntotal_sum = Decimal('0')\n\nfor order in orders:\n    sku = order['sku']\n    qty = Decimal(order['qty'])\n    \n    if sku in price_by_code:\n        # Find all matching price records\n        matching_prices = price_by_code[sku]\n        # Filter for state 'ok'\n        ok_prices = [p for p in matching_prices if p['state'] == 'ok']\n        \n        if ok_prices:\n            # For each ok price, create a pair and add to sum\n            for p in ok_prices:\n                price = Decimal(p['price'])\n                total_sum += qty * price\n        else:\n            # Matched order with only rejected states is NOT unmatched\n            # So we don't add anything for this order\n            pass\n    else:\n        # No match in original prices.csv, include once with price 0.50\n        total_sum += qty * Decimal('0.50')\n\n# Print the result\nprint(total_sum)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 412,
+      "prompt_tokens": 437,
+      "total_tokens": 849,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
