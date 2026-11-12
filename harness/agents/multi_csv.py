@@ -6,6 +6,7 @@ import re
 import shutil
 import tempfile
 
+from harness.sandbox.executor import run_python_snippet, _extract_execution_answer
 from harness.config import SolveResult
 from harness.agents.data_solver import solve_data_task
 from harness.agents.model_router import select_primary_model
@@ -79,7 +80,20 @@ async def solve_multi_csv_task(ctx, bridge):
         unexpected = any(p.name not in originals for p in root.iterdir())
         if not unchanged or unexpected:
             return SolveResult(task_id=ctx.task_id,status="UNKNOWN",notes="Generated code changed execution inputs or created files",**counts)
-    lines = stdout.strip().splitlines()
-    if not ok or len(lines)!=1:
-        return SolveResult(task_id=ctx.task_id,status="FAILED",notes=error[:200] or "Expected one answer line",**counts)
-    return SolveResult(task_id=ctx.task_id,status="SOLVED",answer=lines[0].strip(),**counts)
+
+    extracted_answer = _extract_execution_answer(stdout, root, ok, error)
+
+    if not ok or extracted_answer is None:
+        return SolveResult(
+            task_id=ctx.task_id,
+            status="FAILED",
+            notes=error[:200] or "No valid answer found in stdout or answer.txt",
+            **counts
+        )
+
+    return SolveResult(
+        task_id=ctx.task_id,
+        status="SOLVED",
+        answer=extracted_answer,
+        **counts
+    )

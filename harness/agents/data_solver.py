@@ -17,9 +17,38 @@ def _try_fast_sales_pattern(csv_path: Path, instruction: str) -> str | None:
     за 0 токенов напрямую на Python.
     """
     plan = parse_sales_plan(instruction)
-    if plan is None: return None
+    if plan is None:
+        return None
     status, answer = execute_sales_plan(csv_path, plan)
-    return answer if status == 'SOLVED' else status
+    return answer if status == "SOLVED" else status
+
+
+def _extract_execution_answer(stdout: str, answer_file: Path) -> tuple[str | None, str]:
+    """
+    Согласовывает результат из stdout и/или answer.txt, созданного скриптом модели.
+    Возвращает (answer, error_note).
+    """
+    stdout_lines = [ln.strip() for ln in stdout.strip().splitlines() if ln.strip()]
+    stdout_ans = stdout_lines[-1] if stdout_lines else None
+
+    file_ans = None
+    if answer_file.exists():
+        file_text = answer_file.read_text(encoding="utf-8", errors="replace").strip()
+        file_lines = [ln.strip() for ln in file_text.splitlines() if ln.strip()]
+        file_ans = file_lines[-1] if file_lines else None
+        # Убираем временный answer.txt из workspace, чтобы итоговую запись делал file_guard
+        try:
+            answer_file.unlink()
+        except OSError:
+            pass
+
+    if stdout_ans and file_ans and stdout_ans != file_ans:
+        return None, f"Conflicting outputs: stdout={stdout_ans!r} vs file={file_ans!r}"
+
+    ans = stdout_ans or file_ans
+    if not ans:
+        return None, "Empty stdout and no answer.txt produced"
+    return ans, ""
 
 
 async def solve_data_task(ctx: TaskContext, bridge) -> SolveResult:
@@ -38,7 +67,8 @@ async def solve_data_task(ctx: TaskContext, bridge) -> SolveResult:
     elif len(csv_files) == 1:
         csv_file = csv_files[0]
     else:
-        return SolveResult(task_id=ctx.task_id, status="UNKNOWN", notes="Multiple CSV files without a recognized input selection")
+        return SolveResult(task_id=ctx.task_id, status="UNKNOWN", notes="Multiple CSV files without a recognized instruction")
+
     fast = _try_fast_sales_pattern(csv_file, ctx.instruction)
     if fast == "UNSOLVABLE":
         return SolveResult(task_id=ctx.task_id, status="UNSOLVABLE", notes="Нет нужных колонок в CSV")
@@ -57,7 +87,8 @@ async def solve_data_task(ctx: TaskContext, bridge) -> SolveResult:
     model = select_primary_model(ctx)
     sys_prompt = (
         "Write ONLY raw executable Python 3 code (no markdown fences, no explanations) "
-        "that reads the CSV file in the current directory and prints ONLY the final answer to stdout."
+        "that reads the CSV file in the current directory and prints ONLY the final answer to stdout. "
+        "Do NOT write answer.txt yourself; only print the final result."
     )
     user_prompt = (
         f"File: {csv_file.name}\n"
@@ -68,20 +99,30 @@ async def solve_data_task(ctx: TaskContext, bridge) -> SolveResult:
     code_resp, in_tok, out_tok, r_tok = await bridge.complete(
         model=model, system_prompt=sys_prompt, user_prompt=user_prompt, max_tokens=200
     )
-    clean_code = re.sub(r"^```(?:python)?|```$", "", code_resp.strip(), flags=re.MULTILINE).strip()
+    clean_code = re.sub(r"^```(?:python)?\s*|```$", "", code_resp.strip(), flags=re.MULTILINE).strip()
+
+    answer_file = ctx.workspace_dir / "answer.txt"
+    if answer_file.exists():
+        try:
+            answer_file.unlink()
+        except OSError:
+            pass
+
     ok, stdout, err = run_python_snippet(clean_code, cwd=ctx.workspace_dir)
 
-    if ok and stdout.strip():
-        ans = stdout.strip().splitlines()[-1].strip()
-        return SolveResult(
-            task_id=ctx.task_id,
-            status="SOLVED",
-            answer=ans,
-            input_tokens=in_tok,
-            output_tokens=out_tok,
-            reasoning_tokens=r_tok,
-            model_used=model,
-        )
+    if ok:
+        ans, extract_err = _extract_execution_answer(stdout, answer_file)
+        if ans is not None:
+            return SolveResult(
+                task_id=ctx.task_id,
+                status="SOLVED",
+                answer=ans,
+                input_tokens=in_tok,
+                output_tokens=out_tok,
+                reasoning_tokens=r_tok,
+                model_used=model,
+            )
+        err = extract_err or err
 
     return SolveResult(
         task_id=ctx.task_id,
