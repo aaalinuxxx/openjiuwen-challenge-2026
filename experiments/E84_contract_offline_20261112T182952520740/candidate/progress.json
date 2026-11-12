@@ -1,0 +1,144 @@
+{
+  "results": {
+    "data_distinct": {
+      "task_id": "data_distinct",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.01600000000325963,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "data_empty_count": {
+      "task_id": "data_empty_count",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "data_filtered_median": {
+      "task_id": "data_filtered_median",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "data_two_file_join": {
+      "task_id": "data_two_file_join",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "data_weighted_mean": {
+      "task_id": "data_weighted_mean",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "pilot_empty_filter_not_unmatched": {
+      "task_id": "pilot_empty_filter_not_unmatched",
+      "status": "SOLVED",
+      "answer": "13",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_empty_right": {
+      "task_id": "pilot_empty_right",
+      "status": "SOLVED",
+      "answer": "10",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_extra_numeric_control": {
+      "task_id": "pilot_extra_numeric_control",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "pilot_known_or_failure": {
+      "task_id": "pilot_known_or_failure",
+      "status": "SOLVED",
+      "answer": "30",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_mixed_duplicates": {
+      "task_id": "pilot_mixed_duplicates",
+      "status": "SOLVED",
+      "answer": "32",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_previous_local_control": {
+      "task_id": "pilot_previous_local_control",
+      "status": "SOLVED",
+      "answer": "17",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed complete bounded grammar locally; no model translation"
+    },
+    "pilot_string_keys_and_blocked": {
+      "task_id": "pilot_string_keys_and_blocked",
+      "status": "SOLVED",
+      "answer": "10",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    }
+  },
+  "budget": {
+    "budget": 0,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": []
+  }
+}

@@ -1,0 +1,407 @@
+test_api_accounting (unittest.loader._FailedTest.test_api_accounting) ... ERROR
+test_empty_aggregate (test_calculation_plans.CalculationTests.test_empty_aggregate) ... ok
+test_finite_numbers_and_duplicates (test_calculation_plans.CalculationTests.test_finite_numbers_and_duplicates) ... ok
+test_json_plan_cannot_drop_unknown_filter (test_calculation_plans.CalculationTests.test_json_plan_cannot_drop_unknown_filter) ... ok
+test_json_plan_types_duplicates_and_ranges (test_calculation_plans.CalculationTests.test_json_plan_types_duplicates_and_ranges) ... ok
+test_json_unsupported_and_executable_plan (test_calculation_plans.CalculationTests.test_json_unsupported_and_executable_plan) ... ok
+test_large_exact_revenue (test_calculation_plans.CalculationTests.test_large_exact_revenue) ... ok
+test_missing_required_schema (test_calculation_plans.CalculationTests.test_missing_required_schema) ... ok
+test_no_implicit_rounding (test_calculation_plans.CalculationTests.test_no_implicit_rounding) ... ok
+test_order_of_operations (test_calculation_plans.CalculationTests.test_order_of_operations) ... ok
+test_partial_operations_not_accepted (test_calculation_plans.CalculationTests.test_partial_operations_not_accepted) ... ok
+test_revenue_decimal (test_calculation_plans.CalculationTests.test_revenue_decimal) ... ok
+test_scope_controls (test_coding_target.CodingTargetGrammarTests.test_scope_controls) ... ok
+test_forbidden_target_never_requests_or_changes_files (test_coding_target.CodingTargetNoRequestTests.test_forbidden_target_never_requests_or_changes_files) ... ok
+test_context_deadlines (unittest.loader._FailedTest.test_context_deadlines) ... ERROR
+test_csv_execution_contract (unittest.loader._FailedTest.test_csv_execution_contract) ... ERROR
+test_data_output_contract (unittest.loader._FailedTest.test_data_output_contract) ... ERROR
+test_bad_schema_and_duplicate_nested_fields (test_extended_plans.ExtendedPlanTests.test_bad_schema_and_duplicate_nested_fields) ... ok
+test_conjunction_and_numeric_boundary (test_extended_plans.ExtendedPlanTests.test_conjunction_and_numeric_boundary) ... ok
+test_even_median_is_exact_and_order_independent (test_extended_plans.ExtendedPlanTests.test_even_median_is_exact_and_order_independent) ... ok
+test_hallucinated_column_is_not_proof_of_unsolvability (test_extended_plans.ExtendedPlanTests.test_hallucinated_column_is_not_proof_of_unsolvability) ... ok
+test_invalid_numbers_and_short_rows (test_extended_plans.ExtendedPlanTests.test_invalid_numbers_and_short_rows) ... ok
+test_noncontiguous_months_do_not_fill_gap (test_extended_plans.ExtendedPlanTests.test_noncontiguous_months_do_not_fill_gap) ... ok
+test_nonterminating_mean_and_empty_median (test_extended_plans.ExtendedPlanTests.test_nonterminating_mean_and_empty_median) ... ok
+test_explicit_target_wins_over_alphabetical_order (test_family_shift_regressions.CodingTargetControls.test_explicit_target_wins_over_alphabetical_order) ... Executing <Task finished name='Task-7' coro=<CodingTargetControls.test_explicit_target_wins_over_alphabetical_order() done, defined at D:\хаки\openjiuwen\openjuuweg\tests\test_family_shift_regressions.py:37> result=None created at D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\asyncio\runners.py:100> took 0.140 seconds
+ok
+test_administrative_case_has_no_semantic_effect (test_family_shift_regressions.FamilyShiftControls.test_administrative_case_has_no_semantic_effect) ... ok
+test_fully_parsed_zero_operation_is_rejected (test_family_shift_regressions.FamilyShiftControls.test_fully_parsed_zero_operation_is_rejected) ... ok
+test_unknown_constraint_is_not_administrative (test_family_shift_regressions.FamilyShiftControls.test_unknown_constraint_is_not_administrative) ... ok
+test_zero_warning_is_not_a_proof_of_impossibility (test_family_shift_regressions.FamilyShiftControls.test_zero_warning_is_not_a_proof_of_impossibility) ... ok
+test_join_cascade (unittest.loader._FailedTest.test_join_cascade) ... ERROR
+test_join_integration (unittest.loader._FailedTest.test_join_integration) ... ERROR
+test_join_or (unittest.loader._FailedTest.test_join_or) ... ERROR
+test_join_plans (unittest.loader._FailedTest.test_join_plans) ... ERROR
+test_join_scope (unittest.loader._FailedTest.test_join_scope) ... ERROR
+test_join_scope_v2 (unittest.loader._FailedTest.test_join_scope_v2) ... ERROR
+test_fixture_roundtrip_keeps_values_conflicts_sources (test_kb_compaction.KBCompactionTests.test_fixture_roundtrip_keeps_values_conflicts_sources) ... ok
+test_input_order_does_not_change_encoding (test_kb_compaction.KBCompactionTests.test_input_order_does_not_change_encoding) ... ok
+test_limits_and_empty_selection_unchanged (test_kb_compaction.KBCompactionTests.test_limits_and_empty_selection_unchanged) ... ok
+test_literal_null_quotes_and_conflicts_are_not_conflated (test_kb_compaction.KBCompactionTests.test_literal_null_quotes_and_conflicts_are_not_conflated) ... ok
+test_short_sparse_context_falls_back_verbatim (test_kb_compaction.KBCompactionTests.test_short_sparse_context_falls_back_verbatim) ... ok
+test_local_join (unittest.loader._FailedTest.test_local_join) ... ERROR
+test_multi_csv (unittest.loader._FailedTest.test_multi_csv) ... ERROR
+test_budget_precedence (test_offline.LocalRegressionTests.test_budget_precedence) ... ok
+test_default_and_legacy_budget (test_offline.LocalRegressionTests.test_default_and_legacy_budget) ... ok
+test_filename_does_not_force_api (test_offline.LocalRegressionTests.test_filename_does_not_force_api) ... ok
+test_invalid_budget (test_offline.LocalRegressionTests.test_invalid_budget) ... ok
+test_rounding_each_step (test_offline.LocalRegressionTests.test_rounding_each_step) ... ok
+test_unknown_operation_requires_fallback (test_offline.LocalRegressionTests.test_unknown_operation_requires_fallback) ... ok
+test_plan_comparison (unittest.loader._FailedTest.test_plan_comparison) ... ERROR
+test_plan_scope (unittest.loader._FailedTest.test_plan_scope) ... ERROR
+test_request_budget (unittest.loader._FailedTest.test_request_budget) ... ERROR
+test_resilient_transport (unittest.loader._FailedTest.test_resilient_transport) ... ERROR
+test_review_regressions (unittest.loader._FailedTest.test_review_regressions) ... ERROR
+test_card_cannot_override_provenance (test_scope_and_sources.SourceTests.test_card_cannot_override_provenance) ... ok
+test_conflicting_values_are_not_discarded (test_scope_and_sources.SourceTests.test_conflicting_values_are_not_discarded) ... ok
+test_field_sources_survive_merge (test_scope_and_sources.SourceTests.test_field_sources_survive_merge) ... ok
+test_output_clause_cannot_hide_computation (test_scope_and_sources.SourceTests.test_output_clause_cannot_hide_computation) ... ok
+test_bare_conflict_not_submitted_as_answer (test_search_conflict_response.SearchConflictResponseTests.test_bare_conflict_not_submitted_as_answer) ... ok
+test_conflict_brackets_not_submitted_as_answer (test_search_conflict_response.SearchConflictResponseTests.test_conflict_brackets_not_submitted_as_answer) ... ok
+test_conflict_colon_not_submitted_as_answer (test_search_conflict_response.SearchConflictResponseTests.test_conflict_colon_not_submitted_as_answer) ... ok
+test_exact_literal_value_is_not_a_refusal_marker (test_search_conflict_response.SearchConflictResponseTests.test_exact_literal_value_is_not_a_refusal_marker) ... ok
+test_existing_refusal_is_preserved (test_search_conflict_response.SearchConflictResponseTests.test_existing_refusal_is_preserved) ... ok
+test_normal_answer_keeps_existing_behavior (test_search_conflict_response.SearchConflictResponseTests.test_normal_answer_keeps_existing_behavior) ... ok
+test_complete_chain (test_search_evidence.EvidenceChecks.test_complete_chain) ... ok
+test_intermediate_conflict_cannot_be_cherry_picked (test_search_evidence.EvidenceChecks.test_intermediate_conflict_cannot_be_cherry_picked) ... ok
+test_irrelevant_conflict_is_allowed (test_search_evidence.EvidenceChecks.test_irrelevant_conflict_is_allowed) ... ok
+test_literal_marker_is_valid_value (test_search_evidence.EvidenceChecks.test_literal_marker_is_valid_value) ... ok
+test_missing_fact_requires_complete_kb_and_refusal (test_search_evidence.EvidenceChecks.test_missing_fact_requires_complete_kb_and_refusal) ... ok
+test_schema_and_missing_evidence_rejected (test_search_evidence.EvidenceChecks.test_schema_and_missing_evidence_rejected) ... ok
+test_terminal_conflict_cannot_be_cherry_picked (test_search_evidence.EvidenceChecks.test_terminal_conflict_cannot_be_cherry_picked) ... ok
+test_terminal_conflict_proof_vs_intermediate_abstention (test_search_evidence.EvidenceChecks.test_terminal_conflict_proof_vs_intermediate_abstention) ... ok
+test_wrong_answer_rejected (test_search_evidence.EvidenceChecks.test_wrong_answer_rejected) ... ok
+test_wrong_or_private_field_rejected (test_search_evidence.EvidenceChecks.test_wrong_or_private_field_rejected) ... ok
+test_wrong_root_and_disconnected_path_rejected (test_search_evidence.EvidenceChecks.test_wrong_root_and_disconnected_path_rejected) ... ok
+test_invalid_json_keeps_usage (test_search_evidence.EvidenceUsage.test_invalid_json_keeps_usage) ... ok
+test_broken_link_and_missing_field (test_search_graph.SearchGraphTests.test_broken_link_and_missing_field) ... ok
+test_case_and_typographic_apostrophe (test_search_graph.SearchGraphTests.test_case_and_typographic_apostrophe) ... ok
+test_case_collision_requires_resolution (test_search_graph.SearchGraphTests.test_case_collision_requires_resolution) ... ok
+test_finite_path_can_cross_cycle (test_search_graph.SearchGraphTests.test_finite_path_can_cross_cycle) ... ok
+test_historical_constraint_not_ignored (test_search_graph.SearchGraphTests.test_historical_constraint_not_ignored) ... ok
+test_multiple_questions_not_partially_answered (test_search_graph.SearchGraphTests.test_multiple_questions_not_partially_answered) ... ok
+test_trace_and_multi_hop (test_search_graph.SearchGraphTests.test_trace_and_multi_hop) ... ok
+
+======================================================================
+ERROR: test_api_accounting (unittest.loader._FailedTest.test_api_accounting)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_api_accounting
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_api_accounting.py", line 11, in <module>
+    from sample_api_benchmark import Bridge
+  File "D:\хаки\openjiuwen\openjuuweg\scripts\sample_api_benchmark.py", line 23, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_context_deadlines (unittest.loader._FailedTest.test_context_deadlines)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_context_deadlines
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_context_deadlines.py", line 9, in <module>
+    from harness.agents.base_harness import solve_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\base_harness.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_csv_execution_contract (unittest.loader._FailedTest.test_csv_execution_contract)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_csv_execution_contract
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_csv_execution_contract.py", line 8, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_data_output_contract (unittest.loader._FailedTest.test_data_output_contract)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_data_output_contract
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_data_output_contract.py", line 11, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_join_cascade (unittest.loader._FailedTest.test_join_cascade)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_join_cascade
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_join_cascade.py", line 6, in <module>
+    from harness.agents.base_harness import solve_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\base_harness.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_join_integration (unittest.loader._FailedTest.test_join_integration)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_join_integration
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_join_integration.py", line 5, in <module>
+    from harness.agents.base_harness import solve_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\base_harness.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_join_or (unittest.loader._FailedTest.test_join_or)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_join_or
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_join_or.py", line 9, in <module>
+    from harness.agents.join_or import execute_join_or_plan,parse_join_or_scope,join_or_route,solve_join_or_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_or.py", line 9, in <module>
+    from harness.agents.join_plans import _keys, _read
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_plans.py", line 12, in <module>
+    from harness.agents.multi_csv import describe_csv, select_csv_inputs
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\multi_csv.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_join_plans (unittest.loader._FailedTest.test_join_plans)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_join_plans
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_join_plans.py", line 11, in <module>
+    from harness.agents.join_plans import execute_join_plan,parse_join_plan,solve_join_plan_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_plans.py", line 12, in <module>
+    from harness.agents.multi_csv import describe_csv, select_csv_inputs
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\multi_csv.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_join_scope (unittest.loader._FailedTest.test_join_scope)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_join_scope
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_join_scope.py", line 6, in <module>
+    from harness.agents.join_scope import parse_join_scope, join_scope_route, solve_join_scope_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_scope.py", line 4, in <module>
+    from harness.agents.join_plans import solve_join_plan_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_plans.py", line 12, in <module>
+    from harness.agents.multi_csv import describe_csv, select_csv_inputs
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\multi_csv.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_join_scope_v2 (unittest.loader._FailedTest.test_join_scope_v2)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_join_scope_v2
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_join_scope_v2.py", line 6, in <module>
+    from harness.agents.join_scope import parse_join_scope
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_scope.py", line 4, in <module>
+    from harness.agents.join_plans import solve_join_plan_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_plans.py", line 12, in <module>
+    from harness.agents.multi_csv import describe_csv, select_csv_inputs
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\multi_csv.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_local_join (unittest.loader._FailedTest.test_local_join)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_local_join
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_local_join.py", line 5, in <module>
+    from harness.agents.local_join import solve_local_join_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\local_join.py", line 4, in <module>
+    from harness.agents.join_scope_v2 import parse_join_scope_v2, join_scope_v2_route
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_scope_v2.py", line 4, in <module>
+    from harness.agents.join_scope import IDENT, parse_join_scope
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_scope.py", line 4, in <module>
+    from harness.agents.join_plans import solve_join_plan_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\join_plans.py", line 12, in <module>
+    from harness.agents.multi_csv import describe_csv, select_csv_inputs
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\multi_csv.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_multi_csv (unittest.loader._FailedTest.test_multi_csv)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_multi_csv
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_multi_csv.py", line 5, in <module>
+    from harness.agents.multi_csv import select_csv_inputs, describe_csv, solve_multi_csv_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\multi_csv.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_plan_comparison (unittest.loader._FailedTest.test_plan_comparison)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_plan_comparison
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_plan_comparison.py", line 6, in <module>
+    from plan_api_benchmark import paired_summary
+  File "D:\хаки\openjiuwen\openjuuweg\scripts\plan_api_benchmark.py", line 22, in <module>
+    from sample_api_benchmark import Bridge, write_json
+  File "D:\хаки\openjiuwen\openjuuweg\scripts\sample_api_benchmark.py", line 23, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_plan_scope (unittest.loader._FailedTest.test_plan_scope)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_plan_scope
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_plan_scope.py", line 6, in <module>
+    from replay_plan_policies import replay
+  File "D:\хаки\openjiuwen\openjuuweg\scripts\replay_plan_policies.py", line 18, in <module>
+    from plan_api_benchmark import is_correct
+  File "D:\хаки\openjiuwen\openjuuweg\scripts\plan_api_benchmark.py", line 22, in <module>
+    from sample_api_benchmark import Bridge, write_json
+  File "D:\хаки\openjiuwen\openjuuweg\scripts\sample_api_benchmark.py", line 23, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_request_budget (unittest.loader._FailedTest.test_request_budget)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_request_budget
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_request_budget.py", line 12, in <module>
+    from harness.agents.base_harness import OpenJiuwenLLMBridge, solve_task, parse_usage
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\base_harness.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_resilient_transport (unittest.loader._FailedTest.test_resilient_transport)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_resilient_transport
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_resilient_transport.py", line 8, in <module>
+    from harness.agents.base_harness import OpenJiuwenLLMBridge, APIHTTPError, TruncatedGeneration
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\base_harness.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+======================================================================
+ERROR: test_review_regressions (unittest.loader._FailedTest.test_review_regressions)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_review_regressions
+Traceback (most recent call last):
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\хаки\openjiuwen\sdk-python\cpython-3.11.15-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\хаки\openjiuwen\openjuuweg\tests\test_review_regressions.py", line 16, in <module>
+    from main_offline_benchmark import parse_args
+  File "D:\хаки\openjiuwen\openjuuweg\scripts\main_offline_benchmark.py", line 18, in <module>
+    from harness.planner.scheduler import TaskScheduler
+  File "D:\хаки\openjiuwen\openjuuweg\harness\planner\scheduler.py", line 13, in <module>
+    from harness.workflow_runner import task_runner
+  File "D:\хаки\openjiuwen\openjuuweg\harness\workflow_runner.py", line 14, in <module>
+    from harness.agents.base_harness import solve_task
+  File "D:\хаки\openjiuwen\openjuuweg\harness\agents\base_harness.py", line 9, in <module>
+    from harness.agents.data_solver import solve_data_task
+ImportError: cannot import name 'solve_data_task' from 'harness.agents.data_solver' (D:\хаки\openjiuwen\openjuuweg\harness\agents\data_solver.py)
+
+
+----------------------------------------------------------------------
+Ran 82 tests in 1.254s
+
+FAILED (errors=17)

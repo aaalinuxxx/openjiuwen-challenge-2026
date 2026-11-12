@@ -3,15 +3,12 @@ import csv
 import json
 from pathlib import Path
 import re
-import shutil
-import tempfile
 
-from harness.sandbox.executor import run_python_snippet, _extract_execution_answer
+from harness.sandbox.executor import run_csv_snippet
 from harness.config import SolveResult
 from harness.agents.data_solver import solve_data_task
 from harness.agents.model_router import select_primary_model
 from harness.agents.instruction_scope import sales_source_name
-from harness.sandbox.executor import run_python_snippet
 
 
 def select_csv_inputs(workspace, instruction):
@@ -62,7 +59,7 @@ async def solve_multi_csv_task(ctx, bridge):
         return SolveResult(task_id=ctx.task_id,status="UNKNOWN",notes="Multi-CSV preview exceeds experimental limit")
     model = select_primary_model(ctx)
     system = ("Return only executable Python 3 code using the standard library. "
-              "Read the named CSV files in the current directory; print only the final answer. "
+              "Read the named CSV files in the current directory; print only the final answer. The harness handles any instruction to write answer.txt; your program must only print the result. "
               "Do not modify files. Samples are incomplete: compute from all rows. "
               "Keep join keys as strings unless the task explicitly requests numeric keys. "
               "Honor the specified join multiplicity, missing-match handling, filters and rounding.")
@@ -70,30 +67,6 @@ async def solve_multi_csv_task(ctx, bridge):
     code, inp, out, reasoning = await bridge.complete(model=model,system_prompt=system,user_prompt=prompt,max_tokens=400)
     code = re.sub(r"^```(?:python)?|```$", "", code.strip(), flags=re.MULTILINE).strip()
     counts = dict(input_tokens=inp,output_tokens=out,reasoning_tokens=reasoning,model_used=model)
-    with tempfile.TemporaryDirectory(prefix="oj-csv-join-") as temp:
-        root = Path(temp)
-        originals = {p.name:p.read_bytes() for p in selected}
-        for path in selected:
-            shutil.copyfile(path, root/path.name)
-        ok, stdout, error = run_python_snippet(code, cwd=root)
-        unchanged = all((root/name).is_file() and (root/name).read_bytes()==raw for name,raw in originals.items())
-        unexpected = any(p.name not in originals for p in root.iterdir())
-        if not unchanged or unexpected:
-            return SolveResult(task_id=ctx.task_id,status="UNKNOWN",notes="Generated code changed execution inputs or created files",**counts)
-
-    extracted_answer = _extract_execution_answer(stdout, root, ok, error)
-
-    if not ok or extracted_answer is None:
-        return SolveResult(
-            task_id=ctx.task_id,
-            status="FAILED",
-            notes=error[:200] or "No valid answer found in stdout or answer.txt",
-            **counts
-        )
-
-    return SolveResult(
-        task_id=ctx.task_id,
-        status="SOLVED",
-        answer=extracted_answer,
-        **counts
-    )
+    status, answer, note = run_csv_snippet(code, selected)
+    return SolveResult(task_id=ctx.task_id, status=status, answer=answer,
+                       notes=note, **counts)

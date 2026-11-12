@@ -1,0 +1,5 @@
+{
+  "code": 0,
+  "stdout": "{\"arm\": \"baseline\", \"metrics\": {\"total\": 6, \"solvable\": 6, \"verified\": 4, \"non_solved_answer_files\": 0, \"incorrect_solved_answers\": 0, \"unverified_answer_files\": 0, \"integrity_passed\": true}, \"calls\": 0}\r\n\r\n{\"arm\": \"candidate\", \"metrics\": {\"total\": 6, \"solvable\": 6, \"verified\": 5, \"non_solved_answer_files\": 0, \"incorrect_solved_answers\": 0, \"unverified_answer_files\": 0, \"integrity_passed\": true}, \"calls\": 0}\r\n\r\n{\"status\": \"COMPLETED\", \"real_api_attempts\": 0, \"known_effective_tokens\": 0}\r\nReport: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E84_contract_replay_20261112T182938180807\\report.json\r\n",
+  "stderr": ""
+}

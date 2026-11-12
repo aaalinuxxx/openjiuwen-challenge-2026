@@ -5,7 +5,7 @@ from pathlib import Path
 
 from harness.config import TaskContext, SolveResult
 from harness.agents.model_router import select_primary_model
-from harness.sandbox.executor import run_python_snippet
+from harness.sandbox.executor import run_csv_snippet
 from harness.agents.calculation_plans import parse_sales_plan, execute_sales_plan
 from harness.agents.instruction_scope import sales_source_name
 
@@ -22,33 +22,6 @@ def _try_fast_sales_pattern(csv_path: Path, instruction: str) -> str | None:
     status, answer = execute_sales_plan(csv_path, plan)
     return answer if status == "SOLVED" else status
 
-
-def _extract_execution_answer(stdout: str, answer_file: Path) -> tuple[str | None, str]:
-    """
-    Согласовывает результат из stdout и/или answer.txt, созданного скриптом модели.
-    Возвращает (answer, error_note).
-    """
-    stdout_lines = [ln.strip() for ln in stdout.strip().splitlines() if ln.strip()]
-    stdout_ans = stdout_lines[-1] if stdout_lines else None
-
-    file_ans = None
-    if answer_file.exists():
-        file_text = answer_file.read_text(encoding="utf-8", errors="replace").strip()
-        file_lines = [ln.strip() for ln in file_text.splitlines() if ln.strip()]
-        file_ans = file_lines[-1] if file_lines else None
-        # Убираем временный answer.txt из workspace, чтобы итоговую запись делал file_guard
-        try:
-            answer_file.unlink()
-        except OSError:
-            pass
-
-    if stdout_ans and file_ans and stdout_ans != file_ans:
-        return None, f"Conflicting outputs: stdout={stdout_ans!r} vs file={file_ans!r}"
-
-    ans = stdout_ans or file_ans
-    if not ans:
-        return None, "Empty stdout and no answer.txt produced"
-    return ans, ""
 
 
 async def solve_data_task(ctx: TaskContext, bridge) -> SolveResult:
@@ -88,7 +61,7 @@ async def solve_data_task(ctx: TaskContext, bridge) -> SolveResult:
     sys_prompt = (
         "Write ONLY raw executable Python 3 code (no markdown fences, no explanations) "
         "that reads the CSV file in the current directory and prints ONLY the final answer to stdout. "
-        "Do NOT write answer.txt yourself; only print the final result."
+        "The harness handles any instruction to write answer.txt; your program must only print the result. Use the standard library. Read all rows; the preview is incomplete. Do not modify input files."
     )
     user_prompt = (
         f"File: {csv_file.name}\n"
@@ -101,35 +74,9 @@ async def solve_data_task(ctx: TaskContext, bridge) -> SolveResult:
     )
     clean_code = re.sub(r"^```(?:python)?\s*|```$", "", code_resp.strip(), flags=re.MULTILINE).strip()
 
-    answer_file = ctx.workspace_dir / "answer.txt"
-    if answer_file.exists():
-        try:
-            answer_file.unlink()
-        except OSError:
-            pass
-
-    ok, stdout, err = run_python_snippet(clean_code, cwd=ctx.workspace_dir)
-
-    if ok:
-        ans, extract_err = _extract_execution_answer(stdout, answer_file)
-        if ans is not None:
-            return SolveResult(
-                task_id=ctx.task_id,
-                status="SOLVED",
-                answer=ans,
-                input_tokens=in_tok,
-                output_tokens=out_tok,
-                reasoning_tokens=r_tok,
-                model_used=model,
-            )
-        err = extract_err or err
-
+    status, answer, note = run_csv_snippet(clean_code, [csv_file])
     return SolveResult(
-        task_id=ctx.task_id,
-        status="FAILED",
-        input_tokens=in_tok,
-        output_tokens=out_tok,
-        reasoning_tokens=r_tok,
-        model_used=model,
-        notes=err[:200],
+        task_id=ctx.task_id, status=status, answer=answer,
+        input_tokens=in_tok, output_tokens=out_tok, reasoning_tokens=r_tok,
+        model_used=model, notes=note,
     )
