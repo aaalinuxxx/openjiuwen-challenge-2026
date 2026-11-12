@@ -1768,3 +1768,15 @@ Zero-budget rehearsal через SDK успешен: шесть локальны
 | E76 | H04.16: сравнение жёстких cap | Остаётся отложенной; в E84 обрезаний нет |
 
 Артефакты: scripts/output_contract_benchmark.py; tests/test_csv_execution_contract.py; experiments/E83_output_contract/ (план, дизайн, тесты, исходный сбой переноса, маркер); experiments/E84_contract_replay_20261112T182938180807/; experiments/E84_contract_offline_20261112T182952520740/; experiments/E84_contract_live_20261112T183041218847/ (request/response, budget, progress, task_artifacts, report, independent_audit); experiments/E84_iteration_summary.json; experiments/E84_live_process.json.
+
+## 41. H04.20: полный прогон исправленного профиля (E85–E86)
+
+Свежий реальный SDK/API, E77:31 задача/26 решаемых, общий бюджет3000, максимум26 запросов, concurrency1. Профиль --profile validated объединяет CLI и экспериментальную конфигурацию: joins=True, минимумы search/data/coding=300/700/800. Legacy defaults сохранены. Код решателей тот же, что E84; 171 тест прошёл, offline7 решений/0HTTP. Заморозка2dd0cf1.
+
+Результат **25/26,75/78**, math5/5,search4/4,coding5/5,data11/12. 23HTTP,**1896.6** приведённого токена; весь usage независимо сверён. Неверных SOLVED и файлов при неуспешном статусе0, входы сохранены. Четыре из пяти невозможных задач получили обоснованный отказ; math_zero_operation вернула FAILED без файла, не ложный успешный ответ.
+
+По сравнению с историческим E80 gained:пять data-задач; lost:pilot_extra_numeric_control. Он был обрезан при400 output, хотя в E80/E84 решался в том же cap. Свежий ответ потратил много токенов на комментарии. Это не contemporaneous A/B. **H04.20 PARTIAL:** баллы выросли, но критерий сохранения всех прежних решений не выполнен. Не повторяем без изменения до удачного результата.
+
+H04.21 проверяется следующей на10 новых numeric-join dev-задачах;6 holdout оставлены на утро. H04.16 снова актуальна из-за реальной обрезанной генерации; необходимость изменения cap/prompt определим после H04.21. H04.19 остаётся: model_used исключения ложно27b, сырой запрос/ответ подтверждает35b.
+
+Артефакты: experiments/E85_evening; experiments/E86_mixed_profile_live_20261112T184718872839; scripts/frozen_benchmark.py. Docker отсутствует в этом окружении, проверка контейнера не заявляется.

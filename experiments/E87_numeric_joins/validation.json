@@ -1,0 +1,130 @@
+[
+  {
+    "task_id": "fractional_prices",
+    "split": "dev",
+    "oracle": "22.35",
+    "hand_expected": "22.35",
+    "retained_pairs": 4,
+    "passed": true
+  },
+  {
+    "task_id": "duplicate_pairs",
+    "split": "dev",
+    "oracle": "20.55",
+    "hand_expected": "20.55",
+    "retained_pairs": 5,
+    "passed": true
+  },
+  {
+    "task_id": "unmatched_default",
+    "split": "dev",
+    "oracle": "19.70",
+    "hand_expected": "19.70",
+    "retained_pairs": 3,
+    "passed": true
+  },
+  {
+    "task_id": "empty_inner",
+    "split": "dev",
+    "oracle": "0",
+    "hand_expected": "0",
+    "retained_pairs": 0,
+    "passed": true
+  },
+  {
+    "task_id": "string_keys",
+    "split": "dev",
+    "oracle": "10.40",
+    "hand_expected": "10.40",
+    "retained_pairs": 3,
+    "passed": true
+  },
+  {
+    "task_id": "filter_after_pairing",
+    "split": "dev",
+    "oracle": "12.50",
+    "hand_expected": "12.50",
+    "retained_pairs": 2,
+    "passed": true
+  },
+  {
+    "task_id": "beyond_preview",
+    "split": "dev",
+    "oracle": "11.30",
+    "hand_expected": "11.30",
+    "retained_pairs": 7,
+    "passed": true
+  },
+  {
+    "task_id": "negative_quantities",
+    "split": "dev",
+    "oracle": "-0.05",
+    "hand_expected": "-0.05",
+    "retained_pairs": 3,
+    "passed": true
+  },
+  {
+    "task_id": "round_once",
+    "split": "dev",
+    "oracle": "0.02",
+    "hand_expected": "0.02",
+    "retained_pairs": 3,
+    "passed": true
+  },
+  {
+    "task_id": "weighted_average",
+    "split": "dev",
+    "oracle": "2.43",
+    "hand_expected": "2.43",
+    "retained_pairs": 5,
+    "passed": true
+  },
+  {
+    "task_id": "hold_decimal_multiplicity",
+    "split": "holdout",
+    "oracle": "6.250",
+    "hand_expected": "6.25",
+    "retained_pairs": 5,
+    "passed": true
+  },
+  {
+    "task_id": "hold_no_right_rows",
+    "split": "holdout",
+    "oracle": "3.75",
+    "hand_expected": "3.75",
+    "retained_pairs": 2,
+    "passed": true
+  },
+  {
+    "task_id": "hold_postfilter",
+    "split": "holdout",
+    "oracle": "4.00",
+    "hand_expected": "4",
+    "retained_pairs": 2,
+    "passed": true
+  },
+  {
+    "task_id": "hold_negative_round",
+    "split": "holdout",
+    "oracle": "-0.02",
+    "hand_expected": "-0.02",
+    "retained_pairs": 1,
+    "passed": true
+  },
+  {
+    "task_id": "hold_leading_zero",
+    "split": "holdout",
+    "oracle": "5.00",
+    "hand_expected": "5",
+    "retained_pairs": 3,
+    "passed": true
+  },
+  {
+    "task_id": "hold_weighted",
+    "split": "holdout",
+    "oracle": "1.00",
+    "hand_expected": "1.00",
+    "retained_pairs": 3,
+    "passed": true
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "task_id": "coding_overlap",
+  "response": {
+    "id": "chatcmpl-adc67ea8a83713ec",
+    "created": 1794509275,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "def occurrences(text, pattern):\n    if not pattern:\n        return 0\n    count = 0\n    start = 0\n    while True:\n        index = text.find(pattern, start)\n        if index == -1:\n            break\n        count += 1\n        start = index + 1\n    return count",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 523,
+      "total_tokens": 597,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

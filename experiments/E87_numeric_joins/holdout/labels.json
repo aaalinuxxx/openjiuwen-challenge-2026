@@ -1,0 +1,62 @@
+{
+  "hold_decimal_multiplicity": {
+    "task_id": "hold_decimal_multiplicity",
+    "task_type": "data_analysis",
+    "instruction": "Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. Discard orders that have no price match. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Return the exact decimal sum without rounding. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "6.25",
+    "unsolvable": false,
+    "group": "E87_holdout",
+    "comparison": "decimal"
+  },
+  "hold_no_right_rows": {
+    "task_id": "hold_no_right_rows",
+    "task_type": "data_analysis",
+    "instruction": "Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. If an order has no match in the original prices.csv, include it once with price 0.75. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Return the exact decimal sum without rounding. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "3.75",
+    "unsolvable": false,
+    "group": "E87_holdout",
+    "comparison": "decimal"
+  },
+  "hold_postfilter": {
+    "task_id": "hold_postfilter",
+    "task_type": "data_analysis",
+    "instruction": "Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. If an order has no match in the original prices.csv, include it once with price 0.50. After forming the pairs, keep only pairs whose right state is 'ok', plus unmatched orders. A matched order with only rejected states is NOT unmatched. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Return the exact decimal sum without rounding. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "4",
+    "unsolvable": false,
+    "group": "E87_holdout",
+    "comparison": "decimal"
+  },
+  "hold_negative_round": {
+    "task_id": "hold_negative_round",
+    "task_type": "data_analysis",
+    "instruction": "Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. Discard orders that have no price match. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Round only the final result to two decimal places using ROUND_HALF_UP. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "-0.02",
+    "unsolvable": false,
+    "group": "E87_holdout",
+    "comparison": "decimal"
+  },
+  "hold_leading_zero": {
+    "task_id": "hold_leading_zero",
+    "task_type": "data_analysis",
+    "instruction": "Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. Discard orders that have no price match. Compute the sum of orders.qty multiplied by the price of each retained pair. The sum of zero pairs is 0. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Return the exact decimal sum without rounding. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "5",
+    "unsolvable": false,
+    "group": "E87_holdout",
+    "comparison": "decimal"
+  },
+  "hold_weighted": {
+    "task_id": "hold_weighted",
+    "task_type": "data_analysis",
+    "instruction": "Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. Discard orders that have no price match. Compute sum(qty * price) divided by sum(qty) over all retained pairs; repeat qty for each matching price row. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Round only the final result to two decimal places using ROUND_HALF_UP. Write only the numeric result to answer.txt.",
+    "reward": 3,
+    "expected": "1.00",
+    "unsolvable": false,
+    "group": "E87_holdout",
+    "comparison": "decimal"
+  }
+}

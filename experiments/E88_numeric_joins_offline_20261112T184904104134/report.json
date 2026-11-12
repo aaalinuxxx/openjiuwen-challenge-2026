@@ -1,0 +1,594 @@
+{
+  "status": "COMPLETED",
+  "mode": "OFFLINE_ZERO_BUDGET",
+  "hypothesis": "H04.21",
+  "plan_sha256": "ea798b89b3e202e2a0ac83cb0b05a75fadff1292b43ea304f9e3d4872cce6bfc",
+  "recording_errors": [],
+  "configuration": {
+    "profile": "validated",
+    "budget": 0.0,
+    "max_calls": 0,
+    "concurrency": 1,
+    "experimental_joins": true,
+    "search_min_task_budget": 300,
+    "data_min_task_budget": 700,
+    "coding_min_task_budget": 800.0
+  },
+  "summary": {
+    "total_tasks": 10,
+    "task_results": {
+      "beyond_preview": {
+        "task_id": "beyond_preview",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.015000000013969839,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      },
+      "duplicate_pairs": {
+        "task_id": "duplicate_pairs",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      },
+      "empty_inner": {
+        "task_id": "empty_inner",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      },
+      "filter_after_pairing": {
+        "task_id": "filter_after_pairing",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      },
+      "fractional_prices": {
+        "task_id": "fractional_prices",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      },
+      "negative_quantities": {
+        "task_id": "negative_quantities",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      },
+      "round_once": {
+        "task_id": "round_once",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.015000000013969839,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      },
+      "string_keys": {
+        "task_id": "string_keys",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      },
+      "unmatched_default": {
+        "task_id": "unmatched_default",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      },
+      "weighted_average": {
+        "task_id": "weighted_average",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    "skipped_tasks": {},
+    "solved_count": 0,
+    "estimated_score": 0,
+    "effective_tokens_spent": 0.0,
+    "budget_state": {
+      "budget": 0.0,
+      "known_effective_tokens": 0.0,
+      "reserved_effective_tokens": 0.0,
+      "has_unaccounted_request": false,
+      "remote_stopped": false,
+      "events": []
+    },
+    "budget_audit_path": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E88_numeric_joins_offline_20261112T184904104134\\budget.json",
+    "execution_engine": "openjiuwen",
+    "workflow_runs": [
+      {
+        "task_id": "beyond_preview",
+        "workflow_id": "task_a9fee18df0e54e8b81e5ba5bdc68a642",
+        "session_id": "a714ac66c96b412aab8352f9667417f6",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "duplicate_pairs",
+        "workflow_id": "task_4daae026dcb04898aeb1d49b4d1a3b9b",
+        "session_id": "dba6e2cbb32a4f26891fb34455e20d5e",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "empty_inner",
+        "workflow_id": "task_aca1349521054eb8ac93f685a802bf98",
+        "session_id": "af0760e3b6884768aaea30624d6b9bcd",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "filter_after_pairing",
+        "workflow_id": "task_9abb3994cc954a19bd104f16110b48ea",
+        "session_id": "7f0d656852c84c6c9be1a74843fe4603",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "fractional_prices",
+        "workflow_id": "task_2e2259a8ee25461cb365e2f9f0a7b214",
+        "session_id": "b04fca67b34e4f8097330d5a69247fc9",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "negative_quantities",
+        "workflow_id": "task_c710d2a6189d48a3ac7f29d549406841",
+        "session_id": "a483f9ea0c5847c0affb92c9026c8b54",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "round_once",
+        "workflow_id": "task_f7d5d3143a9b41be8ea3df4d0a17e90b",
+        "session_id": "7c53f6ced72b4c4db998c48db67b805a",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "string_keys",
+        "workflow_id": "task_bdf33a22bf4146c0a30aaa5dfd288052",
+        "session_id": "40308aa9b1af4dd48676bca214036955",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "unmatched_default",
+        "workflow_id": "task_ac4840477587444fae1b3303c29038a7",
+        "session_id": "7a9d020842da4f92bc822448cbbf78a6",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "weighted_average",
+        "workflow_id": "task_6cd288a8045b407ab3303dbcc63488eb",
+        "session_id": "7df6a526978c43909f1111fea8177af0",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      }
+    ]
+  },
+  "rows": [
+    {
+      "task_id": "fractional_prices",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "22.35",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "fractional_prices",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    {
+      "task_id": "duplicate_pairs",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "20.55",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "duplicate_pairs",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    {
+      "task_id": "unmatched_default",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "19.70",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "unmatched_default",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    {
+      "task_id": "empty_inner",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "0",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "empty_inner",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    {
+      "task_id": "string_keys",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "10.40",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "string_keys",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    {
+      "task_id": "filter_after_pairing",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "12.50",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "filter_after_pairing",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    {
+      "task_id": "beyond_preview",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "11.30",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "beyond_preview",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.015000000013969839,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    {
+      "task_id": "negative_quantities",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "-0.05",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "negative_quantities",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    {
+      "task_id": "round_once",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "0.02",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "round_once",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.015000000013969839,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    },
+    {
+      "task_id": "weighted_average",
+      "task_type": "data_analysis",
+      "group": "E87_dev",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "2.43",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "weighted_average",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Request count limit reached"
+      }
+    }
+  ],
+  "metrics": {
+    "total": 10,
+    "solvable": 10,
+    "correct": 0,
+    "score": 0,
+    "max_score": 30,
+    "incorrect_solved_answers": 0,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 0,
+    "truncations": 0,
+    "integrity_passed": true
+  },
+  "by_type": {
+    "data_analysis": {
+      "total": 10,
+      "solvable": 10,
+      "correct": 0,
+      "score": 0,
+      "max_score": 30,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 0,
+      "truncations": 0,
+      "integrity_passed": true
+    }
+  },
+  "audit": {
+    "passed": true,
+    "calls": 0,
+    "effective_tokens": 0.0,
+    "requests": []
+  },
+  "offline_passed": true,
+  "actual_http_calls": 0,
+  "elapsed_seconds": 6.765,
+  "budget": {
+    "budget": 0.0,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": []
+  },
+  "frozen_files_unchanged": true
+}

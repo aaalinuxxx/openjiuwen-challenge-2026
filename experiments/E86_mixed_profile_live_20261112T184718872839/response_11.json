@@ -1,0 +1,32 @@
+{
+  "task_id": "pilot_extra_numeric_control",
+  "response": {
+    "id": "chatcmpl-80535da80bf99d1a",
+    "created": 1794509262,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport sys\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read labels.csv\nlabels = []\nwith open('labels.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        labels.append(row)\n\n# Build a lookup for labels by sku\n# Since there can be multiple labels per sku, we need to handle the join properly\n# Left join: for each order, find all matching labels (or no match)\n# Then filter: region == 'west' OR no matching right row\n# Also filter: qty > 5\n\n# Parse qty as integer\nfor order in orders:\n    order['qty_int'] = int(order['qty'])\n\n# Filter orders with qty > 5 first\nfiltered_orders = [o for o in orders if o['qty_int'] > 5]\n\n# For each filtered order, find matching labels\n# Left join: if there's a match, use the label; if no match, treat as no right row\n# We need to sum qty for pairs where region == 'west' OR no matching right row\n\ntotal_sum = 0\n\nfor order in filtered_orders:\n    code = order['code']\n    qty = order['qty_int']\n    \n    # Find all matching labels\n    matching_labels = [l for l in labels if l['sku'] == code]\n    \n    if len(matching_labels) == 0:\n        # No matching right row: include this order\n        total_sum += qty\n    else:\n        # For each matching label, check if region == 'west'\n        for label in matching_labels:\n            if label['region'] ==",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 400,
+      "prompt_tokens": 315,
+      "total_tokens": 715,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "results": {
+    "beyond_preview": {
+      "task_id": "beyond_preview",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.015000000013969839,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "duplicate_pairs": {
+      "task_id": "duplicate_pairs",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "empty_inner": {
+      "task_id": "empty_inner",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "filter_after_pairing": {
+      "task_id": "filter_after_pairing",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "fractional_prices": {
+      "task_id": "fractional_prices",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "negative_quantities": {
+      "task_id": "negative_quantities",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "round_once": {
+      "task_id": "round_once",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.015000000013969839,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "string_keys": {
+      "task_id": "string_keys",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "unmatched_default": {
+      "task_id": "unmatched_default",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    },
+    "weighted_average": {
+      "task_id": "weighted_average",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "Request count limit reached"
+    }
+  },
+  "budget": {
+    "budget": 0.0,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": []
+  }
+}

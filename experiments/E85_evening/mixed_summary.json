@@ -1,0 +1,228 @@
+{
+  "hypothesis": "H04.20",
+  "status": "PARTIAL_IMPROVED_SCORE_ONE_HISTORICAL_SOLUTION_LOST",
+  "report": "experiments/E86_mixed_profile_live_20261112T184718872839/report.json",
+  "metrics": {
+    "total": 31,
+    "solvable": 26,
+    "correct": 25,
+    "score": 75,
+    "max_score": 78,
+    "incorrect_solved_answers": 0,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 4,
+    "truncations": 1,
+    "integrity_passed": true
+  },
+  "audit": {
+    "passed": true,
+    "calls": 23,
+    "effective_tokens": 1896.6,
+    "requests": [
+      {
+        "task_id": "search_new_relation",
+        "cost": 17.9,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 32,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "search_conflicting_fact",
+        "cost": 20.8,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 32,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "search_irrelevant_conflict",
+        "cost": 17.1,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 32,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "search_absent",
+        "cost": 24.3,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 32,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "search_paraphrase_chain",
+        "cost": 19.3,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 32,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "data_distinct",
+        "cost": 88.9,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 200,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "data_empty_count",
+        "cost": 75.1,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 200,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "data_filtered_median",
+        "cost": 97,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 200,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "data_two_file_join",
+        "cost": 191.4,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 400,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "data_weighted_mean",
+        "cost": 118.3,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 200,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "pilot_extra_numeric_control",
+        "cost": 431.5,
+        "model": "qwen3.6-35b-a3b-noreason",
+        "cap": 400,
+        "finish": "length",
+        "passed": true
+      },
+      {
+        "task_id": "math_sum",
+        "cost": 15.5,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 114,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "math_gcd",
+        "cost": 25.7,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 115,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "math_paraphrase",
+        "cost": 22.5,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 115,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "math_zero_warning",
+        "cost": 17.4,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 115,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "math_zero_operation",
+        "cost": 14.5,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 116,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "math_percentage",
+        "cost": 42.1,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 116,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "coding_multimodule",
+        "cost": 73.8,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 499,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "coding_overlap",
+        "cost": 126.3,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 474,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "coding_intervals",
+        "cost": 178.6,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 416,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "coding_brackets",
+        "cost": 151.7,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 424,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "coding_pure_conflict",
+        "cost": 51.5,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 700,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "coding_stateful",
+        "cost": 75.4,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 700,
+        "finish": "stop",
+        "passed": true
+      }
+    ]
+  },
+  "comparison": {
+    "note": "Historical comparison, not simultaneous causal A/B",
+    "lost": [
+      "pilot_extra_numeric_control"
+    ],
+    "gained": [
+      "data_distinct",
+      "data_empty_count",
+      "data_filtered_median",
+      "data_two_file_join",
+      "data_weighted_mean"
+    ]
+  },
+  "acceptance": {
+    "score_improved": true,
+    "no_previous_loss": false,
+    "no_invalid_answers": true,
+    "accounting_passed": true
+  },
+  "next": "H04.21 then targeted truncation correction; do not retry unchanged just to obtain a favorable answer"
+}
