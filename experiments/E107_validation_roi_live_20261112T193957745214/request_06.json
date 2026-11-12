@@ -1,0 +1,18 @@
+{
+  "task_id": "validate_044_fresh_data_net",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Write ONLY raw executable Python 3 code (no markdown fences, no explanations) that reads the CSV file in the current directory and prints ONLY the final answer to stdout. The harness handles any instruction to write answer.txt; your program must only print the result. Use the standard library. Read all rows; the preview is incomplete. Do not modify input files."
+      },
+      {
+        "role": "user",
+        "content": "File: transactions.csv\nHeader & first rows:\nkind,qty,price\nsale,2,3.50\nsale,1,2.25\nrefund,1,3.50\n\nTask: Read transactions.csv. Net proceeds equal sum(qty*price) for sale rows minus sum(qty*price) for refund rows. Include every row, use exact decimal arithmetic. Write the decimal result to answer.txt."
+      }
+    ],
+    "max_tokens": 200,
+    "temperature": 0.0
+  }
+}

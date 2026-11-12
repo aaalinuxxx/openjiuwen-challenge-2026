@@ -1,0 +1,18 @@
+{
+  "task_id": "validate_073_fresh_math_prime_factor",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown."
+      },
+      {
+        "role": "user",
+        "content": "What is the largest prime factor of 13195? Write only the integer result to answer.txt."
+      }
+    ],
+    "max_tokens": 45,
+    "temperature": 0.0
+  }
+}

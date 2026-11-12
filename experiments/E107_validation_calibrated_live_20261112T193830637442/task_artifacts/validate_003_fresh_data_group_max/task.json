@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_003_fresh_data_group_max",
+  "task_type": "data_analysis",
+  "instruction": "Read records.csv. Sum value separately for each region, then return the largest of these region totals as a number. Use every row. Write the number to answer.txt.",
+  "reward": 4
+}

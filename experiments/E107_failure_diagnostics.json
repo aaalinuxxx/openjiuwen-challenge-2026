@@ -1,0 +1,40 @@
+{
+  "mode": "OFFLINE_READ_ONLY_DIAGNOSTIC",
+  "actual_http_calls": 0,
+  "checks_passed": true,
+  "findings": {
+    "property_case_loss": {
+      "original": "Mistral",
+      "serialized": "mistral",
+      "cause": "All KB property names are lowercased, including product names used as keys."
+    },
+    "inverse_relation": {
+      "selected": [
+        "Lina Vale"
+      ],
+      "excluded_answer": "Nora Pine",
+      "cause": "Traversal only follows outgoing relation values from mentioned entities."
+    },
+    "coding_nonmutation_confusion": [
+      {
+        "task": "fresh_coding_unique",
+        "original_target": null,
+        "diagnostic_without_nonmutation_clause": "mylib.py",
+        "note": "Diagnostic only: removing the instruction is NOT a proposed production fix. Preserve nonmutation requirement when fixing parser."
+      },
+      {
+        "task": "fresh_coding_rotate",
+        "original_target": null,
+        "diagnostic_without_nonmutation_clause": "mylib.py",
+        "note": "Diagnostic only: removing the instruction is NOT a proposed production fix. Preserve nonmutation requirement when fixing parser."
+      },
+      {
+        "task": "fresh_coding_transpose",
+        "original_target": null,
+        "diagnostic_without_nonmutation_clause": "mylib.py",
+        "note": "Diagnostic only: removing the instruction is NOT a proposed production fix. Preserve nonmutation requirement when fixing parser."
+      }
+    ]
+  },
+  "production_changed": false
+}

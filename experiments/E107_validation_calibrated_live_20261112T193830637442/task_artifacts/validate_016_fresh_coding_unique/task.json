@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_016_fresh_coding_unique",
+  "task_type": "coding",
+  "instruction": "Implement stable_unique(values) for hashable elements: return their first appearances in original order; do not modify values. Modify only mylib.py. Do not change tests. Write DONE to answer.txt after all tests pass.",
+  "reward": 5
+}

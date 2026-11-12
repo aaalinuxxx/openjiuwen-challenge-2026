@@ -1,0 +1,32 @@
+{
+  "task_id": "validate_062_fresh_search_chain",
+  "response": {
+    "id": "chatcmpl-a38714e4d6aae63c",
+    "created": 1794512415,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "1982",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 5,
+      "prompt_tokens": 149,
+      "total_tokens": 154,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

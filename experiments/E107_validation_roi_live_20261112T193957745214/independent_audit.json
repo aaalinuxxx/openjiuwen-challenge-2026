@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "calls": 12,
+  "effective_tokens": 872.5,
+  "requests": [
+    {
+      "task_id": "validate_095_fresh_search_custodian",
+      "cost": 15.7,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_039_search_irrelevant_conflict",
+      "cost": 17.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_062_fresh_search_chain",
+      "cost": 19.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_024_search_paraphrase_chain",
+      "cost": 19.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_030_pilot_extra_numeric_control",
+      "cost": 349.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 600,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_044_fresh_data_net",
+      "cost": 165.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 200,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_053_data_filtered_median",
+      "cost": 97.0,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 200,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_063_data_empty_count",
+      "cost": 75.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 153,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_082_math_sum",
+      "cost": 24.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 105,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_020_fresh_math_modular",
+      "cost": 25.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 80,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_003_fresh_data_group_max",
+      "cost": 43.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 28,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "validate_059_math_gcd",
+      "cost": 20.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 12,
+      "finish": "length",
+      "passed": true
+    }
+  ]
+}

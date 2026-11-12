@@ -1,0 +1,18 @@
+{
+  "task_id": "validate_020_fresh_math_modular",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown."
+      },
+      {
+        "role": "user",
+        "content": "Find the remainder when 7 raised to power 123 is divided by 101. Write only the integer result to answer.txt."
+      }
+    ],
+    "max_tokens": 80,
+    "temperature": 0.0
+  }
+}

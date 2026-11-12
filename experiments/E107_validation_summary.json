@@ -1,0 +1,483 @@
+{
+  "hypothesis": "H04.24",
+  "arms": {
+    "calibrated": {
+      "report": "experiments\\E107_validation_calibrated_live_20261112T193830637442\\report.json",
+      "report_sha256": "dd44df671189e469eebed508c6594c42375fb5347d8040d9b9f9a71ed7fd20c9",
+      "overall": {
+        "total": 100,
+        "solvable": 83,
+        "correct": 37,
+        "score": 122,
+        "max_score": 246,
+        "incorrect_solved": 2,
+        "truncations": 3,
+        "integrity_passed": true
+      },
+      "fresh": {
+        "total": 24,
+        "solvable": 20,
+        "correct": 5,
+        "score": 22,
+        "max_score": 63,
+        "incorrect_solved": 2,
+        "truncations": 2,
+        "integrity_passed": true
+      },
+      "seen": {
+        "total": 76,
+        "solvable": 63,
+        "correct": 32,
+        "score": 100,
+        "max_score": 183,
+        "incorrect_solved": 0,
+        "truncations": 1,
+        "integrity_passed": true
+      },
+      "calls": 33,
+      "effective_tokens": 872.5,
+      "fresh_api_attempted": [
+        "validate_020_fresh_math_modular",
+        "validate_056_fresh_search_conflict",
+        "validate_058_fresh_math_coin_ways",
+        "validate_062_fresh_search_chain",
+        "validate_073_fresh_math_prime_factor",
+        "validate_075_fresh_search_latest",
+        "validate_078_fresh_math_union",
+        "validate_081_fresh_math_paths",
+        "validate_086_fresh_search_inverse",
+        "validate_095_fresh_search_custodian"
+      ],
+      "fresh_api_attempted_count": 10,
+      "fresh_results": [
+        {
+          "task_id": "validate_003_fresh_data_group_max",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 4,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_004_fresh_math_inconsistent",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_016_fresh_coding_unique",
+          "status": "UNKNOWN",
+          "correct": false,
+          "reward": 5,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_018_fresh_data_missing",
+          "status": "SKIPPED",
+          "correct": false,
+          "reward": 5,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_020_fresh_math_modular",
+          "status": "SOLVED",
+          "correct": true,
+          "reward": 5,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_042_fresh_data_unique_pairs",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_043_fresh_coding_missing_positive",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 2,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_044_fresh_data_net",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 5,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_051_fresh_coding_transpose",
+          "status": "UNKNOWN",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_052_fresh_data_dates",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_056_fresh_search_conflict",
+          "status": "SOLVED",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_058_fresh_math_coin_ways",
+          "status": "TRUNCATED",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_062_fresh_search_chain",
+          "status": "SOLVED",
+          "correct": true,
+          "reward": 4,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_067_fresh_coding_conflict",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 5,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_069_fresh_data_positive_median",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 2,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_073_fresh_math_prime_factor",
+          "status": "TRUNCATED",
+          "correct": false,
+          "reward": 2,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_075_fresh_search_latest",
+          "status": "SOLVED",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_078_fresh_math_union",
+          "status": "SOLVED",
+          "correct": true,
+          "reward": 4,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_081_fresh_math_paths",
+          "status": "SOLVED",
+          "correct": true,
+          "reward": 4,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_085_fresh_coding_runs",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 5,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_086_fresh_search_inverse",
+          "status": "UNKNOWN",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_091_fresh_search_conditions",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_092_fresh_coding_rotate",
+          "status": "UNKNOWN",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_095_fresh_search_custodian",
+          "status": "SOLVED",
+          "correct": true,
+          "reward": 5,
+          "api_attempted": true
+        }
+      ]
+    },
+    "roi": {
+      "report": "experiments\\E107_validation_roi_live_20261112T193957745214\\report.json",
+      "report_sha256": "ee9c742240b48f6bf9c6d54d60c4491ac1ec655fc29e450a6d1777c481245f1d",
+      "overall": {
+        "total": 100,
+        "solvable": 83,
+        "correct": 26,
+        "score": 96,
+        "max_score": 246,
+        "incorrect_solved": 0,
+        "truncations": 2,
+        "integrity_passed": true
+      },
+      "fresh": {
+        "total": 24,
+        "solvable": 20,
+        "correct": 4,
+        "score": 19,
+        "max_score": 63,
+        "incorrect_solved": 0,
+        "truncations": 1,
+        "integrity_passed": true
+      },
+      "seen": {
+        "total": 76,
+        "solvable": 63,
+        "correct": 22,
+        "score": 77,
+        "max_score": 183,
+        "incorrect_solved": 0,
+        "truncations": 1,
+        "integrity_passed": true
+      },
+      "calls": 12,
+      "effective_tokens": 872.5,
+      "fresh_api_attempted": [
+        "validate_003_fresh_data_group_max",
+        "validate_020_fresh_math_modular",
+        "validate_044_fresh_data_net",
+        "validate_062_fresh_search_chain",
+        "validate_095_fresh_search_custodian"
+      ],
+      "fresh_api_attempted_count": 5,
+      "fresh_results": [
+        {
+          "task_id": "validate_003_fresh_data_group_max",
+          "status": "TRUNCATED",
+          "correct": false,
+          "reward": 4,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_004_fresh_math_inconsistent",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_016_fresh_coding_unique",
+          "status": "UNKNOWN",
+          "correct": false,
+          "reward": 5,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_018_fresh_data_missing",
+          "status": "SKIPPED",
+          "correct": false,
+          "reward": 5,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_020_fresh_math_modular",
+          "status": "SOLVED",
+          "correct": true,
+          "reward": 5,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_042_fresh_data_unique_pairs",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_043_fresh_coding_missing_positive",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 2,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_044_fresh_data_net",
+          "status": "SOLVED",
+          "correct": true,
+          "reward": 5,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_051_fresh_coding_transpose",
+          "status": "UNKNOWN",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_052_fresh_data_dates",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_056_fresh_search_conflict",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_058_fresh_math_coin_ways",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_062_fresh_search_chain",
+          "status": "SOLVED",
+          "correct": true,
+          "reward": 4,
+          "api_attempted": true
+        },
+        {
+          "task_id": "validate_067_fresh_coding_conflict",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 5,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_069_fresh_data_positive_median",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 2,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_073_fresh_math_prime_factor",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 2,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_075_fresh_search_latest",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_078_fresh_math_union",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 4,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_081_fresh_math_paths",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 4,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_085_fresh_coding_runs",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 5,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_086_fresh_search_inverse",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_091_fresh_search_conditions",
+          "status": "BUDGET_EXCEEDED",
+          "correct": false,
+          "reward": 1,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_092_fresh_coding_rotate",
+          "status": "UNKNOWN",
+          "correct": false,
+          "reward": 3,
+          "api_attempted": false
+        },
+        {
+          "task_id": "validate_095_fresh_search_custodian",
+          "status": "SOLVED",
+          "correct": true,
+          "reward": 5,
+          "api_attempted": true
+        }
+      ]
+    }
+  },
+  "acceptance_checks": {
+    "higher_total_score": true,
+    "fresh_score_not_lower": true,
+    "wrong_solved_not_increased": false,
+    "integrity_passed": true,
+    "fresh_api_coverage_at_least_6": true,
+    "accounting_passed": true
+  },
+  "accepted_on_this_fixture": false,
+  "gained": [
+    "validate_002_math_sum",
+    "validate_005_search_new_relation",
+    "validate_007_search_irrelevant_conflict",
+    "validate_036_math_zero_warning",
+    "validate_049_math_zero_warning",
+    "validate_057_math_percentage",
+    "validate_059_math_gcd",
+    "validate_066_search_paraphrase_chain",
+    "validate_078_fresh_math_union",
+    "validate_079_math_paraphrase",
+    "validate_081_fresh_math_paths",
+    "validate_083_math_gcd",
+    "validate_093_search_paraphrase_chain",
+    "validate_094_search_new_relation",
+    "validate_098_search_new_relation"
+  ],
+  "lost": [
+    "validate_030_pilot_extra_numeric_control",
+    "validate_044_fresh_data_net",
+    "validate_053_data_filtered_median",
+    "validate_063_data_empty_count"
+  ],
+  "new_calls": 45,
+  "new_effective_tokens": 1745.0,
+  "prior_evening_calls": 153,
+  "prior_evening_effective_tokens": 17354.3,
+  "production_ranking_changed": false,
+  "limitations": [
+    "Author-generated validation; not external contest holdout.",
+    "76 familiar copies plus24 new tasks; fresh subgroup reported separately.",
+    "One seed and one live run per arm; no statistical universal-superiority claim.",
+    "Budget denied tasks do not validate solver quality."
+  ],
+  "evening_calls": 198,
+  "evening_effective_tokens": 19099.3
+}

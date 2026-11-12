@@ -1,0 +1,18 @@
+{
+  "task_id": "validate_003_fresh_data_group_max",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Write ONLY raw executable Python 3 code (no markdown fences, no explanations) that reads the CSV file in the current directory and prints ONLY the final answer to stdout. The harness handles any instruction to write answer.txt; your program must only print the result. Use the standard library. Read all rows; the preview is incomplete. Do not modify input files."
+      },
+      {
+        "role": "user",
+        "content": "File: records.csv\nHeader & first rows:\nregion,value\nwest,3\nwest,7\neast,8\n\nTask: Read records.csv. Sum value separately for each region, then return the largest of these region totals as a number. Use every row. Write the number to answer.txt."
+      }
+    ],
+    "max_tokens": 28,
+    "temperature": 0.0
+  }
+}

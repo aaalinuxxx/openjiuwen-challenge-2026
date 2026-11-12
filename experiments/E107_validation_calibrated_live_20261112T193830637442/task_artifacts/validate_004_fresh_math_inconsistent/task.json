@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_004_fresh_math_inconsistent",
+  "task_type": "math",
+  "instruction": "Find an integer n satisfying BOTH n+4=10 and n+4=11. If no such integer exists, return UNSOLVABLE. Write the answer to answer.txt.",
+  "reward": 1
+}

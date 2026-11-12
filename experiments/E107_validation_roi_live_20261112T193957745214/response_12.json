@@ -1,0 +1,35 @@
+{
+  "task_id": "validate_059_math_gcd",
+  "response": {
+    "id": "chatcmpl-a41ab97d64f08085",
+    "created": 1794512448,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "import math\nprint(math.gcd(84, ",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 87,
+      "total_tokens": 99,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

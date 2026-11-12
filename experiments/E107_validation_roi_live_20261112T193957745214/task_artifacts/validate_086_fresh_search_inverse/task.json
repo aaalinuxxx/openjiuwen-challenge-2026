@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_086_fresh_search_inverse",
+  "task_type": "search",
+  "instruction": "Use only kb/. Which person has tutor named Lina Vale? Exactly one person matches. Write only that person name to answer.txt.",
+  "reward": 1
+}

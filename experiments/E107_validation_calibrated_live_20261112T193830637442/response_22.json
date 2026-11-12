@@ -1,0 +1,35 @@
+{
+  "task_id": "validate_058_fresh_math_coin_ways",
+  "response": {
+    "id": "chatcmpl-b114eb86a9324626",
+    "created": 1794512349,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "def count_partitions():\n    target = 7\n    coins = [1, 3, 4]\n    # dp[i] will store the number of ways to make sum i using the coins considered so far\n    dp = [0] * (target + 1)\n    dp[0] = 1  # One way to make sum 0: use no coins\n    \n    for coin in coins:\n        for i in range(coin, target + 1):\n            dp[i] += dp[i - coin]\n            \n   ",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 116,
+      "prompt_tokens": 104,
+      "total_tokens": 220,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
