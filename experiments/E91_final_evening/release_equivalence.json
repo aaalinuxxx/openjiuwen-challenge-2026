@@ -1,0 +1,9 @@
+{
+  "changes_after_final_api": [
+    "run_agent.py"
+  ],
+  "change": "Default CLI profile legacy -> validated only; explicit validated used by API benchmark unchanged",
+  "unit_config_equivalence_passed": true,
+  "organizer_cli_no_profile_offline_passed": true,
+  "tests_passed": 177
+}

@@ -1,0 +1,136 @@
+{
+  "date_moscow": "2026-11-12",
+  "start_commit": "10fb48dedc7a66aaa487045d2da5f9fc5ccda99d",
+  "frozen_final_commit": "4a7370b",
+  "status": "EVENING_PLAN_COMPLETED",
+  "runs": [
+    {
+      "id": "E86",
+      "hypothesis": "H04.20",
+      "correct": 25,
+      "total": 26,
+      "calls": 23,
+      "effective_tokens": 1896.6,
+      "report": "experiments/E86_mixed_profile_live_20261112T184718872839/report.json"
+    },
+    {
+      "id": "E88",
+      "hypothesis": "H04.21",
+      "correct": 9,
+      "total": 10,
+      "calls": 10,
+      "effective_tokens": 3568.1,
+      "report": "experiments/E88_numeric_joins_live_20261112T185006706656/report.json"
+    },
+    {
+      "id": "E90",
+      "hypothesis": "H04.22",
+      "correct": 5,
+      "total": 5,
+      "calls": 5,
+      "effective_tokens": 1767.5,
+      "report": "experiments/E90_compact_code_live_20261112T185243149892/report.json"
+    },
+    {
+      "id": "E92",
+      "hypothesis": "H04.20/H04.22_FINAL_REGRESSION",
+      "correct": 26,
+      "total": 26,
+      "calls": 23,
+      "effective_tokens": 1824.3,
+      "report": "experiments/E92_final_mixed_live_20261112T185457604685/report.json"
+    }
+  ],
+  "total_real_http_calls": 61,
+  "total_effective_tokens": 9056.5,
+  "evening_cap": 10000,
+  "all_new_costs_accounted": true,
+  "final_metrics": {
+    "total": 31,
+    "solvable": 26,
+    "correct": 26,
+    "score": 78,
+    "max_score": 78,
+    "incorrect_solved_answers": 0,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 3,
+    "truncations": 0,
+    "integrity_passed": true
+  },
+  "final_by_type": {
+    "coding": {
+      "total": 6,
+      "solvable": 5,
+      "correct": 5,
+      "score": 15,
+      "max_score": 15,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 0,
+      "truncations": 0,
+      "integrity_passed": true
+    },
+    "data_analysis": {
+      "total": 13,
+      "solvable": 12,
+      "correct": 12,
+      "score": 36,
+      "max_score": 36,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 1,
+      "truncations": 0,
+      "integrity_passed": true
+    },
+    "math": {
+      "total": 6,
+      "solvable": 5,
+      "correct": 5,
+      "score": 15,
+      "max_score": 15,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 0,
+      "truncations": 0,
+      "integrity_passed": true
+    },
+    "search": {
+      "total": 6,
+      "solvable": 4,
+      "correct": 4,
+      "score": 12,
+      "max_score": 12,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 2,
+      "truncations": 0,
+      "integrity_passed": true
+    }
+  },
+  "final_budget": 2700,
+  "unit_tests_passed": 177,
+  "release_promotion": {
+    "default_profile": "validated",
+    "legacy_available": true,
+    "full_api_used_explicit_same_profile": true,
+    "default_equivalence_unit_test": true,
+    "real_main_cli_offline_passed": true
+  },
+  "holdout": {
+    "count": 6,
+    "path": "experiments/E87_numeric_joins/holdout",
+    "api_queried": false
+  },
+  "limitations": [
+    "Known adaptive mixed set; not hidden contest tasks.",
+    "Only five selected tasks tested after concise-code change; full 10-task numeric suite not rerun.",
+    "E92 budget2700 vs E86 3000; coding_stateful actual cap688 vs700.",
+    "Three justified refusals among five impossible tasks; math_zero_operation and coding_pure_conflict FAILED with no answer.",
+    "Docker/Linux read-only container not validated here."
+  ],
+  "next": [
+    "Six unused holdout tasks on real API before any tuning.",
+    "Policy comparison on a larger mixed set, within separately allocated budget.",
+    "If truncation returns, compare output cap and reservation floor together; do not blindly raise cap."
+  ]
+}

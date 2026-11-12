@@ -1,0 +1,6 @@
+{
+  "git_tracked_files": 6582,
+  "git_tracked_bytes": 8387421,
+  "docker_executable_available": false,
+  "note": "Tracked files only; includes experiment artifacts, excludes local venv and .git. Docker image size and Linux read-only run still need colleague validation."
+}

@@ -1,0 +1,35 @@
+{
+  "task_id": "math_percentage",
+  "response": {
+    "id": "chatcmpl-878503aae4ff8322",
+    "created": 1794509756,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "price = 200\ndiscount = 0.15\nfinal_price = int(price * (1 - discount))\nprint(final_price)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 32,
+      "prompt_tokens": 101,
+      "total_tokens": 133,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

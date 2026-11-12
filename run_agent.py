@@ -55,7 +55,7 @@ def parse_args(argv=None) -> argparse.Namespace:
     )
     parser.add_argument('--experimental-joins', action='store_true',
                         help='Enable experimental typed/local joins and multi-CSV fallback')
-    parser.add_argument("--profile", choices=("legacy", "validated"), default="legacy",
+    parser.add_argument("--profile", choices=("legacy", "validated"), default="validated",
                         help="validated: joins, search/data floors 300/700, concurrency 1")
     parser.add_argument("--max-api-calls", type=int, default=None)
     args, _ = parser.parse_known_args(argv)

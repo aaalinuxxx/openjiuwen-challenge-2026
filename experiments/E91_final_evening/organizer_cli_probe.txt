@@ -1,0 +1,12 @@
+2026-11-12 21:57:22,407 [INFO] scheduler: Отобрано выполнимых кандидатов в очередь: 1
+2026-11-12 21:57:23,216 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.schemas
+2026-11-12 21:57:23,218 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.tables
+2026-11-12 21:57:23,218 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.types
+2026-11-12 21:57:23,218 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.constraints
+2026-11-12 21:57:23,218 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.defaults
+2026-11-12 21:57:23,218 [INFO] alembic.runtime.plugins: setup plugin alembic.autogenerate.comments
+2026-11-12 21:57:23,218 [INFO] alembic.runtime.plugins: setup plugin alembic.ext.checkconstraint_byname
+2026-11-12 21:57:23,458 [INFO] scheduler: [SOLVED] pilot_known_or_failure | type=data_analysis | reward=3 | answer='30' | cost=0.0
+2026-11-12 21:57:23,459 [INFO] run_agent: Budget audit: C:\Users\PC\AppData\Local\Temp\openjiuwen_logs\budget_20261112T185718858457.json; unaccounted request: False
+2026-11-12 21:57:23,459 [INFO] run_agent: Завершено. Решено задач: 1/1 | Набрано баллов (оценка): 3 | Потрачено приведённых токенов: 0.0
+{"main_cli_passed": true, "answer": "30", "actual_http_calls": 0}

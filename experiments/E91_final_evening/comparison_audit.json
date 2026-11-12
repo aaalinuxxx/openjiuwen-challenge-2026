@@ -1,0 +1,12 @@
+{
+  "ranking_equal": true,
+  "cap_changes": [
+    {
+      "task_id": "coding_stateful",
+      "old": 700,
+      "new": 688
+    }
+  ],
+  "source_tasks_unchanged": true,
+  "metadata_matches_actual_requests": true
+}
