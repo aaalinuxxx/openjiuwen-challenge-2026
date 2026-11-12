@@ -1,0 +1,6 @@
+{
+  "done": true,
+  "code": 0,
+  "stdout": "Report: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E98_csv_output_budget_offline_20261112T190820067893\\report.json\r\n{\"task_id\": \"hold_decimal_multiplicity\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"hold_leading_zero\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"hold_negative_round\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"hold_no_right_rows\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"hold_postfilter\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"hold_weighted\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"status\": \"COMPLETED\", \"metrics\": {\"total\": 6, \"solvable\": 6, \"correct\": 0, \"score\": 0, \"max_score\": 18, \"incorrect_solved_answers\": 0, \"non_solved_answer_files\": 0, \"justified_refusals\": 0, \"truncations\": 0, \"integrity_passed\": true}, \"audit\": {\"passed\": true, \"calls\": 0, \"effective_tokens\": 0.0, \"requests\": []}, \"historical_comparison\": {\"note\": \"Historical comparison, not simultaneous causal A/B\", \"lost\": [\"hold_decimal_multiplicity\", \"hold_leading_zero\", \"hold_negative_round\", \"hold_no_right_rows\", \"hold_weighted\"], \"gained\": []}, \"offline_passed\": true}\r\n",
+  "stderr": ""
+}

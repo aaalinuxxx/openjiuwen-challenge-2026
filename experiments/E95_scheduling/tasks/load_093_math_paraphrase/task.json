@@ -1,0 +1,6 @@
+{
+  "task_id": "load_093_math_paraphrase",
+  "task_type": "math",
+  "instruction": "There are 47 books on a shelf. Add 13 books, then remove 9. How many remain? Write only the final answer to answer.txt.",
+  "reward": 5
+}

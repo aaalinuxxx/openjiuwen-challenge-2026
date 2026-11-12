@@ -1,0 +1,522 @@
+{
+  "seed": 2026111201,
+  "count": 100,
+  "unique_source_families": 31,
+  "solvable": 84,
+  "max_score": 250,
+  "by_type": {
+    "data_analysis": 43,
+    "search": 18,
+    "math": 19,
+    "coding": 20
+  },
+  "reward_counts": {
+    "1": 22,
+    "5": 21,
+    "4": 20,
+    "3": 17,
+    "2": 20
+  },
+  "lineage": [
+    {
+      "task_id": "load_000_pilot_string_keys_and_blocked",
+      "source_task_id": "pilot_string_keys_and_blocked",
+      "reward": 1
+    },
+    {
+      "task_id": "load_001_pilot_empty_right",
+      "source_task_id": "pilot_empty_right",
+      "reward": 5
+    },
+    {
+      "task_id": "load_002_data_two_file_join",
+      "source_task_id": "data_two_file_join",
+      "reward": 5
+    },
+    {
+      "task_id": "load_003_pilot_known_or_failure",
+      "source_task_id": "pilot_known_or_failure",
+      "reward": 1
+    },
+    {
+      "task_id": "load_004_pilot_previous_local_control",
+      "source_task_id": "pilot_previous_local_control",
+      "reward": 4
+    },
+    {
+      "task_id": "load_005_data_missing_source",
+      "source_task_id": "data_missing_source",
+      "reward": 1
+    },
+    {
+      "task_id": "load_006_pilot_mixed_duplicates",
+      "source_task_id": "pilot_mixed_duplicates",
+      "reward": 1
+    },
+    {
+      "task_id": "load_007_data_two_file_join",
+      "source_task_id": "data_two_file_join",
+      "reward": 1
+    },
+    {
+      "task_id": "load_008_pilot_string_keys_and_blocked",
+      "source_task_id": "pilot_string_keys_and_blocked",
+      "reward": 3
+    },
+    {
+      "task_id": "load_009_search_conflicting_fact",
+      "source_task_id": "search_conflicting_fact",
+      "reward": 5
+    },
+    {
+      "task_id": "load_010_data_filtered_median",
+      "source_task_id": "data_filtered_median",
+      "reward": 2
+    },
+    {
+      "task_id": "load_011_search_conflicting_fact",
+      "source_task_id": "search_conflicting_fact",
+      "reward": 4
+    },
+    {
+      "task_id": "load_012_math_sum",
+      "source_task_id": "math_sum",
+      "reward": 1
+    },
+    {
+      "task_id": "load_013_pilot_extra_numeric_control",
+      "source_task_id": "pilot_extra_numeric_control",
+      "reward": 3
+    },
+    {
+      "task_id": "load_014_search_new_relation",
+      "source_task_id": "search_new_relation",
+      "reward": 3
+    },
+    {
+      "task_id": "load_015_pilot_empty_filter_not_unmatched",
+      "source_task_id": "pilot_empty_filter_not_unmatched",
+      "reward": 1
+    },
+    {
+      "task_id": "load_016_math_paraphrase",
+      "source_task_id": "math_paraphrase",
+      "reward": 5
+    },
+    {
+      "task_id": "load_017_math_gcd",
+      "source_task_id": "math_gcd",
+      "reward": 3
+    },
+    {
+      "task_id": "load_018_coding_brackets",
+      "source_task_id": "coding_brackets",
+      "reward": 3
+    },
+    {
+      "task_id": "load_019_coding_stateful",
+      "source_task_id": "coding_stateful",
+      "reward": 2
+    },
+    {
+      "task_id": "load_020_search_three_hop",
+      "source_task_id": "search_three_hop",
+      "reward": 3
+    },
+    {
+      "task_id": "load_021_coding_intervals",
+      "source_task_id": "coding_intervals",
+      "reward": 2
+    },
+    {
+      "task_id": "load_022_pilot_mixed_duplicates",
+      "source_task_id": "pilot_mixed_duplicates",
+      "reward": 1
+    },
+    {
+      "task_id": "load_023_coding_multimodule",
+      "source_task_id": "coding_multimodule",
+      "reward": 4
+    },
+    {
+      "task_id": "load_024_pilot_known_or_failure",
+      "source_task_id": "pilot_known_or_failure",
+      "reward": 1
+    },
+    {
+      "task_id": "load_025_coding_pure_conflict",
+      "source_task_id": "coding_pure_conflict",
+      "reward": 4
+    },
+    {
+      "task_id": "load_026_pilot_extra_numeric_control",
+      "source_task_id": "pilot_extra_numeric_control",
+      "reward": 5
+    },
+    {
+      "task_id": "load_027_pilot_empty_filter_not_unmatched",
+      "source_task_id": "pilot_empty_filter_not_unmatched",
+      "reward": 4
+    },
+    {
+      "task_id": "load_028_search_irrelevant_conflict",
+      "source_task_id": "search_irrelevant_conflict",
+      "reward": 3
+    },
+    {
+      "task_id": "load_029_coding_pure_conflict",
+      "source_task_id": "coding_pure_conflict",
+      "reward": 2
+    },
+    {
+      "task_id": "load_030_coding_overlap",
+      "source_task_id": "coding_overlap",
+      "reward": 4
+    },
+    {
+      "task_id": "load_031_math_zero_operation",
+      "source_task_id": "math_zero_operation",
+      "reward": 5
+    },
+    {
+      "task_id": "load_032_pilot_previous_local_control",
+      "source_task_id": "pilot_previous_local_control",
+      "reward": 5
+    },
+    {
+      "task_id": "load_033_math_percentage",
+      "source_task_id": "math_percentage",
+      "reward": 1
+    },
+    {
+      "task_id": "load_034_pilot_mixed_duplicates",
+      "source_task_id": "pilot_mixed_duplicates",
+      "reward": 4
+    },
+    {
+      "task_id": "load_035_pilot_empty_right",
+      "source_task_id": "pilot_empty_right",
+      "reward": 5
+    },
+    {
+      "task_id": "load_036_math_paraphrase",
+      "source_task_id": "math_paraphrase",
+      "reward": 5
+    },
+    {
+      "task_id": "load_037_search_absent",
+      "source_task_id": "search_absent",
+      "reward": 1
+    },
+    {
+      "task_id": "load_038_coding_intervals",
+      "source_task_id": "coding_intervals",
+      "reward": 5
+    },
+    {
+      "task_id": "load_039_data_weighted_mean",
+      "source_task_id": "data_weighted_mean",
+      "reward": 5
+    },
+    {
+      "task_id": "load_040_math_zero_operation",
+      "source_task_id": "math_zero_operation",
+      "reward": 4
+    },
+    {
+      "task_id": "load_041_pilot_string_keys_and_blocked",
+      "source_task_id": "pilot_string_keys_and_blocked",
+      "reward": 2
+    },
+    {
+      "task_id": "load_042_search_absent",
+      "source_task_id": "search_absent",
+      "reward": 4
+    },
+    {
+      "task_id": "load_043_search_paraphrase_chain",
+      "source_task_id": "search_paraphrase_chain",
+      "reward": 4
+    },
+    {
+      "task_id": "load_044_pilot_empty_filter_not_unmatched",
+      "source_task_id": "pilot_empty_filter_not_unmatched",
+      "reward": 5
+    },
+    {
+      "task_id": "load_045_pilot_empty_filter_not_unmatched",
+      "source_task_id": "pilot_empty_filter_not_unmatched",
+      "reward": 2
+    },
+    {
+      "task_id": "load_046_search_absent",
+      "source_task_id": "search_absent",
+      "reward": 5
+    },
+    {
+      "task_id": "load_047_data_distinct",
+      "source_task_id": "data_distinct",
+      "reward": 2
+    },
+    {
+      "task_id": "load_048_coding_brackets",
+      "source_task_id": "coding_brackets",
+      "reward": 5
+    },
+    {
+      "task_id": "load_049_math_zero_warning",
+      "source_task_id": "math_zero_warning",
+      "reward": 4
+    },
+    {
+      "task_id": "load_050_search_conflicting_fact",
+      "source_task_id": "search_conflicting_fact",
+      "reward": 1
+    },
+    {
+      "task_id": "load_051_pilot_previous_local_control",
+      "source_task_id": "pilot_previous_local_control",
+      "reward": 5
+    },
+    {
+      "task_id": "load_052_coding_stateful",
+      "source_task_id": "coding_stateful",
+      "reward": 1
+    },
+    {
+      "task_id": "load_053_data_weighted_mean",
+      "source_task_id": "data_weighted_mean",
+      "reward": 4
+    },
+    {
+      "task_id": "load_054_search_paraphrase_chain",
+      "source_task_id": "search_paraphrase_chain",
+      "reward": 2
+    },
+    {
+      "task_id": "load_055_pilot_extra_numeric_control",
+      "source_task_id": "pilot_extra_numeric_control",
+      "reward": 1
+    },
+    {
+      "task_id": "load_056_data_empty_count",
+      "source_task_id": "data_empty_count",
+      "reward": 2
+    },
+    {
+      "task_id": "load_057_coding_multimodule",
+      "source_task_id": "coding_multimodule",
+      "reward": 3
+    },
+    {
+      "task_id": "load_058_math_percentage",
+      "source_task_id": "math_percentage",
+      "reward": 4
+    },
+    {
+      "task_id": "load_059_coding_brackets",
+      "source_task_id": "coding_brackets",
+      "reward": 1
+    },
+    {
+      "task_id": "load_060_search_irrelevant_conflict",
+      "source_task_id": "search_irrelevant_conflict",
+      "reward": 5
+    },
+    {
+      "task_id": "load_061_data_missing_source",
+      "source_task_id": "data_missing_source",
+      "reward": 1
+    },
+    {
+      "task_id": "load_062_data_distinct",
+      "source_task_id": "data_distinct",
+      "reward": 1
+    },
+    {
+      "task_id": "load_063_math_zero_warning",
+      "source_task_id": "math_zero_warning",
+      "reward": 4
+    },
+    {
+      "task_id": "load_064_data_missing_source",
+      "source_task_id": "data_missing_source",
+      "reward": 3
+    },
+    {
+      "task_id": "load_065_coding_multimodule",
+      "source_task_id": "coding_multimodule",
+      "reward": 2
+    },
+    {
+      "task_id": "load_066_data_empty_count",
+      "source_task_id": "data_empty_count",
+      "reward": 1
+    },
+    {
+      "task_id": "load_067_coding_overlap",
+      "source_task_id": "coding_overlap",
+      "reward": 4
+    },
+    {
+      "task_id": "load_068_pilot_known_or_failure",
+      "source_task_id": "pilot_known_or_failure",
+      "reward": 3
+    },
+    {
+      "task_id": "load_069_math_gcd",
+      "source_task_id": "math_gcd",
+      "reward": 3
+    },
+    {
+      "task_id": "load_070_data_weighted_mean",
+      "source_task_id": "data_weighted_mean",
+      "reward": 4
+    },
+    {
+      "task_id": "load_071_search_irrelevant_conflict",
+      "source_task_id": "search_irrelevant_conflict",
+      "reward": 3
+    },
+    {
+      "task_id": "load_072_pilot_known_or_failure",
+      "source_task_id": "pilot_known_or_failure",
+      "reward": 2
+    },
+    {
+      "task_id": "load_073_coding_pure_conflict",
+      "source_task_id": "coding_pure_conflict",
+      "reward": 4
+    },
+    {
+      "task_id": "load_074_math_sum",
+      "source_task_id": "math_sum",
+      "reward": 5
+    },
+    {
+      "task_id": "load_075_search_three_hop",
+      "source_task_id": "search_three_hop",
+      "reward": 5
+    },
+    {
+      "task_id": "load_076_coding_stateful",
+      "source_task_id": "coding_stateful",
+      "reward": 2
+    },
+    {
+      "task_id": "load_077_search_paraphrase_chain",
+      "source_task_id": "search_paraphrase_chain",
+      "reward": 3
+    },
+    {
+      "task_id": "load_078_data_filtered_median",
+      "source_task_id": "data_filtered_median",
+      "reward": 5
+    },
+    {
+      "task_id": "load_079_math_gcd",
+      "source_task_id": "math_gcd",
+      "reward": 2
+    },
+    {
+      "task_id": "load_080_data_filtered_median",
+      "source_task_id": "data_filtered_median",
+      "reward": 2
+    },
+    {
+      "task_id": "load_081_math_zero_operation",
+      "source_task_id": "math_zero_operation",
+      "reward": 3
+    },
+    {
+      "task_id": "load_082_search_new_relation",
+      "source_task_id": "search_new_relation",
+      "reward": 1
+    },
+    {
+      "task_id": "load_083_math_percentage",
+      "source_task_id": "math_percentage",
+      "reward": 4
+    },
+    {
+      "task_id": "load_084_pilot_mixed_duplicates",
+      "source_task_id": "pilot_mixed_duplicates",
+      "reward": 2
+    },
+    {
+      "task_id": "load_085_pilot_empty_right",
+      "source_task_id": "pilot_empty_right",
+      "reward": 4
+    },
+    {
+      "task_id": "load_086_data_distinct",
+      "source_task_id": "data_distinct",
+      "reward": 2
+    },
+    {
+      "task_id": "load_087_coding_intervals",
+      "source_task_id": "coding_intervals",
+      "reward": 3
+    },
+    {
+      "task_id": "load_088_math_sum",
+      "source_task_id": "math_sum",
+      "reward": 2
+    },
+    {
+      "task_id": "load_089_data_empty_count",
+      "source_task_id": "data_empty_count",
+      "reward": 3
+    },
+    {
+      "task_id": "load_090_coding_overlap",
+      "source_task_id": "coding_overlap",
+      "reward": 1
+    },
+    {
+      "task_id": "load_091_math_zero_warning",
+      "source_task_id": "math_zero_warning",
+      "reward": 2
+    },
+    {
+      "task_id": "load_092_search_three_hop",
+      "source_task_id": "search_three_hop",
+      "reward": 2
+    },
+    {
+      "task_id": "load_093_math_paraphrase",
+      "source_task_id": "math_paraphrase",
+      "reward": 5
+    },
+    {
+      "task_id": "load_094_data_two_file_join",
+      "source_task_id": "data_two_file_join",
+      "reward": 1
+    },
+    {
+      "task_id": "load_095_search_new_relation",
+      "source_task_id": "search_new_relation",
+      "reward": 5
+    },
+    {
+      "task_id": "load_096_math_percentage",
+      "source_task_id": "math_percentage",
+      "reward": 3
+    },
+    {
+      "task_id": "load_097_pilot_string_keys_and_blocked",
+      "source_task_id": "pilot_string_keys_and_blocked",
+      "reward": 4
+    },
+    {
+      "task_id": "load_098_coding_brackets",
+      "source_task_id": "coding_brackets",
+      "reward": 2
+    },
+    {
+      "task_id": "load_099_coding_pure_conflict",
+      "source_task_id": "coding_pure_conflict",
+      "reward": 1
+    }
+  ]
+}

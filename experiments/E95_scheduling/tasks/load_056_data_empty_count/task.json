@@ -1,0 +1,6 @@
+{
+  "task_id": "load_056_data_empty_count",
+  "task_type": "data_analysis",
+  "instruction": "Using sales.csv, count rows whose category is green. An empty selection has count 0. Write only the final answer to answer.txt.",
+  "reward": 2
+}

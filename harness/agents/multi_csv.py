@@ -65,7 +65,8 @@ async def solve_multi_csv_task(ctx, bridge):
               "Honor the specified join multiplicity, missing-match handling, filters and rounding. "
               "Keep the code concise: no comments, explanations, markdown fences or unused imports.")
     prompt = "CSV schemas and first three data rows:\n" + description + "\nTask: " + ctx.instruction
-    code, inp, out, reasoning = await bridge.complete(model=model,system_prompt=system,user_prompt=prompt,max_tokens=400)
+    cap = getattr(getattr(bridge, "config", None), "multi_csv_max_output_tokens", 400)
+    code, inp, out, reasoning = await bridge.complete(model=model,system_prompt=system,user_prompt=prompt,max_tokens=cap)
     code = re.sub(r"^```(?:python)?|```$", "", code.strip(), flags=re.MULTILINE).strip()
     counts = dict(input_tokens=inp,output_tokens=out,reasoning_tokens=reasoning,model_used=model)
     status, answer, note = run_csv_snippet(code, selected)

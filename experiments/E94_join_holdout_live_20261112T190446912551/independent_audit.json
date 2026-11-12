@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "calls": 6,
+  "effective_tokens": 2028.4,
+  "requests": [
+    {
+      "task_id": "hold_decimal_multiplicity",
+      "cost": 260.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_leading_zero",
+      "cost": 311.4,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_negative_round",
+      "cost": 306.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_no_right_rows",
+      "cost": 358.7,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_postfilter",
+      "cost": 443.7,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "hold_weighted",
+      "cost": 347.4,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 400,
+      "finish": "stop",
+      "passed": true
+    }
+  ]
+}

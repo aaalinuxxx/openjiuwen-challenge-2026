@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_weighted",
+  "task_type": "data_analysis",
+  "instruction": "Calculate a scalar from orders.csv and prices.csv. Treat sku and code as text identifiers. For each order, enumerate all price records with an identical code; repeated records represent distinct matches. Discard orders that have no price match. Compute sum(qty * price) divided by sum(qty) over all retained pairs; repeat qty for each matching price row. Use every CSV row, including rows after the previews. Quantities and prices may be signed decimals. Round only the final result to two decimal places using ROUND_HALF_UP. Write only the numeric result to answer.txt.",
+  "reward": 3
+}

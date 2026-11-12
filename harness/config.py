@@ -32,9 +32,12 @@ class HarnessConfig:
     request_timeout_sec: float = 60.0
     workflow_timeout_sec: float = 180.0
 
+    multi_csv_max_output_tokens: int = 400
     experimental_joins: bool = False
 
     def __post_init__(self):
+        if type(self.multi_csv_max_output_tokens) is not int or not 1 <= self.multi_csv_max_output_tokens <= 4096:
+            raise ValueError("multi_csv_max_output_tokens must be an integer from 1 to 4096")
         if type(self.experimental_joins) is not bool:
             raise ValueError("experimental_joins must be a bool")
         for value in (self.request_timeout_sec, self.workflow_timeout_sec):

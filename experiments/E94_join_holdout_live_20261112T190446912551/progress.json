@@ -1,0 +1,157 @@
+{
+  "results": {
+    "hold_decimal_multiplicity": {
+      "task_id": "hold_decimal_multiplicity",
+      "status": "SOLVED",
+      "answer": "6.250",
+      "input_tokens": 403,
+      "output_tokens": 220,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 3.827999999979511,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "hold_leading_zero": {
+      "task_id": "hold_leading_zero",
+      "status": "SOLVED",
+      "answer": "5.0",
+      "input_tokens": 404,
+      "output_tokens": 271,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 6.717999999993481,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "hold_negative_round": {
+      "task_id": "hold_negative_round",
+      "status": "SOLVED",
+      "answer": "-0.02",
+      "input_tokens": 339,
+      "output_tokens": 273,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 10.25,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "hold_no_right_rows": {
+      "task_id": "hold_no_right_rows",
+      "status": "SOLVED",
+      "answer": "3.75",
+      "input_tokens": 337,
+      "output_tokens": 325,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 14.03100000001723,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    },
+    "hold_postfilter": {
+      "task_id": "hold_postfilter",
+      "status": "TRUNCATED",
+      "answer": null,
+      "input_tokens": 437,
+      "output_tokens": 400,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 5.89000000001397,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": "Output limit reached; usage accounted"
+    },
+    "hold_weighted": {
+      "task_id": "hold_weighted",
+      "status": "SOLVED",
+      "answer": "1.00",
+      "input_tokens": 394,
+      "output_tokens": 308,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 6.905999999959022,
+      "model_used": "qwen3.6-35b-a3b-noreason",
+      "notes": ""
+    }
+  },
+  "budget": {
+    "budget": 2500.0,
+    "known_effective_tokens": 2028.4,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "hold_decimal_multiplicity",
+        "status": "ACCOUNTED",
+        "reserved_units": 6561,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2561,
+        "output_cap": 400,
+        "input_tokens": 403,
+        "output_tokens": 220,
+        "reasoning_tokens": 0,
+        "effective_cost": 260.3
+      },
+      {
+        "ticket": 1,
+        "task_id": "hold_leading_zero",
+        "status": "ACCOUNTED",
+        "reserved_units": 6562,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2562,
+        "output_cap": 400,
+        "input_tokens": 404,
+        "output_tokens": 271,
+        "reasoning_tokens": 0,
+        "effective_cost": 311.4
+      },
+      {
+        "ticket": 2,
+        "task_id": "hold_negative_round",
+        "status": "ACCOUNTED",
+        "reserved_units": 6436,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2436,
+        "output_cap": 400,
+        "input_tokens": 339,
+        "output_tokens": 273,
+        "reasoning_tokens": 0,
+        "effective_cost": 306.9
+      },
+      {
+        "ticket": 3,
+        "task_id": "hold_no_right_rows",
+        "status": "ACCOUNTED",
+        "reserved_units": 6436,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2436,
+        "output_cap": 400,
+        "input_tokens": 337,
+        "output_tokens": 325,
+        "reasoning_tokens": 0,
+        "effective_cost": 358.7
+      },
+      {
+        "ticket": 4,
+        "task_id": "hold_postfilter",
+        "status": "ACCOUNTED",
+        "reserved_units": 6757,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2757,
+        "output_cap": 400,
+        "input_tokens": 437,
+        "output_tokens": 400,
+        "reasoning_tokens": 0,
+        "effective_cost": 443.7
+      },
+      {
+        "ticket": 5,
+        "task_id": "hold_weighted",
+        "status": "ACCOUNTED",
+        "reserved_units": 6559,
+        "task_limit_units": 7000,
+        "input_token_estimate": 2559,
+        "output_cap": 400,
+        "input_tokens": 394,
+        "output_tokens": 308,
+        "reasoning_tokens": 0,
+        "effective_cost": 347.4
+      }
+    ]
+  }
+}

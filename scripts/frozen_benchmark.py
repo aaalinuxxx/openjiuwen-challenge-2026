@@ -77,7 +77,7 @@ async def run(args):
             if any((taskroot/name).rglob('answer.txt')):raise ValueError('Answer leakage')
         initial={n:hashes(taskroot/n) for n in labels}
         protected={n:{p.relative_to(taskroot/n):p.read_bytes() for p in (taskroot/n).rglob('test_*.py')} for n in labels}
-        argv=['--tasks-dir',str(taskroot),'--profile','validated','--budget',str(plan['budget'] if args.live else 0),
+        argv=['--tasks-dir',str(taskroot),'--profile',plan.get('profile','validated'),'--budget',str(plan['budget'] if args.live else 0),
             '--max-api-calls',str(plan['max_calls'] if args.live else 0)]
         config=build_config(parse_args(argv),settings=settings,audit_path=directory/'budget.json')
         config.max_concurrency=plan.get('concurrency',1)
@@ -90,7 +90,7 @@ async def run(args):
                 return result
         scheduler=RecordingScheduler(config)
         write(directory/'ranking.json',[{k:r[k] for k in ('task_id','roi','expected_cost','reward')} for r in scheduler.discover_and_rank_tasks()])
-        report['configuration']=dict(profile='validated',budget=config.initial_budget_tokens,max_calls=config.max_api_calls,
+        report['configuration']=dict(profile=plan.get('profile','validated'),multi_csv_max_output_tokens=config.multi_csv_max_output_tokens,budget=config.initial_budget_tokens,max_calls=config.max_api_calls,
             concurrency=config.max_concurrency,experimental_joins=config.experimental_joins,
             search_min_task_budget=config.search_min_task_budget,data_min_task_budget=config.data_min_task_budget,coding_min_task_budget=config.coding_min_task_budget)
         def recording_transport(bridge):
