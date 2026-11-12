@@ -44,7 +44,7 @@ def parse_args(argv=None) -> argparse.Namespace:
     parser.add_argument(
         "--max-concurrency",
         type=int,
-        default=5,
+        default=None,
         help="Максимальное число параллельных сессий агента (по регламенту до 5)",
     )
     parser.add_argument(
@@ -55,10 +55,36 @@ def parse_args(argv=None) -> argparse.Namespace:
     )
     parser.add_argument('--experimental-joins', action='store_true',
                         help='Enable experimental typed/local joins and multi-CSV fallback')
+    parser.add_argument("--profile", choices=("legacy", "validated"), default="legacy",
+                        help="validated: joins, search/data floors 300/700, concurrency 1")
+    parser.add_argument("--max-api-calls", type=int, default=None)
     args, _ = parser.parse_known_args(argv)
     if not math.isfinite(args.budget) or args.budget < 0:
         parser.error("budget must be finite and non-negative")
+    if args.max_api_calls is not None and args.max_api_calls < 0:
+        parser.error("max-api-calls must be nonnegative")
+    if args.max_concurrency is None:
+        args.max_concurrency = 1 if args.profile == "validated" else 5
     return args
+
+
+def build_config(args, *, settings=None, audit_path=None):
+    """Shared CLI/benchmark configuration; credentials never enter reports."""
+    settings = os.environ if settings is None else settings
+    validated = args.profile == 'validated'
+    return HarnessConfig(
+        tasks_dir=Path(args.tasks_dir).resolve(),
+        out_path=Path(args.out_file) if args.out_file else None,
+        llm_base_url=settings.get('LLM_BASE_URL', 'http://localhost:8000/v1'),
+        llm_api_key=settings.get('LLM_API_KEY', 'dummy-key'),
+        max_concurrency=min(max(args.max_concurrency, 1), 5),
+        initial_budget_tokens=args.budget,
+        experimental_joins=validated or args.experimental_joins,
+        search_min_task_budget=300 if validated else 0,
+        data_min_task_budget=700 if validated else 0,
+        max_api_calls=args.max_api_calls,
+        budget_audit_path=audit_path,
+    )
 
 
 async def async_main() -> int:
@@ -72,17 +98,8 @@ async def async_main() -> int:
         logger.error("Каталог задач не найден: %s", tasks_dir)
         return 1
 
-    config = HarnessConfig(
-        tasks_dir=tasks_dir,
-        out_path=Path(args.out_file) if args.out_file else None,
-        llm_base_url=os.environ.get("LLM_BASE_URL", "http://localhost:8000/v1"),
-        llm_api_key=os.environ.get("LLM_API_KEY", "dummy-key"),
-        max_concurrency=min(max(args.max_concurrency, 1), 5),
-        initial_budget_tokens=args.budget,
-        experimental_joins=args.experimental_joins,
-        budget_audit_path=Path(tempfile.gettempdir()) / "openjiuwen_logs" /
-            ("budget_"+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%f')+".json"),
-    )
+    config = build_config(args, audit_path=Path(tempfile.gettempdir()) / "openjiuwen_logs" /
+        ("budget_"+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%f')+".json"))
 
     from harness.workflow_runner import SDKUnavailable
     try:
