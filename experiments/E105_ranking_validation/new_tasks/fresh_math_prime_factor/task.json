@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_math_prime_factor",
+  "task_type": "math",
+  "instruction": "What is the largest prime factor of 13195? Write only the integer result to answer.txt.",
+  "reward": 3
+}

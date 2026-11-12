@@ -1,0 +1,9 @@
+{
+  "same_ranked_ids": true,
+  "same_expected_costs": true,
+  "same_rewards": true,
+  "different_order": true,
+  "same_local_solutions": true,
+  "same_local_score": true,
+  "zero_http": true
+}

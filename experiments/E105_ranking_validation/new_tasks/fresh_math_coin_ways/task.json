@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_math_coin_ways",
+  "task_type": "math",
+  "instruction": "You have unlimited coins of values 1,3,4. How many unordered multisets of coins sum to 7? Different orders of the same coins count once. Write only the integer result to answer.txt.",
+  "reward": 3
+}

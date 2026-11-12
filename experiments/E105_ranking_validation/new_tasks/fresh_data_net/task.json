@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_data_net",
+  "task_type": "data_analysis",
+  "instruction": "Read transactions.csv. Net proceeds equal sum(qty*price) for sale rows minus sum(qty*price) for refund rows. Include every row, use exact decimal arithmetic. Write the decimal result to answer.txt.",
+  "reward": 3
+}

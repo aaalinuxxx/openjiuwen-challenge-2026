@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_search_conflict",
+  "task_type": "search",
+  "instruction": "Use only kb/. Return the launch year of the Amber Ferry. Both sources have equal authority and neither supersedes the other. Return UNSOLVABLE if no unique year follows. Write the answer to answer.txt.",
+  "reward": 3
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_math_union",
+  "task_type": "math",
+  "instruction": "How many integers from 1 through 150 inclusive are divisible by 3 or by 7? Count those divisible by both only once. Write only the integer result to answer.txt.",
+  "reward": 3
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_search_chain",
+  "task_type": "search",
+  "instruction": "Use only kb/. Return the birth year of the person who designed the engine used by vessel Lumen. Write only the year to answer.txt.",
+  "reward": 3
+}

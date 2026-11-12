@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_data_dates",
+  "task_type": "data_analysis",
+  "instruction": "Read events.csv. Sum qty for dates in November 2026 inclusive. Dates use YYYY-MM-DD. Do not include October or December. Write the number to answer.txt.",
+  "reward": 3
+}

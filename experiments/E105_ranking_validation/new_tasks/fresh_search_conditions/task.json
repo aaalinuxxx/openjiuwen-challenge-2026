@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_search_conditions",
+  "task_type": "search",
+  "instruction": "Use only kb/. Return the director of the only station with climate cold and capacity at least 12. Write only the director name to answer.txt.",
+  "reward": 3
+}

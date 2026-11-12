@@ -1,0 +1,17 @@
+{
+  "reason": "csv.writer CRLF plus Windows text translation produced CRCRLF; caught by git diff --check before any API",
+  "files": [
+    "experiments/E105_ranking_validation/new_tasks/fresh_data_dates/events.csv",
+    "experiments/E105_ranking_validation/new_tasks/fresh_data_group_max/records.csv",
+    "experiments/E105_ranking_validation/new_tasks/fresh_data_net/transactions.csv",
+    "experiments/E105_ranking_validation/new_tasks/fresh_data_positive_median/values.csv",
+    "experiments/E105_ranking_validation/new_tasks/fresh_data_unique_pairs/records.csv",
+    "experiments/E105_ranking_validation/tasks/validate_003_fresh_data_group_max/records.csv",
+    "experiments/E105_ranking_validation/tasks/validate_042_fresh_data_unique_pairs/records.csv",
+    "experiments/E105_ranking_validation/tasks/validate_044_fresh_data_net/transactions.csv",
+    "experiments/E105_ranking_validation/tasks/validate_052_fresh_data_dates/events.csv",
+    "experiments/E105_ranking_validation/tasks/validate_069_fresh_data_positive_median/values.csv"
+  ],
+  "semantic_values_unchanged": true,
+  "actual_http_calls_before_fix": 0
+}

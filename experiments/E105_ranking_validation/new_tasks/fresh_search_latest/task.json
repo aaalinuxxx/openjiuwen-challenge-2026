@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_search_latest",
+  "task_type": "search",
+  "instruction": "Use only kb/. Which product has the latest launch year? Return only its exact name to answer.txt.",
+  "reward": 3
+}

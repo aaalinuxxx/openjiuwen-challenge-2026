@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_math_modular",
+  "task_type": "math",
+  "instruction": "Find the remainder when 7 raised to power 123 is divided by 101. Write only the integer result to answer.txt.",
+  "reward": 3
+}

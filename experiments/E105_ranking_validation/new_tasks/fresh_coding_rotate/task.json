@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_coding_rotate",
+  "task_type": "coding",
+  "instruction": "Implement rotate_right(values,k). Return a new list rotated right by k positions; negative k rotates left, large k wraps modulo length, empty input returns []. Do not modify input. Modify only mylib.py. Do not change tests. Write DONE to answer.txt after all tests pass.",
+  "reward": 3
+}

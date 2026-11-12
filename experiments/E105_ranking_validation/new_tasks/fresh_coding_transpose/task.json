@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_coding_transpose",
+  "task_type": "coding",
+  "instruction": "Implement transpose(matrix) for rectangular lists of lists. Return columns as new lists, [] maps to []. Do not modify matrix. Modify only mylib.py. Do not change tests. Write DONE to answer.txt after all tests pass.",
+  "reward": 3
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_coding_runs",
+  "task_type": "coding",
+  "instruction": "Implement run_lengths(values): return a list of (value,count) tuples for consecutive equal runs. Preserve run order and do not modify the input. Modify only mylib.py. Do not change tests. Write DONE to answer.txt after all tests pass.",
+  "reward": 3
+}

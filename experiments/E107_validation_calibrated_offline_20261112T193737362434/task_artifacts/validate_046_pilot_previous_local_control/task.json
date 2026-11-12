@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_046_pilot_previous_local_control",
+  "task_type": "data_analysis",
+  "instruction": "From stocks.csv and zones.csv, keep every pair with identical item strings and zones.region equal to 'west'. Add stocks.qty across those pairs. Duplicate rows must contribute repeatedly. Return the sum as a number.",
+  "reward": 3
+}

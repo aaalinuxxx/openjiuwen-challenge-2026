@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_math_paths",
+  "task_type": "math",
+  "instruction": "A lattice path uses exactly seven rightward and five upward unit steps. How many distinct step sequences are possible? Write only the integer result to answer.txt.",
+  "reward": 3
+}

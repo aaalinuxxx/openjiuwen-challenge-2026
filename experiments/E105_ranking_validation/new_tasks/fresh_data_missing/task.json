@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_data_missing",
+  "task_type": "data_analysis",
+  "instruction": "Read missing.csv and compute its total qty. The file must be supplied; do not invent data. Write the number to answer.txt.",
+  "reward": 3
+}

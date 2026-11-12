@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_031_pilot_known_or_failure",
+  "task_type": "data_analysis",
+  "instruction": "Using orders.csv and labels.csv, match every orders.code with every labels.sku as exact strings. Keep only pairs where labels.region is 'west' OR there is no matching labels row. Total orders.qty over all retained pairs, counting duplicate rows separately. Also include orders without a matching label. Output only the numeric sum.",
+  "reward": 4
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_coding_missing_positive",
+  "task_type": "coding",
+  "instruction": "Implement first_missing_positive(values): return the smallest strictly positive integer absent from the input. Ignore nonpositive numbers, handle duplicates, and do not modify input. Modify only mylib.py. Do not change tests. Write DONE to answer.txt after all tests pass.",
+  "reward": 3
+}

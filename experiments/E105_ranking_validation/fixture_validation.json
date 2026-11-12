@@ -1,0 +1,769 @@
+{
+  "seed": 2026111202,
+  "new_count": 24,
+  "new_solvable": 20,
+  "total": 100,
+  "solvable": 83,
+  "max_score": 246,
+  "by_type": {
+    "coding": 21,
+    "data_analysis": 35,
+    "math": 21,
+    "search": 23
+  },
+  "lineage": [
+    {
+      "task_id": "validate_000_coding_stateful",
+      "source": "old",
+      "source_task_id": "coding_stateful",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_001_data_missing_source",
+      "source": "old",
+      "source_task_id": "data_missing_source",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_002_math_sum",
+      "source": "old",
+      "source_task_id": "math_sum",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_003_fresh_data_group_max",
+      "source": "new",
+      "source_task_id": "fresh_data_group_max",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_004_fresh_math_inconsistent",
+      "source": "new",
+      "source_task_id": "fresh_math_inconsistent",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_005_search_new_relation",
+      "source": "old",
+      "source_task_id": "search_new_relation",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_006_search_absent",
+      "source": "old",
+      "source_task_id": "search_absent",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_007_search_irrelevant_conflict",
+      "source": "old",
+      "source_task_id": "search_irrelevant_conflict",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_008_math_percentage",
+      "source": "old",
+      "source_task_id": "math_percentage",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_009_coding_intervals",
+      "source": "old",
+      "source_task_id": "coding_intervals",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_010_pilot_empty_right",
+      "source": "old",
+      "source_task_id": "pilot_empty_right",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_011_coding_pure_conflict",
+      "source": "old",
+      "source_task_id": "coding_pure_conflict",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_012_coding_overlap",
+      "source": "old",
+      "source_task_id": "coding_overlap",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_013_math_zero_warning",
+      "source": "old",
+      "source_task_id": "math_zero_warning",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_014_data_distinct",
+      "source": "old",
+      "source_task_id": "data_distinct",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_015_data_weighted_mean",
+      "source": "old",
+      "source_task_id": "data_weighted_mean",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_016_fresh_coding_unique",
+      "source": "new",
+      "source_task_id": "fresh_coding_unique",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_017_coding_brackets",
+      "source": "old",
+      "source_task_id": "coding_brackets",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_018_fresh_data_missing",
+      "source": "new",
+      "source_task_id": "fresh_data_missing",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_019_search_three_hop",
+      "source": "old",
+      "source_task_id": "search_three_hop",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_020_fresh_math_modular",
+      "source": "new",
+      "source_task_id": "fresh_math_modular",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_021_pilot_extra_numeric_control",
+      "source": "old",
+      "source_task_id": "pilot_extra_numeric_control",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_022_coding_multimodule",
+      "source": "old",
+      "source_task_id": "coding_multimodule",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_023_coding_multimodule",
+      "source": "old",
+      "source_task_id": "coding_multimodule",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_024_search_paraphrase_chain",
+      "source": "old",
+      "source_task_id": "search_paraphrase_chain",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_025_search_conflicting_fact",
+      "source": "old",
+      "source_task_id": "search_conflicting_fact",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_026_data_missing_source",
+      "source": "old",
+      "source_task_id": "data_missing_source",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_027_math_zero_operation",
+      "source": "old",
+      "source_task_id": "math_zero_operation",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_028_data_empty_count",
+      "source": "old",
+      "source_task_id": "data_empty_count",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_029_search_irrelevant_conflict",
+      "source": "old",
+      "source_task_id": "search_irrelevant_conflict",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_030_pilot_extra_numeric_control",
+      "source": "old",
+      "source_task_id": "pilot_extra_numeric_control",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_031_pilot_known_or_failure",
+      "source": "old",
+      "source_task_id": "pilot_known_or_failure",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_032_coding_intervals",
+      "source": "old",
+      "source_task_id": "coding_intervals",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_033_pilot_known_or_failure",
+      "source": "old",
+      "source_task_id": "pilot_known_or_failure",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_034_data_two_file_join",
+      "source": "old",
+      "source_task_id": "data_two_file_join",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_035_pilot_empty_right",
+      "source": "old",
+      "source_task_id": "pilot_empty_right",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_036_math_zero_warning",
+      "source": "old",
+      "source_task_id": "math_zero_warning",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_037_coding_overlap",
+      "source": "old",
+      "source_task_id": "coding_overlap",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_038_coding_brackets",
+      "source": "old",
+      "source_task_id": "coding_brackets",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_039_search_irrelevant_conflict",
+      "source": "old",
+      "source_task_id": "search_irrelevant_conflict",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_040_coding_brackets",
+      "source": "old",
+      "source_task_id": "coding_brackets",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_041_pilot_empty_filter_not_unmatched",
+      "source": "old",
+      "source_task_id": "pilot_empty_filter_not_unmatched",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_042_fresh_data_unique_pairs",
+      "source": "new",
+      "source_task_id": "fresh_data_unique_pairs",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_043_fresh_coding_missing_positive",
+      "source": "new",
+      "source_task_id": "fresh_coding_missing_positive",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_044_fresh_data_net",
+      "source": "new",
+      "source_task_id": "fresh_data_net",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_045_data_distinct",
+      "source": "old",
+      "source_task_id": "data_distinct",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_046_pilot_previous_local_control",
+      "source": "old",
+      "source_task_id": "pilot_previous_local_control",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_047_data_filtered_median",
+      "source": "old",
+      "source_task_id": "data_filtered_median",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_048_coding_multimodule",
+      "source": "old",
+      "source_task_id": "coding_multimodule",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_049_math_zero_warning",
+      "source": "old",
+      "source_task_id": "math_zero_warning",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_050_pilot_string_keys_and_blocked",
+      "source": "old",
+      "source_task_id": "pilot_string_keys_and_blocked",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_051_fresh_coding_transpose",
+      "source": "new",
+      "source_task_id": "fresh_coding_transpose",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_052_fresh_data_dates",
+      "source": "new",
+      "source_task_id": "fresh_data_dates",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_053_data_filtered_median",
+      "source": "old",
+      "source_task_id": "data_filtered_median",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_054_pilot_string_keys_and_blocked",
+      "source": "old",
+      "source_task_id": "pilot_string_keys_and_blocked",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_055_math_paraphrase",
+      "source": "old",
+      "source_task_id": "math_paraphrase",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_056_fresh_search_conflict",
+      "source": "new",
+      "source_task_id": "fresh_search_conflict",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_057_math_percentage",
+      "source": "old",
+      "source_task_id": "math_percentage",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_058_fresh_math_coin_ways",
+      "source": "new",
+      "source_task_id": "fresh_math_coin_ways",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_059_math_gcd",
+      "source": "old",
+      "source_task_id": "math_gcd",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_060_data_empty_count",
+      "source": "old",
+      "source_task_id": "data_empty_count",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_061_math_zero_operation",
+      "source": "old",
+      "source_task_id": "math_zero_operation",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_062_fresh_search_chain",
+      "source": "new",
+      "source_task_id": "fresh_search_chain",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_063_data_empty_count",
+      "source": "old",
+      "source_task_id": "data_empty_count",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_064_coding_pure_conflict",
+      "source": "old",
+      "source_task_id": "coding_pure_conflict",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_065_coding_stateful",
+      "source": "old",
+      "source_task_id": "coding_stateful",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_066_search_paraphrase_chain",
+      "source": "old",
+      "source_task_id": "search_paraphrase_chain",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_067_fresh_coding_conflict",
+      "source": "new",
+      "source_task_id": "fresh_coding_conflict",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_068_data_weighted_mean",
+      "source": "old",
+      "source_task_id": "data_weighted_mean",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_069_fresh_data_positive_median",
+      "source": "new",
+      "source_task_id": "fresh_data_positive_median",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_070_math_zero_operation",
+      "source": "old",
+      "source_task_id": "math_zero_operation",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_071_search_absent",
+      "source": "old",
+      "source_task_id": "search_absent",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_072_pilot_empty_filter_not_unmatched",
+      "source": "old",
+      "source_task_id": "pilot_empty_filter_not_unmatched",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_073_fresh_math_prime_factor",
+      "source": "new",
+      "source_task_id": "fresh_math_prime_factor",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_074_search_three_hop",
+      "source": "old",
+      "source_task_id": "search_three_hop",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_075_fresh_search_latest",
+      "source": "new",
+      "source_task_id": "fresh_search_latest",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_076_math_gcd",
+      "source": "old",
+      "source_task_id": "math_gcd",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_077_pilot_known_or_failure",
+      "source": "old",
+      "source_task_id": "pilot_known_or_failure",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_078_fresh_math_union",
+      "source": "new",
+      "source_task_id": "fresh_math_union",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_079_math_paraphrase",
+      "source": "old",
+      "source_task_id": "math_paraphrase",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_080_data_two_file_join",
+      "source": "old",
+      "source_task_id": "data_two_file_join",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_081_fresh_math_paths",
+      "source": "new",
+      "source_task_id": "fresh_math_paths",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_082_math_sum",
+      "source": "old",
+      "source_task_id": "math_sum",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_083_math_gcd",
+      "source": "old",
+      "source_task_id": "math_gcd",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_084_pilot_mixed_duplicates",
+      "source": "old",
+      "source_task_id": "pilot_mixed_duplicates",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_085_fresh_coding_runs",
+      "source": "new",
+      "source_task_id": "fresh_coding_runs",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_086_fresh_search_inverse",
+      "source": "new",
+      "source_task_id": "fresh_search_inverse",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_087_search_three_hop",
+      "source": "old",
+      "source_task_id": "search_three_hop",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_088_pilot_mixed_duplicates",
+      "source": "old",
+      "source_task_id": "pilot_mixed_duplicates",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_089_search_conflicting_fact",
+      "source": "old",
+      "source_task_id": "search_conflicting_fact",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_090_search_conflicting_fact",
+      "source": "old",
+      "source_task_id": "search_conflicting_fact",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_091_fresh_search_conditions",
+      "source": "new",
+      "source_task_id": "fresh_search_conditions",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_092_fresh_coding_rotate",
+      "source": "new",
+      "source_task_id": "fresh_coding_rotate",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_093_search_paraphrase_chain",
+      "source": "old",
+      "source_task_id": "search_paraphrase_chain",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_094_search_new_relation",
+      "source": "old",
+      "source_task_id": "search_new_relation",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_095_fresh_search_custodian",
+      "source": "new",
+      "source_task_id": "fresh_search_custodian",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_096_coding_intervals",
+      "source": "old",
+      "source_task_id": "coding_intervals",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_097_pilot_previous_local_control",
+      "source": "old",
+      "source_task_id": "pilot_previous_local_control",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_098_search_new_relation",
+      "source": "old",
+      "source_task_id": "search_new_relation",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_099_data_missing_source",
+      "source": "old",
+      "source_task_id": "data_missing_source",
+      "reward": 4
+    }
+  ],
+  "oracle_checks": [
+    {
+      "task_id": "fresh_math_paths",
+      "kind": "independent_arithmetic",
+      "expected": 792,
+      "computed": 792,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_math_union",
+      "kind": "independent_arithmetic",
+      "expected": 64,
+      "computed": 64,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_math_modular",
+      "kind": "independent_arithmetic",
+      "expected": 27,
+      "computed": 27,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_math_prime_factor",
+      "kind": "independent_arithmetic",
+      "expected": 29,
+      "computed": 29,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_math_coin_ways",
+      "kind": "independent_arithmetic",
+      "expected": 5,
+      "computed": 5,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_coding_runs",
+      "kind": "coding_reference",
+      "broken_failed": true,
+      "reference_passed": true,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_coding_unique",
+      "kind": "coding_reference",
+      "broken_failed": true,
+      "reference_passed": true,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_coding_rotate",
+      "kind": "coding_reference",
+      "broken_failed": true,
+      "reference_passed": true,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_coding_transpose",
+      "kind": "coding_reference",
+      "broken_failed": true,
+      "reference_passed": true,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_coding_missing_positive",
+      "kind": "coding_reference",
+      "broken_failed": true,
+      "reference_passed": true,
+      "passed": true
+    },
+    {
+      "task_id": "fresh_search_custodian",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "Turku",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_search_latest",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "Mistral",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_search_conditions",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "Ema Reed",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_search_chain",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "1982",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_search_inverse",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "Nora Pine",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_data_unique_pairs",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "4",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_data_group_max",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "14",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_data_positive_median",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "9",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_data_dates",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "8",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_data_net",
+      "kind": "explicit_facts_or_aggregation",
+      "expected": "5.75",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_math_inconsistent",
+      "kind": "missing_source_or_explicit_contradiction",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_search_conflict",
+      "kind": "missing_source_or_explicit_contradiction",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_data_missing",
+      "kind": "missing_source_or_explicit_contradiction",
+      "passed": true
+    },
+    {
+      "task_id": "fresh_coding_conflict",
+      "kind": "missing_source_or_explicit_contradiction",
+      "passed": true
+    }
+  ],
+  "checks_passed": true
+}

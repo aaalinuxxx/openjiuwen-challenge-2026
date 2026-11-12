@@ -1,0 +1,6 @@
+{
+  "task_id": "fresh_data_positive_median",
+  "task_type": "data_analysis",
+  "instruction": "Read values.csv. Discard value<=0, then compute the median of the retained values. For an even count use the average of the two middle values. Write the number to answer.txt.",
+  "reward": 3
+}
