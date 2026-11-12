@@ -1,0 +1,8 @@
+{
+  "identical_original_expected_costs": true,
+  "identical_rewards": true,
+  "same_task_set": true,
+  "different_order": true,
+  "same_local_solutions": true,
+  "same_offline_score": true
+}

@@ -1,0 +1,60 @@
+{
+  "source": "experiments/E92_final_mixed_live_20261112T185457604685/report.json",
+  "source_sha256": "16434420d43631b4b4ab1055234d7482257c155f1d1df709d17c59d72cd91115",
+  "costs": {
+    "math": {
+      "n": 6,
+      "costs": [
+        14.5,
+        15.4,
+        15.5,
+        22.5,
+        25.7,
+        42.1
+      ],
+      "median": 19
+    },
+    "search": {
+      "n": 5,
+      "costs": [
+        17.1,
+        17.9,
+        19.3,
+        20.8,
+        24.3
+      ],
+      "median": 19.3
+    },
+    "data_analysis": {
+      "n": 6,
+      "costs": [
+        75.1,
+        88.9,
+        97,
+        118.3,
+        170,
+        344.1
+      ],
+      "median": 107.65
+    },
+    "coding": {
+      "n": 6,
+      "costs": [
+        69.5,
+        73.9,
+        75.5,
+        126.3,
+        152,
+        198.6
+      ],
+      "median": 100.9
+    }
+  },
+  "median_costs": {
+    "math": 19,
+    "search": 19.3,
+    "data_analysis": 107.65,
+    "coding": 100.9
+  },
+  "note": "Prior run only. All paid attempts included; no fitting to E102 outcomes. Ordering only, never alter request budget allocation."
+}

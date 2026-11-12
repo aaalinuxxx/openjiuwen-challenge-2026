@@ -1,0 +1,6 @@
+{
+  "task_id": "load_011_search_conflicting_fact",
+  "task_type": "search",
+  "instruction": "Use only kb/. In which year was Nia Moss born? There is no preferred source; return UNSOLVABLE if the year cannot be uniquely determined. Write only the final answer to answer.txt.",
+  "reward": 4
+}

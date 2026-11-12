@@ -1,0 +1,32 @@
+{
+  "task_id": "load_046_search_absent",
+  "response": {
+    "id": "chatcmpl-a5222b55a0fe6484",
+    "created": 1794510846,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "UNSOLVABLE",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 5,
+      "prompt_tokens": 193,
+      "total_tokens": 198,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

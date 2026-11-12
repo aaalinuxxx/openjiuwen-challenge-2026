@@ -1,0 +1,6 @@
+{
+  "task_id": "load_010_data_filtered_median",
+  "task_type": "data_analysis",
+  "instruction": "Using sales.csv, calculate the median units among category red rows. Return one decimal place. Write only the final answer to answer.txt.",
+  "reward": 2
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "load_002_data_two_file_join",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only executable Python 3 code using the standard library. Read the named CSV files in the current directory; print only the final answer. The harness handles any instruction to write answer.txt; your program must only print the result. Do not modify files. Samples are incomplete: compute from all rows. Keep join keys as strings unless the task explicitly requests numeric keys. Honor the specified join multiplicity, missing-match handling, filters and rounding. Keep the code concise: no comments, explanations, markdown fences or unused imports."
+      },
+      {
+        "role": "user",
+        "content": "CSV schemas and first three data rows:\n[{\"file\": \"orders.csv\", \"columns\": [\"sku\", \"qty\"], \"rows\": 3, \"sample_rows\": [{\"sku\": \"x\", \"qty\": \"2\"}, {\"sku\": \"y\", \"qty\": \"3\"}, {\"sku\": \"x\", \"qty\": \"1\"}]}, {\"file\": \"prices.csv\", \"columns\": [\"sku\", \"price\"], \"rows\": 2, \"sample_rows\": [{\"sku\": \"x\", \"price\": \"7\"}, {\"sku\": \"y\", \"price\": \"4\"}]}]\nTask: Join orders.csv with prices.csv on sku. Compute total qty times price over all orders. Return an integer. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 600,
+    "temperature": 0.0
+  }
+}

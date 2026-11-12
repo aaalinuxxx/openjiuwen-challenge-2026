@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "calls": 12,
+  "effective_tokens": 868.4,
+  "requests": [
+    {
+      "task_id": "load_095_search_new_relation",
+      "cost": 17.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_009_search_conflicting_fact",
+      "cost": 20.8,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_060_search_irrelevant_conflict",
+      "cost": 17.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_046_search_absent",
+      "cost": 24.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_011_search_conflicting_fact",
+      "cost": 20.8,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_042_search_absent",
+      "cost": 24.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_043_search_paraphrase_chain",
+      "cost": 19.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_002_data_two_file_join",
+      "cost": 171.0,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 600,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_026_pilot_extra_numeric_control",
+      "cost": 394.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 453,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_039_data_weighted_mean",
+      "cost": 118.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 124,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_078_data_filtered_median",
+      "cost": 25.0,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 8,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "load_074_math_sum",
+      "cost": 15.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 12,
+      "finish": "stop",
+      "passed": true
+    }
+  ]
+}

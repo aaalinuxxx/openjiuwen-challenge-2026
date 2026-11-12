@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "calls": 11,
+  "effective_tokens": 873.2,
+  "requests": [
+    {
+      "task_id": "load_002_data_two_file_join",
+      "cost": 185.0,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 600,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_009_search_conflicting_fact",
+      "cost": 20.8,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_016_math_paraphrase",
+      "cost": 22.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 115,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_026_pilot_extra_numeric_control",
+      "cost": 284.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 540,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_031_math_zero_operation",
+      "cost": 14.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 116,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_036_math_paraphrase",
+      "cost": 22.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 115,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_038_coding_intervals",
+      "cost": 142.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 66,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "load_039_data_weighted_mean",
+      "cost": 118.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 142,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_046_search_absent",
+      "cost": 24.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 23,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_060_search_irrelevant_conflict",
+      "cost": 17.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 5,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "load_074_math_sum",
+      "cost": 21.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 13,
+      "finish": "length",
+      "passed": true
+    }
+  ]
+}

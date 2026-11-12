@@ -1,0 +1,6 @@
+{
+  "task_id": "load_082_search_new_relation",
+  "task_type": "search",
+  "instruction": "Use only kb/. What is the birth year of the founder of Sol Materials? Write only the final answer to answer.txt.",
+  "reward": 1
+}

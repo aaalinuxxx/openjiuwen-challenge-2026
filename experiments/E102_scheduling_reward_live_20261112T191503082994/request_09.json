@@ -1,0 +1,18 @@
+{
+  "task_id": "load_046_search_absent",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: complete\nKB Records:\n# Luma Labs\nSources: c.md\nfounded: 2004\nheadquarters: Riga\n\n# Mira Vale\nSources: a.md\nborn: 1990\nmentor: Oren Pike\n\n# Mira Valen\nSources: d.md\nborn: 1987\nemployer: Other Corp\n\n# Oren Pike\nSources: b.md\nemployer: Luma Labs\n\n# Other Corp\nSources: e.md\nheadquarters: Porto\n\nQuestion: In which year was Zora Cloud born? Use only kb/. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 23,
+    "temperature": 0.0
+  }
+}

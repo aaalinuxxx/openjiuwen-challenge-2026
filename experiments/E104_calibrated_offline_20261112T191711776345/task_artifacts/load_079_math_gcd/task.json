@@ -1,0 +1,6 @@
+{
+  "task_id": "load_079_math_gcd",
+  "task_type": "math",
+  "instruction": "Find the greatest positive integer that divides both 84 and 126. Write only the final answer to answer.txt.",
+  "reward": 2
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "load_026_pilot_extra_numeric_control",
+  "response": {
+    "id": "chatcmpl-ac4c3532b631f31a",
+    "created": 1794510862,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport os\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read labels.csv\nlabels = []\nwith open('labels.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        labels.append(row)\n\n# Create a lookup for labels by sku\nlabel_lookup = {}\nfor label in labels:\n    sku = label['sku']\n    if sku not in label_lookup:\n        label_lookup[sku] = []\n    label_lookup[sku].append(label)\n\n# Left join orders to labels\n# For each order, find all matching labels (or no match)\n# Then filter: labels.region == 'west' OR no matching right row\n# Also filter: orders.qty > 5\n# Sum orders.qty for all resulting pairs\n\ntotal = 0\n\nfor order in orders:\n    code = order['code']\n    qty = int(order['qty'])\n    \n    # Filter: qty > 5\n    if qty <= 5:\n        continue\n    \n    # Left join: find matching labels\n    matching_labels = label_lookup.get(code, [])\n    \n    if len(matching_labels) == 0:\n        # No matching right row: include this order\n        total += qty\n    else:\n        # For each matching label, check if region == 'west'\n        for label in matching_labels:\n            if label['region'] == 'west':\n                total += qty\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 361,
+      "prompt_tokens": 331,
+      "total_tokens": 692,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

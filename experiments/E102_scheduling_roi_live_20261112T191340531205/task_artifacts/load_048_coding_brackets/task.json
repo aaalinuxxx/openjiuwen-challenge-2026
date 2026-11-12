@@ -1,0 +1,6 @@
+{
+  "task_id": "load_048_coding_brackets",
+  "task_type": "coding",
+  "instruction": "Fix balanced(s): match (), [] and {} with correct nesting. Ignore other characters. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+  "reward": 5
+}

@@ -1,0 +1,39 @@
+{
+  "same_task_order": true,
+  "payloads_identical_except_cap": true,
+  "caps": [
+    {
+      "task_id": "hold_decimal_multiplicity",
+      "baseline": 400,
+      "candidate": 600
+    },
+    {
+      "task_id": "hold_leading_zero",
+      "baseline": 400,
+      "candidate": 600
+    },
+    {
+      "task_id": "hold_negative_round",
+      "baseline": 400,
+      "candidate": 600
+    },
+    {
+      "task_id": "hold_no_right_rows",
+      "baseline": 400,
+      "candidate": 600
+    },
+    {
+      "task_id": "hold_postfilter",
+      "baseline": 400,
+      "candidate": 600
+    },
+    {
+      "task_id": "hold_weighted",
+      "baseline": 400,
+      "candidate": 600
+    }
+  ],
+  "first_holdout_score": "5/6",
+  "adaptive_followup_score": "6/6",
+  "not_new_independent_holdout": true
+}

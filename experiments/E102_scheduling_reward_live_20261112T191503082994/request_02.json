@@ -1,0 +1,18 @@
+{
+  "task_id": "load_009_search_conflicting_fact",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: complete\nKB Records:\n# Nia Moss\nSources: a.md, b.md\nborn: CONFLICT [1980 | 1981]\nemployer: Delta Works\n\n# Delta Works\nSources: c.md\nheadquarters: Bern\n\nQuestion: Use only kb/. In which year was Nia Moss born? There is no preferred source; return UNSOLVABLE if the year cannot be uniquely determined. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  }
+}

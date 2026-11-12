@@ -1,0 +1,32 @@
+{
+  "task_id": "load_026_pilot_extra_numeric_control",
+  "response": {
+    "id": "chatcmpl-a5a25721b97f08e7",
+    "created": 1794510937,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\nimport sys\n\n# Read labels.csv\nlabels = {}\nwith open('labels.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        sku = row['sku']\n        region = row['region']\n        if sku not in labels:\n            labels[sku] = []\n        labels[sku].append(region)\n\n# Read orders.csv and process\ntotal = 0\nwith open('orders.csv', 'r', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        code = row['code']\n        qty = int(row['qty'])\n        \n        # Filter: qty > 5\n        if qty <= 5:\n            continue\n        \n        # Check if there's a matching label\n        if code in labels:\n            # For each matching label row, check if region is 'west'\n            for region in labels[code]:\n                if region == 'west':\n                    total += qty\n        else:\n            # No matching right row: include the order\n            total += qty\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 251,
+      "prompt_tokens": 331,
+      "total_tokens": 582,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
