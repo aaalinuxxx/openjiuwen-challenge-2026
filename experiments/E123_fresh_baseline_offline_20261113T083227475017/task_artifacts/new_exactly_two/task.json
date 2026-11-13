@@ -1,0 +1,6 @@
+{
+  "task_id": "new_exactly_two",
+  "task_type": "math",
+  "instruction": "How many integers from 1 through 240 inclusive are divisible by exactly two of 2, 3, 5? Write only the final answer to answer.txt.",
+  "reward": 3
+}

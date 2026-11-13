@@ -1,0 +1,120 @@
+{
+  "new_crt": {
+    "task_id": "new_crt",
+    "task_type": "math",
+    "instruction": "Find the smallest positive integer x whose remainders modulo 7, 11, 13 are 3, 8, 5 respectively. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "668",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_trailing_zeros": {
+    "task_id": "new_trailing_zeros",
+    "task_type": "math",
+    "instruction": "How many trailing decimal zeros are in 125 factorial? Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "31",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_digit_sum": {
+    "task_id": "new_digit_sum",
+    "task_type": "math",
+    "instruction": "Find the sum of decimal digits of 2 to the power 123. Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "170",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_min_coins": {
+    "task_id": "new_min_coins",
+    "task_type": "math",
+    "instruction": "Using unlimited coins of values 4, 7, 9, find the minimum number of coins summing to 43. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "5",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_blocked_grid": {
+    "task_id": "new_blocked_grid",
+    "task_type": "math",
+    "instruction": "Count shortest lattice paths from (0, 0) to (7, 5), moving only up or right, which avoid (3, 2). Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "442",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_lcm": {
+    "task_id": "new_lcm",
+    "task_type": "math",
+    "instruction": "What is the smallest positive integer divisible by 21, 35, and 45? Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "315",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_exactly_two": {
+    "task_id": "new_exactly_two",
+    "task_type": "math",
+    "instruction": "How many integers from 1 through 240 inclusive are divisible by exactly two of 2, 3, 5? Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "56",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_squared_sum": {
+    "task_id": "new_squared_sum",
+    "task_type": "math",
+    "instruction": "Compute the sum of k squared for integers k from 1 through 37 inclusive. Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "17575",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_bounded_coins": {
+    "task_id": "new_bounded_coins",
+    "task_type": "math",
+    "instruction": "Count unordered combinations summing to 23, using at most 5 coins of value 2, at most 4 coins of value 3, and at most 3 coins of value 7. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "5",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_stair_moves": {
+    "task_id": "new_stair_moves",
+    "task_type": "math",
+    "instruction": "Climb a 22-step staircase, each move covering exactly 2 or 5 steps. Count ordered sequences ending exactly on step 22. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "34",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_parity_conflict": {
+    "task_id": "new_parity_conflict",
+    "task_type": "math",
+    "instruction": "Find an integer n which is simultaneously even and odd. If no such integer exists, return UNSOLVABLE. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "group": "E122_new_math"
+  },
+  "new_integer_conflict": {
+    "task_id": "new_integer_conflict",
+    "task_type": "math",
+    "instruction": "Find an integer n satisfying 4*n=3. If no such integer exists, return UNSOLVABLE. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "group": "E122_new_math"
+  }
+}

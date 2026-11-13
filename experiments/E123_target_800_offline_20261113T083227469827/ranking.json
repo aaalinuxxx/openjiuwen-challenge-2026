@@ -1,0 +1,140 @@
+[
+  {
+    "task_id": "math_divisible",
+    "roi": 0.24473684210526317,
+    "expected_cost": 101.95,
+    "reward": 5
+  },
+  {
+    "task_id": "math_coin_combinations",
+    "roi": 0.19578947368421054,
+    "expected_cost": 103.55,
+    "reward": 4
+  },
+  {
+    "task_id": "search_chain_0",
+    "roi": 0.14922279792746113,
+    "expected_cost": 67.0,
+    "reward": 3
+  },
+  {
+    "task_id": "search_chain_1",
+    "roi": 0.14922279792746113,
+    "expected_cost": 67.0,
+    "reward": 3
+  },
+  {
+    "task_id": "search_chain_2",
+    "roi": 0.14922279792746113,
+    "expected_cost": 67.0,
+    "reward": 3
+  },
+  {
+    "task_id": "search_chain_3",
+    "roi": 0.14922279792746113,
+    "expected_cost": 67.0,
+    "reward": 3
+  },
+  {
+    "task_id": "math_modular",
+    "roi": 0.14684210526315788,
+    "expected_cost": 100.25,
+    "reward": 3
+  },
+  {
+    "task_id": "control_math_contradiction",
+    "roi": 0.14684210526315788,
+    "expected_cost": 100.9,
+    "reward": 3
+  },
+  {
+    "task_id": "math_stairs",
+    "roi": 0.14684210526315788,
+    "expected_cost": 103.0,
+    "reward": 3
+  },
+  {
+    "task_id": "control_search_local",
+    "roi": 0.09948186528497409,
+    "expected_cost": 65.5,
+    "reward": 2
+  },
+  {
+    "task_id": "math_lattice",
+    "roi": 0.09789473684210527,
+    "expected_cost": 102.8,
+    "reward": 2
+  },
+  {
+    "task_id": "math_weighted",
+    "roi": 0.09789473684210527,
+    "expected_cost": 103.5,
+    "reward": 2
+  },
+  {
+    "task_id": "data_group_revenue",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "data_filtered_median",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "data_distinct",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "data_weighted_floor",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_prefix",
+    "roi": 0.02616451932606541,
+    "expected_cost": 212.98,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_histogram",
+    "roi": 0.02616451932606541,
+    "expected_cost": 213.44,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_runs",
+    "roi": 0.02616451932606541,
+    "expected_cost": 214.08,
+    "reward": 3
+  },
+  {
+    "task_id": "coding_next_greater",
+    "roi": 0.02616451932606541,
+    "expected_cost": 214.88,
+    "reward": 3
+  },
+  {
+    "task_id": "control_data_local",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "data_excluding",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "data_second_largest",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  }
+]

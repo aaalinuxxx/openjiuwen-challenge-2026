@@ -1,0 +1,342 @@
+{
+  "results": {
+    "search_new_relation": {
+      "task_id": "search_new_relation",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "search_conflicting_fact": {
+      "task_id": "search_conflicting_fact",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "search_irrelevant_conflict": {
+      "task_id": "search_irrelevant_conflict",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "search_absent": {
+      "task_id": "search_absent",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "search_paraphrase_chain": {
+      "task_id": "search_paraphrase_chain",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "search_three_hop": {
+      "task_id": "search_three_hop",
+      "status": "SOLVED",
+      "answer": "Riga",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "a.md:mentor=Oren Pike -> b.md:employer=Luma Labs -> c.md:headquarters=Riga"
+    },
+    "math_sum": {
+      "task_id": "math_sum",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "math_gcd": {
+      "task_id": "math_gcd",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "math_paraphrase": {
+      "task_id": "math_paraphrase",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "math_zero_warning": {
+      "task_id": "math_zero_warning",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "math_zero_operation": {
+      "task_id": "math_zero_operation",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "math_percentage": {
+      "task_id": "math_percentage",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_distinct": {
+      "task_id": "data_distinct",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.15700000000651926,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_empty_count": {
+      "task_id": "data_empty_count",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_filtered_median": {
+      "task_id": "data_filtered_median",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_two_file_join": {
+      "task_id": "data_two_file_join",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_weighted_mean": {
+      "task_id": "data_weighted_mean",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "pilot_empty_filter_not_unmatched": {
+      "task_id": "pilot_empty_filter_not_unmatched",
+      "status": "SOLVED",
+      "answer": "13",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_empty_right": {
+      "task_id": "pilot_empty_right",
+      "status": "SOLVED",
+      "answer": "10",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_extra_numeric_control": {
+      "task_id": "pilot_extra_numeric_control",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "pilot_known_or_failure": {
+      "task_id": "pilot_known_or_failure",
+      "status": "SOLVED",
+      "answer": "30",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_mixed_duplicates": {
+      "task_id": "pilot_mixed_duplicates",
+      "status": "SOLVED",
+      "answer": "32",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "pilot_previous_local_control": {
+      "task_id": "pilot_previous_local_control",
+      "status": "SOLVED",
+      "answer": "17",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed complete bounded grammar locally; no model translation"
+    },
+    "pilot_string_keys_and_blocked": {
+      "task_id": "pilot_string_keys_and_blocked",
+      "status": "SOLVED",
+      "answer": "10",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Executed full typed equality OR unmatched with all-pairs multiplicity"
+    },
+    "coding_multimodule": {
+      "task_id": "coding_multimodule",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.125,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "coding_overlap": {
+      "task_id": "coding_overlap",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.23399999999674037,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "coding_intervals": {
+      "task_id": "coding_intervals",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.125,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "coding_brackets": {
+      "task_id": "coding_brackets",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.125,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "coding_pure_conflict": {
+      "task_id": "coding_pure_conflict",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.125,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "coding_stateful": {
+      "task_id": "coding_stateful",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.125,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    }
+  },
+  "budget": {
+    "budget": 0.0,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": []
+  }
+}

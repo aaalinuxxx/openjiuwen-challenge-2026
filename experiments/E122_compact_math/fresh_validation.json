@@ -1,0 +1,68 @@
+{
+  "total": 12,
+  "solvable": 10,
+  "max_score": 27,
+  "checks": [
+    {
+      "task_id": "new_crt",
+      "expected": "668",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_trailing_zeros",
+      "expected": "31",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_digit_sum",
+      "expected": "170",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_min_coins",
+      "expected": "5",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_blocked_grid",
+      "expected": "442",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_lcm",
+      "expected": "315",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_exactly_two",
+      "expected": "56",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_squared_sum",
+      "expected": "17575",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_bounded_coins",
+      "expected": "5",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_stair_moves",
+      "expected": "34",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_parity_conflict",
+      "expected": "UNSOLVABLE",
+      "independent_methods_agree": true
+    },
+    {
+      "task_id": "new_integer_conflict",
+      "expected": "UNSOLVABLE",
+      "independent_methods_agree": true
+    }
+  ],
+  "note": "Independent algorithms cross-check numeric references; two impossibility controls. Author-generated familiar math families, not organizer hidden data."
+}

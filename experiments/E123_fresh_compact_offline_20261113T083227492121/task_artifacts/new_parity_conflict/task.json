@@ -1,0 +1,6 @@
+{
+  "task_id": "new_parity_conflict",
+  "task_type": "math",
+  "instruction": "Find an integer n which is simultaneously even and odd. If no such integer exists, return UNSOLVABLE. Write only the final answer to answer.txt.",
+  "reward": 3
+}

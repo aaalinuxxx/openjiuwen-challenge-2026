@@ -1,0 +1,6 @@
+{
+  "task_id": "new_min_coins",
+  "task_type": "math",
+  "instruction": "Using unlimited coins of values 4, 7, 9, find the minimum number of coins summing to 43. Write only the final answer to answer.txt.",
+  "reward": 3
+}
