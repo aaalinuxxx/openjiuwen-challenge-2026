@@ -1,0 +1,6 @@
+{
+  "task_id": "case_04",
+  "task_type": "math",
+  "instruction": "A shipment has 17 boxes of 24 screws and 13 boxes of 18 screws. Exactly 27 screws are damaged. How many usable screws remain? Write only the integer result to answer.txt.",
+  "reward": 1
+}

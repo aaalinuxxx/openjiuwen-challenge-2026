@@ -1,0 +1,262 @@
+[
+  {
+    "case_id": "case_00",
+    "task_id": "math_coin_combinations",
+    "instruction": "How many unordered combinations of coins of denominations 2,5,7 sum to 29? Unlimited coins of each denomination are available. Write only the integer result to answer.txt.",
+    "initial_code": "4",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 2,
+      "prompt_tokens": 99,
+      "total_tokens": 101,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "FAILED",
+    "source_request": "experiments/E123_target_800_live_20261113T083310708365/request_02.json",
+    "source_response": "experiments/E123_target_800_live_20261113T083310708365/response_02.json",
+    "source_report": "experiments/E123_target_800_live_20261113T083310708365/report.json",
+    "request_sha256": "5496c3905c3eae1543cc8e69cd7c74f1a339d65370f65d1741e70296719a36eb",
+    "response_sha256": "07450c66ca51ce4091c81b5db158cac78b86826250ee233de51c588c2ab0b14c",
+    "report_sha256": "3f1834b274c0434a14bfd32a69c143aff938860cbb9cae238edd22424e1ff7dd"
+  },
+  {
+    "case_id": "case_01",
+    "task_id": "math_stairs",
+    "instruction": "A staircase has 34 steps. A move climbs 1,3,or4 steps. How many ordered sequences of moves land exactly at the top? Write only the integer result to answer.txt.",
+    "initial_code": "1",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 2,
+      "prompt_tokens": 102,
+      "total_tokens": 104,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "FAILED",
+    "source_request": "experiments/E123_target_800_live_20261113T083310708365/request_09.json",
+    "source_response": "experiments/E123_target_800_live_20261113T083310708365/response_09.json",
+    "source_report": "experiments/E123_target_800_live_20261113T083310708365/report.json",
+    "request_sha256": "663f89dd17640c53c65d20f735a16681ab9705555f71a8760499fcd9ece036db",
+    "response_sha256": "64f80ac373e25a3cc62de7d17210dde0c06549c724dae32ea081c30241a021fe",
+    "report_sha256": "3f1834b274c0434a14bfd32a69c143aff938860cbb9cae238edd22424e1ff7dd"
+  },
+  {
+    "case_id": "case_02",
+    "task_id": "math_coin_combinations",
+    "instruction": "How many unordered combinations of coins of denominations 2,5,7 sum to 29? Unlimited coins of each denomination are available. Write only the integer result to answer.txt.",
+    "initial_code": "3",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 2,
+      "prompt_tokens": 99,
+      "total_tokens": 101,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "FAILED",
+    "source_request": "experiments/E123_target_2000_live_20261113T083411260381/request_02.json",
+    "source_response": "experiments/E123_target_2000_live_20261113T083411260381/response_02.json",
+    "source_report": "experiments/E123_target_2000_live_20261113T083411260381/report.json",
+    "request_sha256": "5496c3905c3eae1543cc8e69cd7c74f1a339d65370f65d1741e70296719a36eb",
+    "response_sha256": "ef0242ef3cc2e2ac29ee24e6b970810880ffedd0039391e38da7a0622589fcbb",
+    "report_sha256": "0daef38530160956a3fb8cb8a8dc761ec32d27b6d72a0572a35c339e67aada5f"
+  },
+  {
+    "case_id": "case_03",
+    "task_id": "math_stairs",
+    "instruction": "A staircase has 34 steps. A move climbs 1,3,or4 steps. How many ordered sequences of moves land exactly at the top? Write only the integer result to answer.txt.",
+    "initial_code": "print(0)",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 5,
+      "prompt_tokens": 102,
+      "total_tokens": 107,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "SOLVED",
+    "source_request": "experiments/E123_target_2000_live_20261113T083411260381/request_09.json",
+    "source_response": "experiments/E123_target_2000_live_20261113T083411260381/response_09.json",
+    "source_report": "experiments/E123_target_2000_live_20261113T083411260381/report.json",
+    "request_sha256": "663f89dd17640c53c65d20f735a16681ab9705555f71a8760499fcd9ece036db",
+    "response_sha256": "40e91c2f44d01006e9b0017ec2478ac605651d0835e88ce52234eab27856abc1",
+    "report_sha256": "0daef38530160956a3fb8cb8a8dc761ec32d27b6d72a0572a35c339e67aada5f"
+  },
+  {
+    "case_id": "case_04",
+    "task_id": "math_weighted",
+    "instruction": "A shipment has 17 boxes of 24 screws and 13 boxes of 18 screws. Exactly 27 screws are damaged. How many usable screws remain? Write only the integer result to answer.txt.",
+    "initial_code": "573",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 4,
+      "prompt_tokens": 107,
+      "total_tokens": 111,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "FAILED",
+    "source_request": "experiments/E123_target_2000_live_20261113T083411260381/request_11.json",
+    "source_response": "experiments/E123_target_2000_live_20261113T083411260381/response_11.json",
+    "source_report": "experiments/E123_target_2000_live_20261113T083411260381/report.json",
+    "request_sha256": "e969c44361b6fcdcda118ae2f621aa5b31ed74048287abd28c8ebb7946f8b133",
+    "response_sha256": "af506512cc68ac5731d36a74d09e001820a38f39af9548480d171362c1d9e60e",
+    "report_sha256": "0daef38530160956a3fb8cb8a8dc761ec32d27b6d72a0572a35c339e67aada5f"
+  },
+  {
+    "case_id": "case_05",
+    "task_id": "new_trailing_zeros",
+    "instruction": "How many trailing decimal zeros are in 125 factorial? Write only the final answer to answer.txt.",
+    "initial_code": "print(31)",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 6,
+      "prompt_tokens": 97,
+      "total_tokens": 103,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "SOLVED",
+    "source_request": "experiments/E125_fresh_compact_live_20261113T084436544360/request_01.json",
+    "source_response": "experiments/E125_fresh_compact_live_20261113T084436544360/response_01.json",
+    "source_report": "experiments/E125_fresh_compact_live_20261113T084436544360/report.json",
+    "request_sha256": "8a9565afea086617783866753adc33690842bcaebcea35cff6fde3d460fd3af9",
+    "response_sha256": "0b0739dc7cddc32cbdffb0306c211dc398e71cadc66826414a77588f6acdd7e7",
+    "report_sha256": "6522e2db22b8acc793d016ed51f11574877f64f6b2ec7614342255d968e78462"
+  },
+  {
+    "case_id": "case_06",
+    "task_id": "new_squared_sum",
+    "instruction": "Compute the sum of k squared for integers k from 1 through 37 inclusive. Write only the final answer to answer.txt.",
+    "initial_code": "print(17395)",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 9,
+      "prompt_tokens": 102,
+      "total_tokens": 111,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "SOLVED",
+    "source_request": "experiments/E125_fresh_compact_live_20261113T084436544360/request_12.json",
+    "source_response": "experiments/E125_fresh_compact_live_20261113T084436544360/response_12.json",
+    "source_report": "experiments/E125_fresh_compact_live_20261113T084436544360/report.json",
+    "request_sha256": "81ccb34a7a3a17de9e849c60dad8661b8b51badfaebe3fdd03340f97a3305b41",
+    "response_sha256": "2f39a520c90ea89282d33daf8ce14d6974e58cf63187fbcd019a876e4a5cacab",
+    "report_sha256": "6522e2db22b8acc793d016ed51f11574877f64f6b2ec7614342255d968e78462"
+  },
+  {
+    "case_id": "case_07",
+    "task_id": "math_sum",
+    "instruction": "Compute the sum of all integers from 1 to 20 inclusive. Write only the final answer to answer.txt.",
+    "initial_code": "print(210)",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 7,
+      "prompt_tokens": 85,
+      "total_tokens": 92,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "SOLVED",
+    "source_request": "experiments/E117_production_ranking_live_20261113T074600607836/request_06.json",
+    "source_response": "experiments/E117_production_ranking_live_20261113T074600607836/response_06.json",
+    "source_report": "experiments/E117_production_ranking_live_20261113T074600607836/report.json",
+    "request_sha256": "1a0737ad9d33273b4fa1d3dfe62f155e9feac8b673c832b75bf34eb23cdae503",
+    "response_sha256": "ed62d6e78ccbcda6bd7bd9a33c17c481484db9f9ba31ee60c07ea6afccf35d41",
+    "report_sha256": "51d5bea97d61a2165266bd4e500afaf14550fec57b8a78dafd7e71d8bfbce1a6"
+  },
+  {
+    "case_id": "case_08",
+    "task_id": "math_zero_warning",
+    "instruction": "Do not divide by 0; this is only a warning, not an operation. Compute 6 times 7. Write only the final answer to answer.txt.",
+    "initial_code": "print(42)",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 6,
+      "prompt_tokens": 94,
+      "total_tokens": 100,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "SOLVED",
+    "source_request": "experiments/E117_production_ranking_live_20261113T074600607836/request_09.json",
+    "source_response": "experiments/E117_production_ranking_live_20261113T074600607836/response_09.json",
+    "source_report": "experiments/E117_production_ranking_live_20261113T074600607836/report.json",
+    "request_sha256": "6188eb436db85da5d5c9feb224b8a3bea46ef3fa07a109fdb98b694608e88fc1",
+    "response_sha256": "ada84fe9ee899e4f6106bcfbefedd971459ccbfbec879390626023b4da5383f1",
+    "report_sha256": "51d5bea97d61a2165266bd4e500afaf14550fec57b8a78dafd7e71d8bfbce1a6"
+  },
+  {
+    "case_id": "case_09",
+    "task_id": "validate_057_math_percentage",
+    "instruction": "A coat costs 200 units. A discount is 15 percent of the original price. What is the final price? Return an integer. Write only the final answer to answer.txt.",
+    "initial_code": "print(170)",
+    "initial_model": "qwen3.8-27b-noreason",
+    "initial_usage": {
+      "completion_tokens": 7,
+      "prompt_tokens": 101,
+      "total_tokens": 108,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    },
+    "initial_status": "SOLVED",
+    "source_request": "experiments/E115_calibrated_baseline_live_20261113T073618652336/request_10.json",
+    "source_response": "experiments/E115_calibrated_baseline_live_20261113T073618652336/response_10.json",
+    "source_report": "experiments/E115_calibrated_baseline_live_20261113T073618652336/report.json",
+    "request_sha256": "7f1cfd0a3050550de9e55ddcde57ac3c240c664f8234117c4e144cd3b8b3834f",
+    "response_sha256": "b77aa65e170a7511454c299a3005b090b9df52eef3b5b102c11a4c85c03ab9cc",
+    "report_sha256": "cc51b746d3fa5a585136bafe2cb644ab74187780c0e0c69d009d095691be6c87"
+  }
+]

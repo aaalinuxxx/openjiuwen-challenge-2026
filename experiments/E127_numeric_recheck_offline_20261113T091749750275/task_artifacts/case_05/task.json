@@ -1,0 +1,6 @@
+{
+  "task_id": "case_05",
+  "task_type": "math",
+  "instruction": "How many trailing decimal zeros are in 125 factorial? Write only the final answer to answer.txt.",
+  "reward": 1
+}

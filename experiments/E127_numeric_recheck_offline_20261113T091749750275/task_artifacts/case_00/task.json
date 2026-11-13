@@ -1,0 +1,6 @@
+{
+  "task_id": "case_00",
+  "task_type": "math",
+  "instruction": "How many unordered combinations of coins of denominations 2,5,7 sum to 29? Unlimited coins of each denomination are available. Write only the integer result to answer.txt.",
+  "reward": 1
+}

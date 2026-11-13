@@ -1,0 +1,52 @@
+{
+  "case_00": {
+    "expected": "9",
+    "baseline_correct": false,
+    "baseline_answer": null
+  },
+  "case_01": {
+    "expected": "6677056",
+    "baseline_correct": false,
+    "baseline_answer": null
+  },
+  "case_02": {
+    "expected": "9",
+    "baseline_correct": false,
+    "baseline_answer": null
+  },
+  "case_03": {
+    "expected": "6677056",
+    "baseline_correct": false,
+    "baseline_answer": "0"
+  },
+  "case_04": {
+    "expected": "615",
+    "baseline_correct": false,
+    "baseline_answer": null
+  },
+  "case_05": {
+    "expected": "31",
+    "baseline_correct": true,
+    "baseline_answer": "31"
+  },
+  "case_06": {
+    "expected": "17575",
+    "baseline_correct": false,
+    "baseline_answer": "17395"
+  },
+  "case_07": {
+    "expected": "210",
+    "baseline_correct": true,
+    "baseline_answer": "210"
+  },
+  "case_08": {
+    "expected": "42",
+    "baseline_correct": true,
+    "baseline_answer": "42"
+  },
+  "case_09": {
+    "expected": "170",
+    "baseline_correct": true,
+    "baseline_answer": "170"
+  }
+}
