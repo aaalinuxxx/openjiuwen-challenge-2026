@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_search_0",
+  "task_type": "search",
+  "instruction": "In which year was the architect of Tower 0 born? Write only the final answer to answer.txt.",
+  "reward": 2
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_code_sum",
+  "task_type": "coding",
+  "instruction": "Fix sum_even in mylib.py to satisfy test_contract.py. Return DONE when complete. Write only the final answer to answer.txt.",
+  "reward": 4
+}

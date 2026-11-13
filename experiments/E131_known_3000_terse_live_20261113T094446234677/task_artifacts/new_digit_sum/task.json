@@ -1,0 +1,6 @@
+{
+  "task_id": "new_digit_sum",
+  "task_type": "math",
+  "instruction": "Find the sum of decimal digits of 2 to the power 123. Write only the final answer to answer.txt.",
+  "reward": 2
+}

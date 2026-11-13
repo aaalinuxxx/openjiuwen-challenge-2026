@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_square_sum",
+  "task_type": "math",
+  "instruction": "Sum k squared for every integer k from 12 through 49 inclusive. Write only the final answer to answer.txt.",
+  "reward": 2
+}

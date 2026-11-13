@@ -1,0 +1,12 @@
+{
+  "reason": "Independent audit found a correct answer.txt with FAILED status (new_blocked_grid baseline). Organizer rules specify submitted answer files and sum of task rewards, not internal status. The original normalized-SOLVED criterion was our surrogate, not organizer scoring.",
+  "original_criterion": "Maximize sum of score/max_score across the three equally weighted suite-budget cells; ties minimize summed actual token cost. No no-regression or zero-wrong-answer gate.",
+  "corrected_criterion": "Sum reward for correct saved answer artifacts under the identical suite budgets, regardless of internal status; tie-break actual token cost.",
+  "post_result_amendment": true,
+  "limitation": "Known answer/file check is still a proxy for organizer hidden tests. No assumption of hidden-set distribution.",
+  "rule_file_sha256": "f24256eda3d15ffbf6576ce67b8f158dfcb0a1b1e12c5abfd8e8342fff6235fd",
+  "affected_case": "known_3000_baseline/new_blocked_grid",
+  "expected_and_saved_answer": "442",
+  "reward": 3,
+  "at": "2026-11-13T12:20:45.231Z"
+}

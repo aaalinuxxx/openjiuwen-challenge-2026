@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "calls": 14,
+  "effective_tokens": 872.5,
+  "requests": [
+    {
+      "task_id": "hold_stairs",
+      "cost": 88.3,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_divisibility",
+      "cost": 48.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_coins",
+      "cost": 111.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_crt",
+      "cost": 50.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_grid",
+      "cost": 118.2,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "hold_digit_sum",
+      "cost": 26.0,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 37,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_factorial",
+      "cost": 46.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 37,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "hold_lcm",
+      "cost": 46.4,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 36,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "hold_square_sum",
+      "cost": 28.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 36,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_weighted",
+      "cost": 32.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 36,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_binomial",
+      "cost": 25.0,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 36,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_weighted_mean",
+      "cost": 48.2,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 36,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "hold_data_revenue",
+      "cost": 82.0,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 200,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "hold_data_median",
+      "cost": 120.2,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 200,
+      "finish": "stop",
+      "passed": true
+    }
+  ]
+}

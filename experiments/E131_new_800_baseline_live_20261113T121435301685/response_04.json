@@ -1,0 +1,35 @@
+{
+  "task_id": "hold_crt",
+  "response": {
+    "id": "chatcmpl-bdd14cd1523d7a07",
+    "created": 1794572099,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nfor n in range(1, 99):\n    if n % 9 == 4 and n % 11 == 7:\n        print(n)\n        break\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 45,
+      "prompt_tokens": 91,
+      "total_tokens": 136,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

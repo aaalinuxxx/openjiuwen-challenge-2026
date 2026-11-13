@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_data_median",
+  "task_type": "data_analysis",
+  "instruction": "Using records.csv, compute the median qty among rows with price at least 4. Write only the final answer to answer.txt.",
+  "reward": 3
+}

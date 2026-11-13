@@ -1,0 +1,18 @@
+{
+  "task_id": "hold_coins",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown."
+      },
+      {
+        "role": "user",
+        "content": "Count unordered ways to form 26 using unlimited coins with values 3, 5, and 8. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 115,
+    "temperature": 0.0
+  }
+}

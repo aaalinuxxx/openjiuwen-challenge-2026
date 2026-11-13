@@ -1,0 +1,35 @@
+{
+  "task_id": "hold_weighted",
+  "response": {
+    "id": "chatcmpl-8247a74d4b921ff9",
+    "created": 1794572192,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "total = 0\nfor k in range(1, 32):\n    total += k * (k + 3)\nprint(total)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 33,
+      "prompt_tokens": 92,
+      "total_tokens": 125,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

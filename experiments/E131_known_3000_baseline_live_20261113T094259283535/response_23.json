@@ -1,0 +1,35 @@
+{
+  "task_id": "new_squared_sum",
+  "response": {
+    "id": "chatcmpl-bf423937d0d51937",
+    "created": 1794563040,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "n = 37\nresult = n * (n + 1) * (2 * n + 1) // 6\nprint(result)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 33,
+      "prompt_tokens": 88,
+      "total_tokens": 121,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "coding_brackets",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return complete corrected Python code only, without comments or Markdown. Preserve signatures and satisfy the task constraints and all tests. Never modify tests. Use UNSOLVABLE only for provably contradictory requirements. The harness runs tests and writes DONE; do not perform these delivery steps in the returned code."
+      },
+      {
+        "role": "user",
+        "content": "### Task constraints\nFix balanced(s): match (), [] and {} with correct nesting. Ignore other characters. Do not change tests. Write DONE to answer.txt only after all tests pass.\n\n### Target File: mylib.py\ndef balanced(s):\n    return s.count('(') == s.count(')')\n\n\n\n\n### test_mylib.py\nimport unittest\nimport mylib\n\nclass Checks(unittest.TestCase):\n    def test_nested(self): self.assertTrue(mylib.balanced('a{b[c(d)]}'))\n    def test_crossed(self): self.assertFalse(mylib.balanced('([)]'))\n    def test_unclosed(self): self.assertFalse(mylib.balanced('['))\n    def test_extra(self): self.assertFalse(mylib.balanced(']'))\n    def test_empty(self): self.assertTrue(mylib.balanced(''))\n\nif __name__ == '__main__': unittest.main()\n\n\n### Failing Test Output (failures: 3)\n### test_mylib.py\nF.F.F\n======================================================================\nFAIL: test_crossed (__main__.Checks.test_crossed)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-6n_s1dhd\\workspace\\test_mylib.py\", line 6, in test_crossed\n    def test_crossed(self): self.assertFalse(mylib.balanced('([)]'))\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: True is not false\n\n======================================================================\nFAIL: test_extra (__main__.Checks.test_extra)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-6n_s1dhd\\workspace\\test_mylib.py\", line 8, in test_extra\n    def test_extra(self): self.assertFalse(mylib.balanced(']'))\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: True is not false\n\n======================================================================\nFAIL: test_unclosed (__main__.Checks.test_unclosed)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-6n_s1dhd\\workspace\\test_mylib.py\", line 7, in test_unclosed\n    def test_unclosed(self): self.assertFalse(mylib.balanced('['))\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: True is not false\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=3)\n"
+      }
+    ],
+    "max_tokens": 275,
+    "temperature": 0.0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "hold_data_median",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Write ONLY raw executable Python 3 code (no markdown fences, no explanations) that reads the CSV file in the current directory and prints ONLY the final answer to stdout. The harness handles any instruction to write answer.txt; your program must only print the result. Use the standard library. Read all rows; the preview is incomplete. Do not modify input files."
+      },
+      {
+        "role": "user",
+        "content": "File: records.csv\nHeader & first rows:\nkind,qty,price\na,7,4\nb,9,2\na,3,8\n\nTask: Using records.csv, compute the median qty among rows with price at least 4. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 200,
+    "temperature": 0.0
+  }
+}

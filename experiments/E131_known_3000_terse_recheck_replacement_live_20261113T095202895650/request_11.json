@@ -1,0 +1,18 @@
+{
+  "task_id": "math_zero_warning",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown. Compute the result from the numbers in the task with Python operations. Do not replace the calculation with a precomputed numeric constant. Keep code concise, without comments."
+      },
+      {
+        "role": "user",
+        "content": "Do not divide by 0; this is only a warning, not an operation. Compute 6 times 7. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 80,
+    "temperature": 0.0
+  }
+}

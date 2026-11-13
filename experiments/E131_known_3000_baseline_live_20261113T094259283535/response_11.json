@@ -1,0 +1,35 @@
+{
+  "task_id": "new_integer_conflict",
+  "response": {
+    "id": "chatcmpl-b56f2addaebcb26a",
+    "created": 1794563009,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nprint(\"UNSOLVABLE\")\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 13,
+      "prompt_tokens": 93,
+      "total_tokens": 106,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

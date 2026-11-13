@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_binomial",
+  "task_type": "math",
+  "instruction": "How many different 4-person committees can be chosen from 13 people? Write only the final answer to answer.txt.",
+  "reward": 2
+}

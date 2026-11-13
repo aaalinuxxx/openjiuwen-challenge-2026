@@ -1,0 +1,32 @@
+{
+  "task_id": "pilot_extra_numeric_control",
+  "response": {
+    "id": "chatcmpl-b6421eb2f4b3b205",
+    "created": 1794563399,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read labels.csv\nlabels = {}\nwith open('labels.csv', 'r') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        sku = row['sku']\n        region = row['region']\n        if sku not in labels:\n            labels[sku] = []\n        labels[sku].append(region)\n\n# Left join orders.code to labels.sku\n# For each order, find all matching labels (including no match)\n# Sum orders.qty for resulting pairs where labels.region == 'west' OR no matching right row\n# Also filter: only include orders whose qty > 5\n\ntotal = 0\nfor order in orders:\n    code = order['code']\n    qty = int(order['qty'])\n    \n    # Filter: only include orders whose qty > 5\n    if qty <= 5:\n        continue\n    \n    # Left join: find all matching labels\n    if code in labels:\n        # There are matching right rows\n        for region in labels[code]:\n            if region == 'west':\n                total += qty\n    else:\n        # No matching right row\n        total += qty\n\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 308,
+      "prompt_tokens": 331,
+      "total_tokens": 639,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

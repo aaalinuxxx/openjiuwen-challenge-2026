@@ -1,0 +1,6 @@
+{
+  "task_id": "new_crt",
+  "task_type": "math",
+  "instruction": "Find the smallest positive integer x whose remainders modulo 7, 11, 13 are 3, 8, 5 respectively. Write only the final answer to answer.txt.",
+  "reward": 3
+}

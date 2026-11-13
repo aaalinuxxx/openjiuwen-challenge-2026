@@ -1,0 +1,35 @@
+{
+  "task_id": "new_exactly_two",
+  "response": {
+    "id": "chatcmpl-b0bfa96126b42d31",
+    "created": 1794563011,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "count = 0\nfor n in range(1, 241):\n    div_count = 0\n    if n % 2 == 0:\n        div_count += 1\n    if n % 3 == 0:\n        div_count += 1\n    if n % 5 == 0:\n        div_count += 1\n    if div_count == 2:\n        count += 1\nprint(count)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 98,
+      "prompt_tokens": 97,
+      "total_tokens": 195,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

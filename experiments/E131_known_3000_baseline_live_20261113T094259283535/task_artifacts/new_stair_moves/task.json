@@ -1,0 +1,6 @@
+{
+  "task_id": "new_stair_moves",
+  "task_type": "math",
+  "instruction": "Climb a 22-step staircase, each move covering exactly 2 or 5 steps. Count ordered sequences ending exactly on step 22. Write only the final answer to answer.txt.",
+  "reward": 3
+}

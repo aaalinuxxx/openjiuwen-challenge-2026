@@ -47,18 +47,19 @@
     "ranking_policy": "calibrated",
     "profile": "csv-roomy",
     "multi_csv_max_output_tokens": 600,
-    "budget": 3000.0,
+    "budget": 3000,
     "max_calls": 30,
     "concurrency": 1,
     "experimental_joins": true,
     "search_min_task_budget": 300,
     "data_min_task_budget": 1000,
-    "coding_min_task_budget": 800.0
+    "coding_min_task_budget": 800
   },
-  "acceptance_report": "experiments/E129_submission_summary.json",
-  "acceptance_report_sha256": "bd0624c2b7da5b6a72abe5d1ca411df8dcdbe94f37c0765cda43205205a20d84",
+  "acceptance_report": "experiments/E132_final_selection_release.json",
+  "acceptance_report_sha256": "3de4adc3f911fee3a9ee6cafa504220b35b357df54149758c6291d50f88d3e5a",
   "runtime_source_commit": "69da4c8eb3a16efaa70292d8c93c8a4cb84a4615",
   "docker_included": false,
+  "selected_math_policy": "baseline",
   "new_experimental_policies_enabled": false,
   "research_scripts_included": false
 }

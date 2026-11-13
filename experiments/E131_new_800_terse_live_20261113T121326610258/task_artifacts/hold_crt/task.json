@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_crt",
+  "task_type": "math",
+  "instruction": "Find the smallest positive integer with remainder 4 modulo 9 and remainder 7 modulo 11. Write only the final answer to answer.txt.",
+  "reward": 3
+}

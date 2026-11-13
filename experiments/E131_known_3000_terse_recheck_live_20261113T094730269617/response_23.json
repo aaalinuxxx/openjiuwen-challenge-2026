@@ -1,0 +1,35 @@
+{
+  "task_id": "new_stair_moves",
+  "response": {
+    "id": "chatcmpl-873c0a3ef65a08ad",
+    "created": 1794563322,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport sys\nsys.setrecursionlimit(10000)\n\ndef count_ways(n):\n    if n == 0:\n        return 1\n    if n < 0:\n        return 0\n    return count_ways(n - 2) + count_ways(n - 5)\n\nprint(count_ways(22))\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 83,
+      "prompt_tokens": 116,
+      "total_tokens": 199,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

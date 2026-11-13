@@ -1,0 +1,21 @@
+{
+  "reason": "Transport TimeoutError on coding_overlap; comparison requires a complete ledger. Original incomplete run retained, no best-of selection.",
+  "original": "known_3000_terse_recheck",
+  "replacement": "known_3000_terse_recheck_replacement",
+  "original_report": "experiments/E131_known_3000_terse_recheck_live_20261113T094730269617/report.json",
+  "original_report_sha256": "71d5a5bdd6e8c53bea44e1e0b9555fd9590c3d82d381fc0c9f0237d53414387e",
+  "known_calls": 34,
+  "known_effective_tokens": 1981.5,
+  "unaccounted_attempts": 1,
+  "reserved_unknown": 799.9,
+  "schedule": [
+    "known_3000_terse_recheck_replacement",
+    "new_800_terse",
+    "new_800_terse_recheck",
+    "new_800_baseline",
+    "new_2000_terse_recheck",
+    "new_2000_baseline",
+    "new_2000_terse"
+  ],
+  "policy": "One deliberate replacement, identical task input and solver policy. Stop again on accounting failure."
+}

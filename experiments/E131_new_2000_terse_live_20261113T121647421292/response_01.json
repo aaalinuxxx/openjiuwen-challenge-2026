@@ -1,0 +1,35 @@
+{
+  "task_id": "hold_stairs",
+  "response": {
+    "id": "chatcmpl-8ae02f593700b9e8",
+    "created": 1794572224,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "import sys\nsys.setrecursionlimit(10000)\n\ndef count_ways(n):\n    if n == 0:\n        return 1\n    if n < 0:\n        return 0\n    return count_ways(n - 1) + count_ways(n - 3)\n\nprint(count_ways(19))",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 78,
+      "prompt_tokens": 103,
+      "total_tokens": 181,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

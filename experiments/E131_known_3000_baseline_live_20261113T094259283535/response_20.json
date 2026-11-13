@@ -1,0 +1,35 @@
+{
+  "task_id": "new_bounded_coins",
+  "response": {
+    "id": "chatcmpl-9a4e7af6ddb08334",
+    "created": 1794563034,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\ncount = 0\nfor c2 in range(0, 6):\n    for c3 in range(0, 5):\n        for c7 in range(0, 4):\n            if 2 * c2 + 3 * c3 + 7 * c7 == 23:\n                count += 1\nprint(count)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 83,
+      "prompt_tokens": 112,
+      "total_tokens": 195,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

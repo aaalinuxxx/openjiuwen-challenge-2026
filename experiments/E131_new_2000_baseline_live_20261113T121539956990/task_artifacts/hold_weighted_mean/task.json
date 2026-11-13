@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_weighted_mean",
+  "task_type": "math",
+  "instruction": "Take values 11, 4, 18, 6 with respective weights 2, 5, 3, 7. Find the floor of the weighted mean. Write only the final answer to answer.txt.",
+  "reward": 2
+}

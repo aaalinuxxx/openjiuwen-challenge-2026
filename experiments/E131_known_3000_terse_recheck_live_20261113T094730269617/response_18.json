@@ -1,0 +1,35 @@
+{
+  "task_id": "new_blocked_grid",
+  "response": {
+    "id": "chatcmpl-a8a12301c5437256",
+    "created": 1794563307,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "from math import comb\ntotal = comb(12, 5)\nvia = comb(5, 2) * comb(7, 3)\nprint(total - via)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 116,
+      "total_tokens": 156,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,1382 @@
+{
+  "status": "COMPLETED",
+  "mode": "LIVE",
+  "hypothesis": "H04.37_SCORE_FIRST_SELECTION",
+  "plan_sha256": "136eeafcc979a8f0c5192ba847ed458ed15516eb23c964a89776aab6f1acf75b",
+  "recording_errors": [],
+  "configuration": {
+    "ranking_policy": "calibrated",
+    "profile": "csv-roomy",
+    "multi_csv_max_output_tokens": 600,
+    "budget": 800.0,
+    "max_calls": 70,
+    "concurrency": 1,
+    "experimental_joins": true,
+    "search_min_task_budget": 300,
+    "data_min_task_budget": 1000,
+    "coding_min_task_budget": 800.0
+  },
+  "summary": {
+    "total_tasks": 18,
+    "task_results": {
+      "hold_stairs": {
+        "task_id": "hold_stairs",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 89,
+        "output_tokens": 115,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 3.047000000020489,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      },
+      "hold_divisibility": {
+        "task_id": "hold_divisibility",
+        "status": "SOLVED",
+        "answer": "135",
+        "input_tokens": 92,
+        "output_tokens": 38,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.2959999999729916,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "hold_coins": {
+        "task_id": "hold_coins",
+        "status": "SOLVED",
+        "answer": "5",
+        "input_tokens": 93,
+        "output_tokens": 96,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 5.312000000034459,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "hold_crt": {
+        "task_id": "hold_crt",
+        "status": "SOLVED",
+        "answer": "40",
+        "input_tokens": 91,
+        "output_tokens": 45,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.14000000001397,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "hold_grid": {
+        "task_id": "hold_grid",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 98,
+        "output_tokens": 115,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 11.030999999959022,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      },
+      "hold_search_0": {
+        "task_id": "hold_search_0",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Missing entity: the architect of Tower 0"
+      },
+      "hold_search_1": {
+        "task_id": "hold_search_1",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Missing entity: the architect of Tower 1"
+      },
+      "hold_digit_sum": {
+        "task_id": "hold_digit_sum",
+        "status": "SOLVED",
+        "answer": "135",
+        "input_tokens": 86,
+        "output_tokens": 16,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 9.047000000020489,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "hold_factorial": {
+        "task_id": "hold_factorial",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 83,
+        "output_tokens": 44,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 3.4540000000270084,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      },
+      "hold_lcm": {
+        "task_id": "hold_lcm",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 90,
+        "output_tokens": 44,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.9679999999934807,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      },
+      "hold_square_sum": {
+        "task_id": "hold_square_sum",
+        "status": "SOLVED",
+        "answer": "39919",
+        "input_tokens": 87,
+        "output_tokens": 28,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 5.547000000020489,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "hold_weighted": {
+        "task_id": "hold_weighted",
+        "status": "SOLVED",
+        "answer": "11904",
+        "input_tokens": 92,
+        "output_tokens": 33,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.9060000000172295,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "hold_binomial": {
+        "task_id": "hold_binomial",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Insufficient global or task reservation"
+      },
+      "hold_weighted_mean": {
+        "task_id": "hold_weighted_mean",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Insufficient global or task reservation"
+      },
+      "hold_data_revenue": {
+        "task_id": "hold_data_revenue",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0470000000204891,
+        "model_used": "",
+        "notes": "Insufficient global or task reservation"
+      },
+      "hold_code_sum": {
+        "task_id": "hold_code_sum",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.23399999999674037,
+        "model_used": "",
+        "notes": "Multiple code modules without an unambiguous repair target"
+      },
+      "hold_code_runs": {
+        "task_id": "hold_code_runs",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.26500000001396984,
+        "model_used": "",
+        "notes": "Multiple code modules without an unambiguous repair target"
+      },
+      "hold_data_median": {
+        "task_id": "hold_data_median",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Insufficient global or task reservation"
+      }
+    },
+    "skipped_tasks": {},
+    "solved_count": 6,
+    "estimated_score": 15,
+    "effective_tokens_spent": 664.1,
+    "budget_state": {
+      "budget": 800.0,
+      "known_effective_tokens": 664.1,
+      "reserved_effective_tokens": 0.0,
+      "has_unaccounted_request": false,
+      "remote_stopped": false,
+      "events": [
+        {
+          "ticket": 0,
+          "task_id": "hold_stairs",
+          "status": "ACCOUNTED",
+          "reserved_units": 2507,
+          "task_limit_units": 2507,
+          "input_token_estimate": 1357,
+          "output_cap": 115,
+          "input_tokens": 89,
+          "output_tokens": 115,
+          "reasoning_tokens": 0,
+          "effective_cost": 123.9
+        },
+        {
+          "ticket": 1,
+          "task_id": "hold_divisibility",
+          "status": "ACCOUNTED",
+          "reserved_units": 2521,
+          "task_limit_units": 2525,
+          "input_token_estimate": 1371,
+          "output_cap": 115,
+          "input_tokens": 92,
+          "output_tokens": 38,
+          "reasoning_tokens": 0,
+          "effective_cost": 47.2
+        },
+        {
+          "ticket": 2,
+          "task_id": "hold_coins",
+          "status": "ACCOUNTED",
+          "reserved_units": 2522,
+          "task_limit_units": 2526,
+          "input_token_estimate": 1372,
+          "output_cap": 115,
+          "input_tokens": 93,
+          "output_tokens": 96,
+          "reasoning_tokens": 0,
+          "effective_cost": 105.3
+        },
+        {
+          "ticket": 3,
+          "task_id": "hold_crt",
+          "status": "ACCOUNTED",
+          "reserved_units": 2531,
+          "task_limit_units": 2537,
+          "input_token_estimate": 1381,
+          "output_cap": 115,
+          "input_tokens": 91,
+          "output_tokens": 45,
+          "reasoning_tokens": 0,
+          "effective_cost": 54.1
+        },
+        {
+          "ticket": 4,
+          "task_id": "hold_grid",
+          "status": "ACCOUNTED",
+          "reserved_units": 2531,
+          "task_limit_units": 2537,
+          "input_token_estimate": 1381,
+          "output_cap": 115,
+          "input_tokens": 98,
+          "output_tokens": 115,
+          "reasoning_tokens": 0,
+          "effective_cost": 124.8
+        },
+        {
+          "ticket": 5,
+          "task_id": "hold_digit_sum",
+          "status": "ACCOUNTED",
+          "reserved_units": 1786,
+          "task_limit_units": 1795,
+          "input_token_estimate": 1346,
+          "output_cap": 44,
+          "input_tokens": 86,
+          "output_tokens": 16,
+          "reasoning_tokens": 0,
+          "effective_cost": 24.6
+        },
+        {
+          "ticket": 6,
+          "task_id": "hold_factorial",
+          "status": "ACCOUNTED",
+          "reserved_units": 1790,
+          "task_limit_units": 1799,
+          "input_token_estimate": 1350,
+          "output_cap": 44,
+          "input_tokens": 83,
+          "output_tokens": 44,
+          "reasoning_tokens": 0,
+          "effective_cost": 52.3
+        },
+        {
+          "ticket": 7,
+          "task_id": "hold_lcm",
+          "status": "ACCOUNTED",
+          "reserved_units": 1796,
+          "task_limit_units": 1804,
+          "input_token_estimate": 1356,
+          "output_cap": 44,
+          "input_tokens": 90,
+          "output_tokens": 44,
+          "reasoning_tokens": 0,
+          "effective_cost": 53.0
+        },
+        {
+          "ticket": 8,
+          "task_id": "hold_square_sum",
+          "status": "ACCOUNTED",
+          "reserved_units": 1797,
+          "task_limit_units": 1805,
+          "input_token_estimate": 1357,
+          "output_cap": 44,
+          "input_tokens": 87,
+          "output_tokens": 28,
+          "reasoning_tokens": 0,
+          "effective_cost": 36.7
+        },
+        {
+          "ticket": 9,
+          "task_id": "hold_weighted",
+          "status": "ACCOUNTED",
+          "reserved_units": 1778,
+          "task_limit_units": 1781,
+          "input_token_estimate": 1358,
+          "output_cap": 42,
+          "input_tokens": 92,
+          "output_tokens": 33,
+          "reasoning_tokens": 0,
+          "effective_cost": 42.2
+        }
+      ]
+    },
+    "budget_audit_path": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E131_new_800_baseline_live_20261113T121435301685\\budget.json",
+    "execution_engine": "openjiuwen",
+    "workflow_runs": [
+      {
+        "task_id": "hold_stairs",
+        "workflow_id": "task_6ca723562bd34ce0bb7a26c8f089593c",
+        "session_id": "8f5480465d114ac4b9cd933f7f9237e2",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_divisibility",
+        "workflow_id": "task_16799986bb5442d49b96099263f013c3",
+        "session_id": "283716d220cf4746aa171fffbff79946",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_coins",
+        "workflow_id": "task_2b23fed3fd024cf5ae6351b1575452cc",
+        "session_id": "cceae2f3088a4fdaa6fe278499dd9ac0",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_crt",
+        "workflow_id": "task_088e1f35ea764724b184f7aef66861a0",
+        "session_id": "6adb4d4f487d40c49e19e7c08eff40e4",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_grid",
+        "workflow_id": "task_d8ba32233a9349408b9602e54bbc89f3",
+        "session_id": "6a2930d70cf54c5e8d514354e931b31d",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_search_0",
+        "workflow_id": "task_ac137c38940f407cb921d11a55197114",
+        "session_id": "ae8990704ada4ff98617d845a73ac075",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_search_1",
+        "workflow_id": "task_27638f3b837243079a8a88ad36c46b29",
+        "session_id": "517e2937980d4c70be836ba2f79a4eae",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_digit_sum",
+        "workflow_id": "task_9be1de329ac24880946e35aa21daad9c",
+        "session_id": "f215bd96da2149519b8336fe66ec2ecc",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_factorial",
+        "workflow_id": "task_71a835a9e406459cb489e79dada70b65",
+        "session_id": "f2b338a7e483491bb66c70caa1f59d56",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_lcm",
+        "workflow_id": "task_4221c7cde09c4affbec378dacc89c6fc",
+        "session_id": "1b41b15ef370459fa3e3f0a0b70beab5",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_square_sum",
+        "workflow_id": "task_19b256d0d0d348fab26733a9b9a6ccaa",
+        "session_id": "cad45aa6f7a946de80b9024d80515dc0",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_weighted",
+        "workflow_id": "task_a308483ebd3c41c4b355a07cb60142a5",
+        "session_id": "7b6e4dfc27aa4fc18be2dfed68fe282c",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_binomial",
+        "workflow_id": "task_35aaf3a67b5a4a73a7d5f94555447bae",
+        "session_id": "bc0114a9c14e421a8c7e85b9627ba4c9",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_weighted_mean",
+        "workflow_id": "task_540c66d3b61946d4927beab1e179d5b8",
+        "session_id": "f9f476fb5d6f40a7a5fbd36daf504701",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_data_revenue",
+        "workflow_id": "task_e69f5a09338b438c89989202da15da93",
+        "session_id": "bcfe0ed9fe7745a79a75800d5e779232",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_code_sum",
+        "workflow_id": "task_aad085deff5f407480b3f4bc90c1609a",
+        "session_id": "9fc397a928f548f7a1253a000c77fb52",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_code_runs",
+        "workflow_id": "task_25da0e9898864adaa5ce3109eedd160b",
+        "session_id": "389c0e50bdaf4e1e86c6614fd7bfb4bb",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "hold_data_median",
+        "workflow_id": "task_3b5dd1e638344195bb671449d4337984",
+        "session_id": "6e08496955b845edb99c4c99f0cf10ee",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      }
+    ]
+  },
+  "rows": [
+    {
+      "task_id": "hold_square_sum",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "39919",
+      "answer": "39919",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_square_sum",
+        "status": "SOLVED",
+        "answer": "39919",
+        "input_tokens": 87,
+        "output_tokens": 28,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 5.547000000020489,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "hold_weighted",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "11904",
+      "answer": "11904",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_weighted",
+        "status": "SOLVED",
+        "answer": "11904",
+        "input_tokens": 92,
+        "output_tokens": 33,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.9060000000172295,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "hold_divisibility",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "135",
+      "answer": "135",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_divisibility",
+        "status": "SOLVED",
+        "answer": "135",
+        "input_tokens": 92,
+        "output_tokens": 38,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.2959999999729916,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "hold_crt",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "40",
+      "answer": "40",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_crt",
+        "status": "SOLVED",
+        "answer": "40",
+        "input_tokens": 91,
+        "output_tokens": 45,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.14000000001397,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "hold_factorial",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "43",
+      "answer": null,
+      "status": "TRUNCATED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_factorial",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 83,
+        "output_tokens": 44,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 3.4540000000270084,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      }
+    },
+    {
+      "task_id": "hold_digit_sum",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "135",
+      "answer": "135",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_digit_sum",
+        "status": "SOLVED",
+        "answer": "135",
+        "input_tokens": 86,
+        "output_tokens": 16,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 9.047000000020489,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "hold_stairs",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "872",
+      "answer": null,
+      "status": "TRUNCATED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_stairs",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 89,
+        "output_tokens": 115,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 3.047000000020489,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      }
+    },
+    {
+      "task_id": "hold_coins",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "5",
+      "answer": "5",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_coins",
+        "status": "SOLVED",
+        "answer": "5",
+        "input_tokens": 93,
+        "output_tokens": 96,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 5.312000000034459,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "hold_grid",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "425",
+      "answer": null,
+      "status": "TRUNCATED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_grid",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 98,
+        "output_tokens": 115,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 11.030999999959022,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      }
+    },
+    {
+      "task_id": "hold_lcm",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "1680",
+      "answer": null,
+      "status": "TRUNCATED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_lcm",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 90,
+        "output_tokens": 44,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.9679999999934807,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      }
+    },
+    {
+      "task_id": "hold_weighted_mean",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "8",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_weighted_mean",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Insufficient global or task reservation"
+      }
+    },
+    {
+      "task_id": "hold_binomial",
+      "task_type": "math",
+      "group": "E130_new",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "715",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_binomial",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Insufficient global or task reservation"
+      }
+    },
+    {
+      "task_id": "hold_data_revenue",
+      "task_type": "data_analysis",
+      "group": "E130_new",
+      "reward": 4,
+      "unsolvable": false,
+      "expected": "70",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_data_revenue",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0470000000204891,
+        "model_used": "",
+        "notes": "Insufficient global or task reservation"
+      }
+    },
+    {
+      "task_id": "hold_data_median",
+      "task_type": "data_analysis",
+      "group": "E130_new",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "5",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_data_median",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Insufficient global or task reservation"
+      }
+    },
+    {
+      "task_id": "hold_search_0",
+      "task_type": "search",
+      "group": "E130_new",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "1973",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_search_0",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Missing entity: the architect of Tower 0"
+      }
+    },
+    {
+      "task_id": "hold_search_1",
+      "task_type": "search",
+      "group": "E130_new",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "1981",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_search_1",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Missing entity: the architect of Tower 1"
+      }
+    },
+    {
+      "task_id": "hold_code_runs",
+      "task_type": "coding",
+      "group": "E130_new",
+      "reward": 4,
+      "unsolvable": false,
+      "expected": "DONE",
+      "answer": null,
+      "status": "UNKNOWN",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_code_runs",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.26500000001396984,
+        "model_used": "",
+        "notes": "Multiple code modules without an unambiguous repair target"
+      }
+    },
+    {
+      "task_id": "hold_code_sum",
+      "task_type": "coding",
+      "group": "E130_new",
+      "reward": 4,
+      "unsolvable": false,
+      "expected": "DONE",
+      "answer": null,
+      "status": "UNKNOWN",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "hold_code_sum",
+        "status": "UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.23399999999674037,
+        "model_used": "",
+        "notes": "Multiple code modules without an unambiguous repair target"
+      }
+    }
+  ],
+  "metrics": {
+    "total": 18,
+    "solvable": 18,
+    "correct": 6,
+    "score": 15,
+    "max_score": 48,
+    "incorrect_solved_answers": 0,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 0,
+    "truncations": 4,
+    "integrity_passed": true
+  },
+  "by_type": {
+    "coding": {
+      "total": 2,
+      "solvable": 2,
+      "correct": 0,
+      "score": 0,
+      "max_score": 8,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 0,
+      "truncations": 0,
+      "integrity_passed": true
+    },
+    "data_analysis": {
+      "total": 2,
+      "solvable": 2,
+      "correct": 0,
+      "score": 0,
+      "max_score": 7,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 0,
+      "truncations": 0,
+      "integrity_passed": true
+    },
+    "math": {
+      "total": 12,
+      "solvable": 12,
+      "correct": 6,
+      "score": 15,
+      "max_score": 29,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 0,
+      "truncations": 4,
+      "integrity_passed": true
+    },
+    "search": {
+      "total": 2,
+      "solvable": 2,
+      "correct": 0,
+      "score": 0,
+      "max_score": 4,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 0,
+      "truncations": 0,
+      "integrity_passed": true
+    }
+  },
+  "audit": {
+    "passed": true,
+    "calls": 10,
+    "effective_tokens": 664.1,
+    "requests": [
+      {
+        "task_id": "hold_stairs",
+        "cost": 123.9,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 115,
+        "finish": "length",
+        "passed": true
+      },
+      {
+        "task_id": "hold_divisibility",
+        "cost": 47.2,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 115,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "hold_coins",
+        "cost": 105.3,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 115,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "hold_crt",
+        "cost": 54.1,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 115,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "hold_grid",
+        "cost": 124.8,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 115,
+        "finish": "length",
+        "passed": true
+      },
+      {
+        "task_id": "hold_digit_sum",
+        "cost": 24.6,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 44,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "hold_factorial",
+        "cost": 52.3,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 44,
+        "finish": "length",
+        "passed": true
+      },
+      {
+        "task_id": "hold_lcm",
+        "cost": 53.0,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 44,
+        "finish": "length",
+        "passed": true
+      },
+      {
+        "task_id": "hold_square_sum",
+        "cost": 36.7,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 44,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "hold_weighted",
+        "cost": 42.2,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 42,
+        "finish": "stop",
+        "passed": true
+      }
+    ]
+  },
+  "actual_http_calls": 10,
+  "elapsed_seconds": 62.703,
+  "budget": {
+    "budget": 800.0,
+    "known_effective_tokens": 664.1,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "hold_stairs",
+        "status": "ACCOUNTED",
+        "reserved_units": 2507,
+        "task_limit_units": 2507,
+        "input_token_estimate": 1357,
+        "output_cap": 115,
+        "input_tokens": 89,
+        "output_tokens": 115,
+        "reasoning_tokens": 0,
+        "effective_cost": 123.9
+      },
+      {
+        "ticket": 1,
+        "task_id": "hold_divisibility",
+        "status": "ACCOUNTED",
+        "reserved_units": 2521,
+        "task_limit_units": 2525,
+        "input_token_estimate": 1371,
+        "output_cap": 115,
+        "input_tokens": 92,
+        "output_tokens": 38,
+        "reasoning_tokens": 0,
+        "effective_cost": 47.2
+      },
+      {
+        "ticket": 2,
+        "task_id": "hold_coins",
+        "status": "ACCOUNTED",
+        "reserved_units": 2522,
+        "task_limit_units": 2526,
+        "input_token_estimate": 1372,
+        "output_cap": 115,
+        "input_tokens": 93,
+        "output_tokens": 96,
+        "reasoning_tokens": 0,
+        "effective_cost": 105.3
+      },
+      {
+        "ticket": 3,
+        "task_id": "hold_crt",
+        "status": "ACCOUNTED",
+        "reserved_units": 2531,
+        "task_limit_units": 2537,
+        "input_token_estimate": 1381,
+        "output_cap": 115,
+        "input_tokens": 91,
+        "output_tokens": 45,
+        "reasoning_tokens": 0,
+        "effective_cost": 54.1
+      },
+      {
+        "ticket": 4,
+        "task_id": "hold_grid",
+        "status": "ACCOUNTED",
+        "reserved_units": 2531,
+        "task_limit_units": 2537,
+        "input_token_estimate": 1381,
+        "output_cap": 115,
+        "input_tokens": 98,
+        "output_tokens": 115,
+        "reasoning_tokens": 0,
+        "effective_cost": 124.8
+      },
+      {
+        "ticket": 5,
+        "task_id": "hold_digit_sum",
+        "status": "ACCOUNTED",
+        "reserved_units": 1786,
+        "task_limit_units": 1795,
+        "input_token_estimate": 1346,
+        "output_cap": 44,
+        "input_tokens": 86,
+        "output_tokens": 16,
+        "reasoning_tokens": 0,
+        "effective_cost": 24.6
+      },
+      {
+        "ticket": 6,
+        "task_id": "hold_factorial",
+        "status": "ACCOUNTED",
+        "reserved_units": 1790,
+        "task_limit_units": 1799,
+        "input_token_estimate": 1350,
+        "output_cap": 44,
+        "input_tokens": 83,
+        "output_tokens": 44,
+        "reasoning_tokens": 0,
+        "effective_cost": 52.3
+      },
+      {
+        "ticket": 7,
+        "task_id": "hold_lcm",
+        "status": "ACCOUNTED",
+        "reserved_units": 1796,
+        "task_limit_units": 1804,
+        "input_token_estimate": 1356,
+        "output_cap": 44,
+        "input_tokens": 90,
+        "output_tokens": 44,
+        "reasoning_tokens": 0,
+        "effective_cost": 53.0
+      },
+      {
+        "ticket": 8,
+        "task_id": "hold_square_sum",
+        "status": "ACCOUNTED",
+        "reserved_units": 1797,
+        "task_limit_units": 1805,
+        "input_token_estimate": 1357,
+        "output_cap": 44,
+        "input_tokens": 87,
+        "output_tokens": 28,
+        "reasoning_tokens": 0,
+        "effective_cost": 36.7
+      },
+      {
+        "ticket": 9,
+        "task_id": "hold_weighted",
+        "status": "ACCOUNTED",
+        "reserved_units": 1778,
+        "task_limit_units": 1781,
+        "input_token_estimate": 1358,
+        "output_cap": 42,
+        "input_tokens": 92,
+        "output_tokens": 33,
+        "reasoning_tokens": 0,
+        "effective_cost": 42.2
+      }
+    ]
+  },
+  "frozen_files_unchanged": true
+}

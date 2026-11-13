@@ -1,0 +1,19 @@
+{
+  "eligible_arms": [
+    "baseline",
+    "terse"
+  ],
+  "ineligible_arm": "terse_recheck",
+  "reason": "One full trial timed out; replacement has no finalized report after session interruption and ReadError. No complete known-set audit. No further replacement; preserve both attempts.",
+  "schedule": [
+    "new_800_terse",
+    "new_800_baseline",
+    "new_2000_baseline",
+    "new_2000_terse"
+  ],
+  "replacement_report": "E131_known_3000_terse_recheck_replacement_live_20261113T095202895650",
+  "replacement_known_calls": 33,
+  "replacement_known_tokens": 2020.9,
+  "replacement_unknown_reservation": 799.9,
+  "at": "2026-11-13T12:13:25.649Z"
+}

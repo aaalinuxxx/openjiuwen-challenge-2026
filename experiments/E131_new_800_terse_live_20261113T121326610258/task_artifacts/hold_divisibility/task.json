@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_divisibility",
+  "task_type": "math",
+  "instruction": "Count integers from 1 through 420 inclusive divisible by 4 or 7 but not both. Write only the final answer to answer.txt.",
+  "reward": 3
+}

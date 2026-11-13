@@ -1,0 +1,70 @@
+{
+  "accepted": true,
+  "selected_arm": "baseline",
+  "selection_report": "experiments/E131_score_selection_summary.json",
+  "selection_report_sha256": "0557fd328291a71e3e20f2dcdf44821218ac9cae386df28f2658979a723b20fc",
+  "criterion": "Maximize total reward of correct saved answer.txt artifacts across the completed equal-budget comparisons; tie-break actual token cost. Internal SOLVED status is diagnostic only.",
+  "score_comparison": {
+    "baseline": {
+      "artifact_score": 140,
+      "normalized_score": 1.7684523809523807,
+      "raw_score": 137,
+      "effective_tokens": 4276.3,
+      "calls": 59,
+      "wrong": 0
+    },
+    "terse": {
+      "artifact_score": 138,
+      "normalized_score": 1.811904761904762,
+      "raw_score": 138,
+      "effective_tokens": 3824.7,
+      "calls": 61,
+      "wrong": 3
+    }
+  },
+  "runtime_sha256": "157fbff88b3a31f5f0390b828fcadb69b13e8911834122e8bbcbb91465dd7aa3",
+  "configuration": {
+    "ranking_policy": "calibrated",
+    "profile": "csv-roomy",
+    "multi_csv_max_output_tokens": 600,
+    "budget": 3000,
+    "max_calls": 30,
+    "concurrency": 1,
+    "experimental_joins": true,
+    "search_min_task_budget": 300,
+    "data_min_task_budget": 1000,
+    "coding_min_task_budget": 800
+  },
+  "production_runtime_unchanged": true,
+  "existing_full_regression": "experiments/E129_submission_baseline_live_20261113T092505061530/report.json",
+  "existing_full_regression_sha256": "d192a705e8bb2df185e725a4a337492cb9439a83fedeee49d242e076abba42b7",
+  "existing_full_regression_metrics": {
+    "total": 31,
+    "solvable": 26,
+    "correct": 26,
+    "score": 78,
+    "max_score": 78,
+    "incorrect_solved_answers": 0,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 3,
+    "truncations": 0,
+    "integrity_passed": true
+  },
+  "preflight_report": "experiments/E128_submission_acceptance/preflight.json",
+  "preflight_report_sha256": "1f85480bbb05278fc7c05bcfb07a55cbf1513dcc15e00927f48f11292d204d6c",
+  "runtime_source_commit": "69da4c8eb3a16efaa70292d8c93c8a4cb84a4615",
+  "unit_tests": 241,
+  "new_api_calls": 0,
+  "campaign_accounted_calls": 709,
+  "campaign_known_effective_tokens": 50473.8,
+  "new_unaccounted_reservation": 1599.8,
+  "prior_unaccounted_reservation": 248.7,
+  "docker_tested": false,
+  "linux_tested": false,
+  "limitations": [
+    "Small author-generated validation sets; no hidden-test maximum guarantee.",
+    "Metric amended after an audit exposed a correct saved answer with FAILED internal status; original criterion retained.",
+    "Terse-recheck candidate has two incomplete runs; no claim it is inferior by quality.",
+    "Docker and packaging owned by colleague."
+  ]
+}

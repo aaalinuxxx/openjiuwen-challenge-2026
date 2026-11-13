@@ -1,0 +1,35 @@
+{
+  "task_id": "hold_factorial",
+  "response": {
+    "id": "chatcmpl-ae57e29b65e73466",
+    "created": 1794572123,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "def count_trailing_zeros(n):\n    count = 0\n    while n > 0:\n        n //= 5\n        count += n\n    return count\n\nprint(count_trailing_zeros(1",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 83,
+      "total_tokens": 127,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

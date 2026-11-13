@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_weighted",
+  "task_type": "math",
+  "instruction": "Find the sum of k times (k+3) for k from 1 through 31 inclusive. Write only the final answer to answer.txt.",
+  "reward": 2
+}

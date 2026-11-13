@@ -1,0 +1,6 @@
+{
+  "task_id": "new_blocked_grid",
+  "task_type": "math",
+  "instruction": "Count shortest lattice paths from (0, 0) to (7, 5), moving only up or right, which avoid (3, 2). Write only the final answer to answer.txt.",
+  "reward": 3
+}

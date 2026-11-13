@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_data_revenue",
+  "task_type": "data_analysis",
+  "instruction": "Using records.csv, sum qty*price for rows where kind is a. Write only the final answer to answer.txt.",
+  "reward": 4
+}

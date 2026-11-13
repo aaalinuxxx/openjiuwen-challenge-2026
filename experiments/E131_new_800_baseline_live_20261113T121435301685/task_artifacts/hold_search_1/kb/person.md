@@ -1,0 +1,1 @@
+Mira 1 was born in 1981.

@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_stairs",
+  "task_type": "math",
+  "instruction": "Count ordered sequences of moves of size 1 or 3 that sum to 19. Write only the final answer to answer.txt.",
+  "reward": 3
+}

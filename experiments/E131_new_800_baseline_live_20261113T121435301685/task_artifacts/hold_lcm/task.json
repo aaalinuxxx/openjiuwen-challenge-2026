@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_lcm",
+  "task_type": "math",
+  "instruction": "Find the smallest positive number divisible by 16, 24, and 35. Write only the final answer to answer.txt.",
+  "reward": 2
+}

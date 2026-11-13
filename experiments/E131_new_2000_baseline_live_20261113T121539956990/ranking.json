@@ -1,0 +1,110 @@
+[
+  {
+    "task_id": "hold_stairs",
+    "roi": 0.14684210526315788,
+    "expected_cost": 100.3,
+    "reward": 3
+  },
+  {
+    "task_id": "hold_divisibility",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.0,
+    "reward": 3
+  },
+  {
+    "task_id": "hold_coins",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.05,
+    "reward": 3
+  },
+  {
+    "task_id": "hold_crt",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.5,
+    "reward": 3
+  },
+  {
+    "task_id": "hold_grid",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.5,
+    "reward": 3
+  },
+  {
+    "task_id": "hold_search_0",
+    "roi": 0.09948186528497409,
+    "expected_cost": 66.0,
+    "reward": 2
+  },
+  {
+    "task_id": "hold_search_1",
+    "roi": 0.09948186528497409,
+    "expected_cost": 66.0,
+    "reward": 2
+  },
+  {
+    "task_id": "hold_digit_sum",
+    "roi": 0.09789473684210527,
+    "expected_cost": 99.75,
+    "reward": 2
+  },
+  {
+    "task_id": "hold_factorial",
+    "roi": 0.09789473684210527,
+    "expected_cost": 99.95,
+    "reward": 2
+  },
+  {
+    "task_id": "hold_lcm",
+    "roi": 0.09789473684210527,
+    "expected_cost": 100.25,
+    "reward": 2
+  },
+  {
+    "task_id": "hold_square_sum",
+    "roi": 0.09789473684210527,
+    "expected_cost": 100.3,
+    "reward": 2
+  },
+  {
+    "task_id": "hold_weighted",
+    "roi": 0.09789473684210527,
+    "expected_cost": 100.35,
+    "reward": 2
+  },
+  {
+    "task_id": "hold_binomial",
+    "roi": 0.09789473684210527,
+    "expected_cost": 100.55,
+    "reward": 2
+  },
+  {
+    "task_id": "hold_weighted_mean",
+    "roi": 0.09789473684210527,
+    "expected_cost": 102.0,
+    "reward": 2
+  },
+  {
+    "task_id": "hold_data_revenue",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "hold_code_sum",
+    "roi": 0.03488602576808721,
+    "expected_cost": 211.4,
+    "reward": 4
+  },
+  {
+    "task_id": "hold_code_runs",
+    "roi": 0.03488602576808721,
+    "expected_cost": 211.48,
+    "reward": 4
+  },
+  {
+    "task_id": "hold_data_median",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  }
+]

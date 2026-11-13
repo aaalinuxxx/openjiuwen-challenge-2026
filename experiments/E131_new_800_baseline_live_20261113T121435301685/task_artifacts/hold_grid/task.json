@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_grid",
+  "task_type": "math",
+  "instruction": "Count shortest paths from (0,0) to (8,4) using only right and up moves, avoiding (2,3). Write only the final answer to answer.txt.",
+  "reward": 3
+}

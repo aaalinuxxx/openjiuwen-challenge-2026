@@ -1,0 +1,6 @@
+{
+  "done": true,
+  "code": 0,
+  "stdout": "{\"selected_arm\": \"baseline\", \"totals\": {\"baseline\": {\"artifact_score\": 140, \"normalized_score\": 1.7684523809523807, \"raw_score\": 137, \"effective_tokens\": 4276.3, \"calls\": 59, \"wrong\": 0}, \"terse\": {\"artifact_score\": 138, \"normalized_score\": 1.811904761904762, \"raw_score\": 138, \"effective_tokens\": 3824.7, \"calls\": 61, \"wrong\": 3}}, \"new_calls\": 187, \"new_effective_tokens\": 12103.4}\r\n",
+  "stderr": ""
+}

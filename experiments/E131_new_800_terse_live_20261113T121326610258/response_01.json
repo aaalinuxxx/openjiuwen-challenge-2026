@@ -1,0 +1,35 @@
+{
+  "task_id": "hold_stairs",
+  "response": {
+    "id": "chatcmpl-ab15eb61025250f0",
+    "created": 1794572023,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "import sys\nsys.setrecursionlimit(10000)\n\ndef count_sequences(n, memo={}):\n    if n in memo:\n        return memo[n]\n    if n == 0:\n        return 1\n    if n < 0:\n        return 0\n    \n    # Sum of ways to reach n by taking a step of 1 or 3\n    res = count_sequences(n - 1, memo) + count_sequences(n - 3, memo)\n   ",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 107,
+      "prompt_tokens": 103,
+      "total_tokens": 210,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

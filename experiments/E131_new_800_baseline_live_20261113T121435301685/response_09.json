@@ -1,0 +1,35 @@
+{
+  "task_id": "hold_square_sum",
+  "response": {
+    "id": "chatcmpl-9b7470259bdb7466",
+    "created": 1794572131,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\ntotal = sum(k * k for k in range(12, 50))\nprint(total)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 28,
+      "prompt_tokens": 87,
+      "total_tokens": 115,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

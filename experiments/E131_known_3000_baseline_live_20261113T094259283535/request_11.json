@@ -1,0 +1,18 @@
+{
+  "task_id": "new_integer_conflict",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown."
+      },
+      {
+        "role": "user",
+        "content": "Find an integer n satisfying 4*n=3. If no such integer exists, return UNSOLVABLE. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 115,
+    "temperature": 0.0
+  }
+}

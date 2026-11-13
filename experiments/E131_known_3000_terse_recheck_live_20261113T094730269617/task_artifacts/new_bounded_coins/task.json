@@ -1,0 +1,6 @@
+{
+  "task_id": "new_bounded_coins",
+  "task_type": "math",
+  "instruction": "Count unordered combinations summing to 23, using at most 5 coins of value 2, at most 4 coins of value 3, and at most 3 coins of value 7. Write only the final answer to answer.txt.",
+  "reward": 3
+}

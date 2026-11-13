@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_coins",
+  "task_type": "math",
+  "instruction": "Count unordered ways to form 26 using unlimited coins with values 3, 5, and 8. Write only the final answer to answer.txt.",
+  "reward": 3
+}

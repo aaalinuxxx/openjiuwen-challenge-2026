@@ -1,0 +1,18 @@
+{
+  "task_id": "hold_weighted",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown. Keep code minimal: no comments, explanations, or unnecessary helper functions."
+      },
+      {
+        "role": "user",
+        "content": "Find the sum of k times (k+3) for k from 1 through 31 inclusive. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 36,
+    "temperature": 0.0
+  }
+}
