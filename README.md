@@ -472,7 +472,7 @@ docker images --format '{{.Repository}}:{{.Tag}} -> {{.Size}}'
 ```bash
 docker build -t hack:latest .
 
-timeout -k 1000s 1h docker run --rm --name "run-${TEAM}" \
+timeout -k 1000s 1h docker run --rm --name "run-${CHATGPT6 ASTRA}" \
   --network hack-net \
   -e LLM_BASE_URL \
   -e LLM_API_KEY \
