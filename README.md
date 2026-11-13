@@ -1,10 +1,5 @@
 # Budget-Aware Agent Harness — openJiuwen Challenge'26
 
-[](https://github.com/openJiuwen-ai/agent-core)
-[](https://www.python.org/)
-[Tests](https://www.google.com/search?q=https://github.com/aaalinuxxx/openjuuweg/tree/main/tests)
-[](https://github.com/aaalinuxxx/openjuuweg/blob/main/HANDOFF.md)
-[](https://github.com/aaalinuxxx/openjuuweg/blob/main/HYPOTHESES.md)
 
 Бюджетно-ориентированный харнесс кодового агента на базе фреймворка `openjiuwen==0.1.19` ([GitHub `openJiuwen-ai/agent-core`](https://github.com/openJiuwen-ai/agent-core)) для автономного решения смешанного пула из 100 задач (`coding`, `data_analysis`, `math`, `search`) при жёстком лимите токенов (`BUDGET=100000`) и наличии 15–25% заведомо невыполнимых задач.
 
