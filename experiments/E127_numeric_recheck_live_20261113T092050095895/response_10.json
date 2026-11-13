@@ -1,0 +1,35 @@
+{
+  "task_id": "case_09",
+  "response": {
+    "id": "chatcmpl-92dc72ebf7467d54",
+    "created": 1794561690,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nprint(int(200 * (1 - 0.15)))\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 22,
+      "prompt_tokens": 133,
+      "total_tokens": 155,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"<frozen runpy>\", line 222, in run_module\r\n  File \"<frozen runpy>\", line 142, in _get_module_details\r\nImportError: No module named pip\r\n"
+}

@@ -1,0 +1,6 @@
+{
+  "done": true,
+  "stdout": "Report: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E127_numeric_recheck_live_20261113T092050095895\\report.json\r\n{\"case_id\": \"case_00\", \"status\": \"SOLVED\", \"cost\": 98.1}\r\n{\"case_id\": \"case_01\", \"status\": \"SOLVED\", \"cost\": 81.4}\r\n{\"case_id\": \"case_02\", \"status\": \"SOLVED\", \"cost\": 98.1}\r\n{\"case_id\": \"case_03\", \"status\": \"SOLVED\", \"cost\": 95.4}\r\n{\"case_id\": \"case_04\", \"status\": \"SOLVED\", \"cost\": 35.9}\r\n{\"case_id\": \"case_05\", \"status\": \"SOLVED\", \"cost\": 51.5}\r\n{\"case_id\": \"case_06\", \"status\": \"SOLVED\", \"cost\": 29.0}\r\n{\"case_id\": \"case_07\", \"status\": \"SOLVED\", \"cost\": 22.7}\r\n{\"case_id\": \"case_08\", \"status\": \"SOLVED\", \"cost\": 20.6}\r\n{\"case_id\": \"case_09\", \"status\": \"SOLVED\", \"cost\": 35.3}\r\n{\"status\": \"COMPLETED\", \"metrics\": {\"cases\": 10, \"unique_instructions\": 8, \"baseline_correct\": 4, \"correct\": 10, \"input_integrity\": true, \"non_solved_answer_files\": 0, \"wrong_solved\": 0, \"lost_controls\": [], \"recovered_cases\": [\"case_00\", \"case_01\", \"case_02\", \"case_03\", \"case_04\", \"case_06\"]}, \"audit\": {\"passed\": true, \"new_accounted_calls\": 10, \"new_effective_tokens\": 568.0}, \"accepted_diagnostic\": true}\r\n",
+  "stderr": "",
+  "code": 0
+}

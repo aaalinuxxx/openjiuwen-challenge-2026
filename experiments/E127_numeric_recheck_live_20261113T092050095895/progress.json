@@ -1,0 +1,283 @@
+{
+  "results": [
+    {
+      "case_id": "case_00",
+      "result": {
+        "task_id": "case_00",
+        "status": "SOLVED",
+        "answer": "9",
+        "input_tokens": 131,
+        "output_tokens": 85,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_01",
+      "result": {
+        "task_id": "case_01",
+        "status": "SOLVED",
+        "answer": "6677056",
+        "input_tokens": 134,
+        "output_tokens": 68,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_02",
+      "result": {
+        "task_id": "case_02",
+        "status": "SOLVED",
+        "answer": "9",
+        "input_tokens": 131,
+        "output_tokens": 85,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_03",
+      "result": {
+        "task_id": "case_03",
+        "status": "SOLVED",
+        "answer": "6677056",
+        "input_tokens": 134,
+        "output_tokens": 82,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_04",
+      "result": {
+        "task_id": "case_04",
+        "status": "SOLVED",
+        "answer": "615",
+        "input_tokens": 139,
+        "output_tokens": 22,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_05",
+      "result": {
+        "task_id": "case_05",
+        "status": "SOLVED",
+        "answer": "31",
+        "input_tokens": 115,
+        "output_tokens": 40,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_06",
+      "result": {
+        "task_id": "case_06",
+        "status": "SOLVED",
+        "answer": "17575",
+        "input_tokens": 120,
+        "output_tokens": 17,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_07",
+      "result": {
+        "task_id": "case_07",
+        "status": "SOLVED",
+        "answer": "210",
+        "input_tokens": 117,
+        "output_tokens": 11,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_08",
+      "result": {
+        "task_id": "case_08",
+        "status": "SOLVED",
+        "answer": "42",
+        "input_tokens": 126,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_09",
+      "result": {
+        "task_id": "case_09",
+        "status": "SOLVED",
+        "answer": "170",
+        "input_tokens": 133,
+        "output_tokens": 22,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    }
+  ],
+  "budget": {
+    "budget": 2500,
+    "known_effective_tokens": 568.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "case_00",
+        "status": "ACCOUNTED",
+        "reserved_units": 3599,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1599,
+        "output_cap": 200,
+        "input_tokens": 131,
+        "output_tokens": 85,
+        "reasoning_tokens": 0,
+        "effective_cost": 98.1
+      },
+      {
+        "ticket": 1,
+        "task_id": "case_01",
+        "status": "ACCOUNTED",
+        "reserved_units": 3588,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1588,
+        "output_cap": 200,
+        "input_tokens": 134,
+        "output_tokens": 68,
+        "reasoning_tokens": 0,
+        "effective_cost": 81.4
+      },
+      {
+        "ticket": 2,
+        "task_id": "case_02",
+        "status": "ACCOUNTED",
+        "reserved_units": 3599,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1599,
+        "output_cap": 200,
+        "input_tokens": 131,
+        "output_tokens": 85,
+        "reasoning_tokens": 0,
+        "effective_cost": 98.1
+      },
+      {
+        "ticket": 3,
+        "task_id": "case_03",
+        "status": "ACCOUNTED",
+        "reserved_units": 3588,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1588,
+        "output_cap": 200,
+        "input_tokens": 134,
+        "output_tokens": 82,
+        "reasoning_tokens": 0,
+        "effective_cost": 95.4
+      },
+      {
+        "ticket": 4,
+        "task_id": "case_04",
+        "status": "ACCOUNTED",
+        "reserved_units": 3598,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1598,
+        "output_cap": 200,
+        "input_tokens": 139,
+        "output_tokens": 22,
+        "reasoning_tokens": 0,
+        "effective_cost": 35.9
+      },
+      {
+        "ticket": 5,
+        "task_id": "case_05",
+        "status": "ACCOUNTED",
+        "reserved_units": 3524,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1524,
+        "output_cap": 200,
+        "input_tokens": 115,
+        "output_tokens": 40,
+        "reasoning_tokens": 0,
+        "effective_cost": 51.5
+      },
+      {
+        "ticket": 6,
+        "task_id": "case_06",
+        "status": "ACCOUNTED",
+        "reserved_units": 3543,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1543,
+        "output_cap": 200,
+        "input_tokens": 120,
+        "output_tokens": 17,
+        "reasoning_tokens": 0,
+        "effective_cost": 29.0
+      },
+      {
+        "ticket": 7,
+        "task_id": "case_07",
+        "status": "ACCOUNTED",
+        "reserved_units": 3526,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1526,
+        "output_cap": 200,
+        "input_tokens": 117,
+        "output_tokens": 11,
+        "reasoning_tokens": 0,
+        "effective_cost": 22.7
+      },
+      {
+        "ticket": 8,
+        "task_id": "case_08",
+        "status": "ACCOUNTED",
+        "reserved_units": 3551,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1551,
+        "output_cap": 200,
+        "input_tokens": 126,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "effective_cost": 20.6
+      },
+      {
+        "ticket": 9,
+        "task_id": "case_09",
+        "status": "ACCOUNTED",
+        "reserved_units": 3586,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1586,
+        "output_cap": 200,
+        "input_tokens": 133,
+        "output_tokens": 22,
+        "reasoning_tokens": 0,
+        "effective_cost": 35.3
+      }
+    ]
+  }
+}

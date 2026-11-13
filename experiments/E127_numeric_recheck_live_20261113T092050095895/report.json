@@ -1,0 +1,517 @@
+{
+  "status": "COMPLETED",
+  "mode": "LIVE_CORRECTION_DIAGNOSTIC",
+  "plan_sha256": "c2b5f1c94201e25f16f155aacf15e0dbe73f07ded633ace102c79940c834e4b8",
+  "hypothesis": "H04.36_NUMERIC_LITERAL_RECHECK",
+  "rows": [
+    {
+      "case_id": "case_00",
+      "task_id": "math_coin_combinations",
+      "expected": "9",
+      "baseline_correct": false,
+      "answer": "9",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_00",
+        "status": "SOLVED",
+        "answer": "9",
+        "input_tokens": 131,
+        "output_tokens": 85,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_01",
+      "task_id": "math_stairs",
+      "expected": "6677056",
+      "baseline_correct": false,
+      "answer": "6677056",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_01",
+        "status": "SOLVED",
+        "answer": "6677056",
+        "input_tokens": 134,
+        "output_tokens": 68,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_02",
+      "task_id": "math_coin_combinations",
+      "expected": "9",
+      "baseline_correct": false,
+      "answer": "9",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_02",
+        "status": "SOLVED",
+        "answer": "9",
+        "input_tokens": 131,
+        "output_tokens": 85,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_03",
+      "task_id": "math_stairs",
+      "expected": "6677056",
+      "baseline_correct": false,
+      "answer": "6677056",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_03",
+        "status": "SOLVED",
+        "answer": "6677056",
+        "input_tokens": 134,
+        "output_tokens": 82,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_04",
+      "task_id": "math_weighted",
+      "expected": "615",
+      "baseline_correct": false,
+      "answer": "615",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_04",
+        "status": "SOLVED",
+        "answer": "615",
+        "input_tokens": 139,
+        "output_tokens": 22,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_05",
+      "task_id": "new_trailing_zeros",
+      "expected": "31",
+      "baseline_correct": true,
+      "answer": "31",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_05",
+        "status": "SOLVED",
+        "answer": "31",
+        "input_tokens": 115,
+        "output_tokens": 40,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_06",
+      "task_id": "new_squared_sum",
+      "expected": "17575",
+      "baseline_correct": false,
+      "answer": "17575",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_06",
+        "status": "SOLVED",
+        "answer": "17575",
+        "input_tokens": 120,
+        "output_tokens": 17,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_07",
+      "task_id": "math_sum",
+      "expected": "210",
+      "baseline_correct": true,
+      "answer": "210",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_07",
+        "status": "SOLVED",
+        "answer": "210",
+        "input_tokens": 117,
+        "output_tokens": 11,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_08",
+      "task_id": "math_zero_warning",
+      "expected": "42",
+      "baseline_correct": true,
+      "answer": "42",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_08",
+        "status": "SOLVED",
+        "answer": "42",
+        "input_tokens": 126,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "case_09",
+      "task_id": "validate_057_math_percentage",
+      "expected": "170",
+      "baseline_correct": true,
+      "answer": "170",
+      "integrity_passed": true,
+      "verified_solution": true,
+      "incorrect_solved": false,
+      "result": {
+        "task_id": "case_09",
+        "status": "SOLVED",
+        "answer": "170",
+        "input_tokens": 133,
+        "output_tokens": 22,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    }
+  ],
+  "metrics": {
+    "cases": 10,
+    "unique_instructions": 8,
+    "baseline_correct": 4,
+    "correct": 10,
+    "input_integrity": true,
+    "non_solved_answer_files": 0,
+    "wrong_solved": 0,
+    "lost_controls": [],
+    "recovered_cases": [
+      "case_00",
+      "case_01",
+      "case_02",
+      "case_03",
+      "case_04",
+      "case_06"
+    ]
+  },
+  "audit": {
+    "passed": true,
+    "new_accounted_calls": 10,
+    "new_effective_tokens": 568.0
+  },
+  "historical_initial_effective_tokens": 148.8,
+  "policy_cost_including_historical_initials": 716.8,
+  "workflow_runs": [
+    {
+      "task_id": "case_00",
+      "workflow_id": "task_db667f459bd4426688a1a8c28c59ffa3",
+      "session_id": "65082d3e72e2464ba1650dfe99fc290a",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "case_01",
+      "workflow_id": "task_ef2a959402f947419d70586490793904",
+      "session_id": "2fe96b0bbbdf4c26a6bf6807e42676b1",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "case_02",
+      "workflow_id": "task_b3eaf24dffdf4deb8a934b5eaa738ea0",
+      "session_id": "b736e6404c9a47e08811830667d3f904",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "case_03",
+      "workflow_id": "task_204effa03f444083a6d0050022b3aa6e",
+      "session_id": "25f517c57e734dceb2afce0b1e9bdaf0",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "case_04",
+      "workflow_id": "task_daa10691fa384d9887c60928029142e2",
+      "session_id": "2439924d0a75422e91fd5eda03b160fb",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "case_05",
+      "workflow_id": "task_d5b6750fa2a6445393ad0ca2522de5d8",
+      "session_id": "4f30732dfc5649d0b697c7e37e1d47c7",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "case_06",
+      "workflow_id": "task_d45ae01fb1544037aa33bc810cb14382",
+      "session_id": "deb628d5cf2d40fd99f1154ab653bc74",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "case_07",
+      "workflow_id": "task_3e9812f7b40946cdbcad7b751ff45ba8",
+      "session_id": "a1e20c89c6db4a81ab6373c69b099948",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "case_08",
+      "workflow_id": "task_c212f72c12494ec2b4ad37dba469f5e6",
+      "session_id": "795d2fd66a0c4375b5e13d0036fe45eb",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    },
+    {
+      "task_id": "case_09",
+      "workflow_id": "task_8f9eaf8f6f6a4678ab20342a24965903",
+      "session_id": "e5babe24a8fb4f9aa6cbbc4a5eaa35df",
+      "stages": [
+        "solve",
+        "finalize"
+      ],
+      "saved": true,
+      "state": "COMPLETED",
+      "request_timeout_sec": 60.0,
+      "workflow_timeout_sec": 180.0
+    }
+  ],
+  "accepted_diagnostic": true,
+  "actual_transport_attempts": 10,
+  "budget": {
+    "budget": 2500,
+    "known_effective_tokens": 568.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "case_00",
+        "status": "ACCOUNTED",
+        "reserved_units": 3599,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1599,
+        "output_cap": 200,
+        "input_tokens": 131,
+        "output_tokens": 85,
+        "reasoning_tokens": 0,
+        "effective_cost": 98.1
+      },
+      {
+        "ticket": 1,
+        "task_id": "case_01",
+        "status": "ACCOUNTED",
+        "reserved_units": 3588,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1588,
+        "output_cap": 200,
+        "input_tokens": 134,
+        "output_tokens": 68,
+        "reasoning_tokens": 0,
+        "effective_cost": 81.4
+      },
+      {
+        "ticket": 2,
+        "task_id": "case_02",
+        "status": "ACCOUNTED",
+        "reserved_units": 3599,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1599,
+        "output_cap": 200,
+        "input_tokens": 131,
+        "output_tokens": 85,
+        "reasoning_tokens": 0,
+        "effective_cost": 98.1
+      },
+      {
+        "ticket": 3,
+        "task_id": "case_03",
+        "status": "ACCOUNTED",
+        "reserved_units": 3588,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1588,
+        "output_cap": 200,
+        "input_tokens": 134,
+        "output_tokens": 82,
+        "reasoning_tokens": 0,
+        "effective_cost": 95.4
+      },
+      {
+        "ticket": 4,
+        "task_id": "case_04",
+        "status": "ACCOUNTED",
+        "reserved_units": 3598,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1598,
+        "output_cap": 200,
+        "input_tokens": 139,
+        "output_tokens": 22,
+        "reasoning_tokens": 0,
+        "effective_cost": 35.9
+      },
+      {
+        "ticket": 5,
+        "task_id": "case_05",
+        "status": "ACCOUNTED",
+        "reserved_units": 3524,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1524,
+        "output_cap": 200,
+        "input_tokens": 115,
+        "output_tokens": 40,
+        "reasoning_tokens": 0,
+        "effective_cost": 51.5
+      },
+      {
+        "ticket": 6,
+        "task_id": "case_06",
+        "status": "ACCOUNTED",
+        "reserved_units": 3543,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1543,
+        "output_cap": 200,
+        "input_tokens": 120,
+        "output_tokens": 17,
+        "reasoning_tokens": 0,
+        "effective_cost": 29.0
+      },
+      {
+        "ticket": 7,
+        "task_id": "case_07",
+        "status": "ACCOUNTED",
+        "reserved_units": 3526,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1526,
+        "output_cap": 200,
+        "input_tokens": 117,
+        "output_tokens": 11,
+        "reasoning_tokens": 0,
+        "effective_cost": 22.7
+      },
+      {
+        "ticket": 8,
+        "task_id": "case_08",
+        "status": "ACCOUNTED",
+        "reserved_units": 3551,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1551,
+        "output_cap": 200,
+        "input_tokens": 126,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "effective_cost": 20.6
+      },
+      {
+        "ticket": 9,
+        "task_id": "case_09",
+        "status": "ACCOUNTED",
+        "reserved_units": 3586,
+        "task_limit_units": 5000,
+        "input_token_estimate": 1586,
+        "output_cap": 200,
+        "input_tokens": 133,
+        "output_tokens": 22,
+        "reasoning_tokens": 0,
+        "effective_cost": 35.3
+      }
+    ]
+  },
+  "frozen_files_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "case_01",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown. Compute the result from the numbers in the task with Python operations. Do not replace the calculation with a precomputed numeric constant. Keep code concise, without comments."
+      },
+      {
+        "role": "user",
+        "content": "A staircase has 34 steps. A move climbs 1,3,or4 steps. How many ordered sequences of moves land exactly at the top? Write only the integer result to answer.txt."
+      }
+    ],
+    "max_tokens": 200,
+    "temperature": 0.0
+  }
+}

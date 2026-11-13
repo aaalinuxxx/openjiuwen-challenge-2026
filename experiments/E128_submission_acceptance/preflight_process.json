@@ -1,0 +1,6 @@
+{
+  "done": true,
+  "stdout": "{\"passed\": true, \"runtime_files\": 38, \"dependency_errors\": [], \"cli\": {\"cli_overrides\": true, \"budget_environment\": true, \"token_budget_environment\": true}}\r\n",
+  "stderr": "",
+  "code": 0
+}

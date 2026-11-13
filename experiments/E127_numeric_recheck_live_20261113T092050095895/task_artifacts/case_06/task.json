@@ -1,0 +1,6 @@
+{
+  "task_id": "case_06",
+  "task_type": "math",
+  "instruction": "Compute the sum of k squared for integers k from 1 through 37 inclusive. Write only the final answer to answer.txt.",
+  "reward": 1
+}
