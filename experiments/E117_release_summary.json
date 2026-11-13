@@ -1,0 +1,55 @@
+{
+  "report": "experiments/E117_production_ranking_live_20261113T074600607836/report.json",
+  "report_sha256": "51d5bea97d61a2165266bd4e500afaf14550fec57b8a78dafd7e71d8bfbce1a6",
+  "accepted": true,
+  "acceptance_checks": {
+    "full_26_correct": true,
+    "full_78_score": true,
+    "all_previous_solutions_retained": true,
+    "no_wrong_solved": true,
+    "no_truncations": true,
+    "no_non_solved_answer_files": true,
+    "integrity": true,
+    "accounting": true,
+    "default_calibrated": true
+  },
+  "metrics": {
+    "total": 31,
+    "solvable": 26,
+    "correct": 26,
+    "score": 78,
+    "max_score": 78,
+    "incorrect_solved_answers": 0,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 3,
+    "truncations": 0,
+    "integrity_passed": true
+  },
+  "calls": 23,
+  "effective_tokens": 1789.1,
+  "configuration": {
+    "ranking_policy": "calibrated",
+    "profile": "csv-roomy",
+    "multi_csv_max_output_tokens": 600,
+    "budget": 3000.0,
+    "max_calls": 30,
+    "concurrency": 1,
+    "experimental_joins": true,
+    "search_min_task_budget": 300,
+    "data_min_task_budget": 1000,
+    "coding_min_task_budget": 800.0
+  },
+  "lost": [],
+  "gained": [],
+  "unit_tests": 212,
+  "campaign_calls": 294,
+  "campaign_effective_tokens": 23138.8,
+  "production_ranking": "calibrated",
+  "production_output_floor": false,
+  "rollback": "--ranking-policy roi",
+  "limitations": [
+    "Known31-task regression, not independent hidden-contest performance.",
+    "E115 tight-budget ordering advantage does not imply a higher score than78 on this saturated set.",
+    "Docker/Linux/read-only packaging remains a separate check."
+  ]
+}
