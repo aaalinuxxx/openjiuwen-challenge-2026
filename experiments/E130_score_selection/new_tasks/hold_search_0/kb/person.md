@@ -1,0 +1,1 @@
+Mira 0 was born in 1973.

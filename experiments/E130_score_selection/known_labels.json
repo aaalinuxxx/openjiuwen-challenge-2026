@@ -1,0 +1,430 @@
+{
+  "coding_brackets": {
+    "task_id": "coding_brackets",
+    "task_type": "coding",
+    "instruction": "Fix balanced(s): match (), [] and {} with correct nesting. Ignore other characters. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+    "expected": "tests_pass",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/coding_brackets"
+  },
+  "coding_intervals": {
+    "task_id": "coding_intervals",
+    "task_type": "coding",
+    "instruction": "Fix merge_intervals. Merge overlapping OR touching intervals, sort output by start, and do not mutate the input. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+    "expected": "tests_pass",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/coding_intervals"
+  },
+  "coding_multimodule": {
+    "task_id": "coding_multimodule",
+    "task_type": "coding",
+    "instruction": "Fix mylib.py: keep values at least the threshold returned by settings.threshold(). Preserve that imported function. Do not edit a_settings.py. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+    "expected": "tests_pass",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/coding_multimodule"
+  },
+  "coding_overlap": {
+    "task_id": "coding_overlap",
+    "task_type": "coding",
+    "instruction": "Fix occurrences(text, pattern). Count overlapping exact matches. Empty pattern returns 0. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+    "expected": "tests_pass",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/coding_overlap"
+  },
+  "coding_pure_conflict": {
+    "task_id": "coding_pure_conflict",
+    "task_type": "coding",
+    "instruction": "Implement deterministic pure f(x). It must depend only on x: no state, call-order or test introspection. Both assertions on f(7) are required. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/coding_pure_conflict"
+  },
+  "coding_stateful": {
+    "task_id": "coding_stateful",
+    "task_type": "coding",
+    "instruction": "Fix Counter. It starts at zero; next() increments and returns its own state. Each instance is independent. Do not change tests. Write DONE to answer.txt only after all tests pass.",
+    "expected": "tests_pass",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/coding_stateful"
+  },
+  "data_distinct": {
+    "task_id": "data_distinct",
+    "task_type": "data_analysis",
+    "instruction": "Using sales.csv, count DISTINCT clients with category red and month at most 2. Write only the final answer to answer.txt.",
+    "expected": "2",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/data_distinct"
+  },
+  "data_empty_count": {
+    "task_id": "data_empty_count",
+    "task_type": "data_analysis",
+    "instruction": "Using sales.csv, count rows whose category is green. An empty selection has count 0. Write only the final answer to answer.txt.",
+    "expected": "0",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/data_empty_count"
+  },
+  "data_filtered_median": {
+    "task_id": "data_filtered_median",
+    "task_type": "data_analysis",
+    "instruction": "Using sales.csv, calculate the median units among category red rows. Return one decimal place. Write only the final answer to answer.txt.",
+    "expected": "2.5",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/data_filtered_median"
+  },
+  "data_missing_source": {
+    "task_id": "data_missing_source",
+    "task_type": "data_analysis",
+    "instruction": "How many units of product 'widget' were sold in months 1 through 2 inclusive? Use only sales.csv. It is absent and no other data exists. Write only the final answer to answer.txt.",
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/data_missing_source"
+  },
+  "data_two_file_join": {
+    "task_id": "data_two_file_join",
+    "task_type": "data_analysis",
+    "instruction": "Join orders.csv with prices.csv on sku. Compute total qty times price over all orders. Return an integer. Write only the final answer to answer.txt.",
+    "expected": "33",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/data_two_file_join"
+  },
+  "data_weighted_mean": {
+    "task_id": "data_weighted_mean",
+    "task_type": "data_analysis",
+    "instruction": "Using sales.csv, calculate the average price weighted by units over ALL rows. Return exactly two decimal places. Write only the final answer to answer.txt.",
+    "expected": "7.86",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/data_weighted_mean"
+  },
+  "math_gcd": {
+    "task_id": "math_gcd",
+    "task_type": "math",
+    "instruction": "Find the greatest positive integer that divides both 84 and 126. Write only the final answer to answer.txt.",
+    "expected": "42",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/math_gcd"
+  },
+  "math_paraphrase": {
+    "task_id": "math_paraphrase",
+    "task_type": "math",
+    "instruction": "There are 47 books on a shelf. Add 13 books, then remove 9. How many remain? Write only the final answer to answer.txt.",
+    "expected": "51",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/math_paraphrase"
+  },
+  "math_percentage": {
+    "task_id": "math_percentage",
+    "task_type": "math",
+    "instruction": "A coat costs 200 units. A discount is 15 percent of the original price. What is the final price? Return an integer. Write only the final answer to answer.txt.",
+    "expected": "170",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/math_percentage"
+  },
+  "math_sum": {
+    "task_id": "math_sum",
+    "task_type": "math",
+    "instruction": "Compute the sum of all integers from 1 to 20 inclusive. Write only the final answer to answer.txt.",
+    "expected": "210",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/math_sum"
+  },
+  "math_zero_operation": {
+    "task_id": "math_zero_operation",
+    "task_type": "math",
+    "instruction": "A warehouse starts with 9 boxes. It is split equally into 0 warehouses. How many boxes does each warehouse have? Write only the final answer to answer.txt.",
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/math_zero_operation"
+  },
+  "math_zero_warning": {
+    "task_id": "math_zero_warning",
+    "task_type": "math",
+    "instruction": "Do not divide by 0; this is only a warning, not an operation. Compute 6 times 7. Write only the final answer to answer.txt.",
+    "expected": "42",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/math_zero_warning"
+  },
+  "search_absent": {
+    "task_id": "search_absent",
+    "task_type": "search",
+    "instruction": "In which year was Zora Cloud born? Use only kb/. Write only the final answer to answer.txt.",
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/search_absent"
+  },
+  "search_conflicting_fact": {
+    "task_id": "search_conflicting_fact",
+    "task_type": "search",
+    "instruction": "Use only kb/. In which year was Nia Moss born? There is no preferred source; return UNSOLVABLE if the year cannot be uniquely determined. Write only the final answer to answer.txt.",
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/search_conflicting_fact"
+  },
+  "search_irrelevant_conflict": {
+    "task_id": "search_irrelevant_conflict",
+    "task_type": "search",
+    "instruction": "In which city is the headquarters of Nia Moss's employer? The conflicting birth year is irrelevant; use the agreed employer. Write only the final answer to answer.txt.",
+    "expected": "Bern",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/search_irrelevant_conflict"
+  },
+  "search_new_relation": {
+    "task_id": "search_new_relation",
+    "task_type": "search",
+    "instruction": "Use only kb/. What is the birth year of the founder of Sol Materials? Write only the final answer to answer.txt.",
+    "expected": "1977",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/search_new_relation"
+  },
+  "search_paraphrase_chain": {
+    "task_id": "search_paraphrase_chain",
+    "task_type": "search",
+    "instruction": "Use only kb/. Identify the company employing the mentor of Mira Vale and return its headquarters city. Write only the final answer to answer.txt.",
+    "expected": "Riga",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/search_paraphrase_chain"
+  },
+  "search_three_hop": {
+    "task_id": "search_three_hop",
+    "task_type": "search",
+    "instruction": "In which city is the headquarters of Mira Vale's mentor's employer? Write only the final answer to answer.txt.",
+    "expected": "Riga",
+    "unsolvable": false,
+    "reward": 3,
+    "group": "E41_core",
+    "source": "experiments/E41_family_shift/tasks/search_three_hop"
+  },
+  "pilot_known_or_failure": {
+    "task_id": "pilot_known_or_failure",
+    "task_type": "data_analysis",
+    "instruction": "Using orders.csv and labels.csv, match every orders.code with every labels.sku as exact strings. Keep only pairs where labels.region is 'west' OR there is no matching labels row. Total orders.qty over all retained pairs, counting duplicate rows separately. Also include orders without a matching label. Output only the numeric sum.",
+    "reward": 3,
+    "expected": "30",
+    "unsolvable": false,
+    "group": "E75_pilot",
+    "source": "experiments/E75_join_or/cases.json#known_or_failure"
+  },
+  "pilot_mixed_duplicates": {
+    "task_id": "pilot_mixed_duplicates",
+    "task_type": "data_analysis",
+    "instruction": "Read orders.csv and labels.csv. Left join orders.code to labels.sku using exact string keys. Sum orders.qty for all resulting pairs where labels.region equals 'west' OR there is no matching right row. Preserve every matching pair, including duplicates. Print the exact sum.",
+    "reward": 3,
+    "expected": "32",
+    "unsolvable": false,
+    "group": "E75_pilot",
+    "source": "experiments/E75_join_or/cases.json#mixed_duplicates"
+  },
+  "pilot_empty_filter_not_unmatched": {
+    "task_id": "pilot_empty_filter_not_unmatched",
+    "task_type": "data_analysis",
+    "instruction": "Read orders.csv and labels.csv. Left join orders.code to labels.sku using exact string keys. Sum orders.qty for all resulting pairs where labels.region equals '' OR there is no matching right row. Preserve every matching pair, including duplicates. Print the exact sum.",
+    "reward": 3,
+    "expected": "13",
+    "unsolvable": false,
+    "group": "E75_pilot",
+    "source": "experiments/E75_join_or/cases.json#empty_filter_not_unmatched"
+  },
+  "pilot_empty_right": {
+    "task_id": "pilot_empty_right",
+    "task_type": "data_analysis",
+    "instruction": "Read orders.csv and labels.csv. Left join orders.code to labels.sku using exact string keys. Sum orders.qty for all resulting pairs where labels.region equals 'west' OR there is no matching right row. Preserve every matching pair, including duplicates. Print the exact sum.",
+    "reward": 3,
+    "expected": "10",
+    "unsolvable": false,
+    "group": "E75_pilot",
+    "source": "experiments/E75_join_or/cases.json#empty_right"
+  },
+  "pilot_string_keys_and_blocked": {
+    "task_id": "pilot_string_keys_and_blocked",
+    "task_type": "data_analysis",
+    "instruction": "Read orders.csv and labels.csv. Left join orders.code to labels.sku using exact string keys. Sum orders.qty for all resulting pairs where labels.region equals 'west' OR there is no matching right row. Preserve every matching pair, including duplicates. Print the exact sum.",
+    "reward": 3,
+    "expected": "10",
+    "unsolvable": false,
+    "group": "E75_pilot",
+    "source": "experiments/E75_join_or/cases.json#string_keys_and_blocked"
+  },
+  "pilot_extra_numeric_control": {
+    "task_id": "pilot_extra_numeric_control",
+    "task_type": "data_analysis",
+    "instruction": "Read orders.csv and labels.csv. Left join orders.code to labels.sku using exact string keys. Sum orders.qty for all resulting pairs where labels.region equals 'west' OR there is no matching right row. Preserve every matching pair, including duplicates. Print the exact sum. Additionally, include only orders whose qty is numerically greater than 5.",
+    "reward": 3,
+    "expected": "19",
+    "unsolvable": false,
+    "group": "E75_pilot",
+    "source": "experiments/E75_join_or/cases.json#extra_numeric_control"
+  },
+  "pilot_previous_local_control": {
+    "task_id": "pilot_previous_local_control",
+    "task_type": "data_analysis",
+    "instruction": "From stocks.csv and zones.csv, keep every pair with identical item strings and zones.region equal to 'west'. Add stocks.qty across those pairs. Duplicate rows must contribute repeatedly. Return the sum as a number.",
+    "reward": 3,
+    "expected": "17",
+    "unsolvable": false,
+    "group": "E75_pilot",
+    "source": "experiments/E75_join_or/cases.json#previous_local_control"
+  },
+  "new_crt": {
+    "task_id": "new_crt",
+    "task_type": "math",
+    "instruction": "Find the smallest positive integer x whose remainders modulo 7, 11, 13 are 3, 8, 5 respectively. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "668",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_trailing_zeros": {
+    "task_id": "new_trailing_zeros",
+    "task_type": "math",
+    "instruction": "How many trailing decimal zeros are in 125 factorial? Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "31",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_digit_sum": {
+    "task_id": "new_digit_sum",
+    "task_type": "math",
+    "instruction": "Find the sum of decimal digits of 2 to the power 123. Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "170",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_min_coins": {
+    "task_id": "new_min_coins",
+    "task_type": "math",
+    "instruction": "Using unlimited coins of values 4, 7, 9, find the minimum number of coins summing to 43. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "5",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_blocked_grid": {
+    "task_id": "new_blocked_grid",
+    "task_type": "math",
+    "instruction": "Count shortest lattice paths from (0, 0) to (7, 5), moving only up or right, which avoid (3, 2). Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "442",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_lcm": {
+    "task_id": "new_lcm",
+    "task_type": "math",
+    "instruction": "What is the smallest positive integer divisible by 21, 35, and 45? Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "315",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_exactly_two": {
+    "task_id": "new_exactly_two",
+    "task_type": "math",
+    "instruction": "How many integers from 1 through 240 inclusive are divisible by exactly two of 2, 3, 5? Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "56",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_squared_sum": {
+    "task_id": "new_squared_sum",
+    "task_type": "math",
+    "instruction": "Compute the sum of k squared for integers k from 1 through 37 inclusive. Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "17575",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_bounded_coins": {
+    "task_id": "new_bounded_coins",
+    "task_type": "math",
+    "instruction": "Count unordered combinations summing to 23, using at most 5 coins of value 2, at most 4 coins of value 3, and at most 3 coins of value 7. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "5",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_stair_moves": {
+    "task_id": "new_stair_moves",
+    "task_type": "math",
+    "instruction": "Climb a 22-step staircase, each move covering exactly 2 or 5 steps. Count ordered sequences ending exactly on step 22. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "34",
+    "unsolvable": false,
+    "group": "E122_new_math",
+    "comparison": "decimal"
+  },
+  "new_parity_conflict": {
+    "task_id": "new_parity_conflict",
+    "task_type": "math",
+    "instruction": "Find an integer n which is simultaneously even and odd. If no such integer exists, return UNSOLVABLE. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "group": "E122_new_math"
+  },
+  "new_integer_conflict": {
+    "task_id": "new_integer_conflict",
+    "task_type": "math",
+    "instruction": "Find an integer n satisfying 4*n=3. If no such integer exists, return UNSOLVABLE. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "group": "E122_new_math"
+  }
+}

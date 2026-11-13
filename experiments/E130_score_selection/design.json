@@ -1,0 +1,24 @@
+{
+  "schedule": [
+    "known_3000_baseline",
+    "known_3000_terse",
+    "known_3000_terse_recheck",
+    "new_800_terse",
+    "new_800_terse_recheck",
+    "new_800_baseline",
+    "new_2000_terse_recheck",
+    "new_2000_baseline",
+    "new_2000_terse"
+  ],
+  "criterion": "Maximize sum of score/max_score across the three equally weighted suite-budget cells; ties minimize summed actual token cost. No no-regression or zero-wrong-answer gate.",
+  "arms": [
+    "baseline",
+    "terse",
+    "terse_recheck"
+  ],
+  "limits": "Input integrity, complete accounting and frozen policies mandatory. No task-id or dataset-id routing.",
+  "recheck": "One extra call on numeric literal after terse math prompt; denied/truncated correction retains original; unknown cost stops; repeated constant retains original.",
+  "limitations": "Small author-generated selection sets; same novel tasks at two budgets are not independent samples. No hidden-test guarantee.",
+  "known_tasks": 43,
+  "new_tasks": 18
+}

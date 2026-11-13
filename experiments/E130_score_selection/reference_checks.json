@@ -1,0 +1,92 @@
+[
+  {
+    "task_id": "hold_square_sum",
+    "expected": "39919",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_weighted",
+    "expected": "11904",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_divisibility",
+    "expected": "135",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_crt",
+    "expected": "40",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_factorial",
+    "expected": "43",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_digit_sum",
+    "expected": "135",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_stairs",
+    "expected": "872",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_coins",
+    "expected": "5",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_grid",
+    "expected": "425",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_lcm",
+    "expected": "1680",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_weighted_mean",
+    "expected": "8",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_binomial",
+    "expected": "715",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_data_revenue",
+    "expected": "70",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_data_median",
+    "expected": "5",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_search_0",
+    "expected": "1973",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_search_1",
+    "expected": "1981",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_code_runs",
+    "expected": "DONE",
+    "reference_agreement": true
+  },
+  {
+    "task_id": "hold_code_sum",
+    "expected": "DONE",
+    "reference_agreement": true
+  }
+]

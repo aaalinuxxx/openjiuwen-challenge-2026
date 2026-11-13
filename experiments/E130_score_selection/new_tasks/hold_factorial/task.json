@@ -1,0 +1,6 @@
+{
+  "task_id": "hold_factorial",
+  "task_type": "math",
+  "instruction": "How many trailing decimal zeros does 175 factorial have? Write only the final answer to answer.txt.",
+  "reward": 2
+}

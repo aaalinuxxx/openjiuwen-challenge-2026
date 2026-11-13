@@ -1,0 +1,180 @@
+{
+  "hold_square_sum": {
+    "task_id": "hold_square_sum",
+    "task_type": "math",
+    "instruction": "Sum k squared for every integer k from 12 through 49 inclusive. Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "39919",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_weighted": {
+    "task_id": "hold_weighted",
+    "task_type": "math",
+    "instruction": "Find the sum of k times (k+3) for k from 1 through 31 inclusive. Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "11904",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_divisibility": {
+    "task_id": "hold_divisibility",
+    "task_type": "math",
+    "instruction": "Count integers from 1 through 420 inclusive divisible by 4 or 7 but not both. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "135",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_crt": {
+    "task_id": "hold_crt",
+    "task_type": "math",
+    "instruction": "Find the smallest positive integer with remainder 4 modulo 9 and remainder 7 modulo 11. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "40",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_factorial": {
+    "task_id": "hold_factorial",
+    "task_type": "math",
+    "instruction": "How many trailing decimal zeros does 175 factorial have? Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "43",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_digit_sum": {
+    "task_id": "hold_digit_sum",
+    "task_type": "math",
+    "instruction": "Find the sum of decimal digits of 3 to the power 65. Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "135",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_stairs": {
+    "task_id": "hold_stairs",
+    "task_type": "math",
+    "instruction": "Count ordered sequences of moves of size 1 or 3 that sum to 19. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "872",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_coins": {
+    "task_id": "hold_coins",
+    "task_type": "math",
+    "instruction": "Count unordered ways to form 26 using unlimited coins with values 3, 5, and 8. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "5",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_grid": {
+    "task_id": "hold_grid",
+    "task_type": "math",
+    "instruction": "Count shortest paths from (0,0) to (8,4) using only right and up moves, avoiding (2,3). Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "425",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_lcm": {
+    "task_id": "hold_lcm",
+    "task_type": "math",
+    "instruction": "Find the smallest positive number divisible by 16, 24, and 35. Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "1680",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_weighted_mean": {
+    "task_id": "hold_weighted_mean",
+    "task_type": "math",
+    "instruction": "Take values 11, 4, 18, 6 with respective weights 2, 5, 3, 7. Find the floor of the weighted mean. Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "8",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_binomial": {
+    "task_id": "hold_binomial",
+    "task_type": "math",
+    "instruction": "How many different 4-person committees can be chosen from 13 people? Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "715",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_data_revenue": {
+    "task_id": "hold_data_revenue",
+    "task_type": "data_analysis",
+    "instruction": "Using records.csv, sum qty*price for rows where kind is a. Write only the final answer to answer.txt.",
+    "reward": 4,
+    "expected": "70",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_data_median": {
+    "task_id": "hold_data_median",
+    "task_type": "data_analysis",
+    "instruction": "Using records.csv, compute the median qty among rows with price at least 4. Write only the final answer to answer.txt.",
+    "reward": 3,
+    "expected": "5",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_search_0": {
+    "task_id": "hold_search_0",
+    "task_type": "search",
+    "instruction": "In which year was the architect of Tower 0 born? Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "1973",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_search_1": {
+    "task_id": "hold_search_1",
+    "task_type": "search",
+    "instruction": "In which year was the architect of Tower 1 born? Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "1981",
+    "unsolvable": false,
+    "group": "E130_new",
+    "comparison": "decimal"
+  },
+  "hold_code_runs": {
+    "task_id": "hold_code_runs",
+    "task_type": "coding",
+    "instruction": "Fix compress in mylib.py to satisfy test_contract.py. Return DONE when complete. Write only the final answer to answer.txt.",
+    "reward": 4,
+    "expected": "DONE",
+    "unsolvable": false,
+    "group": "E130_new"
+  },
+  "hold_code_sum": {
+    "task_id": "hold_code_sum",
+    "task_type": "coding",
+    "instruction": "Fix sum_even in mylib.py to satisfy test_contract.py. Return DONE when complete. Write only the final answer to answer.txt.",
+    "reward": 4,
+    "expected": "DONE",
+    "unsolvable": false,
+    "group": "E130_new"
+  }
+}
