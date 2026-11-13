@@ -1,0 +1,26 @@
+{
+  "hypothesis": "H04.36",
+  "report": "experiments/E127_numeric_recheck_live_20261113T092050095895/report.json",
+  "report_sha256": "993a500f07a66364666401ef284fc00999966f2ca672a1aff2de3b670d4cecd0",
+  "accepted_diagnostic": true,
+  "baseline_correct": 4,
+  "correct": 10,
+  "total_cases": 10,
+  "unique_instructions": 8,
+  "lost_controls": [],
+  "wrong_solved": [],
+  "new_accounted_calls": 10,
+  "new_effective_tokens": 568.0,
+  "historical_initial_cost": 148.8,
+  "illustrative_combined_cost": 716.8,
+  "campaign_accounted_calls": 499,
+  "campaign_known_effective_tokens": 36550.2,
+  "prior_unaccounted_reservation": 248.7,
+  "production_changed": false,
+  "limitations": [
+    "Adaptive enriched historical-case diagnostic, not end-to-end contest-score gain",
+    "Initial generation cost reused, not charged a second time",
+    "AST computation shape does not prove correctness",
+    "Prior unknown ledgers retained"
+  ]
+}

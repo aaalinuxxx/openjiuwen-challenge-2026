@@ -1,0 +1,6 @@
+{
+  "done": true,
+  "stdout": "{\"files\": 38, \"bytes\": 57368, \"bundle_sha256\": \"ccbd6711c496d52deee1999df1f55dbcc5e8529c8993959d6d77a72f819c13bd\", \"runtime_sha256\": \"157fbff88b3a31f5f0390b828fcadb69b13e8911834122e8bbcbb91465dd7aa3\"}\r\n",
+  "stderr": "",
+  "code": 0
+}

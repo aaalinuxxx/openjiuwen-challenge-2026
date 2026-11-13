@@ -1,0 +1,6 @@
+{
+  "task_id": "search_irrelevant_conflict",
+  "task_type": "search",
+  "instruction": "In which city is the headquarters of Nia Moss's employer? The conflicting birth year is irrelevant; use the agreed employer. Write only the final answer to answer.txt.",
+  "reward": 3
+}
