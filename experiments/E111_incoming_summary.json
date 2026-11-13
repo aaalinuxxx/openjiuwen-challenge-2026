@@ -1,0 +1,151 @@
+{
+  "hypothesis": "H04.27",
+  "accepted": true,
+  "acceptance_checks": {
+    "all_six_solvable": true,
+    "two_correct_abstentions": true,
+    "no_wrong_solved": true,
+    "no_truncations": true,
+    "integrity": true,
+    "all_baseline_solutions_retained": true,
+    "inverse_gain": true,
+    "accounting": true
+  },
+  "arms": {
+    "forward": {
+      "report": "experiments\\E111_forward_live_20261113T071534217956\\report.json",
+      "report_sha256": "de11ff6fe9d3e29aa555e9cddac862885026e6cd1a545cf2d22d083b4e15a49c",
+      "metrics": {
+        "total": 8,
+        "solvable": 6,
+        "correct": 3,
+        "score": 12,
+        "max_score": 15,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 1,
+        "truncations": 0,
+        "integrity_passed": true
+      },
+      "calls": 7,
+      "effective_tokens": 111.9
+    },
+    "incoming": {
+      "report": "experiments\\E111_incoming_live_20261113T071642353161\\report.json",
+      "report_sha256": "ee332186b705359e662551b944c6a1137e4fe4f000142abef00c23a28e2958b0",
+      "metrics": {
+        "total": 8,
+        "solvable": 6,
+        "correct": 6,
+        "score": 15,
+        "max_score": 15,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 2,
+        "truncations": 0,
+        "integrity_passed": true
+      },
+      "calls": 7,
+      "effective_tokens": 127.8
+    }
+  },
+  "comparison": [
+    {
+      "task_id": "validate_086_fresh_search_inverse",
+      "group": "E110_observed_inverse",
+      "forward_status": "UNKNOWN",
+      "forward_answer": null,
+      "forward_correct": false,
+      "incoming_status": "SOLVED",
+      "incoming_answer": "Nora Pine",
+      "incoming_correct": true
+    },
+    {
+      "task_id": "validate_095_fresh_search_custodian",
+      "group": "E110_control",
+      "forward_status": "SOLVED",
+      "forward_answer": "Turku",
+      "forward_correct": true,
+      "incoming_status": "SOLVED",
+      "incoming_answer": "Turku",
+      "incoming_correct": true
+    },
+    {
+      "task_id": "validate_075_fresh_search_latest",
+      "group": "E110_control",
+      "forward_status": "SOLVED",
+      "forward_answer": "Mistral",
+      "forward_correct": true,
+      "incoming_status": "SOLVED",
+      "incoming_answer": "Mistral",
+      "incoming_correct": true
+    },
+    {
+      "task_id": "validate_056_fresh_search_conflict",
+      "group": "E110_control",
+      "forward_status": "UNSOLVABLE",
+      "forward_answer": null,
+      "forward_correct": false,
+      "incoming_status": "UNSOLVABLE",
+      "incoming_answer": null,
+      "incoming_correct": false
+    },
+    {
+      "task_id": "validate_019_search_three_hop",
+      "group": "E110_control",
+      "forward_status": "SOLVED",
+      "forward_answer": "Riga",
+      "forward_correct": true,
+      "incoming_status": "SOLVED",
+      "incoming_answer": "Riga",
+      "incoming_correct": true
+    },
+    {
+      "task_id": "incoming_employer",
+      "group": "E110_new_authored",
+      "forward_status": "UNKNOWN",
+      "forward_answer": null,
+      "forward_correct": false,
+      "incoming_status": "SOLVED",
+      "incoming_answer": "Mira Holt",
+      "incoming_correct": true
+    },
+    {
+      "task_id": "incoming_then_outgoing",
+      "group": "E110_new_authored",
+      "forward_status": "UNKNOWN",
+      "forward_answer": null,
+      "forward_correct": false,
+      "incoming_status": "SOLVED",
+      "incoming_answer": "Porto",
+      "incoming_correct": true
+    },
+    {
+      "task_id": "incoming_ambiguous",
+      "group": "E110_new_authored",
+      "forward_status": "UNKNOWN",
+      "forward_answer": null,
+      "forward_correct": false,
+      "incoming_status": "UNSOLVABLE",
+      "incoming_answer": null,
+      "incoming_correct": false
+    }
+  ],
+  "inverse_correct": {
+    "forward": 0,
+    "incoming": 3
+  },
+  "calls": 14,
+  "effective_tokens": 239.7,
+  "campaign_calls": 224,
+  "campaign_effective_tokens": 19899.5,
+  "unit_tests": 199,
+  "production_ranking_changed": false,
+  "full_mixed_live_rerun": false,
+  "limitations": [
+    "Three inverse targets: one observed failure and two new small authored cases.",
+    "One fixed-order live pair, not a statistical or external holdout guarantee.",
+    "Bounded priority retrieval is not complete search of all graph paths.",
+    "Full mixed/coding regression was not rerun over API."
+  ]
+}

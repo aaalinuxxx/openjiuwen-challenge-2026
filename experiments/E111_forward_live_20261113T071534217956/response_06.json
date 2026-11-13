@@ -1,0 +1,32 @@
+{
+  "task_id": "validate_086_fresh_search_inverse",
+  "response": {
+    "id": "chatcmpl-9e97bfc2df266f12",
+    "created": 1794554169,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "UNKNOWN",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 2,
+      "prompt_tokens": 114,
+      "total_tokens": 116,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

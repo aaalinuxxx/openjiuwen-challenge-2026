@@ -1,0 +1,6 @@
+{
+  "task_id": "incoming_ambiguous",
+  "task_type": "search",
+  "instruction": "Use only kb/. Give the unique name of the person whose tutor is Aron Glen. Return UNSOLVABLE if no unique name follows from the records. Write the answer to answer.txt.",
+  "reward": 1
+}

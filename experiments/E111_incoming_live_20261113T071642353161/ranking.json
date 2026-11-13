@@ -1,0 +1,50 @@
+[
+  {
+    "task_id": "validate_095_fresh_search_custodian",
+    "roi": 0.07218045112781954,
+    "expected_cost": 66.5,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_019_search_three_hop",
+    "roi": 0.056888888888888885,
+    "expected_cost": 67.5,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_075_fresh_search_latest",
+    "roi": 0.04396946564885496,
+    "expected_cost": 65.5,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_056_fresh_search_conflict",
+    "roi": 0.04363636363636363,
+    "expected_cost": 66.0,
+    "reward": 3
+  },
+  {
+    "task_id": "incoming_ambiguous",
+    "roi": 0.01443609022556391,
+    "expected_cost": 66.5,
+    "reward": 1
+  },
+  {
+    "task_id": "incoming_employer",
+    "roi": 0.01443609022556391,
+    "expected_cost": 66.5,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_086_fresh_search_inverse",
+    "roi": 0.01443609022556391,
+    "expected_cost": 66.5,
+    "reward": 1
+  },
+  {
+    "task_id": "incoming_then_outgoing",
+    "roi": 0.014328358208955224,
+    "expected_cost": 67.0,
+    "reward": 1
+  }
+]

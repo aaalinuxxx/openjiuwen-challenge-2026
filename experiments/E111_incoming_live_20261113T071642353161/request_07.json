@@ -1,0 +1,18 @@
+{
+  "task_id": "incoming_then_outgoing",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: partial (partial_kb)\nKB Records:\n# Ivo Reed\nSources: a.md\nborn: 1981\n\n# Tess Dale\nSources: b.md\nemployer: Silver Loom\ntutor: Ivo Reed\n\n# Silver Loom\nSources: c.md\nheadquarters: Porto\n\nQuestion: Use only kb/. What is the headquarters city of the employer of the person whose tutor is Ivo Reed? Exactly one person has that tutor. Return only the exact city to answer.txt."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  }
+}

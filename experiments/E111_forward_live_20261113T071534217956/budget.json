@@ -1,0 +1,100 @@
+{
+  "budget": 600.0,
+  "known_effective_tokens": 111.9,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "validate_095_fresh_search_custodian",
+      "status": "ACCOUNTED",
+      "reserved_units": 1858,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1538,
+      "output_cap": 32,
+      "input_tokens": 127,
+      "output_tokens": 3,
+      "reasoning_tokens": 0,
+      "effective_cost": 15.7
+    },
+    {
+      "ticket": 1,
+      "task_id": "validate_075_fresh_search_latest",
+      "status": "ACCOUNTED",
+      "reserved_units": 1796,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1476,
+      "output_cap": 32,
+      "input_tokens": 129,
+      "output_tokens": 4,
+      "reasoning_tokens": 0,
+      "effective_cost": 16.9
+    },
+    {
+      "ticket": 2,
+      "task_id": "validate_056_fresh_search_conflict",
+      "status": "ACCOUNTED",
+      "reserved_units": 1890,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1570,
+      "output_cap": 32,
+      "input_tokens": 143,
+      "output_tokens": 6,
+      "reasoning_tokens": 0,
+      "effective_cost": 20.3
+    },
+    {
+      "ticket": 3,
+      "task_id": "incoming_ambiguous",
+      "status": "ACCOUNTED",
+      "reserved_units": 1834,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1514,
+      "output_cap": 32,
+      "input_tokens": 128,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "effective_cost": 17.8
+    },
+    {
+      "ticket": 4,
+      "task_id": "incoming_employer",
+      "status": "ACCOUNTED",
+      "reserved_units": 1805,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1485,
+      "output_cap": 32,
+      "input_tokens": 111,
+      "output_tokens": 2,
+      "reasoning_tokens": 0,
+      "effective_cost": 13.1
+    },
+    {
+      "ticket": 5,
+      "task_id": "validate_086_fresh_search_inverse",
+      "status": "ACCOUNTED",
+      "reserved_units": 1795,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1475,
+      "output_cap": 32,
+      "input_tokens": 114,
+      "output_tokens": 2,
+      "reasoning_tokens": 0,
+      "effective_cost": 13.4
+    },
+    {
+      "ticket": 6,
+      "task_id": "incoming_then_outgoing",
+      "status": "ACCOUNTED",
+      "reserved_units": 1840,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1520,
+      "output_cap": 32,
+      "input_tokens": 127,
+      "output_tokens": 2,
+      "reasoning_tokens": 0,
+      "effective_cost": 14.7
+    }
+  ]
+}

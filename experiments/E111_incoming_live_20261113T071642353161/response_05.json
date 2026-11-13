@@ -1,0 +1,32 @@
+{
+  "task_id": "incoming_employer",
+  "response": {
+    "id": "chatcmpl-ad73dbdcf6dff2ba",
+    "created": 1794554209,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "Mira Holt",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 4,
+      "prompt_tokens": 125,
+      "total_tokens": 129,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
