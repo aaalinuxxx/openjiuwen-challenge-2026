@@ -1,0 +1,35 @@
+{
+  "task_id": "validate_000_coding_stateful",
+  "response": {
+    "id": "chatcmpl-91d53f8a58810d72",
+    "created": 1794551616,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "class Counter:\n    def __init__(self):\n        self.value = 0\n\n    def next(self):\n        self.value += 1\n        return self.value",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 37,
+      "prompt_tokens": 383,
+      "total_tokens": 420,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

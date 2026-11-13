@@ -1,0 +1,18 @@
+{
+  "task_id": "validate_007_search_irrelevant_conflict",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNSOLVABLE. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: complete\nKB Records:\n# Nia Moss\nSources: a.md, b.md\nBorn: CONFLICT [1980 | 1981]\nEmployer: Delta Works\n\n# Delta Works\nSources: c.md\nHeadquarters: Bern\n\nQuestion: In which city is the headquarters of Nia Moss's employer? The conflicting birth year is irrelevant; use the agreed employer. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "report": "experiments\\E109_regression_fixes_live_20261113T063318602203\\report.json",
+  "report_sha256": "90e2c526e4a55a88106682c3d65dc2913e5918c072686d14cd56559c0662a2d6",
+  "plan_sha256": "c763183739fc7ee316975e69d7dffd53fd01dce10dcf7553e3dfed6addb5c1c1",
+  "acceptance_checks": {
+    "targets_passed": true,
+    "controls_passed": true,
+    "no_incorrect_solved": true,
+    "no_truncations": true,
+    "input_integrity": true,
+    "no_non_solved_answer_files": true,
+    "accounting": true
+  },
+  "accepted": true,
+  "metrics": {
+    "total": 13,
+    "solvable": 11,
+    "correct": 11,
+    "score": 28,
+    "max_score": 28,
+    "incorrect_solved_answers": 0,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 2,
+    "truncations": 0,
+    "integrity_passed": true
+  },
+  "calls": 12,
+  "effective_tokens": 560.5,
+  "target_comparisons": [
+    {
+      "task_id": "validate_056_fresh_search_conflict",
+      "before_status": "SOLVED",
+      "before_answer": "UN SOLVABLE",
+      "after_status": "UNSOLVABLE",
+      "after_answer": null,
+      "after_verified": false
+    },
+    {
+      "task_id": "validate_075_fresh_search_latest",
+      "before_status": "SOLVED",
+      "before_answer": "mistral",
+      "after_status": "SOLVED",
+      "after_answer": "Mistral",
+      "after_verified": true
+    },
+    {
+      "task_id": "validate_016_fresh_coding_unique",
+      "before_status": "UNKNOWN",
+      "before_answer": null,
+      "after_status": "SOLVED",
+      "after_answer": "DONE",
+      "after_verified": true
+    },
+    {
+      "task_id": "validate_051_fresh_coding_transpose",
+      "before_status": "UNKNOWN",
+      "before_answer": null,
+      "after_status": "SOLVED",
+      "after_answer": "DONE",
+      "after_verified": true
+    },
+    {
+      "task_id": "validate_092_fresh_coding_rotate",
+      "before_status": "UNKNOWN",
+      "before_answer": null,
+      "after_status": "SOLVED",
+      "after_answer": "DONE",
+      "after_verified": true
+    }
+  ],
+  "hypotheses": {
+    "H04.25": {
+      "status": "SUPPORTED_ON_REPLAY_AND_LIVE_ABSTENTION",
+      "live_reply": "UNSOLVABLE",
+      "spaced_marker_live_repeated": false,
+      "note": "Exact historical spaced reply and other variants verified by unit tests; fresh live refusal may have different spelling."
+    },
+    "H04.26": {
+      "status": "SUPPORTED_ON_TARGETED_LIVE",
+      "answer": "Mistral"
+    },
+    "H04.28": {
+      "status": "SUPPORTED_ON_TARGETED_LIVE",
+      "coding_correct": 3,
+      "coding_total": 3
+    }
+  },
+  "unit_tests": 190,
+  "production_ranking_changed": false,
+  "full_mixed_live_rerun": false,
+  "campaign_calls_before": 198,
+  "campaign_cost_before": 19099.3,
+  "campaign_calls": 210,
+  "campaign_effective_tokens": 19659.8,
+  "limitations": [
+    "Adaptive replay of observed failures, not independent holdout.",
+    "Joint repair run; no full factorial ablation.",
+    "Eight known controls, not full31-task mixed API regression.",
+    "Public coding tests do not guarantee hidden tests."
+  ]
+}

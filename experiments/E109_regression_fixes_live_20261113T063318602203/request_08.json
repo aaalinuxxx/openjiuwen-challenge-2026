@@ -1,0 +1,18 @@
+{
+  "task_id": "validate_016_fresh_coding_unique",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return complete corrected Python code only, without comments or Markdown. Preserve signatures and satisfy the task constraints and all tests. Never modify tests. Use UNSOLVABLE only for provably contradictory requirements. The harness runs tests and writes DONE; do not perform these delivery steps in the returned code."
+      },
+      {
+        "role": "user",
+        "content": "### Task constraints\nImplement stable_unique(values) for hashable elements: return their first appearances in original order; do not modify values. Modify only mylib.py. Do not change tests. Write DONE to answer.txt after all tests pass.\n\n### Target File: mylib.py\ndef stable_unique(values):\n    return []\n\n\n\n\n### test_contract.py\nimport unittest\nfrom mylib import *\n\nclass Tests(unittest.TestCase):\n    def test_contract(self):\n        self.assertEqual(stable_unique([]),[])\n        self.assertEqual(stable_unique([3,1,3,2,1]),[3,1,2])\n        self.assertEqual(stable_unique(['b','a','b',None]),['b','a',None])\n        a=[2,1,2];before=a[:];stable_unique(a)\n        self.assertEqual(a,before)\n\nif __name__=='__main__':unittest.main()\n\n\n### Failing Test Output (failures: 1)\n### test_contract.py\nF\n======================================================================\nFAIL: test_contract (__main__.Tests.test_contract)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-r82tsyuz\\workspace\\test_contract.py\", line 7, in test_contract\n    self.assertEqual(stable_unique([3,1,3,2,1]),[3,1,2])\nAssertionError: Lists differ: [] != [3, 1, 2]\n\nSecond list contains 3 additional elements.\nFirst extra element 0:\n3\n\n- []\n+ [3, 1, 2]\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (failures=1)\n"
+      }
+    ],
+    "max_tokens": 521,
+    "temperature": 0.0
+  }
+}

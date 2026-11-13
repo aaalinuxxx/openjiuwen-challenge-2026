@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_002_math_sum",
+  "task_type": "math",
+  "instruction": "Compute the sum of all integers from 1 to 20 inclusive. Write only the final answer to answer.txt.",
+  "reward": 3
+}

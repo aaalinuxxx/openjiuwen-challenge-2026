@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "calls": 12,
+  "effective_tokens": 560.5,
+  "requests": [
+    {
+      "task_id": "validate_024_search_paraphrase_chain",
+      "cost": 19.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_075_fresh_search_latest",
+      "cost": 16.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_005_search_new_relation",
+      "cost": 17.8,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_056_fresh_search_conflict",
+      "cost": 20.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_007_search_irrelevant_conflict",
+      "cost": 17.2,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_025_search_conflicting_fact",
+      "cost": 20.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_002_math_sum",
+      "cost": 15.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 114,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_016_fresh_coding_unique",
+      "cost": 92.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 521,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_092_fresh_coding_rotate",
+      "cost": 106.8,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 512,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_022_coding_multimodule",
+      "cost": 74.0,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 499,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_051_fresh_coding_transpose",
+      "cost": 83.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 507,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_000_coding_stateful",
+      "cost": 75.3,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 700,
+      "finish": "stop",
+      "passed": true
+    }
+  ]
+}

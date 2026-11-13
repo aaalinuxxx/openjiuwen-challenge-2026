@@ -1,0 +1,35 @@
+{
+  "task_id": "validate_092_fresh_coding_rotate",
+  "response": {
+    "id": "chatcmpl-a8a4e196c22510b3",
+    "created": 1794551611,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "def rotate_right(values, k):\n    if not values:\n        return []\n    n = len(values)\n    k = k % n\n    if k == 0:\n        return values[:]\n    return values[-k:] + values[:-k]",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 57,
+      "prompt_tokens": 498,
+      "total_tokens": 555,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
