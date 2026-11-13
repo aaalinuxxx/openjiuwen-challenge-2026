@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_042_fresh_data_unique_pairs",
+  "task_type": "data_analysis",
+  "instruction": "Read records.csv. Count distinct (region,sku) pairs across all rows. Repeated identical pairs count once. Write the integer to answer.txt.",
+  "reward": 1
+}

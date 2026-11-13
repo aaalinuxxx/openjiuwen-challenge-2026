@@ -1,0 +1,330 @@
+{
+  "budget": 500.0,
+  "known_effective_tokens": 351.0,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "validate_095_fresh_search_custodian",
+      "status": "ACCOUNTED",
+      "reserved_units": 1858,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1538,
+      "output_cap": 32,
+      "input_tokens": 127,
+      "output_tokens": 3,
+      "reasoning_tokens": 0,
+      "effective_cost": 15.7
+    },
+    {
+      "ticket": 1,
+      "task_id": "validate_039_search_irrelevant_conflict",
+      "status": "ACCOUNTED",
+      "reserved_units": 1917,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1597,
+      "output_cap": 32,
+      "input_tokens": 152,
+      "output_tokens": 2,
+      "reasoning_tokens": 0,
+      "effective_cost": 17.2
+    },
+    {
+      "ticket": 2,
+      "task_id": "validate_062_fresh_search_chain",
+      "status": "ACCOUNTED",
+      "reserved_units": 1882,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1562,
+      "output_cap": 32,
+      "input_tokens": 149,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "effective_cost": 19.9
+    },
+    {
+      "ticket": 3,
+      "task_id": "validate_024_search_paraphrase_chain",
+      "status": "ACCOUNTED",
+      "reserved_units": 1936,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1616,
+      "output_cap": 32,
+      "input_tokens": 165,
+      "output_tokens": 3,
+      "reasoning_tokens": 0,
+      "effective_cost": 19.5
+    },
+    {
+      "ticket": 4,
+      "task_id": "validate_030_pilot_extra_numeric_control",
+      "status": "ACCOUNTED",
+      "reserved_units": 4273,
+      "task_limit_units": 4277,
+      "input_token_estimate": 2313,
+      "output_cap": 196,
+      "input_tokens": 331,
+      "output_tokens": 196,
+      "reasoning_tokens": 0,
+      "effective_cost": 229.1
+    },
+    {
+      "ticket": 5,
+      "task_id": "validate_044_fresh_data_net",
+      "status": "NOT_SENT",
+      "reserved_units": 1978,
+      "task_limit_units": 1986,
+      "input_token_estimate": 1688,
+      "output_cap": 29,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 6,
+      "task_id": "validate_053_data_filtered_median",
+      "status": "NOT_SENT",
+      "reserved_units": 1980,
+      "task_limit_units": 1986,
+      "input_token_estimate": 1640,
+      "output_cap": 34,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 7,
+      "task_id": "validate_063_data_empty_count",
+      "status": "NOT_SENT",
+      "reserved_units": 1980,
+      "task_limit_units": 1986,
+      "input_token_estimate": 1630,
+      "output_cap": 35,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 8,
+      "task_id": "validate_082_math_sum",
+      "status": "ACCOUNTED",
+      "reserved_units": 1979,
+      "task_limit_units": 1986,
+      "input_token_estimate": 1349,
+      "output_cap": 63,
+      "input_tokens": 85,
+      "output_tokens": 16,
+      "reasoning_tokens": 0,
+      "effective_cost": 24.5
+    },
+    {
+      "ticket": 9,
+      "task_id": "validate_020_fresh_math_modular",
+      "status": "ACCOUNTED",
+      "reserved_units": 1740,
+      "task_limit_units": 1741,
+      "input_token_estimate": 1360,
+      "output_cap": 38,
+      "input_tokens": 91,
+      "output_tokens": 16,
+      "reasoning_tokens": 0,
+      "effective_cost": 25.1
+    },
+    {
+      "ticket": 10,
+      "task_id": "validate_075_fresh_search_latest",
+      "status": "NOT_SENT",
+      "reserved_units": 1486,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1476,
+      "output_cap": 1,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 11,
+      "task_id": "validate_059_math_gcd",
+      "status": "NOT_SENT",
+      "reserved_units": 1488,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1358,
+      "output_cap": 13,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 12,
+      "task_id": "validate_036_math_zero_warning",
+      "status": "NOT_SENT",
+      "reserved_units": 1484,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1374,
+      "output_cap": 11,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 13,
+      "task_id": "validate_027_math_zero_operation",
+      "status": "NOT_SENT",
+      "reserved_units": 1486,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1406,
+      "output_cap": 8,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 14,
+      "task_id": "validate_057_math_percentage",
+      "status": "NOT_SENT",
+      "reserved_units": 1489,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1409,
+      "output_cap": 8,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 15,
+      "task_id": "validate_078_fresh_math_union",
+      "status": "NOT_SENT",
+      "reserved_units": 1481,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1411,
+      "output_cap": 7,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 16,
+      "task_id": "validate_081_fresh_math_paths",
+      "status": "NOT_SENT",
+      "reserved_units": 1484,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1414,
+      "output_cap": 7,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 17,
+      "task_id": "validate_002_math_sum",
+      "status": "NOT_SENT",
+      "reserved_units": 1489,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1349,
+      "output_cap": 14,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 18,
+      "task_id": "validate_049_math_zero_warning",
+      "status": "NOT_SENT",
+      "reserved_units": 1484,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1374,
+      "output_cap": 11,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 19,
+      "task_id": "validate_058_fresh_math_coin_ways",
+      "status": "NOT_SENT",
+      "reserved_units": 1482,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1432,
+      "output_cap": 5,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 20,
+      "task_id": "validate_073_fresh_math_prime_factor",
+      "status": "NOT_SENT",
+      "reserved_units": 1488,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1338,
+      "output_cap": 15,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 21,
+      "task_id": "validate_083_math_gcd",
+      "status": "NOT_SENT",
+      "reserved_units": 1488,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1358,
+      "output_cap": 13,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 22,
+      "task_id": "validate_079_math_paraphrase",
+      "status": "NOT_SENT",
+      "reserved_units": 1490,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1370,
+      "output_cap": 12,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 23,
+      "task_id": "validate_061_math_zero_operation",
+      "status": "NOT_SENT",
+      "reserved_units": 1486,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1406,
+      "output_cap": 8,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 24,
+      "task_id": "validate_076_math_gcd",
+      "status": "NOT_SENT",
+      "reserved_units": 1488,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1358,
+      "output_cap": 13,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 25,
+      "task_id": "validate_055_math_paraphrase",
+      "status": "NOT_SENT",
+      "reserved_units": 1490,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1370,
+      "output_cap": 12,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 26,
+      "task_id": "validate_013_math_zero_warning",
+      "status": "NOT_SENT",
+      "reserved_units": 1484,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1374,
+      "output_cap": 11,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 27,
+      "task_id": "validate_004_fresh_math_inconsistent",
+      "status": "NOT_SENT",
+      "reserved_units": 1481,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1381,
+      "output_cap": 10,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 28,
+      "task_id": "validate_070_math_zero_operation",
+      "status": "NOT_SENT",
+      "reserved_units": 1486,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1406,
+      "output_cap": 8,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    },
+    {
+      "ticket": 29,
+      "task_id": "validate_008_math_percentage",
+      "status": "NOT_SENT",
+      "reserved_units": 1489,
+      "task_limit_units": 1490,
+      "input_token_estimate": 1409,
+      "output_cap": 8,
+      "error_type": "OUTPUT_CAP_BELOW_FLOOR"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "budget": 500.0,
+  "known_effective_tokens": 373.3,
+  "reserved_effective_tokens": 0.0,
+  "has_unaccounted_request": false,
+  "remote_stopped": false,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "validate_095_fresh_search_custodian",
+      "status": "ACCOUNTED",
+      "reserved_units": 1858,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1538,
+      "output_cap": 32,
+      "input_tokens": 127,
+      "output_tokens": 3,
+      "reasoning_tokens": 0,
+      "effective_cost": 15.7
+    },
+    {
+      "ticket": 1,
+      "task_id": "validate_039_search_irrelevant_conflict",
+      "status": "ACCOUNTED",
+      "reserved_units": 1917,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1597,
+      "output_cap": 32,
+      "input_tokens": 152,
+      "output_tokens": 2,
+      "reasoning_tokens": 0,
+      "effective_cost": 17.2
+    },
+    {
+      "ticket": 2,
+      "task_id": "validate_062_fresh_search_chain",
+      "status": "ACCOUNTED",
+      "reserved_units": 1882,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1562,
+      "output_cap": 32,
+      "input_tokens": 149,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "effective_cost": 19.9
+    },
+    {
+      "ticket": 3,
+      "task_id": "validate_024_search_paraphrase_chain",
+      "status": "ACCOUNTED",
+      "reserved_units": 1936,
+      "task_limit_units": 3000,
+      "input_token_estimate": 1616,
+      "output_cap": 32,
+      "input_tokens": 165,
+      "output_tokens": 3,
+      "reasoning_tokens": 0,
+      "effective_cost": 19.5
+    },
+    {
+      "ticket": 4,
+      "task_id": "validate_030_pilot_extra_numeric_control",
+      "status": "ACCOUNTED",
+      "reserved_units": 4273,
+      "task_limit_units": 4277,
+      "input_token_estimate": 2313,
+      "output_cap": 196,
+      "input_tokens": 331,
+      "output_tokens": 196,
+      "reasoning_tokens": 0,
+      "effective_cost": 229.1
+    },
+    {
+      "ticket": 5,
+      "task_id": "validate_044_fresh_data_net",
+      "status": "ACCOUNTED",
+      "reserved_units": 1978,
+      "task_limit_units": 1986,
+      "input_token_estimate": 1688,
+      "output_cap": 29,
+      "input_tokens": 179,
+      "output_tokens": 29,
+      "reasoning_tokens": 0,
+      "effective_cost": 46.9
+    },
+    {
+      "ticket": 6,
+      "task_id": "validate_082_math_sum",
+      "status": "ACCOUNTED",
+      "reserved_units": 1509,
+      "task_limit_units": 1517,
+      "input_token_estimate": 1349,
+      "output_cap": 16,
+      "input_tokens": 85,
+      "output_tokens": 7,
+      "reasoning_tokens": 0,
+      "effective_cost": 15.5
+    },
+    {
+      "ticket": 7,
+      "task_id": "validate_002_math_sum",
+      "status": "ACCOUNTED",
+      "reserved_units": 1359,
+      "task_limit_units": 1362,
+      "input_token_estimate": 1349,
+      "output_cap": 1,
+      "input_tokens": 85,
+      "output_tokens": 1,
+      "reasoning_tokens": 0,
+      "effective_cost": 9.5
+    }
+  ]
+}

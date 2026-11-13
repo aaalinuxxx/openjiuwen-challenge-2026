@@ -1,0 +1,32 @@
+{
+  "task_id": "validate_030_pilot_extra_numeric_control",
+  "response": {
+    "id": "chatcmpl-960944d806eb7ae4",
+    "created": 1794554781,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport csv\n\n# Read orders.csv\norders = []\nwith open('orders.csv', 'r') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        orders.append(row)\n\n# Read labels.csv\nlabels = {}\nwith open('labels.csv', 'r') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        sku = row['sku']\n        region = row['region']\n        if sku not in labels:\n            labels[sku] = []\n        labels[sku].append(region)\n\n# Left join orders.code to labels.sku\n# For each order, find all matching labels (including no match)\n# Sum orders.qty for pairs where labels.region == 'west' OR no matching right row\n# Also filter: only include orders where qty > 5\n\ntotal = 0\nfor order in orders:",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 196,
+      "prompt_tokens": 331,
+      "total_tokens": 527,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

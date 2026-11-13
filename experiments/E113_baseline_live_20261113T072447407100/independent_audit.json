@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "calls": 8,
+  "effective_tokens": 373.3,
+  "requests": [
+    {
+      "task_id": "validate_095_fresh_search_custodian",
+      "cost": 15.7,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_039_search_irrelevant_conflict",
+      "cost": 17.2,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_062_fresh_search_chain",
+      "cost": 19.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_024_search_paraphrase_chain",
+      "cost": 19.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_030_pilot_extra_numeric_control",
+      "cost": 229.1,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 196,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "validate_044_fresh_data_net",
+      "cost": 46.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 29,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "validate_082_math_sum",
+      "cost": 15.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 16,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_002_math_sum",
+      "cost": 9.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 1,
+      "finish": "length",
+      "passed": true
+    }
+  ]
+}

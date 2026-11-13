@@ -1,0 +1,370 @@
+{
+  "hypothesis": "H04.29",
+  "accepted": true,
+  "acceptance_checks": {
+    "floor_exercised": true,
+    "fewer_truncations": true,
+    "wrong_solved_not_increased": true,
+    "integrity": true,
+    "score_or_tie_cost_improves": true,
+    "accounting": true
+  },
+  "arms": {
+    "baseline": {
+      "report": "experiments\\E113_baseline_live_20261113T072447407100\\report.json",
+      "report_sha256": "d46a8b9a5ea4c11363d1e579be612d1d1860a5a4327ed35f58f029704e2569a4",
+      "metrics": {
+        "total": 100,
+        "solvable": 83,
+        "correct": 21,
+        "score": 71,
+        "max_score": 246,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 4,
+        "truncations": 3,
+        "integrity_passed": true
+      },
+      "calls": 8,
+      "effective_tokens": 373.3,
+      "floor_denials": []
+    },
+    "floor": {
+      "report": "experiments\\E113_floor_live_20261113T072604402179\\report.json",
+      "report_sha256": "3d9f1277c66637ac1a5747dfd1d8a2c78ce4060d091dd3dd7ffba93700688fc7",
+      "metrics": {
+        "total": 100,
+        "solvable": 83,
+        "correct": 22,
+        "score": 76,
+        "max_score": 246,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 4,
+        "truncations": 1,
+        "integrity_passed": true
+      },
+      "calls": 7,
+      "effective_tokens": 351.0,
+      "floor_denials": [
+        {
+          "task_id": "validate_044_fresh_data_net",
+          "output_cap": 29,
+          "floor": 64,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_053_data_filtered_median",
+          "output_cap": 34,
+          "floor": 64,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_063_data_empty_count",
+          "output_cap": 35,
+          "floor": 64,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_075_fresh_search_latest",
+          "output_cap": 1,
+          "floor": 8,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_059_math_gcd",
+          "output_cap": 13,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_036_math_zero_warning",
+          "output_cap": 11,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_027_math_zero_operation",
+          "output_cap": 8,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_057_math_percentage",
+          "output_cap": 8,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_078_fresh_math_union",
+          "output_cap": 7,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_081_fresh_math_paths",
+          "output_cap": 7,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_002_math_sum",
+          "output_cap": 14,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_049_math_zero_warning",
+          "output_cap": 11,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_058_fresh_math_coin_ways",
+          "output_cap": 5,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_073_fresh_math_prime_factor",
+          "output_cap": 15,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_083_math_gcd",
+          "output_cap": 13,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_079_math_paraphrase",
+          "output_cap": 12,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_061_math_zero_operation",
+          "output_cap": 8,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_076_math_gcd",
+          "output_cap": 13,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_055_math_paraphrase",
+          "output_cap": 12,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_013_math_zero_warning",
+          "output_cap": 11,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_004_fresh_math_inconsistent",
+          "output_cap": 10,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_070_math_zero_operation",
+          "output_cap": 8,
+          "floor": 32,
+          "prior_paid_calls": 0
+        },
+        {
+          "task_id": "validate_008_math_percentage",
+          "output_cap": 8,
+          "floor": 32,
+          "prior_paid_calls": 0
+        }
+      ]
+    }
+  },
+  "gained": [
+    "validate_020_fresh_math_modular"
+  ],
+  "lost": [],
+  "floor_rejected_tasks_comparison": [
+    {
+      "task_id": "validate_002_math_sum",
+      "baseline_status": "TRUNCATED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_004_fresh_math_inconsistent",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_008_math_percentage",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_013_math_zero_warning",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_027_math_zero_operation",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_036_math_zero_warning",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_044_fresh_data_net",
+      "baseline_status": "TRUNCATED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_049_math_zero_warning",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_053_data_filtered_median",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_055_math_paraphrase",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_057_math_percentage",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_058_fresh_math_coin_ways",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_059_math_gcd",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_061_math_zero_operation",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_063_data_empty_count",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 5
+    },
+    {
+      "task_id": "validate_070_math_zero_operation",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_073_fresh_math_prime_factor",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_075_fresh_search_latest",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 3
+    },
+    {
+      "task_id": "validate_076_math_gcd",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 1
+    },
+    {
+      "task_id": "validate_078_fresh_math_union",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_079_math_paraphrase",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 2
+    },
+    {
+      "task_id": "validate_081_fresh_math_paths",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 4
+    },
+    {
+      "task_id": "validate_083_math_gcd",
+      "baseline_status": "BUDGET_EXCEEDED",
+      "baseline_correct": false,
+      "floor_status": "BUDGET_EXCEEDED",
+      "reward": 2
+    }
+  ],
+  "calls": 15,
+  "effective_tokens": 724.3,
+  "campaign_calls": 239,
+  "campaign_effective_tokens": 20623.8,
+  "unit_tests": 206,
+  "production_changed": false,
+  "limitations": [
+    "Adaptive known100-task workload; not fresh holdout.",
+    "One fixed-order live pair, no universal threshold calibration.",
+    "All omitted tasks count against score; fewer truncations alone is not success.",
+    "Floor admission only: larger math caps were not tested."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "validate_024_search_paraphrase_chain",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: partial (partial_kb)\nKB Records:\n# Mira Vale\nSources: a.md\nBorn: 1990\nMentor: Oren Pike\n\n# Oren Pike\nSources: b.md\nEmployer: Luma Labs\n\n# Luma Labs\nSources: c.md\nFounded: 2004\nHeadquarters: Riga\n\nQuestion: Use only kb/. Identify the company employing the mentor of Mira Vale and return its headquarters city. Write only the final answer to answer.txt."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  }
+}
