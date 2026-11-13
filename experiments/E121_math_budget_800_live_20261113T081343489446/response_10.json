@@ -1,0 +1,35 @@
+{
+  "task_id": "math_lattice",
+  "response": {
+    "id": "chatcmpl-b0d3288d8f790ff5",
+    "created": 1794557645,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport math\n\ndef nCr(n, r):\n    if r < 0 or r > n:\n        return 0\n    return math.comb(n, r)\n\n# Total paths from (0,0) to (8,6)\n# Steps: 8 right, 6 up. Total steps = 14.\ntotal_paths = nCr(14, 6)\n\n# Paths passing through (4,3)\n# Path from (0,0) to (4,3): 4 right, 3 up. Total steps = 7.\npaths_to_mid = nCr(7, 3)\n\n# Path from (4,3) to (8,6): 4 right, 3 up. Total steps = 7.\npaths_from_mid =",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 174,
+      "prompt_tokens": 102,
+      "total_tokens": 276,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

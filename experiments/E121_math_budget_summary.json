@@ -1,0 +1,186 @@
+{
+  "hypothesis": "H04.33",
+  "acceptance_passed": false,
+  "arms": {
+    "800": {
+      "directory": "E121_math_budget_800_live_20261113T081343489446",
+      "report_sha256": "00f80c4de96881318811f6894798da40acf941c2d2acbcc6092fd1699545c9a8",
+      "metrics": {
+        "total": 24,
+        "solvable": 22,
+        "correct": 9,
+        "score": 28,
+        "max_score": 66,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 2,
+        "truncations": 2,
+        "integrity_passed": true
+      },
+      "calls": 10,
+      "effective_tokens": 669.5,
+      "raw_truncations": 2,
+      "retries": [],
+      "first_pass_score": null,
+      "first_pass_cost": null,
+      "correct_ids": [
+        "math_divisible",
+        "math_coin_combinations",
+        "math_modular",
+        "search_chain_0",
+        "search_chain_1",
+        "search_chain_2",
+        "search_chain_3",
+        "control_search_local",
+        "control_data_local"
+      ],
+      "incorrect": [],
+      "audit_passed": true,
+      "math_caps": [
+        {
+          "task_id": "math_divisible",
+          "cap": 200
+        },
+        {
+          "task_id": "math_coin_combinations",
+          "cap": 200
+        },
+        {
+          "task_id": "math_modular",
+          "cap": 200
+        },
+        {
+          "task_id": "control_math_contradiction",
+          "cap": 200
+        },
+        {
+          "task_id": "math_stairs",
+          "cap": 200
+        },
+        {
+          "task_id": "math_lattice",
+          "cap": 174
+        }
+      ]
+    },
+    "2000": {
+      "directory": "E121_math_budget_2000_live_20261113T081433603684",
+      "report_sha256": "a40d2993fd17453f33a15ddfd8f99bddf72bbe65ef5db98ee954d1f8695abc11",
+      "metrics": {
+        "total": 24,
+        "solvable": 22,
+        "correct": 20,
+        "score": 61,
+        "max_score": 66,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 2,
+        "truncations": 2,
+        "integrity_passed": true
+      },
+      "calls": 21,
+      "effective_tokens": 1838.8,
+      "raw_truncations": 2,
+      "retries": [],
+      "first_pass_score": null,
+      "first_pass_cost": null,
+      "correct_ids": [
+        "math_divisible",
+        "math_coin_combinations",
+        "math_modular",
+        "math_weighted",
+        "data_group_revenue",
+        "data_filtered_median",
+        "data_distinct",
+        "data_weighted_floor",
+        "data_excluding",
+        "data_second_largest",
+        "search_chain_0",
+        "search_chain_1",
+        "search_chain_2",
+        "search_chain_3",
+        "coding_prefix",
+        "coding_runs",
+        "coding_histogram",
+        "coding_next_greater",
+        "control_search_local",
+        "control_data_local"
+      ],
+      "incorrect": [],
+      "audit_passed": true,
+      "math_caps": [
+        {
+          "task_id": "math_divisible",
+          "cap": 200
+        },
+        {
+          "task_id": "math_coin_combinations",
+          "cap": 200
+        },
+        {
+          "task_id": "math_modular",
+          "cap": 200
+        },
+        {
+          "task_id": "control_math_contradiction",
+          "cap": 200
+        },
+        {
+          "task_id": "math_stairs",
+          "cap": 200
+        },
+        {
+          "task_id": "math_lattice",
+          "cap": 200
+        },
+        {
+          "task_id": "math_weighted",
+          "cap": 200
+        }
+      ]
+    }
+  },
+  "paired": {
+    "800": {
+      "baseline_score": 35,
+      "candidate_score": 28,
+      "score_delta": -7,
+      "cost_delta": 18.6,
+      "lost": [
+        "data_group_revenue",
+        "math_weighted"
+      ],
+      "gained": []
+    },
+    "2000": {
+      "baseline_score": 61,
+      "candidate_score": 61,
+      "score_delta": 0,
+      "cost_delta": 201.7,
+      "lost": [],
+      "gained": []
+    }
+  },
+  "reused_baselines": {
+    "800": {
+      "report": "experiments/E119_baseline_800_live_20261113T080601885281/report.json",
+      "sha256": "9f73218a7a41606b34be960029741360814c57bbbc642725e61cfbae2d4fb51e",
+      "frozen_files": 107
+    },
+    "2000": {
+      "report": "experiments/E119_baseline_2000_live_20261113T080944482753/report.json",
+      "sha256": "f0e47a234526ad16a91aca77cca865101c6b691fb607c16cbe33870d2724fdd4",
+      "frozen_files": 107
+    }
+  },
+  "new_calls": 31,
+  "new_effective_tokens": 2508.3,
+  "campaign_calls": 396,
+  "campaign_effective_tokens": 30362.1,
+  "production_changed": false,
+  "limitations": [
+    "Adaptive follow-up on same24 authored tasks",
+    "Historical baseline reuse with unchanged source hashes, not independent holdout",
+    "No broad superiority or statistical significance claim"
+  ]
+}

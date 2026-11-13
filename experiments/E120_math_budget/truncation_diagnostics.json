@@ -1,0 +1,24 @@
+[
+  {
+    "task_id": "math_stairs",
+    "response": "experiments/E121_math_budget_800_live_20261113T081343489446/response_09.json",
+    "response_sha256": "0ae6115b9b0d86f645dea3d95a70a1e5b4326d50f3d604a70ffcdd7dd2ed6e46",
+    "finish_reason": "length",
+    "completion_tokens": 200,
+    "markdown_fence": true,
+    "comment_lines": 2,
+    "has_print_statement": false,
+    "observation": "Available prefix contains scaffolding/comments and ends before a print statement; not a complete solution."
+  },
+  {
+    "task_id": "math_lattice",
+    "response": "experiments/E121_math_budget_800_live_20261113T081343489446/response_10.json",
+    "response_sha256": "19b7b7111e8216e233fb619a03eb0155944aa0559c500308a99f0c777e0bdb25",
+    "finish_reason": "length",
+    "completion_tokens": 174,
+    "markdown_fence": true,
+    "comment_lines": 5,
+    "has_print_statement": false,
+    "observation": "Available prefix contains scaffolding/comments and ends before a print statement; not a complete solution."
+  }
+]

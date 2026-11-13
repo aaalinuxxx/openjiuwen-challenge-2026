@@ -1,0 +1,6 @@
+{
+  "task_id": "coding_histogram",
+  "task_type": "coding",
+  "instruction": "Return sorted (value,count) pairs for the distinct integer values. Function name: solve(values). Do not mutate the input. Modify only mylib.py. Never change tests. Write DONE to answer.txt after tests pass.",
+  "reward": 3
+}

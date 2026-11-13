@@ -1,0 +1,6 @@
+{
+  "task_id": "data_distinct",
+  "task_type": "data_analysis",
+  "instruction": "Read all rows of records.csv. Count distinct sku values among rows whose region is north or west. Write only the number to answer.txt.",
+  "reward": 3
+}

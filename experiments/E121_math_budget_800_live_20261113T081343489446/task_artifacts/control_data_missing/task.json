@@ -1,0 +1,6 @@
+{
+  "task_id": "control_data_missing",
+  "task_type": "data_analysis",
+  "instruction": "Read missing.csv and calculate total units. Do not invent missing data. Write the result to answer.txt.",
+  "reward": 3
+}

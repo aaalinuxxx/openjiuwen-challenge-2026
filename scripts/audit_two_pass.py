@@ -71,7 +71,7 @@ def audit_arm(name):
     assert metrics['score']==sum(r['reward'] for r in report['rows'] if r['verified_solution'])
     assert metrics['correct']==sum(r['verified_solution'] for r in report['rows'])
     retry=[]; first_score=None;first_cost=None
-    if plan['arm']=='two_pass':
+    if plan.get('arm')=='two_pass':
         policy=report['summary']['two_pass'];attempts=policy['attempts']
         repeated=[a for a in attempts if a['pass_number']==2]
         assert max(Counter(a['task_id'] for a in repeated).values(),default=0)<=1

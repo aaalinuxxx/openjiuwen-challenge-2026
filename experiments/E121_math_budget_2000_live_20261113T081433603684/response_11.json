@@ -1,0 +1,35 @@
+{
+  "task_id": "math_weighted",
+  "response": {
+    "id": "chatcmpl-ad44d4348d1936a2",
+    "created": 1794557719,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "total_screws = 17 * 24 + 13 * 18\nusable_screws = total_screws - 27\nprint(usable_screws)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 43,
+      "prompt_tokens": 107,
+      "total_tokens": 150,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
