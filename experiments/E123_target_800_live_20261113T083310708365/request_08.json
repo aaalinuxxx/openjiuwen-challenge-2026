@@ -1,0 +1,18 @@
+{
+  "task_id": "control_math_contradiction",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return concise executable Python 3 only. Print the final integer, or UNSOLVABLE if contradictory/impossible. No comments, Markdown, explanations or file writes. Avoid unnecessary functions; prefer built-ins and short expressions."
+      },
+      {
+        "role": "user",
+        "content": "Find an integer x satisfying both x+9=21 and x+9=22. If none exists return UNSOLVABLE. Write the result to answer.txt."
+      }
+    ],
+    "max_tokens": 115,
+    "temperature": 0.0
+  }
+}

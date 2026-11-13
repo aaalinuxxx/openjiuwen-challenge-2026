@@ -1,0 +1,18 @@
+{
+  "task_id": "search_chain_3",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: partial (partial_kb)\nKB Records:\n# Artifact 3\nSources: object.md\ncurator: Ema Stone\n\n# Ema Stone\nSources: person.md\nemployer: Archive 3\n\n# Archive 3\nSources: place.md\ncity: Bern\n\nQuestion: Use only kb/. Return the city of the employer of the curator of Artifact 3. Write only the exact city to answer.txt."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  }
+}

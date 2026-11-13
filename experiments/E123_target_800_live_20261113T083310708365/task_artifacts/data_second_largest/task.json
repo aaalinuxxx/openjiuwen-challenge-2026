@@ -1,0 +1,6 @@
+{
+  "task_id": "data_second_largest",
+  "task_type": "data_analysis",
+  "instruction": "Read all rows of records.csv. Sum qty by region, then return the second largest of the three region totals. Write only the number to answer.txt.",
+  "reward": 2
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "coding_runs",
+  "task_type": "coding",
+  "instruction": "Return lengths of maximal strictly increasing consecutive runs, in their original order. Equal adjacent values begin a new run. Function name: solve(values). Do not mutate the input. Modify only mylib.py. Never change tests. Write DONE to answer.txt after tests pass.",
+  "reward": 3
+}

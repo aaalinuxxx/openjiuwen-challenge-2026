@@ -1,0 +1,35 @@
+{
+  "task_id": "math_modular",
+  "response": {
+    "id": "chatcmpl-a6ce5536aa7a6d6a",
+    "created": 1794558872,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nprint(pow(13, 241, 107))\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 22,
+      "prompt_tokens": 91,
+      "total_tokens": 113,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

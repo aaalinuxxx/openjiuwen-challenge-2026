@@ -1,0 +1,18 @@
+{
+  "task_id": "math_divisible",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return concise executable Python 3 only. Print the final integer, or UNSOLVABLE if contradictory/impossible. No comments, Markdown, explanations or file writes. Avoid unnecessary functions; prefer built-ins and short expressions."
+      },
+      {
+        "role": "user",
+        "content": "How many integers from 1 to 275 inclusive are divisible by 4 or 9, counting each integer once? Write only the integer result to answer.txt."
+      }
+    ],
+    "max_tokens": 115,
+    "temperature": 0.0
+  }
+}

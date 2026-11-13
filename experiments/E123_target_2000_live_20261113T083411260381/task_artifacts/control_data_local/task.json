@@ -1,0 +1,6 @@
+{
+  "task_id": "control_data_local",
+  "task_type": "data_analysis",
+  "instruction": "How many units of product 'widget' were sold in months 5 through 6 inclusive? Write only the final answer to answer.txt.",
+  "reward": 2
+}

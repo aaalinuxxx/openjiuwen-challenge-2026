@@ -1,0 +1,6 @@
+{
+  "task_id": "math_stairs",
+  "task_type": "math",
+  "instruction": "A staircase has 34 steps. A move climbs 1,3,or4 steps. How many ordered sequences of moves land exactly at the top? Write only the integer result to answer.txt.",
+  "reward": 3
+}

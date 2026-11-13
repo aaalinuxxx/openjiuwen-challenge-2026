@@ -1,0 +1,18 @@
+{
+  "task_id": "coding_prefix",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return complete corrected Python code only, without comments or Markdown. Preserve signatures and satisfy the task constraints and all tests. Never modify tests. Use UNSOLVABLE only for provably contradictory requirements. The harness runs tests and writes DONE; do not perform these delivery steps in the returned code."
+      },
+      {
+        "role": "user",
+        "content": "### Task constraints\nReturn a list of running sums, including each current element. Function name: solve(values). Do not mutate the input. Modify only mylib.py. Never change tests. Write DONE to answer.txt after tests pass.\n\n### Target File: mylib.py\ndef solve(values):\n    return None\n\n\n\n\n### test_contract.py\nimport unittest\nfrom mylib import solve\nclass Tests(unittest.TestCase):\n    def test_contract(self):\n        self.assertEqual(solve([]),[])\n        self.assertEqual(solve([2, -3, 7]),[2, -1, 6])\n        self.assertEqual(solve([0, 0]),[0, 0])\n        a=[3,1,3,2]; before=a[:]; solve(a); self.assertEqual(a,before)\nif __name__=='__main__':unittest.main()\n\n\n### Failing Test Output (failures: 1)\n### test_contract.py\nF\n======================================================================\nFAIL: test_contract (__main__.Tests.test_contract)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\PC\\AppData\\Local\\Temp\\oj-coding-c6imnmb8\\workspace\\test_contract.py\", line 5, in test_contract\n    self.assertEqual(solve([]),[])\nAssertionError: None != []\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (failures=1)\n"
+      }
+    ],
+    "max_tokens": 541,
+    "temperature": 0.0
+  }
+}

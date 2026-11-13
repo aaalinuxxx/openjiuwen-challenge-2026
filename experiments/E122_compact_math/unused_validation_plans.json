@@ -1,0 +1,8 @@
+{
+  "reason": "Target gate failed: score loss and incorrect SOLVED at2000; no fresh/mixed API calls for H04.34",
+  "not_run": [
+    "fresh_baseline",
+    "fresh_compact",
+    "mixed"
+  ]
+}

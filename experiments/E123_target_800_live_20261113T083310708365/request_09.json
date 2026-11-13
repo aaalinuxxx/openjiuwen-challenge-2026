@@ -1,0 +1,18 @@
+{
+  "task_id": "math_stairs",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return concise executable Python 3 only. Print the final integer, or UNSOLVABLE if contradictory/impossible. No comments, Markdown, explanations or file writes. Avoid unnecessary functions; prefer built-ins and short expressions."
+      },
+      {
+        "role": "user",
+        "content": "A staircase has 34 steps. A move climbs 1,3,or4 steps. How many ordered sequences of moves land exactly at the top? Write only the integer result to answer.txt."
+      }
+    ],
+    "max_tokens": 116,
+    "temperature": 0.0
+  }
+}

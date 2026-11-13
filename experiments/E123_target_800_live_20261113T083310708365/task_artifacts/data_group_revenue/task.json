@@ -1,0 +1,6 @@
+{
+  "task_id": "data_group_revenue",
+  "task_type": "data_analysis",
+  "instruction": "Read all rows of records.csv. For each region sum qty*price over all its rows; return the largest regional total. Write only the number to answer.txt.",
+  "reward": 5
+}

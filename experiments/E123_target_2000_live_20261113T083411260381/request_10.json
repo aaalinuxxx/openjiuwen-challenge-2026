@@ -1,0 +1,18 @@
+{
+  "task_id": "math_lattice",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return concise executable Python 3 only. Print the final integer, or UNSOLVABLE if contradictory/impossible. No comments, Markdown, explanations or file writes. Avoid unnecessary functions; prefer built-ins and short expressions."
+      },
+      {
+        "role": "user",
+        "content": "Count shortest lattice paths from (0,0) to (8,6), using only right and up steps, that never pass through (4,3). Write only the integer result to answer.txt."
+      }
+    ],
+    "max_tokens": 44,
+    "temperature": 0.0
+  }
+}

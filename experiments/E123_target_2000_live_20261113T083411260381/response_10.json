@@ -1,0 +1,35 @@
+{
+  "task_id": "math_lattice",
+  "response": {
+    "id": "chatcmpl-afde650925dca087",
+    "created": 1794558883,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "import math\ndef nCr(n, r):\n    return math.comb(n, r)\n\ntotal = nCr(8+6, 6)\nthrough = nCr(4+3, ",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 102,
+      "total_tokens": 146,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

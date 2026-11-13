@@ -1,0 +1,18 @@
+{
+  "task_id": "math_coin_combinations",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return concise executable Python 3 only. Print the final integer, or UNSOLVABLE if contradictory/impossible. No comments, Markdown, explanations or file writes. Avoid unnecessary functions; prefer built-ins and short expressions."
+      },
+      {
+        "role": "user",
+        "content": "How many unordered combinations of coins of denominations 2,5,7 sum to 29? Unlimited coins of each denomination are available. Write only the integer result to answer.txt."
+      }
+    ],
+    "max_tokens": 116,
+    "temperature": 0.0
+  }
+}
