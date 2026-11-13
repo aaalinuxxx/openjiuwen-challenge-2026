@@ -1,0 +1,74 @@
+[
+  {
+    "task_id": "new_trailing_zeros",
+    "roi": 0.14684210526315788,
+    "expected_cost": 99.8,
+    "reward": 3
+  },
+  {
+    "task_id": "new_integer_conflict",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.2,
+    "reward": 3
+  },
+  {
+    "task_id": "new_exactly_two",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.5,
+    "reward": 3
+  },
+  {
+    "task_id": "new_min_coins",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.55,
+    "reward": 3
+  },
+  {
+    "task_id": "new_blocked_grid",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.95,
+    "reward": 3
+  },
+  {
+    "task_id": "new_crt",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.95,
+    "reward": 3
+  },
+  {
+    "task_id": "new_parity_conflict",
+    "roi": 0.14684210526315788,
+    "expected_cost": 102.2,
+    "reward": 3
+  },
+  {
+    "task_id": "new_stair_moves",
+    "roi": 0.14684210526315788,
+    "expected_cost": 103.05,
+    "reward": 3
+  },
+  {
+    "task_id": "new_bounded_coins",
+    "roi": 0.14684210526315788,
+    "expected_cost": 104.0,
+    "reward": 3
+  },
+  {
+    "task_id": "new_digit_sum",
+    "roi": 0.09789473684210527,
+    "expected_cost": 99.8,
+    "reward": 2
+  },
+  {
+    "task_id": "new_lcm",
+    "roi": 0.09789473684210527,
+    "expected_cost": 100.45,
+    "reward": 2
+  },
+  {
+    "task_id": "new_squared_sum",
+    "roi": 0.09789473684210527,
+    "expected_cost": 100.75,
+    "reward": 2
+  }
+]

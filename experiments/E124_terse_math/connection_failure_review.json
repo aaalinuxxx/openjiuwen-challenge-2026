@@ -1,0 +1,16 @@
+{
+  "failed_directory": "E125_fresh_baseline_live_20261113T084025749274",
+  "failed_report_sha256": "0a0186f940f6d3ebac936fbca37965561776adaf2fca65937dbb069053b3bf48",
+  "error_type": "ConnectTimeout",
+  "known_effective_tokens": 0,
+  "reserved_effective_tokens": 248.7,
+  "provider_usage_unavailable": true,
+  "original_ledger_unmodified": true,
+  "inference": "Installed fresh-client transport connects TCP/TLS before HTTP request handler. ConnectTimeout strongly indicates generation request not sent; no provider usage confirmation, so original UNKNOWN reservation is retained.",
+  "replacement_policy": "Exactly one separate replacement baseline trial at the same2000 budget, followed by original candidate only if completed. No automatic retry; another transport failure stops validation.",
+  "sources": {
+    "httpcore/_async/connection.py": "e8e70f5ea3047dcd01537f3ffa21d4343775bca4937365154f4f57a8d6ff04e9",
+    "httpcore/_backends/anyio.py": "c7c3e01215d10bc6d5aac77393f609c7c63a77d4ee6f4e82b944b09db9adaa86",
+    "httpx/_transports/default.py": "03379a454c95c0271c4f2c8d25ec437f49f57457f3cf2769748420bf0ecf2e79"
+  }
+}

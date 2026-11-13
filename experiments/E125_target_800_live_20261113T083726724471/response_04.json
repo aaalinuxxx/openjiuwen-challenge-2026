@@ -1,0 +1,32 @@
+{
+  "task_id": "search_chain_1",
+  "response": {
+    "id": "chatcmpl-9fa14d752a148e60",
+    "created": 1794559058,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "Riga",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 3,
+      "prompt_tokens": 146,
+      "total_tokens": 149,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "task_id": "coding_next_greater",
+  "response": {
+    "id": "chatcmpl-810a8889f2690439",
+    "created": 1794559182,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "def solve(values):\n    n = len(values)\n    result = [None] * n\n    stack = []\n    for i in range(n - 1, -1, -1):\n        while stack and stack[-1] <= values[i]:\n            stack.pop()\n        if stack:\n            result[i] = stack[-1]\n        else:\n            result[i] = None\n        stack.append(values[i])\n    return result",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 98,
+      "prompt_tokens": 431,
+      "total_tokens": 529,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

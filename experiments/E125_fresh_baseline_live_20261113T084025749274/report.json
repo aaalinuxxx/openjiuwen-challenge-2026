@@ -1,0 +1,719 @@
+{
+  "status": "STOPPED_ACCOUNTING_OR_RECORDING",
+  "mode": "LIVE",
+  "hypothesis": "H04.35_APPEND_MATH_BREVITY",
+  "plan_sha256": "39857c39ff4bfd604e4ff1ef08f5dd44c144ab429c2901fad08b02a3b04cc58e",
+  "recording_errors": [],
+  "configuration": {
+    "ranking_policy": "calibrated",
+    "profile": "csv-roomy",
+    "multi_csv_max_output_tokens": 600,
+    "budget": 2000.0,
+    "max_calls": 50,
+    "concurrency": 1,
+    "experimental_joins": true,
+    "search_min_task_budget": 300,
+    "data_min_task_budget": 1000,
+    "coding_min_task_budget": 800.0
+  },
+  "summary": {
+    "total_tasks": 12,
+    "task_results": {
+      "new_trailing_zeros": {
+        "task_id": "new_trailing_zeros",
+        "status": "ACCOUNTING_UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 10.39000000001397,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "ConnectTimeout"
+      },
+      "new_integer_conflict": {
+        "task_id": "new_integer_conflict",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_exactly_two": {
+        "task_id": "new_exactly_two",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_min_coins": {
+        "task_id": "new_min_coins",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_blocked_grid": {
+        "task_id": "new_blocked_grid",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_crt": {
+        "task_id": "new_crt",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_parity_conflict": {
+        "task_id": "new_parity_conflict",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_stair_moves": {
+        "task_id": "new_stair_moves",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_bounded_coins": {
+        "task_id": "new_bounded_coins",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_digit_sum": {
+        "task_id": "new_digit_sum",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_lcm": {
+        "task_id": "new_lcm",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      },
+      "new_squared_sum": {
+        "task_id": "new_squared_sum",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    "skipped_tasks": {},
+    "solved_count": 0,
+    "estimated_score": 0,
+    "effective_tokens_spent": 0.0,
+    "budget_state": {
+      "budget": 2000.0,
+      "known_effective_tokens": 0.0,
+      "reserved_effective_tokens": 248.7,
+      "has_unaccounted_request": true,
+      "remote_stopped": true,
+      "events": [
+        {
+          "ticket": 0,
+          "task_id": "new_trailing_zeros",
+          "status": "COST_UNKNOWN_STOPPED",
+          "reserved_units": 2487,
+          "task_limit_units": 2495,
+          "input_token_estimate": 1347,
+          "output_cap": 114,
+          "error_type": "ConnectTimeout"
+        }
+      ]
+    },
+    "budget_audit_path": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E125_fresh_baseline_live_20261113T084025749274\\budget.json",
+    "execution_engine": "openjiuwen",
+    "workflow_runs": [
+      {
+        "task_id": "new_trailing_zeros",
+        "workflow_id": "task_8e9f1f9acb7a431495acadb55d3b1442",
+        "session_id": "f4527eb228c0438e9c823b5dacbb6bdc",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_integer_conflict",
+        "workflow_id": "task_0ef354d4d79244f79fdfd57e83290084",
+        "session_id": "8fa35beacd064fdda4d2e2abc47e6db2",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_exactly_two",
+        "workflow_id": "task_25ad46d01861464fb4e51030958f0b1d",
+        "session_id": "ce84d6a54e0c421393d17a57b43cd2d5",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_min_coins",
+        "workflow_id": "task_22af3b57ebd64aa1ae56875e0ab6aa9a",
+        "session_id": "a44509028bb34f459d19403f97a52b2c",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_blocked_grid",
+        "workflow_id": "task_a29591f61ccd4dfdac2ff86c9d710046",
+        "session_id": "3b8850870c1545579d0a8ea411021c87",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_crt",
+        "workflow_id": "task_9d9343200b7b472486056a8cd2a68573",
+        "session_id": "79cd1175c5fd4ae5bbb7f2eaf3e4ea72",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_parity_conflict",
+        "workflow_id": "task_e9829d4fa66744e699dabd0d685ff8d3",
+        "session_id": "6cabeb3274e3475983fc47536623d5d5",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_stair_moves",
+        "workflow_id": "task_fe81be2748ff4cc1a93361f62b7f60dc",
+        "session_id": "545373fdd27a4c19939c1b53effe6bea",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_bounded_coins",
+        "workflow_id": "task_180a004ab86b41adb08d4448e3d30c08",
+        "session_id": "88c9b5aa34fc4d38a07157c3be5cd325",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_digit_sum",
+        "workflow_id": "task_750806bb1d6248dea463def0b16ed206",
+        "session_id": "c16d5cefc82d4822946f332c1b09c882",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_lcm",
+        "workflow_id": "task_13b750637cc3442fa9563a6b025d462b",
+        "session_id": "30dc410a220c4284be4ff9c223309054",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_squared_sum",
+        "workflow_id": "task_0068739c263b435bac14de2d92d29843",
+        "session_id": "0d2ce987aaf54485899a6f865c64c91a",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      }
+    ]
+  },
+  "rows": [
+    {
+      "task_id": "new_crt",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "668",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_crt",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_trailing_zeros",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "31",
+      "answer": null,
+      "status": "ACCOUNTING_UNKNOWN",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_trailing_zeros",
+        "status": "ACCOUNTING_UNKNOWN",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 10.39000000001397,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "ConnectTimeout"
+      }
+    },
+    {
+      "task_id": "new_digit_sum",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "170",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_digit_sum",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_min_coins",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "5",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_min_coins",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_blocked_grid",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "442",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_blocked_grid",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_lcm",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "315",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_lcm",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_exactly_two",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "56",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_exactly_two",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_squared_sum",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "17575",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_squared_sum",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_bounded_coins",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "5",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_bounded_coins",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_stair_moves",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "34",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_stair_moves",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_parity_conflict",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": true,
+      "expected": "UNSOLVABLE",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_parity_conflict",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    },
+    {
+      "task_id": "new_integer_conflict",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": true,
+      "expected": "UNSOLVABLE",
+      "answer": null,
+      "status": "BUDGET_EXCEEDED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_integer_conflict",
+        "status": "BUDGET_EXCEEDED",
+        "answer": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.0,
+        "model_used": "",
+        "notes": "Remote work stopped"
+      }
+    }
+  ],
+  "metrics": {
+    "total": 12,
+    "solvable": 10,
+    "correct": 0,
+    "score": 0,
+    "max_score": 27,
+    "incorrect_solved_answers": 0,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 0,
+    "truncations": 0,
+    "integrity_passed": true
+  },
+  "by_type": {
+    "math": {
+      "total": 12,
+      "solvable": 10,
+      "correct": 0,
+      "score": 0,
+      "max_score": 27,
+      "incorrect_solved_answers": 0,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 0,
+      "truncations": 0,
+      "integrity_passed": true
+    }
+  },
+  "audit": {
+    "passed": false,
+    "calls": 1,
+    "effective_tokens": 0.0,
+    "requests": []
+  },
+  "actual_http_calls": 1,
+  "elapsed_seconds": 17.125,
+  "budget": {
+    "budget": 2000.0,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 248.7,
+    "has_unaccounted_request": true,
+    "remote_stopped": true,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "new_trailing_zeros",
+        "status": "COST_UNKNOWN_STOPPED",
+        "reserved_units": 2487,
+        "task_limit_units": 2495,
+        "input_token_estimate": 1347,
+        "output_cap": 114,
+        "error_type": "ConnectTimeout"
+      }
+    ]
+  },
+  "frozen_files_unchanged": true
+}

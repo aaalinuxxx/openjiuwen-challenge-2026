@@ -1,0 +1,35 @@
+{
+  "task_id": "math_weighted",
+  "response": {
+    "id": "chatcmpl-a044656cf80bfa2f",
+    "created": 1794559154,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "print(17*24 + 13*18 - 27)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 20,
+      "prompt_tokens": 121,
+      "total_tokens": 141,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

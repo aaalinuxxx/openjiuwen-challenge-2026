@@ -1,0 +1,35 @@
+{
+  "task_id": "math_stairs",
+  "response": {
+    "id": "chatcmpl-bf8c9cd388149113",
+    "created": 1794559065,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "def count_ways(n):\n    if n < 0:\n        return 0\n    if n == 0:\n        return 1\n    return count_ways(n-1) + count_ways(n-3) + count_ways(n-4)\n\nprint(count_ways(34))",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 116,
+      "total_tokens": 184,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

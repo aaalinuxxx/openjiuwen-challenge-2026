@@ -1,0 +1,155 @@
+{
+  "results": {
+    "new_trailing_zeros": {
+      "task_id": "new_trailing_zeros",
+      "status": "ACCOUNTING_UNKNOWN",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 10.39000000001397,
+      "model_used": "qwen3.8-27b-noreason",
+      "notes": "ConnectTimeout"
+    },
+    "new_integer_conflict": {
+      "task_id": "new_integer_conflict",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_exactly_two": {
+      "task_id": "new_exactly_two",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_min_coins": {
+      "task_id": "new_min_coins",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_blocked_grid": {
+      "task_id": "new_blocked_grid",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_crt": {
+      "task_id": "new_crt",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_parity_conflict": {
+      "task_id": "new_parity_conflict",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_stair_moves": {
+      "task_id": "new_stair_moves",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_bounded_coins": {
+      "task_id": "new_bounded_coins",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_digit_sum": {
+      "task_id": "new_digit_sum",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_lcm": {
+      "task_id": "new_lcm",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    },
+    "new_squared_sum": {
+      "task_id": "new_squared_sum",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Remote work stopped"
+    }
+  },
+  "budget": {
+    "budget": 2000.0,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 248.7,
+    "has_unaccounted_request": true,
+    "remote_stopped": true,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "new_trailing_zeros",
+        "status": "COST_UNKNOWN_STOPPED",
+        "reserved_units": 2487,
+        "task_limit_units": 2495,
+        "input_token_estimate": 1347,
+        "output_cap": 114,
+        "error_type": "ConnectTimeout"
+      }
+    ]
+  }
+}

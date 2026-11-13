@@ -1,0 +1,18 @@
+{
+  "task_id": "math_weighted",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown. Keep code minimal: no comments, explanations, or unnecessary helper functions."
+      },
+      {
+        "role": "user",
+        "content": "A shipment has 17 boxes of 24 screws and 13 boxes of 18 screws. Exactly 27 screws are damaged. How many usable screws remain? Write only the integer result to answer.txt."
+      }
+    ],
+    "max_tokens": 36,
+    "temperature": 0.0
+  }
+}

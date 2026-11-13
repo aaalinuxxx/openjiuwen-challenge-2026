@@ -1,0 +1,241 @@
+{
+  "hypothesis": "H04.35",
+  "stage": "target",
+  "target_acceptance": true,
+  "target": {
+    "800": {
+      "directory": "E125_target_800_live_20261113T083726724471",
+      "report_sha256": "95aa7e4bd1a14f324fb6078502c22c987b2f253cc613f404c87e8e9fa17f1f46",
+      "metrics": {
+        "total": 24,
+        "solvable": 22,
+        "correct": 12,
+        "score": 38,
+        "max_score": 66,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 2,
+        "truncations": 2,
+        "integrity_passed": true
+      },
+      "calls": 13,
+      "effective_tokens": 650.7,
+      "raw_truncations": 2,
+      "retries": [],
+      "first_pass_score": null,
+      "first_pass_cost": null,
+      "correct_ids": [
+        "math_divisible",
+        "math_coin_combinations",
+        "math_stairs",
+        "math_modular",
+        "math_weighted",
+        "data_group_revenue",
+        "search_chain_0",
+        "search_chain_1",
+        "search_chain_2",
+        "search_chain_3",
+        "control_search_local",
+        "control_data_local"
+      ],
+      "incorrect": [],
+      "audit_passed": true,
+      "math_generations": [
+        {
+          "task_id": "math_divisible",
+          "actual_cap": 107,
+          "output_tokens": 34,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_coin_combinations",
+          "actual_cap": 108,
+          "output_tokens": 85,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_modular",
+          "actual_cap": 107,
+          "output_tokens": 17,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "control_math_contradiction",
+          "actual_cap": 107,
+          "output_tokens": 8,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_stairs",
+          "actual_cap": 108,
+          "output_tokens": 68,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_lattice",
+          "actual_cap": 36,
+          "output_tokens": 36,
+          "finish": "length",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_weighted",
+          "actual_cap": 36,
+          "output_tokens": 20,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        }
+      ]
+    },
+    "2000": {
+      "directory": "E125_target_2000_live_20261113T083841780100",
+      "report_sha256": "10d05b3702830bea2cda9dee4e7ed0aacc3cdd38b7ba1a06f9ab06f1e5042d15",
+      "metrics": {
+        "total": 24,
+        "solvable": 22,
+        "correct": 21,
+        "score": 64,
+        "max_score": 66,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 2,
+        "truncations": 1,
+        "integrity_passed": true
+      },
+      "calls": 21,
+      "effective_tokens": 1562.8,
+      "raw_truncations": 1,
+      "retries": [],
+      "first_pass_score": null,
+      "first_pass_cost": null,
+      "correct_ids": [
+        "math_divisible",
+        "math_coin_combinations",
+        "math_stairs",
+        "math_modular",
+        "math_weighted",
+        "data_group_revenue",
+        "data_filtered_median",
+        "data_distinct",
+        "data_weighted_floor",
+        "data_excluding",
+        "data_second_largest",
+        "search_chain_0",
+        "search_chain_1",
+        "search_chain_2",
+        "search_chain_3",
+        "coding_prefix",
+        "coding_runs",
+        "coding_histogram",
+        "coding_next_greater",
+        "control_search_local",
+        "control_data_local"
+      ],
+      "incorrect": [],
+      "audit_passed": true,
+      "math_generations": [
+        {
+          "task_id": "math_divisible",
+          "actual_cap": 107,
+          "output_tokens": 47,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_coin_combinations",
+          "actual_cap": 108,
+          "output_tokens": 85,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_modular",
+          "actual_cap": 107,
+          "output_tokens": 17,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "control_math_contradiction",
+          "actual_cap": 107,
+          "output_tokens": 8,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_stairs",
+          "actual_cap": 108,
+          "output_tokens": 68,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_lattice",
+          "actual_cap": 36,
+          "output_tokens": 36,
+          "finish": "length",
+          "comment_lines": 0,
+          "has_markdown": false
+        },
+        {
+          "task_id": "math_weighted",
+          "actual_cap": 36,
+          "output_tokens": 20,
+          "finish": "stop",
+          "comment_lines": 0,
+          "has_markdown": false
+        }
+      ]
+    }
+  },
+  "target_pairs": {
+    "800": {
+      "baseline_score": 35,
+      "candidate_score": 38,
+      "score_delta": 3,
+      "cost_delta": -0.2,
+      "lost": [],
+      "gained": [
+        "math_stairs"
+      ]
+    },
+    "2000": {
+      "baseline_score": 61,
+      "candidate_score": 64,
+      "score_delta": 3,
+      "cost_delta": -74.3,
+      "lost": [],
+      "gained": [
+        "math_stairs"
+      ]
+    }
+  },
+  "production_changed": false,
+  "new_calls": 34,
+  "new_effective_tokens": 2213.5,
+  "campaign_calls": 465,
+  "campaign_effective_tokens": 34535.2,
+  "limitations": [
+    "Adaptive development, failed H04.34 retained",
+    "Fresh math tasks frozen before variant outcomes",
+    "Sequential small trials, no significance claim",
+    "No hidden-organizer-set performance claim"
+  ]
+}

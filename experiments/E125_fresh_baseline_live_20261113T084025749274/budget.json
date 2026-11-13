@@ -1,0 +1,19 @@
+{
+  "budget": 2000.0,
+  "known_effective_tokens": 0.0,
+  "reserved_effective_tokens": 248.7,
+  "has_unaccounted_request": true,
+  "remote_stopped": true,
+  "events": [
+    {
+      "ticket": 0,
+      "task_id": "new_trailing_zeros",
+      "status": "COST_UNKNOWN_STOPPED",
+      "reserved_units": 2487,
+      "task_limit_units": 2495,
+      "input_token_estimate": 1347,
+      "output_cap": 114,
+      "error_type": "ConnectTimeout"
+    }
+  ]
+}

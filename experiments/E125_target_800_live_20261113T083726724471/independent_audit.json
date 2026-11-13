@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "calls": 13,
+  "effective_tokens": 650.7,
+  "requests": [
+    {
+      "task_id": "math_divisible",
+      "cost": 45.0,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "math_coin_combinations",
+      "cost": 96.3,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 108,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_0",
+      "cost": 17.4,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_1",
+      "cost": 17.6,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_2",
+      "cost": 17.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_3",
+      "cost": 16.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "math_modular",
+      "cost": 27.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "control_math_contradiction",
+      "cost": 19.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "math_stairs",
+      "cost": 79.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 108,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "math_lattice",
+      "cost": 47.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 36,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "math_weighted",
+      "cost": 32.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 36,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "data_group_revenue",
+      "cost": 113.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 200,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "data_filtered_median",
+      "cost": 121.2,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 104,
+      "finish": "length",
+      "passed": true
+    }
+  ]
+}
