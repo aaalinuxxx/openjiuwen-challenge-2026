@@ -1,0 +1,6 @@
+{
+  "task_id": "data_weighted_floor",
+  "task_type": "data_analysis",
+  "instruction": "Read all rows of records.csv. Compute sum(qty*price)/sum(qty) over all rows and round DOWN to the nearest integer. Write only the number to answer.txt.",
+  "reward": 3
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "coding_prefix",
+  "task_type": "coding",
+  "instruction": "Return a list of running sums, including each current element. Function name: solve(values). Do not mutate the input. Modify only mylib.py. Never change tests. Write DONE to answer.txt after tests pass.",
+  "reward": 3
+}

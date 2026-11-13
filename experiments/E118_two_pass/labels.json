@@ -1,0 +1,231 @@
+{
+  "math_divisible": {
+    "task_id": "math_divisible",
+    "task_type": "math",
+    "instruction": "How many integers from 1 to 275 inclusive are divisible by 4 or 9, counting each integer once? Write only the integer result to answer.txt.",
+    "reward": 5,
+    "expected": "91",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "math_coin_combinations": {
+    "task_id": "math_coin_combinations",
+    "task_type": "math",
+    "instruction": "How many unordered combinations of coins of denominations 2,5,7 sum to 29? Unlimited coins of each denomination are available. Write only the integer result to answer.txt.",
+    "reward": 4,
+    "expected": "9",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "math_stairs": {
+    "task_id": "math_stairs",
+    "task_type": "math",
+    "instruction": "A staircase has 34 steps. A move climbs 1,3,or4 steps. How many ordered sequences of moves land exactly at the top? Write only the integer result to answer.txt.",
+    "reward": 3,
+    "expected": "6677056",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "math_modular": {
+    "task_id": "math_modular",
+    "task_type": "math",
+    "instruction": "Compute the remainder of 13 to the power 241 divided by 107. Write only the integer result to answer.txt.",
+    "reward": 3,
+    "expected": "89",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "math_lattice": {
+    "task_id": "math_lattice",
+    "task_type": "math",
+    "instruction": "Count shortest lattice paths from (0,0) to (8,6), using only right and up steps, that never pass through (4,3). Write only the integer result to answer.txt.",
+    "reward": 2,
+    "expected": "1778",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "math_weighted": {
+    "task_id": "math_weighted",
+    "task_type": "math",
+    "instruction": "A shipment has 17 boxes of 24 screws and 13 boxes of 18 screws. Exactly 27 screws are damaged. How many usable screws remain? Write only the integer result to answer.txt.",
+    "reward": 2,
+    "expected": "615",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "data_group_revenue": {
+    "task_id": "data_group_revenue",
+    "task_type": "data_analysis",
+    "instruction": "Read all rows of records.csv. For each region sum qty*price over all its rows; return the largest regional total. Write only the number to answer.txt.",
+    "reward": 5,
+    "expected": "181",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "data_filtered_median": {
+    "task_id": "data_filtered_median",
+    "task_type": "data_analysis",
+    "instruction": "Read all rows of records.csv. Keep rows where qty>=3 and price<15. Return the median qty; average the middle two values when needed. Write only the number to answer.txt.",
+    "reward": 4,
+    "expected": "5",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "data_distinct": {
+    "task_id": "data_distinct",
+    "task_type": "data_analysis",
+    "instruction": "Read all rows of records.csv. Count distinct sku values among rows whose region is north or west. Write only the number to answer.txt.",
+    "reward": 3,
+    "expected": "3",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "data_weighted_floor": {
+    "task_id": "data_weighted_floor",
+    "task_type": "data_analysis",
+    "instruction": "Read all rows of records.csv. Compute sum(qty*price)/sum(qty) over all rows and round DOWN to the nearest integer. Write only the number to answer.txt.",
+    "reward": 3,
+    "expected": "9",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "data_excluding": {
+    "task_id": "data_excluding",
+    "task_type": "data_analysis",
+    "instruction": "Read all rows of records.csv. Sum qty for rows whose sku is not a and whose price is at least 10. Write only the number to answer.txt.",
+    "reward": 2,
+    "expected": "19",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "data_second_largest": {
+    "task_id": "data_second_largest",
+    "task_type": "data_analysis",
+    "instruction": "Read all rows of records.csv. Sum qty by region, then return the second largest of the three region totals. Write only the number to answer.txt.",
+    "reward": 2,
+    "expected": "9",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "search_chain_0": {
+    "task_id": "search_chain_0",
+    "task_type": "search",
+    "instruction": "Use only kb/. Return the city of the employer of the curator of Artifact 0. Write only the exact city to answer.txt.",
+    "reward": 3,
+    "expected": "Ulm",
+    "unsolvable": false,
+    "group": "E118_fresh"
+  },
+  "search_chain_1": {
+    "task_id": "search_chain_1",
+    "task_type": "search",
+    "instruction": "Use only kb/. Return the city of the employer of the curator of Artifact 1. Write only the exact city to answer.txt.",
+    "reward": 3,
+    "expected": "Riga",
+    "unsolvable": false,
+    "group": "E118_fresh"
+  },
+  "search_chain_2": {
+    "task_id": "search_chain_2",
+    "task_type": "search",
+    "instruction": "Use only kb/. Return the city of the employer of the curator of Artifact 2. Write only the exact city to answer.txt.",
+    "reward": 3,
+    "expected": "Lund",
+    "unsolvable": false,
+    "group": "E118_fresh"
+  },
+  "search_chain_3": {
+    "task_id": "search_chain_3",
+    "task_type": "search",
+    "instruction": "Use only kb/. Return the city of the employer of the curator of Artifact 3. Write only the exact city to answer.txt.",
+    "reward": 3,
+    "expected": "Bern",
+    "unsolvable": false,
+    "group": "E118_fresh"
+  },
+  "coding_prefix": {
+    "task_id": "coding_prefix",
+    "task_type": "coding",
+    "instruction": "Return a list of running sums, including each current element. Function name: solve(values). Do not mutate the input. Modify only mylib.py. Never change tests. Write DONE to answer.txt after tests pass.",
+    "reward": 3,
+    "expected": "tests_pass",
+    "unsolvable": false,
+    "group": "E118_fresh"
+  },
+  "coding_runs": {
+    "task_id": "coding_runs",
+    "task_type": "coding",
+    "instruction": "Return lengths of maximal strictly increasing consecutive runs, in their original order. Equal adjacent values begin a new run. Function name: solve(values). Do not mutate the input. Modify only mylib.py. Never change tests. Write DONE to answer.txt after tests pass.",
+    "reward": 3,
+    "expected": "tests_pass",
+    "unsolvable": false,
+    "group": "E118_fresh"
+  },
+  "coding_histogram": {
+    "task_id": "coding_histogram",
+    "task_type": "coding",
+    "instruction": "Return sorted (value,count) pairs for the distinct integer values. Function name: solve(values). Do not mutate the input. Modify only mylib.py. Never change tests. Write DONE to answer.txt after tests pass.",
+    "reward": 3,
+    "expected": "tests_pass",
+    "unsolvable": false,
+    "group": "E118_fresh"
+  },
+  "coding_next_greater": {
+    "task_id": "coding_next_greater",
+    "task_type": "coding",
+    "instruction": "For each position return the value of the nearest element strictly to its right that is greater than the current value, or None if absent. Function name: solve(values). Do not mutate the input. Modify only mylib.py. Never change tests. Write DONE to answer.txt after tests pass.",
+    "reward": 3,
+    "expected": "tests_pass",
+    "unsolvable": false,
+    "group": "E118_fresh"
+  },
+  "control_search_local": {
+    "task_id": "control_search_local",
+    "task_type": "search",
+    "instruction": "In which year was Alba born? Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "1987",
+    "unsolvable": false,
+    "group": "E118_fresh"
+  },
+  "control_data_local": {
+    "task_id": "control_data_local",
+    "task_type": "data_analysis",
+    "instruction": "How many units of product 'widget' were sold in months 5 through 6 inclusive? Write only the final answer to answer.txt.",
+    "reward": 2,
+    "expected": "9",
+    "unsolvable": false,
+    "group": "E118_fresh",
+    "comparison": "decimal"
+  },
+  "control_data_missing": {
+    "task_id": "control_data_missing",
+    "task_type": "data_analysis",
+    "instruction": "Read missing.csv and calculate total units. Do not invent missing data. Write the result to answer.txt.",
+    "reward": 3,
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "group": "E118_fresh"
+  },
+  "control_math_contradiction": {
+    "task_id": "control_math_contradiction",
+    "task_type": "math",
+    "instruction": "Find an integer x satisfying both x+9=21 and x+9=22. If none exists return UNSOLVABLE. Write the result to answer.txt.",
+    "reward": 3,
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "group": "E118_fresh"
+  }
+}

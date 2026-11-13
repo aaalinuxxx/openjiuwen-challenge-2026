@@ -1,0 +1,265 @@
+{
+  "results": {
+    "math_divisible": {
+      "task_id": "math_divisible",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "math_coin_combinations": {
+      "task_id": "math_coin_combinations",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "search_chain_0": {
+      "task_id": "search_chain_0",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "search_chain_1": {
+      "task_id": "search_chain_1",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "search_chain_2": {
+      "task_id": "search_chain_2",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "search_chain_3": {
+      "task_id": "search_chain_3",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "math_modular": {
+      "task_id": "math_modular",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "control_math_contradiction": {
+      "task_id": "control_math_contradiction",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "math_stairs": {
+      "task_id": "math_stairs",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "control_search_local": {
+      "task_id": "control_search_local",
+      "status": "SOLVED",
+      "answer": "1987",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.01600000000325963,
+      "model_used": "",
+      "notes": "alba.md:born=1987"
+    },
+    "math_lattice": {
+      "task_id": "math_lattice",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "math_weighted": {
+      "task_id": "math_weighted",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_group_revenue": {
+      "task_id": "data_group_revenue",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.18699999997625127,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_filtered_median": {
+      "task_id": "data_filtered_median",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_distinct": {
+      "task_id": "data_distinct",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_weighted_floor": {
+      "task_id": "data_weighted_floor",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "coding_prefix": {
+      "task_id": "coding_prefix",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.14100000000325963,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "coding_histogram": {
+      "task_id": "coding_histogram",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.14100000000325963,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "coding_runs": {
+      "task_id": "coding_runs",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.125,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "coding_next_greater": {
+      "task_id": "coding_next_greater",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.125,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "control_data_local": {
+      "task_id": "control_data_local",
+      "status": "SOLVED",
+      "answer": "9",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.014999999955762178,
+      "model_used": "",
+      "notes": "Solved zero-token via CSV parser"
+    },
+    "data_excluding": {
+      "task_id": "data_excluding",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "data_second_largest": {
+      "task_id": "data_second_largest",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    }
+  },
+  "budget": {
+    "budget": 0.0,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": []
+  }
+}

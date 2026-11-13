@@ -1,0 +1,6 @@
+{
+  "task_id": "control_search_local",
+  "task_type": "search",
+  "instruction": "In which year was Alba born? Write only the year to answer.txt.",
+  "reward": 2
+}

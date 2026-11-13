@@ -1,0 +1,9 @@
+region,sku,qty,price
+north,a,2,7
+south,b,5,3
+north,b,4,11
+west,a,3,5
+south,a,7,2
+west,c,6,13
+north,c,1,17
+south,c,8,19

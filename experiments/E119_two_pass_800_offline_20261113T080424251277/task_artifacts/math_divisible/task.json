@@ -1,0 +1,6 @@
+{
+  "task_id": "math_divisible",
+  "task_type": "math",
+  "instruction": "How many integers from 1 to 275 inclusive are divisible by 4 or 9, counting each integer once? Write only the integer result to answer.txt.",
+  "reward": 5
+}

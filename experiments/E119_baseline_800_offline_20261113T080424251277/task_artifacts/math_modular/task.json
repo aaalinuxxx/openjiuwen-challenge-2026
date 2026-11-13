@@ -1,0 +1,6 @@
+{
+  "task_id": "math_modular",
+  "task_type": "math",
+  "instruction": "Compute the remainder of 13 to the power 241 divided by 107. Write only the integer result to answer.txt.",
+  "reward": 3
+}

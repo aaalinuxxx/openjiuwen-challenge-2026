@@ -1,0 +1,124 @@
+{
+  "total": 24,
+  "solvable": 22,
+  "max_score": 66,
+  "checks": [
+    {
+      "task_id": "math_divisible",
+      "kind": "two_arithmetic_methods",
+      "passed": true,
+      "expected": 91
+    },
+    {
+      "task_id": "math_coin_combinations",
+      "kind": "two_arithmetic_methods",
+      "passed": true,
+      "expected": 9
+    },
+    {
+      "task_id": "math_stairs",
+      "kind": "two_arithmetic_methods",
+      "passed": true,
+      "expected": 6677056
+    },
+    {
+      "task_id": "math_modular",
+      "kind": "two_arithmetic_methods",
+      "passed": true,
+      "expected": 89
+    },
+    {
+      "task_id": "math_lattice",
+      "kind": "two_arithmetic_methods",
+      "passed": true,
+      "expected": 1778
+    },
+    {
+      "task_id": "math_weighted",
+      "kind": "two_arithmetic_methods",
+      "passed": true,
+      "expected": 615
+    },
+    {
+      "task_id": "data_group_revenue",
+      "kind": "aggregation_and_manual_check",
+      "expected": 181,
+      "passed": true
+    },
+    {
+      "task_id": "data_filtered_median",
+      "kind": "aggregation_and_manual_check",
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "task_id": "data_distinct",
+      "kind": "aggregation_and_manual_check",
+      "expected": 3,
+      "passed": true
+    },
+    {
+      "task_id": "data_weighted_floor",
+      "kind": "aggregation_and_manual_check",
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "task_id": "data_excluding",
+      "kind": "aggregation_and_manual_check",
+      "expected": 19,
+      "passed": true
+    },
+    {
+      "task_id": "data_second_largest",
+      "kind": "aggregation_and_manual_check",
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_0",
+      "kind": "explicit_three_edge_chain",
+      "expected": "Ulm",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_1",
+      "kind": "explicit_three_edge_chain",
+      "expected": "Riga",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_2",
+      "kind": "explicit_three_edge_chain",
+      "expected": "Lund",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_3",
+      "kind": "explicit_three_edge_chain",
+      "expected": "Bern",
+      "passed": true
+    },
+    {
+      "task_id": "coding_prefix",
+      "kind": "broken_fails_reference_passes",
+      "passed": true
+    },
+    {
+      "task_id": "coding_runs",
+      "kind": "broken_fails_reference_passes",
+      "passed": true
+    },
+    {
+      "task_id": "coding_histogram",
+      "kind": "broken_fails_reference_passes",
+      "passed": true
+    },
+    {
+      "task_id": "coding_next_greater",
+      "kind": "broken_fails_reference_passes",
+      "passed": true
+    }
+  ],
+  "note": "Author-generated new instances of familiar families, not a hidden organizer holdout; references never copied into task roots."
+}

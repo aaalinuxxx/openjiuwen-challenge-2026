@@ -1,0 +1,6 @@
+{
+  "task_id": "search_chain_2",
+  "task_type": "search",
+  "instruction": "Use only kb/. Return the city of the employer of the curator of Artifact 2. Write only the exact city to answer.txt.",
+  "reward": 3
+}

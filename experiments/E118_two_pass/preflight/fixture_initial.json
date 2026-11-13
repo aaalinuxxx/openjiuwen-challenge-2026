@@ -1,0 +1,6 @@
+{
+  "done": true,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"<frozen runpy>\", line 291, in run_path\r\n  File \"<frozen runpy>\", line 98, in _run_module_code\r\n  File \"<frozen runpy>\", line 88, in _run_code\r\n  File \"D:\\хаки\\openjiuwen\\openjuuweg\\scripts\\create_two_pass_fixture.py\", line 95, in <module>\r\n    if __name__=='__main__':main()\r\n                            ^^^^^^\r\n  File \"D:\\хаки\\openjiuwen\\openjuuweg\\scripts\\create_two_pass_fixture.py\", line 46, in main\r\n    number('math_coin_combinations','How many unordered combinations of coins of denominations 2,5,7 sum to 29? Unlimited coins of each denomination are available.',sum(2*a+5*b+7*c==29 for a in range(15) for b in range(6) for c in range(5)),10,4)\r\n  File \"D:\\хаки\\openjiuwen\\openjuuweg\\scripts\\create_two_pass_fixture.py\", line 19, in number\r\n    assert computed==independent,(name,computed,independent)\r\n           ^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: ('math_coin_combinations', 9, 10)\r\n",
+  "code": 1
+}

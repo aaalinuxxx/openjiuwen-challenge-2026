@@ -1,0 +1,6 @@
+{
+  "task_id": "control_math_contradiction",
+  "task_type": "math",
+  "instruction": "Find an integer x satisfying both x+9=21 and x+9=22. If none exists return UNSOLVABLE. Write the result to answer.txt.",
+  "reward": 3
+}
