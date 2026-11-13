@@ -1,0 +1,32 @@
+{
+  "task_id": "validate_039_search_irrelevant_conflict",
+  "response": {
+    "id": "chatcmpl-834889d59d3c220f",
+    "created": 1794555395,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "Bern",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 2,
+      "prompt_tokens": 152,
+      "total_tokens": 154,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "validate_095_fresh_search_custodian",
+  "payload": {
+    "model": "qwen3.6-35b-a3b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use ONLY the supplied KB records. Return only the exact requested value without explanation. Conflicting alternatives are explicitly marked. If the answer is unsupported, return UNKNOWN. Never infer absence from omitted records."
+      },
+      {
+        "role": "user",
+        "content": "KB coverage: partial (partial_kb)\nKB Records:\n# Meridian Lens\nSources: lens.md\ncustodian: Cedar Archive\n\n# Cedar Archive\nSources: archive.md\ncity: Turku\n\nQuestion: Use only kb/. Return the city of the organization holding custody of the Meridian Lens. Write only the city to answer.txt."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0.0
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "hypothesis": "H04.30",
+  "combination_accepted": false,
+  "acceptance_checks": {
+    "combination_best_score_cost": false,
+    "higher_score_than_original": true,
+    "wrong_solved_not_increased": true,
+    "integrity": true,
+    "accounting": true
+  },
+  "arms": {
+    "roi_baseline": {
+      "report": "experiments/E113_baseline_live_20261113T072447407100/report.json",
+      "report_sha256": "d46a8b9a5ea4c11363d1e579be612d1d1860a5a4327ed35f58f029704e2569a4",
+      "metrics": {
+        "total": 100,
+        "solvable": 83,
+        "correct": 21,
+        "score": 71,
+        "max_score": 246,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 4,
+        "truncations": 3,
+        "integrity_passed": true
+      },
+      "calls": 8,
+      "effective_tokens": 373.3,
+      "floor_denials": 0
+    },
+    "roi_floor": {
+      "report": "experiments/E113_floor_live_20261113T072604402179/report.json",
+      "report_sha256": "3d9f1277c66637ac1a5747dfd1d8a2c78ce4060d091dd3dd7ffba93700688fc7",
+      "metrics": {
+        "total": 100,
+        "solvable": 83,
+        "correct": 22,
+        "score": 76,
+        "max_score": 246,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 4,
+        "truncations": 1,
+        "integrity_passed": true
+      },
+      "calls": 7,
+      "effective_tokens": 351.0,
+      "floor_denials": 23
+    },
+    "calibrated_baseline": {
+      "report": "experiments/E115_calibrated_baseline_live_20261113T073618652336/report.json",
+      "report_sha256": "cc51b746d3fa5a585136bafe2cb644ab74187780c0e0c69d009d095691be6c87",
+      "metrics": {
+        "total": 100,
+        "solvable": 83,
+        "correct": 30,
+        "score": 105,
+        "max_score": 246,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 5,
+        "truncations": 1,
+        "integrity_passed": true
+      },
+      "calls": 17,
+      "effective_tokens": 373.1,
+      "floor_denials": 0
+    },
+    "calibrated_floor": {
+      "report": "experiments/E115_calibrated_floor_live_20261113T073723124343/report.json",
+      "report_sha256": "265a2467faeab26c7bd81cd396d1f7bcc411c251e88ce8aacbc9609723391487",
+      "metrics": {
+        "total": 100,
+        "solvable": 83,
+        "correct": 29,
+        "score": 102,
+        "max_score": 246,
+        "incorrect_solved_answers": 0,
+        "non_solved_answer_files": 0,
+        "justified_refusals": 6,
+        "truncations": 0,
+        "integrity_passed": true
+      },
+      "calls": 15,
+      "effective_tokens": 352.8,
+      "floor_denials": 13
+    }
+  },
+  "best_observed_arm": "calibrated_baseline",
+  "floor_score_effect_under_roi": 5,
+  "floor_score_effect_under_calibrated": -3,
+  "descriptive_score_interaction": -8,
+  "new_calls": 32,
+  "new_effective_tokens": 725.9,
+  "four_arm_calls": 47,
+  "four_arm_effective_tokens": 1450.2,
+  "campaign_calls": 271,
+  "campaign_effective_tokens": 21349.7,
+  "combination_gained_vs_original": [
+    "validate_005_search_new_relation",
+    "validate_020_fresh_math_modular",
+    "validate_036_math_zero_warning",
+    "validate_057_math_percentage",
+    "validate_059_math_gcd",
+    "validate_075_fresh_search_latest",
+    "validate_078_fresh_math_union",
+    "validate_081_fresh_math_paths"
+  ],
+  "combination_lost_vs_original": [],
+  "production_changed": false,
+  "overall_internal_ceiling_removed_by_user": true,
+  "limitations": [
+    "Sequential fixed-order four-arm comparison with two reused recent live arms.",
+    "Identical frozen code/data does not remove model or time variation.",
+    "One known100-task seed and tight budget500, not independent holdout.",
+    "Interaction is descriptive without statistical confidence or universal claim.",
+    "Production integration/full mixed regression not yet performed."
+  ]
+}

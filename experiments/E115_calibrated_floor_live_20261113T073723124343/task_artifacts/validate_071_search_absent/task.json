@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_071_search_absent",
+  "task_type": "search",
+  "instruction": "In which year was Zora Cloud born? Use only kb/. Write only the final answer to answer.txt.",
+  "reward": 2
+}

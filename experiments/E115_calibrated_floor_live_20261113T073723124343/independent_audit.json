@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "calls": 15,
+  "effective_tokens": 352.8,
+  "requests": [
+    {
+      "task_id": "validate_095_fresh_search_custodian",
+      "cost": 15.7,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_082_math_sum",
+      "cost": 19.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 114,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_020_fresh_math_modular",
+      "cost": 25.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 115,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_039_search_irrelevant_conflict",
+      "cost": 17.2,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_062_fresh_search_chain",
+      "cost": 19.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_024_search_paraphrase_chain",
+      "cost": 19.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_059_math_gcd",
+      "cost": 25.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 115,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_036_math_zero_warning",
+      "cost": 15.4,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 115,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_027_math_zero_operation",
+      "cost": 17.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 116,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_057_math_percentage",
+      "cost": 17.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 116,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_078_fresh_math_union",
+      "cost": 62.0,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 116,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_081_fresh_math_paths",
+      "cost": 44.2,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 104,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_075_fresh_search_latest",
+      "cost": 16.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_005_search_new_relation",
+      "cost": 17.8,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "validate_056_fresh_search_conflict",
+      "cost": 19.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 9,
+      "finish": "stop",
+      "passed": true
+    }
+  ]
+}

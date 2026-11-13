@@ -1,0 +1,18 @@
+{
+  "task_id": "validate_078_fresh_math_union",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown."
+      },
+      {
+        "role": "user",
+        "content": "How many integers from 1 through 150 inclusive are divisible by 3 or by 7? Count those divisible by both only once. Write only the integer result to answer.txt."
+      }
+    ],
+    "max_tokens": 116,
+    "temperature": 0.0
+  }
+}

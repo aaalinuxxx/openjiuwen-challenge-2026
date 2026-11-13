@@ -1,0 +1,578 @@
+[
+  {
+    "task_id": "validate_095_fresh_search_custodian",
+    "roi": 0.24870466321243523,
+    "expected_cost": 66.5,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_082_math_sum",
+    "roi": 0.24473684210526317,
+    "expected_cost": 99.9,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_020_fresh_math_modular",
+    "roi": 0.24473684210526317,
+    "expected_cost": 100.45,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_039_search_irrelevant_conflict",
+    "roi": 0.19896373056994818,
+    "expected_cost": 66.5,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_062_fresh_search_chain",
+    "roi": 0.19896373056994818,
+    "expected_cost": 66.5,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_019_search_three_hop",
+    "roi": 0.19896373056994818,
+    "expected_cost": 67.5,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_024_search_paraphrase_chain",
+    "roi": 0.19896373056994818,
+    "expected_cost": 67.5,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_059_math_gcd",
+    "roi": 0.19578947368421054,
+    "expected_cost": 100.35,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_036_math_zero_warning",
+    "roi": 0.19578947368421054,
+    "expected_cost": 101.15,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_027_math_zero_operation",
+    "roi": 0.19578947368421054,
+    "expected_cost": 102.75,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_057_math_percentage",
+    "roi": 0.19578947368421054,
+    "expected_cost": 102.9,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_078_fresh_math_union",
+    "roi": 0.19578947368421054,
+    "expected_cost": 103.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_081_fresh_math_paths",
+    "roi": 0.19578947368421054,
+    "expected_cost": 103.15,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_075_fresh_search_latest",
+    "roi": 0.14922279792746113,
+    "expected_cost": 65.5,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_005_search_new_relation",
+    "roi": 0.14922279792746113,
+    "expected_cost": 66.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_056_fresh_search_conflict",
+    "roi": 0.14922279792746113,
+    "expected_cost": 66.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_094_search_new_relation",
+    "roi": 0.14922279792746113,
+    "expected_cost": 66.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_089_search_conflicting_fact",
+    "roi": 0.14922279792746113,
+    "expected_cost": 66.5,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_066_search_paraphrase_chain",
+    "roi": 0.14922279792746113,
+    "expected_cost": 67.5,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_093_search_paraphrase_chain",
+    "roi": 0.14922279792746113,
+    "expected_cost": 67.5,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_002_math_sum",
+    "roi": 0.14684210526315788,
+    "expected_cost": 99.9,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_049_math_zero_warning",
+    "roi": 0.14684210526315788,
+    "expected_cost": 101.15,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_058_fresh_math_coin_ways",
+    "roi": 0.14684210526315788,
+    "expected_cost": 104.05,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_098_search_new_relation",
+    "roi": 0.09948186528497409,
+    "expected_cost": 66.0,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_007_search_irrelevant_conflict",
+    "roi": 0.09948186528497409,
+    "expected_cost": 66.5,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_025_search_conflicting_fact",
+    "roi": 0.09948186528497409,
+    "expected_cost": 66.5,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_006_search_absent",
+    "roi": 0.09948186528497409,
+    "expected_cost": 67.5,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_071_search_absent",
+    "roi": 0.09948186528497409,
+    "expected_cost": 67.5,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_087_search_three_hop",
+    "roi": 0.09948186528497409,
+    "expected_cost": 67.5,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_073_fresh_math_prime_factor",
+    "roi": 0.09789473684210527,
+    "expected_cost": 99.35,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_083_math_gcd",
+    "roi": 0.09789473684210527,
+    "expected_cost": 100.35,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_079_math_paraphrase",
+    "roi": 0.09789473684210527,
+    "expected_cost": 100.95,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_061_math_zero_operation",
+    "roi": 0.09789473684210527,
+    "expected_cost": 102.75,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_029_search_irrelevant_conflict",
+    "roi": 0.049740932642487044,
+    "expected_cost": 66.5,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_086_fresh_search_inverse",
+    "roi": 0.049740932642487044,
+    "expected_cost": 66.5,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_090_search_conflicting_fact",
+    "roi": 0.049740932642487044,
+    "expected_cost": 66.5,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_091_fresh_search_conditions",
+    "roi": 0.049740932642487044,
+    "expected_cost": 66.5,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_074_search_three_hop",
+    "roi": 0.049740932642487044,
+    "expected_cost": 67.5,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_076_math_gcd",
+    "roi": 0.048947368421052635,
+    "expected_cost": 100.35,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_055_math_paraphrase",
+    "roi": 0.048947368421052635,
+    "expected_cost": 100.95,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_013_math_zero_warning",
+    "roi": 0.048947368421052635,
+    "expected_cost": 101.15,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_004_fresh_math_inconsistent",
+    "roi": 0.048947368421052635,
+    "expected_cost": 101.5,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_070_math_zero_operation",
+    "roi": 0.048947368421052635,
+    "expected_cost": 102.75,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_008_math_percentage",
+    "roi": 0.048947368421052635,
+    "expected_cost": 102.9,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_030_pilot_extra_numeric_control",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_033_pilot_known_or_failure",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_044_fresh_data_net",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_053_data_filtered_median",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_054_pilot_string_keys_and_blocked",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_063_data_empty_count",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_084_pilot_mixed_duplicates",
+    "roi": 0.044124477473293074,
+    "expected_cost": 85.0,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_085_fresh_coding_runs",
+    "roi": 0.04360753221010902,
+    "expected_cost": 214.14,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_016_fresh_coding_unique",
+    "roi": 0.04360753221010902,
+    "expected_cost": 214.18,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_017_coding_brackets",
+    "roi": 0.04360753221010902,
+    "expected_cost": 305.24,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_003_fresh_data_group_max",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_015_data_weighted_mean",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_021_pilot_extra_numeric_control",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_031_pilot_known_or_failure",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_034_data_two_file_join",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_041_pilot_empty_filter_not_unmatched",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_060_data_empty_count",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_072_pilot_empty_filter_not_unmatched",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_077_pilot_known_or_failure",
+    "roi": 0.03529958197863446,
+    "expected_cost": 85.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_023_coding_multimodule",
+    "roi": 0.03488602576808721,
+    "expected_cost": 216.08,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_012_coding_overlap",
+    "roi": 0.03488602576808721,
+    "expected_cost": 259.9,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_096_coding_intervals",
+    "roi": 0.03488602576808721,
+    "expected_cost": 262.18,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_038_coding_brackets",
+    "roi": 0.03488602576808721,
+    "expected_cost": 305.24,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_028_data_empty_count",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_046_pilot_previous_local_control",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_052_fresh_data_dates",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_097_pilot_previous_local_control",
+    "roi": 0.026474686483975843,
+    "expected_cost": 85.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_092_fresh_coding_rotate",
+    "roi": 0.02616451932606541,
+    "expected_cost": 215.48,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_048_coding_multimodule",
+    "roi": 0.02616451932606541,
+    "expected_cost": 216.08,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_032_coding_intervals",
+    "roi": 0.02616451932606541,
+    "expected_cost": 262.18,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_014_data_distinct",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_047_data_filtered_median",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_050_pilot_string_keys_and_blocked",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_068_data_weighted_mean",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_069_fresh_data_positive_median",
+    "roi": 0.01764979098931723,
+    "expected_cost": 85.0,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_043_fresh_coding_missing_positive",
+    "roi": 0.017443012884043606,
+    "expected_cost": 215.64,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_022_coding_multimodule",
+    "roi": 0.017443012884043606,
+    "expected_cost": 216.08,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_010_pilot_empty_right",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_035_pilot_empty_right",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_042_fresh_data_unique_pairs",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_045_data_distinct",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_080_data_two_file_join",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_088_pilot_mixed_duplicates",
+    "roi": 0.008824895494658615,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_051_fresh_coding_transpose",
+    "roi": 0.008721506442021803,
+    "expected_cost": 214.28,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_037_coding_overlap",
+    "roi": 0.008721506442021803,
+    "expected_cost": 259.9,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_009_coding_intervals",
+    "roi": 0.008721506442021803,
+    "expected_cost": 262.18,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_040_coding_brackets",
+    "roi": 0.008721506442021803,
+    "expected_cost": 305.24,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_067_fresh_coding_conflict",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_064_coding_pure_conflict",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_065_coding_stateful",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_011_coding_pure_conflict",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_000_coding_stateful",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 1
+  }
+]

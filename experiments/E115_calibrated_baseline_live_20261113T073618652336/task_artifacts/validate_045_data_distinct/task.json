@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_045_data_distinct",
+  "task_type": "data_analysis",
+  "instruction": "Using sales.csv, count DISTINCT clients with category red and month at most 2. Write only the final answer to answer.txt.",
+  "reward": 1
+}

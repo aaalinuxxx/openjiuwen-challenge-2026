@@ -1,0 +1,35 @@
+{
+  "task_id": "validate_081_fresh_math_paths",
+  "response": {
+    "id": "chatcmpl-a51732ea055b8d88",
+    "created": 1794555469,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport math\nn = 7 + 5\nk = 7\nresult = math.comb(n, k)\nprint(result)\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 35,
+      "prompt_tokens": 92,
+      "total_tokens": 127,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

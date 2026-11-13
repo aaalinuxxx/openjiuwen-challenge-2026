@@ -1,0 +1,35 @@
+{
+  "task_id": "validate_002_math_sum",
+  "response": {
+    "id": "chatcmpl-b62fad3eb02a5dd9",
+    "created": 1794555409,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "print(",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 2,
+      "prompt_tokens": 85,
+      "total_tokens": 87,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_095_fresh_search_custodian",
+  "task_type": "search",
+  "instruction": "Use only kb/. Return the city of the organization holding custody of the Meridian Lens. Write only the city to answer.txt.",
+  "reward": 5
+}
