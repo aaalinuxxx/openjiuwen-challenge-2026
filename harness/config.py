@@ -34,8 +34,11 @@ class HarnessConfig:
 
     multi_csv_max_output_tokens: int = 400
     experimental_joins: bool = False
+    ranking_policy: str = "roi"
 
     def __post_init__(self):
+        if self.ranking_policy not in ("roi", "calibrated"):
+            raise ValueError("ranking_policy must be roi or calibrated")
         if type(self.multi_csv_max_output_tokens) is not int or not 1 <= self.multi_csv_max_output_tokens <= 4096:
             raise ValueError("multi_csv_max_output_tokens must be an integer from 1 to 4096")
         if type(self.experimental_joins) is not bool:

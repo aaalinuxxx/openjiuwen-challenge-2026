@@ -1,0 +1,9 @@
+# Integration of calibrated ranking without output floor
+
+E115 observed winner calibrated/no-floor105 points versus ROI71, ROI/floor76, calibrated/floor102 at budget500. Integration keeps E92 frozen medians in a production module; no runtime dependency on experiments. Only ordering denominator changes. expected_cost still controls allocation. Default CLI selects calibrated with csv-roomy; explicit --ranking-policy roi restores original order; legacy retains roi. No output floor enabled.
+
+Before live: all unit tests, production versus E115 order equivalence on100tasks, exact cost/reward/local solution checks, zero-budget SDK full31-task check. Full live regression uses ordinary frozen_benchmark.py and default CLI ranking (plan intentionally omits ranking_policy); no experimental scheduler/tracker patches.31 known E77 tasks/26solvable/78points. Budget3000/max30calls/C1. Acceptance:26verified/78points, no lost E100 solution, no wrong SOLVED/truncation/input/accounting failure. This is known-set regression, not new holdout. Do not claim universal superiority from ordering experiments.
+
+User removed overall spending ceiling. This integration run independently capped at3000. Campaign before integration:271HTTP/21349.7 (E115 adds32/725.9; reused E113 calls not charged twice). Keep all failures; if acceptance fails, retain roi default until resolved.
+
+Preflight discovered cache-dependent feature drift: coding probes created __pycache__ and subsequent discovery counted bytecode as task input. Fixed before live by -B probes and excluding bytecode caches from features. New idempotence test verifies clean/repeated/pre-existing-cache feature equality. After repair, production ROI and calibrated ranking exactly equal both corresponding frozen E115 first-discovery snapshots. Earlier offline/unit reports and plans retained.

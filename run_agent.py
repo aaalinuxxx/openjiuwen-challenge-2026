@@ -57,6 +57,8 @@ def parse_args(argv=None) -> argparse.Namespace:
                         help='Enable experimental typed/local joins and multi-CSV fallback')
     parser.add_argument("--profile", choices=("legacy", "validated", "csv-roomy"), default="csv-roomy",
                         help="validated: joins, data floor700/cap400; csv-roomy: data floor1000/cap600")
+    parser.add_argument("--ranking-policy", choices=("roi", "calibrated"), default=None,
+                        help="Task ordering only; calibrated by default, roi for legacy profile")
     parser.add_argument("--max-api-calls", type=int, default=None)
     args, _ = parser.parse_known_args(argv)
     if not math.isfinite(args.budget) or args.budget < 0:
@@ -65,6 +67,8 @@ def parse_args(argv=None) -> argparse.Namespace:
         parser.error("max-api-calls must be nonnegative")
     if args.max_concurrency is None:
         args.max_concurrency = 1 if args.profile != "legacy" else 5
+    if args.ranking_policy is None:
+        args.ranking_policy = "roi" if args.profile == "legacy" else "calibrated"
     return args
 
 
@@ -84,6 +88,7 @@ def build_config(args, *, settings=None, audit_path=None):
         data_min_task_budget=(1000 if args.profile == "csv-roomy" else 700) if validated else 0,
         multi_csv_max_output_tokens=600 if args.profile == "csv-roomy" else 400,
         max_api_calls=args.max_api_calls,
+        ranking_policy=args.ranking_policy,
         budget_audit_path=audit_path,
     )
 

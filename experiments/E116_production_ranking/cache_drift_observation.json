@@ -1,0 +1,9 @@
+{
+  "observed_before_live": true,
+  "actual_http_calls": 0,
+  "example_task": "validate_085_fresh_coding_runs",
+  "expected_cost_original_snapshot": 214.14,
+  "expected_cost_source_with_generated_cache": 221.14,
+  "cause": "Coding test probes create __pycache__; extractor counts all files, so repeated discovery changes features.",
+  "fix": "Do not write bytecode during probes; ignore existing bytecode caches in features."
+}

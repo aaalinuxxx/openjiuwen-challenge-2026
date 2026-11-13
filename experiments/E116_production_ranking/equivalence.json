@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "actual_http_calls": 0,
+  "ranking": {
+    "roi": {
+      "identical": true,
+      "ranked_tasks": 96
+    },
+    "calibrated": {
+      "identical": true,
+      "ranked_tasks": 96
+    }
+  },
+  "default_equals_explicit": true
+}

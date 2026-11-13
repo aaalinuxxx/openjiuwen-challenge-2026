@@ -9,6 +9,7 @@ from harness.config import HarnessConfig, TaskContext, SolveResult
 from harness.planner.budget_tracker import BudgetTracker
 from harness.planner.feature_extractor import extract_task_features
 from harness.planner.token_estimator import TokenCostEstimator
+from harness.planner.ranking_calibration import MEDIAN_ORDERING_COSTS
 from harness.planner.unsolvable_filter import check_unsolvable_zero_token
 from harness.workflow_runner import task_runner
 
@@ -51,7 +52,9 @@ class TaskScheduler:
                     continue
 
                 p_solv, expected_cost = self.estimator.estimate(features)
-                roi = (features.reward * p_solv) / max(expected_cost, 1.0)
+                ordering_cost = (MEDIAN_ORDERING_COSTS.get(features.task_type, expected_cost)
+                                 if self.config.ranking_policy == 'calibrated' else expected_cost)
+                roi = (features.reward * p_solv) / max(ordering_cost, 1.0)
                 workspace_dir = tdir / "workspace" if (tdir / "workspace").exists() else tdir
 
                 candidates.append(

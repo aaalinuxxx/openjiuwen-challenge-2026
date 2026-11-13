@@ -41,7 +41,7 @@ def inspect_coding_tests(workspace_dir: Path) -> Tuple[int, int, bool, bool]:
 
     try:
         proc = subprocess.run(
-            [sys.executable, test_file.name],
+            [sys.executable, "-B", test_file.name],
             cwd=str(workspace_dir),
             capture_output=True,
             text=True,
@@ -78,7 +78,10 @@ def extract_task_features(task_dir: Path) -> Tuple[Dict[str, Any], TaskFeatures]
     if not workspace_dir.exists():
         workspace_dir = task_dir
 
-    all_files = [p for p in workspace_dir.rglob("*") if p.is_file() and p.name != "task.json"]
+    all_files = [p for p in workspace_dir.rglob("*")
+                 if p.is_file() and p.name != "task.json"
+                 and "__pycache__" not in p.relative_to(workspace_dir).parts
+                 and p.suffix not in (".pyc", ".pyo")]
     total_bytes = sum(p.stat().st_size for p in all_files)
 
     if not task_type:
