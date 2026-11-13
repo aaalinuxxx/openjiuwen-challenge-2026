@@ -1,0 +1,17 @@
+{
+  "source_commit": "c6be760",
+  "shared_frozen_files_checked": 386,
+  "all_unchanged": true,
+  "reused_arms": {
+    "roi_baseline": {
+      "report": "experiments/E113_baseline_live_20261113T072447407100/report.json",
+      "sha256": "d46a8b9a5ea4c11363d1e579be612d1d1860a5a4327ed35f58f029704e2569a4",
+      "plan": "experiments/E112_output_floor/baseline_plan.json"
+    },
+    "roi_floor": {
+      "report": "experiments/E113_floor_live_20261113T072604402179/report.json",
+      "sha256": "3d9f1277c66637ac1a5747dfd1d8a2c78ce4060d091dd3dd7ffba93700688fc7",
+      "plan": "experiments/E112_output_floor/floor_plan.json"
+    }
+  }
+}

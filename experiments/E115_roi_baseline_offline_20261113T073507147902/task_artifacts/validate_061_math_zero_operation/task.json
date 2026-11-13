@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_061_math_zero_operation",
+  "task_type": "math",
+  "instruction": "A warehouse starts with 9 boxes. It is split equally into 0 warehouses. How many boxes does each warehouse have? Write only the final answer to answer.txt.",
+  "reward": 2
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_036_math_zero_warning",
+  "task_type": "math",
+  "instruction": "Do not divide by 0; this is only a warning, not an operation. Compute 6 times 7. Write only the final answer to answer.txt.",
+  "reward": 4
+}

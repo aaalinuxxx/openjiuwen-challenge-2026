@@ -1,0 +1,6 @@
+{
+  "task_id": "validate_050_pilot_string_keys_and_blocked",
+  "task_type": "data_analysis",
+  "instruction": "Read orders.csv and labels.csv. Left join orders.code to labels.sku using exact string keys. Sum orders.qty for all resulting pairs where labels.region equals 'west' OR there is no matching right row. Preserve every matching pair, including duplicates. Print the exact sum.",
+  "reward": 2
+}

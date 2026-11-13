@@ -1,0 +1,9 @@
+{
+  "all_offline_valid": true,
+  "local_ids_equal": true,
+  "local_score_equal": true,
+  "roi_matches_history": true,
+  "calibrated_matches_history": true,
+  "allocations_rewards_equal": true,
+  "calibration_source_unchanged": true
+}
