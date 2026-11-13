@@ -1,0 +1,35 @@
+{
+  "task_id": "new_min_coins",
+  "response": {
+    "id": "chatcmpl-8e806a21324f9509",
+    "created": 1794559490,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport sys\nfrom functools import lru_cache\n\n@lru_cache(maxsize=None)\ndef min_coins(target):\n    if target == 0:\n        return 0\n    if target < 0:\n        return float('inf')\n    \n    min_c = float('inf')\n    for coin in [4, 7, 9]:\n        res = min_coins(target - coin)\n        if res != float('inf'):\n            min_c = min(min",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 107,
+      "prompt_tokens": 111,
+      "total_tokens": 218,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

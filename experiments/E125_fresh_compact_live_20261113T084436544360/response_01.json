@@ -1,0 +1,35 @@
+{
+  "task_id": "new_trailing_zeros",
+  "response": {
+    "id": "chatcmpl-8ad57eed32e2d4d2",
+    "created": 1794559486,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "print(31)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 6,
+      "prompt_tokens": 97,
+      "total_tokens": 103,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

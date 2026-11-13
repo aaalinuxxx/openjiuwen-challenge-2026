@@ -1,0 +1,1108 @@
+{
+  "status": "COMPLETED",
+  "mode": "LIVE",
+  "hypothesis": "H04.35_APPEND_MATH_BREVITY",
+  "plan_sha256": "4787110c1a29f23a7f698d991cecd02470b2d01e8a59adbcdd20c4a272f0916f",
+  "recording_errors": [],
+  "configuration": {
+    "ranking_policy": "calibrated",
+    "profile": "csv-roomy",
+    "multi_csv_max_output_tokens": 600,
+    "budget": 2000.0,
+    "max_calls": 50,
+    "concurrency": 1,
+    "experimental_joins": true,
+    "search_min_task_budget": 300,
+    "data_min_task_budget": 1000,
+    "coding_min_task_budget": 800.0
+  },
+  "summary": {
+    "total_tasks": 12,
+    "task_results": {
+      "new_trailing_zeros": {
+        "task_id": "new_trailing_zeros",
+        "status": "SOLVED",
+        "answer": "31",
+        "input_tokens": 97,
+        "output_tokens": 6,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 6.171999999962281,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_integer_conflict": {
+        "task_id": "new_integer_conflict",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 107,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.8429999999934807,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_exactly_two": {
+        "task_id": "new_exactly_two",
+        "status": "SOLVED",
+        "answer": "56",
+        "input_tokens": 111,
+        "output_tokens": 98,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.9690000000409782,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_min_coins": {
+        "task_id": "new_min_coins",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 111,
+        "output_tokens": 107,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.4219999999622814,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      },
+      "new_blocked_grid": {
+        "task_id": "new_blocked_grid",
+        "status": "SOLVED",
+        "answer": "442",
+        "input_tokens": 116,
+        "output_tokens": 61,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.312000000034459,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_crt": {
+        "task_id": "new_crt",
+        "status": "SOLVED",
+        "answer": "668",
+        "input_tokens": 115,
+        "output_tokens": 52,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.25,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_parity_conflict": {
+        "task_id": "new_parity_conflict",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 107,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.7190000000409782,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_stair_moves": {
+        "task_id": "new_stair_moves",
+        "status": "SOLVED",
+        "answer": "34",
+        "input_tokens": 116,
+        "output_tokens": 83,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.7969999999622814,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_bounded_coins": {
+        "task_id": "new_bounded_coins",
+        "status": "SOLVED",
+        "answer": "5",
+        "input_tokens": 126,
+        "output_tokens": 60,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.125,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_digit_sum": {
+        "task_id": "new_digit_sum",
+        "status": "SOLVED",
+        "answer": "170",
+        "input_tokens": 101,
+        "output_tokens": 17,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 10.436999999976251,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_lcm": {
+        "task_id": "new_lcm",
+        "status": "SOLVED",
+        "answer": "315",
+        "input_tokens": 105,
+        "output_tokens": 27,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 8.01600000000326,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      },
+      "new_squared_sum": {
+        "task_id": "new_squared_sum",
+        "status": "SOLVED",
+        "answer": "17395",
+        "input_tokens": 102,
+        "output_tokens": 9,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 6.98499999998603,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    "skipped_tasks": {},
+    "solved_count": 9,
+    "estimated_score": 24,
+    "effective_tokens_spent": 667.4,
+    "budget_state": {
+      "budget": 2000.0,
+      "known_effective_tokens": 667.4,
+      "reserved_effective_tokens": 0.0,
+      "has_unaccounted_request": false,
+      "remote_stopped": false,
+      "events": [
+        {
+          "ticket": 0,
+          "task_id": "new_trailing_zeros",
+          "status": "ACCOUNTED",
+          "reserved_units": 2486,
+          "task_limit_units": 2495,
+          "input_token_estimate": 1426,
+          "output_cap": 106,
+          "input_tokens": 97,
+          "output_tokens": 6,
+          "reasoning_tokens": 0,
+          "effective_cost": 15.7
+        },
+        {
+          "ticket": 1,
+          "task_id": "new_integer_conflict",
+          "status": "ACCOUNTED",
+          "reserved_units": 2524,
+          "task_limit_units": 2530,
+          "input_token_estimate": 1454,
+          "output_cap": 107,
+          "input_tokens": 107,
+          "output_tokens": 8,
+          "reasoning_tokens": 0,
+          "effective_cost": 18.7
+        },
+        {
+          "ticket": 2,
+          "task_id": "new_exactly_two",
+          "status": "ACCOUNTED",
+          "reserved_units": 2530,
+          "task_limit_units": 2537,
+          "input_token_estimate": 1460,
+          "output_cap": 107,
+          "input_tokens": 111,
+          "output_tokens": 98,
+          "reasoning_tokens": 0,
+          "effective_cost": 109.1
+        },
+        {
+          "ticket": 3,
+          "task_id": "new_min_coins",
+          "status": "ACCOUNTED",
+          "reserved_units": 2531,
+          "task_limit_units": 2538,
+          "input_token_estimate": 1461,
+          "output_cap": 107,
+          "input_tokens": 111,
+          "output_tokens": 107,
+          "reasoning_tokens": 0,
+          "effective_cost": 118.1
+        },
+        {
+          "ticket": 4,
+          "task_id": "new_blocked_grid",
+          "status": "ACCOUNTED",
+          "reserved_units": 2539,
+          "task_limit_units": 2548,
+          "input_token_estimate": 1469,
+          "output_cap": 107,
+          "input_tokens": 116,
+          "output_tokens": 61,
+          "reasoning_tokens": 0,
+          "effective_cost": 72.6
+        },
+        {
+          "ticket": 5,
+          "task_id": "new_crt",
+          "status": "ACCOUNTED",
+          "reserved_units": 2539,
+          "task_limit_units": 2548,
+          "input_token_estimate": 1469,
+          "output_cap": 107,
+          "input_tokens": 115,
+          "output_tokens": 52,
+          "reasoning_tokens": 0,
+          "effective_cost": 63.5
+        },
+        {
+          "ticket": 6,
+          "task_id": "new_parity_conflict",
+          "status": "ACCOUNTED",
+          "reserved_units": 2554,
+          "task_limit_units": 2555,
+          "input_token_estimate": 1474,
+          "output_cap": 108,
+          "input_tokens": 107,
+          "output_tokens": 8,
+          "reasoning_tokens": 0,
+          "effective_cost": 18.7
+        },
+        {
+          "ticket": 7,
+          "task_id": "new_stair_moves",
+          "status": "ACCOUNTED",
+          "reserved_units": 2571,
+          "task_limit_units": 2576,
+          "input_token_estimate": 1491,
+          "output_cap": 108,
+          "input_tokens": 116,
+          "output_tokens": 83,
+          "reasoning_tokens": 0,
+          "effective_cost": 94.6
+        },
+        {
+          "ticket": 8,
+          "task_id": "new_bounded_coins",
+          "status": "ACCOUNTED",
+          "reserved_units": 2600,
+          "task_limit_units": 2600,
+          "input_token_estimate": 1510,
+          "output_cap": 109,
+          "input_tokens": 126,
+          "output_tokens": 60,
+          "reasoning_tokens": 0,
+          "effective_cost": 72.6
+        },
+        {
+          "ticket": 9,
+          "task_id": "new_digit_sum",
+          "status": "ACCOUNTED",
+          "reserved_units": 1796,
+          "task_limit_units": 1796,
+          "input_token_estimate": 1426,
+          "output_cap": 37,
+          "input_tokens": 101,
+          "output_tokens": 17,
+          "reasoning_tokens": 0,
+          "effective_cost": 27.1
+        },
+        {
+          "ticket": 10,
+          "task_id": "new_lcm",
+          "status": "ACCOUNTED",
+          "reserved_units": 1799,
+          "task_limit_units": 1808,
+          "input_token_estimate": 1439,
+          "output_cap": 36,
+          "input_tokens": 105,
+          "output_tokens": 27,
+          "reasoning_tokens": 0,
+          "effective_cost": 37.5
+        },
+        {
+          "ticket": 11,
+          "task_id": "new_squared_sum",
+          "status": "ACCOUNTED",
+          "reserved_units": 1805,
+          "task_limit_units": 1813,
+          "input_token_estimate": 1445,
+          "output_cap": 36,
+          "input_tokens": 102,
+          "output_tokens": 9,
+          "reasoning_tokens": 0,
+          "effective_cost": 19.2
+        }
+      ]
+    },
+    "budget_audit_path": "D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E125_fresh_compact_live_20261113T084436544360\\budget.json",
+    "execution_engine": "openjiuwen",
+    "workflow_runs": [
+      {
+        "task_id": "new_trailing_zeros",
+        "workflow_id": "task_b2010e6a77fb4e338f94acccdb74b540",
+        "session_id": "1be4fb7399eb4ca3987ef3204f4d3183",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_integer_conflict",
+        "workflow_id": "task_99dc83cecc8a4a199d64e92744403f6d",
+        "session_id": "643137a1b49b4686adeee25c6a06bba0",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_exactly_two",
+        "workflow_id": "task_744e014af38745079ffaf6b9611bbb0a",
+        "session_id": "0bebb9689df742e2877daec5506b595d",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_min_coins",
+        "workflow_id": "task_b0afbd019a594e988c0a235b1e866c4a",
+        "session_id": "2c15510119e24bb29ebd4e84950f94df",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_blocked_grid",
+        "workflow_id": "task_9a5d09c279a540d098652d749e7f6870",
+        "session_id": "b5207d67a8054ef1919da74109a34f06",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_crt",
+        "workflow_id": "task_2c3f0df6d0044f21a547abdc4f7cee9c",
+        "session_id": "3d839e539ba64fa1a8b707556102ba16",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_parity_conflict",
+        "workflow_id": "task_8cb3d86b8cc34c4d99de3e750d3a0a33",
+        "session_id": "b55f16e50d8d4f928d9b8040e29fa6c6",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": false,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_stair_moves",
+        "workflow_id": "task_8b767677b41148eda2bf5ad1169f2662",
+        "session_id": "deb9286b659b4bec98015422eafa4ba3",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_bounded_coins",
+        "workflow_id": "task_667e52ea176f4fa49a91d2fdbf23f98e",
+        "session_id": "d42d580441084203944b0385af2af745",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_digit_sum",
+        "workflow_id": "task_f964cdd31ccb462b9f596d3be9707f74",
+        "session_id": "c5fb404dccdc4136931ca9ab1c4b109e",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_lcm",
+        "workflow_id": "task_96dee31e88c04765ba9c6b7a590544e1",
+        "session_id": "cfcc7581935644f79c38cbe87504484e",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      },
+      {
+        "task_id": "new_squared_sum",
+        "workflow_id": "task_485394e09c8f43afb8678e1bf0792d32",
+        "session_id": "28e428258e6642bd8d069f1aeeaca55d",
+        "stages": [
+          "solve",
+          "finalize"
+        ],
+        "saved": true,
+        "state": "COMPLETED",
+        "request_timeout_sec": 60.0,
+        "workflow_timeout_sec": 180.0
+      }
+    ]
+  },
+  "rows": [
+    {
+      "task_id": "new_crt",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "668",
+      "answer": "668",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_crt",
+        "status": "SOLVED",
+        "answer": "668",
+        "input_tokens": 115,
+        "output_tokens": 52,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.25,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_trailing_zeros",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "31",
+      "answer": "31",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_trailing_zeros",
+        "status": "SOLVED",
+        "answer": "31",
+        "input_tokens": 97,
+        "output_tokens": 6,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 6.171999999962281,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_digit_sum",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "170",
+      "answer": "170",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_digit_sum",
+        "status": "SOLVED",
+        "answer": "170",
+        "input_tokens": 101,
+        "output_tokens": 17,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 10.436999999976251,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_min_coins",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "5",
+      "answer": null,
+      "status": "TRUNCATED",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_min_coins",
+        "status": "TRUNCATED",
+        "answer": null,
+        "input_tokens": 111,
+        "output_tokens": 107,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.4219999999622814,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": "Output limit reached; usage accounted"
+      }
+    },
+    {
+      "task_id": "new_blocked_grid",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "442",
+      "answer": "442",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_blocked_grid",
+        "status": "SOLVED",
+        "answer": "442",
+        "input_tokens": 116,
+        "output_tokens": 61,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.312000000034459,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_lcm",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "315",
+      "answer": "315",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_lcm",
+        "status": "SOLVED",
+        "answer": "315",
+        "input_tokens": 105,
+        "output_tokens": 27,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 8.01600000000326,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_exactly_two",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "56",
+      "answer": "56",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_exactly_two",
+        "status": "SOLVED",
+        "answer": "56",
+        "input_tokens": 111,
+        "output_tokens": 98,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.9690000000409782,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_squared_sum",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 2,
+      "unsolvable": false,
+      "expected": "17575",
+      "answer": "17395",
+      "status": "SOLVED",
+      "verified_solution": false,
+      "incorrect_solved_answer": true,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_squared_sum",
+        "status": "SOLVED",
+        "answer": "17395",
+        "input_tokens": 102,
+        "output_tokens": 9,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 6.98499999998603,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_bounded_coins",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "5",
+      "answer": "5",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_bounded_coins",
+        "status": "SOLVED",
+        "answer": "5",
+        "input_tokens": 126,
+        "output_tokens": 60,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 2.125,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_stair_moves",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": false,
+      "expected": "34",
+      "answer": "34",
+      "status": "SOLVED",
+      "verified_solution": true,
+      "incorrect_solved_answer": false,
+      "justified_refusal": false,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_stair_moves",
+        "status": "SOLVED",
+        "answer": "34",
+        "input_tokens": 116,
+        "output_tokens": 83,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 1.7969999999622814,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_parity_conflict",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": true,
+      "expected": "UNSOLVABLE",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": true,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_parity_conflict",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 107,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.7190000000409782,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    },
+    {
+      "task_id": "new_integer_conflict",
+      "task_type": "math",
+      "group": "E122_new_math",
+      "reward": 3,
+      "unsolvable": true,
+      "expected": "UNSOLVABLE",
+      "answer": null,
+      "status": "UNSOLVABLE",
+      "verified_solution": false,
+      "incorrect_solved_answer": false,
+      "justified_refusal": true,
+      "integrity_passed": true,
+      "changed_files": [],
+      "unexpected_files": [],
+      "result": {
+        "task_id": "new_integer_conflict",
+        "status": "UNSOLVABLE",
+        "answer": null,
+        "input_tokens": 107,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "wall_time_sec": 0.8429999999934807,
+        "model_used": "qwen3.8-27b-noreason",
+        "notes": ""
+      }
+    }
+  ],
+  "metrics": {
+    "total": 12,
+    "solvable": 10,
+    "correct": 8,
+    "score": 22,
+    "max_score": 27,
+    "incorrect_solved_answers": 1,
+    "non_solved_answer_files": 0,
+    "justified_refusals": 2,
+    "truncations": 1,
+    "integrity_passed": true
+  },
+  "by_type": {
+    "math": {
+      "total": 12,
+      "solvable": 10,
+      "correct": 8,
+      "score": 22,
+      "max_score": 27,
+      "incorrect_solved_answers": 1,
+      "non_solved_answer_files": 0,
+      "justified_refusals": 2,
+      "truncations": 1,
+      "integrity_passed": true
+    }
+  },
+  "audit": {
+    "passed": true,
+    "calls": 12,
+    "effective_tokens": 667.4,
+    "requests": [
+      {
+        "task_id": "new_trailing_zeros",
+        "cost": 15.7,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 106,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_integer_conflict",
+        "cost": 18.7,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 107,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_exactly_two",
+        "cost": 109.1,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 107,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_min_coins",
+        "cost": 118.1,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 107,
+        "finish": "length",
+        "passed": true
+      },
+      {
+        "task_id": "new_blocked_grid",
+        "cost": 72.6,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 107,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_crt",
+        "cost": 63.5,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 107,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_parity_conflict",
+        "cost": 18.7,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 108,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_stair_moves",
+        "cost": 94.6,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 108,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_bounded_coins",
+        "cost": 72.6,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 109,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_digit_sum",
+        "cost": 27.1,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 37,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_lcm",
+        "cost": 37.5,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 36,
+        "finish": "stop",
+        "passed": true
+      },
+      {
+        "task_id": "new_squared_sum",
+        "cost": 19.2,
+        "model": "qwen3.8-27b-noreason",
+        "cap": 36,
+        "finish": "stop",
+        "passed": true
+      }
+    ]
+  },
+  "actual_http_calls": 12,
+  "elapsed_seconds": 51.172,
+  "budget": {
+    "budget": 2000.0,
+    "known_effective_tokens": 667.4,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": [
+      {
+        "ticket": 0,
+        "task_id": "new_trailing_zeros",
+        "status": "ACCOUNTED",
+        "reserved_units": 2486,
+        "task_limit_units": 2495,
+        "input_token_estimate": 1426,
+        "output_cap": 106,
+        "input_tokens": 97,
+        "output_tokens": 6,
+        "reasoning_tokens": 0,
+        "effective_cost": 15.7
+      },
+      {
+        "ticket": 1,
+        "task_id": "new_integer_conflict",
+        "status": "ACCOUNTED",
+        "reserved_units": 2524,
+        "task_limit_units": 2530,
+        "input_token_estimate": 1454,
+        "output_cap": 107,
+        "input_tokens": 107,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "effective_cost": 18.7
+      },
+      {
+        "ticket": 2,
+        "task_id": "new_exactly_two",
+        "status": "ACCOUNTED",
+        "reserved_units": 2530,
+        "task_limit_units": 2537,
+        "input_token_estimate": 1460,
+        "output_cap": 107,
+        "input_tokens": 111,
+        "output_tokens": 98,
+        "reasoning_tokens": 0,
+        "effective_cost": 109.1
+      },
+      {
+        "ticket": 3,
+        "task_id": "new_min_coins",
+        "status": "ACCOUNTED",
+        "reserved_units": 2531,
+        "task_limit_units": 2538,
+        "input_token_estimate": 1461,
+        "output_cap": 107,
+        "input_tokens": 111,
+        "output_tokens": 107,
+        "reasoning_tokens": 0,
+        "effective_cost": 118.1
+      },
+      {
+        "ticket": 4,
+        "task_id": "new_blocked_grid",
+        "status": "ACCOUNTED",
+        "reserved_units": 2539,
+        "task_limit_units": 2548,
+        "input_token_estimate": 1469,
+        "output_cap": 107,
+        "input_tokens": 116,
+        "output_tokens": 61,
+        "reasoning_tokens": 0,
+        "effective_cost": 72.6
+      },
+      {
+        "ticket": 5,
+        "task_id": "new_crt",
+        "status": "ACCOUNTED",
+        "reserved_units": 2539,
+        "task_limit_units": 2548,
+        "input_token_estimate": 1469,
+        "output_cap": 107,
+        "input_tokens": 115,
+        "output_tokens": 52,
+        "reasoning_tokens": 0,
+        "effective_cost": 63.5
+      },
+      {
+        "ticket": 6,
+        "task_id": "new_parity_conflict",
+        "status": "ACCOUNTED",
+        "reserved_units": 2554,
+        "task_limit_units": 2555,
+        "input_token_estimate": 1474,
+        "output_cap": 108,
+        "input_tokens": 107,
+        "output_tokens": 8,
+        "reasoning_tokens": 0,
+        "effective_cost": 18.7
+      },
+      {
+        "ticket": 7,
+        "task_id": "new_stair_moves",
+        "status": "ACCOUNTED",
+        "reserved_units": 2571,
+        "task_limit_units": 2576,
+        "input_token_estimate": 1491,
+        "output_cap": 108,
+        "input_tokens": 116,
+        "output_tokens": 83,
+        "reasoning_tokens": 0,
+        "effective_cost": 94.6
+      },
+      {
+        "ticket": 8,
+        "task_id": "new_bounded_coins",
+        "status": "ACCOUNTED",
+        "reserved_units": 2600,
+        "task_limit_units": 2600,
+        "input_token_estimate": 1510,
+        "output_cap": 109,
+        "input_tokens": 126,
+        "output_tokens": 60,
+        "reasoning_tokens": 0,
+        "effective_cost": 72.6
+      },
+      {
+        "ticket": 9,
+        "task_id": "new_digit_sum",
+        "status": "ACCOUNTED",
+        "reserved_units": 1796,
+        "task_limit_units": 1796,
+        "input_token_estimate": 1426,
+        "output_cap": 37,
+        "input_tokens": 101,
+        "output_tokens": 17,
+        "reasoning_tokens": 0,
+        "effective_cost": 27.1
+      },
+      {
+        "ticket": 10,
+        "task_id": "new_lcm",
+        "status": "ACCOUNTED",
+        "reserved_units": 1799,
+        "task_limit_units": 1808,
+        "input_token_estimate": 1439,
+        "output_cap": 36,
+        "input_tokens": 105,
+        "output_tokens": 27,
+        "reasoning_tokens": 0,
+        "effective_cost": 37.5
+      },
+      {
+        "ticket": 11,
+        "task_id": "new_squared_sum",
+        "status": "ACCOUNTED",
+        "reserved_units": 1805,
+        "task_limit_units": 1813,
+        "input_token_estimate": 1445,
+        "output_cap": 36,
+        "input_tokens": 102,
+        "output_tokens": 9,
+        "reasoning_tokens": 0,
+        "effective_cost": 19.2
+      }
+    ]
+  },
+  "frozen_files_unchanged": true
+}

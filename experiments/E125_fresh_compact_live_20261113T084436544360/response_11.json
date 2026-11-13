@@ -1,0 +1,35 @@
+{
+  "task_id": "new_lcm",
+  "response": {
+    "id": "chatcmpl-97f2870b6d1e845a",
+    "created": 1794559518,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "import math\nlcm = math.lcm(21, 35, 45)\nprint(lcm)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 27,
+      "prompt_tokens": 105,
+      "total_tokens": 132,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "task_id": "new_squared_sum",
+    "response": "experiments/E125_fresh_compact_live_20261113T084436544360/response_12.json",
+    "sha256": "2f39a520c90ea89282d33daf8ce14d6974e58cf63187fbcd019a876e4a5cacab",
+    "generated_code": "print(17395)",
+    "expected": "17575",
+    "actual": "17395",
+    "interpretation": "Execution success is not evidence that the numeric answer was computed correctly."
+  }
+]

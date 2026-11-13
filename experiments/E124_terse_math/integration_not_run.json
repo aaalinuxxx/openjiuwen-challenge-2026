@@ -1,0 +1,4 @@
+{
+  "reason": "Fresh validation gate failed: one incorrect SOLVED and one lost baseline task. No production edits or full mixed paid run.",
+  "production_changed": false
+}

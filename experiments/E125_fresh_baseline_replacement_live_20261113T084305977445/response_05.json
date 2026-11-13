@@ -1,0 +1,35 @@
+{
+  "task_id": "new_blocked_grid",
+  "response": {
+    "id": "chatcmpl-9e040925fd1c2ebd",
+    "created": 1794559411,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "from math import comb\n\ndef lattice_paths(x, y):\n    return comb(x + y, x)\n\ntotal = lattice_paths(7, 5)\navoid = lattice_paths(3, 2) * lattice_paths(4, 3)\nanswer = total - avoid\nprint(answer)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 64,
+      "prompt_tokens": 102,
+      "total_tokens": 166,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

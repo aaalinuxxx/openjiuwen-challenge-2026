@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "calls": 12,
+  "effective_tokens": 667.4,
+  "requests": [
+    {
+      "task_id": "new_trailing_zeros",
+      "cost": 15.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 106,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_integer_conflict",
+      "cost": 18.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_exactly_two",
+      "cost": 109.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_min_coins",
+      "cost": 118.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "new_blocked_grid",
+      "cost": 72.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_crt",
+      "cost": 63.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 107,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_parity_conflict",
+      "cost": 18.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 108,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_stair_moves",
+      "cost": 94.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 108,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_bounded_coins",
+      "cost": 72.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 109,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_digit_sum",
+      "cost": 27.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 37,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_lcm",
+      "cost": 37.5,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 36,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "new_squared_sum",
+      "cost": 19.2,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 36,
+      "finish": "stop",
+      "passed": true
+    }
+  ]
+}
