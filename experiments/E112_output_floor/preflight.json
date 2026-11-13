@@ -1,0 +1,8 @@
+{
+  "unit_passed": true,
+  "both_offline_passed": true,
+  "identical_ranking": true,
+  "same_local_ids": true,
+  "same_score": true,
+  "zero_http": true
+}
