@@ -1,0 +1,80 @@
+[
+  {
+    "task_id": "validate_024_search_paraphrase_chain",
+    "roi": 0.056888888888888885,
+    "expected_cost": 67.5,
+    "reward": 4
+  },
+  {
+    "task_id": "validate_075_fresh_search_latest",
+    "roi": 0.04396946564885496,
+    "expected_cost": 65.5,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_005_search_new_relation",
+    "roi": 0.04363636363636363,
+    "expected_cost": 66.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_056_fresh_search_conflict",
+    "roi": 0.04363636363636363,
+    "expected_cost": 66.0,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_007_search_irrelevant_conflict",
+    "roi": 0.02887218045112782,
+    "expected_cost": 66.5,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_025_search_conflicting_fact",
+    "roi": 0.02887218045112782,
+    "expected_cost": 66.5,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_002_math_sum",
+    "roi": 0.027927927927927927,
+    "expected_cost": 99.9,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_016_fresh_coding_unique",
+    "roi": 0.02054346811093473,
+    "expected_cost": 214.18,
+    "reward": 5
+  },
+  {
+    "task_id": "validate_092_fresh_coding_rotate",
+    "roi": 0.012251717096714314,
+    "expected_cost": 215.48,
+    "reward": 3
+  },
+  {
+    "task_id": "validate_010_pilot_empty_right",
+    "roi": 0.011176470588235293,
+    "expected_cost": 85.0,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_022_coding_multimodule",
+    "roi": 0.008145131432802665,
+    "expected_cost": 216.08,
+    "reward": 2
+  },
+  {
+    "task_id": "validate_051_fresh_coding_transpose",
+    "roi": 0.004106776180698152,
+    "expected_cost": 214.28,
+    "reward": 1
+  },
+  {
+    "task_id": "validate_000_coding_stateful",
+    "roi": 0.0,
+    "expected_cost": 999999.0,
+    "reward": 1
+  }
+]

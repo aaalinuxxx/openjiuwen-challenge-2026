@@ -42,6 +42,11 @@ def select_coding_target(instruction, code_files):
         if NEGATIVE.match(clause):
             if names:
                 forbidden.update(names)
+            elif re.fullmatch(r"(?:please\s+)?(?:do\s+not|don't|never)\s+" + VERB +
+                              r"\s+(?:the\s+)?(?:input(?:\s+(?:list|array|matrix|data|values))?|values|matrix|list|array|arguments)", clause, re.I):
+                # This constrains function behavior, not source-file edits.
+                # The complete original instruction still goes to the model.
+                pass
             elif not re.fullmatch(r"(?:please\s+)?(?:do\s+not|don't|never)\s+" + VERB + r"\s+(?:the\s+)?(?:tests|dependencies)(?:\s+or\s+(?:tests|dependencies))?", clause, re.I):
                 global_forbidden = True
             continue

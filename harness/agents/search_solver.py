@@ -19,13 +19,16 @@ def _parse_kb(kb_dir: Path) -> Dict[str, dict]:
         title = lines[0].lstrip("#").strip()
         # Exact titles denote the same entity. Merge only compatible fields;
         # preserve every source and conflicting value for later inspection.
-        props = entities.setdefault(title, {"_file": md_file.name, "_sources": {}, "_conflicts": {}})
+        props = entities.setdefault(title, {"_file": md_file.name, "_sources": {}, "_conflicts": {}, "_field_names": {}})
         for ln in lines[1:]:
             if ":" in ln:
                 k, v = ln.split(":", 1)
                 key, value = k.strip().lower(), v.strip()
                 if not key or key.startswith('_') or not value:
                     continue
+                spellings = props['_field_names'].setdefault(key, [])
+                if k.strip() not in spellings:
+                    spellings.append(k.strip())
                 if key in props and props[key] != value:
                     props['_ambiguous'] = '1'
                     conflicts = props['_conflicts'].setdefault(key, {props[key]: list(props['_sources'][key])})
@@ -132,10 +135,19 @@ async def solve_search_task(ctx: TaskContext, bridge) -> SolveResult:
         return SolveResult(task_id=ctx.task_id, status="UNKNOWN",
             notes="Model reported conflicting alternatives instead of a final value",
             input_tokens=in_tok, output_tokens=out_tok, reasoning_tokens=r_tok, model_used=model)
-    if clean_ans.upper() in ("UNSOLVABLE", "UNKNOWN") or not clean_ans:
+    # Recognize only complete service markers, including whitespace variants.
+    # Use the whole reply so a split marker cannot become a normal last line.
+    whole_reply = ans.strip().rstrip('.')
+    marker_text = whole_reply
+    marker = re.sub(r'\s+', '', marker_text).upper()
+    if marker not in ('UNSOLVABLE', 'UNKNOWN'):
+        marker_text = clean_ans
+        marker = re.sub(r'\s+', '', marker_text).upper()
+    is_refusal = marker in ('UNSOLVABLE', 'UNKNOWN') and marker_text not in literal_values
+    if is_refusal or not clean_ans:
         return SolveResult(
             task_id=ctx.task_id,
-            status="UNSOLVABLE" if clean_ans.upper() == "UNSOLVABLE" and context.complete_kb else "UNKNOWN",
+            status="UNSOLVABLE" if marker == "UNSOLVABLE" and context.complete_kb else "UNKNOWN",
             notes=f"Model refusal; KB coverage: {coverage}",
             input_tokens=in_tok,
             output_tokens=out_tok,

@@ -34,10 +34,13 @@ def _render(name, record):
     if sources: lines.append('Sources: '+', '.join(sorted(sources)))
     for field in fields:
         values=_values(record,field)
-        if field in record.get('_conflicts',{}):
-            lines.append(field+': CONFLICT ['+' | '.join(values)+']')
-        elif values:
-            lines.append(field+': '+values[0])
+        # Lookup remains normalized; model-visible labels keep source spelling.
+        spellings = record.get('_field_names', {}).get(field, [field])
+        for spelling in sorted(spellings):
+            if field in record.get('_conflicts',{}):
+                lines.append(spelling+': CONFLICT ['+' | '.join(values)+']')
+            elif values:
+                lines.append(spelling+': '+values[0])
     return '\n'.join(lines)
 
 
