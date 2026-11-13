@@ -1,0 +1,35 @@
+{
+  "task_id": "math_stairs",
+  "response": {
+    "id": "chatcmpl-a3119a708ce400ce",
+    "created": 1794557358,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "```python\nimport sys\nsys.setrecursionlimit(10000)\n\ndef count_ways(n):\n    if n == 0:\n        return 1\n    if n < 0:\n        return 0\n    # Use memoization\n    memo = {}\n    def dp(k):\n        if k in memo:\n            return memo[k]\n        if k == 0:\n            return 1\n        if k < 0:\n            return 0\n        res = dp(k-1)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 116,
+      "prompt_tokens": 102,
+      "total_tokens": 218,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "passed": true,
+  "calls": 24,
+  "effective_tokens": 1780.1,
+  "requests": [
+    {
+      "task_id": "math_divisible",
+      "cost": 61.6,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 64,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "math_coin_combinations",
+      "cost": 73.9,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 64,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_0",
+      "cost": 17.4,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_1",
+      "cost": 17.6,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_2",
+      "cost": 17.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "search_chain_3",
+      "cost": 16.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 32,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "math_modular",
+      "cost": 26.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 64,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "control_math_contradiction",
+      "cost": 17.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 64,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "math_stairs",
+      "cost": 74.2,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 64,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "math_lattice",
+      "cost": 54.2,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 44,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "math_weighted",
+      "cost": 53.7,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 44,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "data_group_revenue",
+      "cost": 112.5,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 96,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "data_filtered_median",
+      "cost": 113.2,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 96,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "data_distinct",
+      "cost": 83.0,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 96,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "data_weighted_floor",
+      "cost": 112.9,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 96,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "coding_prefix",
+      "cost": 84.8,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 128,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "coding_histogram",
+      "cost": 85.8,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 128,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "coding_runs",
+      "cost": 141.4,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 128,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "coding_next_greater",
+      "cost": 141.1,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 128,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "data_excluding",
+      "cost": 88.6,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 96,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "data_second_largest",
+      "cost": 105.3,
+      "model": "qwen3.6-35b-a3b-noreason",
+      "cap": 96,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "math_coin_combinations",
+      "cost": 100.9,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 116,
+      "finish": "stop",
+      "passed": true
+    },
+    {
+      "task_id": "math_stairs",
+      "cost": 126.2,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 116,
+      "finish": "length",
+      "passed": true
+    },
+    {
+      "task_id": "math_lattice",
+      "cost": 54.2,
+      "model": "qwen3.8-27b-noreason",
+      "cap": 44,
+      "finish": "length",
+      "passed": true
+    }
+  ]
+}

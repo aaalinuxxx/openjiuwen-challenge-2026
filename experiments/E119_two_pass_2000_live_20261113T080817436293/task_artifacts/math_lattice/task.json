@@ -1,0 +1,6 @@
+{
+  "task_id": "math_lattice",
+  "task_type": "math",
+  "instruction": "Count shortest lattice paths from (0,0) to (8,6), using only right and up steps, that never pass through (4,3). Write only the integer result to answer.txt.",
+  "reward": 2
+}

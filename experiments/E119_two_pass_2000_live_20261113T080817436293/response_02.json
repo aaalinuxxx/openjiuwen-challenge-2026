@@ -1,0 +1,35 @@
+{
+  "task_id": "math_coin_combinations",
+  "response": {
+    "id": "chatcmpl-8c8ca8ff259dc483",
+    "created": 1794557306,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "count = 0\nfor a in range(0, 29 // 2 + 1):\n    for b in range(0, (29 - 2 * a) // 5 + 1):\n        remainder = 29 - 2 * a - 5 * b",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 64,
+      "prompt_tokens": 99,
+      "total_tokens": 163,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

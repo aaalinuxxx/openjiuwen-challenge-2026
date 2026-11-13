@@ -1,0 +1,35 @@
+{
+  "task_id": "coding_histogram",
+  "response": {
+    "id": "chatcmpl-957b93d4b522466b",
+    "created": 1794557335,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\ndef solve(values):\n    counts = {}\n    for v in values:\n        counts[v] = counts.get(v, 0) + 1\n    return sorted(counts.items())\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 46,
+      "prompt_tokens": 398,
+      "total_tokens": 444,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

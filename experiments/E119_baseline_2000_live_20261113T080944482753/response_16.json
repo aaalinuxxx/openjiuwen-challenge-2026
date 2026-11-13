@@ -1,0 +1,35 @@
+{
+  "task_id": "coding_prefix",
+  "response": {
+    "id": "chatcmpl-bd6b51dc6a4d3925",
+    "created": 1794557479,
+    "model": "qwen3.8-27b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```python\ndef solve(values):\n    result = []\n    running_sum = 0\n    for v in values:\n        running_sum += v\n        result.append(running_sum)\n    return result\n```",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 47,
+      "prompt_tokens": 380,
+      "total_tokens": 427,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

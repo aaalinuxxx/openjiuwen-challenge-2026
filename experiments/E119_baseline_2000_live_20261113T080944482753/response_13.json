@@ -1,0 +1,32 @@
+{
+  "task_id": "data_filtered_median",
+  "response": {
+    "id": "chatcmpl-a51bd651c69f77e5",
+    "created": 1794557463,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "import csv\nimport statistics\n\nrows = []\nwith open('records.csv', 'r') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        qty = int(row['qty'])\n        price = int(row['price'])\n        if qty >= 3 and price < 15:\n            rows.append(qty)\n\nrows.sort()\nn = len(rows)\nif n == 0:\n    median = 0\nelif n % 2 == 1:\n    median = rows[n // 2]\nelse:\n    median = (rows[n // 2 - 1] + rows[n // 2]) / 2\n\nprint(median)",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 153,
+      "prompt_tokens": 172,
+      "total_tokens": 325,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}

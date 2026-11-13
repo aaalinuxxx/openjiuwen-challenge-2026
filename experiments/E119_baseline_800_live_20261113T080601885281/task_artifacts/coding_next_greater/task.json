@@ -1,0 +1,6 @@
+{
+  "task_id": "coding_next_greater",
+  "task_type": "coding",
+  "instruction": "For each position return the value of the nearest element strictly to its right that is greater than the current value, or None if absent. Function name: solve(values). Do not mutate the input. Modify only mylib.py. Never change tests. Write DONE to answer.txt after tests pass.",
+  "reward": 3
+}

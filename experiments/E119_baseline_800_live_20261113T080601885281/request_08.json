@@ -1,0 +1,18 @@
+{
+  "task_id": "control_math_contradiction",
+  "payload": {
+    "model": "qwen3.8-27b-noreason",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Translate the math word problem into a short Python 3 script that computes and prints ONLY the final integer answer. If the problem is contradictory or impossible, print UNSOLVABLE. Output ONLY raw Python code without markdown."
+      },
+      {
+        "role": "user",
+        "content": "Find an integer x satisfying both x+9=21 and x+9=22. If none exists return UNSOLVABLE. Write the result to answer.txt."
+      }
+    ],
+    "max_tokens": 115,
+    "temperature": 0.0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "data_filtered_median",
+  "response": {
+    "id": "chatcmpl-85665c602ae3e707",
+    "created": 1794557205,
+    "model": "qwen3.6-35b-a3b-noreason",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "import csv\n",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 3,
+      "prompt_tokens": 172,
+      "total_tokens": 175,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      }
+    }
+  }
+}
