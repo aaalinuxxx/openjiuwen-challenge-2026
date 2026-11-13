@@ -1,0 +1,6 @@
+{
+  "done": true,
+  "code": 0,
+  "stdout": "Report: D:\\хаки\\openjiuwen\\openjuuweg\\experiments\\E111_forward_offline_20261113T071508218618\\report.json\r\n{\"task_id\": \"validate_095_fresh_search_custodian\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"validate_019_search_three_hop\", \"status\": \"SOLVED\", \"cost\": 0.0}\r\n{\"task_id\": \"validate_075_fresh_search_latest\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"validate_056_fresh_search_conflict\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"incoming_ambiguous\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"incoming_employer\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"validate_086_fresh_search_inverse\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"task_id\": \"incoming_then_outgoing\", \"status\": \"BUDGET_EXCEEDED\", \"cost\": 0.0}\r\n{\"status\": \"COMPLETED\", \"metrics\": {\"total\": 8, \"solvable\": 6, \"correct\": 1, \"score\": 4, \"max_score\": 15, \"incorrect_solved_answers\": 0, \"non_solved_answer_files\": 0, \"justified_refusals\": 0, \"truncations\": 0, \"integrity_passed\": true}, \"audit\": {\"passed\": true, \"calls\": 0, \"effective_tokens\": 0.0, \"requests\": []}, \"historical_comparison\": null, \"offline_passed\": true}\r\n",
+  "stderr": ""
+}

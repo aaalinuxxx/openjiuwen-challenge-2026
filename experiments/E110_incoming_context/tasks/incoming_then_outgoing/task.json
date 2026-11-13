@@ -1,0 +1,6 @@
+{
+  "task_id": "incoming_then_outgoing",
+  "task_type": "search",
+  "instruction": "Use only kb/. What is the headquarters city of the employer of the person whose tutor is Ivo Reed? Exactly one person has that tutor. Return only the exact city to answer.txt.",
+  "reward": 1
+}

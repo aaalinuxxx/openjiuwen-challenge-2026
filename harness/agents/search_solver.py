@@ -108,7 +108,7 @@ async def solve_search_task(ctx: TaskContext, bridge) -> SolveResult:
         status, answer, evidence = graph_result
         return SolveResult(task_id=ctx.task_id, status=status, answer=answer, notes=evidence)
 
-    context = build_kb_context(q, entities)
+    context = build_kb_context(q, entities, include_incoming=True)
     if not context.names:
         return SolveResult(task_id=ctx.task_id, status="UNKNOWN", notes="No complete KB record fits the context limits")
     model = select_primary_model(ctx)

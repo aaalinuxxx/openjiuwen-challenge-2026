@@ -1,0 +1,6 @@
+{
+  "task_id": "incoming_employer",
+  "task_type": "search",
+  "instruction": "Use only kb/. Which person has employer Cedar Works? Exactly one person matches. Return only the exact person name to answer.txt.",
+  "reward": 1
+}

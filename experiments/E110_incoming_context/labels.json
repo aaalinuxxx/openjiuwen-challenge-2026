@@ -1,0 +1,84 @@
+{
+  "validate_086_fresh_search_inverse": {
+    "task_id": "validate_086_fresh_search_inverse",
+    "task_type": "search",
+    "instruction": "Use only kb/. Which person has tutor named Lina Vale? Exactly one person matches. Write only that person name to answer.txt.",
+    "reward": 1,
+    "expected": "Nora Pine",
+    "unsolvable": false,
+    "group": "E110_observed_inverse",
+    "comparison": null,
+    "source_task_id": "fresh_search_inverse"
+  },
+  "validate_095_fresh_search_custodian": {
+    "task_id": "validate_095_fresh_search_custodian",
+    "task_type": "search",
+    "instruction": "Use only kb/. Return the city of the organization holding custody of the Meridian Lens. Write only the city to answer.txt.",
+    "reward": 5,
+    "expected": "Turku",
+    "unsolvable": false,
+    "group": "E110_control",
+    "comparison": null,
+    "source_task_id": "fresh_search_custodian"
+  },
+  "validate_075_fresh_search_latest": {
+    "task_id": "validate_075_fresh_search_latest",
+    "task_type": "search",
+    "instruction": "Use only kb/. Which product has the latest launch year? Return only its exact name to answer.txt.",
+    "reward": 3,
+    "expected": "Mistral",
+    "unsolvable": false,
+    "group": "E110_control",
+    "comparison": null,
+    "source_task_id": "fresh_search_latest"
+  },
+  "validate_056_fresh_search_conflict": {
+    "task_id": "validate_056_fresh_search_conflict",
+    "task_type": "search",
+    "instruction": "Use only kb/. Return the launch year of the Amber Ferry. Both sources have equal authority and neither supersedes the other. Return UNSOLVABLE if no unique year follows. Write the answer to answer.txt.",
+    "reward": 3,
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "group": "E110_control",
+    "comparison": null,
+    "source_task_id": "fresh_search_conflict"
+  },
+  "validate_019_search_three_hop": {
+    "task_id": "validate_019_search_three_hop",
+    "task_type": "search",
+    "instruction": "In which city is the headquarters of Mira Vale's mentor's employer? Write only the final answer to answer.txt.",
+    "expected": "Riga",
+    "unsolvable": false,
+    "reward": 4,
+    "group": "E110_control",
+    "source": "experiments/E41_family_shift/tasks/search_three_hop",
+    "source_task_id": "search_three_hop"
+  },
+  "incoming_employer": {
+    "task_id": "incoming_employer",
+    "instruction": "Use only kb/. Which person has employer Cedar Works? Exactly one person matches. Return only the exact person name to answer.txt.",
+    "expected": "Mira Holt",
+    "unsolvable": false,
+    "task_type": "search",
+    "reward": 1,
+    "group": "E110_new_authored"
+  },
+  "incoming_then_outgoing": {
+    "task_id": "incoming_then_outgoing",
+    "instruction": "Use only kb/. What is the headquarters city of the employer of the person whose tutor is Ivo Reed? Exactly one person has that tutor. Return only the exact city to answer.txt.",
+    "expected": "Porto",
+    "unsolvable": false,
+    "task_type": "search",
+    "reward": 1,
+    "group": "E110_new_authored"
+  },
+  "incoming_ambiguous": {
+    "task_id": "incoming_ambiguous",
+    "instruction": "Use only kb/. Give the unique name of the person whose tutor is Aron Glen. Return UNSOLVABLE if no unique name follows from the records. Write the answer to answer.txt.",
+    "expected": "UNSOLVABLE",
+    "unsolvable": true,
+    "task_type": "search",
+    "reward": 1,
+    "group": "E110_new_authored"
+  }
+}

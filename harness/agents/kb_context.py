@@ -44,19 +44,38 @@ def _render(name, record):
     return '\n'.join(lines)
 
 
-def build_kb_context(question, entities, max_hops=3, max_records=32, max_bytes=12000):
+def build_kb_context(question, entities, max_hops=3, max_records=32, max_bytes=12000, include_incoming=False):
     if any(type(v) is not int for v in (max_hops,max_records,max_bytes)) or max_hops<0 or max_records<1 or max_bytes<1:
         raise ValueError('Invalid KB context limits')
+    if type(include_incoming) is not bool:
+        raise ValueError('include_incoming must be boolean')
     ordered=sorted(entities,key=lambda name:(name.casefold(),name))
     by_fold={}
     for name in ordered:
         by_fold.setdefault(name.casefold(),[]).append(name)
+    incoming = {name: set() for name in ordered}
+    if include_incoming:
+        for source in ordered:
+            for field in entities[source]:
+                if field.startswith('_'): continue
+                for value in _values(entities[source], field):
+                    for target in by_fold.get(value.casefold(), []):
+                        incoming[target].add(source)
     roots=[name for name in ordered if re.search(r'(?<!\w)'+re.escape(name)+r'(?!\w)',question,re.I)]
     # If no entity is mentioned, deterministic bounded whole-KB inspection.
     queue=deque((name,0) for name in (roots or ordered))
     seen=set(name for name,_ in queue)
     selected=[];blocks=[];used=0;limits=set()
-    while queue:
+    pending_incoming = {}
+    while queue or pending_incoming:
+        # Exhaust the existing outgoing frontier first: incoming hubs must not
+        # evict a forward answer that already fitted the original limits.
+        if not queue:
+            name, depth = min(pending_incoming.items(), key=lambda pair: (pair[1], pair[0].casefold(), pair[0]))
+            del pending_incoming[name]
+            if name in seen: continue
+            seen.add(name)
+            queue.append((name, depth))
         if len(selected)>=max_records:
             limits.add('record_limit')
             break
@@ -80,6 +99,12 @@ def build_kb_context(question, entities, max_hops=3, max_records=32, max_bytes=1
                 continue
             seen.add(other)
             queue.append((other,depth+1))
+        for other in sorted(incoming[name], key=lambda value: (value.casefold(), value)):
+            if other in seen: continue
+            if depth >= max_hops:
+                limits.add('depth_limit')
+                continue
+            pending_incoming[other] = min(pending_incoming.get(other, depth+1), depth+1)
     complete=len(selected)==len(entities)
     if not complete: limits.add('partial_kb')
     return KBContext('\n\n'.join(blocks),tuple(selected),complete,tuple(sorted(limits)))

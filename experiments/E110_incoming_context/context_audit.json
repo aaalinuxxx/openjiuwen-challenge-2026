@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "actual_http_calls": 0,
+  "cases": [
+    {
+      "task_id": "validate_086_fresh_search_inverse",
+      "baseline_exact": true,
+      "forward_names": [
+        "Lina Vale"
+      ],
+      "incoming_names": [
+        "Lina Vale",
+        "Nora Pine"
+      ],
+      "forward_bytes": 41,
+      "incoming_bytes": 85,
+      "incoming_complete": false
+    },
+    {
+      "task_id": "validate_095_fresh_search_custodian",
+      "baseline_exact": true,
+      "forward_names": [
+        "Meridian Lens",
+        "Cedar Archive"
+      ],
+      "incoming_names": [
+        "Meridian Lens",
+        "Cedar Archive"
+      ],
+      "forward_bytes": 106,
+      "incoming_bytes": 106,
+      "incoming_complete": false
+    },
+    {
+      "task_id": "validate_075_fresh_search_latest",
+      "baseline_exact": true,
+      "forward_names": [
+        "Product launches"
+      ],
+      "incoming_names": [
+        "Product launches"
+      ],
+      "forward_bytes": 78,
+      "incoming_bytes": 78,
+      "incoming_complete": true
+    },
+    {
+      "task_id": "validate_056_fresh_search_conflict",
+      "baseline_exact": true,
+      "forward_names": [
+        "Amber Ferry"
+      ],
+      "incoming_names": [
+        "Amber Ferry"
+      ],
+      "forward_bytes": 68,
+      "incoming_bytes": 68,
+      "incoming_complete": true
+    },
+    {
+      "task_id": "validate_019_search_three_hop",
+      "baseline_exact": true,
+      "forward_names": [
+        "Mira Vale",
+        "Oren Pike",
+        "Luma Labs"
+      ],
+      "incoming_names": [
+        "Mira Vale",
+        "Oren Pike",
+        "Luma Labs"
+      ],
+      "forward_bytes": 161,
+      "incoming_bytes": 161,
+      "incoming_complete": false
+    },
+    {
+      "task_id": "incoming_employer",
+      "baseline_exact": true,
+      "forward_names": [
+        "Cedar Works"
+      ],
+      "incoming_names": [
+        "Cedar Works",
+        "Mira Holt"
+      ],
+      "forward_bytes": 46,
+      "incoming_bytes": 95,
+      "incoming_complete": false
+    },
+    {
+      "task_id": "incoming_then_outgoing",
+      "baseline_exact": true,
+      "forward_names": [
+        "Ivo Reed"
+      ],
+      "incoming_names": [
+        "Ivo Reed",
+        "Tess Dale",
+        "Silver Loom"
+      ],
+      "forward_bytes": 35,
+      "incoming_bytes": 149,
+      "incoming_complete": false
+    },
+    {
+      "task_id": "incoming_ambiguous",
+      "baseline_exact": true,
+      "forward_names": [
+        "Aron Glen"
+      ],
+      "incoming_names": [
+        "Aron Glen",
+        "Lena Moss",
+        "Rina Ash"
+      ],
+      "forward_bytes": 36,
+      "incoming_bytes": 123,
+      "incoming_complete": true
+    }
+  ]
+}

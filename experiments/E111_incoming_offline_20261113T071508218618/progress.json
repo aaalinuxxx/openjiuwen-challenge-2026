@@ -1,0 +1,100 @@
+{
+  "results": {
+    "validate_095_fresh_search_custodian": {
+      "task_id": "validate_095_fresh_search_custodian",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "validate_019_search_three_hop": {
+      "task_id": "validate_019_search_three_hop",
+      "status": "SOLVED",
+      "answer": "Riga",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "a.md:mentor=Oren Pike -> b.md:employer=Luma Labs -> c.md:headquarters=Riga"
+    },
+    "validate_075_fresh_search_latest": {
+      "task_id": "validate_075_fresh_search_latest",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "validate_056_fresh_search_conflict": {
+      "task_id": "validate_056_fresh_search_conflict",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "incoming_ambiguous": {
+      "task_id": "incoming_ambiguous",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "incoming_employer": {
+      "task_id": "incoming_employer",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "validate_086_fresh_search_inverse": {
+      "task_id": "validate_086_fresh_search_inverse",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    },
+    "incoming_then_outgoing": {
+      "task_id": "incoming_then_outgoing",
+      "status": "BUDGET_EXCEEDED",
+      "answer": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "wall_time_sec": 0.0,
+      "model_used": "",
+      "notes": "Request count limit reached"
+    }
+  },
+  "budget": {
+    "budget": 0.0,
+    "known_effective_tokens": 0.0,
+    "reserved_effective_tokens": 0.0,
+    "has_unaccounted_request": false,
+    "remote_stopped": false,
+    "events": []
+  }
+}
