@@ -322,7 +322,8 @@ openjuuweg/
 ## Эксперименты: как развивалось решение
 
 
-<img width="3071" height="1795" alt="{A1E9012B-6C18-480A-8C54-35A7510CBFFD}" src="https://github.com/user-attachments/assets/b47ae892-3a04-47dd-9984-fd42a12d8452" />
+<img width="2124" height="1054" alt="{7E6D895E-55FB-4006-80A8-7BBF37B25BC9}" src="https://github.com/user-attachments/assets/ed4a3a1a-1965-470f-99b1-22db7e665fa5" />
+
 
 
 **Доля верно решённых выполнимых задач на последовательных этапах
